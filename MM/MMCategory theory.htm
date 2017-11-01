@@ -1,6 +1,6 @@
 <html>
 <head><meta name=viewport content="width=device-width, initial-scale=1">
-<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "//www.w3.org/TR/html4/strict.dtd">
 <meta name=viewport content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css"href="mm2.css">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,7 +9,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <title>Category Theory</title>
-<script type="text/javascript"  async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML">
+<script type="text/javascript"  async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML">
 </script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -32,7 +32,7 @@ processEscapes: true
 
 <br>
 <pre>
-Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-11-04
+Produced by <a href="//www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-11-04
 <a href="MMIntro.htm">Introduction to this website</a>    
 <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
 </pre><br />
@@ -42,7 +42,7 @@ Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles We
 
 <p>This is a draft of the first part of an article on category theory.</p>
 
-<p>During the last year or so, I have been monitoring the category theory questions on <a href="http://math.stackexchange.com/search?tab=newest&q=category">Math Stack Exchange</a>. Some of the queries are clearly from people who do not have enough of a mathematical background to understand basic abstract reasoning, for example the importance of <a href="MMDefs.htm">definitions</a> and the difficulties described in the abmath artice on <a href="MMDysfunctional.htm">Dysfunctional attitudes and behaviors</a>. Category theory has become important in several fields outside mathematics, for example computer science and database theory.</p>
+<p>During the last year or so, I have been monitoring the category theory questions on <a href="//math.stackexchange.com/search?tab=newest&q=category">Math Stack Exchange</a>. Some of the queries are clearly from people who do not have enough of a mathematical background to understand basic abstract reasoning, for example the importance of <a href="MMDefs.htm">definitions</a> and the difficulties described in the abmath artice on <a href="MMDysfunctional.htm">Dysfunctional attitudes and behaviors</a>. Category theory has become important in several fields outside mathematics, for example computer science and database theory.</p>
 
 <p>This article is intended to get people started in category theory by giving a very detailed definition of "category" and some examples described in detail with an emphasis on how the example fits the definition of category. That's all the present version does, but I intend to add some examples of constructions and properties such as the dual category, product, and other concepts that some of the inquirers on Math Stack Exchange had great difficulty with.</p>  
 
@@ -147,7 +147,7 @@ Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles We
 
 <li>Note that the composite of the path that I described as "$f$ followed by $g$" is written as "$g\circ f$" or "$gf$", which seems backward. Nevertheless, the most common notation in category theory for the composite of "$f$ followed by $g$" is $gf$. Some authors in computer science write "$f;g$" for "$gf$" to get around this problem.</li>
 
-<li>The concept of category is an <a href="http://abstractmath.org/MM/MMOtherAspectsUnderstanding.htm#abstraction"><b>abstraction</b></a> of the idea of function, and the composition of arrows is an abstraction of the <a href="https://en.wikipedia.org/wiki/Function_composition"><b>composition of functions</b></a>.  It uses the same notation, "$g\circ f$". If $f$ and $g$ are set functions, then for an element $x$ in the domain of $f$, \[(g\circ f)(x)=g(f(x))\]</li> 
+<li>The concept of category is an <a href="//abstractmath.org/MM/MMOtherAspectsUnderstanding.htm#abstraction"><b>abstraction</b></a> of the idea of function, and the composition of arrows is an abstraction of the <a href="//en.wikipedia.org/wiki/Function_composition"><b>composition of functions</b></a>.  It uses the same notation, "$g\circ f$". If $f$ and $g$ are set functions, then for an element $x$ in the domain of $f$, \[(g\circ f)(x)=g(f(x))\]</li> 
 
 <li class=purple>But in arbitrary category, it may make no sense to evaluate an arrow $f$ at some element $x$; indeed, the domain of $f$ may not have elements at all, and then the statement "$(g\circ f)(x)=g(f(x))$" is <font color="#911B1B">meaningless</font>.</li> 
 
@@ -197,7 +197,7 @@ Facts (c) and (d) can be written in algebraic notation: For any arrow $f$ going 
 
 <ul>
 
-<li>Axiom 5b requires that \[h\circ(g\circ f)=(h\circ g)\circ f\](which both equal $k$), which is the usual algebraic notation for <a href="https://en.wikipedia.org/wiki/Associative_property">associativity</a>.</li>
+<li>Axiom 5b requires that \[h\circ(g\circ f)=(h\circ g)\circ f\](which both equal $k$), which is the usual algebraic notation for <a href="//en.wikipedia.org/wiki/Associative_property">associativity</a>.</li>
 
 <li>Note that the top two triangles commute by Axiom 3.</li>
 
@@ -300,7 +300,7 @@ Facts (c) and (d) can be written in algebraic notation: For any arrow $f$ going 
 
 
 <a name="onlyassoc"></a>
-<li>For $s\circ f$ and $h\circ r$, we have to choose between $j$ and $k$ as composites.  Since $s\circ f=(h\circ g)\circ f$ and $h\circ r=h\circ (g\circ f)$, Axiom 3 requires that we must chose <i>one</i> of $j$ and $k$ to be <i>both</i> composites.<p class=purpleprose>Definition: $s\circ f=h\circ r=j$.</p>If we had defined $s\circ f=h\circ r=k$ we would have a <i>different</i> category, although one that is "isomorphic" to $\mathsf{MyFin}$ (you have to define "isomorphic" or <a href="https://en.wikipedia.org/wiki/Isomorphism_of_categories">look it up</a>.)
+<li>For $s\circ f$ and $h\circ r$, we have to choose between $j$ and $k$ as composites.  Since $s\circ f=(h\circ g)\circ f$ and $h\circ r=h\circ (g\circ f)$, Axiom 3 requires that we must chose <i>one</i> of $j$ and $k$ to be <i>both</i> composites.<p class=purpleprose>Definition: $s\circ f=h\circ r=j$.</p>If we had defined $s\circ f=h\circ r=k$ we would have a <i>different</i> category, although one that is "isomorphic" to $\mathsf{MyFin}$ (you have to define "isomorphic" or <a href="//en.wikipedia.org/wiki/Isomorphism_of_categories">look it up</a>.)
 </li></ul> 
 
 
@@ -509,7 +509,7 @@ Facts (c) and (d) can be written in algebraic notation: For any arrow $f$ going 
 
 <li>Since $f$ takes elements of the set $S$ to elements of the set $T$, it is also an arrow in the category $\mathsf{Set}$. In general, very few functions from $S$ to $T$ will be monoid homomorphisms from $(S,\Delta)$ to $(T,\nabla)$.</li>
 
-<li>Many authors do not distinguish between $f$ regarded as an arrow of $\mathsf{Mon}$ and $f$ regarded as an arrow of $\mathsf{Set}$. Others may write $U(f)$ for the arrow in $\mathsf{Set}$. "$U$" stands for "<a href="https://en.wikipedia.org/wiki/Forgetful_functor">underlying functor</a>", also called "forgetful functor".</li>
+<li>Many authors do not distinguish between $f$ regarded as an arrow of $\mathsf{Mon}$ and $f$ regarded as an arrow of $\mathsf{Set}$. Others may write $U(f)$ for the arrow in $\mathsf{Set}$. "$U$" stands for "<a href="//en.wikipedia.org/wiki/Forgetful_functor">underlying functor</a>", also called "forgetful functor".</li>
 
 </ul>
 
@@ -569,22 +569,22 @@ Facts (c) and (d) can be written in algebraic notation: For any arrow $f$ going 
 <p>All these references are available on line.</p>
 <ul>
 
-<li><a href="http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf">Category theory for computing science</a>, by Michael Barr and Charles Wells.</li>
+<li><a href="//www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf">Category theory for computing science</a>, by Michael Barr and Charles Wells.</li>
 
-<li><a href="http://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">Category theory for programmers</a>, Bartosz Milewski.</li>
+<li><a href="//bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">Category theory for programmers</a>, Bartosz Milewski.</li>
 
-<li><a href="http://www.math.jhu.edu/~eriehl/727/context.pdf">Category theory in context</a>, by Emily Riehl.</li>
+<li><a href="//www.math.jhu.edu/~eriehl/727/context.pdf">Category theory in context</a>, by Emily Riehl.</li>
 
-<li>  <a href="https://www.academia.edu/21694792/A_Gentle_Introduction_to_Category_Theory_Feb_2016_version_">A gentle introduction to category theory</a>, Peter Smith.</li>
+<li>  <a href="//www.academia.edu/21694792/A_Gentle_Introduction_to_Category_Theory_Feb_2016_version_">A gentle introduction to category theory</a>, Peter Smith.</li>
 
-<li>The list <a href="http://www.logicmatters.net/categories/">Category Theory</a> in Logic Matters gives a pretty complete coverage of every introduction to category theory that is available online.</li> 
+<li>The list <a href="//www.logicmatters.net/categories/">Category Theory</a> in Logic Matters gives a pretty complete coverage of every introduction to category theory that is available online.</li> 
 
 </ul>
 
 <br />
  <pre>  <img border=0 width=88 height=31 src="CreativeCommons.gif"
 alt="Creative Commons License" v:shapes="_x0000_i1035"/>        </pre>
-<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<p>This work is licensed under a <a href="//creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
  <br />
  
  </body></html>
