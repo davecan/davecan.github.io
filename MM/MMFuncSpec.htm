@@ -1,0 +1,465 @@
+<!--PUT THIS AT THE TOP OF EACH mm2 HTML ARTICLE-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css"href="MM2.css">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>FuncSpecs</title>
+
+<script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      processEscapes: true
+    }
+  });</script>
+
+  </head>
+
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-01-10
+<a href="MMIntro.htm">Introduction to this website</a>     <a href="MMTOC.htm">website TOC</a>     <a href="MMIndex.htm">website index</a>    <a href="/Word%20Press/">blog</a>	     
+<a href="MMFunctions.htm">Back to head of functions chapter</a>
+</pre>
+
+<!--END OF INSERTION-->
+
+
+<h1>FUNCTIONS: SPECIFICATION AND DEFINITION</h1>
+
+<center><table border='0'><tr><td>
+<p class='purpleprose'>
+A function is a <a href="MMImagesMetaphorsFunctions.htm#mathobject">mathematical object</a>.
+</p></td></tr></table></center>
+
+<p class='blue'>To deal with functions as a math object, you need a precise definition of "function".  That is what this article gives you.
+</p>
+
+<ul>
+    <li class='blue'> The article starts by giving a <a href="MMDefs.htm#specifications">specification</a> of   "function"</a>.</li>
+
+       <li class='blue'> After that, we get into the technicalities of the
+<a href="MMDefs.htm">definitions</a> of the general concept of function.
+    </li>
+
+    <li class='blue'> Things get complicated because there are several inequivalent definitions of "function" in common use.
+</li>
+</ul>
+
+<a name="specification"></a>
+
+<a name="value"></a>
+
+<h2>Specification of "function"</h2>
+
+  <p> A function $f$ is a <a href="MMMathObj.htm">mathematical object</a> which <i><b>determines and is completely determined by</b></i> the following data:
+  </p>
+  
+<a name="domain"></a>
+<a name="codomain"></a>  
+
+<ul class=bluenodot>
+    <li>(<font color="#911B1B">DOM</font>) $f$ has a <font color="#911B1B">domain</font>, which is a set. The domain may be denoted by $\text{dom} f$.</li>
+
+    <li>(<font color="#911B1B">COD</font>) $f$ has a <font color="#911B1B">codomain</font>, which is also a set and may be denoted by $\text{cod} f$.</li>
+
+<a name="value"></a>
+
+<a name="input"></a>
+
+   <li>(<font color="#911B1B">VAL</font>) For each element $a$ of the domain of $f$, $f$ has a <font color="#911B1B">value</font> at $a$.</li>
+
+<li>(<font color="#911B1B">FP</font>) The <font color="#911B1B">value</font> of $f$ at $a$ is
+ completely determined by $a$ and $f$.</li>
+
+<li>(<font color="#911B1B">VIC</font>) The value of $f$ at $a$ must be an element of the codomain of $f$.</li>
+</ul>
+<a name="evaluate"></a>
+<ul>
+<li>The value of $f$ at $a$ is most commonly written $f(a)$, but see <a href="MMFuncNotation.htm#nameandvalue">Functions: Notation and Terminology</a>.</li>
+
+
+
+<li>To <b>evaluate</b> $f$ at $a$ means to determine $f(a)$. The two examples of functions below show that different functions may have different strategies for evaluating them.</li>
+
+
+<li>In the expression "$f(a)$", $a$ is called the <b>input</b> or (old-fashioned) <a href="MMGlossary.htm#argument">argument</a> of $f$.</li>
+
+
+<li>"FP" means <a href=#functionalproperty>functional property</a>.</li>
+
+	<li>"VIC" means "value in codomain".</li>
+	</ul>
+
+
+<h3>Examples</h3>
+	
+<p>I give two examples here. The <a href="MMFuncExamples.htm">examples of functions</a> chapter contains many other examples. 
+</p>
+
+<h4>A finite function</h4>
+<p>Let $F$ be the function defined on the set $\left\{\text{a},\text{b},\text{c},\text{d}\right\}$ as follows:  \[F(\text{a})=\text{a},\,\,\,F(\text{b})=\text{c},\,\,\,F(\text{c})=\text{c},\,\,\,F(\text{d})=\text{b}\]In this definition, $\text{a},\text{b},\text{c},\text{d}$ are letters of the alphabet, not <a href="MMVarSub.htm#variable">variables</a>. This is the function called "<a href="MMFuncExamples.htm#finite">Finite</a>'' in the chapter on examples of functions.</p>
+
+    <ul>
+    <li> The definition of  $F$ says "$F$ is defined on the set $\left\{\text{a},\,\text{b},\,\text{c},\,\text{d} \right\}$".  The phrase "is defined on" 
+<b><i>means</i></b> that the domain is that set. That is standard terminology.</li>
+
+<li>The value of $F$ at each element of the domain is given <i>explicitly</i>.  The value at
+$\text{b}$, for example, is $\text{c}$, <i>because the definition says that $F(\text{b}) = \text{c}$</i>. No other reason needs to be given.  Mathematical definitions can be <a href="MMGlossary.htm#arbitrary">arbitrary</a>.</li>
+
+<li>The codomain of $F$ is not specified, but must <a href="MMSetSubset.htm#include">include</a> the set $\{\text{a},\text{b},\text{c}\}$. The codomain of a function is often not specified when it is not important, which is most of the time in freshman calculus (for example).
+</li>
+
+<li>The diagram below shows how $F$ obeys the rule that the value of an element $x$ in the domain is completely determined by $x$ and $F$.<br />
+<div><img 
+src="Mathematica/Examples of Functions/FuncSpecFunction.png"></div>
+</li>
+
+<li>If two arrows had started from the same element of the domain, then $F$ would not be a function. (It would be a <a href="#multivaluedfunction">multivalued function</a>).</li>
+
+<li>If there were an element of the domain that no arrow started from, it $F$ would not be a function. (It would be a <a href="#partialfunction">partial function</a>.)</li>
+
+
+<li>In this example, to <b>evaluate</b> $F$ at $b$ (to determine the value of $F$ at $b$) means to look at the definition of $F$, which says among other things that the value is $c$ (or alternatively, look at the diagram above and see what letter the arrow starting at $b$ points to). In this case, "evaluation" does not imply calculating a formula.</li>  
+
+
+
+</ul>
+
+<h4>A real-valued function</h4>
+
+<p>Let $G$ be the real-valued function defined by the formula $G(x)={{x}^{2}}+2x+5$.</p>
+<ul>
+    <li> The definition of  $G$   gives the value at each element of the domain <i><b>by a formula</b></i>.  The <b>value</b> at $3$, for example, is obtained by calculating \[G(3)=3^2+2\cdot3+5=20\]</li>
+
+    <li>The definition of  $G$
+does not specify the domain.  The convention in the case of functions defined on the <a href="MMRealNumbers.htm">real numbers</a> by a formula is to take the domain to be <i><b>all real numbers at which the formula is defined</b></i>.  In this case, that is <i><b>every</b></i> real number, so the domain is $\mathbb{R}$.</li>
+
+<li>The definition of $G$ does not specify the codomain, either. However, the codomain must include all real numbers greater than or equal to $4$.  (Why?)</li>
+
+<li>So if an author wrote, "Let $H(x)=\frac{1}{x}$", the domain would be the set of all real numbers except $0$.  But a <i>careful</i> author would write,  "Let $H(x)=\frac{1}{x}$ ($x\neq0$)."</li>
+
+
+</ul>
+
+<h3>What the specification means  </h3>
+
+<ul>
+
+<li>The specification guarantees that a function satisfies <b><i>all five of the properties listed</i></b>.</li>
+
+<li>The specification <b><i>does not define a mathematical structure</i></b> in the way mathematical structures have been defined in the past: In particular, it does not require a function to be one or more <a href="MMMathStructure.htm">sets with structure.</a>
+</li>
+
+<li>Even so, it is useful to have the specification, because:
+<center><table border='0'><tr><td>
+<p class='purpleprose'>
+Many mathematical definitions<br> introduce extraneous technical elements<br> which clutter up your thinking<br> about the object  they define.</p></td></tr></table></center>
+</li>
+
+</ul>
+
+<a name="history"> <a name="formula"></a>
+
+<h2>History</h2>
+
+<p class=smallind>The discussion below is an over&shy;simpli&shy;fication of the history of mathe&shy;matics, which many people have written thick books about. A book relevant to these ideas is <a href="http://www.amazon.com/Platos-Ghost-Modernist-Transformation-Mathematics/dp/0691136106/ref=sr_1_2?ie=UTF8&qid=1372381598&sr=8-2&keywords=jeremy+gray">Plato's Ghost</a>, by Jeremy Gray.</p>
+
+
+<p>
+Until late in the nineteenth century, functions were usually thought of as defined by formulas (including infinite series). Problems arose in the theory of <a href="http://en.wikipedia.org/wiki/Harmonic_analysis">harmonic analysis</a> which made mathematicians require a more general notion of function.  They came up with the concept of function as a set of ordered pairs with the functional property (discussed below), and that understanding <i>revolutionized our understanding of math.</i>
+</p>
+
+<p>
+In particular, this definition, along with the use of <a href="MMSets.htm">set theory</a>, enabled <b>abstract math</b> (ahem) to become a common tool for understanding math and proving theorems.   It is conceivable that some readers may wish it hadn't.  Well, tough.
+</p>
+
+<p>
+The <a href= #moderndefinition> modern definition</a>
+of function given here (which builds on the ordered pairs with functional property definition)  came into use beginning in the 1950's.  The modern definition became necessary in algebraic topology and is widely used in many fields today.
+</p>
+
+<p>The concept of function as a formula never disappeared entirely, but was studied mostly by logicians who generalized it to the study of function-as-<a href="MMGlossary.htm#algorithm">algorithm</a>.  Of course, the study of algorithms is one of the central topics of modern computing science, so the notion of function-as-formula (updated to function-as-algorithm) has achieved a new importance in recent years.</p>
+
+<p>To state both the definition, we need a preliminary idea.
+</p>
+
+
+<a name="funcprop"></a>
+<a name="functionalproperty"></a>
+
+<h2>The functional property</h2>
+   <p> A set $P$ of <a href="http://en.wikipedia.org/wiki/Orded_pair">ordered pairs</a> has the <b>functional property</b> if <a href="MMGlossary.htm#two">two</a> pairs in $P$ with the same first coordinate have to have the same second coordinate (which means they are the same pair). In other words, if $(x,a)$ and $(x,b)$ are both in $P$, then $a=b$.
+   </p>
+<h4>How to think about the functional property</h4>
+
+  <p>  The point of the functional property is that for any pair in the set of ordered pairs, <i>the first coordinate determines what the second one is</i> (which is just what requirement FP says in the <a href="#specification">specification</a>).  That's why you can write "$G(x)$'' for any $x$ in the domain of $G$ and not be ambiguous.
+</p>
+    <h4>Examples</h4>
+
+  <ul>
+    <li> The set $\{(1,2), (2,4), (3,2), (5,8)\}$ has the functional property, since no two different pairs have the same first coordinate. Note that  there are two different pairs with the same <i><b>second </b></i> coordinate.  <span class=purple>This is irrelevant to the functional property.</span></li>
+
+    <li> The set $\{(1,2), (2,4), (3,2), (2,8)\}$ does <i><b>not</b></i> have the functional property.  There are two different pairs with first coordinate 2.</li>
+
+    <li> The empty set $\emptyset$ has the function property <a href="MMConditional.htm#vacuoustruth">vacuously</a>.</li>
+    </ul>
+
+<h4>Example: graph of a function defined by a formula</h4>
+<p class=headed><img align=left
+src="Mathematica/Specification of Functions/Quadratic Graph.png"></div>
+In calculus books, a picture like this one (of part of $y=x^2+2x+5$) is called a <b>graph</b>. Here I use the word "graph" to denote the <b>set of ordered pairs</b>
+ \[\left\{ (x,{{x}^{2}}+2x+5)\,\mathsf{|}\,x\in \mathbb{R } \right\}\]
+which is a <a href="MMMathObj.htm">mathematical object</a> rather than some ink on a page or pixels on a screen.
+</p>
+<p>The graph of any function studied in beginning calculus has the functional property. For example, the set of ordered pairs above has the functional property because if $x$ is any real number, the formula ${{x}^{2}}+2x+5$ defines a <i><b>specific real number</b></i>.</p>
+<ul>
+    <li> if $x = 0$, then ${{x}^{2}}+2x+5=5$, so the pair $(0, 5)$ is an element of the graph of $G$. Each time you plug in $0$ in the formula you get 5.</li>
+    <li> if $x = 1$, then ${{x}^{2}}+2x+5=8$.</li>
+    <li> if $x = -2$, then ${{x}^{2}}+2x+5=5$.</li>
+</ul>
+
+<p>
+You can measure where the point $\{-2,5\}$ is on the (picture of) the graph and see that it is on the blue curve as it should be.
+No other pair whose first coordinate is $-2$ is in the graph of $G$, only $(-2, 5)$.  That is because when you plug $-2$ into the formula ${{x}^{2}}+2x+5$, you get $5$ and nothing else.  Of course, $(0, 5)$ is in the graph, but that does not contradict the functional property.   $(0, 5)$ and $(-2, 5)$ have the same <i>second</i> coordinate, but that is OK.
+</p>
+
+
+
+<a name="graph"></a>
+<a name='moderndefinition'>
+<a name="definitionoffunction"></a>
+
+<h2>Mathematical definition of function</h2>
+
+   <p> A <b>function</b> $f$ is a
+    <a href="MMMathStructure.htm">mathematical structure</a> consisting of the following objects:</p>
+
+<ul>
+    <li> A set called the <b>domain of $f$</b>, denoted by $\text{dom} f$.</li>
+
+    <li> A set called the <b>codomain of $f$</b>, denoted by $\text{cod} f$.</li>
+
+    <li> A set of ordered pairs called the <b>graph of $ f$</b>, with the following properties:</li>
+
+<ul>
+    <li>$\text{dom} f$ \text{dom} fis the set of all first coordinates of pairs in the graph of $f$.</li>
+
+     <li> Every second coordinate of a pair in the graph of $f$ is in $\text{cod} f$ (but $\text{cod} f$ may contain other elements).</li>
+
+     <li> The graph of $f$ has the <a href="MMFuncSpec.htm#funcprop">functional property.</a></li>
+         </ul></ul>
+   <p> Using
+    <a href="MMFuncNotation.htm#arrownotation">arrow notation</a>, this implies that $f:\text{dom}f\to\text{cod} f$.
+</p>
+
+<h4>Remark</h4>
+<p>The main difference between the specification of function given previously and this definition is that the definition replaces the statement "$f$ has a value at $a$" by introducing a set of ordered pairs (the graph) with the functional property.</p>
+
+<ul>
+<li>  This set of ordered pairs is <span class=purple>extra structure</span> introduced by the definition <i>mainly in order to make the definition a classical sets-with-structure</i>.</li>
+
+<li>This makes the graph, which should be a concept <i>derived from</i> the concept of function, appear to be a <i>necessary</i> part of the function.</li>
+
+<li>That suggests incorrectly that the graph is <i>more of a primary intuition</i> that other intuitions such as function as <a href="MMImagesMetaphorsFunctions.htm#map">map</a>, function as <a href="MMImagesMetaphorsFunctions.htm#transformer">transformer</a>, and other points of view discussed in the article <a href="MMImagesMetaphorsFunctions.htm">Images and meta&shy;phors for functions</a>.</li>
+
+<li>The concept of graph of a function is indeed an important intuition, and is discussed with examples in the articles <a href="MMFunctionRepresentations.htm#graphsofcontinuousfunctions">Graphs of continuous functions</a> and <a href="MMFunctionRepresentations.htm#graphsoffinitefunctions">Graphs of finite functions</a>.</li>
+
+<li>Nevertheless, the fact that the concept of graph appears in the definition of function does not make it the <i>most</i> <a href="MMDefs.htm#sourceofunderstanding">important intuition</a>. 
+</li>
+</ul>
+
+</p>
+
+<h3>Examples</h3>
+
+    <ul>
+    <li> Let $F$ have graph $\{(1,2), (2,4), (3,2), (5,8)\}$ and define $A = \{1, 2, 3, 5\}$ and $B = \{2, 4, 8\}$.  Then $F:A\to B$ is a function. In speaking, we would usually say, "$F$ is a function from $A$ to $B$."</li>
+
+    <li> Let $G$ have graph $\{(1,2), (2,4), (3,2), (5,8)\}$ (same as above), and define $A = \{1, 2, 3, 5\}$ and $C = \{2, 4, 8, 9, 11, \pi, 3/2\}$.  Then $G:A\to C$ is a (admittedly ridiculous) function.  Note that all the second coordinates of the graph are in the codomain $C$, along with a bunch of miscellaneous suspicious characters that are <i><b>not</b></i> second coordinates of pairs in the graph.</li>
+
+    <li> Let $H$ have graph $\{(1,2), (2,4), (3,2), (5,8)\}$. Then $H:A\to \mathbb{R}$ is a function, since $2$, $4$ and $8$ are all real numbers.
+
+    <li> Let $D = \{1, 2, 5\}$ and $E = \{1, 2, 3, 4, 5\}$.  <i><b>Then there is no function  $D\to A$ and no function $E\to A$ </b></i> with graph $\{(1,2), (2,4), (3,2), (5,8)\}$. Neither $D$ nor $E$ <i><b>has exactly the same</b></i> elements  as the first coordinates of the graph.</li>
+        </ul>
+
+<h3>Identity and inclusion</h3>
+
+<p>
+    Suppose we have two sets  A and  B with $A\subseteq B$.</p>
+
+    <ul>
+    <li> The identity function on A is the function ${{\operatorname{id}}_{A}}:A\to A$ defined by ${{\operatorname{id}}_{A}}(x)=x$ for all $x\in A$.  (Many authors call it ${{1}_{A}}$).</li>
+    <li> When $A\subseteq B$, the inclusion function from $A$ to $B$ is the function $i:A\to B$ defined by $i(x)=x$ for all $x\in A$.  Note that there is a different function for each pair of sets $A$ and $B$ for which $A\subseteq B$.  Some authors call it ${{i}_{A,\,B}}$ or $\text{in}{{\text{c}}_{A,\,B}}$.</li>
+        </ul>
+		<p>The identity function and an inclusion function for the same set $A$ have exactly the same graph, namely $\left\{ (a,a)|a\in A \right\}$.
+More about this below.
+</p>
+
+<a name='olderdefinition'>
+
+<h2>Other definitions of function</h2>
+	
+<h3>Original abstract definition of function</h3>
+
+<h4>Definition</h4>
+
+<ul>
+<li>
+A <b>function</b> $f$ is a <b><i>set of ordered pairs with the functional property</i></b>.
+</li>
+<li> If $f$ is a function according to this definition, the <b>domain</b> of $f$ is the set of first coordinates of all the pairs in $f$.</li>
+    <li> If $x\in \text{dom} f$, then we define the <b>value of $f$ at $x$</b>, denoted by $f(x)$, to be  <i><b>the second coordinate of the only ordered pair in $f$ whose first coordinate is $x$.</b></i></li>
+</ul>
+
+<h4>Remarks</h4>
+
+<ul>
+
+<li>
+This definition is still widely used in mathematical writing.
+</li>
+<li>
+Many authors do not tell you which definition they are using.
+</li>
+
+<li>
+For many purposes (including freshman calculus for the most part) <i>it does not matter</i> which definition is used.
+</li>
+
+<li>In some branches of math, the <a href="#moderndefinition">modern definition</a> adds great clarity to many complicated situations; using the older definition can even make it difficult to <i>describe</i> some important constructions. There is more about this in <a href="#newapproaches">New Approaches</a> below.</li>
+
+
+</ul>
+
+<h4>Possible confusion</h4>
+<p>
+Some confusion can result because of the presence of these two different definitions.</p>
+
+<ul>
+<li>
+For example, since the identity function ${{\operatorname{id}}_{A}}:A\to A$ and the inclusion function ${{i}_{A,\,B}}:A\to B$ have the same graph, users of the older definition are required in theory to say they are the <i>same function</i>.</li>
+
+ <li> Also it requires you to say that the graph of a function is the same thing as the function.
+</li>
+
+<li>
+In my observation, this <i>does not make a problem in practice</i>, unless there is a <i>very picky person</i> in the room.
+</li>
+<li>
+It also appears to me that the modern definition is (quite rightly) <i>winning</i> and the original abstract definition is disappearing.
+</li>
+</ul>
+
+<a name="multivaluedfunction"></a>
+
+<h3>Multivalued function</h3>
+
+<p>
+The phrase <a href="http://en.wikipedia.org/wiki/Multivalued_function">multivalued function</a>
+refers to an object that is like a function $f:S\to T$ except that for $s\in S$, $f(s)$ may denote more than one value. </p>
+
+
+
+<h4>Examples</h4>
+
+<ul>
+
+<li>Multivalued functions arose in considering complex functions. In common practice, the symbol  $\sqrt{4}$ denoted $2$, although $-2$ is also a square root of $4$. But in complex function theory, the square root function takes on both the values $2$ and $-2$. This is discussed in detail in <a href="http://en.wikipedia.org/wiki/Square_root">Wikipedia</a>.
+</li>
+
+<li>The <a href="http://en.wikipedia.org/wiki/Antiderivative">antiderivative</a> is an example of a multivalued operator.  For any constant $C$, $\frac{x^3}{3}+C$ is an antiderivative of $x^2$, so that $\frac{x^3}{3}$, $\frac{x^3}{3}+42$, $\frac{x^3}{3}-1$ and $\frac{x^3}{3}+2\pi$ are among the infinitely many antiderivatives of $x^2$.
+</li>
+</ul>
+
+<p>A multivalued function $f:S\to T$ can be modeled as a function with domain $S$ and codomain the set of all subsets of $T$.  The two meanings are equivalent in a strong sense (<a href="http://en.wikipedia.org/wiki/Natural_equivalence">naturally equivalent</a>).  Even so, it seems to me that they represent two differ&shy;ent ways of <i>thinking about</i>
+multivalued functions.  ("The value may be any of these things..." as opposed to "The value is this whole set of things.")</p>
+
+<p class='smallind' >
+Some older mathematical papers in <a href="http://en.wikipedia.org/wiki/Complex_analysis">com&shy;plex func&shy;tion theory</a> do not tell you that their functions are multi&shy;valued. There was a time when com&shy;plex func&shy;tion theory was such a Big Deal in research mathe&shy;matics that the phrase "func&shy;tion theory" <i>meant</i> complex func&shy;tion theory and every mathe&shy;ma&shy;tician with a Ph. D. <i>knew</i> that complex functions were multi&shy;valued.
+</p>
+ <a name="partialfunction"></a>
+
+<h3>Partial function</h3>
+<p>A
+<a href="http://en.wikipedia.org/wiki/Partial_function">partial function</a>
+$f:S\to T$ is just like a function except that its input may be defined on only a subset of $S$.  For example, the function $f(x):=\frac{1}{x}$ is a partial function from the real numbers to the real numbers.</p>
+
+<p>This models the behavior of computer programs (algorithms): if you consider a program with one input and one output as a function, it may not be defined on some inputs because for them it runs forever (or gives an error message).</p>
+
+<p>In some texts in computing science and mathematical logic, a function is by
+<a href="MMVarMeanings.htm#convention">convention</a>
+a partial function, and this fact may not be mentioned explicitly, especially in research papers.</p>
+
+ <p class='smallind'>The phrases "multivalued function" and "partial function" upset some picky types who say things like, "But a multi&shy;valued func&shy;tion is not a func&shy;tion!".  A hot dog is not a dog, either. I once had a Russian teacher who was Polish and a German teacher who was Hungarian. So what? See the Hand&shy;book (click on
+<a href="/Handbook/hyperhbk.pdf">radial category</a>).
+
+
+<a name='newapp'><a name="newapproaches"></a>
+
+<h2>New approaches to functions</h2>
+
+<p>All the definitions of function given here produce
+<a href="MMMathStructure.htm">mathematical structures</a>, using the traditional way to define mathematical objects in terms of <a href="MMSets.htm">sets</a>. Such definitions have <b>disadvantages</b>.
+</p>
+
+<p>Mathematicians have <a href="MMImagesMetaphorsFunctions.htm">many ways to think about functions</a>.
+That a function is a set of ordered pairs with a certain property (functional) and possibly some ancillary ideas (domain, codomain, and others) is <i>not the way we usually think about them</i>$\ldots$<i><b>Except</b></i> when we need to reduce the thing we are studying to its <i>absolutely most abstract form</i> to make sure our proofs are correct.
+That most abstract form is what I have called the <a href="MMImagesMetaphors.htm#rigorousview">rigorous view</a> or the <a href="/Word%20Press/?p=39">dry bones</a> and it is when that reasoning is needed that the sets-with-structure approach has succeeded.
+</p>
+
+
+<p>Our practice of <a href="MMOtherAspectsUnderstanding.htm#abstraction">abstraction</a> has led us to new approaches to talking about functions. The most important one currently is <a href="http://en.wikipedia.org/wiki/Category_(mathematics)">category theory</a>.  Roughly, a category is a bunch of objects together with some arrows going between them that can be composed head to tail. Functions between sets are examples of this: the sets are the objects and the functions the arrows. But arrows in a category do not have to be functions; in that way category theory is an abstraction of functions.</p>
+
+<p>This <i><b>abstracts</b></i> the idea of function in a way that brings out common ideas in various branches of math. Research papers in many branches of mathematics now routinely use the language of category theory. Categories now appear in some undergraduate math courses, meaning that <font color="#800040"><b>Someone</b></font> needs to write a chapter on category theory for abstractmath.org.
+</p>
+
+<p>Besides category theory, computing scientists have come up with other abstract  ways of dealing with functions, for example <a href="http://en.wikipedia.org/wiki/Type_theory">type theory</a>. It has not come as far along as category theory, but has shown <a href="http://homotopytypetheory.org/">recent signs of major progress</a>.</p>
+
+
+<p>
+ Both category theory and type theory define math objects in terms of their effect on and relationship with <i>other</i> math objects. This makes it possible to do abstract math <i>entirely without using sets-with-structure as a means of defining concepts</i>.
+</p>
+
+<h2>References</h2>
+
+<ul>
+
+<li><a href="https://en.wikipedia.org/wiki/Function_(mathematics)">Functions</a> in Wikipedia.  This is an extensive and mostly well-done description of the use of functions in mathematics.</li>
+
+</ul>
+
+<br />
+
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+
+</body></html> 
+<!--
+A definition is a device for making the meaning of math technical terms precise.  When a mathematician think of "function'' they think of <i><b>many aspects of functions</b></i>, such as a map of one shape in another, a computational process, a renaming, and so on.  These ways of thinking are spelled out in the chapter
+<a href="MMImagesMetaphorsFunctions.htm">Functions: Images and Metaphors</a>. <i><b>One</b></i> of those ways of thinking is function-as-graph, and that happens to be the best way to define the concept of function, but\marginpar{In my opinion, it is not even in the top three.} that doesn't make thinking of a function-as-a-graph-with-the-functional-property the most important way of thinking about it.
+</p>
+
+ -->

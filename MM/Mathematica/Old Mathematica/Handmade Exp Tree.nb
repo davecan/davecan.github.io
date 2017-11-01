@@ -1,0 +1,1054 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     42742,       1045]
+NotebookOptionsPosition[     41332,        992]
+NotebookOutlinePosition[     41696,       1008]
+CellTagsIndexPosition[     41653,       1005]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Handmade Expression Trees", "Section",
+ CellChangeTimes->{{3.5464666744370003`*^9, 3.5464666920494003`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["x + 2 y", "Subsubtitle",
+ CellChangeTimes->{{3.5466365723491526`*^9, 3.546636579069162*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"x", "+", 
+   RowBox[{"2", "y"}]}], "//", "TreeForm"}]], "Input",
+ CellChangeTimes->{{3.5464667147942*^9, 3.5464667260418*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsComplexBox[{{0.4472135954999579, 1.7888543819998317`}, {0., 
+    0.8944271909999159}, {0.8944271909999159, 0.8944271909999159}, {
+    0.4472135954999579, 0.}, {1.3416407864998738`, 0.}}, {
+     {RGBColor[0.55, 0.45, 0.45], LineBox[{{1, 2}, {1, 3}, {3, 4}, {3, 5}}]}, {
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Plus", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 1],
+        TagBox[
+         RowBox[{"x", "+", 
+           RowBox[{"2", " ", "y"}]}], HoldForm]],
+       Annotation[#, 
+        HoldForm[$CellContext`x + 2 $CellContext`y], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["x",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 2],
+        TagBox["x", HoldForm]],
+       Annotation[#, 
+        HoldForm[$CellContext`x], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Times", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 3],
+        TagBox[
+         RowBox[{"2", " ", "y"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[2 $CellContext`y], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["2",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 4],
+        TagBox["2", HoldForm]],
+       Annotation[#, 
+        HoldForm[2], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["y",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 5],
+        TagBox["y", HoldForm]],
+       Annotation[#, 
+        HoldForm[$CellContext`y], "Tooltip"]& ]}}],
+   Annotation[#, 
+    VertexCoordinateRules -> {{0.4472135954999579, 1.7888543819998317`}, {0., 
+     0.8944271909999159}, {0.8944271909999159, 0.8944271909999159}, {
+     0.4472135954999579, 0.}, {1.3416407864998738`, 0.}}]& ],
+  AspectRatio->1,
+  FrameTicks->Automatic,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{
+  3.5464693226940002`*^9, 3.5464693865448*^9, 3.546603062196*^9, 
+   3.5466033078336*^9, 3.5466039537047997`*^9, 3.5466042876384*^9, 
+   3.546616482459777*^9, 3.5466167521993766`*^9, {3.5466181133816*^9, 
+   3.5466181366724*^9}, {3.5466182271836*^9, 3.5466182571668*^9}, 
+   3.5466182948408003`*^9, 3.5466183434348*^9, 3.5466184406384*^9, 
+   3.5466185258143997`*^9, 3.5466185848136*^9, 3.5466200117144003`*^9, 
+   3.5466200561432*^9, 3.5466201918632*^9, 3.54663433502602*^9, 
+   3.546636002738355*^9, 3.546637021509782*^9, 3.5466380238011847`*^9, 
+   3.546639265906536*^9, 3.546639345995077*^9, 3.5466873391910563`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Remove", "[", "op", "]"}]], "Input",
+ CellChangeTimes->{{3.54646863177*^9, 3.5464686342036*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"op", "[", 
+   RowBox[{"x_", ",", "loc_"}], "]"}], ":=", 
+  RowBox[{"Text", "[", 
+   RowBox[{
+    RowBox[{"Style", "[", 
+     RowBox[{"x", ",", "Bold", ",", "Large", ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Courier\>\""}]}], "]"}], ",", 
+    "loc"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.5464678357946*^9, 3.5464678969476*^9}, {
+   3.546468318756*^9, 3.5464683347148*^9}, 3.5464684095792*^9, {
+   3.5464684723536*^9, 3.5464685330376*^9}, {3.5464686513168*^9, 
+   3.5464686611292*^9}, {3.5464687543859997`*^9, 3.5464688295*^9}, {
+   3.5464694307552*^9, 3.5464694551068*^9}, {3.546620007284*^9, 
+   3.546620008766*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"op", "[", 
+  RowBox[{"\"\<x\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5464685950632*^9, 3.5464686076524*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Text", "[", 
+  RowBox[{
+   StyleBox["\<\"x\"\>",
+    StripOnInput->False,
+    FontFamily->"Courier",
+    FontSize->Large,
+    FontWeight->Bold], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "1"}], "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.5464686083856*^9, 3.5464686671352*^9}, {
+   3.5464687593311996`*^9, 3.5464687825596*^9}, 3.5464688348664*^9, 
+   3.5464693235676003`*^9, 3.5464693866696*^9, 3.5466030626952*^9, 
+   3.5466033079272003`*^9, 3.546603953814*^9, 3.5466042877632*^9, 
+   3.5466164825845766`*^9, 3.5466167523085766`*^9, {3.5466181135064*^9, 
+   3.5466181367348003`*^9}, {3.5466182272460003`*^9, 3.5466182572292*^9}, 
+   3.5466182948876*^9, 3.5466183434816*^9, 3.5466184407476*^9, 
+   3.5466185259392*^9, 3.546618584876*^9, 3.5466200117768*^9, 
+   3.5466200562056*^9, 3.54662019191*^9, 3.5466343350960207`*^9, 
+   3.546636002798355*^9, 3.5466370215797815`*^9, 3.546638023871185*^9, 
+   3.546639265953336*^9, 3.546639346057477*^9, 3.5466873392490597`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"edge", "[", 
+   RowBox[{"op1_", ",", "op2_", ",", "sf_"}], "]"}], ":=", 
+  RowBox[{"Arrow", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"op1", ",", "op2"}], "}"}], ",", 
+    RowBox[{"Scaled", "[", "sf", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.5464690251552*^9, 3.5464691032644*^9}, {
+   3.5464693719276*^9, 3.5464693750788*^9}, {3.5466168479989767`*^9, 
+   3.546616849028577*^9}, {3.5466176837888002`*^9, 3.5466177096535997`*^9}, 
+   3.5466177582944*^9, {3.546617948942*^9, 3.5466179570228*^9}, {
+   3.5466180591092*^9, 3.546618063836*^9}, {3.5466181245668*^9, 
+   3.546618129824*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"spd", "=", ".0005"}]], "Input",
+ CellChangeTimes->{{3.54661808006*^9, 3.5466180854732*^9}, {
+   3.5466181580444*^9, 3.5466181606028*^9}, 3.5466182526584*^9, 
+   3.5466200515256*^9}],
+
+Cell[BoxData["0.0005`"], "Output",
+ CellChangeTimes->{{3.5466181136312*^9, 3.5466181616948*^9}, {
+   3.5466182272771997`*^9, 3.546618257276*^9}, 3.5466182949188004`*^9, 
+   3.5466183435128*^9, 3.5466184407788*^9, 3.5466185259704*^9, 
+   3.5466185848915997`*^9, 3.5466200118236*^9, {3.5466200523212*^9, 
+   3.5466200562212*^9}, 3.5466201919568*^9, 3.5466343351260204`*^9, 
+   3.5466360028283553`*^9, 3.5466370216197815`*^9, 3.546638023911185*^9, 
+   3.546639265968936*^9, 3.5466393460886774`*^9, 3.5466873392860613`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Show", "[", "\[IndentingNewLine]", 
+   RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Arrowheads", "[", "0", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"op", "[", 
+        RowBox[{"\"\<x\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"op", "[", 
+        RowBox[{"\"\<Plus\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"op", "[", 
+        RowBox[{"\"\<2\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"op", "[", 
+        RowBox[{"\"\<y\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "0"}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"op", "[", 
+        RowBox[{"\"\<Times\>\"", ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "1"}], "}"}]}], "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"edge", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], ",", "spd"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"edge", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"2", ",", "1"}], "}"}], ",", "spd"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"edge", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"2", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "0"}], "}"}], ",", "spd"}], "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"edge", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"2", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"3", ",", "0"}], "}"}], ",", "spd"}], "]"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Background", "\[Rule]", "White"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "Small"}], ",", " ", 
+     RowBox[{"AspectRatio", "\[Rule]", 
+      RowBox[{"3", "/", "2"}]}]}], "\[IndentingNewLine]", "]"}], 
+   "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.5464669292162*^9, 3.5464672370978003`*^9}, {
+   3.5464672930861998`*^9, 3.5464673389034*^9}, {3.5464673752202*^9, 
+   3.546467375657*^9}, {3.5464674168098*^9, 3.5464674931717997`*^9}, {
+   3.5464679178828*^9, 3.5464679294424*^9}, {3.546468101682*^9, 
+   3.546468125784*^9}, {3.5464682551392*^9, 3.5464683012372*^9}, {
+   3.5464683395196*^9, 3.5464683832464*^9}, {3.54646845705*^9, 
+   3.5464684584384003`*^9}, 3.5464684943496*^9, {3.5464685477016*^9, 
+   3.5464685555172*^9}, {3.5464688508564*^9, 3.5464689634728003`*^9}, {
+   3.5464690018176003`*^9, 3.5464690021140003`*^9}, {3.546469114512*^9, 
+   3.5464691535587997`*^9}, {3.546469194618*^9, 3.5464693142855997`*^9}, 
+   3.5464693459692*^9, {3.5464694045004*^9, 3.5464694087279997`*^9}, {
+   3.5466030862356*^9, 3.5466030989184*^9}, 3.5466043752012*^9, 
+   3.5466046842060003`*^9, {3.5466180958004*^9, 3.5466181091696*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[
+  {Arrowheads[0], InsetBox[
+    StyleBox["\<\"x\"\>",
+     StripOnInput->False,
+     FontFamily->"Courier",
+     FontSize->Large,
+     FontWeight->Bold], {0, 1}], InsetBox[
+    StyleBox["\<\"Plus\"\>",
+     StripOnInput->False,
+     FontFamily->"Courier",
+     FontSize->Large,
+     FontWeight->Bold], {1, 2}], InsetBox[
+    StyleBox["\<\"2\"\>",
+     StripOnInput->False,
+     FontFamily->"Courier",
+     FontSize->Large,
+     FontWeight->Bold], {1, 0}], InsetBox[
+    StyleBox["\<\"y\"\>",
+     StripOnInput->False,
+     FontFamily->"Courier",
+     FontSize->Large,
+     FontWeight->Bold], {3, 0}], InsetBox[
+    StyleBox["\<\"Times\"\>",
+     StripOnInput->False,
+     FontFamily->"Courier",
+     FontSize->Large,
+     FontWeight->Bold], {2, 1}], ArrowBox[{{1, 2}, {0, 1}}, Scaled[0.0005]], 
+   ArrowBox[{{1, 2}, {2, 1}}, Scaled[0.0005]], 
+   ArrowBox[{{2, 1}, {1, 0}}, Scaled[0.0005]], 
+   ArrowBox[{{2, 1}, {3, 0}}, Scaled[0.0005]]},
+  AspectRatio->NCache[
+    Rational[3, 2], 1.5],
+  Background->GrayLevel[1],
+  ImageSize->Small]], "Output",
+ CellChangeTimes->{{3.5464693236144*^9, 3.5464693467492*^9}, {
+   3.5464693867320004`*^9, 3.5464694583672*^9}, {3.546603062742*^9, 
+   3.54660309948*^9}, 3.546603307974*^9, 3.5466039538764*^9, 
+   3.5466042878255997`*^9, 3.54660438141*^9, {3.5466046770924*^9, 
+   3.5466046854228*^9}, 3.5466164826313763`*^9, 3.5466167523553762`*^9, {
+   3.5466177133976*^9, 3.5466177612584*^9}, {3.546618113678*^9, 
+   3.5466181639723997`*^9}, {3.546618227324*^9, 3.5466182573227997`*^9}, 
+   3.5466182949656*^9, 3.5466183435752*^9, 3.5466184408412*^9, 
+   3.5466185260172*^9, 3.5466185849384003`*^9, 3.5466200118704*^9, 
+   3.5466200562679996`*^9, 3.546620191988*^9, 3.546634335156021*^9, 
+   3.5466360028483553`*^9, 3.546637021639782*^9, 3.546638023931185*^9, 
+   3.546639266000136*^9, 3.546639346104277*^9, 3.546687339310063*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"jump", "=", "1"}], ";", " ", 
+  RowBox[{"mid", "=", "1.5"}], ";"}]], "Input",
+ CellChangeTimes->{{3.546606000552*^9, 3.5466060157932*^9}, {
+   3.5466060609708*^9, 3.5466060689892*^9}, 3.5466061219824*^9, {
+   3.5466061811532*^9, 3.5466061818396*^9}, {3.5466174845924*^9, 
+   3.5466174849356003`*^9}, 3.5466194455592003`*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.5466163178485765`*^9, 3.5466164387641764`*^9}, 
+   3.5466165243145766`*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"jump", "=", "1"}], ";", " ", 
+    RowBox[{"mid", "=", "1.5"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"xloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "-", 
+        RowBox[{"1.5", " ", "jump"}]}], ",", 
+       RowBox[{"2", "-", "d"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"plusloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "-", 
+        RowBox[{".5", "jump"}], "-", 
+        RowBox[{".5", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}]}]}], " ", ",", "2"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"twoloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "-", 
+        RowBox[{".5", " ", "jump"}], "-", 
+        RowBox[{".05", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}]}]}], ",", 
+       RowBox[{"2", "-", 
+        RowBox[{"2", "d"}]}]}], "}"}]}], ";", 
+    RowBox[{"timesloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "+", 
+        RowBox[{".5", "jump"}], "-", 
+        RowBox[{".7", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}]}]}], ",", 
+       RowBox[{"2", "-", "d"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"yloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "+", 
+        RowBox[{"1.5", "jump"}], "-", 
+        RowBox[{"1.3", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}]}]}], ",", 
+       RowBox[{"2", "-", 
+        RowBox[{"2", "d"}]}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"spc", "=", 
+     RowBox[{".0007", " ", "+", 
+      RowBox[{".0006", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "d"}], ")"}]}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Show", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Arrowheads", "[", "0", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<x\>\"", ",", "xloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<+\>\"", ",", "plusloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<2\>\"", ",", "twoloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<*\>\"", ",", "timesloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<y\>\"", ",", "yloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"plusloc", ",", "xloc", ",", "spc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"plusloc", ",", "timesloc", ",", 
+            RowBox[{"spc", "+", 
+             RowBox[{".0002", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", "d"}], ")"}]}]}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"timesloc", ",", "twoloc", ",", "spc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"timesloc", ",", "yloc", ",", "spc"}], "]"}]}], 
+         "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Background", "\[Rule]", "White"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Small"}], ",", " ", 
+        RowBox[{"AspectRatio", "\[Rule]", "2"}]}], "\[IndentingNewLine]", 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", ".2"}], ",", "3.2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", ".2"}], ",", "2.2"}], "}"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"d", ",", "0", ",", "1"}], "}"}], ",", " ", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.546603165546*^9, 3.5466032938403997`*^9}, {
+   3.5466033239639997`*^9, 3.5466033261792*^9}, {3.5466033621216*^9, 
+   3.5466035083872004`*^9}, {3.5466035726436*^9, 3.5466035809116*^9}, {
+   3.5466037294236*^9, 3.5466038046312*^9}, {3.5466038448636*^9, 
+   3.546603847032*^9}, {3.5466039292128*^9, 3.5466039314124002`*^9}, {
+   3.546604161216*^9, 3.5466041746788*^9}, {3.5466042085464*^9, 
+   3.546604209264*^9}, {3.5466045272232*^9, 3.5466045602796*^9}, {
+   3.5466046088424*^9, 3.546604650042*^9}, {3.5466048293640003`*^9, 
+   3.5466048469764*^9}, {3.5466049649748*^9, 3.546604973274*^9}, {
+   3.5466050373744*^9, 3.5466050429435997`*^9}, 3.5466051634068003`*^9, {
+   3.5466053721972*^9, 3.546605423646*^9}, {3.5466055969308*^9, 
+   3.546605624262*^9}, {3.5466057444468*^9, 3.5466057769884*^9}, {
+   3.54660581265*^9, 3.5466059152511997`*^9}, {3.5466060347316*^9, 
+   3.5466060403788*^9}, {3.5466060757752*^9, 3.546606096648*^9}, {
+   3.5466061606548*^9, 3.5466062262684*^9}, {3.5466062581703997`*^9, 
+   3.5466062582328*^9}, {3.5466063220836*^9, 3.5466063381672*^9}, {
+   3.5466064046544*^9, 3.5466064222511997`*^9}, {3.5466064784424*^9, 
+   3.5466064785048*^9}, 3.5466065742888002`*^9, {3.5466164456281767`*^9, 
+   3.546616476640977*^9}, {3.5466165322081766`*^9, 3.546616687724577*^9}, {
+   3.5466167956765766`*^9, 3.5466168144589767`*^9}, {3.5466174579788*^9, 
+   3.5466174623*^9}, {3.5466175393016*^9, 3.5466175571636*^9}, {
+   3.5466176105467997`*^9, 3.5466176355848*^9}, {3.5466181827860003`*^9, 
+   3.5466182202104*^9}, {3.546618287852*^9, 3.5466182918143997`*^9}, {
+   3.5466183356036*^9, 3.5466183450104*^9}, {3.5466184236188*^9, 
+   3.5466184355684*^9}, {3.5466185795252*^9, 3.5466186120512*^9}, {
+   3.5466187662416*^9, 3.546618819578*^9}, {3.5466188822432003`*^9, 
+   3.5466188831636*^9}, {3.546618977216*^9, 3.5466190006628*^9}, {
+   3.5466191140123997`*^9, 3.5466191213444*^9}, {3.5466191867396*^9, 
+   3.5466192014972*^9}, {3.5466192512144003`*^9, 3.546619341476*^9}, {
+   3.5466194643884*^9, 3.546619486322*^9}, 3.54661962641*^9, {
+   3.5466197236916*^9, 3.5466197528636*^9}, {3.5466198496772003`*^9, 
+   3.5466198776948*^9}, {3.5466199171940002`*^9, 3.5466199772228003`*^9}, {
+   3.5466201268424*^9, 3.5466201500708*^9}, 3.5466201831272*^9, 
+   3.546634323266004*^9, {3.546634393986103*^9, 3.5466343991561103`*^9}, {
+   3.546634462486199*^9, 3.546634467646206*^9}, {3.5466345607263365`*^9, 
+   3.546634564976342*^9}, {3.5466346123364086`*^9, 3.546634633236438*^9}, {
+   3.546634690486518*^9, 3.5466346921365204`*^9}, {3.5466347258965673`*^9, 
+   3.546634737996585*^9}, {3.5466347851566505`*^9, 3.5466348252567067`*^9}, {
+   3.5466348784567814`*^9, 3.5466349515768833`*^9}, {3.54663498474693*^9, 
+   3.5466349849369307`*^9}, {3.546635029876993*^9, 3.5466350809970646`*^9}, {
+   3.546635114117111*^9, 3.5466351527071652`*^9}, {3.546635187997215*^9, 
+   3.5466352126972494`*^9}, 3.5466352793173423`*^9, {3.546635328987412*^9, 
+   3.5466353472874374`*^9}, {3.5466354897776375`*^9, 
+   3.5466355263176885`*^9}, {3.5466356406978483`*^9, 3.546635680487904*^9}, {
+   3.546635731757976*^9, 3.546635737027983*^9}, 3.546636361188857*^9, {
+   3.5466392785893583`*^9, 3.546639283674967*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`d$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`d$$], 0, 1}}, Typeset`size$$ = {135., {131., 139.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`d$591$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`d$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`d$$, $CellContext`d$591$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`jump = 1; $CellContext`mid = 
+        1.5; $CellContext`xloc = {$CellContext`mid - 1.5 $CellContext`jump, 
+          2 - $CellContext`d$$}; $CellContext`plusloc = {$CellContext`mid - 
+          0.5 $CellContext`jump - 0.5 (1 - $CellContext`d$$), 
+          2}; $CellContext`twoloc = {$CellContext`mid - 0.5 $CellContext`jump - 
+          0.05 (1 - $CellContext`d$$), 2 - 
+          2 $CellContext`d$$}; $CellContext`timesloc = {$CellContext`mid + 
+          0.5 $CellContext`jump - 0.7 (1 - $CellContext`d$$), 
+          2 - $CellContext`d$$}; $CellContext`yloc = {$CellContext`mid + 
+          1.5 $CellContext`jump - 1.3 (1 - $CellContext`d$$), 2 - 
+          2 $CellContext`d$$}; $CellContext`spc = 
+        0.0007 + 0.0006 (1 - $CellContext`d$$); Show[
+         Graphics[{
+           Arrowheads[0], 
+           $CellContext`op["x", $CellContext`xloc], 
+           $CellContext`op["+", $CellContext`plusloc], 
+           $CellContext`op["2", $CellContext`twoloc], 
+           $CellContext`op["*", $CellContext`timesloc], 
+           $CellContext`op["y", $CellContext`yloc], 
+           $CellContext`edge[$CellContext`plusloc, $CellContext`xloc, \
+$CellContext`spc], 
+           $CellContext`edge[$CellContext`plusloc, $CellContext`timesloc, \
+$CellContext`spc + 0.0002 (1 - $CellContext`d$$)], 
+           $CellContext`edge[$CellContext`timesloc, $CellContext`twoloc, \
+$CellContext`spc], 
+           $CellContext`edge[$CellContext`timesloc, $CellContext`yloc, \
+$CellContext`spc]}, Background -> White, ImageSize -> Small, AspectRatio -> 
+          2], PlotRange -> {{-0.2, 3.2}, {-0.2, 2.2}}]), 
+      "Specifications" :> {{$CellContext`d$$, 0, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{319., {187., 194.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`jump = 1, $CellContext`mid = 
+       1.5, $CellContext`op[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`loc, 
+          Blank[]]] := Text[
+         Style[$CellContext`x, Bold, Large, FontFamily -> 
+          "Courier"], $CellContext`loc], $CellContext`edge[
+         Pattern[$CellContext`op1, 
+          Blank[]], 
+         Pattern[$CellContext`op2, 
+          Blank[]], 
+         Pattern[$CellContext`sf, 
+          Blank[]]] := Arrow[{$CellContext`op1, $CellContext`op2}, 
+         Scaled[$CellContext`sf]]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.5466193137392*^9, 3.5466193499624*^9}, {
+   3.5466194490536003`*^9, 3.546619487024*^9}, 3.5466195696104*^9, 
+   3.5466196282976*^9, {3.546619726406*^9, 3.5466197538152*^9}, 
+   3.5466198789428*^9, {3.546619926866*^9, 3.5466199782056*^9}, 
+   3.5466200119172*^9, 3.5466200563148003`*^9, 3.5466201920504*^9, 
+   3.546634336816023*^9, 3.546634400486112*^9, 3.546634468796208*^9, 
+   3.5466345662963448`*^9, {3.546634616206414*^9, 3.5466346341764393`*^9}, 
+   3.5466346945665236`*^9, 3.5466347394065866`*^9, {3.546634792576661*^9, 
+   3.5466348266167088`*^9}, {3.5466348863367925`*^9, 3.5466349523868847`*^9}, 
+   3.5466349871369333`*^9, {3.546635031416995*^9, 3.5466350818770657`*^9}, {
+   3.5466351145371118`*^9, 3.5466351532471657`*^9}, {3.546635194287224*^9, 
+   3.546635214067251*^9}, 3.546635281077345*^9, {3.546635331717416*^9, 
+   3.5466353483374395`*^9}, {3.546635498247649*^9, 3.546635526867689*^9}, {
+   3.5466356418678503`*^9, 3.546635681757906*^9}, {3.5466357322179766`*^9, 
+   3.546635737517984*^9}, 3.546636003468356*^9, 3.546637021689782*^9, 
+   3.5466380244911857`*^9, {3.546639266031336*^9, 3.5466392873253736`*^9}, 
+   3.5466393461510773`*^9, 3.5466873406141376`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["(x + 2) y", "Subsubtitle",
+ CellChangeTimes->{{3.5466366097092047`*^9, 3.5466366381892447`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"x", "+", "2"}], ")"}], "y"}], "//", "TreeForm"}]], "Input",
+ CellChangeTimes->{{3.54663604171841*^9, 3.546636047718418*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[
+  TagBox[GraphicsComplexBox[{{0.8944271909999159, 1.7888543819998317`}, {
+    0.4472135954999579, 0.8944271909999159}, {0., 0.}, {0.8944271909999159, 
+    0.}, {1.3416407864998738`, 0.8944271909999159}}, {
+     {RGBColor[0.55, 0.45, 0.45], LineBox[{{1, 2}, {1, 5}, {2, 3}, {2, 4}}]}, {
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Times", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 1],
+        TagBox[
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"2", "+", "x"}], ")"}], " ", "y"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[(2 + $CellContext`x) $CellContext`y], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox["Plus", "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 2],
+        TagBox[
+         RowBox[{"2", "+", "x"}], HoldForm]],
+       Annotation[#, 
+        HoldForm[2 + $CellContext`x], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["2",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 3],
+        TagBox["2", HoldForm]],
+       Annotation[#, 
+        HoldForm[2], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["x",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 4],
+        TagBox["x", HoldForm]],
+       Annotation[#, 
+        HoldForm[$CellContext`x], "Tooltip"]& ], 
+      TagBox[
+       TooltipBox[InsetBox[
+         FrameBox[
+          StyleBox[
+           TagBox["y",
+            HoldForm], "StandardForm", "Output",
+           StripOnInput->False,
+           LineColor->GrayLevel[0],
+           FrontFaceColor->GrayLevel[0],
+           BackFaceColor->GrayLevel[0],
+           GraphicsColor->GrayLevel[0],
+           FontSize->Scaled[0.05],
+           FontColor->GrayLevel[0]],
+          Background->RGBColor[1., 1., 0.871],
+          FrameStyle->GrayLevel[0.5],
+          StripOnInput->False], 5],
+        TagBox["y", HoldForm]],
+       Annotation[#, 
+        HoldForm[$CellContext`y], "Tooltip"]& ]}}],
+   Annotation[#, 
+    VertexCoordinateRules -> {{0.8944271909999159, 1.7888543819998317`}, {
+     0.4472135954999579, 0.8944271909999159}, {0., 0.}, {0.8944271909999159, 
+     0.}, {1.3416407864998738`, 0.8944271909999159}}]& ],
+  AspectRatio->NCache[Rational[6, 5]^Rational[1, 2], 1.0954451150103321`],
+  FrameTicks->Automatic,
+  PlotRange->All,
+  PlotRangePadding->Scaled[0.1]]], "Output",
+ CellChangeTimes->{3.5466360498984213`*^9, 3.546637021719782*^9, 
+  3.546638024571186*^9, 3.546639266078136*^9, 3.546639346213477*^9, 
+  3.546687340780147*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"jump", "=", "1"}], ";", " ", 
+    RowBox[{"mid", "=", "2.0"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"lploc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "-", 
+        RowBox[{"1.5", "jump"}], "-", ".4"}], ",", "2"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"rploc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "-", 
+        RowBox[{".5", " ", "jump"}], "+", ".4"}], ",", "2"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"xloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "-", 
+        RowBox[{"1.5", " ", "jump"}]}], ",", 
+       RowBox[{"2", "-", 
+        RowBox[{"2", "d"}]}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"plusloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "-", 
+        RowBox[{".5", "jump"}], "-", 
+        RowBox[{".5", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}]}]}], " ", ",", 
+       RowBox[{"2", "-", "d"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"twoloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "+", 
+        RowBox[{".5", " ", "jump"}], "-", 
+        RowBox[{"(", 
+         RowBox[{"1", "-", "d"}], ")"}]}], ",", 
+       RowBox[{"2", "-", 
+        RowBox[{"2", "d"}]}]}], "}"}]}], ";", 
+    RowBox[{"timesloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "+", 
+        RowBox[{".9", "jump"}], "-", 
+        RowBox[{".7", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}]}]}], ",", "2"}], "}"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"yloc", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"mid", "+", 
+        RowBox[{"2", "jump"}], "-", 
+        RowBox[{"1.3", 
+         RowBox[{"(", 
+          RowBox[{"1", "-", "d"}], ")"}]}]}], ",", 
+       RowBox[{"2", "-", "d"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"spc", "=", 
+     RowBox[{".0007", " ", "+", 
+      RowBox[{".0006", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", "d"}], ")"}]}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"Show", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"Arrowheads", "[", "0", "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"GrayLevel", "[", 
+           RowBox[{"Min", "[", 
+            RowBox[{"1", ",", 
+             RowBox[{"3", "d"}]}], "]"}], "]"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<(\>\"", ",", "lploc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<)\>\"", ",", "rploc"}], "]"}], ",", 
+          "\[IndentingNewLine]", "Black", ",", "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<x\>\"", ",", "xloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<+\>\"", ",", "plusloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<2\>\"", ",", "twoloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<*\>\"", ",", "timesloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"op", "[", 
+           RowBox[{"\"\<y\>\"", ",", "yloc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"plusloc", ",", "xloc", ",", 
+            RowBox[{"spc", "+", 
+             RowBox[{".0004", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", "d"}], ")"}]}]}]}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"plusloc", ",", "twoloc", ",", "spc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"timesloc", ",", "yloc", ",", "spc"}], "]"}], ",", 
+          "\[IndentingNewLine]", 
+          RowBox[{"edge", "[", 
+           RowBox[{"timesloc", ",", "plusloc", ",", 
+            RowBox[{"spc", "+", 
+             RowBox[{".0008", 
+              RowBox[{"(", 
+               RowBox[{"1", "-", "d"}], ")"}]}]}]}], "]"}]}], 
+         "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Background", "\[Rule]", "White"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "Small"}], ",", " ", 
+        RowBox[{"AspectRatio", "\[Rule]", "2"}]}], "\[IndentingNewLine]", 
+       "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"PlotRange", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", ".2"}], ",", "4.2"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", ".2"}], ",", "2.2"}], "}"}]}], "}"}]}]}], 
+     "\[IndentingNewLine]", "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"d", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.546636089708477*^9, 3.5466361145385118`*^9}, {
+   3.5466361579185724`*^9, 3.546636160258576*^9}, 3.546636241248689*^9, {
+   3.5466362806087446`*^9, 3.5466363062287803`*^9}, {3.5466363733988743`*^9, 
+   3.546636416218934*^9}, {3.5466364897790375`*^9, 3.5466365199390793`*^9}, {
+   3.54663667032929*^9, 3.5466366792093024`*^9}, {3.5466367142593517`*^9, 
+   3.5466368815095854`*^9}, {3.5466369649997025`*^9, 
+   3.5466369949097443`*^9}, {3.5466370331097975`*^9, 
+   3.5466370635198402`*^9}, {3.5466371049098983`*^9, 3.546637160459976*^9}, {
+   3.546637199880031*^9, 3.546637222430063*^9}, {3.5466372585801134`*^9, 
+   3.5466373815902853`*^9}, {3.5466374321603565`*^9, 3.5466374510503826`*^9}, 
+   3.5466375000704517`*^9, {3.5466375900205774`*^9, 3.546637610330606*^9}, {
+   3.5466376404106483`*^9, 3.5466376556606693`*^9}, {3.546637708270743*^9, 
+   3.5466379450410748`*^9}, {3.5466874506594315`*^9, 3.5466874567257786`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`d$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`d$$], 0, 1}}, Typeset`size$$ = {135., {131., 139.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`d$661$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`d$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`d$$, $CellContext`d$661$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`jump = 1; $CellContext`mid = 
+        2.; $CellContext`lploc = {$CellContext`mid - 1.5 $CellContext`jump - 
+          0.4, 2}; $CellContext`rploc = {$CellContext`mid - 
+          0.5 $CellContext`jump + 0.4, 
+          2}; $CellContext`xloc = {$CellContext`mid - 1.5 $CellContext`jump, 
+          2 - 2 $CellContext`d$$}; $CellContext`plusloc = {$CellContext`mid - 
+          0.5 $CellContext`jump - 0.5 (1 - $CellContext`d$$), 
+          2 - $CellContext`d$$}; $CellContext`twoloc = {$CellContext`mid + 
+          0.5 $CellContext`jump - (1 - $CellContext`d$$), 2 - 
+          2 $CellContext`d$$}; $CellContext`timesloc = {$CellContext`mid + 
+          0.9 $CellContext`jump - 0.7 (1 - $CellContext`d$$), 
+          2}; $CellContext`yloc = {$CellContext`mid + 2 $CellContext`jump - 
+          1.3 (1 - $CellContext`d$$), 2 - $CellContext`d$$}; $CellContext`spc = 
+        0.0007 + 0.0006 (1 - $CellContext`d$$); Show[
+         Graphics[{
+           Arrowheads[0], 
+           GrayLevel[
+            Min[1, 3 $CellContext`d$$]], 
+           $CellContext`op["(", $CellContext`lploc], 
+           $CellContext`op[")", $CellContext`rploc], Black, 
+           $CellContext`op["x", $CellContext`xloc], 
+           $CellContext`op["+", $CellContext`plusloc], 
+           $CellContext`op["2", $CellContext`twoloc], 
+           $CellContext`op["*", $CellContext`timesloc], 
+           $CellContext`op["y", $CellContext`yloc], 
+           $CellContext`edge[$CellContext`plusloc, $CellContext`xloc, \
+$CellContext`spc + 0.0004 (1 - $CellContext`d$$)], 
+           $CellContext`edge[$CellContext`plusloc, $CellContext`twoloc, \
+$CellContext`spc], 
+           $CellContext`edge[$CellContext`timesloc, $CellContext`yloc, \
+$CellContext`spc], 
+           $CellContext`edge[$CellContext`timesloc, $CellContext`plusloc, \
+$CellContext`spc + 0.0008 (1 - $CellContext`d$$)]}, Background -> White, 
+          ImageSize -> Small, AspectRatio -> 2], 
+         PlotRange -> {{-0.2, 4.2}, {-0.2, 2.2}}]), 
+      "Specifications" :> {{$CellContext`d$$, 0, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{319., {187., 194.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.5466372729001336`*^9, 3.5466373169901953`*^9}, 
+   3.546637382420287*^9, {3.546637440240368*^9, 3.5466374521903844`*^9}, 
+   3.5466376132506104`*^9, {3.546637643920653*^9, 3.546637657110671*^9}, {
+   3.546637737630784*^9, 3.546637813710891*^9}, {3.5466378522009444`*^9, 
+   3.5466378906809983`*^9}, 3.546637945601075*^9, 3.546638024591186*^9, 
+   3.546639266109336*^9, 3.5466393462290773`*^9, 3.546687340802148*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{681, 640},
+WindowMargins->{{443, Automatic}, {Automatic, 0}},
+Magnification->1.25,
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 114, 1, 88, "Section"],
+Cell[CellGroupData[{
+Cell[696, 25, 98, 1, 35, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[819, 30, 161, 4, 35, "Input"],
+Cell[983, 36, 4509, 117, 485, "Output"]
+}, Open  ]],
+Cell[5507, 156, 120, 2, 35, "Input"],
+Cell[5630, 160, 664, 15, 58, "Input"],
+Cell[CellGroupData[{
+Cell[6319, 179, 197, 5, 35, "Input"],
+Cell[6519, 186, 999, 20, 40, "Output"]
+}, Open  ]],
+Cell[7533, 209, 635, 14, 35, "Input"],
+Cell[CellGroupData[{
+Cell[8193, 227, 205, 4, 35, "Input"],
+Cell[8401, 233, 519, 7, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8957, 245, 3279, 74, 410, "Input"],
+Cell[12239, 321, 1892, 46, 288, "Output"]
+}, Open  ]],
+Cell[14146, 370, 359, 7, 35, "Input"],
+Cell[14508, 379, 124, 2, 35, "Input"],
+Cell[CellGroupData[{
+Cell[14657, 385, 7365, 156, 608, "Input"],
+Cell[22025, 543, 4853, 90, 401, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26927, 639, 102, 1, 35, "Subsubtitle"],
+Cell[CellGroupData[{
+Cell[27054, 644, 189, 5, 35, "Input"],
+Cell[27246, 651, 4123, 111, 528, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31406, 767, 6042, 148, 740, "Input"],
+Cell[37451, 917, 3853, 71, 401, "Output"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

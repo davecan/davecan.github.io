@@ -1,0 +1,284 @@
+
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css" href="mm2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>MATHEMATICAL REASONING</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>      Revised 2015-12-03
+<a href="MMIntro.htm">Introduction to this website</a>     <a href="MMTOC.htm">website TOC </a>    
+<a href="MMIndex.htm">website index </a>   <a href="/Word%20Press/">blog</a>
+</pre>
+
+<table align=right cellpadding=0
+style='border:none;'>
+<tr style='border:none;'>
+<td valign=top style='width:140.0pt;border:none;'>
+<p class="toc">
+<span class="red">CONTENTS</span>
+</p>
+<p class="toc">
+<a href="#logicalconstruction">Logical constructions</a>
+</p>
+<p class="toc"><a href="#methodsofdeduction">
+Methods of deduction</a>
+</p>
+<p class="toc"><a href="#translationproblem">
+Translation problem</a>
+</p><p class="toc"><a href="#mathlogic">
+Mathematical logic</a>
+</p><p class="toc"><a href="#logicalsymbols">
+Logical symbols</a>
+</p>
+</p></td></tr></table>
+
+<h1>MATHEMATICAL REASONING</h1>
+<p class=blue>This chapter covers:</p>
+<ul class=blue>
+<li class=blue>The major types of logical constructions used in mathematical assertions.</li>
+<li class=blue>The ways they are expressed in <a href="MMMathEnglish.htm#statement">mathematical English</a> and in the <a href="MMSymLang.htm">symbolic language.</a></li>
+<li class=blue>The <a href="MMMathReasoning.htm#methodofdeduction">methods of deduction</a> that may be used with each type of logical construction.</li>
+</ul>
+
+<a name="logicalconstruction"></a>
+<h2>Logical Constructions</h2>
+
+<p>A <b>logical construction</b> is a way of making a compound <a href="MMVarMeanings.htm#convention">assertion</a> whose truth depends only on the truth value of the assertion(s) it is constructed from. In discussing logical assertions, I use letters such as "$P$" and "$Q$" to stand for an assertion, which may be stated in math English or in the symbolic language.</p>
+
+<h3>Easy Examples</h3>
+
+<ul>
+<li>The assertion “$P$ and $Q$”  is a logical construction.  It claims that both assertions are true.</li>
+
+<li>The assertion “$P$ or $Q$” claims that <i>at least one of them</i> is true.</li>
+</ul>
+
+<p>You can determine the truth of these two compound assertions provided you know the truth of $P$ and of $Q$. You don’t need to know anything else about $P$ and $Q$ except their truth values to determine the meaning of “$P$ and $Q$” and “$P$ or $Q$.”</p>
+
+
+
+<a name="truthtable"></a>
+
+<h3>Truth tables</h3>
+
+<center><p>
+<table style="display: inline-block;" padding:10px>
+  <tr><!-- Row 1 -->
+     <td width="20px">$P$</td><!-- Col 1 -->
+     <td width="20px">$Q$</td><!-- Col 2 -->
+     <td width="90px"  align="center">$P$ and $Q$</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td>T</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td>T</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td>F</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td>F</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+</table>
+<font color="#FFFFFF">xxxxxxxxx</font>
+
+<table style="display: inline-block;" padding:10px>
+  <tr><!-- Row 1 -->
+     <td width="20px">$P$</td><!-- Col 1 -->
+     <td width="20px">$Q$</td><!-- Col 2 -->
+     <td width="80px"  align="center">$P$ or $Q$</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td>T</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td>T</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td>F</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td>F</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+</table>
+</p>
+</center>
+
+<p>The truth values for a logical construction are given unambiguously by <b>truth tables</b>, one for each connective such as “and” and “or”.  For example, from the tables shown here you can see immediately that if $P$ is true and $Q$ is false, then “$P$ and $Q$” is false but “$P$ or $Q$” is true.
+</p>
+
+
+<p class=purpleprose>The truth value of a logical construction involving assertions P and Q is determined ENTIRELY by the truth table for the connective and the truth values of P and Q.</p>
+
+<p><i>The truth tables completely control the meaning. </i> The meaning and connotation of the English words describing the connectives (“and” and “or” in the example above) do not affect the truth of the construction.  They usually <i>suggest</i> the truth but can be misleading.  This is one aspect of the <a href="MMMathReasoning.htm#translationproblem">translation problem</a>.</p>
+
+<p>The important logical constructions used in mathematical proofs are covered in these chapters:</p>
+
+<ul>
+
+<li><a href="MMAndOrNot.htm">And, or, not.</a></li>
+
+<li><a href="MMConditional.htm">Conditional assertions.</a></li>
+
+<li><a href="MMUnivTrue.htm">Universally true assertions.</a></li>
+
+<li><a href="MMExistenceStatements.htm">Existence statements.</a></li>
+
+<li><a href="MMFormsProof.htm">Forms of proof.</a></li>
+
+</ul>
+<a name="methodsofdeduction"></a>
+<h2>Methods of Deduction</h2>
+<p>If you know that the assertion “$P$ and $Q$”  is true, then you know just from the form of the assertion  that $P$ is true.  For example, the assertion “$7$ is odd and $7$ is prime” is true, so you can deduce that the assertion “$7$ is odd” is true.  This is an example of a <b>method of deduction</b>.  Many methods of deduction, but not all, are as trivial and as obvious as this one.</p>
+
+
+<p>Each part of the discussion of math reasoning on this website describes a type of logical construction and gives the methods of deduction appropriate for that type of logical construction.</p>
+
+<p class=purpleprose>Every proof step must deduce an assertion from previously proved assertions<br /> using a valid method of deduction.</p> 
+
+<p>Methods of deduction are not usually mentioned in proofs. They are used silently.</p>
+
+<p>The chapters <a href="MMProofPresentation.htm">Presentation of proofs</a> and <a href="MMFormsProof.htm">Forms of proof</a> describe how proofs are written and some of the problems people new to math have in reading proofs.</p>
+
+<a name="translationproblem"></a>
+<h2>Translation problem</h2>
+<p>The translation problem is the task of extracting the mathematical and logical structure hidden in <a href="MMMathEnglish.htm">mathematical prose.</a>  You have to <i>learn to read and understand math prose;</i> it does not come automatically.  </p>
+
+<ul>
+
+<li><b>Symbolic expressions:</b> A function may be defined by a complicated formula.  To <b>unpack</b> such a formula means investigating it piece by piece, or chunk by chunk. <a href="MMUsefulBehaviors.htm#zoomchunk">Zooming and Chunking</a> has an example.  
+</li>
+
+<li><b>Word problems: </b> To “translate a word problem into math” is to find the equation(s) (or other <a href="MMPatternRecognition.htm">symbolic assertions</a>) that contain the information in a word problem, with the intent of solving them.  <i>Finding</i> the equations may be easy or hard and <i>solving</i> them may be independently easy or hard.</li>
+
+
+<li><b>Proofs:</b>  Finding the logical structure of a proof given in <a href="MMProofPresentation.htm#narrativeform">narrative format</a> is an instance of the translation problem.  See in particular the <a href="MMFormsProof.htm#contrapositivemethod">contrapositive method</a> and <a href="MMFormsProof.htm#proofbycontradiction">proof by contradiction.</a></li>
+
+<li><b>Definitions:</b>  Unpacking a definition is a form of translation.  See <a href="MMUsefulBehaviors.htm#rewritebydefinition">Rewriting according to the definition.</a></li>
+
+</ul>
+
+<p>
+Besides the links given above, the translation problem is discussed for particular constructions under <a href="MMAndOrNot.htm">and, or and not,</a> <a href="MMUnivTrue.htm#universalworded">universal assertions</a> and <a href="MMConditional.htm#howword">conditional assertions.</a></p>
+
+<a name="mathlogic"></a>
+
+<h2>Mathematical Logic</h2>
+
+<p>Mathematical logic, especially <a href="http://en.wikipedia.org/wiki/Proof_theory"><b>proof theory,</b></a> is a branch of mathematics that uses mathematical structures to model mathematical statements and proofs.  Doing this requires:</p>
+
+<ul>
+
+<li>Defining a <a href="http://en.wikipedia.org/wiki/Formal_language"><b>formal language</b></a> for mathematical statements, using logical symbols.</li>
+
+<li>Giving a strict mathematical definition of "theorem","proof" and related ideas.</li></ul>
+
+<p>Essentially, proof theory turns theorems and proofs into <a href="MMMathObj.htm">mathematical objects.</a></p>
+
+
+
+ <p>Mathematical logic is quite technical but very powerful. It has put mathematical reasoning on a sound scientific basis. It makes logic a part of math. <span class=purple>The description of proofs given on this website is <i>informal</i> and does not include all the technicalities necessary to make logic a part of math.</span></p>
+
+<a name="logicalsymbols"></a>
+<h2>Logical symbols</h2>
+
+<p class=smallind>When logic is discussed in textbooks, symbols are used to name the various connectives.  This is essential for the same reason that we use symbols such as "$+$" and "$\times$" in algebra.  But there is no standardization for these symbols in logic, and for introductory purposes like this chapter I avoid using them because they introduce an extra burden that for the simple examples we use is not worth the effort of learning.</p>
+
+<p>In mathematical logic, assertions, connectives, quantifiers and rules of deduction are typically represented using <b>symbols,</b> and the symbolic system developed this way is studied as a mathematical object.</p>
+
+<h3>Examples</h3>
+
+<p>Assertions may be represented by symbols such as $P$ and $Q$.  For example, $P$ might stand for $3\gt 2$, a true statement, or $3\lt 2$, a false statement.
+Assertions containing a variable $x$ might be represented by expressions such as $P(x)$ and $Q(x).$    This is analogous to the way we refer to a function as $f(x)$.</p>   
+
+<p>Then <b>compound expressions</b> built up out of these may be represented in one of the ways below. Note that there is not much standardization of the symbols used to denote logical constructions. That  is one reason I mostly don't use the symbols in abstractmath.org.  </p>
+
+<p class=smallind>In my career, in courses I have taken or have taught, I have used every one of these symbols except the horseshoe ($P\supset Q$).</p>
+
+<ul>
+
+<li> $\neg P$ or $\,{\thicksim} P$ or $!P$ or $\bar{P}$ means that $P$ is false. </li>
+
+ <li>$P\lor Q$ or $P||Q$ or $P+Q$ means “$P$ <b>or</b> $Q$”.</li>
+ 
+ <li>$P\land Q$  or $P\,\&\, Q$ or $P\,\&\&\, Q$ or $PQ$ means “$P$ <b>and</b> $Q$”.</li>
+ 
+<li> $P\rightarrow Q$ or $P\Rightarrow Q$ or $P\supset Q$ is pronounced "$P$ implies $Q$". It means “If $P$, then $Q$”. See <a href="MMConditional.htm#contrapositive">Conditional assertions</a> for examples and other ways of saying it.  <span class=purple>This logical construction makes more trouble for students than all the other logical constructions put together.</span></li>
+
+<li>$\forall(x)P(x)$ or $\forall_x P(x)$ or $(x)P(x)$ or $\Pi_{x}P(x)$ is pronounced “for all $x$, $P(x)$” and it means that $P(x)$ is true for all values of the variable $x$.  For example, for real numbers $x$,  $\forall(x)(x=x)$ is true, and $\forall(x)(|x|\gt0)$ is false (because of one exception, $x=0$). The symbol "$\forall$" is called the <b>universal quantifier.</b> See <a href="MMUnivTrue.htm">Universally true assertions.</a></li>
+
+<li>  $\exists(x)P(x)$ or $\exists_x P(x)$ or $\Sigma_{x}P(x)$ means “there is at least one value of  $x$ for which $P(x)$ is true”. For example, $\exists(x)(|x|=0)$ and $\exists(x)(|x|\neq0)$ are both true, and $\exists(x)(|x|<0)$ is false. The symbol "$\exists$" is called the <b>existential quantifier.</b>  See <a href="MMExistenceStatements.htm">Existence statements.</a></li>
+
+
+
+</ul>
+<p>Other logical connectives are used by logicians and computing scientists, but are not covered here. All the forms of the quantifiers can also use typed variables ($x\in A$ or $x:A$), but enough is enough.
+</p>
+
+<h3>Usage</h3>
+
+<p>The symbols for logical connectives are not often seen in math research papers or books except when
+the books concern logic.  Some mathema&shy;ticians frequently use these symbols in
+lectures and others never do.  Mathema&shy;ticians differ sharply on using these
+symbols, taking one of two attitudes:</p>
+
+<p><b><font color="#A11B1B">DON'T USE THEM</font> </b>&nbsp; Lectures or notes
+filled with logical symbols require the student to learn a new language (symbolic logic), and people, including many very good mathema&shy;ticians, are not good at learning foreign languages. Aside from that, there are many symbols in use to denote the same logical connective.</p>
+
+<p><b><font color="#A11B1B">USE THEM</font></b>&nbsp; It is best to use the symbols, because we don’t then have to<a
+href="MMMathReasoning.htm#translationproblem">
+translate</a> the mathematical English into the corresponding logical
+structures. This translation is difficult because in math writing the English words for the connectives have subtly (and occasionally blatantly) different meanings.</p>
+
+
+<br /><br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br /><br /><br />
+</body></html>

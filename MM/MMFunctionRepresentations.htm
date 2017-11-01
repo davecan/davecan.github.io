@@ -1,0 +1,626 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Functions: Representations</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-05-23
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    
+<a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>   <a href="MMFunctions.htm">head of Functions chapter</a>
+</pre>
+
+<table cellspacing=0 cellpadding=9pt hspace=0 vspace=2pt width=100% align=left><tr><td valign=top style=width:100%;border:white;
+windowtext 0pt;
+padding:9pt 9pt 9pt 9pt;>
+
+<h3>Contents</h3>
+
+<p class=toc1><a href=#introduction>Introduction</a></p>
+
+<p class=toc1><a href=#RtoR>Continuous functions from a subset of $\mathbb{R}$ to $\mathbb{R}$</a></p>
+
+<p class=toc1><a href=#RtoR2>Continuous functions from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}$</a></p>
+
+<p class=toc1><a href=#RtoR3>Continuous functions from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$</a></p>
+
+<p class=toc1><a href=#R2toR2>Continuous functions from a subset of $\mathbb{R}\times\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}$</a></p>
+
+<p class=toc1><a href=#R2toR3>Continuous functions from a subset of $\mathbb{R}\times\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$</a></p>
+
+<p class=toc1><a href=#graphsoffinitefunctions>Graphs of finite functions</a></p>
+
+</p></td></tr></table>
+<br>
+
+<h1>REPRESENTATIONS OF FUNCTIONS</h1>
+<a name="introduction"></a>
+<h2>Introduction</h2>
+<p class=blue>Functions can be represented visually in many different ways. There is a sharp difference between representing <font color="#911B1B">continuous functions</font> and representing <font color="#911B1B">discrete functions</font>.</p>
+
+<p>For a continuous function $f$, $f(x)$ and $f(x')$ tend to be close together when $x$ and $x'$ are close together. That means you can represent the values at an <i>infinite</i> number of points by exhibiting a <i>finite</i> bunch of points that are so close together they appear to merge into a curve.</p>
+
+<p>Nothing like this works for discrete functions. As you will see <a href="#graphsoffinitefunctions">below</a>, many different arrangements of the inputs and outputs can be made. In fact, different arrangements may be useful for representing different properties of the function.</p>
+
+
+<h3>About representations</h3>
+
+<ul>
+<li>I am using the word "representation" in this chapter in a fairly loose way. It overlaps with the concepts of <b>images</b> and <b>metaphors</b> in math discussed in the abmath chapters<//li> 
+
+<ul>
+
+<li><a href="MMImagesMetaphors.htm">Images and Metaphors</a></li>
+
+<li><a href="MMImagesMetaphorsFunctions.htm">Functions: Images and Metaphors</a></li>
+</ul>
+
+
+
+<li>A "representation" of a math object may or may not be mathematically precise.</li>
+
+<li>A graph of a real-valued function such as the one <a href="#foolyou">below</a> is a representation of the function that is not precise -- you cannot measure the graph at a point and determine the exact value at that point, for example. 
+
+<li>A <a href="#cograph">cograph</a> of a finite function <i>is</i> absolutely accurate.</li> 
+
+<li>So is the binary representation "$1101$" of the number $13$.</li>
+
+<li>The phrase "<a href="https://en.wikipedia.org/wiki/Group_representation">representation of a group</a>" usually means a homomorphism to a group of linear transformations of a vector space. That does not fit the meaning of "representation" that I am using here.</li>
+
+<li>The <a href="http://mathworld.wolfram.com/MultiplicationTable.html">multiplication table</a> of a finite group is a representation in my sense.</li>
+ 
+</ul>
+
+
+<h3>The lllustrations in this post</h3>
+
+<p>The illustrations were created using these Mathematica Notebooks:</p>
+
+<ul>
+
+<li><a href="Mathematica/Function%20Representations/ContinuousFunctionsForFuncRepsTwo.nb">ContinuousFunctionsForFuncRepsTwo.nb</a></li>
+
+<li><a href="Mathematica/Function%20Representations/Constructions for cographs and endographs of finite functions.nb">Constructions for cographs and endographs of finite functions.nb</a></li>
+
+<li><a href="Mathematica/Function%20Representations/Functions and Shapes.nb">Functions and Shapes.nb</a></li>
+
+
+<li>These notebooks contain many more examples of the ways functions can be represented than are given in this article. </li>
+
+<li>The section <a href="MMIntro.htm#mathematicanotebooks">Mathematica</a> in the abmath Introduction explains how to use the notebooks and CDF files.
+</li>
+<li>Like everything in abstractmath.org, the notebooks are covered by a <a href="#creativecommons">Creative Commons ShareAlike 3.0 License.</a></li>
+
+</ul>
+
+<a name="graphsofcontinuousfunctions"></a><a name="representationsofcontinuousfunctions"></a>
+
+<a name="representationsofcontinuousfunctionsofonevariable"></a>
+
+<a name="RtoR"></a>
+
+<h2>Continuous functions from a subset of $\mathbb{R}$ to $\mathbb{R}$</h2>
+
+
+
+
+<h3>Graphs of functions of one variable</h3>
+
+<p>The most familiar representations of continuous functions are graphs of functions with one real variable. Students usually first see these in secondary school. Such representations are part of the subject called <a href="https://en.wikipedia.org/wiki/Analytic_geometry">Analytic Geometry</a>. This section gives examples of such functions.</p>
+
+
+<a name="functiongraphexample"></a>
+
+<h4 class=redit>Example</h4>
+
+<p>The blue curve in the diagram below is a representation of the graph of the curve $g(x):=2-x^2$ for approximately the interval $(-2,2)$. The graph is the blue curve.</p> 
+
+
+<p><img width=300  src="Mathematica/Function Representations/ContFunc1b.gif" hspace=12></p>
+
+<p>The brown right-angled line in the upper left side, for example, shows how the value of independent variable $x$ at $(0.5)$ is plotted on the horizontal axis, and the value of $g(0.5)$, which is $1.75$, is plotted on the vertical axis. So the blue graph contains the point $(0.5,g(0.5))=(0.5,1.75)$. The animated gif <a href="Mathematica/Function%20Representations/plotparmovie.gif">plotparmovie.gif</a> shows a moving version of how the curve is plotted.</p>
+
+<h4>Fine points</h4>
+
+<ul>
+
+<li>The <i>mathematical</i> definition of the graph is that it is the set $\{(x,2-x^2)\,|\,x\in\mathbb{R}\}$. The <i>blue curve</i> is not, of course, the mathematical graph, it <i>represents</i> the mathematical graph.</li>
+
+<li>The blue curve consists of a large but <i>finite</i> collection of pixels on your screen, which are close enough together to appear to form a continuous curve which approximates the mathematical graph of the function.</li> 
+
+<li>I called the blue curve the "representation of the graph" instead of just "graph".  That maintains the distinction between the mathematical ordered pairs $(x,g(x))$ and the pixels you see on the screen. But in fact mathe&shy;maticians and students nearly always refer to the line of pixels as the graph. That is like pointing to a picture of your grandmother and saying "this is my grandmother".  There is nothing wrong with saying things that way. But it is worth understanding that two different ideas are being merged.</li>
+
+</ul>
+
+<a name="discontinuousfunctions"></a>
+
+<h3>Discontinuous functions</h3>
+
+<p>A discontinuous function which is continuous except for a small finite number of breaks can also be represented with a graph.</p>
+
+<h4 class=redit>Example</h4>
+
+<p>Below is a graph of (part of) the function $f:\mathbb{R}\to\mathbb{R}$ defined by\[f(x):=\left\{
+\begin{align}
+2-x^2\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(x\gt0) \\ 
+1-x^2\,\,\,\,\,\,(-1\lt x\lt 0) \\ 
+2-x^2\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(x\lt-1)
+\end{align}\right.\] $f$ is <i>one function</i>. It is defined for every real number except $-1$ and $0$.</i></p>
+
+<p><img  src="Mathematica/Function Representations/DiscontFunc.gif" hspace=12 alt="Graph of a discontinuous function."></p>
+
+<p>Another discontinuous function is shown in <a href="MMFuncExamples.htm#split">Examples of functions</a></p>
+
+<h4 class=redit>Example</h4>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Nowhere_continuous_function#Dirichlet_function">Dirichlet function</a> is defined by\[F(x):=
+\begin{cases}
+1 &
+\text{if }x\text{ is rational}\\
+\frac{1}{2} &
+\text{if }x\text{ is irrational}\\ \end{cases}\]for all real $x$.</p>
+
+<p>It is impossible to draw a graph of this function, because it has an infinite number of gaps between its points. For more detail, see the article <a href="MMFuncExamples.htm#dirichlet">Examples of functions</a>.</p>
+
+
+
+<a name="graphscanfoolyou"></a>
+<h3>Graphs can fool you</h3>
+
+<p>The graph of a continuous function cannot usually show the whole graph, unless it is defined only on a finite interval.  This can lead you to jump to conclusions.</p> 
+
+<h4 class=redit>Example</h4>
+<p>For example, you can't tell from the the <a href="#functiongraphexample">graph of the function</a> $y=2-x^2$ whether it has a local minimum (because the graph does not show all of the function), although you <i>can</i> tell by using calculus on the <a href="MMImagesMetaphorsFunctions.htm#formula">formula</a> that it does not have one. The graph looks like it might have a vertical asymptotes, but it doesn't, again as you can tell from the formula (it is defined for all real numbers).</p>
+
+
+<p class=purpleprose>Discovering facts about a function<br />by looking at its graph<br />is useful but dangerous.</p>
+
+<h4 class=redit>Example</h4>
+
+<p>Below is the graph of the function\[f(x)=.0002{{\left( \frac{{{x}^{3}}-10}{3{{e}^{-x}}+1}
+\right)}^{6}}\]</p>
+
+<a name="foolyou"></a>
+<p><img  src="Mathematica/Function Representations/FoolYou.gif" hspace=12></p>
+
+<p><b>If you didn't know the formula for the function</b>, by looking at the graph you might nevertheless suspect certain things are true of the function.</p> 
+
+<ol>
+
+<li>Maybe it has a local maximum somewhere to the right of $x=1$.</li>  
+
+<li>Maybe it has one or more zeroes around $x=-1$.</li>
+
+<li>Maybe it has one or more zeroes around $x=2$.</li> 
+
+<li>Maybe it has a vertical asymptote somewhere to the right of $x=2.5$. </li>
+
+<li>Maybe it has a horizontal asymptote in the negative $x$ direction.</li>
+
+</ol>
+
+
+<p><b>If you do know the formula</b>, you can find out many things about the function that you can't depend on the graph to see.</p> 
+
+<ul>
+
+<li>You can see immediately that $f$ has just one zero, at $x=\sqrt[3]{10}$, which is about $2.15$. So (3) is correct. </li>
+
+<li>If you notice that the exponent $6$ is even, you can figure out that $f(x)\geq0$ for all $x$, so $\sqrt[3]{10}$ is an absolute minimum for $f$.</li>
+
+<li>By using L'H&#0244;pital several times, you can see that $f$ has a horizontal asymptote as $x\to-\infty$. So (5) is correct. 
+</li>
+
+
+<li>Numerical analysis (I used Mathematica) shows that $f'(x)$ has two zeros, at $\sqrt[3]{10}$ and at about $x=1.1648$.  $f''(1.1648)$ is about $-10.67$, which shows that $f$ has a local max near $1.1648$, consistent with the graph. So (1) is correct.</li>
+
+<li>The fact that $f'(x)$ has only two zeros, both for positive values of $x$, means that there can be no minimum for negative $x$. So (2) is incorrect.</li>
+
+<li>Since $f$ is defined for every real number, <i>it can't have a vertical asymptote anywhere</i>. So (4) is incorrect. The graph looks like it becomes vertical somewhere to the right of $x=2.4$, but that is simply an illustration of the unbelievably fast growth of any <a href="https://en.wikipedia.org/wiki/Exponential_function">exponential function</a>.</li>
+
+</ul>
+
+<p>The section on <a href="MMUsefulBehaviors.htm#zoomchunk">Zooming and Chunking</a> gives other details.</p>
+
+
+<a name="RtoR2">
+</a> <a name="graphsinthreedimensionalspace"></a>
+<h2>Continuous functions from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}$</h2>
+
+<p>Suppose $F:\mathbb{R}\to\mathbb{R}\times\mathbb{R}$. That means you put in one number and get out a pair of numbers.</p> 
+
+<a name="unitcircle"></a>
+
+<h3>The unit circle</h3>
+
+<p>An example is the <b>unit circle</b>, which is the graph of the continuous function $t\mapsto(\cos t,\sin t)$. That has this <b>parametric plot</b>:</p><br />
+ <p><img  src="Mathematica/Function Representations/Circle.gif" hspace=12 alt="Unit circle"></p><br />
+
+<p>Because $\cos^2 t+\sin^2 t=1$, every real number $t$ produces a point on the unit circle. Four point are shown. For example,\[(\cos\pi,\,\sin\pi)=(-1,0)\] and
+\[(\cos(5\pi/3),\,\sin(5\pi/3))=(\frac{1}{2},\frac{\sqrt3}{2})\approx(.5,.866)\]</p>
+
+<h4>The input is not graphed</h4>
+
+<p> In graphing functions $f:\mathbb{R}\to\mathbb{R}$, the plot is in two dimensions and consists of the points $(x,f(x))$: the input and the output. The parametric plot shown above for $t\mapsto(\cos^2 t+\sin^2)$ shows only the output points $(\cos t,\sin t)$; $t$ is not plotted on the graph at all. So the graph is in the plane instead of in three-dimensional space.</p> 
+
+<p>It is useful to think of $t$ as <b>time</b>. If you start at some number $t$ on the real line and continually increase it, the value $f(t)$ moves around the circle counterclockwise, repeating every $2\pi$ times. If you decrease $t$, the value moves clockwise. The animated gif <a href="Mathematica/Function Representations/circlemovie.gif">circlemovie.gif</a> shows how the location of a point on the circle moves around the circle as $t$ changes from $0$ to $2\pi$. Every point is traversed an infinite number of times as $t$ runs through all the real numbers. </p>
+<a name="figure8construction"></a>
+<h3>Figure-8 graph</h3>
+
+<p>This is the parametric graph of the function $t\mapsto(\cos t,\sin 2t)$.</p>
+<br />
+ <p><img  src="Mathematica/Function Representations/Figure8.gif" hspace=12 alt="Figure 8"></p><br />
+
+<p class=noind>Notice that it crosses itself at the origin when $t$ is any odd multiple of $\frac{\pi}{2}$.</p>
+
+<h2>Continuous functions from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$</h2>
+
+<p>The graph of a function from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$ can also be drawn as a parametric graph in <i>three</i>-dimensional space, giving a three-dimensional curve.</p>
+
+
+<h3>The seven-pointed crown</h3>
+
+<p>Here is a view of the graph of the function \[t\mapsto(\cos t, \sin t, \sin 7t):\mathbb{R}\to \mathbb{R}\times\mathbb{R}\times\mathbb{R}\]</p>
+
+<img  width=200 height=200
+src="Mathematica/Function Representations/Crown4.gif" hspace=12></p>
+
+<p>The animated gif <a href="Mathematica/Function Representations/crownmovie.gif">crownmovie.gif</a> represents the parameter $t$ in time.</p>
+
+
+<h3>Universal covers</h3>
+
+<h4>The unit circle with $t$ made explicit</h4>
+
+<a name="explicit"></a>
+<p>Since we have access to three dimensions, we can display on the graph the input $t$ to the unit circle function $(\cos t,\sin t)$ by using a <b>three-dimensional graph</b>, shown below. The blue circle is the function $t\mapsto(\cos t,\sin t,0)$ and the gold helix is the function $t\mapsto(\cos t,\sin t,.2t)$.</p>
+<br />
+ <p><img width=200 height=300 src="Mathematica/Function Representations/CircleAndHelixWithPoints.gif" hspace=12 alt="Unit circle"></p><br />
+<p>The introduction of $t$ as the value in the vertical direction changes the circle into a helix. The animated .gif <a href="Mathematica/Function Representations/covermovie.gif">covermovie.gif</a> shows both the travel of a point on the circle and the corresponding point on the helix.</p>
+
+
+
+<p>As $t$ changes, the circle is drawn over and over with a period of $2\pi$. Every point on the <i>circle</i> is traversed an infinite number of times as $t$ runs through all the real numbers. But each point on the <i>helix</i> is traversed exactly once. For a given value of $t$, the point on the helix is always directly above or below the point on the circle.</p>
+
+<p>The helix is called the <a href="https://en.wikipedia.org/wiki/Covering_space#Universal_covers">universal covering space</a> of the circle, and the set of points on the helix over (and under) a particular point $p$ on the circle is called the <b>fiber over $p$</b>. The universal cover of a space is a big deal in topology.</p> 
+
+
+<a name="loopandswirl"></a>
+<h4>Loop and swirl</h4>
+
+<p>Here are two views of the function \[t\mapsto(\cos t,\sin 2t, \log t):\mathbb{R^{+}}\to \mathbb{R}\times\mathbb{R}\times\mathbb{R}\] ($\mathbb{R}^{+}$ is the set of positive real numbers)</p>
+<p class=headed><img  width=260 height=300 src="Mathematica/Function Representations/sinandlog.png">   <img  width=260 height=300 src="Mathematica/Function Representations/sinandlog2.png"><br />It is a universal cover (with an added squish as $z$ increases) of the <a href="#figure8construction">Figure-8 curve</a>.</p>
+
+<ul>
+
+<li>For the second picture, talk yourself into seeing the top as closer to you than the bottom. I am not kidding.</li>
+
+<li>The $x$ and $y$ coordinates are those of the <a href="#figure8construction">Figure 8 construction</a>. And indeed the curve swirls around in a rising figure-8  like a figure skater on a rising platform.</li>
+
+<li>The swirls get closer together as you go up the $z$-axis.  That is because $\log t$ increases more and more slowly as $t$ gets bigger:
+<br />\[z=\log t\]<img src="Mathematica/Function Representations/Log0to4.png"></li>
+
+</ul>
+
+<a name="R2toR2"></a>
+<h2>Continuous functions from a subset of $\mathbb{R}\times\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}$</h2>
+
+<p>The graph of a map $\mathbb{R}^m\to\mathbb{R}^n$ where $m+n\gt3$ requires $m+n$ dimensions, so we can't draw it and it is difficult to visualize it. </p>
+
+
+<a name="2dendograph"></a>
+
+<p> You <i>can</i> graph a function $\mathbb{R}\times\mathbb{R}\to\mathbb{R}\times\mathbb{R}$ using its <a href="#endograph">endograph.</a></a></p>
+
+<h4 class=redit>Example</h4>
+
+<p>The function \[(x,y)\mapsto(x+.5,y+.2)\]
+moves each point in the plane $.5$ units to the right and $.2$ units up. The endograph below visualizes a part of this action. showing the movement at each point with integer coordinates.</p><br />
+
+<p class=headed><img src="Mathematica/Function Representations/affinemove.png" align=center hspace=12 width="400"/>
+</p><br />
+
+<p>This is an example of an <a href="https://en.wikipedia.org/wiki/Affine_transformation">affine map</a> in the plane.</p> 
+
+
+<h4 class=redit>Example</h4>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Linear_map">linear map</a> determined by the matrix \[\pmatrix{1.25 & 0.5\\0.5&1}\] defines a function \[(x,y)\mapsto (1.25x+.5y,\,.5x+y):\mathbb{R}\times \mathbb{R}\to \mathbb{R}\times \mathbb{R}\] that can be displayed with an endograph like this:</p>
+<p class=headed><img src="Mathematica/Function Representations/apf1eg.gif" align=center hspace=12 width="400"/>
+</p>
+<ul>
+<li>This graph shows arrows pointing to the value for integer pairs within the range.  Because the function is continuous, you can guess approximately where a point goes by where the nearby integer points go. That is not possible for discrete functions.</li>
+
+<li><a href="http://en.wikipedia.org/wiki/Vector_field">Vector fields</a> are often illustrated in this way.  In a vector field, an arrow shows the direction and velocity of movement at a given point, whereas, in the graph above, an arrow <i>points to the value of the function</i> at an integer pair $(m,n)$.</li> 
+
+<li><a href="https://en.wikipedia.org/wiki/M%C3%B6bius_transformation">Möbius transformations</a> are an important type of function from $\mathbb{R}\times \mathbb{R}$ to itself. This <a href="https://www.youtube.com/watch?v=JX3VmDgiFnY">video on YouTube</a> illustrates them visually using another technique.</li>
+</ul>
+
+<h4>Complex valued functions</h4>
+
+<p>Complex functions are often graphed using $\mathbb{R}\times\mathbb{R}$ for the <a href="MMFuncSpec.htm#domain">domain</a> (representing $a+bi$ as $(a,b)$), with the values of the function shown as hue and brightness, as seen in the <a href="http://en.wikipedia.org/wiki/Complex_analysis">Wikipedia article.</a></p>
+
+<p class=smallind><a href="http://en.wikipedia.org/wiki/Complex_analysis">Complex analysis</a>, the theory of functions on the complex numbers, is one of the richest and most highly developed parts of math.</p></p>
+
+<a name="R2toR3"></a>
+
+
+<h2>Continuous functions from a subset of $\mathbb{R}\times\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$</h2>
+
+<h4>2D surface in 3-space</h4>
+
+<p>This is the graph of part of the surface\[(x,y)\mapsto(x,z,\sin xz):\mathbb{R}\times\mathbb{R}\to\mathbb{R}\times\mathbb{R}\times\mathbb{R}\]</p>
+
+<p><img width=450 height=450
+src="Mathematica/Function Representations/Sinfamily.gif" hspace=12
+alt="Sinfamily"></p>
+
+<p>The blue curves follow the shape of the surface as an aid to visualizing the surface.</p>
+
+<p>This graph was created by the Mathematica notebook <a href="Mathematica/AnotherFamiliesFrozen.nb">AnotherFamiliesFrozen.nb</a> It is worthwhile viewing this notebook in <a href="https://www.wolfram.com/cdf-player/">CDF Player</a>, if you have it. (It is free). There are more examples in <a href="/Word%20Press/?p=3047">Freezing a family of functions.</a></p>
+
+
+
+<a name="graphsoffinitefunctions"></a>
+
+<h2>Graphs of finite functions</h2>
+
+<p>When a function is continuous, its graph shows up as a curve in the plane or as a curve or surface in 3D space. When a function is defined on a set without any notion of continuity (for example a finite set), the graph is just a set of ordered pairs and does not tell you much.</p>
+
+<p>A finite function $f:S\to T$ may be represented in these ways: 
+<ul>
+<li>Its <a href="MMFuncSpec.htm#graph">graph</a> $\{(s,f(s))|s\in S\}$. This is graph as a mathematical object, not as a drawing or as a directed graph -- see <a href="MMGlossary.htm#graph">graph (two meanings)</a>).</li> 
+
+<li>A <a href="#table">table</a>, <a href="#rule">rule</a> or <a href="#twolinenotation">two-line notation</a>. (All three of these are based on the same idea, but differ in presentation and are used in different mathematical specialties.)</li>
+
+<li>By using labels with arrows between them, arranged in one of two ways:</li>
+<ul>
+<li>A <a href="#cograph">cograph</a>, in which the domain and the codomain are listed separately.</li>
+
+<li>An <a href="#endograph">endograph</a>, in which the elements of the domain and the codomain are all listed together without repetition.</li>
+</ul>
+</ul>
+
+<p>All these techniques can also be used to show finite portions of infinite discrete functions, but that possibility will not be discussed here.</p>
+
+
+<h4 class=redit>Introductory Example</h4>
+
+
+<p>Let \[\text{f}:\{a,b,c,d,e\}\to\{a,b,c,d\}\] be the function defined by requiring that $\text{f}(a)=c$, $\text{f}(b)=a$, $\text{f}(c)=c$, $\text{f}(d)=b$, and $\text{f}(e)=d$. 
+
+<h4>Graph</h4>
+
+<p>The graph of $\text{f}$ is the set
+\[(a,c),(b,a),(c,c),(d,b),(e,d)\]
+As with any set, the order in which the pairs are listed is irrelevant. Also, the letters $a$, $b$, $c$, $d$ and $e$ are merely letters. They are not variables.</p>
+
+<a name="table"></a>
+
+<h4>Table</h4>
+
+<p>$\text{f}$ is given by this <b>table</b>:</p>
+
+<img
+src="Mathematica/Function Representations/Grid1.png" hspace=12>
+
+<p>This sort of table is the format used in databases.  For example, a table in a database might show the department each employee of a company works in:</p>
+
+<img
+src="Mathematica/Function Representations/Grid2.png" hspace=12>
+
+<a name="rule"></a>
+<h4>Rule</h4>
+
+<p>The <b>rule</b> determined by the finite function $\text{f}$ has the form</p>
+
+\[(a\mapsto b,b\mapsto a,c\mapsto c,d\mapsto b,e\mapsto d)\]
+
+<p>Rules are built in to Mathematica and are useful in many situations.  In particular, the endographs in this article are created using rules. In Mathematica, however, rules are written like this:</p>
+
+\[(a\to b,b\to a,c\to c,d\to b,e\to d)\]
+
+<p>This is inconsistent with the usual math usage (see <a href="MMFuncNotation.htm#barredarrownotation">barred arrow notation</a>) but on the other hand is easier to enter when using Mathematica.</p>
+
+<p class=smallind>In fact, Mathematica uses very short arrows in their notation for rules, shorter than the ones used for the arrow notation for functions. Those extra short arrows don't seems to exist in TeX.</p>
+
+<a name="twolinenotation"></a>
+<h4>Two-line notation</h4>
+
+<p><b>Two-line notation</b> is a kind of horizontal table.</p>
+
+\[\begin{pmatrix} a&b&c&d&e\\c&a&c&b&d\end{pmatrix}\]
+</p>
+
+<p>The three notations <b>table</b>, <b>rule</b> and <b>two-line</b> do the same thing: If $n$ is in the domain, $\text{f}(n)$ is shown <i>adjacent</i> to $n$ -- to its right for the table and the rule, and below it for the two-line.</p>
+
+
+
+<a name="cograph"></a>
+
+<h4>Cograph</h4>
+
+<p>To make the <b>cograph</b> of a finite function, you list the domain and codomain in separate parallel rows or columns (even if the domain and codomain are the same set), and draw an arrow from each $n$ in the domain to $\text{f}(n)$ in the codomain.</p>
+
+<p>This is the cograph for $\text{f}$, represented in columns</p>
+
+<center><img
+src="Mathematica/Function Representations/Finitefunctioncograph1.png" hspace=12></center><br />
+<p class=noind>and in rows</p>
+<center><img
+src="Mathematica/Function Representations/Finitefunctionrowcograph1.png" hspace=12></center>
+
+
+<p class=noind>Pretty ugly, but the cograph for finite functions does have its uses, as for example in the Wikipedia article <a href="http://en.wikipedia.org/wiki/Function_composition">composition of functions.</a></p>
+<p class=smallind>In contrast to the table, rule and two-line notation, in a cograph each element of the codomain is shown only once, even if the function is not <a href="https://en.wikipedia.org/wiki/Injective_function">injective</a>.</p>
+<p class=smallind>In both the two-line notation and in cographs displayed vertically, the function <i>goes down</i> from the domain to the codomain. I guess functions obey the law of gravity.</p>
+
+<h5>Rearrange the cograph</h5>
+
+<p>There is no expectation that in the cograph $f(n)$ will be adjacent to $n$. But in most cases you can rearrange both the domain and the codomain so that some of the structure of the function is made clearer; for the function $\text{f}$:</p>
+
+<center><img width="190" height="70"
+src="Mathematica/Function Representations/rearrcograph.png" hspace=12></center>
+
+<p class=smallind>The domain and codomain of a finite function can be rearranged in any way you want because <i>finite functions are not continuous functions.</i> This means that the locations of points $x_1$ and $x_2$ have nothing to do with the locations of $f(x_1)$ and $f(x_2)$: The domain and codomain are <a href="https://en.wikipedia.org/wiki/Discrete_mathematics">discrete</a>.</p>
+
+<a name="endograph"></a>
+
+<h4>Endograph</h4>
+
+<p>The <b>endograph</b> of a function $h:S\to T$ contains one node labeled $s$ for each $s\in S\cup T$, and an arrow from $s$ to $s'$ if $h(s)=s'$. Below is the endograph for $\text{f}$.</p> 
+<center><p><img
+src="Mathematica/Function Representations/Finitefunctionendograph1.png" hspace=12></p></center>
+
+<p>The endograph shows you immediately that $\text{f}$ is not a permutation. You can also see that with whatever letter you start with, you will end up at $c$ and continue looping at $c$ forever. You could have figured this out from the cograph (especially the rearranged cograph above), but it is not immediately obvious in the cograph the way it in the endograph.</p>
+
+<p>There are more examples of endographs below and in the blog post
+<a href="/Word%20Press/?p=2034">A tiny step towards killing string-based math.</a> Calculus-type functions can also be shown using endographs and cographs: See <a href="http://users.humboldt.edu/flashman/MD/section-1.1VF.html">Mapping Diagrams from A(lgebra) B(asics) to C(alculus) and D(ifferential) E(quation)s,</a> by <a href="http://users.humboldt.edu/flashman">Martin Flashman</a>, and my blog posts <a href="/Word%20Press/?p=1885">Endographs and cographs of real functions</a> and <a href="/Word%20Press/?p=1885">Demos for graph and cograph of calculus functions.</a>
+
+<a name="permutation"></a>
+<h4 class=redit>Example: A permutation</h4>
+
+<p>Suppose $p$ is the <a href="https://en.wikipedia.org/wiki/Permutation">permutation</a> of the set \[\{0,1,2,3,4,5,6,7,8,9\}\]given in two-line form by
+\[\begin{pmatrix} 0&1&2&3&4&5&6&7&8&9\\0&2&1&4&5&3&7&8&9&6\end{pmatrix}\]
+</p>
+
+<h4>Cograph</h4>
+
+
+<center><img  width="340" height="80"
+src="Mathematica/Function Representations/cographperm.png"></center>
+
+
+<h4>Endograph</h4>
+
+<center><img width="220" height="200"
+src="Mathematica/Function Representations/endographperm.png" hspace=12></center>
+
+<a name="component"></a>
+<p>Again, the endograph shows the structure of the function much more clearly than the cograph does. </p>
+
+<p>The endograph consists of four separate parts (called <b>components</b>) not connected with each other. Each part shows that repeated application of the function runs around a kind of loop; such a thing is called a <b>cycle</b>. <i>Every permutation of a finite set consists of disjoint cycles as in this example.</i></p>
+
+
+<a name="disjointcyclenotation"></a>
+<h4>Disjoint cycle notation</h4>
+
+<p>Any permutation of a finite set can be represented in <a href="https://en.wikipedia.org/wiki/Cyclic_permutation">disjoint cycle notation</a>: The function $p$ is represented by:</p>
+
+\[(0)(1,2)(3,4,5)(6,7,8,9)\]
+
+<p>Given the disjoint cycle notation, the function can be determined as follows: For a given entry $n$, $p(n)$ is the <i>next entry in the notation</i>, if there is a next entry (instead of a parenthesis).  If there is not a next entry, $p(n)$ is the first entry in the cycle that $n$ is in. For example, $p(7)=8$ because $8$ is the next entry after $7$, but $p(5)=3$ because the next symbol after $5$ is a parenthesis and $3$ is the first entry in the same cycle.</p>
+
+<p>The disjoint cycle notation is not unique for a given permutation. All the following notations determine the same function $p$:</p>
+
+
+\[(0)(1,2)(4,5,3)(6,7,8,9)\]
+\[(0)(1,2)(8,9,6,7)(3,4,5)\]
+\[(1,2)(3,4,5)(0)(6,7,8,9)\]
+\[(2,1)(5,3,4)(9,6,7,8)\]
+\[(5,3,4)(1,2)(6,7,8,9)\]
+
+<p>Cycles such as $(0)$ that contain only one element are usually omitted in this notation.</p>
+
+<p>The article <a href="MMImagesMetaphorsFunctions.htm#symmetries">Images and Metaphors for Functions</a> contains a detailed example of representations of a permutation.</p>
+
+
+<a name="tree"></a>
+
+<h4 class=redit>Example: A tree</h4>
+
+<p>Below is the endograph of a function \[t:\{0,1,2,3,4,5,6,7,8,9\}\to\{0,1,2,3,4,5,6,7,8,9\}\]</p>
+
+
+<center><img 
+src="Mathematica/Function Representations/treeex.png" hspace=12></center>
+
+<p>This endograph is a <b>tree</b>. The graph of a function $f$ is a tree if the domain has a particular element $r$ called the <b>root</b> with the properties that</p>
+
+<ul>
+
+<li>$f(r)=r$, and</li> 
+
+<li>starting at any element of the domain, repreatedly applying $f$ eventually produces $r$.</li>
+</ul>
+<p>In the case of $t$, the root is $4$.  Note that $t(4)=4$, $t(t(7))=4$, $t(t(t(9)))=4$, $t(1)=4$, and so on.</p>
+
+<p class=smallind>You may complain that I didn't define the function that made the tree above. Well, I don't have to. The tree itself defines the function. All the ways of exhibiting finite functions that I have discussed here tell you exactly what the function is (except in some cases what the codomain is).</p>
+<p>The endograph</p>
+
+<center><p><img
+src="Mathematica/Function Representations/Finitefunctionendograph1.png" hspace=12></p></center>
+
+<p class=noind>shown <a href="#endograph">above</a> is also a tree.</p>
+
+<p class=smallind>See the Wikipedia article on trees for the usual definition of tree as a special kind of graph.  For reading this article, the definition given in the previous paragraph is sufficient.</p>
+
+<h3>The general form of a finite function</h3>
+
+<p>This is the endograph of a function $t$ on a $17$-element set:</p>
+<center><img
+src="Mathematica/Function Representations/bigendo.png" hspace=12></center>
+
+<p>It has two <a href="#component">components</a>. The upper one contains one $2$-cycle, and when you apply $t$ over and over to any point in that component, you wind up flipping back and forth in the $2$-cycle forever. The lower component has a $3$-cycle with a similar property.</p>
+
+<p>This illustrates a general fact about finite functions: </p>
+
+<ul>
+
+<li>The endograph of any nonempty finite function contains one or more components $C_1$ through $C_k$.</li>
+
+<li>Each component $C_k$ contains exactly one $n_k$ cycle, for some integer $n_k\geq 1$, to which are attached zero or more trees.</li>
+
+<li>Each tree in $C_k$ is attached in such a way that its root is on the unique cycle contained in $C_k$.</li>
+
+</ul>
+
+<p>In the example above, the cycle in the top component has three trees attached to it, two to $3$ and one to $4$, and the cycle in the bottom component has four trees attached to it. </p>
+
+<p>You can check your understanding of finite functions by thinking about the following two theorems:</p>
+<ul>
+<li>A <a href="#permutation">permutation</a> is a finite function with the property that  its cycles have no trees attached to them.</li>
+
+<li>A <a href="#tree">tree</a> is a finite function that has exactly one component whose cycle is a $1$-cycle.</li></ul>
+
+<br />
+
+
+
+<a name="creativecommons"></a>
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br />
+
+</body>
+
+</html>

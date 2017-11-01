@@ -1,0 +1,286 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Presentation of proofs</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2015-12-26
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>
+<a href="MMProofs.htm">Head of Math Reasoning Chapter</a>   <a href="/Word%20Press/">blog</a>
+</pre>
+
+<h1>PRESENTATION OF PROOFS</h1>
+
+<p class=blue>This chapter describes how proofs are written, with an extended analysis of a particular proof.  The chapter on <a href="MMFormsProof.htm">forms of proof</a> goes into more detail about certain types of proof.</p>
+
+<a name="narrativeproof"></a>
+<h2>Narrative proofs</h2>
+
+<p>Mathematical proofs in texts and in lectures are usually presented in <b>narrative format,</b> written in <a href="MMMathEnglish.htm">math English</a>.   Less commonly, proofs may also be written in one of the formats of <a href="https://en.wikipedia.org/wiki/Mathematical_logic">symbolic logic.</a></p>
+
+<p>A narrative proof typically has characteristics like these:</p>
+
+<ul>
+<li>The proof is preceded (or sometimes followed) by a statement of what is to be proved, which is called a <a
+href="MMGlossary.htm#theorem">theorem,</a> <a href="MMGlossary.htm#proposition">proposition,</a> <a href="MMGlossary.htm#lemma">lemma</a> or <a href="http://en.wikipedia.org/wiki/Corollary">corollary.</a></li>
+
+<li>The proof includes the proof steps the author thinks are not easy or obvious, but may omit easy steps, in particular algebraic calculations.</li>
+
+<li>Sometimes the reason for a step comes before the step, sometimes afterward, sometimes it is not given at all.</li>
+
+<li>Mixed in with the proof steps are other statements such as motivating statements, summaries, and statements about what comes next. (See <a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/mathrite.pdf">Varieties of mathematical prose.</a>)</li>
+
+<li>The proof will use various <a href="MMVarMeanings.htm#convention">conventions</a> that are intended to communicate the logic of the proof.</li>
+</ul>
+
+
+
+<p class=purpleprose>A narrative proof is a sequence of hints<br />intended to help you discover<br />the logical structure of the proof.</p>
+
+<h3>Difficulties</h3>
+
+<p>Learning to read a narrative proof is like learning to read text in a foreign language. It is <i>much easier</i> to learn to read a narrative proof than a story in another language, but it still requires considerable effort and practice to get good at it. See <a href="MMMathReasoning.htm#translationproblem">translation problem.</a></p>
+
+<p>Many professional mathematicians don't in fact put much effort into reading proofs.  It is common for us to read the statement of the theorem and then to start thinking about the proof with occasional glances at the written proof to get hints. A lot of the proofs in math texts are badly written, which doesn't help.</p> 
+
+
+
+<p>When you read a proof you may get stuck trying to see how the author thought up one of the steps in the proof. <i>This can be much harder that simply trying to see if the proof is correct.</i> If you see a step you think would not have occurred to you, but you understand it, then <span class=purple>don't feel intimidated</span>. After all, you have learned a new trick for proving things! See <a href="MMDysfunctional.htm#rabbits">Rabbits</a> and <a href="MMUsefulBehaviors.htm#lookahead">Look ahead.</a></p>
+
+<a name="detailedlook"></a>
+
+<h2>A detailed look at a proof</h2>
+
+<p>Here is a short proof to illustrate these ideas. </p>
+<h3>Definition: Divides</h3>
+
+<p>Let $m$ and $n$ be integers with $m\ne 0$. The assertion “$m$ divides $n$” means that there is an integer $q$ for which \[n=qm\]For example, “$3$ divides $12$” is true because $12=4\cdot 3$ (in this case, $q=4$).</p>
+
+<p class=smallind>Note that in the assertions “$m$ divides $n$” and "$n=qm$", <i>$m$ and $n$ are reversed</i>. This has caused some of my students no end of confusion.</p>
+
+<h3>Theorem</h3>
+
+<p class=boxed>Let $m$, $n$ and $p$ be integers with $m$ and $n$ nonzero, and suppose $m$ divides $n$ and $n$ divides $p$. Then $m$ divides $p$.</p>
+
+<h3>Proof</h3>
+
+<p>Here is the proof in the usual narrative format that might appear in a textbook.  This is in the form of a <a  href="MMFormsProof.htm#directmethod">direct proof.</a></p>
+
+<p class=boxed>By definition of divides, there are integers $q$ and $q'$ for which $n=qm$ and $p=q'n$. We must prove that there is an integer $q''$ for which $p=q''m$. <a href="MMGlossary.htm#but">But</a> $p=q'n=q'qm$, so let $q''=q'q$.  Then $p=q''m$.</p>
+
+
+
+
+<a name="proofanalysis"></a>
+
+<h2>Analysis of this proof</h2>
+
+<ol>
+
+<li>Assume $m$ divides $n$ and $n$ divides $p$. <i>(This step is invisible.  I am using the direct method, without saying so.)</i></li>
+
+<li>By definition of divides, <i>(signal that I am rewriting the assumption <a href="MMUsefulBehaviors.htm#rewritebydefinition">according to the definition</a>)</i></li>
+
+<li>there are integers $q$ and $q'$ for which $n=qm$ and $p=q'n$. <i>(assumption is now rewritten)</i></li>
+
+<li>We must prove that there is an integer $q''$ for which $p=q''m$. <i>(statement of goal using the definition of divides without saying so)</i></li>
+
+<li>But $p=q'n=q'qm$, <i>(an algebraic calculation based on proof step 3)</i></li>
+
+<li>so let $q''=q'q$,  <i>(define $q''$)</i></li>
+
+<li>which gives $p=q''m$. (follows from proof steps 5 and 6) </li>
+
+<li>Therefore $m$ divides $p$.  <i>(conclusion that we have proved the theorem, a statement of conclusion that is not visible in the proof.)</i></li>
+
+</ol>
+
+<p><a name=algebraiccalculation> </a></p>
+
+<h3>Remarks</h3>
+
+<ul>
+<li>Step 3 of the analysis is where some students commit <a href="MMDysfunctional.htm#existentialbigamy">existential bigamy.</a></li>
+
+<li>Analysis step 5 contains an <b>algebraic calculation</b>.  Algebraic calculations are based on rules just like other proof steps, but <i>texts above the beginning level rarely make them explicit</i>.  Here are the explicit rules:
+
+<ul>
+
+<li>$p=q'n$ (by step 3)</li>
+
+<li><i>$n=qm$ </i>(by step 3)</li>
+
+<li>$p=q'qm$  (substitution)</li>
+
+</ul>
+This particular algebraic calculation is extremely simple.  Proofs often leave out much more elaborate calculations.
+</li>
+<li>Note that analysis step 7 hides a use of the associative law. Students will never notice this, but a computer generated proof would have to include it.</li>
+
+
+</ul>
+
+
+<p>This proof is intermediate in the amount of detail it gives. I could rewrite the proof into a much more detailed one that puts in more steps and reasons, giving a detailed proof. On the other hand, I could have condensed it much more into a short proof. Sometimes, it helps to put a proof into <a href="#twocolumn">two-column format </a>, with the steps in the left column and the reasons in the right column. All of these version are given below.</p>
+
+
+
+<p>There is an analysis of the <b>context</b> of this proof in the <a href="MMMoreLanguage.htm#context">article on context.</a>
+</p>
+
+<a name="detailed proof"></a>
+<a name="fiveversionsoftheproof"></a>
+
+<h2>Five versions of the proof</h2>
+
+<p>Here are five possible forms of the proof as they might appear in texts written for people of different levels of expertise.</p>
+
+<h5>Omitted proof:</h5>
+<p>Monographs written at the graduate level or higher would <i>omit this proof altogether</i> or else say something like: "Proof: Easy," or "Division is clearly transitive."</p>
+
+<h5><a name=shortproof> </a></h5>
+
+<h5>Short proof:</h5>
+<p class=boxed>Proof: $p=q'qm$, where $n=qm$ and $p=q'n$.</p>
+
+<p>This proof requires <a href="MMPatternRecognition.htm">pattern recognition:</a>  </p>
+<ul>
+
+<li>You must recognize that <q>$n=qm$</q> and <q>$p=q'n$</q> are the consequences of rewriting the assumptions by using the definition of "divides".</li>
+
+<li>    You have to recognize $q'qm$ as having the form $q''m$ for some integer $q''$.  </li>
+
+<li>    You have to recognize  that $n=q''m$ fits the requirement of the definition of “divides”.  (Don't sneer.  It is the case that some very newbie students are bothered by the fact that the definition required $qm$ and we are giving them $q''m$.  Such students may never become research mathematicians but they still want to learn some math and we need to help them do it.)</li>
+</ul>
+
+<h5>Medium proof (the proof given <a href="#thisproof">previously</a>):</h5>
+
+
+
+<p class=boxed> By definition of divides, there are integers $q$ and $q'$ for which $n=qm$ and $p=q'n$. We must
+prove that there is an integer $q''$ for which $p=q''m$. But $p=q'n=q'qm$, so let $q''=q'q$; then $p=q''m$.</p>
+
+<h5><a name=detailedproof>Very detailed proof</a>:</h5>
+
+<p class=boxed>Proof: We are given that $m$ divides $n$ and $n$ divides $p$. By definition of division, there are integers $q$ and $q'$ for which $n=qm$ and $p=q'n$. To prove that $m$ divides $p$, we must prove that there is an integer $q''$ for which $p=q''m$; then the statement $m$ divides $p$ follows from the definition of division. We have seen that $n=qm$ and $p=q'n$, and so by substitution of equals, $p=q'(qm)$.  Then $p=(q'q)m$ by the associative law for multiplication. Thus if we let $q''=q'q$, then $p=q''m$ by substitution of equals.  It follows from the definition of division that $m$ divides $p$.</p>
+
+
+<h5>Detailed proof in <a name=twocolumn>two-column </a>format:</h5>
+
+<div class=boxed>
+<center>
+<table padding:20px>
+<tr>
+<td><p class=intable><b>Step</b></p>
+</td>
+<td><p class=intable><b>Reason</b></p>
+</td>
+</tr>
+<tr>
+<td><p class=intable>1) $m$ divides $n$</p>
+</td>
+<td><p class=intable>Given</p>
+</td>
+</tr>
+<tr>
+<td><p class=intable>2) $n$ divides $p$</p>
+</td>
+<td><p class=intable>Given</p>
+</td>
+</tr>
+<tr>
+<td><p class=intable>3) There is an integer $q$ for which $n=qm$.</p>
+</td>
+<td><p class=intable>Step 1 by defi&shy;nition of division.</p>
+</td>
+</tr>
+<tr>
+<td><p class=intable>4) There is an integer $q'$ for which $p=q'n$.</p>
+</td>
+<td><p class=intable>Step 2 by def&shy;inition of division</p>
+</td>
+</tr>
+<tr>
+<td><p class=intable>5) $p=q'(qm)$</p>
+</td>
+<td><p class=intable>Steps 3 and 4 by substi&shy;tution of equals</p>
+</td>
+</tr>
+<tr>
+<td><p class=intable>6) $p=(q'q)m$</p>
+</td>
+<td><p class=intable>Step 5 by asso&shy;ciative law of multi&shy;pli&shy;cation</p>
+</td>
+</tr>
+<tr>
+<td><p class=intable>7) $m$ divides $p$</p>
+</td>
+<td><p class=intable>Step 6 by defi&shy;nition of division</p>
+</td>
+</tr>
+</table>
+</center>
+</div>
+
+<p>Proofs in two column format have the advantage that they are very explicit.  If you are stuck or confused about a proof, <span class=purple>it helps to write it (or the tough part of it) out in two-column format.</span> Doing that puts everything in front of you.  You don’t have to remember where you got something.  And if you can’t fill in a reason, then you have discovered that your proof is incomplete!</p>
+
+<h2>Other examples of proofs</h2>
+
+<p>Several examples are in the <a href="MMFormsProof.htm">chapter on forms of proofs.</a></p>
+
+<p><a href="MMRealDensity.htm">Density of the reals</a></p>
+
+<p><a href="MMRealDecimalRep.htm">Equality of $0.\bar{9}$ and 1.0. </a></p>
+
+<p><a href="MMDysfunctional.htm#rabbits">An epsilon-delta proof</a></p> 
+
+<p><a href="MMUsefulBehaviors.htm#lookahead">Look ahead.</a></p>
+
+<p>See also <a href="MMProofs.htm#proofweb">References on proofs</a></p>
+
+<h2>References</h2>
+
+<p><a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/mathrite.pdf">Communicating mathematical reasoning,</a> by Atish Bagchi and Charles Wells.</p>
+
+<p><a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/mathrite.pdf">Varieties of mathematical prose,</a> by Atish Bagchi and Charles Wells.</p>
+
+<h2>Acknowledgments</h2>
+<p>Thanks to Justin Benjamin for a correction to the proof analysis.</p>
+
+
+<br /><br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br /><br /><br />
+</body>
+
+</html>

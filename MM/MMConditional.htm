@@ -1,0 +1,670 @@
+
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="mm2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>CONDITIONAL ASSERTIONS</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>      Revised 2017-01-19
+<a href="MMIntro.htm">Introduction to this website</a>     <a href="MMTOC.htm">website TOC </a>    <a href="MMIndex.htm">website index </a>   <a href="/Word%20Press/">blog</a>
+<a href="MMMathReasoning.htm">Back to top of Mathematical Reasoning chapter</a>
+</pre>
+<br />
+<table cellpadding=0
+style='border:none;'>
+<tr style='border:none;'>
+<td valign=top style='width:200.0pt;border:none;'>
+<p class=toc><span class="red">CONTENTS</span></p>
+
+<p class=toc><a href="#truthtable">The truth table for conditionals</a> </p>
+
+<p class=toc><a href="#truthsets">Conditionals and truth sets</a></p>
+
+<p class=toc><a href="#vacuoustruth">Vacuous truth</a></p>
+
+<p class=toc><a href="#universal">Universal conditional assertions</a></p>
+
+<p class=toc><a href="#related">Related assertions</a></p>
+
+<p class=toc><a href="#understandingconditionals">Understanding conditionals</a></p>
+
+<p class=toc><a href="#modusponens">Modus ponens</a></p>
+
+<p class=toc><a href="#equivalenceofassertions">Equivalence of Assertions</a></p>
+
+</td></tr></table>
+
+<h1>CONDITIONAL ASSERTIONS</h1>
+
+<p class="blue">This section is concerned with <a href="MMMathReasoning.htm#logicalconstructions">logical construc&shy;tions</a>  made with the connective called the 
+<font color="#911B1B">conditional operator.</font> In mathe&shy;matical English, applying the
+conditional operator to assertions $P$ and $Q$ produces an assertion that may be
+written, “<font color="#911B1B">If</font> $P$, <font color="#911B1B">then</font> $Q$”, or “$P$ <font color="#911B1B">implies</font>
+$Q$”. Sentences of this form are  <font color="#911B1B">conditional assertions.</font> </p>
+
+<p class="blue">Conditional assertions are at the very heart of mathematical reasoning.  Mathematical proofs  typically consist of chains of conditional assertions. </p>
+
+<p class=blue>Some of the narrative formats used for proving conditional assertions are discussed
+in <a href="MMFormsProof.htm">Forms of Proof.</a> </p>
+
+<a name="truthtable"></a>
+
+<h2>The truth table for conditional assertions</h2>
+
+<p>A conditional assertion “If $P$ then $Q$” has the precise truth table  shown here.</p>
+
+
+<table border:1px solid black; padding:10px>
+  <tr><!-- Row 1 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td width="20px">$P$</td><!-- Col 2 -->
+     <td width="20px">$Q$</td><!-- Col 3 -->
+     <td width="80px" align="center">If $P$ then $Q$</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td>T</td><!-- Col 3 -->
+     <td width="80px" align="center">T</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td>F</td><!-- Col 3 -->
+     <td width="80px" align="center">F</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td></td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td>T</td><!-- Col 3 -->
+     <td width="80px" align="center">T</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td></td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td>F</td><!-- Col 3 -->
+     <td width="80px" align="center">T</td><!-- Col 4 -->
+  </tr>
+</table>
+
+<p>The meaning of “If $ P$ then $Q$” is determined <i> entirely by the  truth values  of $P$ and $Q$ and this truth table.</i> The meaning is <i>not determined</i> by the usual English meanings of the words “if” and “then”.</p>
+
+<p>The truth table is summed up by this purple pronouncement:</b></p>
+
+<p class="purpleprose">
+<font color="#911B1B">The Prime Directive of conditional assertions:</font><br .>
+A conditional assertion is true unless <br />
+the hypothesis is true and the conclusion is false. <br />
+That means that to prove “If $P$ then $Q$” is  FALSE  <br />
+you must show that $P$ is TRUE(!) and $Q$ is FALSE.</p>
+
+<p><b><font color="#1B911B">The Prime Directive is harder to believe in than leprechauns.</font></b> Some who are new to abstract math get into an enormous amount of difficulty because they don’t take it seriously.  </p>
+
+<h5>Example</h5>
+
+<p>The statement “if $n\gt 5$, then $n\gt 3$” is true for all integers
+$n$. </p>
+<ul>
+<li>This means that “If $7\gt 5$ then $7\gt 3$” is true.</li>
+<li>It also means that “If $2\gt 5$ then $2\gt 3$” is true!   If you really believe that “If $n\gt 5$, then $n\gt 3$” is true for <i>all</i> integers n, then you must in particular believe that  “If $2\gt 5$ then $2\gt 3$” is true.  <i>That’s why the truth table for conditional assertions takes the form it does.</i></li>
+
+<li>  On the other hand, “If $n\gt 5$, then $n\gt 8$” is not true for all integers $n$.  In particular, “If $7\gt 5$, then $7\gt 8$” is false. This fits what the truth table says, too.</li>
+</ul>
+<p>For more about this, see <a href="#understandingconditionals">Understanding conditionals.</a> </p>
+
+<h3>Remark</h3>
+
+<p>Most of the time in mathematical writing the conditional assertions which are actually stated involve assertions containing variables, and the claim is typically that the assertion is true for all instances of the variables. Assertions involving statements without variables occur <i>only implicitly </i>in the process of checking instances of the assertions. That is why a statement such as, “If $2\gt 5$ then $2\gt 3$” seems awkward and unfamiliar.</p>
+
+<p class=smallind>It <i>is</i> unfamiliar and occurs rarely.  I mention it here because of the occurrence of <a href="#vacuoustruth">vacuous truths</a>, which do occur in mathematical writing.</p>
+
+<a name="truthsets"></a>
+<h2> Conditionals and Truth Sets </h2>
+
+<p>The set $\{x|P(x)\}$ is the set of exactly all $x$ for which $P(x)$ is true.  It is called the <b>truth set</b> of $P(x)$. </p> 
+
+<h5>Examples</h5>
+<ul>
+<li>If $n$ is an integer variable, then the truth set of "$3\lt n\lt9$" is the set $\{4,5,6,7,8\}$.
+</li>
+<li>The truth set of "$n\gt  n+1$" is the <a href="MMSetSpecific.htm#emptyset">empty set.</a></li>
+</ul>
+
+<a name="stronger"></a><a name="weaker"></a>
+
+<h3>Weak and strong</h3>
+
+<p>“If $P(x)$ then $Q(x)$” means that $\{x|P(x)\}\subseteq
+\{x|Q(x)\}$.  We say $P(x)$ is  <b>stronger</b>  than $Q(x)$, meaning that $P$ <i>puts more requirements on $x$</i> than $Q$ does.  The objects $x$ that make $P$ true necessarily make $Q$ true, so there might be objects making $Q$ true that don't make $P$ true.</p>
+
+<h5>Example</h5>
+<p>The statement "$x\gt4$" is stronger than the statement "$x\gt\pi$".  That means that $\{x|x\gt4\}$ is a <i>proper subset</i> of $\{x|x\gt\pi\}$.  In other words, $\{x|x\gt4\}$ is "smaller" than $\{x|x\gt\pi\}$ in the sense of subsets.  For example, $3.5\in\{x|x\gt\pi\}$ but $3.5\notin\{x|x\gt4\}$. This is a kind of reversal (a <a href="http://en.wikipedia.org/wiki/Galois_connection">Galois correspondence</a>) that confused many of my students.</p>
+
+<p class=smallind>"Smaller" means the truth set of the <i>stronger</i> statement <b>omits</b> elements that are in the truth set of the <i>weaker</i> statement.  In the case of finite truth sets, "smaller" <i>also</i> means it has fewer elements, but that does not necessarily work for infinite sets, such as in the example above, because the two truth sets $\{x|x\gt4\}$ and $\{x|x\gt\pi\}$ have the same <a href="http://en.wikipedia.org/wiki/Cardinality">cardinality.</a> </p>
+
+
+<p class="purpleprose"> Making a statement stronger<br /> makes its truth set "smaller".</p>
+
+
+<a name="hypothesis"></a><a name="antecedent"></a><a name="conclusion"></a><a name="consequent"></a>
+
+
+<h3>Terminology and usage</h3>
+
+
+
+<h4>Hypothesis and conclusion</h4>
+<p>In the assertion “If $P$, then $Q$”:</p>
+<ul>
+<li>P is the  <b>hypothesis</b>  or  <b>antecedent
+</b> of the assertion.  It is a  <a href="MMIntent.htm#constraint">constraint</a> or condition that holds in the very narrow context of the assertion.  In other words, the assertion, “If $P$, then $Q$”<i> <i>does not say</i> that $P$ is true.</i> The idea of the <a href="MMFormsProof.htm#directmethod">direct method</a> of proof is to <i>assume</i> that $P$ is true <i>during the proof.</i></li>
+
+<li>$Q$ is the  <b>conclusion</b> or <b>consequent</b>. It is also incorrect to assume that $Q$ is true anywhere else except in the assertion “If $P$, then $Q$”.</li>
+</ul>
+
+<h4>"Implication"</h4>
+<p>Conditionals such as “If $P$ then $Q$” are also called <a name=implication><b>implications</b> <b>, </b>but be wary: <i>"implication" is a technical term and does not fit the meaning of the word in conversational English.</i></p>
+
+<ul>
+<li>In ordinary English, you might ask, "What are the implications of knowing that $x\gt4$?  Answer: "Well, for one thing, $x$ is bigger that $\pi$." </li> 
+
+<li>In the terminology of math and logic, the <i>whole statement</i> "If $x\gt4$ then $x\gt\pi$" is called an "implication".</li>
+</ul>
+
+
+
+<a name="vacuoustruth"></a>
+
+<h2>Vacuous truth</h2>
+
+<p>The last two lines of the truth table for conditional assertions mean that if the hypothesis of the assertion is false, then <i>the assertion is automatically true.</i>
+In the case that “If $P$ then $Q$” is <i>true</i> because $P$ is <i>false</i>, the assertion  is said to be <b>vacuously true.</b></p>
+
+
+<p>The word “vacuous” refers to the fact that in the vacuous case the conditional assertion says <i>nothing interesting</i> about either $P$ or $Q$. In particular, the conditional assertion may be true <i>even if the conclusion is false</i> (because of the last line of the truth table).</p>
+
+<h5>Example</h5>
+
+<p>Both these statements are vacuously true!</p>
+<ul>
+<li>If  $4$ is odd, then $3 = 3$.</li>
+<li>If  $4$ is odd, then $3\neq3$.</li>
+</ul>
+
+<h5>Example</h5>
+
+<p>If $A$ is any set then $\emptyset\subseteq A.$  Proof <a href="MMUsefulBehaviors.htm#rewritebydefinition">(rewrite by definition)</a>: You have to prove that if $x\in\emptyset$, then $x\in A$. But the statement "$x\in\emptyset$" is <i>false</i> no matter what $x$ is, so the statement "$\emptyset\subseteq A$" is <i>vacuously true.</i></p>
+
+
+<h3>Definitions involving vacuous truth</h3>
+
+<p>Vacuous truth can cause surprises in connection with certain concepts which are defined using a conditional assertion.  
+
+<h5>Example</h5>
+<ul>
+<li>Suppose $R$ is a relation on a set $S$.  Then $R$ is <b>antisymmetric</b> if the following statement is true: If for all $x,y\in S$, $xRy$ and $yRx$, then $x=y$.</li>
+
+<li>For example, the relation "$\leq$" on the real numbers is antisymmetric, because if $x\leq y$ and $y\leq x$, then $x=y$.</li>
+
+<li>The relation "$\lt$" on the real numbers is also antisymmetric.  It is <i>vacuously</i> antisymmetric, because the statement<br /><center>
+(AS) "if $x\gt y$ and $y\gt x$, then $x = y$"<br /></center> 
+is vacuously true. If you say it <i>can't happen</i> that $x\gt y$ and $y\gt x$, you are correct, and that means precisely that (AS) is vacuously true.</li> 
+
+
+</ul>
+
+<h3>Remark</h3>
+
+
+<p>Although vacuous truth may be disturbing when you first see it, making either statement in the example false would result in even more peculiar situations. For example, if you decided that “If $P$ then $Q$” must be false when $P$ and $Q$ are both false, you would then have to say that this statement</p>
+<center><p>“For any integers  $m$ and $n$, if $m\gt 5$ and $5\gt n$,  then $m\gt n$”</p></center>
+<p class=noind>is not always true (substitute $3$ for $m$ and $4$ for $n$ and you get both $P$ and $Q$ false). This would surely be an unsatisfactory state of affairs.</pi>
+
+
+</ul>
+
+<a name="howworded"></a>
+<h2>How conditional assertions are worded</h2>
+
+<p>A conditional assertion may be worded in various ways.  It takes some practice to get used to understanding all of them as conditional.</p>
+
+<p class=smallind>Our habit of swiping English words and phrases and changing their meaning in an unintuitive way causes many problems for new students, but I am sure that the <i>worst problem of that kind</i> is caused by the way conditional assertions are worded.
+</p>
+
+
+<a name="implies"></a>
+<a name="imply"></a>
+<a name="onlyif"></a>
+<a name="sufficient"></a>
+<a name="necessary"></a>
+
+<h3>In <a href="MMMathEnglish.htm#statement">math English</a></h3>
+<p>The most common ways of wording a conditional assertion with hypothesis $P$ and conclusion $Q$ are:</p>
+<ul>
+<li><b>If  $P$, then  $Q$</b>. </li>
+
+
+<li>$P$ <b>implies</b> $Q$. </li>
+
+
+
+<li>$P$ <b>only if</b> $Q$. </li>
+
+
+
+<li>$P$ is <b>sufficient</b>  for $Q$. </li>
+
+
+
+<li>$Q$ is <b>necessary</b> for $P$. </li>
+</ul>
+
+<h3>In the symbolic language </h3>
+
+<ul>
+
+<li>$P(x)\to Q(x)$</li>
+
+<li>$P(x)\Rightarrow Q(x)$</li>
+
+<li>$P(x)\supset Q(x)$</li>
+</ul>
+
+
+<p class=smallind>Since "$P(x)\supset Q(x)$" means that $\{x|P(x)\}\subseteq
+\{x|Q(x)\}$, there is a <b>notational clash</b> between implication written “$\supset $” and inclusion written “$\subseteq $”. This is exacerbated by the <a href="MMOtherSymbols.htm#twomeaningsinclusion">two meanings</a> of the inclusion symbol "$\subset$".</p>
+
+<p class=smallind>Math logic is notorious for the many different symbols used by different authors with the same meaning.  This is in part because it developed separately in three different academic areas: Math, Philosophy and Computing Science.</p>
+
+
+
+<h5> Example </h5>
+
+<p><font color="#205070"><b>All the statements below mean the same thing.</b></font> In these statements $n$ is an integer variable.</p>
+<ul>
+<li>If $n\lt5$, then $n\lt10$. </li>
+
+<li>$n\lt5$ implies $n\lt10$.</li>
+
+<li>$n\lt5$ only if $n\lt10$.</li>
+
+<li>$n\lt5$ is sufficient for $n\lt10$.</li>
+
+<li>$n\lt10$ is necessary for $n\lt5$.</li>
+
+<li>$n\lt5\to n\lt10$</li>
+
+<li>$n\lt5\Rightarrow n\lt10$</li>
+
+<li>$n\lt5\supset n\lt10$</li>
+
+</ul>
+
+
+<p>
+These ways of wording conditionals cause problems for students, some of them severe.  They are discussed in the section <a href="#understandingconditionals">Understanding conditionals.</a></p>
+
+
+<h4>Usage of symbols</h4>
+<p>The logical symbols "$\to$", "$\Rightarrow$",
+"$\supset$" are frequently used when writing on the blackboard, but are not common in texts, except for texts in mathematical logic.</p>
+
+<h4>More about implication in logic</h4>
+
+<p>If you know some logic, you may know that there is a subtle difference between the statements </p>
+<ul>
+<li>“If $P$ then $Q$”</li>
+<li>“$P$ implies $Q$”.</li>
+</ul>
+<p>Here is a concrete example: </p>
+
+<ol>
+<li>“If $x\gt2$,  then $x$ is positive.”</li>
+
+<li>“$x\gt2$ implies that $x$ is positive.”</li>
+</ol>
+
+<p>Note that the subject of sentence (1) is the (variable) <i>number</i> $x$, but the subject of sentence (2) is the <i>assertion</i>
+"$x\lt2$".   Behind this is a distinction made in formal logic between the  <a href="https://en.wikipedia.org/wiki/Material_conditional">material conditional</a>  “if $P$ then $Q$” (which means that $P$ and $Q$ obey the truth table for "If..then") and <a href="http://en.wikipedia.org/wiki/Logical_consequence">logical consequence</a>  ($Q$ can be proved given $P$). I will ignore the distinction here, as most mathematicians do except when they are proving things about logic.  </p>
+
+<p class=smallind>In some texts, $P\Rightarrow Q$ denotes the material conditional and $P\to Q$ denotes logical consequence.</p>
+
+<a name="universal"></a>
+
+<h2>Universal conditional assertions</h2>
+
+<p>A conditional assertion containing a <a href="MMVarSub.htm#variable">variable</a> that is true for any value of the correct <a href="MMVarSub.htm#type">type</a> of that variable is a <b>universally true</b> conditional assertion.  It is a special case of the general notion of <a href="MMUnivTrue.htm">universally true assertion.</a></p>
+
+
+
+<h5>Examples</h5>
+
+<ol>
+
+<li>For all $x$, if $x\lt5$, then $x\lt10$.</li>
+
+<li>For any integer $n$, if $n^2$ is even, then $n$ is even.</li>
+
+<li>For any real number $x$, if $x$ is an integer, then $x^2$ is an integer.</li>
+</ol>
+
+<p>These are all assertions of the form "If $P(x)$, then $Q(x)$".  In (1), the hypothesis is the assertion "$x\lt5$"; in (2), it is the assertion "$n^2$ is even", using an <i>adjective</i> to describe  property that $n^2$  is even; in (3), it is the assertion "$x$ is an integer", using a <i>noun</i> to assert that $x$ has the property of being an integer.  (See <a href="MMGlossary.htm#integral">integral.</a>)</p>
+
+<a name="univtruecondassenglish"></a>
+
+<h3>Expressing universally true conditionals in math English</h3>
+<p> The sentences listed in the example above provide ways of expressing universally true conditionals in English.  They use "for all" or "for any",  You may also use these forms (compare in <a href="MMUnivTrue.htm#universalworded">this discussion</a> of universal assertions in general.)</p>
+<ul>
+
+<li>For <b>all</b> functions $f$, if $f$ is differentiable then it is continuous.</li>
+
+<li> For (<b>every, any, each</b>) function $f$, if $f$ is differentiable then it is continuous.</li>
+
+<li>If $f$ is differentiable then it is continuous, for <b>any</b> function $f$. </li> 
+
+<li>If $f$ is differentiable then it is continuous, <a href="MMGlossary.htm#where"><b>where</b></a> $f$ is any function.</li>
+
+<li>If <b>a</b> function $f$ is differentiable, then it is continuous.  (See <a href="MMGlossary.htm#A">indefinite article.</a>)</li>
+</ul>
+
+<p class=smallind>Sometimes mathematicians write, "If <b>the</b> function $f$ is differentiable, then it is continuous." At least sometimes, they mean that <i>every</i> function that is differentiable is continuous.  I suspect that this usage occurs in texts written by non-native-English speakers.</p>
+
+<h3>Disguised conditionals</h3>
+<p>There are other ways of expressing universal conditionals that are <b>disguised,</b> because they are <i>not conditional assertions in English.</i> </p>
+
+<p>Let $C(f)$ mean that $f$ is continuous and and $D(f)$ mean that $f$ is differentiable. The (true) assertion</p> <center><p>“For all $f$, if $D(f)$, then $C(f)$”</p></center><p class=noind>can be said in the following ways:</p>
+
+<ol>
+<li><b>Every</b> (<b>any, each</b>) differentiable function is continuous.</li>
+
+<li><b>All</b> differentiable functions are continuous.</li>
+
+<li>Differentiable functions are continuous.  Or: "...are <a href="MMUnivTrue.htm#always">always</a> continuous."</li>
+
+<li><b>A</b> differentiable function is continuous.</li>
+
+<li><b>The</b> differentiable functions are continuous. </li> 
+</ol>
+
+<h4>Notes</h4>
+<ul>
+
+<li>Watch out for (4).  Beginning abstract math students sometimes don’t recognize it as universal. They may read it as "Some differentiable function is continuous." Authors often write, "A differentiable function is <a href="MMGlossary.htm#necessary">necessarily</a> continuous."</li>
+
+<li>I believe that (5) is obsolescent.  I don’t think younger native-English-speaking Americans would use it.   (Warning: This claim is not based on lexicographical research.)</li>
+
+</ul>
+<a name="converse"></a>
+<a name="related"></a>
+
+<h2>Assertions related to a conditional assertion</h2>
+<h3>Converse</h3>
+
+<p>The <b>converse</b> of a conditional assertion “If $P$ then $Q$” is “If $Q$ then $P$”.</p>
+
+<p class=purpleprose>Whether a conditional assertion is true<br /> has no bearing on whether its converse it true.</p>
+
+<h5>Examples</h5>
+
+<ul>
+<li>The converse of "If it’s a cow, it eats grass" is "If it eats grass, it's a cow". The first statement is true (let's ignore the Japanese steers that drink beer or whatever), but the second statement is definitely false.  Sheep eat grass, and they are not cows..</li>
+
+<li>The converse of "For all real numbers $x$, if $x > 3$, then $x > 2$." is "For all real numbers $x$, if $x > 2$, then $x > 3$." The first is true and the second one is false.</li>
+
+<li>"For all integers $n$, if  $n$ is even, then $n^2$ is even."  Both this statement and its converse are true.</li>
+
+<li>"For all integers $n$, if $n$ is divisible by $2$, then $2n +1$ is divisible by $3$."   Both this statement and its converse are false.</li>
+</ul>
+
+<a name="contrapositive"></a>
+<h3>Contrapositive</h3>
+
+<p>The <b>contrapositive</b> of a conditional assertion “If $P$ then $Q$” is “If not $Q$ then not $P$.”</p>
+
+<p class=purpleprose>A conditional assertion and its contrapositive<br /> are both true or both false.</p>
+
+<h5>Example</h5>
+
+<p>The contrapositive of
+"If $x > 3$, then $x > 2$"
+is (after a little translation)
+"If $x\leq2$ then $x\leq3$."
+For any number $x$, these two statements are <i>both true</i> or <i>both false.</i></p>
+
+<p>This means that if you prove "If not $Q$ then not $P$", then you have <i>also</i> proved "If $P$ then $Q$."</p>
+
+<p class=purpleprose>You can prove an assertion by proving its contrapositive.</p>
+
+<p>This is called the <b>contrapositive method</b> and is discussed in detail in <a href="MMFormsProof.htm#_Toc142728613">this section.</a></p>
+
+<p>So a conditional assertion and its contrapositive <b>have the same truth value.</b> Two assertions that have the same truth value are said to be <b>equivalent.</b>  Equivalence is discussed with examples in the Wikipedia article on <a href="https://en.wikipedia.org/wiki/Necessity_and_sufficiency">necessary and sufficient.</a></p>
+
+
+
+<a name="understandingconditionals"></a>
+
+
+<h2>Understanding conditional assertions</h2>
+<p>As you can see from the preceding discussions, statements of the form “If $P$ then Q” <span class=blue>don’t mean the same thing in math that they do in ordinary English.</span> This causes <a href="MMCognitiveDissonance.htm#semanticcontamination">semantic contamination.</a></p>
+
+<h3>Examples</h3>
+
+<h4>Time</h4>
+<p>In ordinary English, “If $P$ then $Q$” can suggest <b>order of occurrence.</b>  For example, “If we go outside, then the neighbors will see us” implies that the neighbors will see us <b>after</b> we go outside.</p>
+
+<p>Consider "If $n\gt7$, then $n\gt5$." If $n\gt7$, that doesn't mean $n$ suddenly gets greater than $7$ <i>earlier</i> than $n$ gets greater than $5$. On the other hand, "$n\gt5$ is necessary for $n\gt7$" (which remember <i>means the same thing</i> as "If $n\gt7$, then $n\gt5$) doesn't mean that $n\gt5$ happens earlier than $n\gt7$.  Since we are used to "if...then" having a timing implication, I suspect we get subconscious dissonance between “If $P$ then $Q$” and "$Q$ is necessary for $P$" in mathematical statements, and this dissonance makes it difficult to believe that that can mean the same thing.</p>
+
+
+<h4>Causation</h4>
+<p>“If $P$ then $Q$” can also suggest <b>causation.</b>  The the sentence, "If we go outside, the neighbors will see us" has the connotation that the neighbors will see us <b>because</b> we went outside.</p>
+
+
+<p>The contrapositive is "If the neighbors won't see us, then we don't go outside." This English sentence seems to me to mean that if the neighbors are not around to see us, then that <i>causes</i> us to stay inside. In contrast to contrapositive in math, this means something quite different from the original sentence.</p>
+
+<h4>Wrong truth table</h4>
+<p>For some instances of the use of "if...then" in English, <i>the truth table is different.</i></p> 
+
+<p>Consider: "If you eat your vegetables, you can have dessert." Every child knows that this means they will get dessert if they eat their vegetables and not otherwise.  So the truth table is:</p>
+
+<table border:1px solid black; padding:10px>
+  <tr><!-- Row 1 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td width="20px">$P$</td><!-- Col 2 -->
+     <td width="20px">$Q$</td><!-- Col 3 -->
+     <td width="80px" align="center">If $P$ then $Q$</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td>T</td><!-- Col 3 -->
+     <td width="80px" align="center">T</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td>F</td><!-- Col 3 -->
+     <td width="80px" align="center">F</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td></td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td>T</td><!-- Col 3 -->
+     <td width="80px" align="center">F</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td></td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td>F</td><!-- Col 3 -->
+     <td width="80px" align="center">T</td><!-- Col 4 -->
+  </tr>
+</table>
+
+<p>In other words, $P$ is <a href="https://en.wikipedia.org/wiki/Necessity_and_sufficiency">equivalent</a> to $Q$. It appears to me that <i>this</i> truth table corresponds to English "if...then" when a rule is being asserted.</p>
+
+<p>These examples show:</p>
+
+<p class=purpleprose>The different ways of expressing a conditional assertion<br /> may mean different things in English<br />but they always mean the same thing in math --<br />the meaning given by the truth table</p>
+
+
+<p class=red>How can I get to the stage where I automatically understand conditional assertions?</p>
+
+<p>You need to understand the equivalence of these formulations  so well that it is part of your unconscious reaction to conditionals.</p>  
+
+<p>How can you gain that intuitive understanding?  One way is by doing abstract math regularly for several years! (Of course, this is how you gain expertise in <i>anything.</i>) In other words, <b>Practice, Practice!</b></p> 
+
+<h3>Rigor </h3>
+
+<p>But it may help to remember that <i>when doing proofs,</i> we must take the <a href="MMImagesMetaphors.htm#rigorous">rigorous view</a> of mathematical objects:</p>
+
+<ul class=blue>
+<li>Math objects don’t change.</li>
+<li>Math objects don’t cause anything to happen.</li>
+</ul>
+
+<p>The integers (like all math objects) <i>just sit there, </i><b>not doing anything</b> and <b>not affecting anything.</b> $10$ is not greater than $4$ "because" it is greater than $7$. <span class=blue>There is no "because" in rigorous math.</span> Both facts, $10\gt4$ and $10\gt7$,  are <b>eternally true.</b></p>
+
+<p class=smallind>Eternal is how we <b>think of them</b> – I am not making a claim about “reality”.</p>
+
+
+<ul>
+<li>When you look at the integers, every time you find one that is greater than $7$ it turns out to be greater than $4$.  That is how to think about “If $n > 7$, then $n > 4$”.</li>
+
+<li>You can’t find one that is greater than $7$ unless it is greater than $4$: It happens that $n > 7$ <b>only if</b> $n > 4$.</li>
+
+<li>Every time you look at one less than or equal to $4$ it turns out to be less than or equal to $7$ (contrapositive).</li>
+</ul>
+
+<p>These three observations describe the <i>same set of facts</i> about a bunch of things (integers) that just <i>sit there</i> in their various relationships without changing, moving or doing anything.  If you keep these remarks in mind, you will eventually have a natural, unforced understanding of conditionals in math.</p>
+
+<h4>Remark</h4>
+
+<p>None of this means you have to think of mathematical objects as dead and fossilized all the time.  Feel free to think of them using all the <a href="MMImagesMetaphors.htm">metaphors</a> and imagery you know, <i>except when you are reading or formulating a proof written in mathematical English.</i>  Then you have to be rigorous!</p>
+
+<a name="modusponens"></a>
+<h2>Modus ponens</h2>
+
+<p>The truth table for conditional assertions may be summed up by saying:  <span class=blue>The conditional assertion “If $P$, then $Q$” is true unless $P$ is true and $Q$ is false.</span></p>
+
+<p>This fits with the major use of conditional assertions in reasoning:</p>
+
+<h3>Modus Ponens</h3>
+
+<ul>
+<li>If you know that a conditional assertion  is true </li>
+
+<li>and
+you know that its hypothesis is true,</li>
+
+<li>then you know its conclusion is true.</li>
+</ul>
+
+<p>In symbols:</p>
+
+<p class=purpleprose>(1) When “If $P$ then $Q$” and $P$ are both true,<br />
+(2) then $Q$ must be true as well.</p>
+
+
+<p>Modus Ponens is the most used  method of deduction of all. It is the proof machine that makes <a href="MMUsefulBehaviors.htm#rewritebydefinition">Rewrite according to the definition</a> work.</p>
+
+<h4>Remark</h4>
+<p>Modus ponens is not a method of proving conditional assertions.  It is a method of using a conditional assertion in the proof of <i>another</i> assertion.  Methods for proving conditional assertions are found in the chapter <a href="MMFormsProof.htm#directmethod">Forms of proof.</a></p>
+
+<a name="equivalenceofassertions"></a>
+
+<a name="equivalent"></a>
+
+<h2>Equivalence of assertions</h2>
+
+<p>Assertions $P$ and $Q$ are <b>equivalent</b> if the conditional assertions "If $P$ then $Q$" and "If $Q$ then $P$" are <span class=blue>both true or both false.</span> The truth table is:</p>
+
+
+<table border:1px solid black; padding:10px>
+  <tr><!-- Row 1 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td width="20px">$P$</td><!-- Col 2 -->
+     <td width="20px">$Q$</td><!-- Col 3 -->
+     <td width="80px" align="center">$P$ equiv $Q$</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td>T</td><!-- Col 3 -->
+     <td width="80px" align="center">T</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td width="20px"></td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td>F</td><!-- Col 3 -->
+     <td width="80px" align="center">F</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td></td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td>T</td><!-- Col 3 -->
+     <td width="80px" align="center">F</td><!-- Col 4 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td></td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td>F</td><!-- Col 3 -->
+     <td width="80px" align="center">T</td><!-- Col 4 -->
+  </tr>
+</table>
+
+<p>Observe that this table differs from the truth table for conditional assertions <i>only in the third line.</i></p>
+
+<h3>How equivalences are worded</h3>
+
+<p>The statement that $P$ and $Q$ are equivalent can be worded in these ways:</p>
+
+<ul>
+<li>$P$ is <b>equivalent to</b> $Q$.</li>
+<li>$P$ <b>if and only if</b> $Q$.</li>
+<li>$P$ <b>iff</b> $Q$.</li>
+<li>$P\Leftrightarrow Q$.</li>
+<li>$P\leftrightarrow Q$.</li>
+</ul>
+
+<h2>Acknowledgments</h2>
+
+<p>Thanks to Eugene Mondkar for catching an error.</p>
+
+<br /><br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br /><br />
+
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+(* Content-type: application/vnd.wolfram.cdf.text *)
+
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*************************************************************************)
+(*                                                                       *)
+(*  The Mathematica License under which this file was created prohibits  *)
+(*  restricting third parties in receipt of this file from republishing  *)
+(*  or redistributing it by any means, including but not limited to      *)
+(*  rights management or terms of use, without the express consent of    *)
+(*  Wolfram Research, Inc. For additional information concerning CDF     *)
+(*  licensing and redistribution see:                                    *)
+(*                                                                       *)
+(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
+(*                                                                       *)
+(*************************************************************************)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[      1063,         20]
+NotebookDataLength[      4963,        129]
+NotebookOptionsPosition[      5385,        120]
+NotebookOutlinePosition[      5968,        144]
+CellTagsIndexPosition[      5925,        141]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1, $CellContext`b$$ = 
+    1, $CellContext`d$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1}, {1, 2, 3, 4, 5}}, {{
+       Hold[$CellContext`b$$], 1}, {1, 2, 3, 4, 5}}, {{
+       Hold[$CellContext`d$$], 0, ""}, 0, 1}}, Typeset`size$$ = {
+    50., {21., 26.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`a$15298$$ = 
+    0, $CellContext`b$15299$$ = 0, $CellContext`d$15300$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`b$$ = 
+        1, $CellContext`d$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$15298$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$15299$$, 0], 
+        Hold[$CellContext`d$$, $CellContext`d$15300$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`g$ = 
+         BezierFunction[{{0, 0.5}, {0.4, -0.2}, {0.8, 0.5 - 0.17}}]}, 
+        Show[
+         Graphics[{
+           $CellContext`op["x", 
+            Scaled[{0.25, 0.5}]], 
+           $CellContext`op["\[Equal]", 
+            Scaled[{0.5, 0.5}]], 
+           $CellContext`op[
+            If[$CellContext`d$$ < 0.55, "", "\[LongDash]"], 
+            Scaled[{0.8, 0.5}]], 
+           $CellContext`op[$CellContext`b$$, 
+            Scaled[{0.8, 0.5 + 0.14 $CellContext`d$$}]], 
+           $CellContext`op[$CellContext`a$$, 
+            Scaled[
+             $CellContext`g$[$CellContext`d$$]]]}, AspectRatio -> 1, 
+          ImageSize -> 50]]], 
+      "Specifications" :> {{{$CellContext`a$$, 1}, {1, 2, 3, 4, 5}, 
+         ControlType -> RadioButtonBar}, {{$CellContext`b$$, 1}, {1, 2, 3, 4, 
+         5}, ControlType -> RadioButtonBar}, {{$CellContext`d$$, 0, ""}, 0, 
+         1}}, "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
+     ImageSizeCache->{221., {73., 78.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`g = 
+       BezierFunction[
+        1, {{0., 1.}}, {2}, {{{0., 0.5}, {0.4, -0.2}, {0.8, 0.36}}, {}}, {0}, 
+         MachinePrecision, "Unevaluated"], $CellContext`op[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`loc, 
+          Blank[]]] := Text[
+         Style[$CellContext`x, 13, Bold, Background -> White, FontFamily -> 
+          "Arial"], $CellContext`loc], $CellContext`op[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`loc, 
+          Blank[]], 
+         Pattern[$CellContext`weight, 
+          Blank[]]] := Text[
+         Style[$CellContext`x, 13, $CellContext`weight, Background -> White, 
+          FontFamily -> "Arial"], $CellContext`loc], $CellContext`op[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`loc, 
+          Blank[]], 
+         Pattern[$CellContext`weight, 
+          Blank[]], 
+         Pattern[$CellContext`color, 
+          Blank[]]] := Text[
+         Style[$CellContext`x, 13, $CellContext`weight, $CellContext`color, 
+          Background -> White, FontFamily -> "Arial"], $CellContext`loc]}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output", "PluginEmbeddedContent"]
+},
+WindowSize->{238, 157},
+WindowMargins->{{516, Automatic}, {Automatic, 283}},
+Visible->True,
+AuthoredSize->{238.5, 157.59},
+ScrollingOptions->{"HorizontalScrollRange"->Fit,
+"VerticalScrollRange"->Fit},
+ShowCellBracket->False,
+ShowSelection->True,
+Deployed->True,
+CellContext->Notebook,
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Microsoft Windows (32-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[1463, 33, 3918, 85, 153, "Output"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
+(* NotebookSignature Nxp31egssus55CgIZJMtw0Ez *)

@@ -1,0 +1,440 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Variables and Substitution</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-01-27
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>
+<a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+</pre>
+
+
+
+<h1>VARIABLES AND SUBSTITUTION</h2>
+
+<h3>Contents</h3>
+
+<p class=small><a href=#variables>Variables</a></p>
+
+<p class=small><a href=#substitution>Substitution</a></p>
+
+<p class=small><a href=#freeandbound>Free and bound</a></p>
+
+<p class=small><a href=#imagesmetaphorsvariables>How to think about variables</a></p>
+
+<p class=small><a href="MMVariableObj.htm">Variable mathematical objects</a> (separate file)</p>
+
+
+<p class=blue>A <font color="#911B1B">variable</font> is a symbol (usually a Roman or Greek letter) that denotes a <a href="MMMathObj.htm">mathematical object</a> of a certain <a href="#type">type</a>. The type (real number, set, group, etc) may be specified explicitly or by the <a   href="MMMoreLanguage.htm#context">context</a> or by <a href="MMVarMeanings.htm#convention">convention</a>.</p>
+
+<p class=blue>You already know about substituting values for variables in an expression and evaluating the result. This chapter is intended to make your <i>implicit</i> knowledge more <i>explicit</i>.</p>
+
+
+<a name="variables"></a>
+<h2>Variables</h2>
+
+<p>Variables in high-school algebra and in calculus are usually of some number type. But in abstract math, variables can vary over any type of mathematical object or structure.</p>
+
+<p>The main point about variables is that a variable denotes a <a href="MMMathObj.htm">math object</a> of a certain type, that a text may given you some facts about the variable, but you do not necessarily know the precise math object that it names.</p>
+
+<h4 class=redit>Example</h5>
+
+<p>Suppose a math text says, "Let $x$ be a <a href="MMRealNumbers.htm">real number</a>, and let $y=x^2$".</p>
+
+<ul>
+
+<li>You know that $x$ is a real number, but you don't know whether it is positive, negative or $0$.</li>
+
+<li>You <i>do</i> know that $x^2$ is nonnegative.</li>
+
+<li>You know that $y$ is a real number, since the square of a real number is a real number, and that "$y$" and "$x^2$" are two symbols that denote the <i>same real number</i>.</li>
+
+<li>If you are also told that $x\gt 2$, then you can deduce that $y\gt 4$, but that's all you know about it.</li>
+
+</ul>
+
+<h4 class=redit>Example</h5>
+
+<p>A statement in a text that says "Let $S$ be a finite set" establishes that in this part of the text, "$S$" is a variable denoting a finite set.</p>
+
+<ul>
+
+<li>You know that $S$ might or might not contain the number $3$, or all the integers between $3$ and $42$, and lots of other possible statements like those.</li>
+
+<li>You know that $S$ does not contain all the integers bigger than $42$, because there are an infinite number of such integers.</li>
+
+<li>You know that $S$ is not the number $3$, because $3$ is a number, not a set. </li> 
+
+</ul>
+
+<p class=smallind>Some mathematicians would not refer to "$S$" as a variable in this context.</p>
+
+<a name="type"></a>
+<a name="realvariable"></a>
+<h3>The type of a variable</h3>
+
+<p>The <b>type</b> (or <b>data type</b>) of a variable determines what can be legally substituted for it. For example, to say that $x$ is a variable of type real means that $x$ denotes a real number.  The fact that it is a variable means that you don't necessarily know what that real number is.</p>
+
+<p class=smallind>This terminology follows the use of the word "<a href="https://en.wikipedia.org/wiki/Data_type">type</a>" in many programming languages. Not all mathematicians use the word in this way.</p>
+
+<h4>Usage</h4>
+
+<p>The name of the type may be used as an adjective before the name of the variable.  Thus a <b>real variable</b> is a variable of
+type real: in other words, a real variable $x$ may have any real number as
+its value, subject to any <a
+href="MMIntent.htm#constraint">constraints </a>that
+have been put on it.  Similarly<b> complex</b> <b>variable</b>, <b>integer
+variable</b>, <b>set variable</b>.  </p>
+
+<h4 class=redit>Examples</h4>
+
+<p>All these are different ways of saying the same thing:</p>
+
+<ol>
+
+<li>Let $x$ be of <b>type</b> real.</li>
+
+<li>Let $x$ be a <b>real variable</b>.</li>
+
+<li>Let $x$ be a real number.</li>
+
+<li>Let $x\in\mathbb{R}$.</li>
+
+</ol>
+
+
+
+<p class=smallind>Note that 1) and 2) refer to the <b>variable</b>
+"$x$" and 3) and 4) refer to $x$ as a <b>number</b>. If you are really really hung up on accuracy you might write:  Let "$x$" be a real variable. Mathe&shy;maticians rarely use quotes in this way, but logicians usually make the distinction.</p>
+
+<a name="conventions"></a>
+<h4>Conventions for types of variables</h4>
+
+<p>Authors may use certain letters of the alphabet to indicate
+certain types of variable without saying so.  </p>
+
+<ul>
+
+<li>The letters $i,
+j, k, m, n$ may be <a
+href="MMIntegers.htm">integer</a> variables.</li>
+
+<li>The letters $r, s, t, u, x, y, z$ are usually real variables, except in texts specifically concerned with complex variables.</li>
+
+<li>Letters at the beginning of the alphabet may denote constants or <a
+href="MMParameters.htm">parameters</a>.</li>
+
+<li>If an
+upper case letter denotes a <a href="MMMathStructure.htm">structure</a>,
+the same letter in lower case may denote an element of the structure.  For
+example a text might refer to the element $a$ of the set $A$. Both "$a$" and "$A$" are variables in this context.</li>
+
+<li>These conventions are not observed universally. </li>
+</ul>
+
+
+<h4>Natural kinds </h4>
+
+<p>In effect, the word "type", for those mathematicians who use
+it, is a reference to one of the natural kinds of things used in math. 
+I might say "Let $x$ be of type real and suppose $x\gt3$". A mathematician
+would not say "Let $X$ be of type real-greater-than-$3$" because "real-greater-than-$3$" is thought of as a <a href="MMIntent.htm#constraint">constraint</a>.</p>
+
+<p>This concept of "natural kind" has psychological reality for
+many of us but does not have a mathematical definition.  There
+is more about this in the <a href="https://en.wikipedia.org/wiki/Natural_kind">Wikipedia article on natural kind</a>, in the <a
+href="http://www.cwru.edu/artsci/math/wells/pub/pdf/hyperhbk.pdf">Handbook</a>
+(jump to <b>type</b>) and in the article <a
+href="http://www.case.edu/artsci/math/wells/pub/pdf/comlog.pdf">Communication of Mathematical Reasoning</a>. 
+</p>
+<a name="substitution"></a>
+<h2>Substitution</h2>
+
+<h3>Definition of "substitute"</h3>
+
+<p class=blue>To <font color="#911B1B">substitute</font> an expression $e$ for a variable $x$
+that occurs in an expression $t$ is to replace every occurrence of $x$
+by $e$ (in a sophisticated way - see below).</p>
+
+<p>The expression resulting from
+the substitution has a generally different meaning and the meaning can
+be determined just knowing the old expression and what was substituted.</p>
+
+<h4 class=redit>Example</h5>
+
+<p>Let the expression $E$ be "$3+5x$".</p>
+<ul>
+<li>The
+result of substituting $4$ for $x$ in $E$ is $3+5\cdot4$, which is $23$.</li>
+
+<li>The
+result of substituting $x+y$ for $x$ in $E$ is $3+5(x+y)$.</li>
+</ul>
+
+<h4>Terminology</h4>
+
+<p>Instead of "substitute $4$ for $x$", people may say
+"<b>replace</b> $x$ by $4$" or "<b>plug</b> $4$ into $E$ for $x$". 
+</p>
+
+
+<p class=smallind>There are mathematicians who find the "plug in" terminology offensive. From my early experience, I don't think any sexual connotation was intended. I worked on an IBM "computer" in the 1950’s that you programmed by connecting sockets to each other. There was sockets for inputs and other sockets for multiplication, addition, negative sign, and so on.  By hooking the sockets up correctly you could cause a socket to output the value of $3+5x$ whenever a value was <i>literally</i> plugged into the socket representing $x$.</p>
+
+<p class=smallind>That "computer" did not deserve to be called a computer, since it did not operate on <a href="https://en.wikipedia.org/wiki/Stored-program_computer">stored programs</a>.</p>
+
+
+<h3>Syntax of substitution</a></h3>
+
+<p class=blue>The act of substituting may require insertion of parentheses and other adjustments to the expression
+containing the variable. </p>
+
+
+<h4 class=redit>Examples</h4>
+<ul>
+
+
+<li>Suppose
+$f(x,y)={{x}^{2}}-{{y}^{2}}$.   Then $f(y,x)={{y}^{2}}-{{x}^{2}}$ and $f(x,x)={{x}^{2}}-{{x}^{2}}=0$.</li>
+<li>Substituting $4$ for $x$ in the expression $3x$
+results in $12$, not $34$ (!).</li>
+
+<li>Let $e$ be $x+y$ and $t$ be $2u$. Then substituting $e$ for $u$ in $t$ yields $2(x+y)$. The rules of algebra require you to put "$x +y$" in parentheses. 
+The answer "$2x+y$" would be wrong.  </li>
+
+<li>Substituting $2u$ for $x$  in ${{x}^{2}}+2x+y$ gives
+${{(2u)}^{2}}+2\,(2u)+y$. Note the changes that have to be made from
+a straight textual substitution. You could write $2\cdot 2u$ instead of $2(2u)$
+but you can’t write it as "$22u$". Of
+course, the expression ${{(2u)}^{2}}+2\,(2u)+y$ simplifies to $4{{u}^{2}}+4u+y$.</li>
+</ul>
+
+
+<p class=PurpleProse>Substituting
+is not a mechanical act.<br />It
+requires understanding<br />the <font color="#911B1B">form</font> and <font color="#911B1B">meaning</font> of the expression.</p>
+
+
+<h4>Uniform substitution</h4>
+
+<p class=blue>All uses of a particular identifier must refer to the same object. </p>
+
+<h4 class=redit>Example</h5>
+
+<p>When I substituted $2u$ for $x$ in ${{x}^{2}}+2x+y$ above, I had to substitute it for <i>both</i>
+occurrences of $x$.  "Replace the first
+$x$ by $2u$ and the second $x$ by $w$" gives ${{(2u)}^{2}}+2w+y$,
+but that action is not an example of substitution in the mathematical
+sense.</p>
+
+<p>This observation is an implicit rule in <a
+href="MMPatternRecognition.htm">pattern
+recognition</a> The statement "$x+x=2x$" is true whatever
+real number is substituted for $x$. So $3+3=2\cdot 3$ and $5+5=2\cdot 5$. 
+But of course the statement does not mean $3+4=2\cdot 5$.</p>
+
+<p class=smallind>One of the few examples in math that I know of where the uniform substitution rule is not used is in the theory of <a href="https://en.wikipedia.org/wiki/Context-free_grammar">context free grammars</a>, where you normally replace just one instance in an expression with another expression, leaving other instances alone. And, as I did in the previous sentence, they usually say "replace" rather the "substitute".</p> 
+
+<h3>Semantics of substitution</h3>
+
+<p class=blue>A fundamental fact about the syntax and
+semantics of all mathematical expressions (as far as I know) is that <font color="#911B1B">substitution
+commutes with evaluation</font>.  This means: </p>
+
+<p class=purpleprose>If you replace a
+subexpression by its value,<br />the value of the
+containing expression remains the same.</p>
+<br />
+<h4 class=red>Example</h4>
+<p>The expression $3x+{{y}^{2}}$ has "$3x$" and
+"${{y}^{2}}$" as subexpressions.</p>
+
+<ul>
+
+<li>(a) If you substitute $4$ for $x$ and $5$ for $y$ in the expression $3x+{{y}^{2}}$, you get the expression $3\cdot
+4+{{5}^{2}}$, which equals $37$.</li>
+
+<li>(b) If you substitute $4$ for $x$ in the expression $3x$, you get
+$12+y^2$. Then if you substitute $5$ for $y$ in $12+y^2$, you get $12+25$, which is $37$. </li>
+
+</ul>
+
+<p>The principle that substitution commutes with evaluation is explained with pretty diagrams in my blog post <a href="/Word%20Press/?p=9246">The only axiom of algebra</a>.</p>
+
+<p>This is an obvious
+but basic property of mathematical expressions.  Teachers and students of math almost never see an
+explicit statement of it.  I believe I have observed students being confused because they
+didn’t fully grasp this fact.  Whether that happens often is something the <a
+href="http://en.wikipedia.org/wiki/Mathematics_education">math ed</a> people have
+not investigated, as far as I know.</p>
+
+
+<p class=smallind>The phrase "substitution commutes with evaluation" has nothing to do with commuta&shy;tivity of addition or multiplication.  It means you can evaluate first, then substitute, or substitute first, then evaluate, and get the same result, as the example illustrates.</p>
+
+
+
+
+<h3>Expression and process</h3>
+
+<p>You can describe how to calculate $3x+{{y}^{2}}$ for $x=4$ and $y=5$ by saying:</p>
+
+<p>"Substitute $4$ for $x$ and $5$ for $y$ in $3x+{{y}^{2}}$."</p>
+
+<p>You can spell it out
+in a more transparent way by describing it as a <b>process</b>:</p>
+
+<ul>
+
+<li>Multiply $x$ by $3$.</li>
+
+<li>Square $y$.</li>
+
+<li>Add the preceding two results.</li>
+
+</ul>
+
+<p class=Aliste style='margin-left:0in'>This illustrates the fact that an
+expression may be associated with a computational process: The expression <a
+href="MMSymLang.htm#encapsulated">encapsulates</a> the
+process.</p>
+
+<p>There are
+more examples in the article <a
+href="MMImagesMetaphorsFunctions.htm#encapsulates">Functions: Images and Metaphors</a>.</p>
+
+<a name="freeandbound"></a>
+<a name="free"></a><a name="bound"></a>
+
+<h2>Free and bound</h2>
+
+<p class=blue>A variable in an expression is either <font color="#911B1B">free</font> or <font color="#911B1B">bound</font>. It is approximately
+correct to say:</p>
+
+<p class=blue>A variable is <font color="#911B1B">free</font> if you can substitute a value for it and the resulting expressions is meaningful. </p>
+
+<p class=blue>A variable is <font color="#911B1B">bound</font> if the expression is a statement about
+all the possible values of the variable <i>all at once</i>. You cannot substitute a value for a bound value.</p>
+
+<p>A bound variable is bound by an operator such as the <a href="https://en.wikipedia.org/wiki/Integral_symbol">integral sign</a>, a <a
+href="http://en.wikipedia.org/wiki/Quantifier">quantifier,</a> or a <a href="https://en.wikipedia.org/wiki/Summation#Capital_sigma_notation">summation sign</a>.</p>
+
+<p>Those
+statements are a <b>guide</b> to what "free" and "bound" mean but are not totally precise – <i>they are not <a
+href="MMDefs.htm">mathematical definitions.</a></i> Precise
+mathematical definitions of "free" and "bound" involve technicalities (see <a
+href="http://en.wikipedia.org/wiki/Free_variables_and_bound_variables">Wikipedia</a>).</p>
+
+<h4 class=redit>Examples</h4>
+<ul>
+
+<li>In the
+expression "${{x}^{2}}+1$", "$x$" is a <b>free</b> variable. You can
+substitute $4$ for $x$ in this expression and the result is $17$.
+</li>
+
+<li>In "$\int_{3}^{5}{({{x}^{2}}+1)\,\,dx}$", the variable $x$ is <b>bound</b> by the integral sign. The
+value of the <a href="http://en.wikipedia.org/wiki/Integral">integral,</a>
+which is $104/3$, depends on <i>all the values of $x$ between $3$ and $5$</i>. If you substitute $4$ for $x$ you get nonsense:$\int_{3}^{5}{({{4}^{2}}+1)\,\,d4}$.</li>
+
+<li>You <i>can</i> substitute for the variables $a$ and $b$ in the integral $\int_{a}^{b}{({{x}^{2}}+1\,)\,dx}$. 
+In this expression, $a$ and $b$  are <b>free</b> (and $x$ is bound).  They are <a
+href="MMParameters.htm">parameters</a>. If you
+substitute $a  := 3$ and $b : = 5$, you  get the integral we had
+in the previous example. The integral $\int_{a}^{b}{({{x}^{2}}+1\,)\,dx}$ is actually a function of two variables – $a$ and $b$.</li>
+
+<li>In the <a
+href="MMSymLang.htm#symbolicassertion">symbolic
+assertion</a> "$x\gt7$", $x$ is free. You can substitute $42$
+for $x$ and get the true assertion "$42\gt7$". You can also substitute $5$
+for $x$ and get the assertion "$5\gt7$", which is a false assertion but
+is nevertheless a correctly formed assertion with a specific meaning.  </li>
+
+<li>In the
+assertion "For all real $x$, $x\gt7$", $x$ is <b>bound</b>
+by the <a href="MMUnivTrue.htm">universal
+quantifier</a>.  The statement is a (false) claim about all possible
+values of $x$ (even though "$x\gt7$" is true of some of them). </li>
+
+</ul>
+
+<h4 class=redit>Subtle example</h4>
+
+<p>Suppose we define a function by saying, "Let $f(x)={{x}^{2}}+1$".  Then
+the $x$ in that expression (it occurs twice) is <b>bound</b>. There is an
+implicit "for all $x$" in such a definition. The statement "Let $f(4)={{4}^{2}}+1$"
+is perfectly legitimate, but it defines a different function that has only one
+element in its domain.  </p>
+
+<h2><a name=imagesmetaphorsvariables>How to think</a> about variables</h2>
+
+<p>Assuming $x$ has been specified as a real variable, you
+can think of $x$ in several related ways.  All the remarks in this section
+assume that $x$ is free.</p>
+<a name="roleplaying"></a>
+<h3>Role playing</h3>
+
+<p class=blue>If the author says "$x$ is a real variable" then it <font color="#911B1B">plays
+the role</font> of
+a real number in
+whatever expression it occurs in. It is like an  actor in a play.</p><ul><li>If the producer says Dwayne will play <a
+href="http://en.wikipedia.org/wiki/Polonius">Polonius</a> you know that Dwayne will hide behind a curtain at a certain point in the play.</li><li>When $x$ occurs in the expression ${{x}^{3}}-1$ you know that if $3$ is substituted for $x$ in the expression ($3$ plays the role of $x$),
+the expression will then denote the result of cubing the number and
+subtracting $1$ from it.</a></li></ul>
+
+<p class=smallind>If I were going to be cubed, I would hide behind a curtain too.</p>
+<a name="slot"></a><a name="cell"></a>
+<h3>Slot or cell</h3>
+
+<p class=blue>The
+variable $x$ is a <font color="#911B1B">slot</font> into which you can put any real number.</p>
+<h4 class=redit>Example</h5>
+<p>If you plug $3$ into $x$ in the expression ${{x}^{3}}-1$ you will get $26$.</p>
+
+<p>This
+is like a blank cell in a spreadsheet. If you define another cell with
+the formula "$={{x}^{3}}-1$" and put $3$ in the cell representing $x$, the other cell will show $26$.</p>
+
+<p class=smallind>In some school workbooks, a variable is denoted by an empty box. That is essentially the same metaphor. The trouble with blank boxes is that they don't allow you to have more than one variable.</p>
+
+<a name="variableobject"></a>
+<a href="MMVariableObj.htm"><h2>Variable mathematical objects</h2></a>
+
+<p>This section is in a separate file.</p>
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+
+</body>
+
+</html>

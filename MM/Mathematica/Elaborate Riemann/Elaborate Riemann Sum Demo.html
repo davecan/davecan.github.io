@@ -1,0 +1,350 @@
+<html>
+<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css" href="/MM/MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Elaborate Riemann Sum Demo</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+  <body>
+
+  
+<h1>An elaborate Riemann Sum demonstration</h1> 
+
+<p>This is a revision of a Gyre&Gimble post. The section <a href="#aboutrevision">About this revision</a> at the end of the article discusses the reason I have revised it. </p>
+
+<h2>Using CDF player</h2>
+<p>To manipulate the demo in this article, you must have Wolfram CDF Player installed on your computer. It is available free from the <a href="http://www.wolfram.com/cdf-player/">Wolfram website</a>.</p>
+
+<p>Many readers will not be able to install the CDF player (see <a href="#aboutrevision">About this revision</a>), so I have also included an extensive collection of snapshots made with the CDF demo as a second-best substitute. One of the good things about a document to be read on a computer is that you can include lots of stuff without worrying about wasting paper.</p>
+
+<p>The Mathematica files that are relevant are available here:</p>
+
+<ul>
+<li><a href="/MM/Mathematica/Elaborate Riemann Sum Demo.nb">Elaborate Riemann Sum Demo.nb.</a> Contains the code for the cdf files and the graphs in this article.</li>
+
+<li><a href="/MM/Mathematica/Elaborate Riemann Sum Demo.cdf">Elaborate Riemann Sum Demo.cdf</a></li>
+
+<li><a href="/MM/Mathematica/Elaborate%20Riemann/FineSine.cdf">FineSine.cdf</a></li>
+
+</ul>
+
+<p>If at some point you get CDF player you can download any these files and manipulate the CDF files and read the .nb file. If you have Mathematica itself, you can modify the .nb file; it may be freely reused under the conditions of the <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+
+
+<h2>Riemann Sums</h2>
+
+<h3>Riemann integrals</h3>
+<p> A <b>Riemann integral</b> \[\int_a^b f(x)\,dx\] involves three <a href="/MM/MMParameters.htm">parameters</a>: two numbers $a$ and $b$ and the function $x\mapsto f(x)$. These parameters are subject to <a href="/MM/MMIntent.htm#constraint">constraints</a>: It is enough for the purpose of this article that the Riemann integral exists if $f$ is a real valued function that is defined and continuous on the interval $[a,b]$.  <a href="https://en.wikipedia.org/wiki/Riemann_integral#Integrability">Wikipedia</a> describes the general case of Riemann integrability in detail.
+
+<p class=smallind>There are other kinds of integrals besides Riemann integrals. The integrals you see in American freshman calculus classes are always Riemann integrals. "Riemann" is pronounced "ree-mon".</p>
+
+<h3>Riemann Sums</h3>
+
+<p>A <b>Riemann Sum</b> for the integral $\int_a^b f(x)\,dx$ looks like \[\sum_{i=1}^n f(p_i)(x_i-x_{i-1})\]</p>
+<p class=noind>Besides $f$, $a$ and $b$, it has three more <a href="/MM/MMParameters.htm">parameters</a>: a number $n$ and <em>two lists of numbers</em> satisfying some complicated conditions:</p>
+<ul>
+  <li>The <strong>number </strong>$n$ of <strong>subdivisions</strong>.<b> </b></li>
+  <li>The <strong>partition, </strong>which
+    <ul>
+      <li>is a list of $n+1$ numbers $\{x_0,x_1,\ldots,x_n\}$</li>
+      <li>satisfies the conditions
+        <ul>
+          <li> $x_0&lt;x_1&lt;\ldots&lt;x_n$</li>
+          <li>$x_0=a$</li>
+          <li>$x_n=b$</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>The<strong> list of evaluation points</strong>, which
+    <ul>
+      <li>is a list of $n$ numbers $\{p_1,\ldots,p_n\}$</li>
+      <li>satisfies the condition $x_{i-1}\leq p_i \leq x_i$ for $i=1,\ldots,n$.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class=boxed>
+<p class=blue>The Riemann Sum \[\sum_{i=1}^n f(p_i)(x_i-x_{i-1})\] is the sum of the areas of the rectangles with base the interval from $x_{i-1}$ to $x_i$ and whose height is $f(p_i)$ for $i=1,\ldots,n$. This statement is not new information: it follows from the definition of Riemann sum.</p></div>
+
+
+<p class=smallind>If $f(p_i)$ is negative, then the "area" will be negative.  All examples in this article use nonnegative functions only.</p>
+
+<a name="norm"></a>
+<p>The <b>norm</b> (or <b>mesh</b>) of the Riemann sum is the largest value of $|x_i-x_{i-1}|$ for $i=1,\ldots n$.</p>
+
+<h3>Properties</h3>
+<p>A Riemann sum may or may not have various important<em> properties</em>.</p>
+<ul>
+  <li>The partition can be
+    <ul>
+      <li>uniform (every subinterval has width $(b-a)/n$)</li>
+      <li>random</li>
+      <li>chosen by a rule (increase the number of points as the derivative increases, for example)</li>
+    </ul>
+  </li>
+  <li>The evaluation points can be chosen
+    <ul>
+      <li>randomly</li>
+      <li>at the midpoint</li>
+      <li>at the left end</li>
+      <li>at the right end</li>
+      <li>at the lowest point</li>
+      <li>at the highest point.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Example</h3>
+<p>This is an example of a Riemann Sum  of the integral \[\int_0^1 x^2\,dx\]
+<img width=340 height=340 src="/MM/Mathematica/Elaborate Riemann/ExampleQ  uadratic.png"></p>
+<p class=noind>It is an example of what you see when you run the <a href="#demo">demo</a> below.</p>
+
+<p>The partition is $(0,0.2,0.4,0.6,0.8,1)$ and the evaluation points are $0.1$, $0.3$, $0.5$, $0.7$, $0.9$, so this is a sum with <i>uniform partition</i> and <i>midpoints</i>, and its norm is $0.2$. The other data given above the graph is explained later.</p>
+
+
+
+<p>So the concept of Riemann Sum is complex, with several constituents and interrelationships to hold in your head all at once.  Experienced math people learn concepts like this all the time.  Math students have a harder time.  <b>Manipulable diagrams can <a href="#rant">help</a>.</b></p>  
+
+<h3>Fundamental theorem of Riemann sums</h3>
+
+<p>The <b>fundamental theorem of the Riemann sums</b> says that the limit of <i>all possible Riemann sums</i> for the function $f$ and the interval $[a,b]$, as the <a href="#norm">norm</a> goes to zero, is <i>exactly the value of the integral</i>.</p>
+
+<p>"All possible Riemann sums" means all possible choices of partitions of $[a,b]$ (keeping $a$ and $b$ fixed) and all possible choices of lists of evaluation points for each partition. This is a <i>very large cloud of Riemann sums</i>.  The clouds are illustrated in these blog posts:</p>
+
+
+<p><a href="/Word%20Press/?p=1902">Playing with Riemann Sums</a></p>
+
+<p><a href="/Word%20Press/?p=2085">Riemann clouds improved</a></p>
+
+<p><a href="/Word%20Press/?p=4532">Improved clouds</a></p>
+
+<p class=blueit>To do: Combine these blog posts into an article.</p>
+
+<a name="demo"></a>
+<h2>The Demo</h2>
+
+
+<script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.setDefaultContent('<a href="http://www.wolfram.com/cdf-player/"><img  src="/MM/Mathematica/Elaborate Riemann/Elaborate Riemann Sum Demo.png"></a>');
+cdf.embed('http://www.abstractmath.org/MM/Mathematica/Elaborate Riemann/Elaborate Riemann Sum Demo.cdf', 640, 893);
+</script>
+
+<p class=blueit>To do: Find a way to cut out the extra space between the demo and the following paragraph.</p>
+<h2> Using the demo</h2>
+
+<h3>Examples of manipulation</h3>
+<ul>
+  <li>Move the slide labeled $n$ to make more or fewer subdivisions.</li>
+  <li>Click on a button to choose the type of partition, the type of evaluation points, and five functions to play with.</li>
+<li>Choosing a random partition type causes the width of each rectangle to be randomly chosen. A random partition ignores your choice of $n$.</li>
+<li>Choosing random height causes a random choice of point within each subinterval to measure the height from. (The choice for each subinterval is independent of the choice for any other subinterval.)</li>
+
+<li>To get a new random result you have to click on some other choice and then click on random. This applies both to repeating a random partition and repeating a random choice of rectangle heights. <font size="4"><font color="#205070"><i><b>TO DO: Repair this flaw so that clicking "random" repeatedly results in a new random result each time.</b></i></font></font></li>
+</li>
+<li>The statements just above the graph gives information about what you see.  
+<ul>
+<li>"Riemann sum" is the sum of the areas of the red rectangles you see.</li> 
+<li>"Definite integral" is the actual value of the integral correct to several decimal places.</li>  
+<li>"<a href="#norm">Norm</a>" is the width of each rectangle for a uniform partition and the greatest width of any of the rectangles for a random partition.</li>  
+<li>"Percent error" is \[\left|100\frac{i-s}{i}\right|\] where $i$ is the value of the integral and $s$ is the Riemann sum.</li></ul>
+
+
+
+</ul>
+
+<h3>Sample experiment</h3>
+<ol>
+  <li>Set $n=4$,  uniform partition and midpoint and look at the results for each function.  Explain each of the following by referring to the picture:
+    <ul>
+      <li>For $x\mapsto x$, the estimate is exact. Explain why.</li>
+      <li>For $x\mapsto x^2$, the estimate is less than the value of the integral. Why?</li>
+      <li>For $x\mapsto x^5$, the error in the estimate is <em>much worse</em> than for $x^2$. Why?</li>
+      <li>For $x\mapsto \sqrt{1-x^2}$ , the estimate is greater than the value of the integral. Why?</li>
+    </ul>
+  </li>
+  <li>Go through the examples in 1. and check that when you make $n$ bigger the properties stated continue to be true.  Can you explain this?</li>
+  <li>Starting with $n=4$, uniform and midpoint and then using bigger values of $n$, note that the error for  $x\mapsto \sqrt{1-x^2}$ is always bigger than the error for  $x\mapsto \sin \pi x$.  Try to explain this.</li>
+  <li>For $n=4$, uniform and midpoint (and then try bigger $n$), for $x\mapsto x^5$, the LeftSide error is always less than the RightSide error.  Explain using the picture.</li>
+  
+</ol>
+
+<p>Note that you can use this Demo without knowing anything at all about Mathematica.  There are hundreds of Demos available in the cloud that can be used in the same way; many of the best are on the<a href="http://demonstrations.wolfram.com/"> Wolfram Demonstration Project.</a></p>
+<p>If you can program some in Mathematica, you can take the <a href="/MM/Mathematica/Elaborate%20Riemann/Elaborate%20Riemann%20Sum%20Demo.nb">source code</a> for this demo and modify it, for example to use other functions, to provide functions with changeable parameters and to use partitions following dynamic rules.</p>
+
+<a name="rant"></a>
+
+<h2>Rant about why math teachers should use manipulable diagrams</h2>
+
+<p>A teacher in the past would draw an example of a RIemann sum on the blackboard and talk about a few features as they point at the board.  Nowadays, teachers have slides with accurately drawn Riemann sums and books have pictures of them.  This sort of thing gives the student a <em>picture </em>which (hopefully) stays in their head.</p>
+
+<p>That picture is a kind of <em>metaphor </em>which enables you to think of the sum in terms of something that you are familiar with. The picture of a Riemann sum is not something you knew before you studied them, but your brain has remarkable abilities to absorb a picture and the relations between parts of the picture, so once you have seen it you can call it up whenever you think of Riemann sums.</p>
+
+<p class=smallind>I am using "metaphor" in the sense of <a href="https://en.wikipedia.org/wiki/Conceptual_metaphor">conceptual metaphor</a>, the way your brain partially blends two different concepts by identifying certain similarities they have. See also <a href="/MM/MMImagesMetaphors.htm">Metaphor</a> in abstractmath.org.</p>
+
+
+<p class=smallind>Many other metaphors besides pictures help to understand math objects. For example, you can think of a function as position and its derivative as velocity. Position and velocity are familiar from driving or any other kind of moving. But a picture is an <i>unusually powerful metaphor</i>, because it calls upon your remarkable ability to understand what you see. <a href="https://www.quora.com/How-much-of-the-brain-is-involved-with-vision">Twenty percent of your brain</a> is devoted exclusively to vision, and that part is connected to many other parts of the brain (balance, navigation, motor and so on).</p> 
+
+
+<p>But there are a lot of aspects of Riemann sums that cannot be demonstrated by a still picture.  When the mesh gets finer, the value of the sum tends to be closer to the exact value of the integral.  You can stare at the still picture and <em>sort of </em>visualize this. But with the demo above you can repeatedly decrease the mesh and watch the error get smaller.</p>
+
+<p>An elaborate demo with lots of push buttons is something for students to play with on their own time and thereby gain a better understanding of the topic.  Before manipulable diagrams the only way you could do this was produce physical models.  I don't know of anyone who produced a physical model of a Riemann sum.  It is possible to do so with some parameters changeable but it would be difficult and not as flexible as the demo given here.</p>
+
+
+<h2>Some still examples</h2>
+
+<p>These examples are for people who cannot manipulate the demos in this article on this computer. They should be helpful, but they are really a second-best aid.</p>
+
+<h3>Quarter circle with various partition sizes</h3>
+
+<p>These are Riemann sums for the area of the quarter circle listed in order of the number of subintervals.  Notice that the accuracy improves uniformly.</p>
+<p noind>
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleMid5.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleMid10.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleMid20.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleMid30.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleMid40.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleMid50.png">
+
+</p>
+
+<h3>Left, middle and right</h3>
+
+<p>These show the quartercircle sum with twenty subdivisions, using left, middle, and right side choices of heights. Notice that the error for the midpoint is much smaller than the other two, but also that the error for the right side is worse that the error for the left side. Stare at the pictures to figure out why.</p>
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleLS20.png">
+
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleMid20.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/CircleRightSide20.png">
+
+<h3>Squaring function</h3>
+<p>These are sums for the squaring function $x\mapsto x^2$.  Notice that the difference in error between the left side heights and the right side heights are much less than for the quarter circle.  Do you suppose that has to do with how big the derivative gets?</p>
+
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/SquareLS20.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/SquareMP20.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/SqRS20.png">
+
+<h3>Sine function</h3>
+
+<p>For one arch of the sine function the error is the same for the left side and the right side heights.  Why?</p>
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/SinLS20.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/SineMid20.png">
+
+<img width=300 height=300 src="/MM/Mathematica/Elaborate Riemann/SinRS20.png">
+
+<h2>Another Sine demo</h2>
+
+<p>In the examples already shown, the error of the Riemann Sum generally approaches zero as the norm (width of the subintervals) approaches zero. But as all numerical analysts know, in some examples it can fluctuate wildly. If you calculate some value with just one value of the norm, you can get a wildly wrong answer. The demo below exhibits this behavior.</p> 
+
+<p class=smallind>I once heard a talk describing how this sort of thing resulted in the collapse of an oil rig, but I no longer have a reference to it.</p>
+
+<br />
+
+<script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.setDefaultContent('<a href="http://www.wolfram.com/cdf-player/"><img  src="/MM/Mathematica/Elaborate Riemann/FineSine.png"></a>');
+cdf.embed('http://www.abstractmath.org/MM/Mathematica/Elaborate Riemann/FineSine.cdf', 534, 388);
+</script>
+
+<p>Check out the errors for each norm from $15$ to $25$, and notice the wild fluctuation.  Then look at the errors between $50$ and $55$ (for example) and see how they steadily go down.  Notice there the frequency is a little less than $22$ cycles per unit, and the rectangles in the sum resonate in some way with the waves; this won't happen at higher frequencies, when several rectangles fit into each wave.</p>
+
+<p>Here are still graphs for the number of subintervals from $15$ to $25$, and below them is a table of numbers of subintervals and errors from $50$ and $55$.</p>
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine15.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine16.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine17.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine18.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine19.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine20.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine21.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine22.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine23.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine24.png">
+
+<img width=450 height=225
+ src="/MM/Mathematica/Elaborate Riemann/FineSine25.png">
+
+<p>Here are the errors for $50$ to $55$:</p>
+
+\[\begin{array}{ccccccc}
+ \text{Number of subintervals} & 50 & 51 & 52 & 53 &
+   54 & 55 \\
+ \text{Percent error} & 0.242 & 0.23 & 0.219 & 0.209 &
+   0.2 & 0.191 \\
+\end{array}\]
+
+<a name="aboutrevision"></a>
+
+<h2>About this revision</h2>
+
+<p>The Mathematica program and the CDF player are available on Windows, Mac and Linux computers. On a Windows or Mac computer, you can run .cdf files that are embedded in html, provided that CDF player is installed on your computer and that you are viewing the html file using Firefox, Safari or Internet Explorer (not Chrome). These restrictions makes difficulties for many people; my own experience in teaching with it is that in one college I taught at briefly a few years ago, many students wanted to view my html files that contained embedded CDF files on public college computers, but most of those computers did not have CDF player installed.  That included the one in the classroom I was teaching, but I got around that by bringing in my laptop.</p>
+
+<p>It was those problems that led me to add some non-manipulable diagrams into this article.  They do give the reader some ability to see how the different parameters in a Riemann Sum affect the accuracy of the output.</p>  
+
+<p>There are other possibilities that I may investigate, including movies (which can be produced by Mathematica) and using the Wolfram Cloud, which I would have to have funding to use.</p>
+
+
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ 
+
+  </body>
+</html>

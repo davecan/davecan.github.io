@@ -1,0 +1,363 @@
+
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Other aspects of understanding math</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised  2017-01-08
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>   <a href="MMUnderstandingMath.htm">head of Understanding Math chapter</a>
+</pre>
+
+
+<h1>OTHER ASPECTS OF UNDERSTANDING MATH</h1>
+
+<a name="abstraction"></a>
+
+<h2>Abstraction</h2>
+
+<p class=blue>An <span class=red>abstraction</span> of a concept $C$ is a concept $C'$ with these properties:</p>
+
+<ul class=blue>
+
+<li>  $C'$ includes all instances of $C$ and</li>
+
+<li>  $C'$ is constructed by taking as axioms certain assertions that are true of all instances of $C$.</li>
+</ul>
+
+<p>There are two major situations where abstraction is used in math.</p>
+
+<ul>
+<li>$C$ may be a familiar concept or property that has not yet been given a math definition. </li>
+
+<li>$C$ may already have a mathe&shy;matical <a href="MMDefs.htm#definition">definition</a> using axioms. In that case the abstraction will be a <a href="MMGlossary.htm#generalization">generalization</a> of $C$.  </li>
+
+</ul>
+
+<p>In both cases, the math definition may allow instances of $C'$ that were not originally thought of as being part of $C$.</p>
+
+<a name="binaryrelations"></a>
+
+<h3>Example: Relations</h3>
+
+<p>Mathematicians have made use of <b>relations</b> between math objects since antiquity.</p>
+
+<ul>  
+
+<li>For <a href="MMRealNumbers.htm">real numbers</a> $r$ and $s$. "$r\lt x$" means that $r$ is less than $s$.  So the statement "$5\lt 7$" is true, but the statement "$7\lt 5$" is false. We say that "$\lt$" is a <b>relation on the real numbers.</b> Other relations on real numbers denoted by symbols are "$=$" and "$\leq$".</li>
+
+<li>Suppose $m$ and $n$ are positive integers. $m$ and $n$ are said to be <b>relatively prime</b> if the <a href="https://en.wikipedia.org/wiki/Greatest_common_divisor">greatest common divisor</a> of $m$ and $n$ is $1$.  So the statement that $5$ and $7$ are relatively prime, but $15$ and $21$ are not relatively prime. So being relatively prime is a <b>relation on positive integers.</b> This is a relation that does not have a commonly used symbol.</li>
+
+<li>The concept of <a href="https://en.wikipedia.org/wiki/Congruence_(geometry)">congruence</a> of triangles has been used for a couple of millenia.   In recent centuries it has been denoted by the symbol "$\cong$". Congruence is a <b>relation on triangles.</b></li>
+</ul>
+
+<p>One could say that a relation is a true-or-false statement that can be made about a pair of math objects of a certain type. Logicians have in fact made that a formal definition.  But when set theory came to be used around 100 years ago as a basis for all definitions in math, we started using this definition:</p>
+
+<p class=boxed><b>A relation on a set $S$ is a set $\alpha$ of ordered pairs of elements of $S$.</b></p>
+
+<p class=smallind>"$\alpha$" is the Greek letter <a href="MMAlphabets.htm#alpha">alpha</a>.</p>
+
+<p>The idea is that if $(s,t)\in\alpha$, then $s$ is related by $\alpha$ to $t$, then $(s,t)$ is an element of $\alpha$, and if $s$ is <i>not</i> related by $\alpha$ to $t$, then $(s,t)$ is not an element of $\alpha$. That abstracts the everyday concept of relationship by focusing on the property that a relation either <i>holds or doesn’t hold between two given objects.</i></p>
+
+
+<p>For example, the less-than relation on the set of all real numbers $\mathbb{R}$ <i>is</i> the set \[\alpha:=\{(r,s)|r\in\mathbb{R}\text{ and }s\in\mathbb{R}\text{ and }r\lt s\}\] In other words, $r\lt s$ <i>if and only if</i> $(r,s)\in \alpha$.</p> 
+
+<h5>Example</h5>
+
+<p>A consequence of this definition is that <i>any set of ordered pairs is a relation.</i> Example:  Let $\xi:=\{(2,3),(2,9),(9,1),(9,2)\}$.  Then $\xi$ is a relation on the set $\{1,2,3,9\}$.  Your reaction may be: What relation IS it?  Answer: just that set of ordered pairs.  You know that $2\xi3$ and $2\xi9$, for example, but $9\xi1$ is false. There is no other definition of $\xi$.</p> 
+
+<p>Yes, the relation $\xi$ is weird. It is an <a href="MMGlossary.htm#arbitrary">arbitrary</a> definition. It does not have any verbal description other than listing the element of $\xi$. It is probably useless.  Live with it.</p>
+
+<p class=smallind>The symbol "$\xi$" is a <a href="MMAlphabets.htm#xi">Greek letter.</a>  It looks weird, so I used it to name a weird relation.  Its upper case version is "$\Xi$", which is even weirder.  I pronounce "$\xi$" as "ksee" but most mathematicians call it "si" or "zi" (rhyming with "pie").  </p>
+
+<p>Defining a relation as any old set of ordered pairs is an example of a <a href="http://en.wikipedia.org/wiki/Group_(mathematics)">reconstructive generalization.</a></p>
+
+<h3>$n$-ary relations</h3>
+
+<p>Years ago, mathematicians started coming up with things that were like relations but which involved <i>more than two elements</i> of a set.</p>  
+
+<h5>Example</h5>
+
+<p>Let $r$, $s$ and $t$ be <a href="MMRealNumbers.htm">real numbers.</a> We say that "$s$ is between $r$ and $t$" if $r\lt s$ and $s\lt t$.  Then <b>betweenness</b> is a relation that is true or false about <i>three</i> real numbers.</p>
+
+<p>Mathematicians now call this a <b>ternary relation.</b>  The abstract definition of a ternary relation is this:  A <b>ternary relation</b> on a set $S$ is a set of ordered triple of elements of $S$. This is an <a href="http://en.wikipedia.org/wiki/Group_(mathematics)">reconstructive generalization</a> of the concept of relation that allows ordered triples of elements as well as ordered pairs of elements.</p>
+
+<p>In the case of betweenness, we have to decide on the ordering.  Let us say that the betweenness relation holds for the triple $(r,s,t)$ if $r\lt s$ and $s\lt t$.  So $(4,5,7)$ is in the betweenness relation and $(4,7,5)$ is not.</p>
+
+<p class=smallind>You could argue that in the sentence, "$s$ is between $r$ and $t$", the $s$ comes first, so that we <i>should</i> say that the betweenness relation (meaning $r$ is between $s$ and $t$) holds for $(r,s,t)$ if $s\lt r$ and $r\lt t$. Well, when you write an article you can write it that way.  But I am writing this article. </p> 
+
+<p>Nowadays we talk about $n$-ary relations for any positive integer $n$. One consequence of this is that if we want to talk just about sets of ordered pairs we must call them <b>binary relations.</b> 
+</p>
+
+<p class=smallind>When I was a child there was only one kind of guitar and it was called "a guitar". (My older cousin Junior has a guitar, but I had only a plastic ukelele.) Some time in the fifties, electrically amplified guitars came into being, so we had to refer to the original kind as "acoustic guitars".  I was a teenager when this happened, and being a typical teenager, I was completely contemptuous of the adults who reacted with extreme irritation at the phrase "acoustic guitar".</p>   
+
+<a name="axiomaticmethod"></a>
+
+<h2>Axiomatic method</h2>
+
+<p class=blue>The <b><span class=red>axiomatic method</span></b> is a technique for studying <a href="MMMathObj.htm">math objects</a> of some kind by formulating them as a type of <a href="MMMathStructure.htm">math structure</a>. You take some basic properties of the kind of structure you are interested in and set them down as axioms, then deduce other properties (that you may or may not have already known) as theorems. The point of doing this is <i>to make your reasoning and all your assumptions completely explicit.</i><p>
+
+<p>Nowadays research papers typically state and prove their theorems in terms of math structures defined by axioms, although a particular paper may not mention the axioms but merely refer to other papers or texts where the axioms are given.  For some common structures such as the <a
+href="MMRealNumbers.htm">real numbers</a> and <a
+href="MMSetSpec.htm">sets,</a> the axioms are not only <i>not</i> referenced, but the authors clearly don’t even think about them in terms of axioms: they use commonly-known properties (or real numbers or sets, for example) without reference.</p>
+
+<h3>The axiomatic method in practice</h3>
+
+<p>Typically when using the axiomatic method some of these things may happen:</p>
+
+<ul>
+
+<li>You discover that there are other examples of this system that you hadn’t previously known about.  This makes the axioms more broadly applicable.</li>
+
+<li>You discover that some properties that your original examples had <i>don’t</i> hold for some of the new examples.  Depending on your research goals, you may then add some of those properties to the axioms, so that the new examples are not examples any more.</li>
+
+<li>You may discover that some of your axioms follow from others, so that you can omit them from the system. </li>
+</ul>
+
+<h3>Example: Continuity</h3>
+
+<p>A <a href="http://en.wikipedia.org/wiki/Continuous_function">continuous function</a> (from the set of <a href="MMRealNumbers.htm">real numbers</a> to the set of real numbers) is sometimes described as a function whose graph you can draw without lifting your chalk from the board.  This is a physical description, not a <a href="MMDefs.htm#Specifications">mathe&shy;matical definition.</a></p>
+
+<p>In the nineteenth century, mathe&shy;ma&shy;ticians talked about continuous functions but became aware that they needed a rigorous definition.  One possibility was functions given by formulas, but that didn’t work: some formulas give discontinuous functions and they couldn’t think of formulas for some continuous functions.</p>
+
+<p class=smallind>This description of nineteenth century math is an oversimpli&shy;fication.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Augustin-Louis_Cauchy">Cauchy</a> produced the definition we now use (the <a href="http://en.wikipedia.org/wiki/%28%CE%B5,_%CE%B4%29-definition_of_limit">epsilon-delta definition</a>) which is a rigorous mathe&shy;matical version of the no-lifting-chalk idea and which included the functions they thought of as continuous.</p>
+
+<p>To their surprise, some clever mathe&shy;maticians produced examples of some weird continuous functions that you <i>can’t</i> draw, for example the <a
+href="MMFuncExamples.htm#sineblur">sine blur</a> function.  In the terminology in the discussion of <a href="#abstraction">abstraction</a> above, the abstraction $C'$ (epsilon-delta continuous functions) had functions in it that were not in $C$ (no-chalk-lifting functions.) On the other hand, their definition now applied to functions between some spaces besides the real numbers, for example the complex numbers, for which drawing the graph without lifting the chalk doesn’t even make sense.</p>
+
+
+<h3>Example: Rings</h3>
+
+<p>Suppose you are studying the algebraic properties of numbers.  You know that addition and multiplication are both <a href="http://en.wikipedia.org/wiki/Associative">associative</a> operations and that they are related by the <b>distributive law:</b>  $x(y+z)=xy+xz$. Both addition and multiplication have identity elements ($0$ and $1$) and satisfy some other properties as well: addition forms a <a href="http://en.wikipedia.org/wiki/Abelian_group">commutative group</a> for example, and if $x$ is any number, then $0\cdot x=0$.</p>
+
+<p>One way to approach this problem is to write down some of these laws as axioms on a set with two binary operations without assuming that the elements are numbers. In doing this, you are <a href="#abstraction">abstracting</a> some of the properties of numbers.</p>
+
+<p>Certain properties such as those in the first paragraph of this example were chosen to define a type of <a href="MMMathStructure.htm">math structure</a> called a <b>ring.</b> (The precise set of axioms for rings is given in the <a href="http://en.wikipedia.org/wiki/Ring_theory"><b>Wikipedia article.</b></a>)</p>
+
+<p>You may then prove theorems about rings <i>strictly by logical deduction from the axioms without calling on your familiarity with numbers.</i></p>
+
+<p>When mathematicians did this, the following events occurred:</p>
+
+<ul>
+
+<li>They discovered systems such as matrices whose elements are not numbers but which obey most of the axioms for rings.</li>
+
+<li>Although multiplication of numbers is commutative, multiplication of matrices is not commutative.</li>
+
+<li>Now they had to decide whether to require commutative of multiplication as an axioms for rings or not.  In this example, historically, mathe&shy;maticians decided <i>not</i> to require multi&shy;plication to be commutative, so (for example) the set of all $2\times 2$ matrices with real entries is a ring.</li>
+
+<li>They then defined a <b>commutative ring</b> to be a ring in which multi&shy;plication <i>is</i> commutative.</li>
+
+<p class=small>So the name "commutative ring" means the <i>multiplication</i> is commutative, because addition in rings is always commutative. Mathematical names are not always transparent.</p>
+
+<li>You can prove from the axioms that in any ring, $0 x=0$ for all $x$, so you don’t need to include it as an axiom.</li>
+
+</ul>
+
+<p>Nowadays, all math structures are defined by axioms.</p> 
+
+<h3>Other examples</h3>
+
+
+
+<ul>
+
+<li>Historically, the first example of something like the axiomatic method is <a
+href="http://en.wikipedia.org/wiki/Euclid%27s_Elements">Euclid’s axiomatization of geometry</a>.  The axiomatic method began to take off in the late nineteenth century and now is a standard tool in math.  For more about the axiomatic method see the <a href="http://en.wikipedia.org/wiki/Axiomatic_system">Wikipedia article</a>.</li>
+
+<li><a href="MMMathStructure.htm#partition">Partitions</a> and <a href="https://en.wikipedia.org/wiki/Equivalence_relation">equivalence
+relations</a> are two other concepts that have been axiomatized. Remarkably, although the axioms for the two types of structures are quite different, every partition is in fact an equivalence relation in exactly one way, and any equivalence relation is a partition in exactly one way.</li>
+
+
+</ul>
+
+
+<h3>Remark</h3>
+<p>Many articles on the web about the axiomatic method emphasize the representation of
+the axiom system as a formal logical theory (<a href="https://en.wikipedia.org/wiki/Formal_system">formal system</a>). 
+Mathematicians in practice create and use a particular axiom system as a tool for research and understanding, and state and prove theorems of the system in semi-formal <a
+href="MMProofPresentation.htm">narrative form</a> rather than in formal logic.</p>
+
+
+<h2><a name="generalization">Generalization</a></h2>
+
+<p>To <b>generalize</b> a mathematical concept $C$ is to find a concept $C'$ with the property
+that <i>all</i> instances of $C$ are also instances of $C'$.  </p>
+
+<h4 class=redit>Examples</h4>
+
+<p>
+a)  $\mathbb{R}^n$,
+for arbitrary positive integer $n$, is a generalization of $\mathbb{R}^2$.
+One replaces the ordered pairs in $\mathbb{R}^2$ by ordered <a href="https://en.wikipedia.org/wiki/Tuple">$n$-tuples,</a>
+and much of the arithmetic and spatial
+structure (except for the representation of $\mathbb{R}^2$ using
+complex numbers) and even some of
+our intuitions carry over to the more general case.
+</p>
+
+<p>b) The
+concept of <a
+href="http://en.wikipedia.org/wiki/Vector_space">abstract vector space</a>  is
+a generalization of ${\mathbb{R}}^n$.  To get it you forget that
+the elements of  ${\mathbb{R}^n}$ are $n$-tuples of real
+numbers and your produce a different, more abstract definition obtained by
+finding properties of $\mathbb{R}^n$ such as the existence of
+addition, multiplication, scalar multiplication, and so on, and using these
+properties as axioms for the new concept of vector space.</p>
+
+<h4>Expansive generalization</h4>
+
+<p>Example (a) is an example of an <a
+name=expansivegeneralization><b>expansive generalization</b></a><b>, </b>obtained
+by changing a datum in the definition of a concept (the dimension $2$  in this
+case) into a <a href="MMParameters.htm">parameter</a>. </p>
+
+<h4>Reconstructive generalization</h4>
+
+<p> Example (b) is obtained taking the concept and reconstructing
+it, producing
+a very different-looking definition that includes all the original examples and
+others as well.  This is <b><a name=reconstructivegeneralization>reconstructive generalization</a></b>.  </p>
+
+<p>Both
+expansive and reconstructive generalizations, if done correctly, take a concept
+and introduce another concept that includes all the examples of the original
+concepts and (in general) others as well.  These are legitimate generalizations.  </p>
+
+<h4>Generalization from examples</h4>
+
+<p>It can happen that all the examples you know of a specific
+concept have a certain property $P$ not required by the definition.  If
+you conclude from this that all the examples of the concept have property $P$  you
+are engaging in <a name=generalizationfromexamples><b>generalization from
+examples</b></a>.  
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+Generalization
+from examples<br />is an illegitimate mathematical method.<br />It does not
+always give true statements about math objects.
+
+</p></td></tr></table></center>
+
+
+<p class='headed'><phead>Example: </phead> The statement "An infinite sequence gets close to its limit
+but never reaches it" is a <b>MYTH.  </b>Many
+newcomers to abstract math believe it because in the typical examples you see
+of limits of sequences the elements of the sequence in fact are never equal to
+the limit.  For example</p>
+
+\[\underset{n\to
+\infty }{\mathop{\lim }}\,\frac{1}{n}=0\]
+
+<p class='noind'>but 1/$n$ is never equal
+to $0$.  </p>
+
+<p>On the other hand, </p>
+
+\[\underset{n\to
+\infty }{\mathop{\lim }}\,\frac{\sin \left(\frac{\pi  n}{4}\right)}{n}=0\]
+
+<p class=noind>but every fourth term is zero.  The sequence starts out
+like this:</p>
+
+\[\frac{1}{\sqrt{2}},\,\frac{1}{2},\,\frac{1}{3 \sqrt{2}}\, ,\,0,-\frac{1}{5
+   \sqrt{2}}\, ,\,-\frac{1}{6},\,-\frac{1}{7 \sqrt{2}}\, ,\,0,\,\frac{1}{9
+   \sqrt{2}}\, ,\,\frac{1}{10},\,\frac{1}{11 \sqrt{2}}\, ,\,0,\,-\frac{1}{13
+   \sqrt{2}}\, ,\,-\frac{1}{14},\,-\frac{1}{15 \sqrt{2}}\, ,\,0\]
+
+
+
+<p>The names "expansive" and "reconstructive" are due to <a
+href="http://www.warwick.ac.uk/staff/David.Tall/pdfs/dot1991b-harel-flm.pdf">Harel
+and Tall</a>.</p>
+
+<p class='headed'><phead>Note:</phead> The usual meaning of the word "generalization"
+in colloquial American English is generalization from examples, often used in a
+derogatory way. When mathematicians refer to a generalization it usually means
+an expansive or reconstructive generalization and has no derogatory intent. 
+See <a href="MMCognitiveDissonance.htm">cognitive dissonance</a>.</p>
+
+
+<a name="ratcheteffect"></a>
+
+<h2>Ratchet effect</h2>
+
+<p class=MsoList style='text-indent:0in'>Once you acquire an insight, you may not be able to understand how someone else can't understand it. It becomes obvious, or trivial to prove. That is the <b><a href="http://en.wikipedia.org/wiki/Ratchet_effect">ratchet effect.</a></b> </p>
+
+<h3>Example</h3>
+
+<p>“How did you know that \[{{\left(\frac{{{x}^{3}}-10}{3{{e}^{-x}}+1} \right)}^{6}}\] is never negative?”</p>
+
+<p>“Because it is a sixth power, so it is a square (of a cube of a number), and the square of a number is never
+negative.”  </p>
+
+<p>(Smiting forehead) “Of course, why didn’t I see that!”  </p>
+
+<p>This observation stays in your head.  You can’t forget it.  Your neurons have been permanently changed and you
+can’t go back and regain your former state of non-understanding!</p>
+
+<p>This is an example of <a href="MMPatternRecognition.htm">pattern recognition</a> – of ignoring the details and seeing \[{{\left(\frac{{{x}^{3}}-10}{3{{e}^{-x}}+1} \right)}^{6}}\]as\[\left(\left(\text{some stuff}\right)^3\right)^2\]
+
+See also <a
+href="MMZoomChunk.htm">chunking</a>.  There are other examples like this <a
+href="MMPatternRecognition.htm#sumofsquares">here</a>, <a href="MMUsefulBehaviors.htm#warning">here</a> and <a href="MMFuncExamples.htm#ratcheteffect">here</a></p>
+
+
+<h3>Bad behavior</h3>
+
+<p class=smallind><i>Mathematicians can be quite cruel once they know how to do something and they enjoy seeing you squirm as you struggle to catch on. </i>–Marcus du Sautoy</p>
+
+<p>“How could you NOT see that \[{{\left( \frac{{{x}^{3}}-10}{3{{e}^{-x}}+1}\right)}^{6}}\] is never negative?!  It’s OBVIOUS that it’s never negative.  It’s a SIXTH POWER YOU DUMMY!”</p>
+
+<p>It is distressingly common that a mathematician for whom a concept has become obvious because of the ratchet effect will then tell someone else that the concept is obvious or <a
+href="MMGlossaryT.htm#trivial"><b>trivial,</b></a> leaving them to feel <b>put down.</b>  It is one thing for mathematicians to do this to each other; that is a kind of normal competitive&shy;ness among members of a tribe.  I believe behaving this way to non-mathematicians is a major contribution to the dislike and fear of math that many people have.</p>
+
+<p class=purpleprose>When you are explaining abstract math to non-mathematicians<br /> DO NOT DUMP on those who are baffled<br />because they haven’t been RATCHETED UP yet.</p>
+
+<a href="MMPatternRecognition.htm"><h2>Pattern Recognition</h2></a>
+
+<a href="MMCognitiveDissonance.htm"><h2>Cognitive Dissonance</h2></a>
+
+<a href="MMVariableObj.htm"><h2>Variable mathematical objects</h2></a>
+
+<a name="creativecommons"></a>
+<br /> <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br /><br /><br />
+</body>
+
+</html>

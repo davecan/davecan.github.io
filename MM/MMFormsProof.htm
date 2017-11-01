@@ -1,0 +1,520 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Forms of proof</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2015-10-02
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>
+<a href="MMProofs.htm">Head of Math Reasoning Chapter</a>   <a href="/Word%20Press/">blog</a>
+</pre>
+<br />
+<table align=center cellpadding=0
+style='border:none;'>
+<tr style='border:none;'>
+<td valign=top style='width:500.0pt;border:none;'>
+<p class="toc">
+<span class="red">CONTENTS</span>
+</p>
+<p class="toc">
+<a href="#directmethod">Direct method</a>
+</p>
+<p class="toc"><a href="#contrapositivemethod">
+Contrapositive method</a>
+</p>
+<p class="toc"><a href="#proofbycontradiction">
+Proof by contradiction</a>
+</p>
+<p class="toc"><a href="#proofbycases">Proof by cases</a>
+</p>
+<p class="toc"><a href="#otherformsofproof">
+Other forms of proof</a>
+</p>
+</td></tr></table>
+
+
+
+
+<h1>FORMS OF PROOF</h1>
+
+<p class=blue>A proof written in <a href="MMProofPresentation.htm#narrativeform">narrative form</a>
+is very often arranged in one of a few basic
+forms. Authors
+don’t usually tell you which form they are using.  To
+understand proofs,
+you need to recognize these forms.  This
+chapter describes them and shows examples.</p>
+
+<p class=blue>The section on <a href="MMMathReasoning.htm">mathematical reasoning</a> and many other places in <a href="/MM">abstractmath.org</a> describe particular <font color="#911B1B">rules of inference</font> used in proofs, and in some of those passages the way the rules of inference are written up is discussed.</p>
+
+<a name="directmethod"></a>
+
+<h2>Proving
+<a href="MMConditional.htm"><u>conditional assertions:</u></a> The direct method</h2>
+
+ 
+<div class=boxed>
+<p class=blueheader >To prove “If $P$, then $Q$,”</p>
+<ul class=blue>
+<li>Assume that $P$ is true.</li>
+<li>Deduce that $Q$ must be true as well, using the fact that $P$ is true and any other facts that you have.</li></ul></div>
+
+
+<h3>Example</h3>
+<h4>Definition</h4>
+<p>An integer $n$ is <b>even</b>
+if there is an integer $m$ for which $n=2m$.</p>
+
+<h4>Theorem</h4>
+
+<p>If $n$ is even, then ${{n}^{2}}$ is even.</p>
+
+<h4>Narrative proof of the theorem by the
+direct method</h4>
+
+<p class=boxed>Suppose that $n$ is even.  Then $n=2m$ for some integer $m$. Then ${{n}^{2}}=4{{m}^{2}}=2\cdot
+(2{{m}^{2}})$.  $2{{m}^{2}}$ is an integer because $m$ is an integer, so by
+definition of “even”, ${{n}^{2}}$ is even.</p>
+
+<h4>Remarks</h4>
+
+<ul>
+<li>This theorem, like many theorems in mathematics, is
+a <a href="MMConditional.htm#univtruecond">universal conditional assertion</a>, so the proof uses <a href="MMUnivTrue.htm#universalgeneralization">universal generalization</a> to show that if $n$ is an arbitrary
+positive integer satisfying the hypothesis, then it must satisfy the
+conclusion.</li>
+
+<li>  In this <a href="MMProofs.htm">proof</a>, $P$ is “$n$ is even” and $Q$ is “${{n}^{2}}$ is
+even”.  </li>
+
+<li>  The author does not
+tell you that the proof of “If $P$, then $Q$”  is by the direct method.  But you can
+<i>detect the pattern</i> when the proof starts with “</i>Suppose that $n$
+is even”, in other words, “Suppose $P$”.  </p>
+
+<li>The sentence "Then $n=2m$ for some integer $m$" follows from the definition of "even" by <a href="MMConditional.htm#modusponens">modus ponens</a>, but the narrative proof does not point this out.</li>
+
+<li>The phrase "So by definition of 'even'" required <a href="MMPatternRecognition.htm">pattern recognition:</a> The $m$ required by the definition is $2m^2$, but the author does not specifically tell you that.</li>
+
+<li>  A proof using the
+direct method is called a <b>direct proof.  </b> You undoubtedly already knew
+how to give a direct proof.  This article is intended <i>to raise your
+knowledge to a conscious level</i> (if it isn’t already there).  </p>
+
+<li>  This is an example of
+a proof by <a href="MMUsefulBehaviors.htm#rewritebydefinition">rewriting
+according to the definition</a> of the words in the theorem.</p>
+
+
+
+</ul>
+
+<h4>Narrative proof rewritten with bullet points</h4>
+
+<p>The proof given above is a short narrative proof written in one paragraph.  It coulds be written in bullet points like this:</p>
+
+<ul>
+<li>Suppose that $n$ is even.</li>
+
+<li>Then $n=2m$ for some integer $m$.</li>
+
+<li>Then ${{n}^{2}}=4{{m}^{2}}=2\cdot(2{{m}^{2}})$.</li>
+
+<li>$2{{m}^{2}}$ is an integer because $m$ is an integer.</li>
+
+<li>So by definition of “even”, ${{n}^{2}}$ is even.</li>
+</ul>
+
+<p class=smallind>Bullet points are  not commonly used in math proofs, and many mathematicians, perhaps most of them, object strongly to using them. I think bullet points make it easy to follow the <a href="MMGlossary.htm#argument">argument</a>.</p>
+
+<h4>Proof with reasons</h4>
+
+<p>For proof-newbies it would be helpful to give a reason for each bullet point:
+</p>
+<ul>
+<li>Suppose that $n$ is even. ("Assume that $P$ is true")</li>
+
+<li>Then $n=2m$ for some integer $m$. (Definition of "even".)</li>
+
+<li>Then ${{n}^{2}}=4{{m}^{2}}=2\cdot(2{{m}^{2}})$. (Algebra)</li>
+
+<li>$2{{m}^{2}}$ is an integer because $m$ is an integer. (Product of two integers is an integer)</li>
+
+<li>So by definition of “even”, ${{n}^{2}}$ is even.</li>
+</ul>
+
+<a name="comingup"></a>
+
+<h3>Coming up with direct proofs</h3>
+
+<p>In a more complicated situation, you might have to prove </p>
+
+<p>If $P$ then ${{P}_{1}}$,</p>
+
+<p>If ${{P}_{1}}$ then ${{P}_{2}}$,</p>
+
+<p>…</p>
+
+<p>If ${{P}_{k}}$ then $Q$</p>
+
+<p class=noind>using a sequence of deductions.  </p>
+
+<p>Normally, although your final proof would be written up in
+that order, <i><b>you would not think up the proof by thinking up ${{P}_{1}}$,
+${{P}_{2}}$,… in order.</b></i> What <i>usually </i>happens
+is that you think of statements which imply $Q$, statements which imply <i>them</i>
+(backing up), and at the same time you think of statements which $P$ implies,
+statements which <i>they</i> imply (going forward), and so on, until
+your chain meets in the middle (if you are lucky). </p>
+
+
+
+
+
+<p class="purpleprose">Thinking up a
+proof is a CREATIVE ACT<br />not a mechanical
+one of grinding out conclusions from hypotheses</p>
+
+
+
+<h3>A very sad tale</h3>
+
+<p>This has happened to my students many times:</p>
+
+<ul>
+<li>  You are asked to prove “If $P$, then $Q$.”</li>
+
+<li>  You assume $Q$.  </li>
+
+<li>  You prove statements “If $Q$, then $P_1$”,
+if $P_1$ then $P_2$”, …, if $P_k$
+then $P$”.</li>
+
+<li>  You triumphantly conclude  “If $P$ then $Q$.”</li>
+
+<li>  You get your paper back and that problem is marked wrong.
+Zero points. Zilch.  </li>
+</ul>
+
+
+<p><span class=blue>You constructed your proof <font color="#911B1B">backward.</font></span>  If
+all the steps are right, you have proved “If $Q$ then
+$P$”.  But you were asked to prove “If $P$ then $Q$”.  <b>How sad.</b></p>
+<h4>Why does this happen?</h4>
+<p>In the case that $F$ and $G$ are algebraic expressions, we often prove that $F=G$ by proving $G = F_1$,
+$F_1 = F_2$, …, $F_k =F$.</p> <p class=smallind>Example: Prove $x^2+5x+6=(x+2)(x+3)$.</p><p class=smallind>  Proof: $(x+2)(x+3)=x(x+3)+2(x+3)=x^2+3x+2x+6= x^2+5x+6$.</p>
+<p>This is perfectly correct, because the assertion "$F=G$" is symmetric in $F$ and $G$. 
+Unfortunately, for <i>assertions</i> $P$ and $Q$. “If $P$ then $Q$” is <i>not</i> symmetric in $P$ and $Q$.</p><p class=smallind> Example: "If $n\gt2$ then $n\gt1$" is correct, but "If $n\gt1$ then $n\gt2$" is incorrect.
+ </p>
+ 
+<h3> References</h3>
+
+<p><a
+href="http://www.amazon.com/gp/product/0471680583/sr=8-1/qid=1143302273/ref=pd_bbs_1/102-0957377-0826500?_encoding=UTF8">How
+to Read and Do Proofs</a> by Daniel Solow.</p>
+
+ <a name="contrapositivemethod"></a>
+ 
+ 
+<h2>Proving </a>conditional assertions: The
+contrapositive method</h2>
+
+<div class=boxed>
+<p class=blueheader >
+Method: To prove “If $P$, then $Q$,”</p><ul class=blue>
+<li>Assume that $Q$ is false.</li>
+<li>Deduce that $P$ must be false as well, using the fact that $Q$ is false and any other facts that you have.</li></ul></div>
+
+<p>This
+method is the <a href="#directmethod">Direct Method</a> applied to “If not $Q$, then not $P$.”  That assertion is the <a href="MMConditional.htm#contrapositive">contrapositive</a> of “If $P$,
+then $Q$”, but proving the contrapositive of a conditional assertion is the <i>same thing</i> as proving the assertion, since a conditional sentence and
+its contrapositive always have the same truth value.</p>
+
+<h3>Example</h3>
+
+<h4>Theorem</h4>
+
+<p>If ${{n}^{2}}$ is even, then $n$ is even. </p>
+
+
+
+<h4>Narrative proof by the contrapositive method</h4>
+
+<p class=boxed>Suppose $n$ is odd.  Then for some integer $k$, $n=2k+1$.  Then \[{{n}^{2}}=4{{k}^{2}}+4k+1=2(2{{k}^{2}}+2k)+1\] 
+Thus ${{n}^{2}}=2h+1$ for some integer $h$, so ${{n}^{2}}$ is odd. 
+QED.</p>
+
+<h4>Outline of the reasoning of the proof</h4>
+<ul>
+<li> The proof of the contrapositive
+proceeds like any direct-method proof, by assuming the hypothesis ($n$ is odd) and deducing the conclusion (${{n}^{2}}$ is
+odd).</li>
+
+<li>It follows by the direct method that the
+contrapositive of the theorem as stated is true.</li>
+
+<li>Since a conditional assertion and its contrapositive always have the same truth value, the theorem as stated must be true.</li>
+</ul>
+<h4>A clue is detected</h4>
+
+<p>If you didn't think of proving the contrapositive, you might be dumbfounded when
+you saw that a proof of a theorem which says "if ${{n}^{2}}$ is even then n is even" begins with, 
+"Let $n$ be odd..." But that is a <b>clue</b> …</p>
+
+
+<p class=purpleprose>If a theorem has
+the form “If $P$ then $Q$”<br /> and the proof begins with “Assume $Q$ is false…”,<br /> that is
+a <font color="#911B1B">clue</font> that the form of the proof<br /> is by the contrapositive method.</p>
+
+<p>See <a href="MMMathReasoning.htm#translationproblem">translation problem</a> and <a href="MMDysfunctional.htm#walkingblindfolded">rabbits</a>.</p>
+
+<a name="proofbycontradiction"></a>
+
+<h2>Proof by Contradiction</a></h2>
+
+<div class=boxed>
+<p class=blueheader>To prove that an assertion $P$ is false,</p>
+<ul class=blue>
+<li>Prove
+that “If $P$ then $Q$” is <b>true</b></li>
+<li>Prove that $Q$ is false, using any facts that you have.</li></ul></div>
+
+
+
+<p>This method is called <b>proof by contradiction</b> or <b>reductio ad
+absurdum</b>, sometimes abbreviated <a name=raa><b>r.a.a.</b></a></p>
+
+<h3>Example</h3>
+
+<h4>Theorem</h4>
+
+<p>The number ${{\log }_{10}}3$ is not <a href="MMRationalNumbers.htm">rational</a>.</p>
+
+<h4>Typical narrative proof</h4>
+<div class=boxed>
+<p>Let ${{\log
+}_{10}}3=\frac{m}{n}$ where $m$ and $n$ are positive integers.  Then ${{10}^{\frac{m}{n}}}=3$, so ${{10}^{m}}={{3}^{n}}$. 
+This is impossible because every positive power of $10$ is even and every
+positive power of $3$ is odd.  <a href="MMGlossary.htm#QED">QED</a>.</p></div>
+
+
+<h4>Analysis of the proof</h4>
+
+<p>In this proof, $P$ is the statement “${{\log }_{10}}3$
+is rational” and $Q$ is the statement “An even integer cannot equal an odd
+integer.”  </p>
+
+<ul>
+<li>  The proof proceeds by
+contradiction, which means it must start by proving “If $P$ then $Q$”. </li>
+
+<li>It proves “If $P$ then
+$Q$” by the direct method.</li>
+
+<li>Therefore it starts
+with the <i>assumption</i> (not stated explicitly) that ${{\log }_{10}}3$ is
+rational.</li>
+
+<li>  By <a href="MMUsefulBehaviors.htm#rewritebydefinition">rewriting according to the
+definition</a> of “rational”, we get ${{\log }_{10}}3=\frac{m}{n}$ where $m$ and
+$n$ are positive integers.  This is the <i>first actual statement that occurs in
+the proof</i>.</li>
+
+<li>Then the proof uses
+the <a href="http://en.wikipedia.org/wiki/Logarithm">definition of log</a> (without saying so)
+to conclude that ${{10}^{\frac{m}{n}}}=3$.</li>
+
+<li>Using the <a
+href="http://en.wikipedia.org/wiki/Exponentiation#Fractional_exponent">algebra
+of exponents</a>, it concludes that ${{10}^{m}}={{3}^{n}}$.</li>
+
+<li>The statement “Every
+positive power of 10 is even and every positive power of 3 is odd” is then made
+without proof (regarded as common knowledge).</li>
+
+<li>The proof then claims a
+contradiction, without stating the fact $Q$ (also regarded as common
+knowledge) that it contradicts.</li></ul>
+
+<p class=purpleprose>The proof does
+not say it is a proof by contradiction,<br /> and neither $P$ nor
+$Q$ is stated explicitly in the proof.<br />This is typical. GET OVER IT.</p>
+
+
+
+<h3>Remarks</h3>
+
+<ul>
+<li>This analysis of the
+proof is an example of the <a href="MMMathReasoning.htm#translationproblem">translation
+problem</a>.</li>
+
+<li>Authors sometimes tell you they are doing a proof by
+contradiction, and sometimes don’t.</li>
+
+<li>In practice it frequently happens that $Q$ is
+obviously false so that the work goes into proving “If $P$ then $Q$.”
+Thus a proof that $P$ is false might begin, "Suppose $P$ is
+true."  <i>That is a clue that you are reading a proof by
+contradiction.</i></li>
+</ul>
+
+<a name="proofbycases"></a>
+<h2>Proof by cases</h2>
+
+<p>Also called <a name=proofbyexhaustion><b>proof by exhaustion</b></a>. 
+
+<div class=boxed>
+<p class=blueheader>To prove a statement $P(n)$ by cases,</p>
+<ul class=blue>
+<li>Prove that $n$ has to have at least one of the properties $A_1$, $A_2$, $\dots A_s$</li>
+<li>For each $i=1,2,\ldots s$, prove that if $P(n)$ has property $A_i$, the $P(x)$ is true.</li></ul></div>
+
+<h3>Example</h3>
+
+<h4>Theorem</h4>
+
+<p>If $n$ is not divisible by $3$, then there is an integer $k$ for which $n^2=3k+1$.</p>
+
+<h4>Narrative proof by cases</h4>
+
+<div class=boxed>
+<p>If $n$ is not divisible by $3$, then there must be an integer $r$ for which either $n=3r+1$ or $n=3r+2$.</p>
+<p>If $n=3r+1$, then \[n^2=9r^2 +6r+1=3(3r^2+2r)+1\] so you can take $k=3r^2+2r$ for the proof.</p>
+<p>If $n=3r+2$, then \[n^2=9r^2+12r+4=9r^2+12r+3+1=3(3r^2+6r+1)+1\] so you can take $k=3r^2+6r+1$ for the proof.</p>
+</div>
+
+<h4>Analysis of the proof</h4>
+
+<p>In this proof, $A_1$ is "$n=3r+1$" and $A_2$ is "$n=3r+2$".</p>
+
+<ul>
+<li>"If $n$ is not divisible by $3$" is a signal that the proof uses the Direct Method.</li>  
+
+<li>The statement "There must be an integer $r$ for which either $n=3r+1$ or $n=3r+2$" follows from these facts: 
+<ul>
+<li>If you divide a positive integer by $3$, the remainder is $0$, $1$ or $2$. 
+</li>
+<li>If the remainder is $0$ then the number must be divisible by $3$.</li>  
+</ul>
+This argument is justification for the requirement that $n$ has to have at least one of the properties $A_1$ and $A_2$.</li>
+
+<li>The proofs for the two cases use only basic algebra.</li>
+
+<li>It is OK for the cases in a proof to overlap, but in most simple cases (like this one) they are in fact <a href="http://en.wikipedia.org/wiki/Disjoint_sets">disjoint.</a></li>
+
+
+
+</ul>
+
+
+<h4>References</h4>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Proof_by_exhaustion">Wikipedia.</a></li>
+
+<li><a href="http://www.millersville.edu/~bikenaga/math-proof/cases/cases.html">Proof by Cases</a> by Bruce Ikenaga has many good examples of proof by cases.</li>
+</ul>
+</p>
+
+<h3>Example: <a name=powerset>Powerset theorem</a></h3>
+
+<p>This is both a proof by contradiction and also a proof by cases. The proof uses the <a href="MMSetRinf.htm#comprehension">method of comprehension.</a></p>
+
+<h4>Theorem</h4>
+<p>Let $S$ be a set and let $\mathcal{P}(S)$ be the <a
+href="http://en.wikipedia.org/wiki/Power_set">power set</a> (set of all
+subsets) of $S$.  Then no function  $F:S\to
+\mathcal{P}(S)$ is surjective.  </p>
+
+<h4>Proof</h4>
+
+<p>Suppose $F:S\to \mathcal{P}(S)$ is a function.  Let $A=\{x\in
+S|x\notin F(S)\}$. Then $A$ is a subset of $S$, so it is an <i>element</i>
+of $\mathcal{P}(S)$. </p> 
+
+<p>Now I will show that there is no element $x$ of $S$ for which $F(x)=A$. There are two cases:</p>
+
+<ul><li>  $x\in A$.  Then if $F(x)=A$, then $x\notin A$ by the <a href="MMSetRinf.htm#comprehension">method
+of comprehension</a>.  This is a contradiction.</li>
+
+<li>  $x\notin A$.  Then if
+$F(x)=A$, then $x\in A$ by the method of comprehension.  This is also a contradiction.</li></ul>
+
+<p>There is no other possibility, so there
+is no element $x$ of $S$ for which $F(x)=A$. 
+Therefore $F$ is not surjective.</p>
+
+
+<p>The powerset theorem uses <a
+href="http://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument">Cantor’s
+Diagonal argument</a>, which <a href="http://en.wikipedia.org/wiki/Georg_Cantor">Georg Cantor</a> discovered when trying to understand how
+infinity comes in different sizes.</p>
+
+<a name="otherformsofproof"></a>
+
+<h2>Other forms of proof</h2>
+
+<p>  There are many other forms of proof not covered in <a href="/">abstractmath.org.</a></p>  
+
+<a name="induction"></a>
+
+<h3>Proof by Induction</h3>
+
+<p>This is covered in a <a href="http://en.wikipedia.org/wiki/Mathematical_induction">Wikipedia article</a> that has better coverage of the role of mathematical induction in logic than it does in its role in math.  My <a href="dm.pdf">Discrete Math notes</a> has many examples in Chapter 103.  I expect to adapt that material to make an <a href="">abstractmath.org</a> chapter.</p>
+
+<a name="uniqueness"></a>
+
+<h3>Proofs of uniqueness</h3>
+
+<p>There are good examples in the <a href="http://www.math-cs.gordon.edu/courses/mat230/notes/proof-non-conditional.pdf">Proof examples</a> from Gordon College and in the <a href="http://www.whitman.edu/mathematics/higher_math_online/section02.05.html">Whitman College</a> site.</p>
+
+<h3>Proofs of equivalence.</h3>
+
+<p>These site may be useful.</p>
+
+<ul>
+
+
+<li><a href="http://www.math-cs.gordon.edu/courses/mat230/notes/proof-non-conditional.pdf">Proof examples</a> from Gordon College.</li>
+<li>My notes in <a href="dm.pdf">Discrete Mathematics</a>, pages 122-124.</li>
+
+
+</ul>
+
+<br /><br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br /><br /><br />
+</body>
+
+</html>

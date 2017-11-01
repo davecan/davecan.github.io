@@ -1,0 +1,743 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>More about the languages of math</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+
+<body>
+
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-01-17
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>
+<a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>    <a href="MMLangMath.htm">back to languages of math head</a>
+</pre>
+
+<h1>MORE ABOUT THE LANGUAGES OF MATH</h1>
+
+<h3>Contents</h3>
+
+<p class=small><a href=#context>Context</a></p>
+
+<p class=small><a href=#embedding>Embedding</a></p>
+
+<p class=small><a href=#precondition>Preconditions and Postconditions</a></p>
+
+<p class=small><a href=#suppressionofparameters>Suppression of Parameters</a></p>
+
+<p class=small><a href=#synecdoche>Synecdoche</a></p>
+
+<p class=small><a href=#overloadednotation>Overloaded notation</a></p>
+
+<p class=small><a href=#redundancy>Redundancy</a></p>
+
+
+<p class=small><a href=#grasshopper>Grasshoppers</a></p>
+
+<p class=small><a href=MMIntent.htm>Intent of assertions</a></p>
+
+<p class=small><a href=MMParameters.htm>Parameters</a></p>
+
+<p class=small><a href=MMVarMeanings.htm>Variations in meaning</a></p>
+
+</p>
+
+<p class=blue>Mathematical writing consists of a mixture of <a href="MMMathEnglish.htm">mathematical English</a> and the <a href="MMSymLang.htm">symbolic language.</a>  Fragments of each language are embedded in each other and refer to each other.  The relationship between the two languages can be subtle, and both languages contain explicit and implicit <a href="MMVarMeanings.htm#convention">conventions</a> con&shy;cerning the words and notation used and also con&shy;cerning the embeddings and references.  This chapter shows you some of that behavior.</p>
+ 
+<p class=smallind>Spoken mathematics is not covered in abstractmath.org. It is usually a combination of spoken math English, pronouncing simple symbolic expressions and pointing at the blackboard to complicated expressions that are essentially impossible to pronounce in a compre&shy;hensible way.</p>
+
+<a name=context></a>
+
+<h2>Context</h2>
+
+<p class=bluesmall>Written and especially spoken language depends heavily on the <font color="#911B1B">context</font> – the physical surroundings, the preceding conversation, and social and cultural assumptions.  Mathematical <a href="MMMathEnglish.htm#assertion">assertions</a> are produced in such contexts, too, but here I will discuss a special thing that happens in math conversation and writing that does not seem to happen much in other sorts of discourse:</p>
+
+<p class=purpleprose>The meanings of expressions<br> in both the symbolic language and math English<br> change from phrase to phrase<br> as the speaker or writer changes the constraints on them.</p>
+
+<h4>Example</h4>
+
+<p>In a math text, before the occurrence of a phrase such as "Let $n=3$", $n$ may be known only as an integer variable.  After the phrase, it means specifically $3$.  So this phrase <i>changes the meaning</i> of $n$ by <a href="MMIntent.htm#constraint">constraining</span></a> $n$
+to be $3$.  We say the context of occurrences of "$n$" before the phrase requires only that $n$ be an integer, but after the occurrence of the phrase, the context requires $n=3$.</p>
+
+<h4>Definition</h4>
+
+<p class=bluesmall>The <font color="#911B1B">context</font> at a particular location in a mathematical discourse is the sum total of what the reader or listener can know about the symbols and names used in the discourse when they have read everything up to that location.</p>
+
+
+
+<h4>Remarks</h4>
+
+<ul>
+
+<li>Each clause can change the meaning of or constraints on one or more symbols or names. The <a href="MMVarMeanings.htm#convention">conventions</a> in effect during the discourse can also put constraints on the symbols and names.</li>
+
+
+
+<li>The references to "<a name=before>before</a>" and "<a name=after>after</a>" the phrase "Let $3$" refer to the <i>physical location</i> in text and to <i>actual time</i> in spoken math. There is more about this phenomenon in the <a href="Handbook/handbook.pdf">Handbook of Mathematical Discourse</a>, page 252.</li>
+
+<li>Contextual changes of this sort take place using the pretense that <i>you are reading the text in order</i>, which many students and professionals do not do (they are <a href="#grasshopper">grasshoppers</a>).</li>
+
+<li>I am not aware of much context-changing in everyday speech.  One place it does occur is in playing games.  For example, during some card games the word "trumps" changes meaning from time to time.</li>
+
+<li>In symbolic logic, the context at a given place may be denoted by "$\Gamma$".</li>
+
+<li class=small><a href="#chierchia">Chierchia and McConnell-Ginet</a> give a mathematical definition of context in the sense described here.</li>
+
+</ul>
+
+<h3><a name=detailedexample>Detailed example</a> of math text</h3>
+
+<p>Here is a typical example of a theorem and its proof. It is printed twice, the second time with comments about the changes of context. This is the same proof that is already analyzed practically to death in the chapter on <a href="MMProofPresentation.htm#pfexa">presentation of proofs</a>.</p>
+
+<h4>First time through</h4>
+
+<p><b>Definition: Divides</b></p>
+
+<p>Let $m$ and $n$ be integers with $m\ne 0$. Then $m$ <b>divides</b> $n$ if there is an integer $q$ for which $n=qm$.</p>
+
+<p><b>Theorem</b></p>
+
+<p>Let $m$, $n$ and $p$ be integers, with $m$ and $n$ nonzero, and suppose $m$ divides $n$ and $n$ divides $p$.  Then $m$ divides $p$.</p>
+
+<p><b>Proof</b></p>
+
+<p>By definition of divides, there are integers $q$ and $q'$ for which $n=qm$ and $p=q'n$. We must prove that there is an integer $q''$ for which $p=q''m$. But $p=q'n=q'qm$, so let $q''=q'q$.  Then $p=q''m$.</p>
+
+
+<h4>Second time, with analysis</h4>
+
+<p class=headed><table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;border:none'>
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;padding: 4pt 5.4pt 4pt 5.4pt'>
+  <p class=noind><b>Definition:</b> Divides</p>
+  </td>
+  <td width="75%" style='border:solid windowtext 1.0pt;border-left:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Begins a definition. The word "divides" is the word being defined. The <a href="MMVarMeanings.htm#scope">scope</a> of the definition is the following paragraph.</p>
+  </td>
+ </tr>
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Let $m$ and $n$ be integers </p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>$m$ and $n$ are new symbols in this discourse, <a href="MMIntent.htm#constraint">constrained</a> to be integers.  
+  </td>
+ </tr>
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>with $m\ne 0$</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Another constraint on $m$.
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Then $m$ <b>divides</b> $n$ if</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>This phrase means that what follows is the <a href="MMDefs.htm">definition</a> of the assertion "$m$ divides $n$." 
+  </td>
+ </tr>
+ 
+  <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>there is an integer $q$</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>"There is" signals that we are beginning an <a href="MMExistenceStatements.htm">existence statement</a> and that $q$ is the bound variable within the existence statement.</p>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>for which $n=qm$</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Now we know that "$m$ divides $n$" and "there is an integer $q$ for which $m=qn$" are <a href="MMConditional.htm#equivalenceofassertions">equivalent</a> assertions. After the conclusion of the definition, $m$, $n$ and $q$ are undefined variables. We do not know that $m$ divides $n$ or that $m=qn$, only that the two assertions are equivalent. <i>The only effect a definition has on the meaning of words and symbols in the following discourse is the meaning of the word being defined.</i></p>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind><b>Theorem </b></p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>This announces that the next paragraph is an assertion that (in real time) has been proved. In terms of <i>reading the text in order,</i> it has not <i>yet</i> been proved.</p>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Let $m$, $n$ and
+  $p$ be integers, with $m$
+  and $n$ nonzero, and suppose $m$ divides $n$ and $n$ divides $p$.</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>"Let" tells us that this assertion puts new constraints on the symbols $m$, $n$ and $p$ and wipes out any previous constraints, if any. (In fact there are no previous constraints, because the preceding paragraph is a definition.) We are <i>starting over</i> with $m$ and $n$, and now know they have the properties given.
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=MsoNormal style='text-indent:0in;line-height:normal'>Then $m$
+  divides $p$.</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>This is a <i>claim</i> that $m$ divides $p$. It has a different status from the assumptions that $m$ divides $n$ and $n$ divides $p$. If we are going to follow the proof we have to treat $m$ and $n$ as if they divide $n$ and $p$ respectively. However, we <i>can't</i> treat $m$ as if it divides $p$. All we know is that the author is claiming that $m$ divides $p$, given the facts in the hypothesis.</p>
+  </td>
+ </tr>
+ 
+ 
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>Proof</b></p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>An announcement that a proof is about to begin, meaning a chain of math reasoning. The fact that it is a proof of the Theorem just stated is not explicit.</p>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>By definition of divides, there are integers $q$ and $q'$ for which $n=qm$ and $p=q'n$.</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>The proof uses the <a href="MMFormsProof.htm#directmethod">direct method</a> (rather than contradiction or induction or some other method) and begins by <a href="MMUsefulBehaviors.htm#rewritebydefinition">rewriting the hypothesis</a> using the definition of "divides". The proof does not announce the use of these techniques, it just starts in doing it. So $q$ and $q'$ are new symbols that  satisfy the equations $n=qm$ and $p=q'n$. The phrase "by definition of divides" justifies the introduction of $q$ and $q'$. $m$, $n$ and $p$ have already been introduced in the assertion of the Theorem.</td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>We must prove that there is an integer $q''$ for which $p=q''m$.</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Introduces a new variable $q''$, with constraint $p=q''m$. The assertion "we must prove" is justified (without saying so) by the definition of "divides".</h4>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>But $p=q'n=q'qm$,
+  </p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>This is a claim about $p$, $q$, $q'$, $m$ and $n$.  It is justified by certain preceding sentences but this justification is not made explicit. Note that "$p=q'n=q'qm$" <a href="#pivots">pivots</a> on $q'n$, in other words makes <i>two</i> claims about it.</h4>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>so let $q''=q'q$.</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>The word "let" means that this is a <i>definition</i> of $q''$. The word "so" hints that the definition of $q''$ is motivated by the preceding step saying that $p=qq'm$, which suggests what $q''$ must be. Note that the author does not point this out to the reader.</td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>Then $p=q''m$</p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>This is a claim about $p$, $q''$ and $n$, justified by the claim $p=q'n=q'qm$, although the use of associativity is not mentioned. Note that the definition of division says that $q''$ is also required to be an integer. In fact it is an integer because the product of integers is an integer, but again that is hidden.</p>
+  </td>
+ </tr>
+ 
+ <tr>
+  <td width="25%" style='border:solid windowtext 1.0pt;border-top:
+  none;padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=MsoNormal style='text-indent:0in;line-height:normal'><b>&nbsp;</b></p>
+  </td>
+  <td width="75%" style='border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:4pt  5.4pt 4pt 5.4pt'>
+  <p class=noind>The proof is now complete, although no
+  statement says it is.</h4>
+  </td>
+ </tr>
+</table></p>
+<br />
+
+
+<p class=purple>If you have some skill in reading proofs, all the stuff in the right hand column happens in your brain without, for the most part, your being conscious of it.</p>
+
+<h4>Acknowledgment</h4>
+
+<p>Thanks to Chris Smith for correcting errors.</p>
+
+<h3>References for "context"</h3>
+
+<ul>
+
+<a name=chierchia></a>
+
+<li>Chierchia, G. and S. McConnell-Ginet
+(1990), <i>Meaning and Grammar.</i> The MIT Press.</li>
+
+<li>de Bruijn, N. G. (1994), "The mathematical vernacular, a language for mathematics with typed sets". In Selected Papers on Automath, Nederpelt, R. P., J. H. Geuvers, and R. C. de Vrijer, editors, volume 133 of Studies in Logic and the Foundations of Mathematics, pages 865 – 935. Elsevier</li>
+
+<a name=steenrod>
+
+<li>Steenrod, N. E., P. R. Halmos, M. M. Schiffer,
+and J. A. Dieudonné (1975), <i>How to Write Mathematics.</i> American Mathematical Society.</li>
+
+</ul>
+
+<a name="embedding"></a>
+<a name="embeddedexpressions"></a>
+
+<h2>Embedding</h2>
+
+<h3>Embedded expressions</h3>
+
+<p class=bluesmall>Statements in mathematical English may contain <font color="#911B1B">embedded expressions</font> in the symbolic language. The opposite can happen, too: sometimes a <a href="MMSymLang.htm#symbolicexpression">symbolic expression</a> contains an embedded assertion in math English.</p>
+
+<h4>Examples</h4>
+
+<ul>
+
+<li>"The inequality  ${{x}^{2}}\ge x-1$ holds for all real numbers $x$."  This sentence contains two embedded symbolic expressions. "${{x}^{2}}\ge x-1$" is a <a
+href="MMSymLang.htm#symbolicassertion">symbolic
+assertion</a> and "$x$" is a <a
+href="MMSymLang.htm#symbolicterm">symbolic term</a>.</li>
+
+<li>"Let $S = \{n|n \text{ is the product of two different primes}\}$." (See <a href="MMSetNotation.htm#setbuildernotation">setbuilder notation</a>.) Here the English sentence "$n$ is the product of two different primes" appears inside the symbolic definition of $S$, which itself is embedded in the math English sentence beginning "Let $S\ldots$".</i> </li>
+
+</ul>
+
+<h3>Displayed symbolic
+expressions</h3>
+
+<p>A symbolic expression may be written in line with the text it is embedded in, as in the two examples just above. It may also be <b>displayed,
+</b>as in this sentence:</p>
+
+<p>"The inequality \[{{x}^{2}}\ge
+x-1\] holds for all real numbers $x$"</p>
+
+<p>The part of the sentence before the equation is displayed on one line, the equation is displayed (usually centered, as here) on the next line, and the rest of the sentence (if any) is in the line after the equation.</p>
+
+<p>The examples of embedding just given are not hard to understand.  <span class=purple>However, some common practices by math writers (and speakers) can cause real problems for those new to a subject:</span></p>
+
+<a name="pivots"></a>
+
+<h3>Pivots</h3>
+
+<p class=bluesmall>A symbol is <span class=red>pivoted</span> if it is embedded just once in an expression that, when spelled out explicitly, requires it appear twice because it play two different roles in two different phrases or clauses.</p>
+
+<h5>Example</h5>
+
+<p> The expression "$1\lt x\lt 2$" can be pronounced in either of these ways:</p> 
+
+<ol>
+
+<li>"$1$ is less than $x$, which is less than $2$".</li>
+
+<li>"$1$ is less than $x$ and $x$ is less than $2$".</li>
+
+</ol>
+<p>In both cases, $x$ appears just once in the expression "$1\lt x\lt 2$", but any reasonable rendering requires it to appear in two clauses. (The word "which" in the first assertion refers to $x$ according to the rules for <a href="https://en.wikipedia.org/wiki/Anaphora_(linguistics)">anaphora</a> in English, so "which" is a synonym for $x$ in the assertion.)</p>
+
+
+<h5>Example</h5>
+
+<p>"This infinite series converges to $\zeta(2)=\frac{\pi^2}{6}\approx 1.65$."</p>
+
+<p>This example can be read in two ways that are different in English grammar but have the same logical content: 
+
+<ul>
+
+<li>"This infinite series converges to $\zeta(2)$, which is $\frac{\pi^2}{6}$, which is approximately $1.65$."</li>
+
+<li>"$\ldots$ converges to $\zeta(2)$, and $\zeta(2)=\frac{\pi^2}{6}$, and $\frac{\pi^2}{6}$ is approximately $1.65$."</li> 
+</ul>
+
+<p>As you can see, this example has two pivoted symbols in a row: $\zeta(2)$, the object of "converges to" and the subject of "$\ldots=\frac{\pi^2}{6}$", and $\frac{\pi^2}{6}$, which is the object of "$\zeta(2)=\ldots$" and the subject of "$\ldots\approx 1.65$".</p>
+
+
+<a name="parentheticassertion"></a>
+<a name="parentheticassertions"></a>
+
+<h3>Parenthetic assertions</h3>
+
+<h5>Example</h5>
+
+<p>Consider the assertion,</p> <blockquote>(PA) "For any $x\gt0$ there is a $y\gt0$ such that $x\gt y$."</blockquote> <p class=noind>This assertion can be pronounced like this: "For any $x$ that is greater than zero there is a $y$ that is greater than zero such that $x\gt y$."</p>
+
+<p>That is parallel to the first way of pronouncing "$1\lt x\lt 2$" given above.  But the assertion (PA) <i>cannot</i> be pronounced like (2) above: "For any $x$ and $x\gt 0$ there is..." The assertion "$x\gt 0$" is necessarily a <a href="https://en.wikipedia.org/wiki/Dependent_clause">subordinate clause.</a> The occurrence of $x$ in PA belongs in the phrase "For any $x$..." and <i>also</i> belongs to the subordinate clause "that is greater than zero". The $x$ is <b>pivoted</b> as before.  This special case of pivoting is called a <b>parenthetic assertion</b>, because it could be written like this: "For any $x$ (that is greater than zero)..."</p> 
+
+
+<h5>Example</h5>
+
+</p><p>"Let us return for a moment to the circle $S^1\subseteq \mathbb{C}=\mathbb{R}^2$." (Citation 426  in the <a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/hyperhbk.pdf">Handbook of mathematical discourse</a>.)</p>
+
+<h5>Example</h5>
+
+<p>\[B(t):=\frac{1+t^2}{2+t^2}\in\mathbb{Q}(t)\]
+is a sum of $2n$th powers of elements in $\mathbb{Q}(t)$ for all $n$. (Citation 332 in the <a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/hyperhbk.pdf">Handbook of mathematical discourse</a>.)</p>
+
+
+
+<ul>
+
+<li>There are similar examples in <a href="http://blogs.adelaide.edu.au/maths-learning/2014/09/08/contrapositive-grammar/">Contrapositive grammar,</a> by David Butler, and in the article on <a
+href="MMFuncSpec.htm#arrownotation">arrow
+notation</a>.</li> 
+
+<li>The syntax of pivots and parenthetic assertions is certainly not transparent. I suspect many students don't really understand the details of such assertions, but simply grasp the meaning from their prior understanding and the context.</li>
+
+<li>Some authors systematically avoid such assertions, others use them frequently.</li>
+
+</ul>
+
+<a name="precondition"></a>
+<a name="postcondition"></a>
+
+<h2>Preconditions and Postconditions</h2>
+<h3>Preconditions</h3>
+<p class=bluesmall>A <span class=red>precondition</span> is a preliminary assertion that puts a
+constraint on variables in the discussion that follows, and thus has a
+temporary effect on the <a href="#context">context</a>.</p>
+
+<h5>Examples</h5>
+
+<p>The following are two ways of asserting the same universal <a href="MMConditional.htm#imply">conditional assertion</a>.</p>
+
+<ul>
+<li>"For all $x$, ${{x}^{2}}\ge x-1$." The precondition is "for all $x$".</li> 
+
+<li>"Suppose $x$ is a real
+number.  Then ${{x}^{2}}\ge x-1$."  The precondition is "$x$ is a real
+number". This assertion means that the inequality ${{x}^{2}}\ge x-1$ holds for all $x$.</li></ul>
+
+<p class=smallind>Notice that the word "all" does not appear anywhere in the second assertion.</p>
+
+<h3>Postconditions</h3>
+
+<p class=bluesmall>A <span class=red>postcondition</span> is a assertion <i>after the end of a
+context</i> that puts a constraint on the variables occurring <i>earlier</i> in the context, which are therefore <i>retroactively constrained</i>. </p>
+
+<p>Postconditions in the <a
+href="MMSymLang.htm">symbolic language</a> are
+not used in a consistent way. You frequently have to have considerable
+knowledge of the subject being discussed to understand what is meant.</p>
+
+<h3>Examples</h3>
+
+<h5>Example (a)</h5>
+
+<p>\[{{x}^{2}}\ge x-1\,\,\,\,\,\,(x\text{ real})\]</p>
+
+<p class=noind>This means for <i>all</i> real $x$, not just for one value of $x$, so it has the same meaning as the example given under "Precondition". </p>
+
+<h5>Example (b)</h5>
+
+<p>By factoring, we see that          \[\frac{{{x}^{2}}-1}{x-1}=x+1\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(x\ne
+1)\]</p>
+
+<p class=noind>Again, this quantifies over all $x$: The equation holds for all $x$ except $1$.</p>
+
+
+<h5>Example (c)</h5>
+
+<p>By applying the Mean Value Theorem to $f$ on $[a,d]$ and $[d,b]$ respectively, we obtain\[f(d)-f(a)=f'({{c}_{1}})(d-a),\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{{c}_{1}}\in
+(a,d),\]\[f(b)-f(d)=f'({{c}_{2}})(b-d),\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,{{c}_{2}}\in
+(d,b).\]</p>
+
+<p class=noind>This <i>does not mean $f(d)-f(a)=f'({{c}_{1}})(d-a)$ </i>for all $\,\,{{c}_{1}}\in
+(a,d)$. It
+means there is a number $\,\,{{c}_{1}}\in (a,d)$
+that makes the first equation true (similar remark for the second equation). 
+Compare this to the occurrence of $x$'s in parentheses in the two preceding examples.</p>
+
+<p class=headed>In my opinion, using postconditions in the form they occur in Examples (a), (b) and (c) should be deprecated.  For example, it would be better to use "for all real $x$" in (a) and "for some $c_1\in(a,d)$" in the first line of (c).</p>
+
+<p>More examples of preconditions and postconditions may be
+found under <a href="MMIntent.htm#constraint">constraints</a>,
+<a href="MMUnivTrue.htm#symbolic">universally
+true assertions</a>, <a
+href="MMConditional.htm#precondition">conditional
+assertions</a> and <a href="MMDefs.htm#postcondition">definitions</a>.</p>
+
+
+<a name="suppressionofparameters"></a>
+
+
+
+<h2>Suppression of parameters</h2>
+
+<p class=bluesmall>Math notation may omit a <a
+href="MMParameters.htm">parameter</a> on which
+the meaning of the notation depends.</p>
+
+<h5>Example</h5>
+
+<p>It is common practice that a <a
+href="http://en.wikipedia.org/wiki/Group_%28mathematics%29">group</a>
+with underlying set $G$ and binary operation $*$ is also called $G$, so that the notation omits the binary operation.
+</p>
+
+<h5>Example</h5>
+
+<p>Math authors often use the expression <q> $\log x$</q> to refer to the logarithm function without naming the base, which is usually $10$ (high school), $e$ (college math) or $2$ (computing science).</p>
+
+
+<p>You could argue that when you write "log $x$" and announce that the base for your logs is always <i>e</i>, then you have not suppressed any <a href="MMParameters.htm">parameter</a>
+because the way you defined it, "log" <i>doesn’t have</i> a parameter.  But it is very common usage to write ${{\log }_{a}}x$ with the parameter explicit.  You can
+change the way you define a symbol but <i>you can’t change
+what the reader expects.</i></p>
+
+<a name="synecdoche"></a>
+
+<h2>Synecdoche</h2>
+
+<p class=bluesmall><font color="#911B1B">Synecdoche</font> is naming something by naming a part of it.  Referring to a car as "wheels" is an example of synecdoche.</p>
+
+<h5>Example </h5>
+
+<p>Naming a mathematical structure by its
+underlying set, as in the case of a group mentioned above. This is also a case of suppression of parameters.</p>
+
+<h5>Example</h5>
+
+<p>Naming a block of a <a href="MMMathStructure.htm#partition">partition</a> by one of its elements is an example of synecdoche. For example, consider the partition $E:=\{\{1,2,3\},\{4,5\}\}$. Some texts would refer to the block $\{1,2,3\}$ as $[3]_E$. So the notation $[3]_E$ refers to $\{1,2,3\}$ by using the particular element $3$. Of course, $[2]_E$ is another name for the same block.</p> 
+
+<p>This is not an example of suppression of parameters.</p> 
+
+<h5>Example</h5>
+
+<p>Another notation is common for a partition that is the set of cosets of a normal subgroup of a <a href="https://en.wikipedia.org/wiki/Group_(mathematics)">group</a>. For a group $G$ with <a href="https://en.wikipedia.org/wiki/Normal_subgroup">normal subgroup</a> $H$, the coset of an element $a\in G$ is the set $\{ah|h\in H\}$.  This is commonly denoted by $aH$. (Another element $b\in aH$ if and only if 
+$b^{-1}a\in H$.) So the notation "$\{ah|h\in H\}$" determines the coset exactly, using an arbitrarily chosen element $a$ of the coset to name it.</p>
+
+<a name="overloadednotation"></a>
+<a name="polymorphic"></a>
+<h2>Overloaded notation</a></h2>
+
+<p class=bluesmall>A symbol or name for a function that takes on different
+meanings depending on which type of element it is evaluated at is said to be <font color="#911B1B">overloaded</font> or <font color="#911B1B">polymorphic.</font></p>
+
+<h5>Example 1</h5>
+
+<ul>
+<li>The <a
+href="MMFuncExamples.htm#identityfunction"> identity function</a> is a polymorphic name, since there is
+technically a different identity function for each set.</li>
+
+<li>A text on linear algebra will very likely use $+$ for addition
+of vectors in every <a href="http://en.wikipedia.org/wiki/Vector_space">vector
+space</a>.</li>
+
+<li>Similarly, texts on group theory will use $e$ or $1$
+for the identity element for any group and <a href="MMFuncNotation.htm#juxtaposition">juxtaposition</a> for the binary
+operation of any group.</li>
+
+</ul>
+
+<p>These examples have in common the fact that each one uses the same symbol in every model for a particular operation in an axiomatically defined <a
+href="MMMathStructure.htm">mathematical structure.</a> This usage does not usually cause problems for students.</p>
+
+<h5>Example</h5>
+<p>In many computer languages, addition of
+integers is implemented differently from addition of floating point numbers, and the same goes for multiplication. </p>
+
+<h5>Example</h5>
+
+<p>The symbol $\times $ is overloaded in college math courses.</p><ul><li>When $a$ and $b$ are numbers, $a\times b$ is their product.</li><li>When $A$
+and $B$ are matrices, $A\times B$ is the <a href="https://en.wikipedia.org/wiki/Matrix_multiplication#Matrix_product_.28two_matrices.29"><i>matrix</i> product.</a></li><li>When $v$ and
+$w$ are 3-dimensional vectors, $v\times w$ is their <a href="https://en.wikipedia.org/wiki/Cross_product"><i>cross</i> product.</a></li></ul>
+
+<p>This means the same symbol is used with different properties.</p>
+
+<ul>
+<li>The product of numbers is associative and commutative.</li><li>The product of matrices is associative but not commutative.</li><li>The vector product is neither associative nor commutative.</li>
+</ul>
+
+<p>So you have to know the data type of your variables in order to know whether you can use commutativity or associativity.</p>
+
+
+<h4>Remarks</h4>
+
+<ul>
+
+<li> When students start taking college math, the frequent
+occurrence of poly­morphism means that they have to <i>read the surrounding text</i> to understand what
+a symbolic expression means.  The expression is no longer self-sufficient.</li>
+
+<li class=small>When I first came across this aspect of mathematics in a matrix theory course at <a href="https://en.wikipedia.org/wiki/Texas_Southmost_College">Texas Southmost College,</a> I felt that I had been <i>ejected from paradise.</i></li>
+
+<a name="adhocpolymorphism"></a>
+
+<li>The operation $\times $ uses different <a
+href="MMGlossaryA.htm#algorithm">algorithms</a> on numbers,
+matrices and $3$-vectors. This is the sort of phenomenon computer scientists call <b>ad-hoc polymorphism</b>.</li>
+
+<li>
+Ad-hoc polymorphism is contrasted with <a name="parametric_polymorphism"><b>parametric
+polymorphism</b></a>, which uses the <i>same</i> algorithm on different data types.
+
+<ul>
+
+<li>The <a href="MMFuncExamples.htm#identityfunction">identity
+function</a> is a trivial example of parametric polymorphism.  The algorithm is: <b>do nothing to the input.</b></li>
+
+<li>The algorithm "swap" takes any ordered pair $(a_1,a_2)$ and takes it to $(a_2,a_2)$. It doesn't matter what the data type of $a_1$ and $a_2$ are.</li>
+
+</ul>
+
+<li>Many mathematicians think and speak
+informally of a parametrically polymorphic function as one single function.
+("... the identity function is injective").</li>
+
+</ul>
+<a name="redundancy"></a>
+
+<h2>Redundancy</h2>
+<h3>Redundancy in discourse</h3>
+
+
+
+<p class=bluesmall>A given discourse is
+<font color="#911B1B">redundant</font> if it contains words and expressions that could be omitted
+without changing the meaning. Redundancy in some circumstances is annoying but
+in others it is helpful for understanding.</p>
+
+<h5>Example</h5>
+
+<p>The counting
+function of primes defined by\[\pi (x):=\#\left\{ p\le x|p\text{ is prime}
+\right\}\] satisfies the formula\[\pi (x)\approx{\ }\frac{x}{\log x}\]</p>
+
+<p>The phrase 'the
+counting function of primes" is redundant, since the definition of $\pi$ just
+following that phrase <i>says</i> it is the counting function for primes. This
+is <i>not bad writing:</i> the redundancy adds much to the reader's
+understanding (for this reader, anyway). </p>
+
+<a name="typelabeling"></a>
+
+<h3>Type labeling</h3>
+
+<p class=bluesmall><font color="#911B1B">Type labeling</font> is a commonly occurring systematic form of redundancy.  This is discussed in more detail in <a
+href="MMVarSub.htm#type">type of a variable</a>.</p>
+
+<h5>Example</h5>
+
+<p>Suppose a text defines $G$ to be a group on page 42 and defines a certain subgroup $H$ of $G$ on page 46.  Then on page 48 it
+says "The subgroup $H$ of the group $G$ is normal in $G$".  The
+phrases "the subgroup" and "the group" are redundant since $H$ and $G$
+have already been defined to be groups.  Nevertheless this redundancy can be very
+helpful to the reader since the sentence is separated by a couple of pages from
+the definitions.</p>
+
+<p>I have heard mathematicians say that a definition is not a
+proper definition if it is redundant.  In fact, definitions are very commonly
+redundant, including the usual definition of group (see <a href="http://planetmath.org/redundancyoftwosidednessindefinitionofgroup">the PlanetMath article</a>). </p>
+
+<a name="grasshopper"></a>
+
+<h2>Grasshoppers</h2>
+
+<p class=bluesmall>A <font color="#911B1B">grasshopper</font> is a reader who starts reading a book
+or article at the point where it discusses what she is interested in, then
+jumps back and forth through the text
+finding information about the ideas she meets. This is contrasted with someone
+who starts at the beginning and reads straight through.</p>
+
+
+
+<p>The terminology is due to
+<a href="MMMoreLanguage.htm#steenrod">Steenrod</span></a>, who calls the reader who starts at the beginning and reads
+straight through a <b>normal</b> reader, a name which this
+particular grasshopper resents.  Since Steenrod also mentions the difficulty
+causes by "global" terminology, particularly terminology defined near the
+beginning of a book and used without comment in the rest of the text, I suspect
+him of having been a grasshopper himself.</p>
+
+<p>My only reason for including this section is so that I can say: If you fit one of the definitions of "grasshopper" and "normal", try doing it the other way.</p> <p class=purpleprose>Experimenting with a new way of doing something<br> can sometimes pay off big.</p>
+
+
+<h1><a href="MMIntent.htm">Intent of assertions</a></h1>
+
+<h1><a href="MMParameters.htm">Parameters</a></h1>
+
+<h1><a href="MMVarMeanings.htm">Variations in
+meaning</a></h1>
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br />
+</body>
+
+</html>

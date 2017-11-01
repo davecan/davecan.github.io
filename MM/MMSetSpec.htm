@@ -1,0 +1,206 @@
+
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Set: Specification</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-07-23
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+back to head of <a href="MMSets.htm">sets</a> chapter
+</pre>
+
+<h1>SETS: SPECIFICATION</h1>
+
+<p class=blue>The definition of set can be stated in several different ways, all of them complicated. The most widely used definition is based on the <a href="https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory"><font color="#911B1B">Zermelo-Fraenkel axioms.</font></a></p>
+
+<p class=blue>It is not necessary to understand or even know the Zermelo-Fraenkel axioms to understand sets as they are used in undergraduate math or large parts of graduate math. Nearly everything having to do with sets in ordinary mathematical practice derives from the <a href="MMSetRinf.htm#comprehension"><font color="#911B1B">Method of Comprehension,</font></a> so there is usually no need for the axiomatic definition. In that sense, the following <a href="MMDefs.htm#specifications"><font color="#911B1B">specification</font></a> contains everything you need to know about sets for <i>most</i> mathematical purposes.</p>
+
+<h2>Specification for sets</h2>
+
+<p class=blue>A set is a single <a href="MMMathObj.htm">math object</a> distinct from but completely determined by what its elements are.</p>
+
+<p>This specification tells you the <i>operative properties</i> of a set rather than giving a definition in terms of previously known objects.</p>
+
+<h4>An embarrassing difficulty</h4>
+
+<p><span class=bluesmall>The specification just given is not a <a href="MMDefs.htm">mathematical definition</a>.</span> In particular, in some situations that usually do not occur in most branches of math, a bunch of elements may not correspond to a set. One such example is this:</p>
+
+<p class=purpleprose>There is no "set of all sets".</p>
+
+<p>In other words, you can't have a set that is completely determined by the fact that its elements are all the sets that exist. This follows from <a href="https://en.wikipedia.org/wiki/Cantor%27s_theorem">Cantor's Theorem</a>. In most cases, if you think up a bunch of elements, they do form a set.</p> 
+
+<p><span class=bluesmall>The important thing to understand is what the specification means in practice.</span>  That is the subject of the next section:</p>
+
+<h2>Consequences of the specification for sets</h2>
+
+<h3>Single math object</h3>
+
+<ul>
+
+<li>A set is not merely a typographically convenient way to define a certain collection of things. A set is a <a href="MMMathObj.htm">math object</a>, just like the number $143$ and the sine function and the real line. </li>
+
+<li>A set is <b>one thing</b>. The set $\{3,42\}$ is not two numbers or two anything else.  It is one set.</li>
+
+</ul>
+
+<h3>Take the definition of a set seriously</h3>
+
+<p>If someone defines $S$ as the set of all integers bigger than $3$, then the spec means you know all these things: </p> 
+
+<ul>
+
+<li>$4$ and $10^{42}$ are elements of $S$.</li> 
+
+<li>$3$ and $-99$ are not elements of $S$.</li>  
+
+<li>$S$ is not any of the integers bigger than $3$.</li>
+
+<li>$S$ is not all the integers bigger than $3$ because $S$ is just one thing.</li>
+
+</ul>
+
+
+<h3>Order does not matter</h3>
+
+<p>In <a href="MMSetNotation.htm#listnotation">list notation,</a> the order in which you list the elements of a set is irrelevant for the
+purposes of determining what the set is.  This follows directly from the
+specification.</p>
+
+<h6>Example</h6>
+
+<ul>
+
+<li>The set
+$\{1, 2, 4, 5\}$ by definition contains the numbers $1$, $2$, $4$ and $5$ and <i>nothing else.</i></li>
+
+<li>So does
+the set $\{1,5,4,2\}$. The presence of "$5$" in the expression "$\{1,5,4,2\}$" tells you that $5$ is in the set. It does not matter if you say $5$ is in the set before or after you say $4$ is in the set.</li>
+
+<li>Since a
+set is “completely determined by what its elements are”, "$\{1, 2, 4, 5\}$" and
+"$\{1,5,4,2\}$" denote the <i>same set</i>.</li>
+
+</ul>
+
+<h3>Repetition does not matter</h3>
+
+<p>The list notation $\{3, 3, 4\}$ defines a set with two elements $3$
+and $4$.  The first occurrence of ‘$3$’ in the list says that $3$ is in the set.  The
+second occurrence says the same thing.  Saying a true thing twice has no effect
+(except to irritate the reader). So repetition in list notation does not matter.</p>
+
+<h3>Set equality</h3>
+
+<p><span class=bluesmall>If $A$ and $B$ are sets, then $A=B$ if and
+only if $A$ and $B$ have the same elements.</span> In other words:</p>
+
+<p class=purpleprose>$A = B$ if and only
+if every element of $A$ is an element of $B$<br /> and every element
+of $B$ is an element of $A$.</p>
+
+<h5>Examples</h5>
+
+<ul>
+
+<li>For
+real numbers <i>x</i>, \[\left\{ x|{{x}^{2}}=1 \right\}=\left\{ 1,\,\,-1
+\right\}\] (see <a href="MMSetNotation.htm#setbuildernotation">setbuilder notation</a>)  because (a) $1$ and $–1$ <a href="MMGlossary.htm#satisfy">satisfy</a>
+the equation ${{x}^{2}}=1$ and (b) no other real number satisfies that
+equation.</li>
+
+<li>For
+real numbers $x$, \[\left\{ x|{{x}^{2}}=2 \right\}\ne \left\{ \sqrt{2}
+\right\}.\]It is true that $\sqrt{2}$ satisfies the equation ${{x}^{2}}=2$, but
+it is also true that $-\sqrt{2}$ satisfies ${{x}^{2}}=2$.   Since $-\sqrt{2}$ is
+not listed as an element of $\left\{ \sqrt{2} \right\}$, $\left\{
+\sqrt{2} \right\}$ is not equal to $\left\{ x|{{x}^{2}}=2 \right\}$.</li>
+
+</ul>
+
+<a name="setsaselementsofsets"></a>
+
+<h3>Sets as elements of sets</a></h3>
+
+<p><span class=bluesmall>A set, being a math object, can
+be an element of another set.</span> Furthermore, if it is, its elements
+are not necessarily elements of that other set because the specification says that a set is a math object that is <i>distinct from its elements.</i></p>
+
+<h6>Example</h6>
+
+<p>Let $A= \{ \{1, 2\}, \{3\}, 1, 6\}$.  </p>
+
+<ul>
+
+<li>$A$ has four elements, two of which are sets.  </li>
+
+<li>$2\in
+\left\{ 1,\,\,2 \right\}$ and $\left\{ 1,\,\,2 \right\}\in A$, but $2$ is
+not an element of $A$. The set $\{1,2\}$ is distinct from its elements,
+so that even though one of its elements is $2$, the set $\{1,2\}$ itself is not $2$.</li>
+
+<li>On the
+other hand, $1$ <i>is</i> an element of $A$ because it is explicitly
+listed as such.</li>
+
+</ul>
+
+<h6>Example</h6>
+
+<p class=MsoNormal>Let \[B=\left\{ \left\{ 1 \right\},\,\left\{ 2
+\right\},\,\left\{ 1,\,2 \right\},\,\varnothing  \right\}.\]Then $B$ is the
+<b>set of all subsets</b> of the set $\{1, 2\}$.  In particular, $\varnothing \in B$ (the
+empty set is an element of $B$.)  Note that the empty set is <i>not</i> an element of the set $A$ of the preceding example.</p><p class=purpleprose>It is a <span class=red>myth</span> that the empty set is an element of every set.</p>
+
+<p>On the other hand:</p>
+
+<p class=purpleprose>The empty set <span class=red>is</span> a subset of every set.</p>
+
+<h4>Sets as elements of sets in practice</h4>
+
+<p class=MsoNormal>Most of the time in practice either <i>none</i> of
+the elements of a set are sets or <i>all</i> of them are. In fact,
+sets such as $A$ and $B$ in the preceding examples, which have
+both sets and numbers as elements, rarely occur in mathematical writing
+except as examples in texts such as the one you are reading which are intended to bring out the
+difference between "element of" and "<a href="MMSetSubset.htm#inclusion">included in</a>". See
+also <a href="MMGlossary.htm#contain">contain.</a></p>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'>&nbsp;</p>
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+</body>
+
+</html>

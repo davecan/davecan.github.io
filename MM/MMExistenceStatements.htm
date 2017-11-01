@@ -1,0 +1,150 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Existence Statements</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2015-09-03
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>
+<a href="MMProofs.htm">Head of Math Reasoning Chapter</a>   <a href="/Word%20Press/">blog</a>
+</pre>
+
+<h1>EXISTENCE STATEMENTS </h1>
+
+<p class=blue>An <a
+name=existencestatement><font color="#911B1B">existence statement</font></a>
+is a claim that there is a value of a certain variable that makes a certain assertion true.</p>
+
+<h5>Examples</h5>
+
+<ol>
+
+<li><b>There is</b> an integer $n$ that is bigger than $2$. The variable is $n$ and it varies over integers. The assertion is "$n$ is bigger than $2$." The statement is true.</li>
+
+<li><b>There is</b> a right triangle $T$ with sides $1$, $2$ and $3$. The variable is $T$ and it varies over triangles. The assertion is false by the Pythagorean Theorem.</li>
+
+<li><b>There is</b> a real number $x$ for which ${{x}^{2}}+x=1$. True. On the other hand, the statement "There is a real number $x$ for which ${{x}^{2}}+x=-1$" is false. (Proof: find the minimum of $x^2+x+1$.)</li>
+
+
+</ol>
+
+<a name="existentialquantifier"></a>
+
+<h3>The existential quantifier symbol</h3>
+
+<p>For an assertion $P$, a statement of the form "$\exists xP(x)$" means that there is at least one
+<a href="MMMathObj.htm">mathematical object</a> $c$ of the type
+of $x$ for which the assertion $P(c)$ is true. The symbol "$\exists$" is pronounced
+"there exist(s)" and is called the <b>existential
+quantifier</b>.  It is also discussed in the section on <a href="MMOtherSymbols.htm">symbols</a>.</p>
+
+<a name="witness"></a>
+
+<h5>Example</h5>
+
+<p>For the assertion (1) above, $P$ is the statement "$n\gt2$" and the statement "$P(42)$", in other words "$42\gt2$", is true, so "$\exists n(n\gt2)$" is true.</p>
+ 
+<h4>Witnesses</h4>
+
+<p>In the example just given, $42$ is said to be a <b>witness</b> that "$\exists n(n\gt2)$" is true. Note that $3$ is another witness but $1$ is not a witness.</p><p class=smallind>The fact that "$1\gt2$" is false does not mean that "$\exists n(n\gt2)$" is false, it only means that $1$ is not a witness to its being true.</p>
+
+<a name="some"></a>
+
+<h3>How existential statements are
+worded.</h3>
+
+<p>Let $n$ be
+of type integer and suppose $P(n)$ is the assertion "$n$ is
+divisible by $6$". Then the statement "$\exists nP(n)$" can be expressed
+in Mathematical English in these ways: </p>
+
+<ul>
+
+<li><b>There is</b> (or "There exists") an integer $n$ that is divisible by $6$.</li>
+
+<li><b>For some</b> integer $n$, $n$ is divisible by $6$.</li>
+
+</ul>
+
+<p>You can also use statements that don't give the integer $n$ a name, such as:</p>
+
+<ul>
+
+<li><b>There is</b> (or "There exists")
+an integer divisible by $6$.</li>
+
+<li><b>There are</b> integers divisible by $6$.</li>
+
+<li><b>Some</b> integers are divisible by $6$.</li>
+
+</ul>
+
+
+<h3>Warning: Cognitive Dissonance is immanent</h3>
+
+<p>If the assertion $\exists
+xP(x)$ is true, there may be only <i>one</i> object $c$ for which
+$P(c)$ is true, there may be <i>many</i> values of  $x$ for which $P(x)$
+is true, and in fact $P(x)$ may be true for <i>every</i> $x$
+of the appropriate type.</p>
+
+<p class=purpleprose>These
+interpretations are different<br />from ordinary English usage<br />and can cause <font color="#911B1B">cognitive dissonance.</font></a></p>
+
+<p>In particular, in
+mathematical discourse:</P> 
+
+<ul>
+
+<li>The statement "Some
+primes are less than $3$" is <i>true</i>, even though there is exactly
+one prime less than $3$. The fact that "primes" is plural in the statement may lead you to say the statement is false, causing <a href="MMCognitiveDissonance.htm">cognitive dissonance</a>. In math, it is a true statement.</li>
+
+<li>The statement "Some primes are integers" is
+true, even though <i>all</i> primes are integers. In everyday English, you simply wouldn't say "<i>some</i> primes are integers" since <i>all</i> of them are. </li>
+</ul>
+
+<p class=purpleprose>Some phrases in Math English<br />don't have the same meaning as in ordinary English.</p>
+
+<p>The
+<a href="/Handbook/handbook.pdf">Handbook</a> (under
+<b>existential quantifier</b>) has more discussion about this and references.</p>
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+
+</body>
+
+</html>

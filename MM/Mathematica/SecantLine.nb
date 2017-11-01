@@ -1,0 +1,264 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9258,        255]
+NotebookOptionsPosition[      8804,        235]
+NotebookOutlinePosition[      9172,        251]
+CellTagsIndexPosition[      9129,        248]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ptsl", "[", 
+   RowBox[{"m_", ",", "p_", ",", "x_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"m", " ", "x"}], "+", " ", 
+   RowBox[{"p", "[", 
+    RowBox[{"[", "2", "]"}], "]"}], "-", 
+   RowBox[{"m", " ", 
+    RowBox[{"p", "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}]}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"tpl", "[", 
+   RowBox[{"p_", ",", "q_", ",", "x_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"p", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "-", 
+        RowBox[{"q", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"p", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "-", 
+        RowBox[{"q", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}], 
+     RowBox[{"(", 
+      RowBox[{"x", "-", 
+       RowBox[{"p", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}], "+", 
+    RowBox[{"p", "[", 
+     RowBox[{"[", "2", "]"}], "]"}]}], "//", "Simplify"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"cu", "[", "x_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"x", "^", "3"}], "-", "x"}]}], ";", 
+  RowBox[{
+   RowBox[{"cud", "[", "x_", "]"}], ":=", 
+   RowBox[{
+    RowBox[{"cu", "'"}], "[", "x", "]"}]}]}]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"cu", "[", "x", "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"If", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"a", "\[Equal]", "b"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"ptsl", "[", 
+            RowBox[{
+             RowBox[{"cud", "[", "a", "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"a", ",", 
+               RowBox[{"cu", "[", "a", "]"}]}], "}"}], ",", "x"}], "]"}], ",",
+            "\[IndentingNewLine]", 
+           RowBox[{"tpl", "[", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"a", ",", 
+               RowBox[{"cu", "[", "a", "]"}]}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"b", ",", 
+               RowBox[{"cu", "[", "b", "]"}]}], "}"}], ",", "x"}], "]"}]}], 
+          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "2.2"}], ",", "2.2"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{"Blue", ",", "Red"}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"AspectRatio", "\[Rule]", 
+        RowBox[{"4.4", "/", "3"}]}]}], "\[IndentingNewLine]", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Black", ",", "\[IndentingNewLine]", 
+        RowBox[{"PointSize", "[", ".02", "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", 
+           RowBox[{"cu", "[", "a", "]"}]}], "}"}], "]"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{"b", ",", 
+           RowBox[{"cu", "[", "b", "]"}]}], "}"}], "]"}]}], 
+       "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", 
+       RowBox[{"-", "1"}]}], "}"}], ",", 
+     RowBox[{"-", "1.5"}], ",", "1.5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", ".5"}], "}"}], ",", 
+     RowBox[{"-", "1.5"}], ",", "1.5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}]}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.52664748829475*^9, 3.526647511451*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = -0.10999999999999988`, \
+$CellContext`b$$ = -0.5499999999999999, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], -1}, -1.5, 1.5}, {{
+       Hold[$CellContext`b$$], 0.5}, -1.5, 1.5}}, Typeset`size$$ = {
+    388., {266., 274.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`a$3174$$ = 
+    0, $CellContext`b$3175$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = -1, $CellContext`b$$ = 0.5}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$3174$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$3175$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{
+          $CellContext`cu[$CellContext`x], 
+          If[$CellContext`a$$ == $CellContext`b$$, 
+           $CellContext`ptsl[
+            $CellContext`cud[$CellContext`a$$], {$CellContext`a$$, 
+             $CellContext`cu[$CellContext`a$$]}, $CellContext`x], 
+           $CellContext`tpl[{$CellContext`a$$, 
+             $CellContext`cu[$CellContext`a$$]}, {$CellContext`b$$, 
+             $CellContext`cu[$CellContext`b$$]}, $CellContext`x]]}, \
+{$CellContext`x, -1.5, 1.5}, PlotRange -> {{-1.5, 1.5}, {-2.2, 2.2}}, 
+         PlotStyle -> {Blue, Red}, AspectRatio -> 4.4/3], 
+        Graphics[{Black, 
+          PointSize[0.02], 
+          Point[{$CellContext`a$$, 
+            $CellContext`cu[$CellContext`a$$]}], 
+          Point[{$CellContext`b$$, 
+            $CellContext`cu[$CellContext`b$$]}]}]], 
+      "Specifications" :> {{{$CellContext`a$$, -1}, -1.5, 1.5, Appearance -> 
+         "Labeled"}, {{$CellContext`b$$, 0.5}, -1.5, 1.5, Appearance -> 
+         "Labeled"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{443., {337., 345.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`cu[
+         Pattern[$CellContext`x, 
+          Blank[]]] := $CellContext`x^3 - $CellContext`x, $CellContext`ptsl[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`p, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := $CellContext`m $CellContext`x + 
+        Part[$CellContext`p, 2] - $CellContext`m 
+        Part[$CellContext`p, 1], $CellContext`cud[
+         Pattern[$CellContext`x, 
+          Blank[]]] := Derivative[1][$CellContext`cu][$CellContext`x], 
+       Attributes[Derivative] = {NHoldAll, ReadProtected}, $CellContext`tpl[
+         Pattern[$CellContext`p, 
+          Blank[]], 
+         Pattern[$CellContext`q, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := 
+       Simplify[((Part[$CellContext`p, 2] - Part[$CellContext`q, 2])/(
+           Part[$CellContext`p, 1] - 
+           Part[$CellContext`q, 1])) ($CellContext`x - 
+           Part[$CellContext`p, 1]) + Part[$CellContext`p, 2]]}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.526647276685375*^9, 3.526647512747875*^9}]
+}, Open  ]]
+},
+WindowSize->{715, 767},
+WindowMargins->{{Automatic, 231}, {Automatic, -35}},
+Magnification->1.25,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 314, 10, 35, "Input"],
+Cell[874, 32, 755, 25, 80, "Input"],
+Cell[1632, 59, 259, 9, 35, "Input"],
+Cell[CellGroupData[{
+Cell[1916, 72, 3137, 79, 586, "Input"],
+Cell[5056, 153, 3732, 79, 702, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

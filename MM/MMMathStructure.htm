@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+  <head><meta name=viewport content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css"href="MM2.css">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Mathematical structures</title>
+
+
+  <script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      processEscapes: true
+    }
+  });</script>
+
+  </head>
+
+  <body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>   Revised 2016-10-25     
+<a href="MMIntro.htm">Introduction to this website</a>   <a href="MMTOC.htm">website TOC</a>   <a href="MMIndex.htm">website index</a>    
+<a href="/Word%20Press/">blog</a>   <a href="MMUnderstandingMath.htm">Back to Understanding Math Chapter head</a>
+</pre>
+
+<a name="structure"></a>
+
+<h1>MATHEMATICAL STRUCTURES</h1>
+
+<h2>Basic idea</h2>
+
+<p>A <b>mathematical structure</b> is a <a href="MMSets.htm">set</a> (or sometimes several sets) with
+various associated <a href="MMMathObj.htm">mathematical objects</a> such as subsets, sets
+of subsets, <a href="MMFuncExamples.htm#binaryoperation">operations</a> and <a href="https://en.wikipedia.org/wiki/Binary_relation">relations</a>,
+all of which must satisfy various requirements (<a
+href="MMOtherAspectsUnderstanding.htm#axiomaticmethod">axioms</a>). The collection of associated <a href="MMMathObj.htm">mathematical
+objects</a> is called the <a name=structure><b>structure</b></a> and the
+set is called the <a name="underlying_set"><b>underlying set</b>.</p>
+
+<h4>Warning</h4>
+
+<p>This definition of mathematical
+structure is not a <a
+href="MMDefs.htm">mathematical
+definition</a>. 
+The
+word "structure" is usually used in the definition or discussion
+of a particular kind of mathematical structure, without any general definition of the phrase "mathematical structure" being given.</p>
+
+<p class=smallind>In recent times it has become common to define a mathematical structure using either <a href="https://en.wikipedia.org/wiki/Category_theory">category theory</a> or <a href="https://en.wikipedia.org/wiki/Type_theory">type theory</a>. When done that way, the structure may not necessarily have a set as underlying structure.</p>
+
+<h2>Examples of mathematical structures</h2>
+
+<p>In this article, I give some simple examples in detail. Although they are simple, they all have uses in one or another branch of math. After those examples, I describe (with links) some <a href="#majorimportance">mathematical structures of major importance</a> that an undergraduate math student will meet.</p>
+
+<a name="N"></a><a name="Z"></a><a name="R"></a>
+
+<p>$\mathbb{N}$ is the set of all positive integers, $\mathbb{Z}$ is the set of all integers and  $\mathbb{R}$ is the set of all real numbers.</p>
+
+<a name="pointedset"></a>
+
+<h3>Pointed sets</h3>
+
+<p class=boxed>A <a href="https://en.wikipedia.org/wiki/Pointed_set"><b>pointed set</b></a> is a set together with a particular element of the set.</p>
+
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>The set $\{1,2,3\}$ together with $2$ is a pointed set. It would normally be written as $(\{1,2,3\},2)$.</li>
+
+<li>$(\mathbb{R},\pi)$ is a pointed set.</li>
+
+<li>$(\mathbb{Z},\pi)$ is not a pointed set because $\pi\notin\mathbb{Z}$.</li> 
+
+</ul>
+
+<a name="relation"></a>
+
+<h3>Relations</h3>
+
+<a name="lessthan"></a>
+
+<p class=boxed>A <a href="https://en.wikipedia.org/wiki/Binary_relation"><b>relation</b></a> is a set $S$ together with a set of <a href="https://en.wikipedia.org/wiki/Ordered_pair">ordered pairs</a> of elements of the set.</p>
+
+<p>I will sometimes denote the set of ordered pairs by a Greek letter, for example $\alpha$ (pronounced "alpha"), so that $\alpha$ must be a subset of $S\times S$. Then, if $(s,s')$ is an ordered pair in the set $\alpha$, you could write "$s\,\alpha\, s'$", pronounced "$s$ is related by alpha to $s'$".</p>
+
+<h4 class=redit>Small examples</h4>
+
+<ul>
+
+<li>The set \[\alpha:=\{(1,2),(2,3),(1,3)\}\] is a relation on the set $S=\{1,2,3\}$. It is in fact the familiar relation "$\lt$" on $S$, because if $m,n$ are in $S$, then $m\lt n$ if and only if $(m,n)$ is one of the pairs $(1,2)$, $(2,3)$, or $(1,3)$. </li>
+
+<p class=purpleprose>The concept that "$\lt$" is a set of ordered pairs takes a bit of getting used to.</p>
+
+<li>The set $S:=\{1,2,3\}$ together with the set of ordered pairs \[\{(1,1),(1,2),(2,3),(3,1)\}\] is a relation. It is not a familiar relation.  It is an <a href="MMGlossary.htm#arbitrary">arbitrary</a> relation. (Click on "<a href="MMGlossary.htm#arbitrary">arbitrary</a>". You might learn something.) If you call it "$\beta$" (pronounced "bay-ta" in the USA), then "$1\,\beta\,2$" is true but "$1\,\beta\,3$" is false.</li>
+
+<li>$\mathbb{Z}$ together with the set $\{(m,m)\,|\,m=m\}$ (see <a href="MMSetNotation.htm#setbuildernotation">setbuilder notation</a>) is the <b>equals</b> relation on the set of all integers.</li>
+</ul>
+
+<p>There are more examples of relations in the section on <a href="#morphisms">Maps between math structures</a>.</p>
+
+<a name="congruencerelations"></a>
+
+<h4 class=redit>Congruence relations</h4>
+
+<p><b>Congruence relations</b> are defined by requiring that two integers be related if they have the same remainder when divided by a particular integer. A congruence relation is an example of an <a href="https://en.wikipedia.org/wiki/Equivalence_relation">equivalence relation</a>.</p> 
+
+<p>For example, every integer $n$ leaves one of these remainders when divided by $3$: $0$, $1$ or $2$.  I will use the notation "$\underset{3}\sim$" for this relation and similarly for integers other than $3$. (The standard notation is described in the <a href="https://en.wikipedia.org/wiki/Modular_arithmetic">Wikipedia article</a>.) So $5\underset{3}\sim17$ is true because both $5$ and $17$ leave a remainder of $2$ when divided by $3$, but $5\underset{3}\sim10$ is false.</p>
+
+<p>Notice that for integers $m$ and $n$, $m\underset{2}\sim n$ is true if and only if $m$ and $n$ are both even or both odd.</p>
+
+
+
+<a name="partition"></a>
+
+<h3>Partitions</h3>
+
+<p class=boxed>A <a href="https://en.wikipedia.org/wiki/Partition_of_a_set">partition</a> is a set together with a set of subsets (called "blocks")
+with the property that every element of the set is in exactly one block.</p>
+
+<h4 class=redit>Small examples</h4>
+
+<ul>
+
+<li>The set $\{1,2,3\}$ together with the set of subsets $\{\{1,2\},\{3\}\}$ is a partition. Note that $1\in\{1,2\}$ and not in $\{3\}$, similarly for $2$, and $3\in\{3\}$ and not in $\{1,2\}$, so this structure fits the definition of "partition".</li>
+
+<a name="previouspartition"></a>
+
+<li>The set $\{1,2,3,4,5,6,7\}$ together with the set of subsets \[\{\{1,4,7\},\{2,5\},\{3,6\}\}\] is a partition. Notice that it groups numbers together that have the same remainder when divided by $3$. It can be visualized like this:</li>
+<p class=center><img src="Mathematica/Structures/partition1.png" hspace=12></p>
+
+
+<li>The set $\{1,2,3\}$ together with the set of subsets $\{\{1,2\},\{1,3\}\}$
+is not a partition because $1$ is in two different blocks.</lli>
+
+<li>The set $\{1,2,3\}$ together with the set of subsets $\{\{1,2\},\{1\}\}$
+is not a partition because $3$ is not in any block.</li>
+</ul>
+
+<p class=smallind>Can you list all the partitions of $\{1,2,3\}$?</p>
+
+<h4 class=redit>Partition induced by a congruence relation</h4>
+<ul>
+<li>You can group the set $\mathbb{N}$ of positive integers into three blocks depending on what their remainder when divided by $3$ is. This produces three infinite blocks: $\{1,4,7,10,13,\ldots\}$,  $\{2,5,8,11,14,\ldots\}$ and $\{3,6,9,12,15,\ldots\}$.
+</li>
+
+<li>If you do this for $2$ instead of $3$ you get two blocks: the set of even positive integers and the set of odd positive integers.</li>
+
+<li>There is a similar partition of $\mathbb{N}$ induced by any positive integer $n$, giving $n$ blocks according to remainders.</li> 
+
+</ul>
+
+
+<a name="binaryoperation"></a>
+
+<h3>Binary operations</h3>
+
+<p>If $S$ is a set, then the notation "$S\times S$" denotes the set of all ordered pairs of elements of $S$.  For example, if $S=\{2,5,7\}$, then \[S\times S=\{(2,2),(2,5),(2,7),(5,2),(5,5),(
+
+5,7),(7,2),(7,5),(7,7)\}\]</p>
+
+<p class=boxed>A <a href="https://en.wikipedia.org/wiki/Binary_operation">binary operation</a> on a set $S$ is a function $b:S\times S\to S$.</p>
+
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>The operation of adding two <a href="MMRealNumbers.htm">real numbers</a> is a binary operation $+:\mathbb{R}\to\mathbb{R}$.  Like many common binary operations, it is written <i>between</i> the two numbers; you write "$2+5$" instead of "$+(2,5)$".  See <a href="MMFuncNotation.htm#infixnotation">infix notation</a>.  Other familiar binary operations on the real numbers are multiplication and subtraction.</li>
+
+<li>Many more examples of binary operations are given in the chapter on <a href="MMFuncExamples.htm#binaryoperations">Examples of Functions</a>.</li>
+
+</ul>
+
+<a name="monoid"></a>
+<h3>Monoids</h3>
+
+
+
+<p class=boxed>A <b>monoid</b> is a binary operation $\Delta:S\times S\to S$ for some set $S$ with two properties given below, using <a href="MMFuncNotation.htm#infixnotation">infix notation</a>.</p>
+
+<p>The usual notation for a monoid $\Delta:S\times S\to S$ is "$(S,\Delta)$".</p> 
+
+<h4>Axioms for monoids</h4>
+ 
+<ul>
+
+<li><b>Axiom 1: Associativity</b> For all elements $r$, $s$ and $t$ of $S$, \[(r\Delta s)\Delta t=r\Delta(s\Delta t)\]</li>
+
+<li><b>Axiom 2: Identity</b> There is an element $e\in S$ with the property that for all $s\in S$, \[e\Delta s=s\Delta e=s\]</li>
+
+</ul>
+
+<h4>Remarks</h4>
+<a name="underlyingset"></a>
+<ul>
+
+<li>If $(S,\Delta)$ is a monoid, $S$ is called the <b>underlying set</b> of the monoid $(S,\Delta)$.</li>
+
+<li>If several monoids are being considered, you can use $e_S$ for the identity of $(S,\Delta)$, $e_T$ for the identity of $(T,\nabla)$, and so on.  But many authors simply use "$e$" (or "$1$") for the identity of any monoid.</li>
+
+<li>It is customary in math to use <a href="MMFuncNotation.htm#juxtaposition">juxtaposition</a> for the binary operation of a monoid, so that the requirement for associativity is that $(rs)t=r(st)$ and for the identity element that $es=se=s$. However, I will use $\Delta$ here except in examples where some other notation is customary (usually the plus sign, the multiplication sign, or juxtaposition).</li>
+
+<li>The concept of <b>monoid</b> is a particularly simple example of an <a href="https://en.wikipedia.org/wiki/Algebraic_structure">algebraic structure</a>. The most important algebraic structures include <a href="#group">groups</a>, <a href="https://en.wikipedia.org/wiki/Ring_(mathematics)">rings</a>, <a href="https://en.wikipedia.org/wiki/Field_(mathematics)">fields</a> and <a href="https://en.wikipedia.org/wiki/Vector_space">vector spaces</a>. All of them involve one or two binary operations that are monoids, mostly with additional properties.</li>
+
+</ul>
+
+<h4 class=redit>Examples of monoids</h4>
+
+
+<ul>
+
+<li>Addition on the <a href="MMNaturalNumbers.htm">nonnegative integers</a> is a monoid; in other words, $(\mathbb{N}\cup \{0\},+)$ is a monoid. Addition is associative, and the number $0$ is the identity element.</li> 
+
+<li>($\mathbb{Z},+)$, ($\mathbb{Q},+)$, and ($\mathbb{R},+)$ are also monoids, and so are the sets of nonnegative rational numbers and nonnegative real numbers with addition as operation.</li>
+
+<li>Multiplication on the positive integers is a monoid; in other words, $(\mathbb{N},\times)$ is a monoid.  The identity is the number $1$.</li>
+
+<li>Let $S$ be a set.  The set of all functions from $S$ to $S$ is denoted by $S\to S$ (this is one of several common notations). $(S\to S,\circ)$ is a monoid, where "$\circ$" denotes <a href="https://en.wikipedia.org/wiki/Function_composition">functional composition</a>. The identity function is the identity of the monoid, and functional composition is always associative.</li>
+
+<li>Let $S$ be a set. $\mathcal{P}(S)$ is the set of all subsets of $S$ (that is fairly common notation).  Then $(\mathcal{P}(S),\cup)$ is a poset: Union is associative and the empty set is the identity.</li> 
+</ul>
+
+<p>Much more detail for monoids is given in the Wikipedia <a href="https://en.wikipedia.org/wiki/Monoid">article on monoids</a>. It includes many more examples besides the ones given here.</p>
+
+<a name="majorimportance"></a>
+
+<h2>Some mathematical structures of major importance in math</h2>
+<a name="group"></a>
+
+
+<p>A math major in a college in the USA is likely to meet with all three of these examples.</p>
+
+
+<a name="group"></a>
+<h3>Group</h3>
+
+ 
+<p>A <a href="https://en.wikipedia.org/wiki/Group_%28mathematics%29">group</a> is an abstraction of symmetry in all of its meanings. The definition of a group says it is a monoid in which every element has an inverse, but <span class=purple>the <i>importance</i> of groups comes from their association with symmetry.</span> Most math majors in the USA learn about groups from some course or other.</p>
+
+<p>The Wikipedia articles on <a href="https://en.wikipedia.org/wiki/Group_%28mathematics%29">groups</a>, <a href="https://en.wikipedia.org/wiki/Symmetry_in_mathematics">symmetries</a>, <a href="https://en.wikipedia.org/wiki/Symmetry_group">symmetry groups</a> and <a href="https://en.wikipedia.org/wiki/Symmetry_group">group actions</a> include many examples and theorems concerning groups of symmetries.</p> 
+
+ <a name="vectorspace"></a>
+
+<h3>Vector space</h3>
+
+<p>A <b>vector space</b> is a set, whose elements are called <b>vectors</b>, with an operation of addition on the vectors and an operation called <b>scalar multiplication</b> allowing a vector to be multiplied by a number (or more generally by an element of a particular <a href="https://en.wikipedia.org/wiki/Field_%28mathematics%29">field</a>).</p>
+
+<p>When you first meet with vectors as a student, typically (in the USA) in second or third semester calculus, they are drawn as arrows; the idea is that a vector is determined by a direction and a length. In that guise they have a basic role to play in physics.  In fact, there are vector spaces whose elements are functions; then they are called <a href="https://en.wikipedia.org/wiki/Function_spaces">function spaces</a> and are a major tool in analysis.</p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Vector_space#Function_spaces">Wikipedia article on vector spaces</a> describes the definition and uses of vector spaces in considerable detail.  It is one of the better written math articles in Wikipedia.</p>
+
+<a name="metricspace"></a>
+
+<h3>Metric space</h3>
+
+<p>A <b>metric space</b> is a set $S$ together with a function $d:S\times S\to\mathbb{R}$ that satisfies a list of axioms that are all true for the distance function on the real line. So a metric space is an abstraction of the behavior of the distance function on the reals. In particular, in a metric space, you can define convergence to a limit.</p>
+
+<p>A metric space is an example of a <a href="https://en.wikipedia.org/wiki/Topological_space">topological space</a>, although topological spaces are a more general concept.</p> 
+
+<p>The <a href="https://en.wikipedia.org/wiki/Metric_space">Wikipedia article on metric spaces</a> defines metric spaces and gives many examples of them.</p>
+
+<a name="morphisms"></a><a name="mapsbetweenmathstructures"></a>
+<h2>Maps between math structures</h2>
+
+<p>Structures of a given type may have maps between them that <b>preserve the structure</b>. Such maps are often called <a href="https://en.wikipedia.org/wiki/Morphism"><b>morphisms</b></a>, but particular types of structures may have their own names for structure-preserving functions.  I give some examples here. More examples of structure-preserving maps are given in the article <a href="MMImagesMetaphorsFunctions.htm#structurepreservingfunction">Functions: Images and Metaphors</a>.</p>
+
+<a name="pointedsetmorphism"></a>
+
+<h3>Morphisms of pointed sets</h3>
+
+<p>If $(S,s)$ and $(T,t)$ are <a href="#pointedset">pointed sets</a>, then a function $m:S\to T$ is a <b>morphism of pointed sets</b> if and only if $m(s)=t$.</p>
+
+<h4 class=redit>Examples</h4>
+<ul>
+
+<li>$(\mathbb{Z},42)$ and $(\mathbb{R},\pi)$ are <a href="#pointedset">pointed sets</a>. The function $f$ defined by $f(n):=(n-41)\pi$ is a morphism of pointed sets, because $f(42)=\pi$.</li> 
+
+<li>The <a href="MMFuncExamples.htm#constantfunction">constant function</a> that takes <i>every</i> integer in $\mathbb{Z}$ to $\pi$ is also a morphism from $(\mathbb{Z},42)$ to $(\mathbb{R},\pi)$.</li>
+
+<li>The <a href="MMFuncExamples.htm#inclusionfunction">inclusion function</a> $\text{inc}:\mathbb{Z}\to\mathbb{R}$ defined by $\text{inc}(n)=n$ is <i>not</i> a morphism from $(\mathbb{Z},42)$ to $(\mathbb{R},\pi)$ because $\text{inc}(42)\neq\pi$.</li>
+
+</ul>
+
+<a name="relationmorphism"></a>
+
+<h3>Morphisms of relations</h3>
+
+<p>Suppose $\alpha$ is a relation on $S$ and $\beta$ is a relation on $T$.  Then a <b>morphism of relations</b> from $\alpha$ to $\beta$ is a function $f:S\to T$ satisfying the following requirement</p>
+
+<p class=boxed>If $s\,\alpha\, s'$ then $t\,\beta\,t'$.</p>
+
+<a name="increasingfunction"></a>
+
+<h4 class=redit>Increasing function</h4>
+
+<p><a href="#lessthan">Earlier</a> I mentioned the relation \[\alpha:=\{(1,2),(2,3),(1,3)\}\]
+on the set $S=\{1,2,3\}$, which is the "less-than" relation "$\lt$" on $S$. Now let $T:=\{1,2,3,4\}$. Then "$\lt$" is also a relation on $T$, namely the relation \[\beta:=\{(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)\}\]
+Then the function $f:S\to T$ defined by $f(1)=1$, $f(2)=2$ and $f(3)=4$ is a morphism of relations from $(S,\alpha)$ to $(T,\beta)$. The easiest way to check this is by drawing a picture:</p>
+<p class=center><img src="Mathematica/Structures/Increasing Function.png" hspace=12></p>
+<p>In this picture, the less-than relation in each of the sets is simply "above", and you can see that if one number is above another number on the left, then the numbers that the arrows take them to have the same relationship.</p>
+<p>A function that preserves the "less-than" relation is called a <b>strictly increasing function</b>. The function that takes $1\to 1$, $2\to 4$, $3\to 4$ does not preserve "$\lt$" since $2\lt3$ but $4$ is not less than $4$.  However, that function <i>does</i> preserve the "$\leq$" relation, since $4\leq4$.  As you might guess, such a function is called an <b>increasing function</b> but not a strictly increasing function.</p>  
+
+<a name="congruencerelationmorphism"></a>
+
+<h4 class=redit>Maps between congruence relations</h4>
+
+<p>Let's look at the <b>doubling function</b> $d:\mathbb{N}\to\mathbb{N}$ defined by $d(n)=2n$.</p>
+ 
+<p>The function $d$ is a morphism of relations from $\underset{3}\sim$ to $\underset{2}\sim$. To prove this requires showing that if $m\underset{3}\sim n$, then $2m\underset{2}\sim 2n$.  Now, by definition, for any integers $r$ and $s$, $r\underset{2}\sim s$ means that $r$ and $s$ are both even or both odd.  But for any integer $r$, $2r$ is always even! So the statement "If $m\underset{3}\sim n$, then $2m\underset{2}\sim 2n$" is true because "$2m\underset{2}\sim 2n$" is always true!</p>
+
+<p class=smallind>If you are not sure you understand this, read about the <a href="MMConditional.htm">truth table for conditional assertions</a>: If $Q$ is true, then "If $P$ then $Q$" is always true.</p>
+
+<p>On the other hand, $d$ is not a morphism of relations from $\underset{2}\sim$ to $\underset{3}\sim$. This is false by <a href="MMUnivTrue.htm#counterexample">counterexample</a>: $4\underset{2}\sim 8$ because they are both even, but $8\underset{3}\sim 16$ is false, because when $8$ is divided by $3$ the remainder is $2$, whereas when $16$ is divided by $3$ the remainder is $1$.</p>
+
+<a name="partitionmorphism"></a>
+  
+<h3>Morphisms of partitions</h3>
+
+<p>Let $S$ and $T$ be sets and $P_S$ be a partition of $S$ and $P_T$ a partition of $T$. A function $f:S\to T$ is a <b>morphism of partitions</b> if $f$ takes every element of a block of $P_S$ into one particular block of $P_T$.</p>
+<h4 class=redit>Example</h4>
+<p>We looked <a href="#previouspartition">previously</a>
+at these two partitions:</p>
+
+<ul>
+<li>The partition $P:=\{\{1,2\},\{3\}\}$ of the set $\{1,2,3\}$.</li>
+<li>The partition $Q:=\{\{1,4,7\},\{2,5\},\{3,6\}\}$ of the set $\{1,2,3,4,5,6,7\}$.</li> 
+</ul>
+
+<h4 class=redit>Examples</h4>
+
+<p>Any constant function is a morphism of partitions from $P$ to $Q$, for example this one:</p>
+<p class=center><img src="Mathematica/Structures/Constant.png" hspace=12></p>
+
+<p>These are also morphisms of partitions:</p>
+
+<p class=center><img src="Mathematica/Structures/Morphism1.png" hspace=12></p>
+
+<p class=center><img src="Mathematica/Structures/Morphism2.png" hspace=12></p>
+
+<p>The inclusion function is not a morphism of partitions (in this case!).</p>
+<p class=center><img src="Mathematica/Structures/Inclusion.png" hspace=12></p>
+
+<p>This function is also not a morphism:</p>
+
+<p class=center><img src="Mathematica/Structures/Nonmorphism1.png" hspace=12></p>
+
+<a name="binaryoperationmorphism"></a>
+
+<h3>Morphisms of binary operations</h3>
+
+<p>Suppose $*$ is a binary operation on a set $S$ and $\#$ is a binary operation on a set $T$.  Then a function $f:S\to T$ is a <b>morphism of binary operations</b> if for all $s,s'\in S$, $f(s* s')=f(s)\# f(s')$. The customary way of saying this is: "$f:(S,*)\to(T,\#)$ is a <b>homomorphism</b> from $(S,*)$ to $(T,\#)$".</p>
+
+<p>Many examples of morphisms of binary operations  are described in the abstractmath.org article
+<a href="MMPatternRecognition.htm">Functions: Images and Metaphors</a>.  I will give one example here.</p>
+
+<a name="exponentiation"></a>
+
+<h4 class=redit>Exponentiation</h4>
+
+<p>Both addition and multiplication are binary operations on the set $\mathbb{R}$ of real numbers. Let $E:\mathbb{R}\to\mathbb{R}$ be the function defined by $E(r):=2^r$.  Then $E:(\mathbb{R},+)\to(\mathbb{R},\times)$ is a homomorphism.</p>
+
+<p>This follows from the law of exponents: \[E(r+s)=2^{r+s}=2^r\times 2^s=E(r)\times E(s)\]</p>
+
+<a name="monoidhomomorphism"></a>
+<h3>Morphisms of monoids</h3>
+
+<a name="ME"></a><a name="MM"></a>
+
+<p>Suppose $(S,\Delta)$ and $(T,\nabla)$ are monoids with identities $e_S$ and $e_{T}$. Then a function $h:S\to T$ is a <b>homomorphism</b> if  \[\text{(ME)}\,\,\,\,\,\,\,\,h(e_S)=e_T\] and for all elements $s, s'$ of $S$, \[\text{(MM)}\,\,\,\,\,\,\,\,h(s\Delta s')=h(s)\nabla h(s')\]  
+This is described by saying "$h$ preserves the identity and the binary operation."</p>
+ 
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>$(\mathbb{Z},+)$ is a monoid ($0$ is the identity). Let $h:\mathbb{Z}\to\mathbb{Z}$ be multiplication by $42$. Then $h$ is a homomorphism from $(\mathbb{Z},+)$ to $(\mathbb{Z},+)$.</;i>
+
+<ul>
+
+<li>$h$ preserves the identity:
+
+\[h(0)=42\times 0=0\]</li>
+
+<li>$h$ preserves addition:
+
+\[h(m+n)=42(m+n)=42m+42n=h(m)+h(n)\]</li>
+
+</ul>
+
+
+
+<li>$(\mathbb{R},+)$ and $(\mathbb{R},\times)$ are not only binary operations, they are monoids: Both "$+$" and "$\times$" are associative, and the identities are $0$ and $1$ respectively. We saw <a href="#exponentiation">previously</a> that the exponential map is a morphism of the binary operations, but it also preserves the identities, since $2^0=1$. So exponentiation from $(\mathbb{R},+)$ to $(\mathbb{R},\times)$ is a homomorphism of monoids.</li>
+
+</ul>
+<h2>How to think about mathematical structures</h2>
+
+<h3>Many structures on one set</h3>
+
+<p>The same set can have many different structures on it. For example, a two-element set has two different partition structures on it and sixteen different binary operations on it.
+
+<a name="canonicalstructure"></a>
+
+
+
+<h3>Canonical structures</h3>
+
+<p>Widely-used mathematical objects generally have "canonical structures" of various types on them. For
+example, the set of integers can be ordered in many ways, but it has a <i>particular</i> ordering (the familiar one) that is referred to as "the ordering of the integers". In the same way, the set of real numbers has a canonical ordering, a canonical <a href="https://en.wikipedia.org/wiki/Field_(mathematics)#Reals.2C_complex_numbers.2C_and_p-adic_numbers">algebraic structure</a>, a canonical <a href="https://en.wikipedia.org/wiki/Metric_space">metric space structure</a> and a <a href="https://www.math.ucdavis.edu/~hunter/intro_analysis_pdf/ch5.pdf">canonical topology</a>.</p>
+
+
+<a name="minimality"></a>
+
+<h3>Minimality</h3>
+
+<p>Presenting a complex mathematical idea as a mathematical
+structure involves finding a minimal or nearly minimal set of associated
+objects (a structure) and a minimal or nearly minimal
+set of conditions on those objects from which the
+theorems about the structure follow. The
+ingredients of the structure are kept (nearly) non-redundant so that it is easier to verify that
+some object is an example of that kind of structure. This is essentially the main use of the <a
+href="MMOtherAspectsUnderstanding.htm#axiomaticmethod">axiomatic method</a></p>
+
+<p>This small set of objects and conditions may
+not be the most important aspects of the structure
+for applications or for one's <a href="MMImagesMetaphors.htm">mental representation</a> of the structure.</p>
+
+<p>All this is discussed in more detail in the article on  <a href="MMDefs.htm#minimal">Definition</a>.
+
+<a name="differentdefinitions"></a>
+
+<h3>Different
+definitions for the same structure</h3>
+
+<p>The same kind of structure can often be defined by
+two or more very <i>different</i> kinds of minimal ingredients. A
+mathematical structure of a given type has lots
+of structure implied by the minimal definition,
+and when you think of a structure it is best to think of it as containing <i>all</i> that information, not just the stuff in the
+definition.</p>
+
+<h4 class=redit>Example</h4>
+
+<p>"Equivalence
+relation" and "partition" are two different ways of defining exactly the same
+structure on a set. This is explained in the Wikipedia article on <a href="https://en.wikipedia.org/wiki/Equivalence_relation#Fundamental_theorem_of_equivalence_relations">The Fundamental Theorem of Equivalence Relations</a>.</p>
+
+<br />
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+
+  </body> </html> 

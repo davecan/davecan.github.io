@@ -1,0 +1,1013 @@
+(* Content-type: application/vnd.wolfram.cdf.text *)
+
+(*** Wolfram CDF File ***)
+(* http://www.wolfram.com/cdf *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*************************************************************************)
+(*                                                                       *)
+(*  The Mathematica License under which this file was created prohibits  *)
+(*  restricting third parties in receipt of this file from republishing  *)
+(*  or redistributing it by any means, including but not limited to      *)
+(*  rights management or terms of use, without the express consent of    *)
+(*  Wolfram Research, Inc.                                               *)
+(*                                                                       *)
+(*************************************************************************)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       835,         17]
+NotebookDataLength[     37872,        992]
+NotebookOptionsPosition[     36629,        936]
+NotebookOutlinePosition[     37067,        953]
+CellTagsIndexPosition[     37024,        950]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Example of Graph and Cograph of straight lines", "Section",
+ CellChangeTimes->{{3.5178338831612*^9, 3.5178339017564*^9}, {
+  3.5178340522964*^9, 3.5178340585832*^9}, {3.51821044399925*^9, 
+  3.518210445796125*^9}}],
+
+Cell["29 July 2011", "Text",
+ CellChangeTimes->{{3.518365793625*^9, 3.51836579540625*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Introduction", "Subsection",
+ FontFamily->"Arial"]], "Subsubsection",
+ CellChangeTimes->{{3.518364990296875*^9, 3.518364996328125*^9}}],
+
+Cell[TextData[{
+ "This ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " notebook provides an example of using both the graph and the ",
+ ButtonBox["cograph",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://sixwingedseraph.wordpress.com/2011/06/09/endograph-and-\
+cograph-of-real-functions/"], None},
+  ButtonNote->
+   "http://sixwingedseraph.wordpress.com/2011/06/09/endograph-and-cograph-of-\
+real-functions/"],
+ " of two functions to generate questions and discussions in a class.  It is \
+licensed under a ",
+ Cell[BoxData[
+  RowBox[{
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{
+      False->"\<\"Creative Commons Attribution - ShareAlike 3.0 License\"\>", 
+      True->
+      StyleBox["\<\"Creative Commons Attribution - ShareAlike 3.0 \
+License\"\>", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData->{
+       URL["http://creativecommons.org/licenses/by-sa/3.0/"], None},
+     ButtonNote->"http://creativecommons.org/licenses/by-sa/3.0/"],
+    Annotation[#, "http://creativecommons.org/licenses/by-sa/3.0/", 
+     "Hyperlink"]& ], " "}]],
+  CellChangeTimes->{{3.516312542019249*^9, 3.5163126250020304`*^9}}],
+ ". I hope anyone interested will feel free to improve this work and to use \
+it in their own publications and coursework.  "
+}], "Text",
+ CellChangeTimes->{{3.51836509459375*^9, 3.5183651020625*^9}, {
+  3.51836513975*^9, 3.518365184515625*^9}, {3.51836525159375*^9, 
+  3.518365267671875*^9}, {3.51836541515625*^9, 3.518365502*^9}}],
+
+Cell[TextData[ButtonBox["Charles Wells ",
+ BaseStyle->"Hyperlink",
+ ButtonData->{
+   URL["http://www.cwru.edu/artsci/math/wells/home.html"], None},
+ ButtonNote->"http://www.cwru.edu/artsci/math/wells/home.html"]], "Text",
+ CellChangeTimes->{{3.5183656169375*^9, 3.518365618515625*^9}, {
+  3.518365736828125*^9, 3.518365761859375*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Code for RealCograph", "Subsection"]], "Section",
+ CellChangeTimes->{{3.516107216743375*^9, 3.51610722766525*^9}, 
+   3.516310881144888*^9, {3.517833915032*^9, 3.5178339158744*^9}, {
+   3.5180039007686*^9, 3.5180039007776003`*^9}, {3.5180041654832*^9, 
+   3.5180041680572*^9}, {3.518209306718*^9, 3.518209307889875*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Remove", "[", "Env", "]"}]], "Input",
+ CellChangeTimes->{{3.516443348676125*^9, 3.516443351238625*^9}}],
+
+Cell["\<\
+To produce a robust package, this definition of RealCograph should be turned \
+into a module incorporating the definition of Tikk and Tixx.\
+\>", "Text",
+ CellChangeTimes->{{3.516312440849316*^9, 3.5163124875984187`*^9}, {
+  3.516312644767276*^9, 3.516312679172865*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Tikk", "[", 
+    RowBox[{"x_", ",", "y_"}], "]"}], ":=", 
+   RowBox[{"Line", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"y", "-", ".05"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"x", ",", 
+        RowBox[{"y", "+", ".05"}]}], "}"}]}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Tixx", "[", 
+   RowBox[{"a_", ",", "b_", ",", "c_", ",", "n_"}], "]"}], ":=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Tikk", "[", 
+     RowBox[{
+      RowBox[{"a", "+", 
+       RowBox[{"k", " ", "n"}]}], ",", "c"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"k", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"b", "-", "a"}], ")"}], "/", "n"}]}], "}"}]}], 
+   "]"}]}]}], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Options", "[", "RealCograph", "]"}], "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"ArrowSource", "->", "2"}], ",", 
+    RowBox[{"ArrowTarget", "->", "0"}], ",", 
+    RowBox[{"SampleIncrement", "->", 
+     RowBox[{"1", "/", "2"}]}], ",", 
+    RowBox[{"ArrowHeadSize", "->", ".015"}], ",", 
+    RowBox[{"TikkIncrement", "->", 
+     RowBox[{"1", "/", "4"}]}], ",", 
+    RowBox[{"LabelIncrement", "->", "1"}], ",", 
+    RowBox[{"ArrowColor", "\[Rule]", "Blue"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.514760315582881*^9, 3.514760362770985*^9}, {
+   3.5147605638985596`*^9, 3.5147605693048477`*^9}, {3.5147616245012197`*^9, 
+   3.514761631751173*^9}, {3.5147617236568356`*^9, 3.5147617241724567`*^9}, {
+   3.516310542417017*^9, 3.5163105469638042`*^9}, 3.516310881176138*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"ArrowSource", "\[Rule]", "2"}], ",", 
+   RowBox[{"ArrowTarget", "\[Rule]", "0"}], ",", 
+   RowBox[{"SampleIncrement", "\[Rule]", 
+    FractionBox["1", "2"]}], ",", 
+   RowBox[{"ArrowHeadSize", "\[Rule]", "0.015`"}], ",", 
+   RowBox[{"TikkIncrement", "\[Rule]", 
+    FractionBox["1", "4"]}], ",", 
+   RowBox[{"LabelIncrement", "\[Rule]", "1"}], ",", 
+   RowBox[{"ArrowColor", "\[Rule]", 
+    RowBox[{"RGBColor", "[", 
+     RowBox[{"0", ",", "0", ",", "1"}], "]"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.5147605778672934`*^9, {3.5147606365856676`*^9, 3.5147606548199253`*^9}, 
+   3.514760761803616*^9, {3.5147608253188343`*^9, 3.5147608290844355`*^9}, 
+   3.51476095017741*^9, 3.514761128645018*^9, 3.5147611846759095`*^9, 
+   3.5147616909695444`*^9, 3.514761728609928*^9, 3.514761810843777*^9, 
+   3.515020356751029*^9, 3.51610688516525*^9, 3.516107140587125*^9, 
+   3.516107237993375*^9, 3.5161083609465*^9, 3.516119031462125*^9, 
+   3.516120657149625*^9, 3.516120864055875*^9, 3.516122161305875*^9, 
+   3.516128191384*^9, {3.516128267118375*^9, 3.516128291134*^9}, 
+   3.516128417055875*^9, {3.516129897212125*^9, 3.516129917493375*^9}, 
+   3.5162790777335*^9, {3.516279146967875*^9, 3.516279170171*^9}, 
+   3.5162952172268915`*^9, 3.516302221983022*^9, 3.516303792968484*^9, 
+   3.5163105322140875`*^9, 3.5163108996132836`*^9, 3.5163120132012773`*^9, 
+   3.5163121220273128`*^9, 3.516312708578551*^9, 3.516397686488625*^9, 
+   3.516397745082375*^9, 3.51639781087925*^9, 3.516397984176125*^9, 
+   3.516398051738625*^9, {3.5163982202855*^9, 3.516398238457375*^9}, {
+   3.51639866881675*^9, 3.516398684707375*^9}, 3.516398994863625*^9, 
+   3.51639906319175*^9, 3.516399553223*^9, 3.516399707426125*^9, 
+   3.51639986200425*^9, 3.516442492926125*^9, 3.5164432150355*^9, 
+   3.516443354348*^9, {3.516443515848*^9, 3.516443536598*^9}, {
+   3.51644371837925*^9, 3.51644372787925*^9}, 3.51644414669175*^9, 
+   3.5164813134613004`*^9, 3.5164854667518873`*^9, 3.516555526296875*^9, 
+   3.5171558638154*^9, 3.517156563881*^9, 3.5171758101306*^9, 
+   3.5171761167174*^9, 3.5171771300694*^9, 3.5177833216208677`*^9, 
+   3.5177838758552427`*^9, 3.5177853197614927`*^9, 3.517829653916875*^9, 
+   3.517829768885625*^9, 3.5178316712726*^9, 3.517833978914*^9, 
+   3.5178342278588*^9, 3.5178342898297997`*^9, 3.5179406745978003`*^9, 
+   3.5180034459264*^9, {3.5180442137858*^9, 3.5180442413198*^9}, 
+   3.518209318108625*^9, {3.518213410608625*^9, 3.518213434546125*^9}, 
+   3.518215196327375*^9, 3.520852220921875*^9, 3.520852409609375*^9, 
+   3.5208529*^9, 3.520854147328125*^9, {3.520895650609375*^9, 
+   3.518364107578125*^9}, 3.5183647368125*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RealCograph", "[", 
+   RowBox[{
+   "x_", ",", "DisplayLeft_", ",", "DisplayRight_", ",", "DomainLeft_", ",", 
+    "DomainRight_", ",", "Expr_", ",", 
+    RowBox[{"OptionsPattern", "[", "]"}]}], "]"}], " ", ":=", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"LabelOffset", ":=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "/", "10"}], ")"}], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"OptionValue", "[", "ArrowSource", "]"}], "-", 
+        RowBox[{"OptionValue", "[", "ArrowTarget", "]"}]}], ")"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"Show", "[", 
+     RowBox[{
+      RowBox[{"Graphics", "[", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"DisplayLeft", ",", 
+            RowBox[{"OptionValue", "[", "ArrowSource", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"DisplayRight", ",", 
+            RowBox[{"OptionValue", "[", "ArrowSource", "]"}]}], "}"}]}], 
+         "}"}], "]"}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"DisplayLeft", ",", 
+            RowBox[{"OptionValue", "[", "ArrowTarget", "]"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"DisplayRight", ",", 
+            RowBox[{"OptionValue", "[", "ArrowTarget", "]"}]}], "}"}]}], 
+         "}"}], "]"}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"Tixx", "[", 
+        RowBox[{"DisplayLeft", ",", "DisplayRight", ",", 
+         RowBox[{"OptionValue", "[", "ArrowTarget", "]"}], ",", 
+         RowBox[{"OptionValue", "[", "TikkIncrement", "]"}]}], "]"}], "]"}], 
+      ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"Tixx", "[", 
+        RowBox[{"DisplayLeft", ",", "DisplayRight", ",", 
+         RowBox[{"OptionValue", "[", "ArrowSource", "]"}], ",", 
+         RowBox[{"OptionValue", "[", "TikkIncrement", "]"}]}], "]"}], "]"}], 
+      ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Text", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"{", 
+            RowBox[{"#", ",", 
+             RowBox[{
+              RowBox[{"OptionValue", "[", "ArrowSource", "]"}], "+", 
+              "LabelOffset"}]}], "}"}]}], "]"}], "&"}], "/@", 
+        RowBox[{"Table", "[", 
+         RowBox[{"n", ",", 
+          RowBox[{"{", 
+           RowBox[{"n", ",", "DisplayLeft", ",", "DisplayRight", ",", 
+            RowBox[{"OptionValue", "[", "LabelIncrement", "]"}]}], "}"}]}], 
+         "]"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Text", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"{", 
+            RowBox[{"#", ",", 
+             RowBox[{
+              RowBox[{"OptionValue", "[", "ArrowTarget", "]"}], "-", 
+              "LabelOffset"}]}], "}"}]}], "]"}], "&"}], "/@", 
+        RowBox[{"Table", "[", 
+         RowBox[{"n", ",", 
+          RowBox[{"{", 
+           RowBox[{"n", ",", "DisplayLeft", ",", "DisplayRight", ",", 
+            RowBox[{"OptionValue", "[", "LabelIncrement", "]"}]}], "}"}]}], 
+         "]"}]}], "]"}], ",", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"OptionValue", "[", "ArrowColor", "]"}], ",", 
+         RowBox[{"Arrowheads", "[", 
+          RowBox[{"OptionValue", "[", "ArrowHeadSize", "]"}], "]"}], ",", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"Arrow", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"x", ",", 
+                RowBox[{"OptionValue", "[", "ArrowSource", "]"}]}], "}"}], 
+              ",", 
+              RowBox[{"{", 
+               RowBox[{"Expr", ",", 
+                RowBox[{"OptionValue", "[", "ArrowTarget", "]"}]}], "}"}]}], 
+             "}"}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", "DomainLeft", ",", "DomainRight", ",", 
+             RowBox[{"OptionValue", "[", "SampleIncrement", "]"}]}], "}"}]}], 
+          "]"}]}], "}"}], "]"}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", "Medium"}]}], "]"}]}], ")"}]}]], "Input",
+ CellChangeTimes->{{3.514653872054221*^9, 3.514653910660221*^9}, {
+   3.514655481135221*^9, 3.514655567495221*^9}, {3.514655645755221*^9, 
+   3.514655705463221*^9}, {3.514655741801221*^9, 3.514655806694221*^9}, {
+   3.514655841113221*^9, 3.5146560132702208`*^9}, {3.514656056621221*^9, 
+   3.514656139564221*^9}, {3.514656177594221*^9, 3.514656193091221*^9}, {
+   3.514656290306221*^9, 3.514656294083221*^9}, {3.514656434076221*^9, 
+   3.514656439822221*^9}, 3.514656490425221*^9, {3.5146565235332212`*^9, 
+   3.514656769998221*^9}, {3.514656889985221*^9, 3.5146569158872213`*^9}, {
+   3.514656954124221*^9, 3.514656982687221*^9}, {3.514657053830221*^9, 
+   3.514657069599221*^9}, {3.514657345373221*^9, 3.514657361293221*^9}, {
+   3.5146700040220003`*^9, 3.514670015243*^9}, {3.514670054988*^9, 
+   3.514670078278*^9}, {3.514671189046*^9, 3.5146711893900003`*^9}, {
+   3.514671249957*^9, 3.514671253599*^9}, {3.514671286565*^9, 
+   3.51467128999*^9}, {3.514721169975*^9, 3.514721192006*^9}, 
+   3.514721226153*^9, 3.5147228229309998`*^9, {3.514722933916*^9, 
+   3.514722956678*^9}, {3.514723222627*^9, 3.514723239013*^9}, {
+   3.5147233300880003`*^9, 3.514723379574*^9}, {3.51472360188*^9, 
+   3.514723609341*^9}, {3.514724144396*^9, 3.5147241493859997`*^9}, {
+   3.514724392*^9, 3.514724411321*^9}, {3.5147256020620003`*^9, 
+   3.514725654054*^9}, {3.514725688928*^9, 3.514725743649*^9}, 
+   3.5147258295810003`*^9, {3.514734000513875*^9, 3.51473400056075*^9}, {
+   3.514734051732625*^9, 3.514734051795125*^9}, {3.514760165784089*^9, 
+   3.514760224784844*^9}, {3.514760413787263*^9, 3.514760526148076*^9}, {
+   3.5147609427243333`*^9, 3.514760943630577*^9}, {3.51476164631358*^9, 
+   3.514761654547902*^9}, {3.5147617915157757`*^9, 3.5147618064219303`*^9}, {
+   3.516279140280375*^9, 3.516279141421*^9}, {3.5163105615572743`*^9, 
+   3.5163105681508975`*^9}, 3.5163108812230115`*^9, {3.516398678176125*^9, 
+   3.51639868044175*^9}, {3.5171565560186*^9, 3.5171565585146*^9}, {
+   3.5171572984849997`*^9, 3.5171573053646*^9}, {3.5171573547698*^9, 
+   3.5171573577494*^9}, {3.5171574083246*^9, 3.5171574091046*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.5171558820362*^9, 3.5171558855462*^9}}]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Example for student discussion", "Subsection"]], \
+"Section",
+ CellChangeTimes->{{3.5171559606914*^9, 3.5171559676022*^9}, {
+  3.51782973721375*^9, 3.517829745979375*^9}, {3.5178339312716*^9, 
+  3.5178339708176003`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["The Graph and Cograph", "Subsection",
+ CellChangeTimes->{{3.5178341644292*^9, 3.5178341803412*^9}, {
+  3.518210534827375*^9, 3.51821054243675*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"a", " ", "x"}], "+", "b"}], ",", 
+         RowBox[{"a", 
+          RowBox[{"(", 
+           RowBox[{"x", "+", "b"}], ")"}]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"Evaluate", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Thick", ",", "#"}], "}"}], "&"}], "/@", " ", 
+          RowBox[{"{", 
+           RowBox[{"Blue", ",", "Red"}], "}"}]}], "]"}]}], ",", 
+       RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "]"}], ",", 
+     RowBox[{"Show", "[", 
+      RowBox[{
+       RowBox[{"RealCograph", "[", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "5"}], ",", "5", ",", 
+         RowBox[{"-", "5"}], ",", "5", ",", 
+         RowBox[{"a", " ", 
+          RowBox[{"(", 
+           RowBox[{"x", "+", "b"}], ")"}]}], ",", 
+         RowBox[{"SampleIncrement", "\[Rule]", "1"}], ",", 
+         RowBox[{"ArrowSource", "\[Rule]", "3"}]}], "]"}], ",", 
+       RowBox[{"RealCograph", "[", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "5"}], ",", "5", ",", 
+         RowBox[{"-", "5"}], ",", "5", ",", 
+         RowBox[{
+          RowBox[{"a", " ", "x"}], "+", "b"}], ",", 
+         RowBox[{"SampleIncrement", "\[Rule]", "1"}], ",", 
+         RowBox[{"ArrowSource", "\[Rule]", "3"}], ",", 
+         RowBox[{"ArrowColor", "\[Rule]", "Red"}]}], "]"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "5.1"}], ",", "5.1"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", ".5"}], ",", "3.5"}], "}"}]}], "}"}]}], ",", 
+       RowBox[{"PlotRangeClipping", "\[Rule]", "True"}]}], "]"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "0.7"}], "}"}], ",", 
+     RowBox[{"-", "2"}], ",", "2", ",", ".001", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Open\>\""}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "1.2"}], "}"}], ",", 
+     RowBox[{"-", "2"}], ",", "2", ",", ".001", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Open\>\""}]}], "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5179407096977997`*^9, 3.5179408149198*^9}, {
+   3.5179408648554*^9, 3.5179408746054*^9}, {3.5179409273022003`*^9, 
+   3.5179409291274*^9}, {3.5179409648358*^9, 3.5179410079012003`*^9}, 
+   3.5179410436563997`*^9, {3.5179410794272003`*^9, 3.5179410826252003`*^9}, {
+   3.5179411196284*^9, 3.5179411242460003`*^9}, {3.5179413377788*^9, 
+   3.5179413380596*^9}, {3.5179420865788*^9, 3.5179420869844*^9}, {
+   3.5179421199004*^9, 3.5179421282932*^9}, {3.5180040644108*^9, 
+   3.5180040713684*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 0.7, $CellContext`b$$ = 1.2, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 0.7}, -2, 2, 0.001}, {{
+       Hold[$CellContext`b$$], 1.2}, -2, 2, 0.001}}, Typeset`size$$ = {
+    707., {109., 116.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`a$2349$$ = 
+    0, $CellContext`b$2350$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 0.7, $CellContext`b$$ = 1.2}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$2349$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$2350$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> {
+        Plot[{$CellContext`a$$ $CellContext`x + $CellContext`b$$, \
+$CellContext`a$$ ($CellContext`x + $CellContext`b$$)}, {$CellContext`x, -5, 
+          5}, PlotRange -> {{-5, 5}, {-5, 5}}, PlotStyle -> Evaluate[
+           Map[{Thick, #}& , {Blue, Red}]], AspectRatio -> Automatic, 
+         ImageSize -> Small], 
+        Show[
+         $CellContext`RealCograph[$CellContext`x, -5, 5, -5, 
+          5, $CellContext`a$$ ($CellContext`x + $CellContext`b$$), \
+$CellContext`SampleIncrement -> 1, $CellContext`ArrowSource -> 3], 
+         $CellContext`RealCograph[$CellContext`x, -5, 5, -5, 
+          5, $CellContext`a$$ $CellContext`x + $CellContext`b$$, \
+$CellContext`SampleIncrement -> 1, $CellContext`ArrowSource -> 
+          3, $CellContext`ArrowColor -> Red], 
+         PlotRange -> {{-5.1, 5.1}, {-0.5, 3.5}}, PlotRangeClipping -> True]},
+       "Specifications" :> {{{$CellContext`a$$, 0.7}, -2, 2, 0.001, 
+         Appearance -> "Open"}, {{$CellContext`b$$, 1.2}, -2, 2, 0.001, 
+         Appearance -> "Open"}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{762., {225., 232.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`RealCograph[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`DisplayLeft, 
+          Blank[]], 
+         Pattern[$CellContext`DisplayRight, 
+          Blank[]], 
+         Pattern[$CellContext`DomainLeft, 
+          Blank[]], 
+         Pattern[$CellContext`DomainRight, 
+          Blank[]], 
+         Pattern[$CellContext`Expr, 
+          Blank[]], 
+         OptionsPattern[]] := ($CellContext`LabelOffset := (1/10) (
+           OptionValue[$CellContext`ArrowSource] - 
+           OptionValue[$CellContext`ArrowTarget]); Show[
+          Graphics[
+           Line[{{$CellContext`DisplayLeft, 
+              
+              OptionValue[$CellContext`ArrowSource]}, \
+{$CellContext`DisplayRight, 
+              OptionValue[$CellContext`ArrowSource]}}]], 
+          Graphics[
+           Line[{{$CellContext`DisplayLeft, 
+              
+              OptionValue[$CellContext`ArrowTarget]}, \
+{$CellContext`DisplayRight, 
+              OptionValue[$CellContext`ArrowTarget]}}]], 
+          Graphics[
+           $CellContext`Tixx[$CellContext`DisplayLeft, \
+$CellContext`DisplayRight, 
+            OptionValue[$CellContext`ArrowTarget], 
+            OptionValue[$CellContext`TikkIncrement]]], 
+          Graphics[
+           $CellContext`Tixx[$CellContext`DisplayLeft, \
+$CellContext`DisplayRight, 
+            OptionValue[$CellContext`ArrowSource], 
+            OptionValue[$CellContext`TikkIncrement]]], 
+          Graphics[
+           Map[
+           Text[#, {#, 
+              OptionValue[$CellContext`ArrowSource] + \
+$CellContext`LabelOffset}]& , 
+            
+            Table[$CellContext`n, {$CellContext`n, $CellContext`DisplayLeft, \
+$CellContext`DisplayRight, 
+              OptionValue[$CellContext`LabelIncrement]}]]], 
+          Graphics[
+           Map[
+           Text[#, {#, 
+              OptionValue[$CellContext`ArrowTarget] - \
+$CellContext`LabelOffset}]& , 
+            
+            Table[$CellContext`n, {$CellContext`n, $CellContext`DisplayLeft, \
+$CellContext`DisplayRight, 
+              OptionValue[$CellContext`LabelIncrement]}]]], 
+          Graphics[{
+            OptionValue[$CellContext`ArrowColor], 
+            Arrowheads[
+             OptionValue[$CellContext`ArrowHeadSize]], 
+            Table[
+             Arrow[{{$CellContext`x, 
+                OptionValue[$CellContext`ArrowSource]}, {$CellContext`Expr, 
+                
+                OptionValue[$CellContext`ArrowTarget]}}], {$CellContext`x, \
+$CellContext`DomainLeft, $CellContext`DomainRight, 
+              OptionValue[$CellContext`SampleIncrement]}]}], ImageSize -> 
+          Medium]), 
+       Options[$CellContext`RealCograph] = {$CellContext`ArrowSource -> 
+         2, $CellContext`ArrowTarget -> 0, $CellContext`SampleIncrement -> 
+         1/2, $CellContext`ArrowHeadSize -> 0.015, $CellContext`TikkIncrement -> 
+         1/4, $CellContext`LabelIncrement -> 1, $CellContext`ArrowColor -> 
+         RGBColor[0, 0, 1]}, $CellContext`LabelOffset := (1/10) (
+         OptionValue[$CellContext`RealCograph, {$CellContext`SampleIncrement -> 
+            1, $CellContext`ArrowSource -> 3, $CellContext`ArrowColor -> 
+            RGBColor[1, 0, 0]}, $CellContext`ArrowSource] - 
+         OptionValue[$CellContext`RealCograph, {$CellContext`SampleIncrement -> 
+           1, $CellContext`ArrowSource -> 3, $CellContext`ArrowColor -> 
+           RGBColor[1, 0, 0]}, $CellContext`ArrowTarget]), $CellContext`Tixx[
+         Pattern[$CellContext`a, 
+          Blank[]], 
+         Pattern[$CellContext`b, 
+          Blank[]], 
+         Pattern[$CellContext`c, 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := Table[
+         $CellContext`Tikk[$CellContext`a + $CellContext`k $CellContext`n, \
+$CellContext`c], {$CellContext`k, 
+          0, ($CellContext`b - $CellContext`a)/$CellContext`n}], \
+$CellContext`Tikk[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[$CellContext`y, 
+          Blank[]]] := 
+       Line[{{$CellContext`x, $CellContext`y - 
+           0.05}, {$CellContext`x, $CellContext`y + 0.05}}]}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.51821343518675*^9, 3.51821519643675*^9, 3.520852221515625*^9, 
+   3.520852409703125*^9, 3.52085290009375*^9, 3.520854147421875*^9, {
+   3.52089565125*^9, 3.5183641081875*^9}, 3.5183647370625*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Questions for discussion", "Subsection",
+ CellChangeTimes->{{3.5180041174820004`*^9, 3.5180041487756*^9}, {
+  3.5180042175404*^9, 3.5180042289751997`*^9}, {3.5180442609133997`*^9, 
+  3.518044276451*^9}, {3.51820938518675*^9, 3.51820938618675*^9}}],
+
+Cell[TextData[{
+ "My idea is that students will manipulate the slider to see what happens and \
+do some algebra on the relations between ",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ ", ",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ " and ",
+ StyleBox["x ",
+  FontSlant->"Italic"],
+ "to explain the phenomena that occur.  ",
+ StyleBox[" ",
+  FontSlant->"Italic"]
+}], "Text",
+ CellChangeTimes->{{3.518213458233625*^9, 3.51821354899925*^9}, {
+   3.518213617483625*^9, 3.5182136202805*^9}, 3.518364901953125*^9, {
+   3.518365552546875*^9, 3.51836557940625*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Questions about the graph (left figure).", "Subsubsubsection",
+ CellChangeTimes->{{3.5180042578508*^9, 3.5180043379568*^9}, {
+  3.5180043974396*^9, 3.5180044054268*^9}, {3.518213103639875*^9, 
+  3.518213120233625*^9}}],
+
+Cell[TextData[{
+ StyleBox["Question G1.",
+  FontWeight->"Bold"],
+ "  Prove that the two straight lines are parallel for any choice of ",
+ StyleBox["a ",
+  FontSlant->"Italic"],
+ "and ",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.518213176514875*^9, 3.518213197046125*^9}, {
+   3.51821325418675*^9, 3.518213257264875*^9}, 3.520852274140625*^9}],
+
+Cell[TextData[{
+ StyleBox["Question G2.  ",
+  FontWeight->"Bold"],
+ "When do the red and blue straight lines in the graph coincide?  ",
+ StyleBox["Answer: The lines coincide when ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["a ",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["= 1 OR ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["b ",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["= 0.",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.5180044192172003`*^9, 3.5180046375392*^9}, {
+   3.5180046723896*^9, 3.5180046745892*^9}, {3.5180047167872*^9, 
+   3.5180047339004*^9}, {3.5180049140804*^9, 3.5180049236275997`*^9}, {
+   3.5180049854504004`*^9, 3.5180049985856*^9}, {3.51800511167*^9, 
+   3.5180052114021997`*^9}, {3.5180052589978*^9, 3.5180052689662*^9}, {
+   3.5180442906158*^9, 3.5180443168862*^9}, {3.5182096571555*^9, 
+   3.518209682093*^9}, {3.51821120299925*^9, 3.518211205014875*^9}, {
+   3.5182112542805*^9, 3.518211258171125*^9}, 3.518213128389875*^9, {
+   3.518213227593*^9, 3.518213228952375*^9}, 3.518213259796125*^9, 
+   3.52085227525*^9}],
+
+Cell[TextData[{
+ StyleBox["\[Bullet]",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" \[OpenCurlyDoubleQuote]When do the...\" translates into \"for \
+what values of ", "Item1",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["a ", "Item1",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["and ", "Item1",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["b", "Item1",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" do the...\".   I predict that which way you ask the question will \
+make a big difference for some students.  To answer this question, you are \
+not solving for ", "Item1",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["x", "Item1",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" but for ", "Item1",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["a", "Item1",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" and ", "Item1",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["b", "Item1",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[".   If you ask \"When...\" they have to discover this for \
+themselves. ", "Item1",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.5180044192172003`*^9, 3.5180046375392*^9}, {
+  3.5180046723896*^9, 3.5180046745892*^9}, {3.5180047167872*^9, 
+  3.5180047339004*^9}, {3.5180049140804*^9, 3.5180049236275997`*^9}, {
+  3.5180049854504004`*^9, 3.5180049985856*^9}, {3.51800511167*^9, 
+  3.5180052114021997`*^9}, {3.5180052589978*^9, 3.5180052689662*^9}, {
+  3.5180442906158*^9, 3.5180443168862*^9}, {3.5182096571555*^9, 
+  3.518209682093*^9}, {3.51821120299925*^9, 3.51821125218675*^9}, {
+  3.518211306233625*^9, 3.518211317358625*^9}, {3.518212631343*^9, 
+  3.518212634608625*^9}, {3.518213286921125*^9, 3.518213304171125*^9}}],
+
+Cell[TextData[{
+ StyleBox["\[Bullet]",
+  FontColor->RGBColor[0, 0, 1]],
+ " ",
+ StyleBox["The answer is ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["disjunctive",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[":   This may be a new idea for some of the students.",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text"],
+
+Cell[TextData[{
+ StyleBox["Question G3.  ",
+  FontWeight->"Bold"],
+ "Find a formula in terms of ",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ " and ",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ " for the distance between the two straight lines in the graph.  ",
+ StyleBox["Answer: ",
+  FontColor->RGBColor[0, 0, 1]],
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[{RowBox[{"b", "-", 
+       RowBox[{"a", " ", "b"}]}]},
+    "Abs"], TraditionalForm]], "Output",
+  CellChangeTimes->{3.5182117921555*^9},
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[".",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.5182131400305*^9, 3.518213142577375*^9}, {
+   3.518213174733625*^9, 3.518213174733625*^9}, {3.518213263389875*^9, 
+   3.518213263483625*^9}, {3.518213331264875*^9, 3.5182133321555*^9}, 
+   3.51821337931175*^9, {3.51821344731175*^9, 3.518213447421125*^9}, 
+   3.520852276484375*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Questions about the cograph.", "Subsubsubsection",
+ CellChangeTimes->{{3.51821333518675*^9, 3.518213359343*^9}}],
+
+Cell[TextData[{
+ StyleBox["Question C1.  ",
+  FontWeight->"Bold"],
+ "When do the red and blue arrows in the cograph coincide?   ",
+ StyleBox["Answer: Same as answer to Question G1.  ",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.518004927434*^9, 3.5180049819716*^9}, {
+   3.518209673764875*^9, 3.518209673968*^9}, {3.518211341046125*^9, 
+   3.518211362514875*^9}, 3.518213146843*^9, {3.51821364987425*^9, 
+   3.518213703014875*^9}, 3.518214685171125*^9, {3.520852278109375*^9, 
+   3.518364763234375*^9}, 3.518364795671875*^9}],
+
+Cell[TextData[{
+ StyleBox["Question C2.  ",
+  FontWeight->"Bold"],
+ "In the cograph, for what ",
+ StyleBox["a ",
+  FontSlant->"Italic"],
+ "and ",
+ StyleBox["b ",
+  FontSlant->"Italic"],
+ "are the arrow targets for a given choice of ",
+ StyleBox["x",
+  FontSlant->"Italic"],
+ " closer together than the arrow sources?   ",
+ StyleBox["Answer:  | ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["a",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" | > 1; ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["b",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" is irrelevant.  ",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.51821305737425*^9, 3.5182130721555*^9}, 
+   3.518213382514875*^9, {3.518214521968*^9, 3.518214540889875*^9}, {
+   3.518214612733625*^9, 3.518214639546125*^9}, 3.518214687233625*^9, 
+   3.52085227940625*^9}],
+
+Cell[TextData[{
+ StyleBox["Question C3.  ",
+  FontWeight->"Bold"],
+ "Manipulate ",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ " and ",
+ StyleBox["b",
+  FontSlant->"Italic"],
+ ".  For some values the blue arrows all cross each other ",
+ StyleBox["at the same point.  ",
+  FontSlant->"Italic"],
+ "(Same question for red arrows.)  When does this happen?  ",
+ StyleBox["Answer: When ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["a ",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["is negative.   ",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{3.518214784296125*^9, 3.52085228053125*^9}],
+
+Cell[TextData[{
+ StyleBox["\[Bullet]",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" ", "Item1",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["The abstract setting of the cograph is",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" shifted ",
+  FontWeight->"Bold",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["by this question (and the next) in this way:  The arrows provide a \
+",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["visual pointer",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" from the input to the output of the function.  ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["All of a sudden we are treating them as mathematical objects ",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["(straight line segments in the plane)",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[". ",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.518214790858625*^9, 3.518215055952375*^9}, {
+   3.518215225593*^9, 3.518215226468*^9}, 3.518364888984375*^9}],
+
+Cell[TextData[{
+ StyleBox["\[Bullet]",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox[" ", "Item1",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["The abstraction is also broken in another way:  The space between \
+the source line and the target line is just a visual separation, but after \
+this question ",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["both lines lie on the xy plane.  ",
+  FontSlant->"Italic",
+  FontColor->RGBColor[0, 0, 1]],
+ StyleBox["The question turns a visual illustration into a mathematical \
+object.",
+  FontColor->RGBColor[0, 0, 1]]
+}], "Text",
+ CellChangeTimes->{{3.518214790858625*^9, 3.518215062108625*^9}, {
+  3.518364831359375*^9, 3.518364853359375*^9}}],
+
+Cell[TextData[{
+ StyleBox["Question 4.",
+  FontWeight->"Bold"],
+ "  Describe the common point where all the red arrows cross when ",
+ StyleBox["a",
+  FontSlant->"Italic"],
+ " is negative.   (Same question for blue arrows.)   ",
+ StyleBox["Answer: The point is ",
+  FontColor->RGBColor[0, 0, 1]],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["b", 
+      RowBox[{"1", "-", "a"}]], ",", 
+     FractionBox[
+      RowBox[{"3", " ", "a"}], 
+      RowBox[{"a", "-", "1"}]]}], "}"}], TraditionalForm]], "Output",
+  CellChangeTimes->{3.51836459578125*^9},
+  FontColor->RGBColor[0, 0, 1]],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.51821439931175*^9, 3.518214428218*^9}, {
+  3.51821469356175*^9, 3.518214740139875*^9}, {3.51836442421875*^9, 
+  3.518364443140625*^9}, {3.518364552375*^9, 3.518364557953125*^9}, {
+  3.518364619625*^9, 3.518364675328125*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1111, 643},
+WindowMargins->{{20, Automatic}, {Automatic, 9}},
+Magnification->1.25,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->FrontEnd`FileName[{"Article"}, "Preprint.nb", 
+  CharacterEncoding -> "WindowsANSI"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[1257, 32, 220, 3, 88, "Section"],
+Cell[1480, 37, 90, 1, 34, "Text"],
+Cell[CellGroupData[{
+Cell[1595, 42, 159, 2, 36, "Subsubsection"],
+Cell[1757, 46, 1646, 41, 76, "Text"],
+Cell[3406, 89, 334, 6, 34, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3789, 101, 344, 4, 79, "Section"],
+Cell[4136, 107, 127, 2, 33, "Input"],
+Cell[4266, 111, 280, 5, 33, "Text"],
+Cell[4549, 118, 836, 29, 58, "Input"],
+Cell[CellGroupData[{
+Cell[5410, 151, 811, 17, 58, "Input"],
+Cell[6224, 170, 2694, 45, 57, "Output"]
+}, Open  ]],
+Cell[8933, 218, 6328, 139, 248, "Input"],
+Cell[15264, 359, 88, 1, 33, "Input"]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[15389, 365, 244, 4, 40, "Section"],
+Cell[CellGroupData[{
+Cell[15658, 373, 153, 2, 46, "Subsection"],
+Cell[CellGroupData[{
+Cell[15836, 379, 3395, 87, 190, "Input"],
+Cell[19234, 468, 6978, 151, 477, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26261, 625, 253, 3, 57, "Subsection"],
+Cell[26517, 630, 551, 17, 42, "Text"],
+Cell[CellGroupData[{
+Cell[27093, 651, 224, 3, 42, "Subsubsubsection"],
+Cell[27320, 656, 378, 12, 43, "Text"],
+Cell[27701, 670, 1115, 26, 43, "Text"],
+Cell[28819, 698, 1765, 43, 68, "Text"],
+Cell[30587, 743, 328, 11, 43, "Text"],
+Cell[30918, 756, 884, 26, 43, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31839, 787, 118, 1, 42, "Subsubsubsection"],
+Cell[31960, 790, 548, 11, 43, "Text"],
+Cell[32511, 803, 880, 29, 70, "Text"],
+Cell[33394, 834, 619, 21, 70, "Text"],
+Cell[34016, 857, 1016, 28, 70, "Text"],
+Cell[35035, 887, 680, 17, 68, "Text"],
+Cell[35718, 906, 871, 25, 57, "Text"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
+(* NotebookSignature BvT0jY0XkWo2QDg1#@1m8qwQ *)

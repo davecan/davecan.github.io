@@ -1,0 +1,648 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Functions: Images and Metaphors</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-01-10
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   
+<a href="/Word%20Press/">blog</a>    <a href="MMFunctions.htm">Back to head of Functions chapter</a>
+</pre>
+<table cellspacing=0 cellpadding=9pt hspace=0 vspace=2pt width=100% align=left><tr><td valign=top style=width:100%;border:white;
+windowtext 0pt;
+padding:9pt 9pt 9pt 9pt;'>
+<h3>Contents</h3>
+
+<p class=toc><a href=#mathobject>Math Object</a></p>
+
+<p class=toc><a href=#formula>Formula</a></p>
+
+<p class=toc><a href=#process>Process</a></p>
+
+<p class=toc><a href=#dependencyrelation>Dependency relation</a></p>
+
+<p class=toc><a href=#symmetries>Symmetries</a></p>
+
+<p class=toc><a href=#map>Maps</a></p>
+<p class=toc><a href=#structurepreservingfunction>Structure-preserving functions</a></p>
+
+</p></td></tr></table>
+<br>
+
+<h1>IMAGES AND METAPHORS FOR FUNCTIONS</h1>
+
+<h4>A mathematician's <a href="MMRepsModels.htm#mentalrepresentation">mental representation</a> of a function is generally quite rich and may involve many different <a href="MMImagesMetaphors.htm">metaphors and images</a> kept in mind simultaneously.</h4>
+
+<p>By "images and metaphors" I am referring to the <b>conceptual metaphors</b> that mathematicians use in thinking about mathematical objects. Below are some references for images, metaphors and related ideas:
+ 
+<ul> 
+ 
+<li><a href="MMImagesMetaphors.htm">Images and metaphors</a> (abstractmath.org).</li>
+ 
+<li><a href="MMFunctionRepresentations.htm">Representations of functions</a> (abstractmath.org).</li> 
+
+<li><a href="https://en.wikipedia.org/wiki/Conceptual_metaphor">Conceptual metaphors</a> (Wikipedia).</li>
+
+<li><a href="/Word%20Press/?p=4768">Conceptual blending</a> (Gyre&Gimble).</li>
+
+<li><a href="http://en.wikipedia.org/wiki/Conceptual_blending">Conceptual blending.</a> (Wikipedia.)</li>
+
+<li><a href="http://homepages.warwick.ac.uk/staff/David.Tall/pdfs/dot1981a-concept-image.pdf">Concept image and concept definition in mathematics with particular reference to limits and continuity</a>, by David Tall and Shlomo Vinner.</li>
+
+</ul>
+
+
+<p>The illustrations were created using the Mathematica Notebooks <a href="Mathematica/Function Representations/Functions and Shapes.nb">Functions and Shapes.nb,</a> <a href="Mathematica/Function Representations/FunctionDigraphForImMetFuncs.nb">FunctionDigraphForImMetFuncs.nb,</a> and <a href="Mathematica/AnotherFamiliesFrozen.nb">AnotherFamiliesFrozen.nb.</a> These notebooks contain many more examples of the ways functions can be represented than are given in this article. For information about how to use them, read the abmath section <a href="MMIntro.htm#mathematicanotebooks">Mathematica</a>.</p>
+
+<p>Like everything on abstractmath.org, the notebooks are covered by a <a href="#creativecommons">Creative Commons ShareAlike 3.0 License.</a></p>
+
+<a name="mathobject"></a>
+
+<h2>Math object</h2>
+
+<h4>Most basic mental representation: A function is a <a href="MMMathObj.htm">mathematical object</a>.</h4> 
+
+<p class=smallind>This concept is discussed in <a href="MMFuncSpec.htm#funcasmathobj">Specification and Definition of Function</a> as well as here.</p>
+
+<ul>
+
+<li>You must think of functions as <a href="MMMathObj.htm">math objects</a> when you are taking the <a href="MMImagesMetaphors.htm#rigorousview">rigorous view</a>, which happens specifically when you are trying to prove something about a function.</li>
+
+<li>Experienced mathematicians studying a function will think in terms of many different metaphors and images of the function, but will often return to the rigorous math object point of view, particularly when they are confused.</li>
+
+
+</ul>
+<h4>Like math objects, functions can have <span class=red>properties.</span></h4>
+
+<p>An integer can be odd, or a prime. A triangle can be isosceles, or obtuse. Like any math object, a function can have properties too.</p>
+
+<ul>
+
+<li>The function $x\mapsto x^2:\mathbb{R}\to\mathbb{R}$ (this definition uses <a href="MMFuncNotation.htm#barredarrownotation">barred arrow notation</a>) is <a href="https://en.wikipedia.org/wiki/Continuous_function#Continuous_functions_between_topological_spaces">continuous</a> and <a href="MMPatternRecognition.htm">differentiable</a>.</li>
+
+<li>The function $n\mapsto n^2:\mathbb{N}\to\mathbb{N}$ is <a href="https://en.wikipedia.org/wiki/Injective_function">injective</a> but not <a href="https://en.wikipedia.org/wiki/Surjective_function">surjective.</a></li>
+
+<a name="functionf"></a>
+
+<li>The function defined by $f(x):=2{{\sin }^{2}}x-1$ is <a href="http://en.wikipedia.org/wiki/Periodic_function">periodic</a> with period $\pi$, meaning that for any $x$, $f(x+\pi )=f(x)$.   It is the <i>function itself</i> that has period $\pi$, not any value of it.</li>
+
+</ul>
+
+
+<h4>You can apply <span class=red>operations</span> to many functions.</h4>
+
+<p>You can <b>bisect</b> an angle or <b>add</b> two numbers.  In the same way you apply operations to functions.</p> 
+
+<p>Let $f(x):=2\sin^2x-1$ and $g(x):=x^2+2x-8$.</p> 
+
+<ul>
+<li>You can <b>multiply</b> a real valued function by a number.  For example, $2f$ is the function \[x\mapsto 4\sin^2x-2\]</li>
+
+<li>You can <b>add</b> two real valued functions.  $f+g$ is the function \[x\mapsto 2\sin^2x+x^2+2x-9\] There are more examples like this in the Wikipedia article <a href="http://en.wikipedia.org/wiki/Pointwise">pointwise.</a></li>
+
+<li>But you <i>can’t do arithmetic operations to functions that don’t have numerical input and output.</i> The database function\[\text{Employee} \mapsto \text{Department}\]that maps each employee of a company to the department they work in can't be added to the function $x\mapsto x^2$.</li>
+
+<li> You can <a href="MMDerivatives.htm">differentiate</a> and <a href="https://en.wikipedia.org/wiki/Integral">integrate</a> $f$. But there are also plenty of functions you <i>can’t</i> differentiate or integrate, for example the <a href="MMFuncExamples.htm#dirichlet">Dirichlet function</a> or any <a href="MMFuncExamples.htm#finite">finite function</a>.</li>
+</ul>
+
+<h4>A function can be an element of a set.</h4> 
+
+<p>One of the most powerful tools of math is the concept of <a href="https://en.wikipedia.org/wiki/Function_spaces"><b>function space.</b></a> A function space is a set <i>whose elements are functions</i> (not the values of the functions, the functions themselves). In general, a function space will have certain properties that <a href="https://en.wikipedia.org/wiki/Space_%28mathematics%29">spaces</a> have.  For example, in a function space you may be able to talk about the distance between two functions, <i>thinking of each function as a point.</i></p>
+
+<ul>
+
+<li>The function $f(x):=2{{\sin }^{2}}x-1$ is a member of the <b>set of continuous functions</b> from $\mathbb{R}$ to $\mathbb{R}$. $f$ is also a member of the <b>set of differentiable functions</b> from $\mathbb{R}$ to $\mathbb{R}$. </li>
+
+<li>More importantly, $f$ is a member of the set $C^{\infty}(\mathbb{R})$ (<a href="http://mathworld.wolfram.com/C-InfinityFunction.html">MW</a>, <a href="http://en.wikipedia.org/wiki/Smooth_function">Wi</a>) of <b>smooth functions</b> (real-valued functions that have derivatives of all orders).</b> You can take the derivative of a smooth function, take the derivative of that function, take the derivative of that function, and so on forever.</li>
+
+<li><a href="https://en.wikipedia.org/wiki/Function_composition">Composition of functions</a> is a <a href="MMFuncExamples.htm#binaryoperation">binary operation</a> on ${{C}^{\infty }}(\mathbb{R})$. The chain rule shows that composition of functions preserves differentiability.</li>
+
+</ul>
+
+<p>There are many important function spaces on $\mathbb{R}$ (and also on $\mathbb{C}$). They are the objects of study of <a href="http://en.wikipedia.org/wiki/Functional_analysis">functional analysis</a>. But other kinds of sets of functions are studied in math: One example is the set of <a href="http://en.wikipedia.org/wiki/Computable_function">computable functions</a> on $\mathbb{N}$ in computer science and logic.</p>
+
+<a name="formula"></a>
+
+<h2>Formula</h2>
+
+<h4>Mental representation: A function is a <a href="MMSymLang.htm#symbolicexpression">symbolic expression</a> (or <span class=red>formula</span>) which is evaluated to give the value of the function. </h4>
+
+<a name="processfromformula"></a>
+
+
+
+<h4 class=redit>Example</h4>
+
+
+<ul>
+
+<li>The expression $g(x):=x^2+2x-8$ (see <a href="MMOtherSymbols.htm#colonequals">colon equals</a>) defines a function $g$ from $\mathbb{R}$ to $\mathbb{R}$.</li>
+
+<li>You calculate the value of $g(3)$ by using arithmetic:  \[g(3)=3^2+2\times3-8=9+6-8=15-8=7\]</li>
+
+</ul>
+
+
+
+<h4>A function can have many different formulas.</h4>
+
+<p>Our function $g$ above could be define by  any of the following formulas (and zillions of others):</p>
+
+<ul>
+<li>$x(x+2)-8$.</li>
+<li>$(x+1)^2-9$.</li>
+<li>$(x+4)(x-2)$.</li>
+</ul>
+
+<p>All of those functions give the same answer for any number $x$ you plug into them (including complex numbers). <i>So all the formulas define the same function.</i></p>
+ 
+ <h4>A formula for a function may tell you some properties of the function in a succinct way.</h4>
+
+<p>For our function $g$,</p>
+<ul>
+<li>The formula $x(x+2)-8$ immediately gives you the values $g(0)=-8$ and $g(-2)=-8$.</li>
+
+<li>The formula $(x+1)^2-9$, which is the result of completing the square, tells you that $g(-1)=-9$ <i>and</i> that $9$ is the unique minimum for $g$ (because $(x+1)^2$ is never negative and is only zero at $x=-1$.). This formula also makes it easy to find the zeroes of the function.</li>
+
+<li>The formula $(x+4)(x-2)$ of course tells you the zeroes of $g$ immediately ($-4$ and $2$), and it also makes it easy to see that $g$ is negative exactly in the open interval $(-4,2)$, because in that interval $x+4$ is positive and $x-2$ is negative.</li>
+
+</ul>
+
+<h4 class=redit>Some other examples</h4>
+
+<ul>
+<li>You can tell that $\displaystyle\frac{1}{{{x}^{2}}+1}$ is defined for all real x and that $\displaystyle\frac{1}{{{x}^{2}}-1}$ is not.  </li>
+
+<li>The expression $.0002{{\left( \displaystyle\frac{{{x}^{3}}-10}{3{{e}^{-x}}+1} \right)}^{6}}$ requires a bit of work to understand it, but with work you can figure out quite a lot about it <i>because you know the formula</i>. This is discusses in detail in the <a href="MMUsefulBehaviors.htm#zoomchunk">Zoom and Chunk</a> and <a href="MMFunctionRepresentations.htm#graphscanfoolyou">Representations of Functions</a> chapters.</li>
+
+
+<li>Some expressions are so complicated it is hard to analyze them.   The expression                                               \[-.5+.5x+.2{{x}^{2}}-.19{{x}^{3}}-.015{{x}^{4}}+.01{{x}^{5}}\] is difficult because you can’t glance at it and see where its roots are.  (The chapter on <a href="MMDerivatives.htm#quintic">derivatives</a> shows a graph of this function.) Nevertheless, it is a fifth degree polynomial, so you know for example that it is unbounded in both directions. The graph suggests that it has five real roots. Using Mathematica, you can determine that the zeroes are approximately -3.76822, -1.79188, 0.984639, 1.7311, and 4.34436.</li>
+
+</ul>
+
+<h4>Don’t expect that every function can be given by a formula</h4>
+
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>The <a href="MMFuncExamples.htm#wordlength">word length function.</a> There is <i>no formula</i> that tells you that "cat" has three letters and "complicated" has 11 letters.</li>
+
+<li>Most database functions are given by <a href="#tableofvalues">tables.</a>  In the personnel data base of a company, the map that take an employee's name to the department they work in is hardly likely to have a formula.</li>
+
+</ul>
+
+<a name="process"></a>
+
+<h2>Process</h2>
+
+<h4>Mental representation: A function is the process used to evaluate it at an input. The formula <font color="#911B1B">encapsulates a process</font> for calculating it.</h4>
+
+<a name="formulaagain"></a>
+<a name="encapsulates"></a>
+
+<a name="processfromformula"></a>
+
+<h4 class=redit>Example</h4>
+
+<p>The expression $g(x):=x^2+2x-8$ defines a function $g$ from $\mathbb{R}$ to $\mathbb{R}$. The expression "$x^2+2x-8$" is an <b>algebraic expression</b> and as such it can be <b>evaluated</b> for any real number $x$. You can use the expression "$x^2+2x-8$" to carry out a process of computing the value.</p>
+
+<p>The process that is "encapsulated" is not completely determined, but one way or another essentially the same computations are carried out. </p>
+
+<ul>
+
+<li>You could do it in your head: "$g(3)$ is $3^2$, which is $9$, plus $2\times3$, which is $6$, minus $8$, so it's $9+6-8$ which is $7$". Or something like that.</li>  
+
+<li>You could use a calculator, which usually means something like punching $3^2+2\times3-8\text{ ENTER}$ and getting $7$. </li>
+
+<li>You could enter the same expression -- $3^2+2\times3-8$ -- in a program like <a href="http://www.wolfram.com/mathematica/">Mathematica</a> and it would give back the answer.</li>
+
+<li>In Mathematica and other programs like it (Sage, Macsyma) you could also <i>define</i> $g(x):=x^2+2x-8$ and then enter $g(3)$ and any other values you are interested in without having to retype the formula. In that case, Mathematica or Sage <i>translates the algebraic expression $x^2+2x-8$ into a program that the formula encapsulates</i> and runs each line of the program as it writes it.</li>
+</ul>
+
+<a name="table"></a>
+
+<h3>Table</h3>
+
+<p>A function defined by a <a href="MMFunctionRepresentations.htm#table">table</a> has a process for computing a value, too:  Look it up in the table! </p>
+
+<p>This is not just cute remark: 
+
+<ul>
+<li>Programs that enable a computer to look up a value in a table are sophisticated. See <a href="http://en.wikipedia.org/wiki/Lookup_table">lookup-table</a> in Wikipedia.</li>
+
+<li>When you look up something in a table your brain carries out a process which you are only partly aware of. If the table is alphabetized and what you want starts with M, you look about halfway down the table. If it starts with B you look near the beginning. Your neurons are doing quite a bit of processing in doing that.</li>
+
+</ul>
+
+
+<h3>Check each element</h3>
+
+<p>$\pi(n)$, the <a href="MMFuncExamples.htm#nthprime">$n$th prime function,</a> can be computed by finding the first prime, finding the second prime, and so on until you get to $n$.  Of course this is ridiculously tedious, but it <b>is</b> a process.  You can also evaluate $\pi(n)$ on a computer, for example in Mathematica or Maple. These systems use a built-in process that is more efficient than finding one prime after another.</p>
+
+<p>You could look up the value of a function given by a table this way, too: Start at the top and go down. But people avoid doing that, as mentioned above. Do you remember singing the alphabet song as a child? Now you know why that song exists: to avoid starting at the top.</p>
+
+<a name="algorithm"></a>
+
+<h3>Algorithm</h3>
+
+<p>An <a href="MMGlossary.htm#algorithm"><b>algorithm</b></a> may be used to compute the value of a function.</p> 
+
+<ul>
+
+
+
+<li>In your early school days you learned algorithms involving steps written out with a pencil to compute the addition function $+:\mathbb{N}\times \mathbb{N}\to\mathbb{N}$ (add up columns and keep track of carries).</li> 
+
+<li>Later you probably learned more complicated hand-algorithms for multiplication and division.</li>
+
+<li>The <a href="http://en.wikipedia.org/wiki/Abacus"><b>abacus</b></a> is still widely used in certain parts of the world. It implements some variant or other of the same algorithm for addition as the pencil-and-paper method you learned, sometimes with a base other than $10$.</li> 
+
+
+
+<li>Until the last part of the twentieth century, <b>machines</b> were designed for carrying out algorithms, for example adding machines and <a href="https://en.wikipedia.org/wiki/Comptometer">comptometers</a> for the arithmetic operations, as well as machines for other algorithms, for example those that encrypt messages.</li>
+
+<li class=bluesmall>When I was in the US Air Force during the Cold War, I operated a comptometer as part of my work. It has a great many gears and a complicated system of gearshifts. It was noisy and when you divided a large number by $3$ (for example) it would make a remarkably rhythmic chugging noise you could dance to.</li>
+
+<li>Nowadays, such tasks are mostly carried out electronically in calculators and computers, which contain <a href="http://en.wikipedia.org/wiki/Computer_program">programs</a> to implement the algorithms.</li> 
+
+<li>It is useful to distinguish a program from an algorithm. To oversimplify, a program is a set of instructions for carrying out an algorithm. The algorithm consists of the list of steps to be performed.</li>  
+
+<li class=smallind>Think about writing instructions for carrying out long division by hand. Try it: Doing that is much more difficult than it sounds, even if you are quite efficient at doing long division!</li>
+
+</ul>
+
+<p class=smallind>The algorithms for arithmetic originated in India. They were originally what the word "algorithm" referred to. The word is named after the Persian mathematician <a href="http://en.wikipedia.org/wiki/Mu%E1%B8%A5ammad_ibn_M%C5%ABs%C4%81_al-Khw%C4%81rizm%C4%AB">Al-Khwarizmi,</a> who popularized them. In the thirteenth century, <a href="http://en.wikipedia.org/wiki/Fibonacci">Fibonacci</a> wrote a book that introduced the algorithms to Europe.</p>
+
+
+<a name="transformer"></a><a name="transformation"></a>
+
+<h2>Transformer</h2>
+
+<h4>Mental representation: A function <span class=red>transforms</span> a mathematical object in some way.</h4>
+
+<p>This is a metaphor that seems to occur in many different contexts, and the notation and terminology is all over the place, although words such as <b>transformation</b> and <b>transform</b> are used for specific types of functions.</p>
+
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>If you <b>multiply a vector by a matrix,</b> you are performing a <a href="http://en.wikipedia.org/wiki/Linear_map">linear transformation.</a> In the examples <a href="#functionspreservingarea">below</a> you can see that the action <i>changes the position and shape</i> of geometric figures in the plane.</li>
+
+<li>The name "linear transformation" has a much more general definition than multiplying by a matrix.  <b>Taking the derivative of a function</b> is a linear transformation in this more general sense.
+(But taking the derivative of a function is usually called an <a href="https://en.wikipedia.org/wiki/Operator_%28mathematics%29"><b>operator</b></a> rather than a transformation.)</li>
+
+<li>The sound of a musical instrument playing a particular note can be modeled by a function of time.  The <a href="http://en.wikipedia.org/wiki/Fourier_transform"><b>Fourier transform</b></a> turns that function into a sum of functions, each of which is in essence a sine function with a certain frequency.  These sine functions are the <b>overtones</b> of the sound of the instrument.</li>
+
+</ul>
+
+
+
+<a name="dependencyrelation"></a>
+
+<h2>Dependency relation</h2>
+
+<h4>Mental representation: A function is a dependency relation between two variables.</h4> 
+
+
+<ul>
+<li>This is the metaphor behind such descriptions as “$x$ depends on $t$”.</li>
+
+<li>Expressing a function as a dependency relation completely avoids naming the <b>formula</b> or <b>process</b> used to evaluate the function that gives $x$ when $t$ is known.</li> 
+
+
+<li>A <a href="#differentialequation">differential equation</a> <i>defines a function without producing a formula for the function</i>, and for that reason the function defined may be referred to as a <b>variable dependent on the independent input variable</b>.</li> 
+
+<li>The phrase "$x$ depends on $t$" also occurs in situations where $x$ and $t$ are being physically measured.</li>
+
+</ul>
+
+
+<h4>Thermostat</h4>
+
+<p class=smallind>This example is grossly oversimplified.</p>
+
+<p>The heat $h$ in a room (as shown by a particular thermometer) may depend on the setting $t$ of a thermostat. In this case, $h$ <b>depends on</b> $t$. You could estimate the specific value of $h$ for a given thermostat setting $t$ by setting the thermostat at $t$ and waiting until the temperature shown by the thermometer stabilizes. But you don't have a formula for $h$.</p>
+
+<a name="dependentvariable"></a>
+<a name="independentvariable"></a>
+<a name="differentialequation"></a>
+<h4>Differential equations</h4>
+
+<p>The  <a href="http://en.wikipedia.org/wiki/Differential_equation">differential equation</a> \[x'(t)=x(t),x(0)=1\] determines a <b>dependent variable</b> $x$ that depends on an <b>independent variable</b> $t$. In fact, $x(t)=e^t$ for this equation. Nevertheless, the differential equation completely determines the function by giving only <i>two specific facts</i> about $x$ and $\frac{dx}{dt}$. This is significant because in practice many differential equations cannot be solved in terms of functions already known. The Fresnel function is an example.</p>
+
+<h4>The Fresnel function</h4>
+
+<p class=smallind>The following is a story I made up which probably bears some resemblance to what actually happened.</p>
+
+<p>In the early nineteenth century, <a href="http://en.wikipedia.org/wiki/Augustin-Jean_Fresnel">Augustin-Jean Fresnel</a> studied the theory of optics. He came up with this differential equation:
+
+\[y'(t)=\sin \left(\frac{\pi  t^2}{2}\right),\ \ \ y'(0)=0\]</p>
+
+<p>The theory for this type of differential equation (which is typically the first type of differential equation you study in college) says that such an equation has a unique solution. <span class=purple> The solution of a differential equation is a <i>function</i>, not a number.</span> In this case, the solution gives $y(t)$ as a function of $t$. Its graph looks like this:</p>
+
+<img width=300 height=94 src="Mathematica/Function Representations/FresnelGraph.gif" hspace=12>
+
+<p>In fact there is a formula for this solution:  \[x(t)=\int_0^t\sin\left(\frac{\pi  t^2}{2}\right)\,dt\]
+This integral defines a specific function of $t$, since $\sin\left(\frac{\pi  t^2}{2}\right)$ is a continuous function.  However, the integral of this function cannot be expressed in terms of functions familiar to you from calculus class. (You can't "do" the integral.) Nevertheless, it is a genuine function and nowadays it has a name:
+\[\text{FresnelS}(t):=\int_0^t\sin\left(\frac{\pi  t^2}{2}\right)\,dt\] Giving it a name doesn't tell you how to calculate this function. Fresnel probably calculated values of the function using its <a href="http://en.wikipedia.org/wiki/Power_series">power series.</a></p>
+
+<a name="symmetries"></a>
+
+<h2>Symmetries</h2>
+
+<h4>A symmetry is a function.</h4> 
+
+<p>A <b>symmetry</b> is (roughly speaking) a way of changing an object so that it looks exactly the same after it is changed as before.</p>
+
+<a name="symmetriesofasquare"></a>
+<h3>Symmetries of a square</h3>
+
+<p>Below are three symmetries of a square. In each case the square is moved as shown. The labels show what the movement did to the corners. The symmetry moves the sides so that each side connects the same two corners. <i>The labels are not part of the square.</i></p>
+
+
+<h4 class=it>Diagonal flip:</h4>
+
+<p><img width=220 height=100
+src="Mathematica/Function Representations/DiagFlip.gif" hspace=12
+alt="Diagonal flip"></p>
+
+
+<h4 class=it>Horizontal flip:</h4>
+
+<p><img width=220 height=100
+src="Mathematica/Function Representations/HorizFlip.gif" hspace=12
+alt="Horizontal flip"></p>
+
+<h4 class=it>Clockwise quarter turn:</h4>
+
+<p><img width=220 height=100
+src="Mathematica/Function Representations/Turn.gif" hspace=12
+alt="Clockwise quarter turn"></p>
+
+<p>There are eight symmetries of a square altogether, including the identity symmetry that leaves the square alone.  These symmetries constitute the <a href="http://en.wikipedia.org/wiki/Dihedral_group">Dihedral group of order $8$</a>.</p>
+
+<p>Each symmetry can be represented in several different ways as <a href="http://en.wikipedia.org/wiki/Permutation">permutations</a> (<a href="http://en.wikipedia.org/wiki/Permutation">bijective</a> maps) of its corners.</p>
+
+<a name="representationsofsymmetries"></a>
+
+
+<h3>Representations of these permutations</h3>
+
+<p>Representations of permutations are also presented in <a href="MMFunctionRepresentations.htm#permutation">Representations of functions</a>.</p>
+
+<h4>Tables</h4>
+<p>These three symmetries may be represented as <a href="#table">tables</a>:</p>
+
+<p class=headed><span class=blueit><b>Diagonal flip:</b></span> $\scriptstyle\begin{pmatrix} A&B&C&D\\ C&B&A&D \end{pmatrix}$</p>
+
+<p class=headed><span class=blueit><b>Horizontal flip:</b></span> $\scriptstyle\begin{pmatrix} A&B&C&D\\ D&C&B&A \end{pmatrix}$ </p>
+
+<p class=headed><span class=blueit><b>Clockwise quarter turn:</b></span> $\scriptstyle\begin{pmatrix} A&B&C&D\\ B&C&D&A \end{pmatrix}$ </p>
+
+
+<h4>Cographs</h4>
+<h4 class=it>Diagonal flip</h5>
+<p><img width=250 height=100
+src="Mathematica/Function Representations/DiagFlipCograph.gif" hspace=12></p>
+<h4 class=it>Horizontal flip</h4>
+<p><img width=250 height=100
+src="Mathematica/Function Representations/HorizFlipCograph.png" hspace=12></p>
+<h4 class=it>Clockwise quarter turn</h4>
+<p><img width=250 height=100
+src="Mathematica/Function Representations/TurnCograph.png" hspace=12></p>
+
+
+<h4>Endographs</h4>
+
+
+<h4 class=it>Diagonal flip</h4>
+<p><img width=230 height=38
+src="Mathematica/Function Representations/DiagFlipGraph.gif" hspace=12></p>
+
+<h4 class=it>Horizontal flip</h4>
+<p><img width=230 height=24
+src="Mathematica/Function Representations/HorizFlipGraph.gif" hspace=12"></p>
+
+<h4 class=it>Clockwise quarter turn</h4>
+<p><img width=80 height=80
+src="Mathematica/Function Representations/TurnGraph.gif" hspace=12
+alt="Clockwise quarter turn"></p>
+
+<p>All permutations of finite sets behave the way these do: The endograph is a union of disjoint <a href="http://en.wikipedia.org/wiki/Cyclic_permutation">cycles</a>.</p>
+
+<a name="cyclenotation"></a>
+
+<h3>Cycle notation</h3>
+
+<p>The <b><a href="MMFunctionRepresentations.htm#disjointcyclenotation">disjoint cycle notation</a></b> for permutations is particularly well adapted to composing permutations by hand.</p> 
+
+<p class=headed><b>Diagonal flip:</b> $(A C)(B)(D)$</p>
+
+<p class=headed><b>Horizontal flip:</b> $(A D)(B C)$</p>
+
+<p class=headed><b>Clockwise quarter turn:</b> $(A B C D)$</p>
+
+<p>This notation is intended be read this way: If $x$ has a parenthesis to its right, then $p(x)$ is the <i>first</i> symbol in the same parenthesized group, otherwise $p(x)$ is the <i>next</i> symbol to the right in the group.  So given the permutation $p=(132)(8)(5467)$, $p(1)=3$, $p(2)=1$ and $p(8)=8$.</p>
+
+<a name="map"></a>
+
+<h2>Map</h2>
+
+<p class=PurpleProse style='margin:0in;margin-bottom:.0001pt'>The idea that a function is a map<br />is one of the most powerful <a href="HB\hb.html#metaphor">metaphors</a> in mathematics. </p>
+
+<br />
+<p> <img src="Mathematica/Function Representations/Great_lakes_basin.jpg" align=center hspace=48 width="400"/></p>
+<br />
+
+<p>This map is not a function, it is a physical object.  But it is modeled as a <i>mathematical function</i> in this way:</p>
+
+<ul>
+
+<li>The <a href="MMFuncSpec.htm#domain">domain</a> of the map is an area on a sphere which is intended to model part of the surface of the Earth.</li>
+
+<li>The codomain is an area in the plane $\mathbb{R}\times\mathbb{R}$. The codomain is represented (approximately!) by the pixels on your screen.</li>
+
+<li>The map is a <a href="http://en.wikipedia.org/wiki/Homeomorphism">homeomorphism,</a> which implies that it is bijective and continuous.</li>
+
+<li>Certain points and areas on the physical map are labeled in one way or another to give information about the area on the surface of the Earth that it refers to.  In this particular map: 
+
+<ul>
+<li>The lakes are in blue and are named.</li>
+
+<li>The states and provinces are named and their boundaries are shown.</li>
+
+<li>The green area refers to the drainage basin of the Great Lakes.</li>
+
+</li>
+
+</ul>
+</ul>
+
+<p>The mathematical function corresponding to the map takes a point on the boundary of Michigan (for example) in the real world to a point on your screen. A blue point on the screen is a value of the function at a point in some actual real-world lake. <i>All this is an idealization of the real map, which is necessarily only approximate.</i></p>
+ 
+ 
+<p>Mapping the Earth's surface comes with <a href="http://en.wikipedia.org/wiki/Map_projection">lots of math</a> dating back hundreds of years. Much of the work comes from the fact that a mathematical map from a sphere to a plane <i>cannot simultaneously preserve both area and angles.</i></p>  
+
+<p>A decent physical map is more than continuous (taking nearby points on the Earth to nearby points on the screen):</p>
+
+<ul>
+<li>It is expected to approximately preserve the shapes of areas on the Earth (states, lakes, and so on).</li>
+
+<li>It is expected to allow you to calculate approximate distances on the Earth by measuring distances on the map.</li>
+
+</ul>
+
+<a name="mappreservationproperties"></a>
+
+<h3>The fundamental property of the concept of "map"</h3>
+
+<p>What mathematicians call "maps" are not necessarily geographical maps. In math, we use the word "map" <i>by analogy with</i> the kind of map you see in an atlas:</p>
+
+
+<p class=purpleprose>If a mathematician calls a particular function  a <span class=red>map,</span><br />then it preserves some property or structure or shape<br />that the mathematician is interested in.</p>
+
+
+
+<p>The examples below illustrate some functions  from the plane to itself that preserve area or angles but not both. In fact, a function from the plane to itself <i>can</i> preserve area and angles simultaneously (any rotation with determinant $1$ and any <a href="http://en.wikipedia.org/wiki/Translation_(geometry)">translation</a> will do that), but a map from a sphere to a plane cannot do both at once.</p>
+<a name="functionspreservingarea"></a>
+
+<h4>Example: Functions preserving area</h4>
+
+
+<p>Any matrix with determinant $1$ preserves area. In each example, the function is $(x,y)\mapsto M.{x\choose y}$, where $M$ is the matrix shown. The diagram shows what the function does to three specific shapes.</p>
+
+
+<p> <img src="Mathematica/Function Representations/spg1.gif" align=center hspace=12 width="400"/></p>
+
+
+
+
+<p><img src="Mathematica/Function Representations/spg3.gif" align=center hspace=12 width="400"/></p>
+
+
+
+<h4>Examples: Functions preserving angles</h4>
+
+<p>Any rotation matrix preserves angles. Such a function is called <a href="http://en.wikipedia.org/wiki/Conformal_map">conformal.</a></p>
+
+
+
+
+<p class=headed><img src="Mathematica/Function Representations/Apfa.gif" align=center hspace=12 width="400"/></p>
+</p>
+
+
+
+<p class=headed><img src="Mathematica/Function Representations/Apfb.gif" align=center hspace=12 width="400"/></p>
+
+
+<p class=headed>There are more of these pictures in the <a href="Mathematica/Function Representations/">Mathematica site</a> on abstractmath.org. The pictures of angle-preserving functions are called epf#.gif or EqAng#.gif, where # is a digit, and the cographs are at epf#eg.gif or apf#ed.gif.</p>  
+
+
+<p><a name="structurepreservingfunction"></a>
+
+<h2>Structure-preserving functions</h2></p>
+
+<h4>A structure-preserving function <span class=red>preserves</span> some specific <a href="MMMathStructure.htm">structure</a> on a math object.</h4>
+
+<p>A structure-preserving function is often called a <b>map,</b> because it "preserves" something of interest the way a physical map does. Two examples of this are given in the section on <a href="#mappreservationproperties">maps</a>.
+
+<p>The notion of "preserves" is typically defined separately for different types of structure. A function that preserves an algebraic operation (as in the example immediately below) is called a <b>homomorphism</b>.  Other words are used for other structures.  It is also common to call any particular structure-preserving function a <b>morphism</b>.</p>
+
+
+<h4 class=redit>Example</h4>
+
+<p>Let's define a function $h:\mathbb{R}\to\mathbb{R}$ by $f(x)=2x$.  Now do some basic algebra: For any real numbers $r$ and $s$, \[h(r+s)=2(r+s)=2r+2s=h(r)+h(s)\]  For example, \[h(3+5)=h(8)=16\] and \[h(3)+h(5)=6+10=16\]  We say <b>$h$ preserves the structure of addition on the real numbers.</b>  This is typically expressed by the formula \[h(r+s)=h(r)+h(s))\]</p>
+
+<p>It may not be clear why we call addition on the reals a <b>structure.</b>  This is because algebra notation hides the structure in a very cramped notation designed to make it easy to do algebra with pencil and paper.  We can express addition in a much more open way using <b>trees</b>.  (There is more about this in my post <a href="/Word%20Press/?p=9236">Presenting binops as trees</a>.) </p>
+
+<p>The expression "$3+5$" is a symbol that can be exhibited this way:</p>
+
+<p class=headed><img src="Mathematica/Function Representations/examplebinop5.gif" align=center hspace=12 width="80"/></p>
+
+<p>In algebra we evaluate "$3+5$" by writing "$3+5=8$".  Let us show this in a much more explicit way:</p>
+
+<p class=headed><img src="Mathematica/Function Representations/examplebinop5eval.gif" align=center hspace=12 width="220"/></p>
+
+<p class=headed>Now I can express the fact that $h$ "preserves addition" using this <a href="http://en.wikipedia.org/wiki/Commutative_diagram">diagram:</a></p>
+
+<p class=headed><img src="Mathematica/Function Representations/diag1.gif" align=center hspace=12 width="430"/></p>
+
+<p>If you start at the left side of the diagram and go to the right over the top, you apply $\text{eval}$ to get $8$, and then you apply $h$ to get $16$.  If you go to the right using the lower route, you apply $h$ to each of $3$ and $5$ to get $6$ and $10$, and then you apply $\text{eval}$ to get $16$.  Because you get the same thing going over or going under (for any real numbers, not just $3$ and $5$), we say the diagram <b>commutes</b>.</p> 
+
+<p class=smallind>This meaning of the word "commutative" in "commutative diagram" is different from the meaning of  the word used in a sentence such as "addition is commutative", meaning $a+b=b+a$. The connection between the two meanings is that in both cases, you can do something in two different ways and get the same answer. </p>
+
+
+<h4 class=redit>Other examples</h4>
+
+
+
+<ul>
+
+<li>For all real $x$ and $y$, $2^{x+y}=2^x2^y$. So the function 
+$\text{exp}(x):=2^x$ takes addition on $\mathbb{R}$ to multiplication on $\mathbb{R}$, so that $\text{exp}$ is a homomorphism from addition to multiplication.</li>
+
+<li>The function $k(x):=x+3$ has the property that if $x\lt y$, then $k(x)\lt k(y)$; we say that $k$ is an <b>order-preserving function.</b></li>
+
+<li>Differentiation, in other words $f\mapsto f'$, is an <a href="http://en.wikipedia.org/wiki/Operator_(mathematics)">operator</a> that takes a function to its derivative. <b><font color="#911B9B">Differentiation preserves addition;</font></b> you learn in first semester calculus that $(f+g)'=f'+g'$.</li>  
+
+<li>Note that because of the product rule, differentiation does not preserve multiplication of functions, and because of the chain rule, differentiation does not preserve <a href="http://en.wikipedia.org/wiki/Function_composition">composition of functions.</a> </li>
+
+
+<li>This diagram (where $h(x)=2x$ as above) does <i>not</i> commute:</li>
+<p class=headed><img src="Mathematica/Function Representations/diag2.gif" align=center hspace=12 width="430"/></p>
+<p class=noind>So $h$ does not preserve multiplication.</p>
+
+<li>You can check that $s(x):=x^2$ <i>does</i> preserve multiplication (but not addition!).</li>
+
+</ul>
+
+<p class=purpleprose>Structure-preserving maps (morphisms)<br />occur in every branch of math.</p>
+
+<h3>Category theory</h3>
+
+<p><a href="http://en.wikipedia.org/wiki/Category_theory">Category theory</a> is an <a href="MMOtherAspectsUnderstanding.htm#axiomaticmethod">axiomatization</a> of the behavior of structure-preserving maps. It has become quite useful in many branches of math and it has revolutionized some of those branches.</p> 
+ 
+<p>Like all useful axiomatically-defined math structures, categories include objects that are quite different from the phenomena that motivated the definition.  In particular, objects in a category don't have to be sets, much less structured sets, and morphisms don't have to be functions at all.</p> 
+
+<p>Sources available on line: <a href="http://www.logicmatters.net/categories/">Logic Matters: Category Theory</a>.</p>
+
+<a name="creativecommons"></a>
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br />
+
+</body>
+
+</html>

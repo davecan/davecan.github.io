@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css" href="/MM/MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Abstracting Algebra</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+  </head>
+  <body>
+
+ <pre><img
+border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+
+<h1>ABSTRACTING ALGEBRA</h1>
+<p><a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a></p>
+<p>Last revised 2015 1130</p>
+<p>This article describes a <em>plan for a book</em>, tentatively titled <strong>Abstracting algebra </strong>(AbAl),<strong> </strong>which takes you through algebra in its successive levels of abstraction. I expect to write pieces of the book as <a href="#TP">AbAl</a><strong><a href="#TP"> topic posts</a></strong>, and to reuse some stuff that I have written on this blog and in <a href="/">abstractmath.org</a>.  No guarantees on if or when the book will be published.</p>
+<div>
+	<p>I would also like to bundle up parts of abstractmath and turn them into book(s), using the same methodology.</p>
+	<h3>Contents</h3>
+	<ol>
+		<li><a href="#goal"><b>Goal</b></a></li>
+		<li><a href="#style"><strong>Style of exposition</strong></a></li>
+		<li><strong><a href="#form">Form of publication</a></strong></li>
+		<li><strong><a href="#Outline">Outline</a></strong></li>
+		<li><strong><a href="#TP">Topic Posts</a></strong></li>
+		<li><a href="#ref"><strong>References</strong></a></li>
+	</ol>
+	<h2> </h2>
+	<h2><a name="goal">Goal  </a></h2>
+	<p>The goal of the book is to convey an understanding of how mathematicians think about numbers and algebra, with particular emphasis on the use of <strong>abstraction</strong><em>.  </em>In fact, the intention is for the reader to develop <em>an understanding of abstraction in the context of abstract algebra.</em></p>
+	<p>The book is intended for people who are interested in math and want to gain an intuitive understanding of some aspect of math.  This includes math students, STEM people and math fans:</p>
+	<ul>
+		<li>People who work in a field that uses math and want to know more about their tools.</li>
+		<li>People who are taking math courses -- high school or university -- and are <em>actually interested</em> in what they are learning .</li>
+		<li>People who are interested in math as a hobby -- the kind of people who read Martin Gardner&#39;s column in <em>Scientific American</em>. </li>
+	</ul>
+	<p><span style="color:#a52a2a;"><span style="font-size: 14px;">Would a text-to-speech reader know how to pronounce the word &quot;read&quot; in the previous sentence? </span></span></p>
+	<p><strong>Important: <span style="color: rgb(128, 0, 128);">The book may be helpful to math majors, but it is not designed to teach the subjects discussed in the depth that math majors need to learn a subject.</span> </strong> Math majors do need intuitive understanding, but they also need to learn how to read formally written math, understand and create proofs, and to use what they have learned in applications. </p>
+	<p>I would appreciate links to other books and web sites that give non-mathematicians an intuitive understanding of some part of math.  There are some good ones (see References) but not enough.</p>
+	<h2> </h2>
+	<h2><a name="style">Style of exposition</a></h2>
+	<p>The book will be in the style of my posts on G&amp;G:</p>
+	<ul>
+		<li>Strong emphasis on <strong>understanding concepts,</strong> and understanding how they evolved.</li>
+		<li><strong>Informal writing.  </strong>In<strong> </strong>particular, free use of <strong>italics</strong>, <strong>boldface</strong> and <strong>colors</strong>. (See my post <a href="/Word%20Press/?p=834">The revolution in technical exposition II</a>.)</li>
+		<li>Lots of <strong>graphs </strong>and <strong>pictures</strong>, in particular <strong>interactive graphs</strong>.</li>
+		<li><strong><a href="http://en.wikipedia.org/wiki/Thick_description">Thick descriptions</a></strong> of concepts. </li>
+		<li>Using<strong> metaphors </strong>and many different <strong><a href="/Word%20Press/?p=5985">representations</a></strong> to emphasize the many ways you can think about any important part of math. This overlaps with thick description, which also includes context and application.  </li>
+		<li><strong>Oversimplified descriptions</strong> (with warnings). See Example C4 in <a href="/Word%20Press/?p=5985">Representations of mathematical objects</a>.</li>
+		<li>Extensive discussion of <strong>naive perceptions </strong>of abstract objects.</li>
+		<li>In particular, two different descriptions of a kind of math object can be perceived as completely different things, even though mathematicians may &quot;know&quot; they are <em>different aspects of the same kind of object</em>.  Reductivist mathematicians (&quot;the number $2$ <em>is</em> the set $\{\{0\}\}$&quot;) <em>will not like this book.</em></li>
+		<li>Using<strong> formal definitions </strong>and <strong>proofs</strong> only when I think they communicate something important.   The bare <a href="/MM/MMDefs.htm">definition</a> of a concept is nearly useless in <em>understanding </em>it, and some proofs <em>illuminate</em> while other proofs<em> obfuscate</em><strong>. </strong>The reader is not being prepared to do <em>proofs </em>in abstract algebra, but rather to have a rich <em>mental picture </em>of the concepts I discuss.</li>
+		<li>Using <strong>bullet lists</strong> in the way that the Mathematica Help topics are written (see <a href="http://reference.wolfram.com/mathematica/ref/Plot.html">Plot</a> for an example).  These topics have one or two levels of hierarchy that include bullet lists for subsidiary topics (instead of more hierarchy) in which the successive statements are <em>not necessarily parallel </em>and occur in a <em>flattened list.  </em>This makes it easy to find short pieces of information -- provided the bullet list is not to long.  This list is an example.</li>
+		<li><strong>Links</strong> to places on the internet that give more insight or information about a topic.  References to books will be necessary, too, but young people rarely follow up on them.</li>
+	</ul>
+	<h2> </h2>
+	<h2><a name="form">Form of publication</a></h2>
+	<p><em>Abstracting algebra</em> will be published on<strong> e-readers </strong>that must have these capabilities:</p>
+	<ul>
+		<li>Use<strong> TeX </strong>to generate the math and have the math show up seamlessly on the e-reader. I use <a href="http://www.dessci.com/en/products/mathtype/">MathType </a>in Microsoft Word for abstractmath and <a href="http://www.mathjax.org/">Mat</a><a href="http://www.mathjax.org/">hJax</a> for this blog. The html generated by MT and Word renders differently on different browsers and loads slowly.  MathJax requires a connection to the internet.</li>
+		<li>Include<strong> graphics </strong>generated by <a href="http://dante.ctan.org/get/macros/latex/contrib/xypic/xy-3.8.8/doc/xyguide.pdf">xypic </a>and by <a href="http://www.wolfram.com/mathematica/">Mathematica</a>.  I currently display these using jpeg but it is not very sharp.  I am investigating direct rendering of PDF files.  I have just discovered the <a href="http://stackoverflow.com/questions/291813/recommended-way-to-embed-pdf-in-html">Stackoverflow discussion</a> of how to put PDF files into html and will experiment with these methods on G&amp;G posts.</li>
+		<li>Incorporate interactive demonstrations using <strong>Mathematica<a href="http://www.wolfram.com/cdf/"> CDF </a></strong>files.  I don&#39;t know if this is possible on any e-reader now.</li>
+		<li>Make side comments in<strong> text boxes </strong>inset into the main body or in the margin.  I used this a lot in the <em>printed </em>version of the <a href="http://www.cwru.edu/artsci/math/wells/pub/abouthbk.html">Handbook</a> (done in LaTeX) and somewhat less in abstractmath (using Word textboxes).  But comments in small print, as in the remark above about text-to-speech, can serve as a pretty good substitute.</li>
+	</ul>
+	<h2> </h2>
+	<h2><a name="Outline">Outline</a></h2>
+	<p>The topics in the outline will be linked to the <strong><a href="#TP">topic posts</a></strong> as they appear.</p>
+	<h3>Numbers</h3>
+	<p>The chapter on numbers would describe some of the aspects of numbers that are relevant for algebra and abstract algebra.  </p>
+	<ul>
+		<li>One thing is to describe our <strong>naive intuitions </strong>about number. The intuitions that many abstract algebra ideas are based on are different from our naive intuitions and produce a gulf of understanding between mathematicians and students.</li>
+		<li>For example, most people naturally think of addition as an operation on <em>lists </em>of numbers, not as a binary operation.  Just as in a monad.</li>
+		<li>A deeper example, and prehaps the biggest gap in students&#39; understanding, is the mathematicians&#39; understanding of the difference between a number as an <strong>abstract object </strong>and a<strong> representation</strong> of the number.</li>
+	</ul>
+	<p>I am not clear just what topics the numbers section should include.  It should not balloon into a <em>book </em>about numbers.  But at least:</p>
+	<ul>
+		<li><strong>Base notation, </strong>which introduces representations.</li>
+		<li><strong>Algorithms,</strong> for example for addition and multiplication.  These algorithms are likely the first thing that comes to mind when most people think of numbers.</li>
+		<li><strong>Product of primes</strong> representation, for integers, which shows that different representations are good for different things.</li>
+		<li><strong>Commutativity</strong>, <strong>associativity</strong>, <strong>inverses</strong> etc should be discussed in terms of examples of specific numbers. No variables.  (I am not sure how far to go with this.)</li>
+	</ul>
+	<h3>Algebra</h3>
+	<p>By &quot;algebra&quot; I mean high school and college algebra.</p>
+	<ul>
+		<li>The use of of <b>variables.  </b>There are different <em>kinds </em>of variables and many different ways of <em>thinking about </em>variables.  See <a href="http://condor.depaul.edu/sepp/VariablesInMathEd.pdf">Susanna Epp&#39;s article</a> and the <a href="/MM/MMVarSub.htm">abmath article</a>.</li>
+		<li><strong>Free variables </strong>and <strong>bound variables </strong>cause familiar problems in understanding algebra.</li>
+		<li>Another sort of variable is a <strong>parameter.  </strong>People who want to reduce everything to logic mutter that they are merely free variables.  Category theorists mutter that they are completely explained by cartesian closedness.  In fact, they are <em>psychologically complex </em>and result in difficult (for beginners) mathematical objects such as families of functions.</li>
+		<li><strong>Polynomials</strong> and other functions.  Well, they are also<strong> expressions.</strong><em> <strong><span style="color: rgb(128, 0, 128);"> </span></strong></em><strong><span style="color: rgb(128, 0, 128);">A big difficulty hides there.</span></strong></li>
+		<li><strong>Equations. </strong>There are many kinds of equation, such as equations with a finite number of solutions, constraints, identities, the equals sign used after &quot;Let...&quot;.  You may mutter that equations with a finite number of solutions <em>are </em>constraints, but they are quite different psychologically, which this book is <em>especially </em>concerned about.</li>
+		<li><strong>Rules of transformation of equations</strong> based on properties of operations.  This is what people think of when they hear about &quot;algebra&quot;.   </li>
+		<li>Algebra is usually presented only in the usual <strong>algebraic notation</strong>.  It should be presented in <em>many </em>ways, including <strong>tree form</strong>, which carries a much lower abstraction load.  See <a href="/Word%20Press/?p=5428">Visible algebra II</a> and <a href="/Word%20Press/?p=4632">Making visible the abstraction in algebraic notation</a> for some examples of what I mean.</li>
+	</ul>
+	<h3>Abstract algebra</h3>
+	<p>Abstract algebra in academia is really two or three subjects.  One is <em>called<a href="http://en.wikipedia.org/wiki/Abstract_algebra"> </a></em><a href="http://en.wikipedia.org/wiki/Abstract_algebra"><strong>abstract algebra </strong></a>and is concerned mostly with groups, rings and fields. These are three important branches of math that fit nicely together into one course: In other words, &quot;abstract algebra&quot; is <em>not really a single field of mathematics</em>.  But all three result from taking the examples of <strong>symmetries </strong>(for groups)<b>, </b><strong>number systems</strong> (for rings and fields) and <strong>linear algebra</strong> (for rings).  </p>
+	<p><span style="color:#a52a2a;"><span style="font-size: 14px;">&quot;Rings&quot; is not the right word; the subject I am thinking of includes modules and algebras over rings and fields, too.  The previous paragraph is an example of an <em>oversimplified description </em>that (I think) nevertheless gives a clue about the big picture.</span></span></p>
+	<p>These topics arose by <strong>strong abstraction</strong>, by which I mean taking properties of some examples and turning them into axioms imposed on a mathematical structure with an underlying set whose elements are structureless &quot;points&quot;.  I probably should introduce the subject with some simpler examples of axiomatically defined structures. One of my favorites is equivalence relations = partitions, where two different structures turn out to be strongly equivalent. But that might be a distraction...</p>
+	<p>I have a weak understanding of what I would mean by &quot;weak abstraction&quot; -- it would probably include, for example, turning constants into parameters (from the plane and 3-space to $n$-dimensional spaces), weakening an axiom on a structure without changing the structural data (fields to near fields), or using a more general structure with essentially similar axioms (numerical arithmetic into linear algebra).</p>
+	<p>The other subject that belongs in this section is <strong><a href="http://en.wikipedia.org/wiki/Universal_algebra">universal algebra</a>, </strong>the <em>general</em> study of operations with axioms imposed on them.  This is not so often taught in colleges and universities, but I certainly need to explain the<em> idea </em>of universal algebra and in particular how properties of operations affect the theorems that are true about them, because that turns into a big part of the last section of the book.</p>
+	<h3>Abstract abstract algebra</h3>
+	<div>This phrase refers to<i> </i>several <i><strong>second order </strong>strong abstractions of abstract algebra.</i></div>
+	<div> </div>
+	<div><a href="http://en.wikipedia.org/wiki/Monad_(category_theory)"><strong>Monads  </strong></a>These give a very different perspective to universal algebra and works in any category.  It is important to give a detailed example of a <a href="http://en.wikipedia.org/wiki/Strong_monad">strong monad</a>, used in computing science, but I will have to learn more about them.  (Strong monads are related to monads but they are not a special kind of monad.)</div>
+	<div> </div>
+	<div><strong><a href="http://en.wikipedia.org/wiki/Lawvere_theory">Lawvere theories</a> </strong> Equivalent to monads in terms of the algebras they generate but a very different point of view.  Gets away from<strong> presentations </strong>and their often misleading peculiarities.</div>
+	<div> </div>
+	<div><strong>Sketches  </strong>Another second order strong abstraction of abstract algebra that covers all of universal algebra and more.  Multisorted and generalized to all categories. Their corresponding <strong>theories </strong>eliminate presentations. See the entries on sketches in the references.</div>
+	<div> </div>
+	<div><strong>Forms  </strong>A strong abstraction of sketches, so this is a <em>triple </em>abstraction of abstract algebra.  Dare I add a section called &quot;Abstract abstract abstract algebra&quot;?  I invented this idea in 1990 (<a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/GCSketch.pdf">Wells</a>).  Eric Palmgren and Steve Vickers independently worked out an equivalent methodology (<a href="http://www.cs.bham.ac.uk/~sjv/partialalgebras.pdf">P&amp;V</a>) using finite-limits logic. The paper by <a href="http://arxiv.org/pdf/0809.3023.pdf">Bagchi &amp; Wells</a> give more details of my original conception, based on graphs and diagrams in categories.  My unpublished intuitive introduction <a href="/Articles/Forms.htm">Forms </a>can be the start of this part of the book.</div>
+	<div> </div>
+	<div>
+		<h2><a name="TP">Topic Posts</a></h2>
+		<p><strong>AbAl topic posts</strong> will be posts on Gyre&amp;Gimble and each post will be listed in the <strong>abstracting algebra category</strong><strong> </strong>listed under <strong>Subjects </strong>in the right column of the blog. <span style="color:#a52a2a;"><span style="font-size: 14px;">This subject category will not appear in the listing until I publish my first topic post, which will be Real Soon Now.</span></span></p>
+		<p><span style="font-size: 14px; color: rgb(165, 42, 42);">Word Press is designed to use the word &quot;categories&quot;.  AbAl will say a lot about <em>mathematical </em></span><a href="http://en.wikipedia.org/wiki/Category_(mathematics)" style="font-size: 14;"><span style="color: rgb(165, 42, 42);">categories</span></a><span style="font-size: 14px; color: rgb(165, 42, 42);">.  I think I know how to get into the inner workings of Word Press to change<em> their word </em>&quot;categories&quot; to some other word, such as &quot;topics&quot;.  Maybe some day I will do it.</span></p>
+		<p>Each AbAL topic post  concerns a particular subject that that book will cover. The post is not even a first draft of the AbAl section on that subject; instead it is a <em>partly filled-in outline.</em> Each topic post will consist of</p>
+		<ul>
+			<li>Parts of the text that I have already written. </li>
+			<li>An <strong>outline</strong> of what other ideas it will go over. </li>
+			<li>Any <strong>diagrams</strong> and<strong> demos</strong> that I have already made.  </li>
+			<li><strong>Meta-comments </strong>in<span style="color: rgb(178, 34, 34);"><span style="font-size: 14px;"> smaller print </span></span>on how I present the material<span style="font-size: 14px;">. <span style="font-size: 12px;">Some of them will probably not appear in the published book. </span></span></li>
+			<li>References to other topics, mainly in Wikipedia or <a href="/">abmath</a>.  Many of these will be changed to references to other sections of the book when they are written.</li>
+			<li>Descriptions <strong> </strong>in<span style="color: rgb(178, 34, 34);"><span style="font-size: 14px;"> smaller print </span></span>of other diagrams and demos that are planned.</li>
+		</ul>
+		<p> I am doing it this way because the topic posts will contain many pictures and diagrams, including<strong> demos </strong>(interactive diagrams) based on <a href="http://www.wolfram.com/mathematica/">Mathematica</a> which take me a long time to create.</p>
+		<p> </p>
+		<p> </p>
+		<p> </p>
+	</div>
+	<h2><a name="ref">References</a></h2>
+	<h3>On line</h3>
+	<ul>
+		<li><a href="http://en.wikipedia.org/wiki/Abstract_algebra">Abstract algebra</a> (Wikipedia)</li>
+		<li><a href="/MM/MMOtherAspectsUnderstanding.htm#abstraction">Abstraction</a> (abmath article)</li>
+		<li><a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/GCSketch.pdf">A generalization of the concept of sketch</a> (Charles Wells)</li>
+		<li><a href="/Articles/Forms.htm">Forms</a> (Charles Wells)</li>
+		<li><a href="http://arxiv.org/pdf/0809.3023.pdf">Graph-based logic and sketches</a> (Atish Bagchi and Charles Wells)</li>
+		<li><a href="http://www.raymondduch.com/course/hilary2010/formalanalysis/sec_write_mathematics.pdf">How to write mathematics</a>, by <a href="http://www.raymondduch.com/">Raymond Duch</a> (written for students of a formal analysis course).</li>
+		<li><a href="/Word%20Press/?p=4632">Making visible the abstraction in algebraic notation</a> (G&amp;G post)</li>
+		<li><a href="/Word%20Press/?p=5091">Mathematical and linguistic ability </a>(G&amp;G Post)</li>
+		<li><a href="http://www.cs.bham.ac.uk/~sjv/partialalgebras.pdf">Partial Horn logic and cartesian categories</a> (Erik Palmgren and Steven Vickers).</li>
+		<li><a href="http://en.wikipedia.org/wiki/Reductionism">Reductionism</a> (Wikipedia)</li>
+		<li><a href="/Word%20Press/?p=5985">Representations of mathematical objects</a> (G&amp;G post)</li>
+		<li><a href="/Word%20Press/?p=834">The revolution in technical exposition II</a> (G&amp;G post)</li>
+		<li><a href="http://ncatlab.org/nlab/show/sketch">Sketch</a> (in nLab)</li>
+		<li><a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/sketch.pdf">Sketch</a> (summary with references)</li>
+		<li><a href="http://www.case.edu/artsci/math/wells/pub/pdf/ttt.pdf">Toposes, triples and theories</a>, by Michael Barr and Charles Wells.  In-depth coverage of both sketches and monads (called &quot;triples&quot; in the book).</li>
+		<li><a href="http://en.wikipedia.org/wiki/Thick_description">Thick description</a> in Wikipedia.</li>
+		<li><a href="http://en.wikipedia.org/wiki/Universal_algebra">Universal algebra</a> in Wikipedia.</li>
+		<li><a href="/MM/MMVarSub.htm">Variables and substitution</a> (abmath article)</li>
+		<li><a href="http://condor.depaul.edu/sepp/VariablesInMathEd.pdf">Variables in mathematical education</a>, by Susanna Epp.</li>
+		<li><a href="/Word%20Press/?p=5428">Visible algebra II</a> (G&amp;G post)</li>
+	</ul>
+	<h3>Books that give intuitive understanding of a math subject</h3>
+	<h4><span style="font-size:10px;"><span style="color: rgb(178, 34, 34);">I would appreciate additional references to books like these</span></span></h4>
+	<ul>
+		<li>Nathan Carter, <a href="http://web.bentley.edu/empl/c/ncarter/vgt/">Visual group theory</a> (2009)</li>
+		<li>Rudy Rucker, <a href="http://www.amazon.com/Mind-Tools-Levels-Mathematical-Reality/dp/0395468108">Mind tools</a></li>
+		<li>Matt Watkins, <a href="http://www.amazon.com/Mystery-Prime-Numbers-Secrets-Creation/dp/0956487904/ref=sr_1_19?s=books&amp;ie=UTF8&amp;qid=1355431805&amp;sr=1-19&amp;keywords=prime+numbers">The mystery of the prime numbers</a> (2010) (see <a href="/Word%20Press/?p=4935">my review</a> of the book).</li>
+	</ul>
+</div>
+<br />
+ <pre><img
+border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </body>
+</html>

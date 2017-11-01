@@ -1,0 +1,483 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     18413,        474]
+NotebookOptionsPosition[     17772,        449]
+NotebookOutlinePosition[     18137,        465]
+CellTagsIndexPosition[     18094,        462]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"A", "*", "5", "*", "th", "*", "degree", "*", "polynomial", "*", 
+  "and", "*", "its", "*", "derivatives"}]], "PluginEmbeddedContent",
+ Deployed->True,
+ Evaluatable->True,
+ CellChangeTimes->{{3.522582206203125*^9, 3.522582206203125*^9}, {
+   3.52258226871875*^9, 3.522582279046875*^9}, 3.522960250078125*^9},
+ FormatType->"InputForm"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SDM", "[", 
+   RowBox[{
+   "f_", ",", " ", "n_", ",", " ", "a_", ",", " ", "b_", ",", " ", "c_", ",", 
+    " ", "d_", ",", " ", "s_", ",", " ", "e_"}], "]"}], " ", ":=", " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"r", " ", ":=", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"d", " ", "-", " ", "c"}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"b", " ", "-", " ", "a"}], ")"}]}]}], ";", " ", "\n", "   ", 
+    RowBox[{"Show", "[", 
+     RowBox[{
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"Evaluate", "[", 
+         RowBox[{"Take", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"f", "[", "x", "]"}], ",", " ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Derivative", "[", "1", "]"}], "[", "f", "]"}], "[", 
+              "x", "]"}], ",", " ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Derivative", "[", "2", "]"}], "[", "f", "]"}], "[", 
+              "x", "]"}], ",", " ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Derivative", "[", "3", "]"}], "[", "f", "]"}], "[", 
+              "x", "]"}], ",", " ", "\n", "        ", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"Derivative", "[", "4", "]"}], "[", "f", "]"}], "[", 
+              "x", "]"}]}], "}"}], ",", " ", "n"}], "]"}], "]"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", " ", "a", ",", " ", "e"}], "}"}], ",", " ", 
+        RowBox[{"PlotRange", " ", "->", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"a", ",", " ", "b"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"c", ",", " ", "d"}], "}"}]}], "}"}]}], ",", " ", 
+        RowBox[{"AspectRatio", " ", "->", " ", "r"}], ",", " ", "\n", "     ", 
+        RowBox[{"ImageSize", " ", "->", " ", 
+         RowBox[{"{", 
+          RowBox[{"s", ",", " ", 
+           RowBox[{"r", "*", "s"}]}], "}"}]}], ",", " ", 
+        RowBox[{"PlotStyle", " ", "->", " ", 
+         RowBox[{"{", 
+          RowBox[{
+          "Blue", ",", " ", "Red", ",", " ", "Green", ",", " ", "Brown", ",", 
+           " ", "Purple"}], "}"}]}]}], "]"}], ",", " ", "\n", "    ", 
+      RowBox[{"Graphics", "[", 
+       RowBox[{"Take", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\"\<f\>\"", ",", " ", "Blue", ",", " ", "14"}], "]"}], 
+             ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "3.9"}], ",", " ", "1"}], "}"}]}], "]"}], ",", 
+           " ", 
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\"\<f'\>\"", ",", " ", "Red", ",", " ", "14"}], "]"}], 
+             ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "3.75"}], ",", " ", "2.2"}], "}"}]}], "]"}], ",", 
+           " ", "\n", "       ", 
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\"\<f''\>\"", ",", " ", "Green", ",", " ", "14"}], 
+              "]"}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "3"}], ",", " ", 
+               RowBox[{"-", "2"}]}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\"\<f'''\>\"", ",", " ", "Brown", ",", " ", "14"}], 
+              "]"}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "1.9"}], ",", " ", "2.2"}], "}"}]}], "]"}], ",", 
+           " ", "\n", "       ", 
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{"Style", "[", 
+              RowBox[{"\"\<f''''\>\"", ",", " ", "Purple", ",", " ", "14"}], 
+              "]"}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"-", "2.6"}], ",", " ", 
+               RowBox[{"-", "3.8"}]}], "}"}]}], "]"}]}], "}"}], ",", " ", 
+         "n"}], "]"}], "]"}], ",", " ", 
+      RowBox[{"ImageSize", " ", "->", " ", 
+       RowBox[{"{", 
+        RowBox[{"s", ",", " ", 
+         RowBox[{"r", "*", "s"}]}], "}"}]}]}], "]"}]}], 
+   ")"}]}]], "PluginEmbeddedContent",
+ Evaluatable->True,
+ CellChangeTimes->{
+  3.35696210375764*^9, {3.4190971534375*^9, 3.419097213421875*^9}, {
+   3.419460491538209*^9, 3.419460574491334*^9}, {3.419460606022584*^9, 
+   3.419460620460084*^9}, {3.419460652241334*^9, 3.419460701272584*^9}, {
+   3.419460731710084*^9, 3.419460799569459*^9}, {3.42028048225*^9, 
+   3.420280488984375*^9}, {3.420280592984375*^9, 3.420280602453125*^9}, 
+   3.420283509484375*^9, 3.522706404765625*^9, 3.52277559284375*^9, 
+   3.52296025009375*^9},
+ FormatType->"InputForm",
+ CellID->288629274],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"f", "[", "x_", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"-", "0.5"}], " ", "+", " ", 
+   RowBox[{"0.5", "*", "x"}], " ", "+", " ", 
+   RowBox[{"0.2", "*", 
+    RowBox[{"x", "^", "2"}]}], " ", "-", " ", 
+   RowBox[{"0.21", "*", 
+    RowBox[{"x", "^", "3"}]}], " ", "-", " ", 
+   RowBox[{"0.015", "*", 
+    RowBox[{"x", "^", "4"}]}], " ", "+", " ", 
+   RowBox[{"0.01", "*", 
+    RowBox[{"x", "^", "5"}]}]}]}]], "PluginEmbeddedContent",
+ Deployed->True,
+ Evaluatable->True,
+ CellChangeTimes->{3.522706404765625*^9, 3.522960250140625*^9},
+ FormatType->"InputForm",
+ CellID->10689816],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"SDM", "[", 
+    RowBox[{"f", ",", " ", 
+     RowBox[{"n", " ", "+", " ", "1"}], ",", " ", 
+     RowBox[{"-", "4"}], ",", " ", "4", ",", " ", 
+     RowBox[{"-", "4"}], ",", " ", "4", ",", " ", "500", ",", " ", "p"}], 
+    "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", " ", "2", ",", " ", "\"\<number of derivatives\>\""}],
+       "}"}], ",", " ", "\n", "   ", 
+     RowBox[{"Range", "[", 
+      RowBox[{"0", ",", " ", "4"}], "]"}], ",", " ", 
+     RowBox[{"ControlType", " ", "->", " ", "RadioButton"}]}], "}"}], ",", 
+   " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"p", ",", " ", "4", ",", " ", "\"\<from x = -4 to 4\>\""}], 
+      "}"}], ",", " ", 
+     RowBox[{
+      RowBox[{"-", "4"}], " ", "+", " ", "0.001"}], ",", " ", "\n", "   ", 
+     "4"}], "}"}], ",", " ", 
+   RowBox[{"FrameLabel", " ", "->", " ", 
+    RowBox[{"StringForm", "[", 
+     RowBox[{"\"\<f(x) = `` and its derivatives \>\"", ",", " ", "\n", "    ", 
+      RowBox[{
+       RowBox[{"-", "0.5"}], " ", "+", " ", 
+       RowBox[{"0.5", "*", "x"}], " ", "+", " ", 
+       RowBox[{"0.2", "*", 
+        RowBox[{"x", "^", "2"}]}], " ", "-", " ", 
+       RowBox[{"0.21", "*", 
+        RowBox[{"x", "^", "3"}]}], " ", "-", " ", 
+       RowBox[{"0.015", "*", 
+        RowBox[{"x", "^", "4"}]}], " ", "+", " ", 
+       RowBox[{"0.01", "*", 
+        RowBox[{"x", "^", "5"}]}]}]}], "]"}]}], ",", " ", "\n", "  ", 
+   RowBox[{"ControlPlacement", " ", "->", " ", "Bottom"}], ",", " ", 
+   RowBox[{"Frame", " ", "->", " ", "True"}], ",", " ", 
+   RowBox[{"Paneled", " ", "->", " ", "False"}], ",", " ", "\n", "  ", 
+   RowBox[{"AutorunSequencing", " ", "->", " ", 
+    RowBox[{"{", "2", "}"}]}], ",", " ", 
+   RowBox[{"ControllerLinking", " ", "->", " ", "True"}], ",", " ", 
+   RowBox[{"SaveDefinitions", " ", "->", " ", "True"}]}], 
+  "]"}]], "PluginEmbeddedContent",
+ Deployed->True,
+ Evaluatable->True,
+ CellChangeTimes->{
+  3.35696210375764*^9, 3.419458311569459*^9, 3.419459008475709*^9, {
+   3.419459999538209*^9, 3.419460022350709*^9}, {3.42028358103125*^9, 
+   3.4202836225*^9}, {3.420283772265625*^9, 3.420283796796875*^9}, 
+   3.52258231221875*^9, 3.52270640478125*^9, 3.522960250140625*^9},
+ FormatType->"InputForm"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"SDM", "[", 
+    RowBox[{"f", ",", " ", 
+     RowBox[{"n", " ", "+", " ", "1"}], ",", " ", 
+     RowBox[{"-", "4"}], ",", " ", "4", ",", " ", 
+     RowBox[{"-", "4"}], ",", " ", "4", ",", " ", "500", ",", " ", "p"}], 
+    "]"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", " ", "1", ",", " ", "\"\<number of derivatives\>\""}],
+       "}"}], ",", " ", "\n", "   ", 
+     RowBox[{"{", 
+      RowBox[{
+      "0", ",", " ", "1", ",", " ", "2", ",", " ", "3", ",", " ", "4"}], 
+      "}"}], ",", " ", 
+     RowBox[{"ControlType", " ", "->", " ", "RadioButton"}]}], "}"}], ",", 
+   " ", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"p", ",", " ", "4.", ",", " ", "\"\<from x = -4 to 4\>\""}], 
+      "}"}], ",", " ", 
+     RowBox[{"-", "3.999"}], ",", " ", "\n", "   ", "4"}], "}"}], ",", " ", 
+   RowBox[{"FrameLabel", " ", "->", " ", 
+    RowBox[{"StringForm", "[", 
+     RowBox[{"\"\<f(x) = `` and its derivatives \>\"", ",", " ", "\n", "    ", 
+      RowBox[{
+       RowBox[{"-", "0.5"}], " ", "+", " ", 
+       RowBox[{"0.5", "*", "x"}], " ", "+", " ", 
+       RowBox[{"0.2", "*", 
+        RowBox[{"x", "^", "2"}]}], " ", "-", " ", 
+       RowBox[{"0.21", "*", 
+        RowBox[{"x", "^", "3"}]}], " ", "-", " ", 
+       RowBox[{"0.015", "*", 
+        RowBox[{"x", "^", "4"}]}], " ", "+", " ", 
+       RowBox[{"0.01", "*", 
+        RowBox[{"x", "^", "5"}]}]}]}], "]"}]}], ",", " ", "\n", "  ", 
+   RowBox[{"ControlPlacement", " ", "->", " ", "Bottom"}], ",", " ", 
+   RowBox[{"Frame", " ", "->", " ", "True"}], ",", " ", 
+   RowBox[{"Paneled", " ", "->", " ", "False"}], ",", " ", "\n", "  ", 
+   RowBox[{"AutorunSequencing", " ", "->", " ", 
+    RowBox[{"{", "2", "}"}]}], ",", " ", 
+   RowBox[{"ControllerLinking", " ", "->", " ", "True"}], ",", " ", "\n", 
+   "  ", 
+   RowBox[{"Initialization", " ", ":>", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"SDM", "[", 
+        RowBox[{
+        "f_", ",", " ", "n_", ",", " ", "a_", ",", " ", "b_", ",", " ", "c_", 
+         ",", " ", "d_", ",", " ", "s_", ",", " ", "e_"}], "]"}], " ", ":=", 
+       " ", "\n", "     ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"r", " ", ":=", " ", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"d", " ", "-", " ", "c"}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{"b", " ", "-", " ", "a"}], ")"}]}]}], ";", " ", 
+         RowBox[{"Show", "[", 
+          RowBox[{
+           RowBox[{"Plot", "[", 
+            RowBox[{
+             RowBox[{"Evaluate", "[", 
+              RowBox[{"Take", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"f", "[", "x", "]"}], ",", " ", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", "f", "]"}], 
+                   "[", "x", "]"}], ",", " ", "\n", "           ", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", 
+                    RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", "f", "]"}], 
+                    "]"}], "[", "x", "]"}], ",", " ", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", 
+                    RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", "\n", 
+                    "              ", 
+                    RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", "f", "]"}], 
+                    "]"}], "]"}], "[", "x", "]"}], ",", " ", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", 
+                    RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", 
+                    RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", "\n", 
+                    "               ", 
+                    RowBox[{
+                    RowBox[{"Derivative", "[", "1", "]"}], "[", "f", "]"}], 
+                    "]"}], "]"}], "]"}], "[", "x", "]"}]}], "}"}], ",", " ", 
+                "n"}], "]"}], "]"}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"x", ",", " ", "a", ",", " ", "e"}], "}"}], ",", " ", 
+             RowBox[{"PlotRange", " ", "->", " ", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{"a", ",", " ", "b"}], "}"}], ",", " ", 
+                RowBox[{"{", 
+                 RowBox[{"c", ",", " ", "d"}], "}"}]}], "}"}]}], ",", " ", 
+             "\n", "        ", 
+             RowBox[{"AspectRatio", " ", "->", " ", "r"}], ",", " ", 
+             RowBox[{"ImageSize", " ", "->", " ", 
+              RowBox[{"{", 
+               RowBox[{"s", ",", " ", 
+                RowBox[{"r", "*", "s"}]}], "}"}]}], ",", " ", 
+             RowBox[{"PlotStyle", " ", "->", " ", 
+              RowBox[{"{", 
+               RowBox[{
+               "Blue", ",", " ", "Red", ",", " ", "Green", ",", " ", "Brown", 
+                ",", " ", "\n", "          ", "Purple"}], "}"}]}]}], "]"}], 
+           ",", " ", 
+           RowBox[{"Graphics", "[", 
+            RowBox[{"Take", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<f\>\"", ",", " ", "Blue", ",", " ", "14"}], 
+                   "]"}], ",", " ", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "3.9"}], ",", " ", "1"}], "}"}]}], "]"}], 
+                ",", " ", "\n", "          ", 
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<f'\>\"", ",", " ", "Red", ",", " ", "14"}], 
+                   "]"}], ",", " ", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "3.75"}], ",", " ", "2.2"}], "}"}]}], "]"}], 
+                ",", " ", 
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Style", "[", 
+                   RowBox[{"\"\<f''\>\"", ",", " ", "Green", ",", " ", "14"}],
+                    "]"}], ",", " ", "\n", "           ", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "3"}], ",", " ", 
+                    RowBox[{"-", "2"}]}], "}"}]}], "]"}], ",", " ", 
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Style", "[", 
+                   RowBox[{
+                   "\"\<f'''\>\"", ",", " ", "Brown", ",", " ", "14"}], "]"}],
+                   ",", " ", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "1.9"}], ",", " ", "2.2"}], "}"}]}], "]"}], 
+                ",", " ", "\n", "          ", 
+                RowBox[{"Text", "[", 
+                 RowBox[{
+                  RowBox[{"Style", "[", 
+                   RowBox[{
+                   "\"\<f''''\>\"", ",", " ", "Purple", ",", " ", "14"}], 
+                   "]"}], ",", " ", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"-", "2.6"}], ",", " ", 
+                    RowBox[{"-", "3.8"}]}], "}"}]}], "]"}]}], "}"}], ",", " ",
+               "n"}], "]"}], "]"}], ",", " ", "\n", "       ", 
+           RowBox[{"ImageSize", " ", "->", " ", 
+            RowBox[{"{", 
+             RowBox[{"s", ",", " ", 
+              RowBox[{"r", "*", "s"}]}], "}"}]}]}], "]"}]}], ")"}]}], ",", 
+      " ", 
+      RowBox[{
+       RowBox[{"f", "[", "x_", "]"}], " ", ":=", " ", 
+       RowBox[{
+        RowBox[{"-", "0.5"}], " ", "+", " ", 
+        RowBox[{"0.5", "*", "x"}], " ", "+", " ", 
+        RowBox[{"0.2", "*", 
+         RowBox[{"x", "^", "2"}]}], " ", "-", " ", 
+        RowBox[{"0.21", "*", 
+         RowBox[{"x", "^", "3"}]}], " ", "-", " ", "\n", "      ", 
+        RowBox[{"0.015", "*", 
+         RowBox[{"x", "^", "4"}]}], " ", "+", " ", 
+        RowBox[{"0.01", "*", 
+         RowBox[{"x", "^", "5"}]}]}]}], ",", " ", 
+      RowBox[{"r", " ", ":=", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"4", " ", "+", " ", "0"}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"4", " ", "+", " ", "0"}], ")"}]}]}], ",", " ", 
+      RowBox[{
+       RowBox[{"Attributes", "[", "Derivative", "]"}], " ", "=", " ", "\n", 
+       "     ", 
+       RowBox[{"{", 
+        RowBox[{"NHoldAll", ",", " ", "ReadProtected"}], "}"}]}]}], "}"}]}]}],
+   "]"}]], "PluginEmbeddedContent",
+ Deployed->True,
+ Evaluatable->True,
+ CellChangeTimes->{
+  3.5225822886875*^9, 3.522706301328125*^9, 3.522706404796875*^9, {
+   3.522775511421875*^9, 3.522775523203125*^9}, 3.522960250171875*^9},
+ FormatType->"InputForm"]
+},
+WindowSize->{835, 805},
+WindowMargins->{{208, Automatic}, {Automatic, 4}},
+ShowCellTags->True,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 357, 7, 15, "PluginEmbeddedContent",
+ Evaluatable->True],
+Cell[917, 29, 4933, 125, 112, "PluginEmbeddedContent",
+ Evaluatable->True,
+ CellID->288629274],
+Cell[5853, 156, 619, 18, 15, "PluginEmbeddedContent",
+ Evaluatable->True,
+ CellID->10689816],
+Cell[6475, 176, 2321, 55, 96, "PluginEmbeddedContent",
+ Evaluatable->True],
+Cell[8799, 233, 8969, 214, 304, "PluginEmbeddedContent",
+ Evaluatable->True]
+}
+]
+*)
+
+(* End of internal cache information *)

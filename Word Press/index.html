@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Gyre&amp;Gimble | math, language and other things that may show up in the wabe</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/Word%20Press/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="/Word%20Press/wp-content/themes/twentyfourteen/js/html5.js"></script>
+	<![endif]-->
+	
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processEscapes: true}});
+</script>
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//d1xnn692s7u6t6.cloudfront.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Gyre&amp;Gimble &raquo; Feed" href="/Word%20Press/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="Gyre&amp;Gimble &raquo; Comments Feed" href="/Word%20Press/?feed=comments-rss2" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.abstractmath.org\/Word%20Press\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.5"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='twentyfourteen-jetpack-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/jetpack/modules/theme-tools/compat/twentyfourteen.css?ver=3.8.3' type='text/css' media='all' />
+<link rel='stylesheet' id='social-widget-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/social-media-widget/social_widget.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-lato-css'  href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900%2C300italic%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/jetpack/_inc/genericons/genericons/genericons.css?ver=3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfourteen-style-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/themes/twentyfourteen/style.css?ver=4.7.5' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfourteen-ie-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/themes/twentyfourteen/css/ie.css?ver=20131205' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='kindle-style-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/send-to-kindle/media/kindle.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='fonts-google-css-css'  href='http://fonts.googleapis.com/css?family=Cabin%3A400%2C700%2C600&#038;ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wm-awesome-css-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/wp-quick-organizational-tree/lib/font-awesome/css/font-awesome.min.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wm-jstree-proton-theme-css-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/wp-quick-organizational-tree/lib/jstree-bootstrap-theme/src/themes/proton/style.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='jstree-css-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/wp-quick-organizational-tree/lib/jstree/dist/themes/default/style.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wm-css-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/wp-quick-organizational-tree/css/css.css?ver=4.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://www.abstractmath.org/Word%20Press/wp-content/plugins/jetpack/css/jetpack.css?ver=3.8.3' type='text/css' media='all' />
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script><script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML%2CSafe.js&#038;ver=4.7.5'></script>
+<script type='text/javascript' src='http://www.abstractmath.org/Word%20Press/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.abstractmath.org/Word%20Press/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.abstractmath.org/Word%20Press/wp-content/plugins/wp-quick-organizational-tree/js/js.js?ver=4.7.5'></script>
+<link rel='https://api.w.org/' href='http://www.abstractmath.org/Word%20Press/?rest_route=/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/Word%20Press/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/Word%20Press/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.7.5" />
+<link rel='shortlink' href='http://wp.me/5i2jD' />
+<style type='text/css'>img#wpstats{display:none}</style>	<style type="text/css" id="twentyfourteen-header-css">
+			.site-title a {
+			color: #dda44d;
+		}
+		</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #2b89bf; }
+</style>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Gyre&amp;Gimble" />
+<meta property="og:description" content="math, language and other things that may show up in the wabe" />
+<meta property="og:url" content="http://www.abstractmath.org/Word%20Press/" />
+<meta property="og:site_name" content="Gyre&amp;Gimble" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+			<link rel="stylesheet" id="custom-css-css" type="text/css" href="/Word%20Press/?custom-css=1&#038;csblog=1&#038;cscache=6&#038;csrev=2" />
+			</head>
+
+<body class="home blog custom-background group-blog masthead-fixed list-view slider">
+<div id="page" class="hfeed site">
+	
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-main">
+			<h1 class="site-title"><a href="/Word%20Press/" rel="home">Gyre&amp;Gimble</a></h1>
+
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text" aria-expanded="false" aria-controls="search-container">Search</a>
+			</div>
+
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle">Primary Menu</button>
+				<a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+				<div id="primary-menu" class="nav-menu"><ul>
+<li class="page_item page-item-9015"><a href="/Word%20Press/?page_id=9015">My stuff on the web</a></li>
+<li class="page_item page-item-2131"><a href="/Word%20Press/?page_id=2131">Permissions</a></li>
+</ul></div>
+			</nav>
+		</div>
+
+		<div id="search-container" class="search-box-wrapper hide">
+			<div class="search-box">
+				<form role="search" method="get" class="search-form" action="http://www.abstractmath.org/Word%20Press/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>			</div>
+		</div>
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
+
+<div id="main-content" class="main-content">
+
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+		
+<article id="post-10179" class="post-10179 post type-post status-publish format-standard hentry category-exposition category-language-of-math category-math category-student-difficulties category-understanding-math tag-divide tag-fraction tag-integer tag-symbol">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=7" rel="category">exposition</a>, <a href="/Word%20Press/?cat=10" rel="category">language of math</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=960" rel="category">student difficulties</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10179" rel="bookmark">The most confusing notation in number theory</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10179" rel="bookmark"><time class="entry-date" datetime="2017-01-17T10:15:52+00:00">2017/01/17</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10179#comments">4 Comments</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10179' ></g:plusone></div> <p>This is an observation in abstractmath that I think needs to be publicized more:</p>
+<p>Two symbols used in the study of <a href="https://en.wikipedia.org/wiki/Integer">integers</a> are notorious for their confusing similarity. </p>
+<ul>
+<li>The expression &#8220;$m/n$&#8221; is a <b>term</b> denoting the number obtained by dividing $m$ by $n$.  Thus &#8220;$12/3$&#8221; denotes $4$ and &#8220;$12/5$&#8221; denotes the number $2.4$.</li>
+<li>The expression &#8220;$m|n$&#8221; is the <b>assertion</b> that &#8220;$m$ <a href="https://en.wikipedia.org/wiki/Division_(mathematics)">divides</a> $n$ with no remainder&#8221;.  So for example &#8220;$3|12$&#8221;, read &#8220;$3$ divides $12$&#8221; or &#8220;$12$ is a multiple of $3$&#8221;, is a <i>true</i> statement and &#8220;$5|12$&#8221; is a <i>false</i> statement.</li>
+</ul>
+<p>Notice that $m/n$ is an integer if and only if $n|m$. Not only is $m/n$ a <i>number</i> and $n|m$ a <i>statement</i>, but the statement &#8220;the first one is an integer if and only if the second one is true&#8221; is correct <span class=purple>only after the $m$ and $n$ are switched!</span> </p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=divide" rel="tag">divide</a><a href="/Word%20Press/?tag=fraction" rel="tag">fraction</a><a href="/Word%20Press/?tag=integer" rel="tag">integer</a><a href="/Word%20Press/?tag=symbol" rel="tag">symbol</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10163" class="post-10163 post type-post status-publish format-standard hentry category-abstractmathorg category-category-theory category-language-of-math category-math category-student-difficulties category-understanding-math tag-category tag-codomain tag-definition-of-function tag-domain tag-formla tag-function tag-functional-property tag-graph tag-identity-function tag-inclusion-function tag-input tag-mathematical-structure tag-multivalued-function tag-partial-function tag-specification tag-value-of-function">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=3" rel="category">abstractmath.org</a>, <a href="/Word%20Press/?cat=5" rel="category">category theory</a>, <a href="/Word%20Press/?cat=10" rel="category">language of math</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=960" rel="category">student difficulties</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10163" rel="bookmark">Definition of function</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10163" rel="bookmark"><time class="entry-date" datetime="2017-01-12T15:21:21+00:00">2017/01/12</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10163#respond">Leave a comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10163' ></g:plusone></div> <p>Note: This is a revision of the article on specification and definition of functions from abstractmath.org. Many of the links in this article take you to other articles in abstractmath.org.</p>
+<p><center></p>
+<table border='0'>
+<tr>
+<td>
+<p class='purpleprose'>
+A function is a <a href="/MM/MMImagesMetaphorsFunctions.htm#mathobject">mathematical object</a>.
+</p>
+</td>
+</tr>
+</table>
+<p></center></p>
+<p class='blue'>To deal with functions as a math object, you need a precise definition of &#8220;function&#8221;.  That is what this article gives you.
+</p>
+<ul>
+<li class='blue'> The article starts by giving a <a href="/MM/MMDefs.htm#specifications">specification</a> of   &#8220;function&#8221;.</li>
+<li class='blue'> After that, we get into the technicalities of the<br />
+<a href="/MM/MMDefs.htm">definitions</a> of the general concept of function.
+    </li>
+<li class='blue'> Things get complicated because there are several inequivalent definitions of &#8220;function&#8221; in common use.
+</li>
+</ul>
+<p><a name="specification"></a></p>
+<p><a name="value"></a></p>
+<h2>Specification of &#8220;function&#8221;</h2>
+<p> A function $f$ is a <a href="/MM/MMMathObj.htm">mathematical object</a> which <i><b>determines and is completely determined by</b></i> the following data:
+  </p>
+<p><a name="domain"></a><br />
+<a name="codomain"></a>  </p>
+<ul class=bluenodot>
+<li>(<font color="#911B1B">DOM</font>) $f$ has a <font color="#911B1B">domain</font>, which is a set. The domain may be denoted by $\text{dom} f$.</li>
+<li>(<font color="#911B1B">COD</font>) $f$ has a <font color="#911B1B">codomain</font>, which is also a set and may be denoted by $\text{cod} f$.</li>
+<p><a name="value"></a></p>
+<li>(<font color="#911B1B">VAL</font>) For each element $a$ of the domain of $f$, $f$ has a <font color="#911B1B">value</font> at $a$.</li>
+<li>(<font color="#911B1B">FP</font>) The <font color="#911B1B">value</font> of $f$ at $a$ is<br />
+ completely determined by $a$ and $f$.</li>
+<li>(<font color="#911B1B">VIC</font>) The value of $f$ at $a$ must be an element of the codomain of $f$.</li>
+</ul>
+<p><a name="evaluate"></a></p>
+<ul>
+<li>The value of $f$ at $a$ is most cohttp://www.abstractmath.org/MM/MMonly written $f(a)$, but see <a href="/MM/MMFuncNotation.htm#nameandvalue">Functions: Notation and Terminology</a>.</li>
+<li>To <b>evaluate</b> $f$ at $a$ means to determine $f(a)$. The two examples of functions below show that different functions may have different strategies for evaluating them.</li>
+<p><a name="input"></a></p>
+<li>In the expression &#8220;$f(a)$&#8221;, $a$ is called the <b>input</b> or (old-fashioned) <a href="/MM/MMGlossary.htm#argument">argument</a> of $f$.</li>
+<li>&#8220;FP&#8221; means <a href=#functionalproperty>functional property</a>.</li>
+<li>&#8220;VIC&#8221; means &#8220;value in codomain&#8221;.</li>
+</ul>
+<h3>Examples</h3>
+<p>I give two examples here. The <a href="/MM/MMFuncExamples.htm">examples of functions</a> chapter contains many other examples.
+</p>
+<h4>A finite function</h4>
+<p>Let $F$ be the function defined on the set $\left\{\text{a},\text{b},\text{c},\text{d}\right\}$ as follows:  \[F(\text{a})=\text{a},\,\,\,F(\text{b})=\text{c},\,\,\,F(\text{c})=\text{c},\,\,\,F(\text{d})=\text{b}\]In this definition, $\text{a},\text{b},\text{c},\text{d}$ are letters of the alphabet, not <a href="/MM/MMVarSub.htm#variable">variables</a>. This is the function called &#8220;<a href="/MM/MMFuncExamples.htm#finite">Finite</a>&#8221; in the chapter on examples of functions.</p>
+<ul>
+<li> The definition of  $F$ says &#8220;$F$ is defined on the set $\left\{\text{a},\,\text{b},\,\text{c},\,\text{d} \right\}$&#8221;.  The phrase &#8220;is defined on&#8221;<br />
+<b><i>means</i></b> that the domain is that set. That is standard terminology.</li>
+<li>The value of $F$ at each element of the domain is given <i>explicitly</i>.  The value at<br />
+$\text{b}$, for example, is $\text{c}$, <i>because the definition says that $F(\text{b}) = \text{c}$</i>. No other reason needs to be given.  Mathematical definitions can be <a href="/MM/MMGlossary.htm#arbitrary">arbitrary</a>.</li>
+<li>The codomain of $F$ is not specified, but must <a href="/MM/MMSetSubset.htm#include">include</a> the set $\{\text{a},\text{b},\text{c}\}$. The codomain of a function is often not specified when it is not important, which is most of the time in freshman calculus (for example).
+</li>
+<li>The diagram below shows how $F$ obeys the rule that the value of an element $x$ in the domain is completely determined by $x$ and $F$.</li>
+<p><img src="/MM/Mathematica/Examples of Functions/FuncSpecFunction.png"/></p>
+<li>If two arrows had started from the same element of the domain, then $F$ would not be a function. (It would be a <a href="#multivaluedfunction">multivalued function</a>).</li>
+<li>If there were an element of the domain that no arrow started from, it $F$ would not be a function. (It would be a <a href="#partialfunction">partial function</a>.)</li>
+<li>In this example, to <b>evaluate</b> $F$ at $b$ (to determine the value of $F$ at $b$) means to look at the definition of $F$, which says among other things that the value is $c$ (or alternatively, look at the diagram above and see what letter the arrow starting at $b$ points to). In this case, &#8220;evaluation&#8221; does not imply calculating a formula.</li>
+</ul>
+<h4>A real-valued function</h4>
+<p>Let $G$ be the real-valued function defined by the formula $G(x)={{x}^{2}}+2x+5$.</p>
+<ul>
+<li> The definition of  $G$   gives the value at each element of the domain <i><b>by a formula</b></i>.  The <b>value</b> at $3$, for example, is obtained by calculating \[G(3)=3^2+2\cdot3+5=20\]</li>
+<li>The definition of  $G$<br />
+does not specify the domain.  The convention in the case of functions defined on the <a href="/MM/MMRealNumbers.htm">real numbers</a> by a formula is to take the domain to be <i><b>all real numbers at which the formula is defined</b></i>.  In this case, that is <i><b>every</b></i> real number, so the domain is $\mathbb{R}$.</li>
+<li>The definition of $G$ does not specify the codomain, either. However, the codomain must include all real numbers greater than or equal to $4$.  (Why?)</li>
+<li>So if an author wrote, &#8220;Let $H(x)=\frac{1}{x}$&#8221;, the domain would be the set of all real numbers except $0$.  But a <i>careful</i> author would write,  &#8220;Let $H(x)=\frac{1}{x}$ ($x\neq0$).&#8221;</li>
+</ul>
+<h3>What the specification means  </h3>
+<ul>
+<li>The specification guarantees that a function satisfies <b><i>all five of the properties listed</i></b>.</li>
+<li>The specification <b><i>does not define a mathematical structure</i></b> in the way mathematical structures have been defined in the past: In particular, it does not require a function to be one or more <a href="/MM/MMMathStructure.htm">sets with structure.</a>
+</li>
+<li>Even so, it is useful to have the specification, because:<br />
+<center></p>
+<table border='0'>
+<tr>
+<td>
+<p class='purpleprose'>
+Many mathematical definitions<br /> introduce extraneous technical elements<br /> which clutter up your thinking<br /> about the object  they define.</p>
+</td>
+</tr>
+</table>
+<p></center>
+</li>
+</ul>
+<p><a name="history"> </a><a name="formula"></a></p>
+<h2>History</h2>
+<p class=smallind>The discussion below is an over&shy;simpli&shy;fication of the history of mathe&shy;matics, which many people have written thick books about. A book relevant to these ideas is <a href="http://www.amazon.com/Platos-Ghost-Modernist-Transformation-Mathematics/dp/0691136106/ref=sr_1_2?ie=UTF8&#038;qid=1372381598&#038;sr=8-2&#038;keywords=jeremy+gray">Plato&#8217;s Ghost</a>, by Jeremy Gray.</p>
+<p>
+Until late in the nineteenth century, functions were usually thought of as defined by formulas (including infinite series). Problems arose in the theory of <a href="http://en.wikipedia.org/wiki/Harmonic_analysis">harmonic analysis</a> which made mathematicians require a more general notion of function.  They came up with the concept of function as a set of ordered pairs with the functional property (discussed below), and that understanding <i>revolutionized our understanding of math.</i>
+</p>
+<p>
+In particular, this definition, along with the use of <a href="/MM/MMSets.htm">set theory</a>, enabled <b>abstract math</b> (ahem) to become a cohttp://www.abstractmath.org/MM/MMon tool for understanding math and proving theorems.   It is conceivable that some readers may wish it hadn&#8217;t.  Well, tough.
+</p>
+<p>
+The <a href= #moderndefinition> modern definition</a> of function given here (which builds on the ordered pairs with functional property definition)  came into use beginning in the 1950&#8217;s.  The modern definition became necessary in algebraic topology and is widely used in many fields today.
+</p>
+<p>The concept of function as a formula never disappeared entirely, but was studied mostly by logicians who generalized it to the study of function-as-<a href="/MM/MMGlossary.htm#algorithm">algorithm</a>.  Of course, the study of algorithms is one of the central topics of modern computing science, so the notion of function-as-formula (updated to function-as-algorithm) has achieved a new importance in recent years.</p>
+<p>To state both the definition, we need a preliminary idea.
+</p>
+<p><a name="funcprop"></a><br />
+<a name="functionalproperty"></a></p>
+<h2>The functional property</h2>
+<p> A set $P$ of <a href="http://en.wikipedia.org/wiki/Orded_pair">ordered pairs</a> has the <b>functional property</b> if <a href="/MM/MMGlossary.htm#two">two</a> pairs in $P$ with the same first coordinate have to have the same second coordinate (which means they are the same pair). In other words, if $(x,a)$ and $(x,b)$ are both in $P$, then $a=b$.
+   </p>
+<h4>How to think about the functional property</h4>
+<p>  The point of the functional property is that for any pair in the set of ordered pairs, <i>the first coordinate determines what the second one is</i> (which is just what requirement FP says in the <a href="#specification">specification</a>).  That&#8217;s why you can write &#8220;$G(x)$&#8221; for any $x$ in the domain of $G$ and not be ambiguous.
+</p>
+<h4>Examples</h4>
+<ul>
+<li> The set $\{(1,2), (2,4), (3,2), (5,8)\}$ has the functional property, since no two different pairs have the same first coordinate. Note that  there are two different pairs with the same <i><b>second </b></i> coordinate.  <span class=purple>This is irrelevant to the functional property.</span></li>
+<li> The set $\{(1,2), (2,4), (3,2), (2,8)\}$ does <i><b>not</b></i> have the functional property.  There are two different pairs with first coordinate 2.</li>
+<li> The empty set $\emptyset$ has the function property <a href="/MM/MMConditional.htm#vacuoustruth">vacuously</a>.</li>
+</ul>
+<h4>Example: graph of a function defined by a formula</h4>
+<p class=headed><img align=left
+src="/MM/Mathematica/Specification of Functions/Quadratic Graph.png"/><br />
+In calculus books, a picture like this one (of part of $y=x^2+2x+5$) is called a <b>graph</b>. Here I use the word &#8220;graph&#8221; to denote the <b>set of ordered pairs</b><br />
+ \[\left\{ (x,{{x}^{2}}+2x+5)\,\mathsf{|}\,x\in \mathbb{R } \right\}\]<br />
+which is a <a href="/MM/MMMathObj.htm">mathematical object</a> rather than some ink on a page or pixels on a screen.
+</p>
+<p>The graph of any function studied in beginning calculus has the functional property. For example, the set of ordered pairs above has the functional property because if $x$ is any real number, the formula ${{x}^{2}}+2x+5$ defines a <i><b>specific real number</b></i>.</p>
+<ul>
+<li> if $x = 0$, then ${{x}^{2}}+2x+5=5$, so the pair $(0, 5)$ is an element of the graph of $G$. Each time you plug in $0$ in the formula you get 5.</li>
+<li> if $x = 1$, then ${{x}^{2}}+2x+5=8$.</li>
+<li> if $x = -2$, then ${{x}^{2}}+2x+5=5$.</li>
+</ul>
+<p>
+You can measure where the point $\{-2,5\}$ is on the (picture of) the graph and see that it is on the blue curve as it should be. No other pair whose first coordinate is $-2$ is in the graph of $G$, only $(-2, 5)$.  That is because when you plug $-2$ into the formula ${{x}^{2}}+2x+5$, you get $5$ and nothing else.  Of course, $(0, 5)$ is in the graph, but that does not contradict the functional property.   $(0, 5)$ and $(-2, 5)$ have the same <i>second</i> coordinate, but that is OK.
+</p>
+<p><a name="graph"></a><br />
+<a name='moderndefinition'><br />
+</a><a name="definitionoffunction"></a></p>
+<h2>Mathematical definition of function</h2>
+<p> A <b>function</b> $f$ is a<br />
+    <a href="/MM/MMMathStructure.htm">mathematical structure</a> consisting of the following objects:</p>
+<ul>
+<li> A set called the <b>domain of $f$</b>, denoted by $\text{dom} f$.</li>
+<li> A set called the <b>codomain of $f$</b>, denoted by $\text{cod} f$.</li>
+<li> A set of ordered pairs called the <b>graph of $ f$</b>, with the following properties:</li>
+</ul>
+<ul>
+<li>$\text{dom} f$ \text{dom} fis the set of all first coordinates of pairs in the graph of $f$.</li>
+<li> Every second coordinate of a pair in the graph of $f$ is in $\text{cod} f$ (but $\text{cod} f$ may contain other elements).</li>
+<li> The graph of $f$ has the <a href="/MM/MMFuncSpec.htm#funcprop">functional property.</a></li>
+</ul>
+<p> Using <a href="/MM/MMFuncNotation.htm#arrownotation">arrow notation</a>, this implies that $f:\text{dom}f\to\text{cod} f$.
+</p>
+<h4>Remark</h4>
+<p>The main difference between the specification of function given previously and this definition is that the definition replaces the statement &#8220;$f$ has a value at $a$&#8221; by introducing a set of ordered pairs (the graph) with the functional property.</p>
+<ul>
+<li>  This set of ordered pairs is <span class=purple>extra structure</span> introduced by the definition <i>mainly in order to make the definition a classical sets-with-structure</i>.</li>
+<li>This makes the graph, which should be a concept <i>derived from</i> the concept of function, appear to be a <i>necessary</i> part of the function.</li>
+<li>That suggests incorrectly that the graph is <i>more of a primary intuition</i> that other intuitions such as function as <a href="/MM/MMImagesMetaphorsFunctions.htm#map">map</a>, function as <a href="/MM/MMImagesMetaphorsFunctions.htm#transformer">transformer</a>, and other points of view discussed in the article <a href="/MM/MMImagesMetaphorsFunctions.htm">Images and meta&shy;phors for functions</a>.</li>
+<li>The concept of graph of a function is indeed an important intuition, and is discussed with examples in the articles <a href="/MM/MMFunctionRepresentations.htm#graphsofcontinuousfunctions">Graphs of continuous functions</a> and <a href="/MM/MMFunctionRepresentations.htm#graphsoffinitefunctions">Graphs of finite functions</a>.</li>
+<li>Nevertheless, the fact that the concept of graph appears in the definition of function does not make it the <i>most</i> <a href="/MM/MMDefs.htm#sourceofunderstanding">important intuition</a>.
+</li>
+</ul>
+<h3>Examples</h3>
+<ul>
+<li> Let $F$ have graph $\{(1,2), (2,4), (3,2), (5,8)\}$ and define $A = \{1, 2, 3, 5\}$ and $B = \{2, 4, 8\}$.  Then $F:A\to B$ is a function. In speaking, we would usually say, &#8220;$F$ is a function from $A$ to $B$.&#8221;</li>
+<li> Let $G$ have graph $\{(1,2), (2,4), (3,2), (5,8)\}$ (same as above), and define $A = \{1, 2, 3, 5\}$ and $C = \{2, 4, 8, 9, 11, \pi, 3/2\}$.  Then $G:A\to C$ is a (admittedly ridiculous) function.  Note that all the second coordinates of the graph are in the codomain $C$, along with a bunch of miscellaneous suspicious characters that are <i><b>not</b></i> second coordinates of pairs in the graph.</li>
+<li> Let $H$ have graph $\{(1,2), (2,4), (3,2), (5,8)\}$. Then $H:A\to \mathbb{R}$ is a function, since $2$, $4$ and $8$ are all real numbers.
+</li>
+<li> Let $D = \{1, 2, 5\}$ and $E = \{1, 2, 3, 4, 5\}$.  <i><b>Then there is no function  $D\to A$ and no function $E\to A$ </b></i> with graph $\{(1,2), (2,4), (3,2), (5,8)\}$. Neither $D$ nor $E$ <i><b>has exactly the same</b></i> elements  as the first coordinates of the graph.</li>
+</ul>
+<h3>Identity and inclusion</h3>
+<p>
+    Suppose we have two sets  A and  B with $A\subseteq B$.</p>
+<ul>
+<li> The identity function on A is the function ${{\operatorname{id}}_{A}}:A\to A$ defined by ${{\operatorname{id}}_{A}}(x)=x$ for all $x\in A$.  (Many authors call it ${{1}_{A}}$).</li>
+<li> When $A\subseteq B$, the inclusion function from $A$ to $B$ is the function $i:A\to B$ defined by $i(x)=x$ for all $x\in A$.  Note that there is a different function for each pair of sets $A$ and $B$ for which $A\subseteq B$.  Some authors call it ${{i}_{A,\,B}}$ or $\text{in}{{\text{c}}_{A,\,B}}$.</li>
+</ul>
+<p>The identity function and an inclusion function for the same set $A$ have exactly the same graph, namely $\left\{ (a,a)|a\in A \right\}$. More about this below.</p>
+<p><a name='olderdefinition'></a></p>
+<h2>Other definitions of function</h2>
+<h3>Original abstract definition of function</h3>
+<h4>Definition</h4>
+<ul>
+<li>
+A <b>function</b> $f$ is a <b><i>set of ordered pairs with the functional property</i></b>.
+</li>
+<li> If $f$ is a function according to this definition, the <b>domain</b> of $f$ is the set of first coordinates of all the pairs in $f$.</li>
+<li> If $x\in \text{dom} f$, then we define the <b>value of $f$ at $x$</b>, denoted by $f(x)$, to be  <i><b>the second coordinate of the only ordered pair in $f$ whose first coordinate is $x$.</b></i></li>
+</ul>
+<h4>Remarks</h4>
+<ul>
+<li>
+This definition is still widely used in mathematical writing.
+</li>
+<li>
+Many authors do not tell you which definition they are using.
+</li>
+<li>
+For many purposes (including freshman calculus for the most part) <i>it does not matter</i> which definition is used.
+</li>
+<li>In some branches of math, the <a href="#moderndefinition">modern definition</a> adds great clarity to many complicated situations; using the older definition can even make it difficult to <i>describe</i> some important constructions. There is more about this in <a href="#newapproaches">New Approaches</a> below.</li>
+</ul>
+<h4>Possible confusion</h4>
+<p>
+Some confusion can result because of the presence of these two different definitions.</p>
+<ul>
+<li>
+For example, since the identity function ${{\operatorname{id}}_{A}}:A\to A$ and the inclusion function ${{i}_{A,\,B}}:A\to B$ have the same graph, users of the older definition are required in theory to say they are the <i>same function</i>.</li>
+<li> Also it requires you to say that the graph of a function is the same thing as the function.
+</li>
+<li>
+In my observation, this <i>does not make a problem in practice</i>, unless there is a <i>very picky person</i> in the room.
+</li>
+<li>
+It also appears to me that the modern definition is (quite rightly) <i>winning</i> and the original abstract definition is disappearing.
+</li>
+</ul>
+<p><a name="multivaluedfunction"></a></p>
+<h3>Multivalued function</h3>
+<p>
+The phrase <a href="http://en.wikipedia.org/wiki/Multivalued_function">multivalued function</a> refers to an object that is like a function $f:S\to T$ except that for $s\in S$, $f(s)$ may denote more than one value. </p>
+<h4>Examples</h4>
+<ul>
+<li>Multivalued functions arose in considering complex functions. In cohttp://www.abstractmath.org/MM/MMon practice, the symbol  $\sqrt{4}$ denoted $2$, although $-2$ is also a square root of $4$. But in complex function theory, the square root function takes on both the values $2$ and $-2$. This is discussed in detail in <a href="http://en.wikipedia.org/wiki/Square_root">Wikipedia</a>.
+</li>
+<li>The <a href="http://en.wikipedia.org/wiki/Antiderivative">antiderivative</a> is an example of a multivalued operator.  For any constant $C$, $\frac{x^3}{3}+C$ is an antiderivative of $x^2$, so that $\frac{x^3}{3}$, $\frac{x^3}{3}+42$, $\frac{x^3}{3}-1$ and $\frac{x^3}{3}+2\pi$ are among the infinitely many antiderivatives of $x^2$.
+</li>
+</ul>
+<p>A multivalued function $f:S\to T$ can be modeled as a function with domain $S$ and codomain the set of all subsets of $T$.  The two meanings are equivalent in a strong sense (<a href="http://en.wikipedia.org/wiki/Natural_equivalence">naturally equivalent</a>).  Even so, it seems to me that they represent two differ&shy;ent ways of <i>thinking about</i><br />
+multivalued functions.  (&#8220;The value may be any of these things&#8230;&#8221; as opposed to &#8220;The value is this whole set of things.&#8221;)</p>
+<p class='smallind' >
+Some older mathematical papers in <a href="http://en.wikipedia.org/wiki/Complex_analysis">com&shy;plex func&shy;tion theory</a> do not tell you that their functions are multi&shy;valued. There was a time when com&shy;plex func&shy;tion theory was such a Big Deal in research mathe&shy;matics that the phrase &#8220;func&shy;tion theory&#8221; <i>meant</i> complex func&shy;tion theory and every mathe&shy;ma&shy;tician with a Ph. D. <i>knew</i> that complex functions were multi&shy;valued.
+</p>
+<p> <a name="partialfunction"></a></p>
+<h3>Partial function</h3>
+<p>A <a href="http://en.wikipedia.org/wiki/Partial_function">partial function</a> $f:S\to T$ is just like a function except that its input may be defined on only a subset of $S$.  For example, the function $f(x):=\frac{1}{x}$ is a partial function from the real numbers to the real numbers.</p>
+<p>This models the behavior of computer programs (algorithms): if you consider a program with one input and one output as a function, it may not be defined on some inputs because for them it runs forever (or gives an error message).</p>
+<p>In some texts in computing science and mathematical logic, a function is by<br />
+<a href="/MM/MMVarMeanings.htm#convention">convention</a> a partial function, and this fact may not be mentioned explicitly, especially in research papers.</p>
+<p class='smallind'>The phrases &#8220;multivalued function&#8221; and &#8220;partial function&#8221; upset some picky types who say things like, &#8220;But a multi&shy;valued func&shy;tion is not a func&shy;tion!&#8221;.  A hot dog is not a dog, either. I once had a Russian teacher who was Polish and a German teacher who was Hungarian. So what? See the Hand&shy;book (click on<br />
+<a href="/Handbook/hyperhbk.pdf">radial category</a>).</p>
+<p><a name='newapp'></a><a name="newapproaches"></a></p>
+<h2>New approaches to functions</h2>
+</p>
+<p>All the definitions of function given here produce <a href="/MM/MMMathStructure.htm">mathematical structures</a>, using the traditional way to define mathematical objects in terms of <a href="/MM/MMSets.htm">sets</a>. Such definitions have <b>disadvantages</b>.
+</p>
+<p>Mathematicians have <a href="/MM/MMImagesMetaphorsFunctions.htm">many ways to think about functions</a>. That a function is a set of ordered pairs with a certain property (functional) and possibly some ancillary ideas (domain, codomain, and others) is <i>not the way we usually think about them</i>$\ldots$<i><b>Except</b></i> when we need to reduce the thing we are studying to its <i>absolutely most abstract form</i> to make sure our proofs are correct.<br />
+That most abstract form is what I have called the <a href="/MM/MMImagesMetaphors.htm#rigorousview">rigorous view</a> or the <a href="/Word%20Press/?p=39">dry bones</a> and it is when that reasoning is needed that the sets-with-structure approach has succeeded.
+</p>
+<p>Our practice of <a href="/MM/MMOtherAspectsUnderstanding.htm#abstraction">abstraction</a> has led us to new approaches to talking about functions. The most important one currently is <a href="http://en.wikipedia.org/wiki/Category_(mathematics)">category theory</a>.  Roughly, a category is a bunch of objects together with some arrows going between them that can be composed head to tail. Functions between sets are examples of this: the sets are the objects and the functions the arrows. But arrows in a category do not have to be functions; in that way category theory is an abstraction of functions.</p>
+<p>This <i><b>abstracts</b></i> the idea of function in a way that brings out common ideas in various branches of math. Research papers in many branches of mathematics now routinely use the language of category theory. Categories now appear in some undergraduate math courses, meaning that <font color="#800040"><b>Someone</b></font> needs to write a chapter on category theory for abstractmath.org.
+</p>
+<p>Besides category theory, computing scientists have come up with other abstract  ways of dealing with functions, for example <a href="http://en.wikipedia.org/wiki/Type_theory">type theory</a>. It has not come as far along as category theory, but has shown <a href="http://homotopytypetheory.org/">recent signs of major progress</a>.</p>
+<p>
+ Both category theory and type theory define math objects in terms of their effect on and relationship with <i>other</i> math objects. This makes it possible to do abstract math <i>entirely without using sets-with-structure as a means of defining concepts</i>.
+</p>
+<h2>References</h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Function_(mathematics)">Functions</a> in Wikipedia.  This is an extensive and mostly well-done description of the use of functions in mathematics.</li>
+</ul>
+<p></p>
+<pre><img border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/></pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=category" rel="tag">category</a><a href="/Word%20Press/?tag=codomain" rel="tag">codomain</a><a href="/Word%20Press/?tag=definition-of-function" rel="tag">definition of function</a><a href="/Word%20Press/?tag=domain" rel="tag">domain</a><a href="/Word%20Press/?tag=formla" rel="tag">formla</a><a href="/Word%20Press/?tag=function" rel="tag">function</a><a href="/Word%20Press/?tag=functional-property" rel="tag">functional property</a><a href="/Word%20Press/?tag=graph" rel="tag">graph</a><a href="/Word%20Press/?tag=identity-function" rel="tag">identity function</a><a href="/Word%20Press/?tag=inclusion-function" rel="tag">inclusion function</a><a href="/Word%20Press/?tag=input" rel="tag">input</a><a href="/Word%20Press/?tag=mathematical-structure" rel="tag">mathematical structure</a><a href="/Word%20Press/?tag=multivalued-function" rel="tag">multivalued function</a><a href="/Word%20Press/?tag=partial-function" rel="tag">partial function</a><a href="/Word%20Press/?tag=specification" rel="tag">specification</a><a href="/Word%20Press/?tag=value-of-function" rel="tag">value of function</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10149" class="post-10149 post type-post status-publish format-standard hentry category-exposition category-language-of-math category-math category-student-difficulties category-understanding-math tag-mathematical-object tag-mathematical-terminology tag-variable">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=7" rel="category">exposition</a>, <a href="/Word%20Press/?cat=10" rel="category">language of math</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=960" rel="category">student difficulties</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10149" rel="bookmark">Variable mathematical objects</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10149" rel="bookmark"><time class="entry-date" datetime="2016-12-06T20:18:15+00:00">2016/12/06</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10149#comments">1 Comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10149' ></g:plusone></div> <br />
+<h1>VARIABLE MATHEMATICAL OBJECTS</h1>
+<p class=blue>In many mathematical texts, the variable $x$ may denote a <a href="/MM/MMRealNumbers.htm">real number</a>, although which real number may not be specified. This is an example of a <font color="#911B1B">variable mathematical object</font>. This point of view and terminology is not widespread, but I think it is worth understanding because it provides a deeper understanding of some aspects about how math is done.</p>
+<h2> Specific and variable mathematical objects </h2>
+<p><a name=varmaob></a><br />
+It is useful to distinguish between <b> specific </b> math objects and <b> variable </b> math objects.</p>
+<h4>Examples of specific math objects</h4>
+<ul>
+<li>The number $42$ (the math object represented as &#8220;42&#8221; in base $10$, &#8220;2A&#8221; in hexadecimal and &#8220;XLII&#8221; as a Roman numeral) is a <b>specific</b> <a href="/MM/MMMathObj.htm">math object</a>. It is an abstract math object. It is not any of the representations just listed &#8212; they are just strings of letters and numbers.</li>
+<li>The <a href="https://en.wikipedia.org/wiki/Ordered_pair">ordered pair</a> $(4,3)$ is a specific math object. It is not the same as the ordered pair $(7,-2)$, which is <i>another</i> specific math object.</li>
+<li>The sine function $\sin:\mathbb{R}\to\mathbb{R}$ is a specific math object. You may know that the sine function is also <a href="https://en.wikipedia.org/wiki/Sine">defined for all complex numbers</a>, which gives <i>another</i> specific math object $\sin:\mathbb{C}\to\mathbb{C}$.</li>
+<li>The <a href="https://en.wikipedia.org/wiki/Group_(mathematics)#Second_example:_a_symmetry_group">group of symmetries of a square</a> is a specific math object. (If you don&#8217;t know much about groups, the link gives a detailed description of this particular group.)</li>
+</ul>
+<h4>Variable math objects</h4>
+<p>Math books are full of references to math objects, typically named by a letter or a name, that are <span class=purple>not completely specified.</span> Some mathematicians call these <b>variable objects</b> (not standard terminology). The idea of a variable mathe&shy;mati&shy;cal object is not often taught as such in under&shy;graduate classes but it is worth pondering. It has certainly clari&shy;fied <i>my</i> thinking about expres&shy;sions with variables.
+</p>
+<h4>Examples</h4>
+<ul>
+<li>If an author or lecturer says &#8220;Let $x$ be a real variable&#8221;, you can then think of $x$ as a <b>variable real number</b>. In a proof you can&#8217;t assume that $x$ is any <i>particular</i> real number such as $42$ or $\pi$.</li>
+<li>If a lecturer says, &#8220;Let $(a,b)$ be an ordered pair of integers&#8221;, then all you know is that $a$ and $b$ are integers. This makes $(a,b)$ a <b>variable ordered pair</b>, specifically a pair of integers. The lecturer will not say it is a variable ordered pair since that terminology is not widely used. You have to understand that the phrase &#8220;Let $(a,b)$ be an ordered pair of integers&#8221; <span class=purple><i>implies</i> that it is a variable ordered pair just because &#8220;a&#8221; and &#8220;b&#8221; are letters instead of numbers</span>.</li>
+<li>If you are going to prove a theorem about functions, you might begin, &quot;Let $f$ be a continuous function&quot;, and in the proof refer to $f$ and various objects connected to $f$. This makes $f$ a <b>variable mathematical object</b>. When you are proving things about $f$ you may use the fact that it is continuous. But you cannot assume that it is (for example) the sine function or any other <i>particular</i> function.<a name="_Toc108064451"></a>
+</li>
+<li>If someone says, &#8220;Let $G$ be a group&#8221; you can think of $G$ as a <b>variable group</b>. If you want to prove something about $G$ you are free to use the <a href="/MM/MMDefs.htm">definition</a> of &#8220;group&#8221; and any theorems you know of that apply to all groups, but you can&#8217;t assume that $G$ is any specific group.</li>
+</ul>
+<h4></h4>
+<h4>Terminology</h4>
+<p class>A logician would refer to the symbol $f$, thought of as denoting a function, as a <b>vari&shy;able</b>, and likewise the symbol $G$, thought of as denoting a group. But mathe&shy;maticians in general would not use the word &#8220;vari&shy;able&#8221; in those situa&shy;tions.</p>
+<h2>How to think about variable objects</h2>
+<p class=blue>The idea that $x$ is a variable object means thinking of $x$ as a genuine mathematical object, but with limitations about what you can say or think about it. Specifically,</p>
+<p class=purpleprose>Some assertions about a variable math object<br />may be neither true nor false.</p>
+<h5>Example</h5>
+<p>The statement, &#8220;Let $x$ be a real number&#8221; means that $x$ is to be regarded as a <b>variable real number</b> (usually called a &#8220;real variable&#8221;). Then you know the following facts:
+</p>
+<ul>
+<li>The statement &#8220;${{x}^{2}}$ is not negative&#8221; is <i>true</i>.</li>
+<li>The assertion &#8220;$x=x+1$&#8221; is <i>false.</i></li>
+<li>The assertion &#8220;$x\gt 0$&#8221; is <i>neither true nor false.</i></li>
+</ul>
+<h5>Example</h5>
+<p>Suppose you are told that $x$ is a real number and that ${{x}^{2}}-5x=-6$.</p>
+<ul>
+<li>You know (because it is given) that the statement &#8220;${{x}^{2}}-5x=-6$&#8221; is <i>true</i>.</li>
+<li>By doing some algebra, you can discover that the statement &#8220;$x=2$ or $x=3$&#8221; is <i>true</i>.</li>
+<li>The statement &#8220;$x=2$ <i>and</i> $x=3$&#8221; is <i>false</i>, because $2\neq3$.</li>
+<li>The statement &#8220;$x=2$&#8221; is <i>neither true nor false</i>, and similarly for &#8220;$x=3$&#8221;.</li>
+<li>This situation could be described this way: <span class=bluesmall>$x$ is a variable real number varying over the set $\{2,3\}$</span>.</li>
+</ul>
+<h5>Example</h5>
+<p>This example may not be easy to understand. It is intended to raise your consciousness.</p>
+<p class=bluesmall>A <a href="https://en.wikipedia.org/wiki/Twin_prime">prime pair</a> is an ordered pair of integers $(n,n+2)$ with the property that both $n$ and $n+2$ are prime numbers.</p>
+<p class=bluesmall>Definition: $S$ is a <font color="#911B1B">PP set</font> if $S$ is a set of pairs of integers with the property that every pair is a prime pair.</p>
+<ul>
+<li>&#8220;$\{(3,5),(11,13)\}$ is a PP set&#8221; is <i>true</i>.</li>
+<li>&#8220;$\{(5,7),(111,113),(149,151)\}$ is a PP set&#8221; is <i>false</i>.</li>
+</ul>
+<p>Now suppose $SS$ is a <b>variable PP set</b>.</p>
+<ul>
+<li>&#8220;$SS$ is a set&#8221; is <b>true</b> by definition.</li>
+<li>&#8220;$SS$ contains $(7,9)$&#8221; is <b>false</b>.</li>
+<li>&#8220;$SS$ contains $(3,5)$&#8221; is <b>neither true nor false</b>, as the examples just above show.</li>
+<li>&#8220;$SS$ is an infinite set&#8221;:
+<ul>
+<li>This is certainly not true (see finite examples above). </li>
+<li><span class=purple>This claim may be neither true nor false, or it may be plain false,</span> because no one knows whether there is an infinite number of prime pairs. </li>
+<li>The point of this example is to show that <span class=purple>&#8220;we don&#8217;t know&#8221; doesn&#8217;t mean the same thing as &#8220;neither true nor false&#8221;.</span></li>
+</ul>
+</li>
+</ul>
+<p></p>
+<pre><img border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/></pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=mathematical-object" rel="tag">mathematical object</a><a href="/Word%20Press/?tag=mathematical-terminology" rel="tag">mathematical terminology</a><a href="/Word%20Press/?tag=variable" rel="tag">variable</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10140" class="post-10140 post type-post status-publish format-standard hentry category-abstractmathorg category-exposition category-language-of-math category-math category-student-difficulties category-understanding-math tag-exponent tag-mathematics tag-power tag-terminology">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=3" rel="category">abstractmath.org</a>, <a href="/Word%20Press/?cat=7" rel="category">exposition</a>, <a href="/Word%20Press/?cat=10" rel="category">language of math</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=960" rel="category">student difficulties</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10140" rel="bookmark">Power</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10140" rel="bookmark"><time class="entry-date" datetime="2016-11-22T11:24:54+00:00">2016/11/22</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10140#comments">1 Comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10140' ></g:plusone></div> <p>I have rewritten the entry to &#8220;power&#8221; in the abstractmath.org <a href="/MM/MMGlossary.htm">Glossary</a>:</p>
+<h2>POWER</h2>
+<p>Here are three variant phrases that say that $125=5^3$:</p>
+<ul>
+<li>&#8220;$125$ is a power of $5$ with exponent $3$&#8221;.</li>
+<li>&#8220;$125$ is the third power of $5$&#8221;.</li>
+<li>&#8220;$125$ is $5$ to the third power&#8221;.</li>
+</ul>
+<p>Some students are confused by such statements, and conclude that $3$ is the &#8220;power&#8221;.  This usage appears in print in Wikipedia in its entry on <a href="https://en.wikipedia.org/wiki/Exponentiation">Exponentiation</a> (as it was on 22 November 2016):</p>
+<p>&#8212;</p>
+<p>&#8220;&#8230;$b^n$ is the product of multiplying $n$ bases:</p>
+<p>    \[b^n = \underbrace{b \times \cdots \times b}_n\]</p>
+<p>In that case, $b^n$ is called the $n$-th power of $b$, or $b$ raised to the power $n$.&#8221;</p>
+<p>&#8212;</p>
+<p>As a result, students (and many mathematicians) refer to $n$ as the &#8220;power&#8221; in any expression of the form &#8220;$a^n$&#8221;. The number $n$ should be called the &#8220;exponent&#8221;. The word &#8220;power&#8221; should refer only to the result $a^n$. I know mathematical terminology is pretty chaotic, but it is silly to refer both to $n$ and to $a^n$ as the &#8220;power&#8221;.</p>
+<p class=smallind>Almost as silly as using $(a,b)$ to refer to an open interval, an ordered pair and the GCD. (See <a href="/MM/MMDelimiters.htm#notationab">The notation $(a,b)$</a>.)</p>
+<p><b>Suggestion for lexicographical research:</b> How widespread does referring to $n$ as the &#8220;power&#8221; come up in math textbooks or papers? (See <a href="/MM/MMAttitude.htm#usage">usage</a>.)</p>
+<p>Thanks to Tomaz Cedilnik for comments on the first version of this entry.</p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=exponent" rel="tag">exponent</a><a href="/Word%20Press/?tag=mathematics" rel="tag">Mathematics</a><a href="/Word%20Press/?tag=power" rel="tag">power</a><a href="/Word%20Press/?tag=terminology" rel="tag">terminology</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10130" class="post-10130 post type-post status-publish format-standard hentry category-category-theory category-computer-science category-exposition category-math category-student-difficulties category-understanding-math tag-category-theory tag-homomorphism tag-monoid tag-morphism tag-object">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=5" rel="category">category theory</a>, <a href="/Word%20Press/?cat=6" rel="category">computer science</a>, <a href="/Word%20Press/?cat=7" rel="category">exposition</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=960" rel="category">student difficulties</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10130" rel="bookmark">A slow introduction to category theory</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10130" rel="bookmark"><time class="entry-date" datetime="2016-11-04T15:24:47+00:00">2016/11/04</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10130#comments">1 Comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10130' ></g:plusone></div> <p class=smallind><i>Category theory turns math inside-out. Definitions depend on nothing inside, but on everything outside. </i>&#8212; John Cook</p>
+<h1>About this post</h1>
+<p>This is a draft of the first part of an article on category theory that will be posted on <a href="/">abstractmath.org</a>. It replaces an earlier version that was posted in June, 2016.</p>
+<p>During the last year or so, I have been monitoring the category theory questions on <a href="http://math.stackexchange.com/search?tab=newest&#038;q=category">Math Stack Exchange</a>. Some of the queries are clearly from people who do not have enough of a mathematical background to understand basic abstract reasoning, for example the importance of <a href="/MM/MMDefs.htm">definitions</a> and the difficulties described in the abmath artice on <a href="/MM/MMDysfunctional.htm">Dysfunctional attitudes and behaviors</a>. Category theory has become important in several fields outside mathematics, for example computer science and database theory.</p>
+<p>This article is intended to get people started in category theory by giving a very detailed definition of &#8220;category&#8221; and some examples described in detail with an emphasis on how the example fits the definition of category. That&#8217;s all the present version does, but I intend to add some examples of constructions and properties such as the dual category, product, and other concepts that some of the inquirers on Math Stack Exchange had great difficulty with.</p>
+<p>There is no way in which this article is a proper introduction to category theory. It is intended only to give beginners some help over the initial steps of understanding the subject, particularly the aspects of understanding that cause many hopeful math majors to fall off the <a href="/Word%20Press/?tag=abstraction-cliff">Abstraction Cliff</a>.</p>
+<h1>About categories</h1>
+<p><span class=red><b>To be written.</b></span></p>
+<h1>Definition of category</h1>
+<p>A category is a type of <b><a href="/MM/MMMathStructure.htm">Mathematical structure</a></b> consisting of two types of <b>data</b>, whose relationships are entirely determined by some <b>axioms</b>. After the definition is complete, I introduce several example categories with a detailed discussion of each one, explaining how they fit the definition of category.</p>
+<p><a name="object"></a><br />
+<a name="arrow"></a></p>
+<h2>Axiom 1: Data</h2>
+<p class=blue>A <font color="#911B1B">category</font> consists of two types of data: <font color="#911B1B">objects</font> and <font color="#911B1B">arrows</font>.</p>
+<h3>Notes for Axiom 1</h3>
+<ul>
+<li>You will see in the section on <a href="#examplesofcategories">Examples of categories</a> that every definition of a category $\mathsf{C}$ starts by specifying what the objects of $\mathsf{C}$ are and what the arrows of $\mathsf{C}$ are. That is what Axiom I requires.</li>
+<li>An object of a category can be any kind of mathematical object. It does not have to be a set and it does not have to have elements.</li>
+<li>Arrows of a category are also called <b>morphisms</b>. You may be familiar with &#8220;homomorphisms&#8221;, &#8220;homeomorphisms&#8221; or &#8220;isomorphisms&#8221;, all of which are functions. <span class=purple>This does not mean that a &#8220;morphism&#8221; in an arbitrary category is a function.</span></li>
+</ul>
+<p><a name="domain"></a><br />
+<a name="codomain"></a></p>
+<h2>Axiom 2: Domain and codomain</h2>
+<p class=blue>Each arrow of a category has a <font color="#911B1B">domain</font> and a <font color="#911B1B">codomain</font>, each of which is an object of the category.</p>
+<h3>Notes for Axiom 2</h3>
+<ul>
+<li>The domain and the codomain of an arrow may or may not be the same object.</li>
+<li>Each arrow has only one domain and only one codomain.</li>
+<li>If $f$ is an arrow with domain $A$ and codomain $B$, that fact is typically shown either by the notation &#8220;$f:A\to B$&#8221; or by a diagram like this:</li>
+<p></p>
+<div align="center"><img src="/MM/Mathematica/Category%20Theory/Arrowex2.gif" width="100" height="20" align="middle" alt="" title="" /></div>
+<p></p>
+<li><span class=purple>Warning: The notation &#8220;$f:A\to B$&#8221; is like that used for functions. This notation may be used in any category, but it does not imply that $f$ is a function or that $A$ and $B$ have elements.</span>
+</li>
+<li>For an arrow $f:A\to B$, the notation &#8220;$\text{dom}(f)$&#8221; refers to $A$ and &#8220;$\text{cod}(f)$&#8221; refers to $B$.</li>
+<li>For a given category $\mathsf{C}$, the collection of all the arrows with domain $A$ and codomain $B$ may be denoted by
+<ul>
+<li>&#8220;$\text{Hom}(A,B)$&#8221; or </li>
+<li>&#8220;$\text{Hom}_\mathsf{C}(A,B)$&#8221; or</li>
+<li>&#8220;$\mathsf{C}(A,B)$&#8221;.</li>
+</ul>
+<p><a name="source"></a><br />
+<a name="target"></a></p>
+</li>
+<li>Some newer books and articles in category theory use the name <b>source</b> for domain and <b>target</b> for codomain. This usage has the advantage that a newcomer to category theory will be less likely to think of an arrow as a function.</li>
+</ul>
+<p><a name="composition"></a><br />
+<a name="composite"></a></p>
+<h2>Axiom 3: Composition</h2>
+<p class=blue>If $f$ and $g$ are arrows in a category for which $\text{cod}(f)=\text{dom}(g)$, as in this diagram:</p>
+<div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Composablearrows.gif" width="180" height="102"  alt="" title=""/></div>
+</p>
+<p class=axiomnoind>then there is a unique arrow with domain $A$ and codomain $C$ called the <font color="#911B1B">composite</font> of $f$ and $g$.</p>
+<h3>Notes for Axiom 3</h3>
+<ul>
+<li>The unique arrow required by Axiom 3 may be denoted by &#8220;$g\circ f$&#8221; or &#8220;$gf$&#8221;. &#8220;$g\circ f$&#8221; is more explicit, but &#8220;$gf$&#8221; is much more commonly used by category theorists.</li>
+<li>Many constructions in categories may be shown by <b>diagrams</b>, like the one used just above.</li>
+<li>The diagram
+<div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Composite.png" width="180" height="102" alt="" title="" /></div>
+<p> is said to <b>commute</b> if $h=g\circ f$.</li>
+<li> It is useful to think of $f$ followed by $g$ as a <b>path</b> in the diagram. Then a <a href="Mhttp://www.abstractmath.org/MM/MImagesMetaphors.htm">metaphor</a> for composition is: <span class=purple>Every path of length 2 has exactly one composite</span>.</li>
+<li>It is customary in some texts in category theory to indicate that a diagram commutes by putting a <b>gyre</b> in the middle:
+<div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Compositecirc.png" width="180" height="102" alt="" title="" /></div>
+</li>
+<li>Note that the composite of the path that I described as &#8220;$f$ followed by $g$&#8221; is written as &#8220;$g\circ f$&#8221; or &#8220;$gf$&#8221;, which seems backward. Nevertheless, the most common notation in category theory for the composite of &#8220;$f$ followed by $g$&#8221; is $gf$. Some authors in computer science write &#8220;$f;g$&#8221; for &#8220;$gf$&#8221; to get around this problem.</li>
+<li>The concept of category is an <a href="http://abstractmath.org/MM/MMOtherAspectsUnderstanding.htm#abstraction"><b>abstraction</b></a> of the idea of function, and the composition of arrows is an abstraction of the <a href="https://en.wikipedia.org/wiki/Function_composition"><b>composition of functions</b></a>.  It uses the same notation, &#8220;$g\circ f$&#8221;. If $f$ and $g$ are set functions, then for an element $x$ in the domain of $f$, \[(g\circ f)(x)=g(f(x))\]</li>
+<li class=purple>But in arbitrary category, it may make no sense to evaluate an arrow $f$ at some element $x$; indeed, the domain of $f$ may not have elements at all, and then the statement &#8220;$(g\circ f)(x)=g(f(x))$&#8221; is <font color="#911B1B">meaningless</font>.</li>
+</ul>
+<p><a name="4a"></a><a name="4b"></a><a name="4c"></a><a name="4d"></a></p>
+<h2>Axiom 4: Identity arrows</h2>
+<p>Note: WordpPress does not recognize the html command </p>
+<ol>.  Axiom 1 should be 4a, Axiom 2 4b Axiom 3 4c and Axiom 4 4d.</p>
+</ol>
+<ol type="a">
+<li class=axiom>For each object $A$ of a category, there is an arrow denoted by $\mathsf{id}_A$.</li>
+<li class=axiom>$\textsf{dom}(\textsf{id}_A)=A$ and $\textsf{cod}(\textsf{id}_A)=A$.</li>
+<li class=axiom>For any object $B$ and any arrow $f:B\to A$, the diagram
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Id1diagram.gif"  alt="" title="" /></div>
+</p>
+<p> commutes.</li>
+<li class=axiom>For any object $C$ and any arrow $g:A\to C$, the diagram
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Id2diagram.gif" alt="" title="" /></div>
+</p>
+<p> commutes.</li>
+</ol>
+<h3>Notes for Axiom 4</h3>
+<ul>
+<li>The fact stated in Axiom 4(b) could be shown diagrammatically either as
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/CategoryTerminal.gif" width="144" height="94" alt="" title="" /></div>
+</p>
+<p>or as</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/idarrow.gif" width="111" height="31" alt="" title="" /></div>
+</p>
+</li>
+<li>
+Facts (c) and (d) can be written in algebraic notation: For any arrow $f$ going <i><b>to</b></i> $A$,\[\textsf{id}_A\circ f=f\]and for any arrow $g$ coming <b><i>from</i></b> $A$,\[g\circ \textsf{id}_A=g\] </li>
+<li>There may be many arrows with domain and codomain both equal to $A$ (for example in the category <a href="#manyarrows">$\mathsf{Set}$</a>), but only one of them is $\textsf{id}_A$. It can be proved that $\textsf{id}_A$ is the <i>unique</i> arrow satisfying both (c) and (d) of the axiom.</li>
+</ul>
+<h2>Axiom 5: Associativity</h2>
+<ol type="a">
+<li class=axiom>If $f$, $g$ and $h$ are arrows in a category for which $\text{cod}(f)=\text{dom}(g)$ and $\text{cod}(g)=\text{dom}(h)$, as in this diagram:
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Threecomposablearrows.gif" alt="" title="" /></div>
+</p>
+<p class=axiomnoind>then there is a unique arrow $k$ with domain $A$ and codomain $D$ called the <font color="#911B1B">composite</font> of $f$, $g$ and $h$.</p>
+</li>
+<li class=axiom>In the diagram below, the two triangles containing $k$ must both commute.
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Threecompstage3.gif"  alt="" title="" /></div>
+</p>
+</li>
+</ol>
+<h3>Notes for Axiom 5</h3>
+<ul>
+<li>Axiom 5b requires that \[h\circ(g\circ f)=(h\circ g)\circ f\](which both equal $k$), which is the usual algebraic notation for <a href="https://en.wikipedia.org/wiki/Associative_property">associativity</a>.</li>
+<li>Note that the top two triangles commute by Axiom 3.</li>
+<li>The associativity axiom means that we can get rid of parentheses and write \[k=h\circ f\circ g\]just as we do for addition and multiplication of numbers.</li>
+<li>In my opinion the notation using categorical diagrams communicates information much more clearly than algebraic notation does. In particular, <span class=purple>you don&#8217;t have to remember the domains and codomains of the functions &#8212; they appear in the picture</span>. I admit that diagrams take up much more space, but now that we read math stuff on a computer screen instead of on paper, <span class=purple>space is free</span>.</li>
+</ul>
+<p><a name="examplesofcategories"></a></p>
+<h1>Examples of categories</h1>
+<p>For these examples, I give a detailed explanation about how they fit the definition of category.</p>
+<p><a name="myfin"></a></p>
+<h2>Example 1: MyFin</h2>
+<p>This first example is a small, finite category which I have named $\mathsf{MyFin}$ (&#8220;my finite category&#8221;). It is not at all an important category, but it has advantages as a first example.</p>
+<ul>
+<li>It&#8217;s small enough that you can see all the objects and arrows on the screen at once, but big enough not to be trivial.</li>
+<li><span class=purple>The objects and arrows have no properties other than being objects and arrows.</span> (Some of the other examples involve familiar math objects.)</li>
+<li>So in order to check that $\mathsf{MyFin}$ really obeys the axioms for a category, <span class=purple>you can use only the skeletal information given here.</span> As a result, you must <span class=redit>really understand the axioms!</span></li>
+</ul>
+<p class=purpleprose>A correct proof will be based on <span class=red>axioms and theorems</span>.<br />The proof can be suggested by your intuitions,<br />but intuitions are not enough.<br />When working with $\mathsf{MyFin}$ you won&#8217;t have any intuitions! </p>
+<h3>A diagram for $\mathsf{MyFin}$</h3>
+<p><a name="myfindiagram"></a></p>
+<p>This diagram gives a <i>partial</i> description of $\mathsf{MyFin}$.</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/myfin.gif"/></div>
+</p>
+<p>Now let&#8217;s see how to make the diagram above into a category.</p>
+<h3>Axiom 1: Data</h3>
+<ul>
+<li>The objects of $\mathsf{MyFin}$ are $A$, $B$, $C$ and $D$.</li>
+<li>The arrows are $f$, $g$, $h$, $j$, $k$, $r$, $s$, $u$, $v$, $w$ and $x$.</li>
+<li>You can regard the letters just listed as <b>names</b> of the objects and arrows. The point is that at this stage <span class=purple>all you know about the objects and arrows are their names</span>.</li>
+<li>If you prefer, you can think of the arrows as the actual arrows shown in the <a href=#myfindiagram>$\mathsf{MyFin}$ diagram</a>.</li>
+<li>Our definition of $\mathsf{MyFin}$ is an <b>abstract definition</b>. You may have seen multiplication tables of groups given in terms of undefined letters. (If you haven&#8217;t, don&#8217;t worry.) Those are also abstract definitions.</li>
+<li>Our other definitions of categories involve math objects you actually know something about.</li>
+</ul>
+<h3>Axiom 2: Domain and Codomain</h3>
+<ul>
+<li>The domains and codomains of the arrows are shown by the diagram above. </li>
+<li>For example, $\text{dom}(r)=A$ and $\text{cod}(r)=C$, and $\text{dom}(v)=\text{cod}(v)=B$.</li>
+</ul>
+<h3>Axiom 3: Composition</h3>
+<p class=purpleprose>Showing the <a href=#myfindiagram>$\mathsf{MyFin}$ diagram</a> does not completely define $\mathsf{MyFin}$. We must say what the composites of all the paths of length 2 are.</p>
+<ul>
+<li>In fact, most of them are forced, but two of them are not.</li>
+<li>We must have $g\circ f=r$ because $r$ is the only arrow possible for the composite, and Axiom 3 requires that every path of length 2 must have a composite.</li>
+<li>For the same reason, $h\circ g=s$.</li>
+<li>All the paths involving $u$, $v$, $w$ and $x$ are forced:</li>
+</ul>
+<ul type=none>
+<p><a name="pees"></a></p>
+<li><b>(p1)</b> $u\circ u=u$, $v\circ v=v$, $w\circ w=w$ and  $x\circ x=x$.</li>
+<li><b>(p2)</b> $f\circ u=f$, $r\circ u=r$, $j\circ u=j$ and $k\circ u=k$. You can see that, for example, $f\circ u=f$ by opening up the loop on $f$ like this:
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/compositeques.png"/></div>
+</p>
+<p>There is only one arrow going from $A$ to $B$, namely$f$, so $f$ has to be the composite $f\circ u$.</li>
+<li><b>(p3)</b> $v\circ f=f$, $g\circ v=g$ and $s\circ v=s$.</li>
+<li><b>(p4)</b> $w\circ g=g$, $w\circ r=r$ and $h\circ w=h$.</li>
+<li><b>(p5)</b> $x\circ h=h$, $x\circ s=s$, $x\circ j=j$ and $x\circ k=k$.</li>
+<p><a name="onlyassoc"></a></p>
+<li>For $s\circ f$ and $h\circ r$, we have to choose between $j$ and $k$ as composites.  Since $s\circ f=(h\circ g)\circ f$ and $h\circ r=h\circ (g\circ f)$, Axiom 3 requires that we must chose <i>one</i> of $j$ and $k$ to be <i>both</i> composites.
+<p class=purpleprose>Definition: $s\circ f=h\circ r=j$.</p>
+<p>If we had defined $s\circ f=h\circ r=k$ we would have a <i>different</i> category, although one that is &#8220;isomorphic&#8221; to $\mathsf{MyFin}$ (you have to define &#8220;isomorphic&#8221; or <a href="https://en.wikipedia.org/wiki/Isomorphism_of_categories">look it up</a>.)
+</li>
+</ul>
+<h3>Axiom 4: Identity arrows</h3>
+<ul>
+<li>It is clear from the <a href=#myfindiagram>$\mathsf{MyFin}$ diagram</a> that for each object there is just one arrow that has that object both as domain and as codomain, as required by <a href="#4b">Axiom 4b</a>.</li>
+<li>The requirements in <a href="#4c">Axioms 4c and 4d</a> are satisfied by statements <a href=#pees><b>(p1)</b> through <b>(p5)</b></a>.</li>
+</ul>
+<h3>Axiom 5: Associativity</h3>
+<ul>
+<li>Since we have <a href=#onlyassoc>already</a> required both $(h\circ g)\circ f$ and $h\circ(g\circ f)$ to be $k$, composition is associative.</li>
+</ul>
+<p><a name="integerdiv"></a></p>
+<h2>Example 2: IntegerDiv</h2>
+<ul>
+<li>This example uses familiar mathematical objects &#8212; <a href="/MM/MMNaturalNumbers.htm#representations">positive integers</a>.</li>
+<li><span class=purple>The arrows are not functions that can be applied to elements</span>, since integers do not have elements.</li>
+</ul>
+<h3>Axiom 1: Data</h3>
+<ul>
+<li>The objects of IntegerDiv are all the positive integers.</li>
+<li>Suppose $m$ and $n$ are positive integers:</li>
+</ul>
+<ul>
+<li>If $m$ divides $n$, there is exactly one arrow from $m$ to $n$. I will call this arrow $\textsf{mdn}$. (This is my notation. There is no standard notation for this category.) For example there is one arrow from $2$ to $6$, denoted by $\textsf{2d6}$.</li>
+<li>If $m$ does not divide $n$, there is no arrow from $m$ to $n$.</li>
+</ul>
+<h3>Axiom 2: Domain and codomain</h3>
+<p>The arrow denoted by $\textsf{mdn}$ has domain $m$ and codomain $n$.</p>
+<h5 class=red>Example</h5>
+<div align="center"><img src="/MM/Mathematica/Category%20Theory/integerdivarrowex1.png"  align="middle" alt="" title="" /></div>
+<p></p>
+<h5 class=red>Example</h5>
+<div align="center"><img src="/MM/Mathematica/Category%20Theory/integerdivarrowex2.png"  align="middle" alt="" title="" /></div>
+<p></p>
+<h5 class=red>Example</h5>
+<p><div align="center"><img src="/MM/Mathematica/Category%20Theory/integerdivarrowex3.png"  align="middle" alt="" title="" /></div>
+</p>
+<p class=noind>which may also be shown as </p>
+<div align="center"><img align="middle" src="/MM/Mathematica/Category%20Theory/integerdivarrowexloop2.png" alt="" title="" /></div>
+</p>
+<p></p>
+<h3>Axiom 3: Composition</h3>
+<p>The composite of</p>
+<p><div align="center"><img src="/MM/Mathematica/Category%20Theory/integerdivcomp.png"  align="middle" alt="" title="" /></div>
+</p>
+<p class=noind>must be $\textsf{rdt}$, since that is the only arrow with domain $r$ and codomain $t$.</p>
+<p>This fact can also be written this way: \[\mathsf{sdt}\circ\textsf{rds}=\textsf{rdt}\]</p>
+<h3>Axiom 4: Identity arrows</h3>
+<p>The composites</p>
+<p><div align="center"><img src="/MM/Mathematica/Category%20Theory/idid1diagram.png" align="middle" alt="" title="" /></div>
+</p>
+<p class=noind>and </p>
+<p><div align="center"><img src="/MM/Mathematica/Category%20Theory/idid2diagram.png" align="middle" alt="" title="" /></div>
+</p>
+<p class=noind>must commute since the arrows shown are the only possible arrows with the domains and codomains shown. In other words, $\textsf{id}_\textsf{r}=\textsf{rdr}$ and $\textsf{id}_\textsf{s}=\textsf{sds}$.</p>
+<h3>Axiom 5: Associativity</h3>
+<p>In the diagram below,</p>
+<p><div align="center"><img src="/MM/Mathematica/Category%20Theory/integerdivassoc.png" align="middle" alt="" title="" /></div>
+</p>
+<p></p>
+<p class=noind> there is only one arrow from one integer to another, so $\textsf{k}$ must be both \[\textsf{tdu}\circ(\textsf{sdt}\circ\textsf{rds})\] and \[(\textsf{tdu}\circ\textsf{sdt})\circ\textsf{rds}\] as required.</p>
+<h2>Example 3: The category of Sets</h2>
+<p>In this section, I define the category $\mathsf{Set}$ (that is standard terminology in category theory.) This example will be very different from $\mathsf{MyFin}$, because it involves known mathematical objects &#8212; <a href="/MM/MMSets.htm">sets</a> and <a href="/MM/MMFunctions.htm">functions</a>.</p>
+<h3>Axiom 1: Data</h3>
+<ul>
+<li>Every set is an object of $\mathsf{Set}$ and nothing else is.</li>
+<li>Every function between sets is an arrow of $\mathsf{Set}$ and nothing else is an arrow of $\mathsf{Set}$.</li>
+</ul>
+<h3>Axiom 2: Domain and codomain</h3>
+<p>For a given function $f$, $\text{dom}(f)$ is the domain of the function $f$ in the usual sense, and $\text{cod}(f)$ is the codomain of $f$ in the usual sense. (See <a href="/MM/MMFuncSpec.htm">Functions: specification and definition</a> for more about domain and codomain.)</p>
+<h4 class=redit>Examples</h4>
+<ul>
+<li>Let $f:\mathbb{R}\to\mathbb{R}$ be the function defined by $f(x):=x^2$.  Then the arrow $f$ in $\mathsf{Set}$ satisfies $\text{dom}(f)= \mathbb{R}$ and also $\text{cod}(f)=\mathbb{R}$.</li>
+<li>Let $j:\{1,2,3\}\to\{1,2,3,4\}$ be defined by $j(1):=1$, $j(2):=4$ and $j(3):=3$. Then $\text{dom}(j)=\{1,2,3\}$ and $\text{cod}(j)=\{1,2,3,4\}$.</li>
+</ul>
+<h3>Axiom 3: Composition</h3>
+<p><a name="DC"></a></p>
+<p>The composite of $f:A\to B$ and $g:B\to C$ is the function $g\circ f:A\to C$ defined by \[\text{(DC)}\,\,\,\,\,\,\,\,\,\,(g\circ f)(a):=g(f(a))\]</p>
+<h4>Note</h4>
+<p>Many other categories have a similar definition of composition, including categories whose objects are <a href="/MM/MMMathStructure.htm">math structures</a> with underlying sets and whose arrows are structure-preserving functions between the underlying sets. <span class=purple>But be warned: There are many useful categories whose arrows do not evaluate at an element of an object because the objects don&#8217;t have elements.</span>  In that case, (DC) is meaningless. This is true of <a href="#myfin">$\mathsf{MyFin}$</a> and <a href="#integerdiv">$\mathsf{IntegerDiv}$</a>.</p>
+<h3>Axiom 4: Identity arrows</h3>
+<p>For a set $A$, the identity arrow $\textsf{id}_A:A\to A$ is, as you might expect, the identity function defined by $\textsf{id}_A(a)=a$ for every $a\in A$. We must prove that these diagrams commute:</p>
+<div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Id1diagram.gif" width="150" height="113" alt="" title="" /></div>
+<div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Id2diagram.gif" width="150" height="113" alt="" title="" /></div>
+<p class=noind>The calculations below show that they commute. They use the definition of composite given by <a href="#DC">(DC)</a>.</p>
+<p><a name="manyarrows"></a></p>
+<ul>
+<li>For any $b\in B$, \[(\textsf{id}_A\circ f)(b)=\textsf{id}_A(f(b))=f(b)\]</li>
+<li>For any $a\in A$, \[(g\circ \textsf{id}_A)(a)=g(\textsf{id}_A(a))=g(a)\]</li>
+</ul>
+<p><b>Note:</b> In $\mathsf{Set}$, there are generally many arrows from a particular set $S$ to itself (for example there are $4$ from $\{1,2\}$ to itself), but only one is the identity arrow.</p>
+<h3>Axiom 5: Associativity</h3>
+<p>Composition of arrows in $\mathsf{Set}$ is associative because function composition is associative. Suppose we have functions as in this diagram:</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Threecomposablearrows.gif"  alt="" title="" /></div>
+</p>
+<p>We must show that the two triangles containing $k$ in this diagram commute:</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Threecompstage3.gif" alt="" title="" /></div>
+</p>
+<p>In algebraic notation, this requires showing that for every element $a\in A$,\[(h\circ(g\circ f))(a))=((h\circ g)\circ f)(a)\]
+</p>
+<p>The calculation below does that. It makes repeated use of Definition (DC) of composition. For any $a\in A$,\[\begin{equation}<br />
+\begin{split}<br />
+\big(h\circ (g\circ f)\big)(a)<br />
+&#038; = h\big((g\circ f)(a)\big) \\<br />
+ &#038; = h\big(g(f(a))\big) \\<br />
+ &#038; = (h\circ g)(f(a)) \\<br />
+ &#038; = \big((h\circ g)\circ f\big)(a)<br />
+\end{split}<br />
+\end{equation}\]
+</p>
+<h2>Example 4: The category of Monoids</h2>
+<p><a name="monoid"></a></p>
+<p><a name="MM"></a><br />
+<a name="ME"></a></p>
+<ul>
+<li>This definition makes repeated use of the fact that a <a href="/MM/MMMathStructure.htm#monoidhomomorphism">homomorphism of monoids</a> is a set function. Specifically, if $(S,\Delta)$ and $(T,\nabla)$ are monoids with identities $e_S$ and $e_{T}$, a homomorphism $h:S\to T$ must be a set function that satisfies the following two axioms:  \[\text{(ME)}\,\,\,\,\,\,\,\,h(e_S)=e_T\] and for all elements $s, s&#8217;$ of $S$, \[\text{(MM)}\,\,\,\,\,\,\,\,h(s\Delta s&#8217;)=h(s)\nabla h(s&#8217;)\]</li>
+<li>The category of monoids may be denoted by $\mathsf{Mon}$.</li>
+</ul>
+<h3>Axiom 1: Data</h3>
+<ul>
+<li>Every <a href="/MM/MMMathStructure.htm#monoid">monoid</a> is an object of the category of monoids, and nothing else is.</li>
+<li>If $f$ is a <a href="/MM/MMMathStructure.htm#monoidhomomorphism">homomorphism of monoids</a>, then $f$ is an arrow of the category of monoids, and nothing else is.</li>
+</ul>
+<h3>Axiom 2: Domain and codomain</h3>
+<p>If $(S,\Delta)$ and $(T,\nabla)$ are monoids and $f:(S,\Delta)\to(T,\nabla)$ is a homomorphism of monoids, then the domain of $f$ is $(S,\Delta)$ and the codomain of $f$ is $(T,\nabla)$.</p>
+<h4>Notes</h4>
+<ul>
+<li>Since $f$ takes elements of the set $S$ to elements of the set $T$, it is also an arrow in the category $\mathsf{Set}$. In general, very few functions from $S$ to $T$ will be monoid homomorphisms from $(S,\Delta)$ to $(T,\nabla)$.</li>
+<li>Many authors do not distinguish between $f$ regarded as an arrow of $\mathsf{Mon}$ and $f$ regarded as an arrow of $\mathsf{Set}$. Others may write $U(f)$ for the arrow in $\mathsf{Set}$. &#8220;$U$&#8221; stands for &#8220;<a href="https://en.wikipedia.org/wiki/Forgetful_functor">underlying functor</a>&#8220;, also called &#8220;forgetful functor&#8221;.</li>
+</ul>
+<h3>Axiom 3: Composition</h3>
+<p>The composite of</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/monoidcompos.png"  alt="" title="" /></div>
+</p>
+<p class=noind>is the composite $g\circ f$ as set functions:</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/monoidcompostri.png"  alt="" title="" /></div>
+</p>
+<p>It is necessary to check that $g\circ f$ is a monoid homomorphism. The following calculation shows that it preserves the monoid operation; it makes repeated use of equations <a href="#DC">(DC)</a> and <a href="#MM">(MM)</a>.</p>
+<p>The calculation: For elements $r$ and $r&#8217;$ of $R$,\[\begin{align*}<br />
+(g\circ f)(r\,{\scriptstyle \square}\, r&#8217;)<br />
+&#038;=g\left(f(r\, {\scriptstyle \square}\, r&#8217;)\right)\,\,\,\,\,\text{(DC)}\\ &#038;=g\left(f(r) {\scriptstyle\, \Delta}\, f(r&#8217;)\right)\,\,\,\,\,\text{(MM)}\\<br />
+&#038;=g(f(r)){\scriptstyle \,\nabla}\, g(f(r&#8217;))\,\,\,\,\text{(MM)}\\<br />
+&#038;=(g\circ f)(r){\scriptstyle \,\nabla}\,(g\circ f)(r&#8217;)\,\,\,\,\,\text{(DC)}<br />
+\end{align*}\]</p>
+<p>The fact that $g\circ f$ preserves the identity of the monoid is shown in the next section.</p>
+<h3>Axiom 4: Identity arrows</h3>
+<p>For a monoid $(S,\Delta)$, the identity function $\text{id}_S:S\to S$ preserves the monoid operation $\Delta$, because $\text{id}_S(s\Delta s&#8217;)=s\Delta s&#8217;$ by definition of the identity function, and that is $\text{id}_S(s)\Delta \text{id}_S(s&#8217;)$ for the same reason.</p>
+<p>The required diagrams below must commute because the set functions commute and, by Axiom 3, the set composition of a monoid homomorphism is a monoid homomorphism.</p>
+<div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Id1diagrammon.gif"  alt="" title="" /></div>
+<div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Id2diagrammon.gif" alt="" title="" /></div>
+<p>We also need to show that $g\circ f$ as in</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/monoidcompostri.png"  alt="" title="" /></div>
+</p>
+<p class=noind>preserves identities. This calculation proves that it does; it uses <a href="#DC">(DC)</a> and <a href="#ME">(ME)</a></p>
+<p>\[\begin{align*}<br />
+(g\circ f)(\text{id}_R)<br />
+&#038;=g(f((\text{id}_R))\\<br />
+&#038;=g(\text{id}_S)\\<br />
+&#038;=\text{id}_T<br />
+\end{align*}\]</p>
+<h3>Axiom 5: Associativity</h3>
+<p>The diagram</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Threecompstage3newletters.gif" alt="" title="" /></div>
+</p>
+<p class=noind>in the category $\mathsf{Set}$ commutes, so the diagram</p>
+<p><div class=diagram align="center"><img src="/MM/Mathematica/Category%20Theory/Threecompstage3mon.gif"  alt="" title="" /></div>
+</p>
+<p class=noind>must also commute.</p>
+<h1>References</h1>
+<p>All these references are available on line.</p>
+<ul>
+<li><a href="http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf">Category theory for computing science</a>, by Michael Barr and Charles Wells.</li>
+<li><a href="http://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">Category theory for programmers</a>, Bartosz Milewski.</li>
+<li><a href="http://www.math.jhu.edu/~eriehl/727/context.pdf">Category theory in context</a>, by Emily Riehl.</li>
+<li>  <a href="https://www.academia.edu/21694792/A_Gentle_Introduction_to_Category_Theory_Feb_2016_version_">A gentle introduction to category theory</a>, Peter Smith.</li>
+<li>The list <a href="http://www.logicmatters.net/categories/">Category Theory</a> in Logic Matters gives a pretty complete coverage of every introduction to category theory that is available online.</li>
+</ul>
+<p></p>
+<pre>  <img border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/>        </pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<p></p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=category-theory" rel="tag">category theory</a><a href="/Word%20Press/?tag=homomorphism" rel="tag">homomorphism</a><a href="/Word%20Press/?tag=monoid" rel="tag">monoid</a><a href="/Word%20Press/?tag=morphism" rel="tag">morphism</a><a href="/Word%20Press/?tag=object" rel="tag">object</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10110" class="post-10110 post type-post status-publish format-standard hentry category-abstractmathorg category-category-theory category-exposition category-math category-proof category-understanding-math tag-abstraction tag-arrow tag-associative tag-axiom tag-category tag-codomain tag-composite tag-definition tag-diagram tag-domain tag-function tag-identity tag-math-object tag-object">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=3" rel="category">abstractmath.org</a>, <a href="/Word%20Press/?cat=5" rel="category">category theory</a>, <a href="/Word%20Press/?cat=7" rel="category">exposition</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=14" rel="category">proof</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10110" rel="bookmark">A new kind of introduction to category theory</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10110" rel="bookmark"><time class="entry-date" datetime="2016-06-30T10:57:46+00:00">2016/06/30</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10110#respond">Leave a comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10110' ></g:plusone></div> <p>This post has been replaced by the post <a href="/Word%20Press/?p=10130">A slow introduction to category theory</a>.</p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=abstraction" rel="tag">abstraction</a><a href="/Word%20Press/?tag=arrow" rel="tag">arrow</a><a href="/Word%20Press/?tag=associative" rel="tag">associative</a><a href="/Word%20Press/?tag=axiom" rel="tag">axiom</a><a href="/Word%20Press/?tag=category" rel="tag">category</a><a href="/Word%20Press/?tag=codomain" rel="tag">codomain</a><a href="/Word%20Press/?tag=composite" rel="tag">composite</a><a href="/Word%20Press/?tag=definition" rel="tag">definition</a><a href="/Word%20Press/?tag=diagram" rel="tag">diagram</a><a href="/Word%20Press/?tag=domain" rel="tag">domain</a><a href="/Word%20Press/?tag=function" rel="tag">function</a><a href="/Word%20Press/?tag=identity" rel="tag">identity</a><a href="/Word%20Press/?tag=math-object" rel="tag">math object</a><a href="/Word%20Press/?tag=object" rel="tag">object</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10108" class="post-10108 post type-post status-publish format-standard hentry category-exposition category-math category-proof category-student-difficulties category-understanding-math tag-abstract-math tag-abstraction tag-abstraction-cliff tag-arrow tag-category tag-coset tag-definition tag-duality tag-function tag-group tag-intuition tag-multiplication-table">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=7" rel="category">exposition</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=14" rel="category">proof</a>, <a href="/Word%20Press/?cat=960" rel="category">student difficulties</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10108" rel="bookmark">Introducing abstract topics</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10108" rel="bookmark"><time class="entry-date" datetime="2016-06-30T10:50:48+00:00">2016/06/30</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10108#respond">Leave a comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10108' ></g:plusone></div> <p>I have been busy for the past several years revising <a href="http://www.abstractmawth.org">abstractmath.org</a> (abmath). Now I believe, perhaps foolishly, that most of the articles in abmath have reached beta, so now it is time for something new.</p>
+<p>For some time I have been considering writing <b>introductions to topics in abstract math</b>, some typically studied by undergraduates and some taken by scientists and engineers. The topics I have in mind to do first include <b>group theory</b> and <b>category theory</b>.</p>
+<p>The point of these introductions is to get the student started at the <i>very beginning of the topic</i>, when some students give up in total confusion. They meet and fall off of what I have called the <b>abstraction cliff</b>, which is discussed here and also in my blog posts <a href="/Word%20Press/?p=10069">Very early difficulties</a> and <a href="/Word%20Press/?p=10073">Very early difficulties II</a>.</p>
+</p>
+<p class=smallind>I may have stolen the phrase &#8220;abstraction cliff&#8221; from someone else.</p>
+<h2>Group theory</h2>
+<p>Group theory sets several traps for beginning students. </p>
+<h3>Multiplication table</h3>
+<ul>
+<li>A student may balk when a small finite group is defined using a set of letters in a <b>multiplication table</b>.<br />
+&#8220;But you didn&#8217;t say what the letters <i>are</i> or what the multiplication <i>is</i>?&#8221;</li>
+<li>Such a definition is an <b>abstract definition</b>, in contrast to the definition of &#8220;prime&#8221;, for example, which is stated in terms of already known entities, namely the integers.</li>
+<li>The multiplication table of a group tells you <i>exactly</i> what the binary operation is and any set with an operation that makes such a table correct is an example of the group being defined.</li>
+<li>A student who has <i>no understanding of abstraction</i> is going to be totally lost in this situation. It is quite possible that the professor has never even mentioned the concept of abstract definition. The professor is probably like most successful mathematicians: when they were students, they understood abstraction without having to have it explained, and possibly without even noticing they did so.</li>
+</ul>
+<h3>Cosets</h3>
+<ul>
+<li><b>Cosets</b> are a real killer. Some students at this stage are nowhere near thinking of a set as an <b>object</b> or a <b>thing</b>. The concept of applying a binary operation on a pair of sets (or any other mathematical objects with internal structure) is completely foreign to them. Did anyone ever talk to them about <a href="http://abstractmath.org/MM/MMMathObj.htm"><b>mathematical objects</b></a>?</li>
+<li>The consequence of this early difficulty is that such a student will find it hard to understand what a <a href="https://en.wikipedia.org/wiki/Quotient_group"><b>quotient group</b></a> is, and that is one of the major concepts you get early in a group theory course.</li>
+<li>The conceptual problems with multiplication of cosets is similar to those with pointwise addition of functions.  Given two functions $f,g:\mathbb{R}\to\mathbb{R}$, you define $f+g$ to be the function \[(f+g)(x):=f(x)+g(x)\] Along with pointwise multiplication, this makes the space of functions $\mathbb{R}\to\mathbb{R}$ a ring with nice properties.</li>
+<li>But you have to understand that each element of the ring is a <i>function</i> thought of as a single math object. The values of the function are <i>properties</i> of the function, but they are not elements of the ring. (You can include the real numbers in the ring as constant functions, but don&#8217;t confuse me with facts.)</li>
+<li>Similarly the elements of the quotient group are math objects called cosets. They are not elements of the original group. (To add to the confusion, they are also blocks of a congruence.)</li>
+</ul>
+<h3>Isomorphic groups</h3>
+<ul>
+<li>Many books, and many professors (including me) regard two <b>isomorphic groups</b> as the <i>same</i>. I remember getting anguished questions: &#8220;But the elements of $\mathbb{Z}_2$ are <i>equivalence classes</i> and the elements of the group of permutations of $\{1,2\}$ are <i>functions</i>.&#8221;</li>
+<li class=bluesmall>I admit that regarding two isomorphic groups as the same needs to be treated carefully when, unlike $\mathbb{Z}_2$, the group has a nontrivial automorphism group. ($\mathbb{Z}_3$ is &#8220;the same as itself&#8221; in two different ways.)  But you don&#8217;t have to bring that up the first time you attack that subject, any more than you have to bring up the fact that the category of sets does not have a set of objects on the first day you define categories.</li>
+</ul>
+<h2>Category theory</h2>
+<p>Category theory causes similar troubles. Beginning college math majors don&#8217;t usually meet it early.  But category theory has begun to be used in other fields, so plenty of computer science students, people dealing with databases, and so on are suddenly trying to understand categories and failing to do so <i>at the very start</i>.</p>
+<p>The G&#038;G post <a href="/Word Press/wp-admin/post.php?post=10110">A new kind of introduction to category theory</a> constitutes an alpha draft of the first part of an article introducing category theory following the ideas of this post.</p>
+<h3>Objects and arrows are abstract</h3>
+<ul>
+<li>Every once in a while someone asks a question on <a href="http://math.stackexchange.com/questions/tagged/category-theory">Math StackExchange</a> that shows they have no idea that an object of a category need not have elements and that morphisms need not be functions that take elements to elements.</li>
+<li class=bluesmall>One questioner understood that the claim that a morphism need not be a function meant that it might be a multivalued function.</li>
+</ul>
+<h3>Duality</h3>
+<ul>
+<li>That misunderstanding comes up with <b>duality</b>. The definition of dual category requires turning the arrows around. Even if the original morphism takes elements to elements, the opposite morphism does not have to take elements to elements.  In the case of the category of sets, an arrow in $\text{Set}^{op}$ <i>cannot</i> take elements to elements &#8212; for example, the opposite of the function $\emptyset\to\{1,2\}$.</li>
+<li>The fact that there is a concrete category <i>equivalent</i> to $\text{Set}^{op}$ is a red herring. It involves <i>different sets</i>: the function corresponding to the function just mentioned goes from a four-element set to a singleton.  But in the category $\text{Set}^{op}$ <i>as defined </i> it is <i>simply an arrow</i>, not a function.</li>
+</ul>
+<h3>Not understanding how to use definitions</h3>
+<ul>
+<li>Some of the questioners on Math Stack Exchange ask how to prove a statement that is quite simple to prove directly from the definitions of the terms involved, but what they <i>ask</i> and what they are obviously <i>trying</i> to do is to <i>gain an intuition</i> in order to understand why the statement is true. This is <i>backward</i> &#8212; the first thing you should do is use the definition (at least in the first few days of a math class &#8212; after that you have to use theorems as well!</li>
+<li>I have discussed this in the blog post <a href="/Word%20Press/?p=10077">Insights into mathematical definitions</a> (which gives references to other longer discussions by math ed people). See also the abmath section <a href="/MM/MMUsefulBehaviors.htm#rewritebydefinition">Rewrite according to the definitions</a>.</li>
+</ul>
+<h2>How an introduction to a math topic needs to be written</h2>
+<p>The following list shows some of the tactics I am thinking of using in the math topic introductions. It is quite likely that I will conclude that some tactics won&#8217;t work, and I am sure that tactics I haven&#8217;t mentioned here will be used.</p>
+<ul>
+<li>The introductions should not go very far into the subject.  Instead, they should bring an exhaustive and explicit discussion of how to get into the <i>very earliest part of the topic</i>, perhaps the definition, some examples, and a few simple theorems. I doubt that a group theory student who hasn&#8217;t mastered abstraction and what proofs are about will ever be ready to learn the Sylow theorems.</li>
+<li>You can&#8217;t do examples and definitions simultaneously, but you can come close by  going through an example <b>step by step</b>, checking each part of the definition.</li>
+<p class=purpleprose>There is a real split between students who want the definitions first<br />(most of whom don&#8217;t have the abstraction problems I am trying to overcome)<br />and those who really really think they need examples first (the majority) <br /><font color="#911B1B">because they don&#8217;t understand abstraction.</font></p>
+<li>When you introduce an axiom, give an example of how you would prove that some binary operation satisfies the axiom. For example, if the axiom is that every element of a group must have an inverse, <i>right then and there</i> prove that addition on the integers satisfies the axiom and disprove that multiplication on integers satisies it.</li>
+<li>When the definition uses some undefined math objects, point out immediately with examples that you can&#8217;t have any intuition about them except what the axioms give you. (In contrast to definition of division of integers, where you and the student already have intuitions about the objects.)</li>
+<li>Make explicit the possible problems with <a href="http://abstractmath.or
+
+<ul>
+g/MM/MMCognitiveDissonance.htm&#8221;>cognitive dissonance</a>.</li>
+</ul>
+<ul>
+<li>An element of a group does not have to be a number even though you call the binary operation &#8220;multiplication&#8221;.</li>
+<li>An arrow in a category need not take elements to elements (because the objects don&#8217;t have to have elements) even though the arrow has a &#8220;domain&#8221; and a &#8220;codomain&#8221;.</li>
+</ul>
+<h2>Students who have these problems can&#8217;t become mathematicians?</h2>
+<ul>
+<li>Students who have abstraction problems of the sort I have discussed here (and ad nauseum all the way through <a href="/">abstractmath.org</a> and <a href="/Word%20Press/">Gyre&#038;Gimble</a>) will indeed find it difficult to become mathematical researchers &#8212; but not impossible!</li>
+<li>But that is not the point. All college math professors will get people who will go into theoretical computing science, and therefore need to understand category theory, or into particle physics, and need to understand groups, and so on.</li>
+<li>By being clear at the earliest stages of how <i>mathematicians actually do math</i>, they will produce more people in other fields who actually have some grasp of what is going on with the topics they have studied in math classes, and hopefully will  be willing to go back and learn some more math if some type of math rears its head in the theories of their field.</li>
+<li>Besides, why do you want to alienate huge numbers of people from math, as our way of teaching in the past has done?</li>
+<li class=bluesmall>&#8220;Our&#8221; means grammar school teachers, high school teachers and college professors.</li>
+</ul>
+<h3>Acknowledgment</h3>
+<p>Thanks to Kevin Clift for corrections.</p>
+<p></p>
+<pre>  <img border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/>        </pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<p></p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=abstract-math" rel="tag">abstract math</a><a href="/Word%20Press/?tag=abstraction" rel="tag">abstraction</a><a href="/Word%20Press/?tag=abstraction-cliff" rel="tag">abstraction cliff</a><a href="/Word%20Press/?tag=arrow" rel="tag">arrow</a><a href="/Word%20Press/?tag=category" rel="tag">category</a><a href="/Word%20Press/?tag=coset" rel="tag">coset</a><a href="/Word%20Press/?tag=definition" rel="tag">definition</a><a href="/Word%20Press/?tag=duality" rel="tag">duality</a><a href="/Word%20Press/?tag=function" rel="tag">function</a><a href="/Word%20Press/?tag=group" rel="tag">group</a><a href="/Word%20Press/?tag=intuition" rel="tag">intuition</a><a href="/Word%20Press/?tag=multiplication-table" rel="tag">multiplication table</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10103" class="post-10103 post type-post status-publish format-standard hentry category-language-of-math category-math category-representations category-understanding-math tag-codomain tag-cograph tag-component tag-cycle tag-disjoint-cycle-notation tag-domain tag-endograph tag-finite-function tag-function tag-graph tag-mapping-diagram tag-mathematica tag-permutation tag-representation tag-rule tag-table tag-tree tag-two-line-notation">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=10" rel="category">language of math</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=576" rel="category">representations</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10103" rel="bookmark">Representations of functions III</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10103" rel="bookmark"><time class="entry-date" datetime="2016-05-10T10:39:18+00:00">2016/05/10</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10103#respond">Leave a comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10103' ></g:plusone></div> <h2>Introduction to this post</h2>
+<p>I am writing a new <a href="">abstractmath</a> chapter called <b>Representations of Functions</b>. It will replace some of the material in the chapter <a href="/MM/MMImagesMetaphorsFunctions.htm">Functions: Images, Metaphors and Representations</a>. This post is a draft of the sections on representations of finite functions.</p>
+<p>The diagrams in this post were created using the Mathematica Notebook <a href="/MM/Mathematica/Function%20Representations/Constructions%20for%20cographs%20and%20endographs%20of%20finite%20functions.nb">Constructions for cographs and endographs of finite functions.nb</a>.<br />
+You can access this notebook if you have <a href="https://www.wolfram.com/mathematica/">Mathematica</a>, which can be bought, but is available for free for faculty and students at many universities, or with <a href="https://www.wolfram.com/cdf-player/">Mathematica CDF Player</a>, which is free for anyone and runs on Windows, Mac and Linux.</p>
+<p>Like everything in abstractmath.org, the notebooks are covered by a <a href="#creativecommons">Creative Commons ShareAlike 3.0 License.</a></p>
+<h3>Segments posted so far</h3>
+<ul>
+<li><a href="/Word%20Press/?p=10084">Representations of Functions I.</a> This post also contains a draft introduction the entire new chapter.</li>
+<li><a href="/Word%20Press/?p=10089">Representations of Functions II</a>.</li>
+<li>Representations of Functions III (this post).</li>
+</ul>
+<p><a name="graphsoffinitefunctions"></a></p>
+<h2>Graphs of finite functions</h2>
+<p>When a function is continuous, its graph shows up as a curve in the plane or as a curve or surface in 3D space. When a function is defined on a set without any notion of continuity (for example a finite set), the graph is just a set of ordered pairs and does not tell you much.</p>
+<p>A finite function $f:S\to T$ may be represented in these ways: </p>
+<ul>
+<li>Its <a href="http://abstractmath.org/MM/MMFuncSpec.htm#graph">graph</a> $\{(s,f(s))|s\in S\}$. This is graph as a mathematical object, not as a drawing or as a directed graph &#8212; see <a href="http://abstractmath.org/MM/MMGlossary.htm#graph">graph (two meanings)</a>).</li>
+<li>A <a href="#table">table</a>, <a href="#rule">rule</a> or <a href="#twolinenotation">two-line notation</a>. (All three of these are based on the same idea, but differ in presentation and are used in different mathematical specialties.)</li>
+<li>By using labels with arrows between them, arranged in one of two ways:</li>
+</ul>
+<ul>
+<li>A <a href="#cograph">cograph</a>, in which the domain and the codomain are listed separately.</li>
+<li>An <a href="#endograph">endograph</a>, in which the elements of the domain and the codomain are all listed together without repetition.</li>
+</ul>
+<p>All these techniques can also be used to show finite portions of infinite discrete functions, but that possibility will not be discussed here.</p>
+<h3 class=redit>Introductory Example</h3>
+<p>Let \[\text{f}:\{a,b,c,d,e\}\to\{a,b,c,d\}\] be the function defined by requiring that $f(a)=c$, $f(b)=a$, $f(c)=c$, $f(d)=b$, and $f(e)=d$. </p>
+<h4>Graph</h4>
+</p>
+<p>The graph of $f$ is the set<br />
+\[(a,c),(b,a),(c,c),(d,b),(e,d)\]<br />
+As with any set, the order in which the pairs are listed is irrelevant. Also, the letters $a$, $b$, $c$, $d$ and $e$ are merely letters. They are not variables.</p>
+<p><a name="table"></a></p>
+<h4>Table</h4>
+<p>$\text{f}$ is given by this <b>table</b>:</p>
+<p><img src="/MM/Mathematica/Function Representations/Grid1.png" hspace=12/></p>
+<p>This sort of table is the format used in databases.  For example, a table in a database might show the department each employee of a company works in:</p>
+<p><img src="/MM/Mathematica/Function Representations/Grid2.png" hspace=12/></p>
+<p><a name="rule"></a></p>
+<h4>Rule</h4>
+<p>The <b>rule</b> determined by the finite function $f$ has the form</p>
+<p>\[(a\mapsto b,b\mapsto a,c\mapsto c,d\mapsto b,e\mapsto d)\]</p>
+<p>Rules are built in to Mathematica and are useful in many situations.  In particular, the endographs in this article are created using rules. In Mathematica, however, rules are written like this:</p>
+<p>\[(a\to b,b\to a,c\to c,d\to b,e\to d)\]</p>
+<p>This is inconsistent with the usual math usage (see <a href="http://abstractmath.org/MM/MMFuncNotation.htm#barredarrownotation">barred arrow notation</a>) but on the other hand is easier to enter in Mathematica.</p>
+<p class=smallind>In fact, Mathematica uses very short arrows in their notation for rules, shorter than the ones used for the arrow notation for functions. Those extra short arrows don&#8217;t seems to exist in TeX.</p>
+<p><a name="twolinenotation"></a></p>
+<h4>Two-line notation</h4>
+<p><b>Two-line notation</b> is a kind of horizontal table.</p>
+<p>\[\begin{pmatrix} a&#038;b&#038;c&#038;d&#038;e\\c&#038;a&#038;c&#038;b&#038;d\end{pmatrix}\]</p>
+<p>The three notations table, rule and two-line do the same thing: If $n$ is in the domain, $f(n)$ is shown adjacent to $n$ &#8212; to its right for the table and the rule and below it for the two-line.</p>
+<p class=smallind>Note that in contrast to the table, rule and two-line notation, in a cograph each element of the codomain is shown only once, even if the function is not <a href="https://en.wikipedia.org/wiki/Injective_function">injective</a>.</p>
+<p><a name="cograph"></a></p>
+<h4>Cograph</h4>
+<p>To make the <b>cograph</b> of a finite function, you list the domain and codomain in separate parallel rows or columns (even if the domain and codomain are the same set), and draw an arrow from each $n$ in the domain to $f(n)$ in the codomain.</p>
+<p>This is the cograph for $\text{f}$, represented in columns</p>
+<p><center><img src="/MM/Mathematica/Function Representations/Finitefunctioncograph1.png" hspace=12/></center></p>
+<p class=noind>and in rows (note that $c$ occurs only once in the codomain)</p>
+<p><center><img src="/MM/Mathematica/Function Representations/Finitefunctionrowcograph1.png" hspace=12/></center></p>
+<p class=noind>Pretty ugly, but the cograph for finite functions does have its uses, as for example in the Wikipedia article <a href="http://en.wikipedia.org/wiki/Function_composition">composition of functions.</a></p>
+<p class=smallind>In both the two-line notation and in cographs displayed vertically, the function <i>goes down</i> from the domain to the codomain. I guess functions obey the law of gravity.</p>
+<h5>Rearrange the cograph</h5>
+<p>There is no expectation that in the cograph $f(n)$ will be adjacent to $n$. But in most cases you can rearrange both the domain and the codomain so that some of the structure of the function is made clearer; for example:</p>
+<p><center><img width="190" height="70"
+src="/MM/Mathematica/Function Representations/rearrcograph.png" hspace=12/></center></p>
+<p class=smallind>The domain and codomain of a finite function can be rearranged in any way you want because <i>finite functions are not continuous functions.</i> This means that the locations of points $x_1$ and $x_2$ have nothing to do with the locations of $f(x_1)$ and $f(x_2)$: The domain and codomain are <a href="https://en.wikipedia.org/wiki/Discrete_mathematics">discrete</a>.</p>
+<p><a name="endograph"></a></p>
+<h4>Endograph</h4>
+<p>The <b>endograph</b> of a function $f:S\to T$ contains one node labeled $s$ for each $s\in S\cup T$, and an arrow from $s$ to $s&#8217;$ if $f(s)=s&#8217;$. Below is the endograph for $\text{f}$.</p>
+<p><center></p>
+<p><img src="/MM/Mathematica/Function Representations/Finitefunctionendograph1.png" hspace=12/></p>
+<p></center></p>
+<p>The endograph shows you immediately that $\text{f}$ is not a permutation. You can also see that with whatever letter you start with, you will end up at $c$ and continue looping at $c$ forever. You could have figured this out from the cograph (especially the rearranged cograph above), but it is not immediately obvious in the cograph the way it in the endograph.</p>
+<p>There are more examples of endographs below and in the blog post<br />
+<a href="/Word%20Press/?p=2034">A tiny step towards killing string-based math.</a> Calculus-type functions can also be shown using endographs and cographs: See <a href="http://users.humboldt.edu/flashman/MD/section-1.1VF.html">Mapping Diagrams from A(lgebra) B(asics) to C(alculus) and D(ifferential) E(quation)s,</a> by <a href="http://users.humboldt.edu/flashman">Martin Flashman</a>, and my blog posts <a href="/Word%20Press/?p=1885">Endographs and cographs of real functions</a> and <a href="/Word%20Press/?p=1885">Demos for graph and cograph of calculus functions.</a></p>
+<p><a name="permutation"></a></p>
+<h3 class=redit>Example: A permutation</h3>
+</p>
+<p>Suppose $p$ is the <a href="https://en.wikipedia.org/wiki/Permutation">permutation</a> of the set \[\{0,1,2,3,4,5,6,7,8,9\}\]given in two-line form by<br />
+\[\begin{pmatrix} 0&#038;1&#038;2&#038;3&#038;4&#038;5&#038;6&#038;7&#038;8&#038;9\\0&#038;2&#038;1&#038;4&#038;5&#038;3&#038;7&#038;8&#038;9&#038;6\end{pmatrix}\]
+</p>
+<h4>Cograph</h4>
+<p><center><img width="340" height="80"
+src="/MM/Mathematica/Function Representations/cographperm.png"/></center></p>
+<h4>Endograph</h4>
+<p><center><img width="220" height="200"
+src="/MM/Mathematica/Function Representations/endographperm.png" hspace=12/></center></p>
+<p><a name="component"></a></p>
+<p>Again, the endograph shows the structure of the function much more clearly than the cograph does. </p>
+<p>The endograph consists of four separate parts (called <b>components</b>) not connected with each other. Each part shows that repeated application of the function runs around a kind of loop; such a thing is called a <b>cycle</b>. <i>Every permutation of a finite set consists of disjoint cycles as in this example.</i></p>
+<h4>Disjoint cycle notation</h4>
+<p>Any permutation of a finite set can be represented in <a href="https://en.wikipedia.org/wiki/Cyclic_permutation">disjoint cycle notation</a>: The function $p$ is represented by:</p>
+<p>\[(0)(1,2)(3,4,5)(6,7,8,9)\]</p>
+<p>Given the disjoint cycle notation, the function can be determined as follows: For a given entry $n$, $p(n)$ is the <i>next entry in the notation</i>, if there is a next entry (instead of a parenthesis).  If there is not a next entry, $p(n)$ is the first entry in the cycle that $n$ is in. For example, $p(7)=8$ because $8$ is the next entry after $7$, but $p(5)=3$ because the next symbol after $5$ is a parenthesis and $3$ is the first entry in the same cycle.</p>
+<p>The disjoint cycle notation is not unique for a given permutation. All the following notations determine the same function $p$:</p>
+<p>\[(0)(1,2)(4,5,3)(6,7,8,9)\]<br />
+\[(0)(1,2)(8,9,6,7)(3,4,5)\]<br />
+\[(1,2)(3,4,5)(0)(6,7,8,9)\]<br />
+\[(2,1)(5,3,4)(9,6,7,8)\]<br />
+\[(5,3,4)(1,2)(6,7,8,9)\]</p>
+<p>Cycles such as $(0)$ that contain only one element are usually omitted in this notation.</p>
+<p><a name="tree"></a></p>
+<h3 class=redit>Example: A tree</h3>
+<p>Below is the endograph of a function \[t:\{0,1,2,3,4,5,6,7,8,9\}\to\{0,1,2,3,4,5,6,7,8,9\}\]</p>
+<p><center><img src="/MM/Mathematica/Function Representations/treeex.png" hspace=12/></center></p>
+<p>This endograph is a <b>tree</b>. The graph of a function $f$ is a tree if the domain has a particular element $r$ called the <b>root</b> with the properties that</p>
+<ul>
+<li>$f(r)=r$, and</li>
+<li>starting at any element of the domain, repreatedly applying $f$ eventually produces $r$.</li>
+</ul>
+<p>In the case of $t$, the root is $4$.  Note that $t(4)=4$, $t(t(7))=4$, $t(t(t(9)))=4$, $t(1)=4$, and so on.</p>
+<p>The endograph</p>
+<p><center></p>
+<p><img src="/MM/Mathematica/Function Representations/Finitefunctionendograph1.png" hspace=12/></p>
+<p></center></p>
+<p class=noind>shown <a href="#endograph">here</a> is also a tree.</p>
+<p class=smallind>See the Wikipedia article on trees for the usual definition of tree as a special kind of graph.  For reading this article, the definition given in the previous paragraph is sufficient.</p>
+<h3>The general form of a finite function</h3>
+<p>This is the endograph of a function $t$ on a $17$-element set:</p>
+<p><center><img src="/MM/Mathematica/Function Representations/bigendo.png" hspace=12/></center></p>
+<p>It has two <a href="#component">components</a>. The upper one contains one $2$-cycle, and no matter where you start in that component, when you apply $t$ over and over you wind up flipping back and forth in the $2$-cycle forever. The lower component has a $3$-cycle with a similar property.</p>
+<p>This illustrates a general fact about finite functions: </p>
+<ul>
+<li>The endograph of any finite function contains one or more components $C_1$ through $C_k$.</li>
+<li>Each component $C_k$ contains exactly one $n_k$ cycle, for some integer $n_k\geq 1$, to which are attached zero or more trees.</li>
+<li>Each tree in $C_k$ is attached in such a way that its root is on the unique cycle contained in $C_k$.</li>
+</ul>
+<p>In the example above, the top component has three trees attached to it, two to $3$ and one to $4$. (This tree does not illustrate the fact that an element of one of the cycles does not have to have any trees attached to it).</p>
+<p>You can check your understanding of finite functions by thinking about the following two theorems:</p>
+<ul>
+<li>A <a href="#permutation">permutation</a> is a finite function with the property that  its cycles have no trees attached to them.</li>
+<li>A <a href="#tree">tree</a> is a finite function that has exactly one component whose cycle is a $1$-cycle.</li>
+</ul>
+<p></p>
+<p><a name="creativecommons"></a><br />
+ </p>
+<pre><img border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/></pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<p></p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=codomain" rel="tag">codomain</a><a href="/Word%20Press/?tag=cograph" rel="tag">cograph</a><a href="/Word%20Press/?tag=component" rel="tag">component</a><a href="/Word%20Press/?tag=cycle" rel="tag">cycle</a><a href="/Word%20Press/?tag=disjoint-cycle-notation" rel="tag">disjoint cycle notation</a><a href="/Word%20Press/?tag=domain" rel="tag">domain</a><a href="/Word%20Press/?tag=endograph" rel="tag">endograph</a><a href="/Word%20Press/?tag=finite-function" rel="tag">finite function</a><a href="/Word%20Press/?tag=function" rel="tag">function</a><a href="/Word%20Press/?tag=graph" rel="tag">graph</a><a href="/Word%20Press/?tag=mapping-diagram" rel="tag">mapping diagram</a><a href="/Word%20Press/?tag=mathematica" rel="tag">mathematica</a><a href="/Word%20Press/?tag=permutation" rel="tag">permutation</a><a href="/Word%20Press/?tag=representation" rel="tag">representation</a><a href="/Word%20Press/?tag=rule" rel="tag">rule</a><a href="/Word%20Press/?tag=table" rel="tag">table</a><a href="/Word%20Press/?tag=tree" rel="tag">tree</a><a href="/Word%20Press/?tag=two-line-notation" rel="tag">two-line notation</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10089" class="post-10089 post type-post status-publish format-standard hentry category-math tag-3d-curve tag-3d-space tag-continuous-function tag-function tag-graph tag-helix tag-images tag-mathematica tag-metaphors tag-parametric-graph tag-plane tag-representations tag-universal-covering-space">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=11" rel="category">math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10089" rel="bookmark">Representations of functions II</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10089" rel="bookmark"><time class="entry-date" datetime="2016-04-05T16:51:21+00:00">2016/04/05</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10089#comments">1 Comment</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10089' ></g:plusone></div> <h2>Introduction to this post</h2>
+<p>I am writing a new abstractmath chapter called <b>Representations of Functions</b>. It will replace some of the material in the chapter <a href="/MM/MMImagesMetaphorsFunctions.htm">Functions: Images, Metaphors and Representations</a>.</p>
+<p>This post includes a draft of the introduction to the entire new chapter (immediately below) and of the sections on graphs of continuous functions of one variable with values in the plane and in 3-space. Later posts will concern multivariable continuous functions and finite discrete functions.</p>
+<h2>Introduction to the new Chapter</h2>
+<p class=blue>Functions can be represented visually in many different ways. There is a sharp difference between representing <font color="#911B1B">continuous functions</font> and representing <font color="#911B1B">discrete functions</font>.</p>
+<p>For a continuous function $f$, $f(x)$ and $f(x&#8217;)$ tend to be close together when $x$ and $x&#8217;$ are close together. That means you can represent the values at an infinite number of points by exhibiting them for a bunch of close-together points. Your brain will automatically interpret the points nearby that are not represented.</p>
+<p>Nothing like this works for discrete functions. Many different arrangements of the inputs and outputs can be made. Different arrangements may be useful for representing different properties of the function.</p>
+<h3>Illustrations</h3>
+<p>The illustrations were created using these Mathematica Notebooks:</p>
+<ul>
+<li><a href="/MM/Mathematica/Function%20Representations/ContinuousFunctionsForFuncReps.nb">ContinuousFunctionsForFuncReps.nb</a></li>
+<li><a href="/MM/Mathematica/Function%20Representations/ContinuousFunctionsForFuncRepsTwo.nb">ContinuousFunctionsForFuncRepsTwo.nb</a></li>
+</ul>
+<p>These notebooks contain many more examples of the ways functions can be represented than are given in this article. The notebooks also contain some manipulable diagrams which may help you understand the diagrams. In addition, all the 3D diagrams can be rotated using the cursor to get different viewpoints. You can access these tools if you have <a href="https://www.wolfram.com/mathematica/">Mathematica</a>, which is available for free for faculty and students at many universities, or with <a href="https://www.wolfram.com/cdf-player/">Mathematica CDF Player</a>, which runs on Windows, Mac and Linux.</p>
+<p>Like everything in abstractmath.org, the notebooks are covered by a <a href="#creativecommons">Creative Commons ShareAlike 3.0 License.</a></p>
+<h3>Segments posted so far</h3>
+<ul>
+<li><a href="/Word%20Press/?p=10084">Representations of Functions I</a></li>
+<li><a href="/Word%20Press/?p=10089">Representations of Functions II</a> (this post)</li>
+</ul>
+<h2>Functions from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}$</h2>
+<p>Suppose $F:\mathbb{R}\to\mathbb{R}\times\mathbb{R}$. That means you put in one number and get out a pair of numbers.</p>
+<h3>The unit circle</h3>
+<p>An example is the <b>unit circle</b>, which is the graph of the function $t\mapsto(\cos t,\sin t)$. That has this <b>parametric plot</b>:</p>
+<p></p>
+<p><img src="/MM/Mathematica/Function Representations/Circle.gif" hspace=12 alt="Unit circle"/></p>
+<p></p>
+<p>Because $\cos^2 t+\sin^2 t=1$, every real number $t$ produces a point on the unit circle. Four point are shown. For example,\[(\cos\pi,\,\sin\pi)=(-1,0)\] and<br />
+\[(\cos(5\pi/3),\,\sin(5\pi/3))=(\frac{1}{2},\frac{\sqrt3}{2})\approx(.5,.866)\]</p>
+<h4>$t$ as time</h4>
+<p> In graphing functions $f:\mathbb{R}\to\mathbb{R}$, the plot is in two dimensions and consists of the points $(x,f(x))$: the input and the output. The parametric plot shown above for $t\mapsto(\cos^2 t+\sin^2)$ shows only the output points $(\cos t,\sin t)$; $t$ is not plotted on the graph at all. So the graph is in the plane instead of in three-dimensional space.</p>
+<p>An alternative is to use <b>time</b> as the third dimension: If you start at some number $t$ on the real line and continually increase it, the value $f(t)$ moves around the circle counterclockwise, repeating every $2\pi$ times. If you decrease $t$, the value moves clockwise. The animated gif <a href="/MM/Mathematica/Function Representations/circlemovie.gif">circlemovie.gif</a> shows how the location of a point on the circle moves around the circle as $t$ changes from $0$ to $2\pi$. Every point is traversed an infinite number of times as $t$ runs through all the real numbers. </p>
+<h4>The unit circle with $t$ made explicit</h4>
+<p><a name="explicit"></a></p>
+<p>Since we have access to three dimensions, we can show the input $t$ explicitly by using a <b>three-dimensional graph</b>, shown below. The blue circle is the function $t\mapsto(\cos t,\sin t,0)$ and the gold helix is the function $t\mapsto(\cos t,\sin t,.2t)$.</p>
+<p></p>
+<p><img width=200 height=300 src="/MM/Mathematica/Function Representations/CircleAndHelixWithPoints.gif" hspace=12 alt="Unit circle"/></p>
+<p></p>
+<p>The introduction of $t$ as the value in the vertical direction changes the circle into a helix. The animated .gif <a href="/MM/Mathematica/Function Representations/covermovie.gif">covermovie.gif</a> shows both the travel of a point on the circle and the corresponding point on the helix.</p>
+<p>As $t$ changes, the circle is drawn over and over with a period of $2\pi$. Every point on the <i>circle</i> is traversed an infinite number of times as $t$ runs through all the real numbers. But each point on the <i>helix</i> is traversed exactly once. For a given value of $t$, the point on the helix is always directly above or below the point on the circle.</p>
+<p>The helix is called the <a href="https://en.wikipedia.org/wiki/Covering_space#Universal_covers">universal covering space</a> of the circle, and the set of points on the helix over (and under) a particular point $p$ on the circle is called the <b>fiber over $p$</b>. The universal cover of a space is a big deal in topology.</p>
+<h3>Figure-8 graph</h3>
+<p>This is the parametric graph of the function $t\mapsto(\cos t,\sin 2t)$.</p>
+<p></p>
+<p><img src="/MM/Mathematica/Function Representations/Figure8.gif" hspace=12 alt="Figure 8"/></p>
+<p></p>
+<p class=noind>Notice that it crosses itself at the origin, when $t$ is any odd multiple of $\frac{\pi}{2}$.</p>
+<p><a name="ucfigure8"></a></p>
+<p>Below is the universal cover of the Figure-8 graph. As you can see, the different instances of crossing at $(0,0)$ are separated. The animated.gif <a href="/MM/Mathematica/Function Representations/Fig8movie.gif">Fig8movie</a> shows the paths taken as $t$ changes on the figure 8 graph and on its universal cover</p>
+<p></p>
+<p><img width=200 height=300 src="/MM/Mathematica/Function Representations/Figure8AndCovering.gif" hspace=12 alt="Unit circle"/></p>
+<p></p>
+<h2>Functions from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$</h2>
+<p>The graph of a function from a subset of $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$ can also be drawn as a parametric graph in three-dimensional space, giving a three-dimensional curve. The trick that I used in the previous section of showing the input parameter so that you can see the universal cover won&#8217;t work in this case because it would require four dimensions.</p>
+<h3>Universal covers</h3>
+<p>The gold curves in the figures for the universal covers of the <a href="#explicit">circle</a> and the <a href="#ucfigure8">figure 8</a> are examples of functions from $\mathbb{R}$ to $\mathbb{R}\times\mathbb{R}\times\mathbb{R}$.</p>
+<h3>The seven-pointed crown</h3>
+<p>Here are views from three different angles of the graph of the function $t\mapsto(\cos t, \sin t, \sin 7t)$:</p>
+<p><img width=200 height=200
+src="/MM/Mathematica/Function Representations/Crown1.gif" hspace=12/><img width=200 height=200
+src="/MM/Mathematica/Function Representations/Crown3.gif" hspace=12/><img width=200 height=200
+src="/MM/Mathematica/Function Representations/Crown4.gif" hspace=12/></p>
+<p>The animated gif <a href="/MM/Mathematica/Function Representations/crownmovie.gif">crownmovie.gif</a> represents the parameter $t$ in time.</p>
+<h3>Another curve in space</h3>
+<p>Below are two views of the curve defined by $t\mapsto({-4t^2+53t)/18,t,.4(-t^2+1-10t)}$.</p>
+<p><img width=200 height=200 src="/MM/Mathematica/Function Representations/Exp1bare.gif" hspace=12/><img width=200 height=200 src="/MM/Mathematica/Function Representations/Exp1bare2.gif" hspace=12/></p>
+<p>The following plots the $x$-curve $-4t^2+53t)/18$ gold in the $yz$ plane and the $z$ curve $.4(-t^2+1-10t)$ in the $xy$ plane. The first and third views are arranged so that you see the curve just behind one of those two planes.</p>
+<p><img width=200 height=200 src="/MM/Mathematica/Function Representations/Exp1a.gif" hspace=12/><br />
+<img width=200 height=200 src="/MM/Mathematica/Function Representations/Exp1b.gif" hspace=12/><br />
+<img width=200 height=200 src="/MM/Mathematica/Function Representations/Exp1c.gif" hspace=12/><img width=200 height=200 src="/MM/Mathematica/Function Representations/Exp1d.gif" hspace=12/></p>
+<p><a name="creativecommons"></a></p>
+<p></p>
+<pre><img border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/></pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<p></p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=3d-curve" rel="tag">3D curve</a><a href="/Word%20Press/?tag=3d-space" rel="tag">3d space</a><a href="/Word%20Press/?tag=continuous-function" rel="tag">continuous function</a><a href="/Word%20Press/?tag=function" rel="tag">function</a><a href="/Word%20Press/?tag=graph" rel="tag">graph</a><a href="/Word%20Press/?tag=helix" rel="tag">helix</a><a href="/Word%20Press/?tag=images" rel="tag">images</a><a href="/Word%20Press/?tag=mathematica" rel="tag">mathematica</a><a href="/Word%20Press/?tag=metaphors" rel="tag">metaphors</a><a href="/Word%20Press/?tag=parametric-graph" rel="tag">parametric graph</a><a href="/Word%20Press/?tag=plane" rel="tag">plane</a><a href="/Word%20Press/?tag=representations" rel="tag">representations</a><a href="/Word%20Press/?tag=universal-covering-space" rel="tag">universal covering space</a></span></footer></article><!-- #post-## -->
+
+<article id="post-10084" class="post-10084 post type-post status-publish format-standard hentry category-abstractmathorg category-math category-representations category-understanding-math tag-analytic-geometry tag-continuous-function tag-discontinuous-function tag-discrete-function tag-graph tag-mathematica tag-real-variable tag-representation">
+	
+	<header class="entry-header">
+				<div class="entry-meta">
+			<span class="cat-links"><a href="/Word%20Press/?cat=3" rel="category">abstractmath.org</a>, <a href="/Word%20Press/?cat=11" rel="category">math</a>, <a href="/Word%20Press/?cat=576" rel="category">representations</a>, <a href="/Word%20Press/?cat=17" rel="category">understanding math</a></span>
+		</div>
+		<h1 class="entry-title"><a href="/Word%20Press/?p=10084" rel="bookmark">Representations of functions I</a></h1>
+		<div class="entry-meta">
+			<span class="entry-date"><a href="/Word%20Press/?p=10084" rel="bookmark"><time class="entry-date" datetime="2016-03-31T11:49:23+00:00">2016/03/31</time></a></span> <span class="byline"><span class="author vcard"><a class="url fn n" href="/Word%20Press/?author=1" rel="author">SixWingedSeraph</a></span></span>			<span class="comments-link"><a href="/Word%20Press/?p=10084#comments">4 Comments</a></span>
+					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<div class='wdgpo wdgpo_standard_count'><g:plusone size='standard' count='true' href='http://www.abstractmath.org/Word%20Press/?p=10084' ></g:plusone></div> <h2>Introduction to this post</h2>
+<p>I am writing a new abstractmath chapter called <b>Representations of Functions.</b> It will replace some of the material in the chapter <a href="www.abstractmath.org/MM/MMImagesMetaphorsFunctions.htm">Functions: Images, Metaphors and Representations</a>.</p>
+<p>This post includes a draft of the introduction to the new chapter (immediately below) and of the section <a href="#representationsofcontinuousfunctionsofonevariable">Graphs of continous functions of one variable</a>. Later posts will concern multivariable continuous functions, probably in two or three sections, and finite discrete functions.</p>
+<h2>Introduction to the new abstractmath chapter on representations of functions</h2>
+<p class=blue>Functions can be represented visually in many different ways. There is a sharp difference between representing <font color="#911B1B">continuous functions</font> and representing <font color="#911B1B">discrete functions</font>.</p>
+<p>For a continuous function $f$, $f(x)$ and $f(x&#8217;)$ tend to be close together when $x$ and $x&#8217;$ are close together. That means you can represent the values at an infinite number of points by exhibiting them for a bunch of close-together points. Your brain will automatically interpret the points nearby that are not represented.</p>
+<p>Nothing like this works for discrete functions. As you will see in the section on discrete functions, many different arrangements of the inputs and outputs can be made. In fact, different arrangements may be useful for representing different properties of the function.</p>
+<h3>Illustrations</h3>
+<p>The illustrations were created using these Mathematica Notebooks:</p>
+<ul>
+<li><a href="/MM/Mathematica/Function%20Representations/ContinuousFunctionsForFuncReps.nb">ContinuousFunctionsForFuncReps.nb</a></li>
+<li><a href="/MM/Mathematica/Function%20Representations/ContinuousFunctionsForFuncRepsTwo.nb">ContinuousFunctionsForFuncRepsTwo.nb</a> [Note: The graphs in this post are in this notebook.]</li>
+</ul>
+<p>These notebooks contain many more examples of the ways functions can be represented than are given in this article. The notebooks also contain some manipulable diagrams which may help you understand the diagrams. In addition, all the 3D diagrams can be rotated using the cursor to get different viewpoints. You can access these tools if you have <a href="https://www.wolfram.com/mathematica/">Mathematica</a>, which is available for free for faculty and students at many universities, or with <a href="https://www.wolfram.com/cdf-player/">Mathematica CDF Player</a>, which runs on Windows, Mac and Linux.</p>
+<p>Like everything in abstractmath.org, the notebooks are covered by a <a href="#creativecommons">Creative Commons ShareAlike 3.0 License.</a></p>
+<h3>Segments posted so far</h3>
+<ul>
+<li><a href="/Word%20Press/?p=10084">Representations of Functions I</a> (this post)</li>
+<li><a href="/Word%20Press/?p=10089">Representations of Functions II</a></li>
+</ul>
+<p><a name="graphsofcontinuousfunctions"></a><a name="representationsofcontinuousfunctions"></a></p>
+<p><a name="representationsofcontinuousfunctionsofonevariable"></a></p>
+<h2>Graphs of continous functions of one variable</h2>
+<p>The most familiar representations of continuous functions are graphs of functions with one real variable. Students usually first see these in secondary school. Such representations are part of the subject called <a href="https://en.wikipedia.org/wiki/Analytic_geometry">Analytic Geometry</a>. This section gives examples of such functions.</p>
+<p class=smallind>There are other ways to represent continuous functions, in particular <a href="/Word%20Press/?p=1885">the cograph and the endograph</a>. These will be the subject of a separate post.</p>
+<p>The <b>graph</b> of a function $f:S\to T$ is the set of ordered pairs $\{(x,f(x))\,|\,x\in S\}$. (More about this definition <a href="http://abstractmath.org/MM/MMFuncSpec.htm#graph">here.</a>)</p>
+<p>In this section, I consider continuous functions for which $S$ and $T$ are both subsets of the real numbers. The mathematical graph of such a function are shown by plotting the ordered pairs $(x,f(x))$ as points in the two-dimensional <a href="https://en.wikipedia.org/wiki/Cartesian_coordinate_system">$xy$-plane</a>. Because the function is continuous, when $x$ and $x&#8217;$ are close to each other, $f(x)$ and $f(x&#8217;)$ tend to be close to each other. That means that the points that have been plotted cause your brain to merge together into a nice curve that allows you to visualize how $f$ behaves.</p>
+<p><a name="functiongraphexample"></a></p>
+<h4 class=redit>Example</h4>
+<p>This is a representation of the graph of the curve $g(x):=2-x^2$ for approximately the interval $(-2,2)$. The blue curve represents the graph.</p>
+<p><img width=300  src="/MM/Mathematica/Function Representations/ContFunc1b.gif" hspace=12 alt="Graph of a function."/></p>
+<p>The brown right-angled line in the upper left side, for example, shows how the value of independent variable $x$ at $(0.5)$ is plotted on the horizontal axis, and the value of $g(0.5)$, which is $1.75$, is plotted on the vertical axis. So the blue graph contains the point $(0.5,g(0.5))=(0.5,1.75)$. The animated gif <a href="/MM/Mathematica/Function%20Representations/upparmovie.gif">upparmovie.gif</a> shows a moving version of how the curve is plotted.</p>
+<h4>Fine points</h4>
+<ul>
+<li>The <i>mathematical</i> definition of the graph is that it is the set $\{(x,2-x^2)\,|\,x\in\mathbb{R}\}$. The <i>blue curve</i> is not, of course, the mathematical graph, it <i>represents</i> the mathematical graph.</li>
+<li>The blue curve consists of a large but <i>finite</i> collection of pixels on your screen, which are close enough together to appear to form a continuous curve which approximates the mathematical graph of the function.</li>
+<li>Notice that I called the example the &#8220;representation of the graph&#8221; instead of just &#8220;graph&#8221;.  That maintains the distinction between the mathematical ordered pairs $(x,g(x))$ and the pixels you see on the screen. But in fact mathe&shy;maticians and students nearly always refer to the blue line of pixels as the graph. That is like pointing to a picture of your grandmother and saying &#8220;this is my grandmother&#8221;.  There is nothing wrong with saying things that way. But it is worth understanding that two different ideas are being merged.</li>
+</ul>
+<p><a name="discontinuousfunctions"></a></p>
+<h3>Discontinuous functions</h3>
+<p>A discontinuous function which is continuous except for a small finite number of breaks can also be represented with a graph.</p>
+<h4 class=redit>Example</h4>
+<p>Below is the function $f:\mathbb{R}\to\mathbb{R}$ defined by<br />
+\[f(x):=\left\{<br />
+\begin{align}<br />
+2-x^2\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(x\gt0) \\<br />
+1-x^2\,\,\,\,\,\,(-1\lt x\lt 0) \\<br />
+2-x^2\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(x\lt-1)<br />
+\end{align}\right.\]</p>
+<p><img src="/MM/Mathematica/Function Representations/DiscontFunc.gif" hspace=12 alt="Graph of a discontinuous function."/></p>
+<h5>Example</h5>
+<p>The <a href="https://en.wikipedia.org/wiki/Nowhere_continuous_function#Dirichlet_function">Dirichlet function</a> is defined by<br />
+\[F(x):=<br />
+\begin{cases}<br />
+1 &#038;<br />
+\text{if }x\text{ is rational}\\<br />
+\frac{1}{2} &#038;<br />
+\text{if }x\text{ is irrational}\\ \end{cases}\]  for all real $x$.</p>
+<p>The abmath article <a href="/MM/MMFuncExamples.htm#dirichlet">Examples of functions</a> spells out in detail what happens when you try to draw this function.
+</p>
+<p><a name="graphscanfoolyou"></a></p>
+<h3>Graphs can fool you</h3>
+<p>The graph of a continuous function cannot usually show the whole graph, unless it is defined only on a finite interval.  This can lead you to jump to conclusions.</p>
+<h5>Example</h5>
+<p>For example, you can&#8217;t tell from the the <a href="#functiongraphexample">graph of the function</a> $y=2-x^2$ whether it has a local minimum (because the graph does not show all of the function), although you <i>can</i> tell by using calculus on the formula that it does not have one. The graph looks like it might have a vertical asymptotes, but it doesn&#8217;t, again as you can tell from the formula.</p>
+<p class=purpleprose>Discovering facts about a function<br />by looking at its graph<br />is useful but dangerous.</p>
+<h5>Example</h5>
+<p>Below is the graph of the function<br />
+\[f(x)=.0002{{\left( \frac{{{x}^{3}}-10}{3{{e}^{-x}}+1}<br />
+\right)}^{6}}\]</p>
+<p><img src="/MM/Mathematica/Function Representations/FoolYou.gif" hspace=12/></p>
+<p>If you <i>didn&#8217;t</i> know the formula for the function (but know it is continuous), you could still see that it has a local maximum somewhere to the right of $x=1$.  It looks like it has one or more zeroes around $x=-1$ and $x=2$. And it looks like it has an asymptote somewhere to the right of $x=2.5$.</p>
+<p>If you do know the formula, you can find out many things about the function that you can&#8217;t depend on the graph to see.</p>
+<ul>
+<li>You can see immediately that $f$ has a zero at $x=\sqrt[3]{10}$, which is about $2.15$. </li>
+<li>If you notice that the denominator is positive for all $x$, you can figure out that
+<ul>
+<li>$\sqrt[3]{10}$ is the only root.</li>
+<li>$f(x)\geq0$ for all $x$.</li>
+<li>$f$ has an asymptote as $x\to-\infty$ (use L&#8217;H&#0244;pital).</li>
+</ul>
+</li>
+</ul>
+<li>Numerical analysis (I used Mathematica) shows that $f'(x)$ has two zeros, at $\sqrt[3]{10}$ and at about $x=1.1648$.  $f&#8221;(1.1648)$ is about $-10.67$ , which strongly suggests that $f$ has a local max near $1.1648$, consistent with the graph.</li>
+<li>Since $f$ is defined for every real number, <i>it can&#8217;t have a vertical asymptote anywhere</i>. The graph looks like it becomes vertical somewhere to the right of $x=2.4$, but that is simply an illustration of the unbelievably fast growth of any <a href="https://en.wikipedia.org/wiki/Exponential_function">exponential function</a>.</li>
+<p>The section on <a href="/MM/MMUsefulBehaviors.htm#zoomchunk">Zooming and Chunking</a> gives other details.</p>
+<h2>Acknowledgments</h2>
+<p>Sue VanHattum.</p>
+<p><a name="creativecommons"></a><br />
+</p>
+<pre><img border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/></pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+<p></p>
+<div class='kindleWidget kindleLight' ><img src="/Word%20Press/wp-content/plugins/send-to-kindle/media/white-15.png" /><span>Send to Kindle</span></div>	</div><!-- .entry-content -->
+	
+	<footer class="entry-meta"><span class="tag-links"><a href="/Word%20Press/?tag=analytic-geometry" rel="tag">analytic geometry</a><a href="/Word%20Press/?tag=continuous-function" rel="tag">continuous function</a><a href="/Word%20Press/?tag=discontinuous-function" rel="tag">discontinuous function</a><a href="/Word%20Press/?tag=discrete-function" rel="tag">discrete function</a><a href="/Word%20Press/?tag=graph" rel="tag">graph</a><a href="/Word%20Press/?tag=mathematica" rel="tag">mathematica</a><a href="/Word%20Press/?tag=real-variable" rel="tag">real variable</a><a href="/Word%20Press/?tag=representation" rel="tag">representation</a></span></footer></article><!-- #post-## -->
+	<nav class="navigation paging-navigation" role="navigation">
+		<h1 class="screen-reader-text">Posts navigation</h1>
+		<div class="pagination loop-pagination">
+			<span class='page-numbers current'>1</span>
+<a class='page-numbers' href='http://www.abstractmath.org/Word%20Press/?paged=2'>2</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='http://www.abstractmath.org/Word%20Press/?paged=26'>26</a>
+<a class="next page-numbers" href="/Word%20Press/?paged=2">Next &rarr;</a>		</div><!-- .pagination -->
+	</nav><!-- .navigation -->
+	
+		</div><!-- #content -->
+	</div><!-- #primary -->
+	<div id="content-sidebar" class="content-sidebar widget-area" role="complementary">
+	<aside id="meta-3" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+						<li><a href="/Word%20Press/wp-login.php">Log in</a></li>
+			<li><a href="/Word%20Press/?feed=rss2">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="/Word%20Press/?feed=comments-rss2">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside>		<aside id="recent-posts-3" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="/Word%20Press/?p=10179">The most confusing notation in number theory</a>
+						</li>
+					<li>
+				<a href="/Word%20Press/?p=10163">Definition of function</a>
+						</li>
+					<li>
+				<a href="/Word%20Press/?p=10149">Variable mathematical objects</a>
+						</li>
+					<li>
+				<a href="/Word%20Press/?p=10140">Power</a>
+						</li>
+					<li>
+				<a href="/Word%20Press/?p=10130">A slow introduction to category theory</a>
+						</li>
+				</ul>
+		</aside>		<aside id="blog_subscription-2" class="widget jetpack_subscription_widget"><h1 class="widget-title">Subscribe to Blog via Email</h1>
+			<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-2">
+				<div id="subscribe-text"><p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+</div><p>Join 31 other subscribers</p>
+					<p id="subscribe-email">
+						<label id="jetpack-subscribe-label" for="subscribe-field-blog_subscription-2">
+							Email Address						</label>
+						<input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-2" placeholder="Email Address" />
+					</p>
+
+					<p id="subscribe-submit">
+						<input type="hidden" name="action" value="subscribe" />
+						<input type="hidden" name="source" value="http://www.abstractmath.org/Word%20Press/" />
+						<input type="hidden" name="sub-type" value="widget" />
+						<input type="hidden" name="redirect_fragment" value="blog_subscription-2" />
+												<input type="submit" value="Subscribe" name="jetpack_subscriptions_widget" />
+					</p>
+							</form>
+
+			<script>
+			/*
+			Custom functionality for safari and IE
+			 */
+			(function( d ) {
+				// Creates placeholders for IE
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.getElementById( 'jetpack-subscribe-label' );
+						label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+						label.style.position = 'absolute';
+						label.style.height   = '1px';
+						label.style.width    = '1px';
+						label.style.overflow = 'hidden';
+				}
+
+				// Make sure the email value is filled in before allowing submit
+				var form = d.getElementById('subscribe-blog-blog_subscription-2'),
+					input = d.getElementById('subscribe-field-blog_subscription-2'),
+					handler = function( event ) {
+						if ( '' === input.value ) {
+							input.focus();
+
+							if ( event.preventDefault ){
+								event.preventDefault();
+							}
+
+							return false;
+						}
+					};
+
+				if ( window.addEventListener ) {
+					form.addEventListener( 'submit', handler, false );
+				} else {
+					form.attachEvent( 'onsubmit', handler );
+				}
+			})( document );
+			</script>
+				
+</aside></div><!-- #content-sidebar -->
+</div><!-- #main-content -->
+
+<div id="secondary">
+		<h2 class="site-description">math, language and other things that may show up in the wabe</h2>
+	
+	
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<aside id="archives-3" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<label class="screen-reader-text" for="archives-dropdown-3">Archives</label>
+		<select id="archives-dropdown-3" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+			
+			<option value="">Select Month</option>
+				<option value='http://www.abstractmath.org/Word%20Press/?m=201701'> January 2017 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201612'> December 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201611'> November 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201606'> June 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201605'> May 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201604'> April 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201603'> March 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201602'> February 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201601'> January 2016 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201512'> December 2015 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201508'> August 2015 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201507'> July 2015 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201505'> May 2015 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201504'> April 2015 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201502'> February 2015 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201501'> January 2015 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201412'> December 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201411'> November 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201410'> October 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201409'> September 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201408'> August 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201407'> July 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201406'> June 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201405'> May 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201404'> April 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201403'> March 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201402'> February 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201401'> January 2014 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201312'> December 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201311'> November 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201310'> October 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201309'> September 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201307'> July 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201306'> June 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201305'> May 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201304'> April 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201303'> March 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201302'> February 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201301'> January 2013 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201212'> December 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201211'> November 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201210'> October 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201209'> September 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201208'> August 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201207'> July 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201206'> June 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201205'> May 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201204'> April 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201202'> February 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201201'> January 2012 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201112'> December 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201111'> November 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201110'> October 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201109'> September 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201108'> August 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201107'> July 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201106'> June 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201105'> May 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201101'> January 2011 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201009'> September 2010 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201007'> July 2010 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201005'> May 2010 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201003'> March 2010 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201002'> February 2010 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=201001'> January 2010 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200912'> December 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200911'> November 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200910'> October 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200909'> September 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200908'> August 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200906'> June 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200905'> May 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200904'> April 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200903'> March 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200902'> February 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200901'> January 2009 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200812'> December 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200811'> November 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200810'> October 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200809'> September 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200808'> August 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200807'> July 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200806'> June 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200805'> May 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200804'> April 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200803'> March 2008 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200712'> December 2007 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200710'> October 2007 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200709'> September 2007 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200708'> August 2007 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200707'> July 2007 </option>
+	<option value='http://www.abstractmath.org/Word%20Press/?m=200706'> June 2007 </option>
+
+		</select>
+		</aside><aside id="categories-3" class="widget widget_categories"><h1 class="widget-title">Subjects</h1><label class="screen-reader-text" for="cat">Subjects</label><select  name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="608">abstracting algebra&nbsp;&nbsp;(7)</option>
+	<option class="level-0" value="3">abstractmath.org&nbsp;&nbsp;(66)</option>
+	<option class="level-0" value="4">astounding math&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="5">category theory&nbsp;&nbsp;(35)</option>
+	<option class="level-0" value="6">computer science&nbsp;&nbsp;(16)</option>
+	<option class="level-0" value="585">election systems&nbsp;&nbsp;(1)</option>
+	<option class="level-0" value="7">exposition&nbsp;&nbsp;(117)</option>
+	<option class="level-0" value="8">Handbook&nbsp;&nbsp;(16)</option>
+	<option class="level-0" value="9">language&nbsp;&nbsp;(66)</option>
+	<option class="level-0" value="10">language of math&nbsp;&nbsp;(115)</option>
+	<option class="level-0" value="11">math&nbsp;&nbsp;(211)</option>
+	<option class="level-0" value="12">Mathematica&nbsp;&nbsp;(31)</option>
+	<option class="level-0" value="13">misc&nbsp;&nbsp;(7)</option>
+	<option class="level-0" value="14">proof&nbsp;&nbsp;(33)</option>
+	<option class="level-0" value="15">Proposals for research&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="576">representations&nbsp;&nbsp;(91)</option>
+	<option class="level-0" value="16">Sketches and forms&nbsp;&nbsp;(7)</option>
+	<option class="level-0" value="960">student difficulties&nbsp;&nbsp;(22)</option>
+	<option class="level-0" value="1">Uncategorized&nbsp;&nbsp;(16)</option>
+	<option class="level-0" value="17">understanding math&nbsp;&nbsp;(162)</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://www.abstractmath.org/Word%20Press/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</aside><aside id="search-3" class="widget widget_search"><form role="search" method="get" class="search-form" action="http://www.abstractmath.org/Word%20Press/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside><aside id="tag_cloud-4" class="widget widget_tag_cloud"><h1 class="widget-title">Tags</h1><div class="tagcloud"><a href='http://www.abstractmath.org/Word%20Press/?tag=abstraction' class='tag-link-22 tag-link-position-1' title='12 topics' style='font-size: 13.6875pt;'>abstraction</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=abstract-math' class='tag-link-20 tag-link-position-2' title='6 topics' style='font-size: 8pt;'>abstract math</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=algebra' class='tag-link-25 tag-link-position-3' title='19 topics' style='font-size: 17.84375pt;'>algebra</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=associative' class='tag-link-559 tag-link-position-4' title='9 topics' style='font-size: 11.28125pt;'>associative</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=binary-operation' class='tag-link-36 tag-link-position-5' title='7 topics' style='font-size: 9.09375pt;'>binary operation</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=calculus' class='tag-link-42 tag-link-position-6' title='11 topics' style='font-size: 13.03125pt;'>calculus</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=category' class='tag-link-45 tag-link-position-7' title='15 topics' style='font-size: 15.65625pt;'>category</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=cdf-file' class='tag-link-50 tag-link-position-8' title='7 topics' style='font-size: 9.09375pt;'>CDF file</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=chunking' class='tag-link-53 tag-link-position-9' title='6 topics' style='font-size: 8pt;'>chunking</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=codomain' class='tag-link-58 tag-link-position-10' title='8 topics' style='font-size: 10.1875pt;'>codomain</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=cograph' class='tag-link-61 tag-link-position-11' title='7 topics' style='font-size: 9.09375pt;'>cograph</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=commutative' class='tag-link-558 tag-link-position-12' title='6 topics' style='font-size: 8pt;'>commutative</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=definition' class='tag-link-79 tag-link-position-13' title='22 topics' style='font-size: 19.15625pt;'>definition</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=diagram' class='tag-link-82 tag-link-position-14' title='8 topics' style='font-size: 10.1875pt;'>diagram</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=domain' class='tag-link-86 tag-link-position-15' title='9 topics' style='font-size: 11.28125pt;'>domain</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=exposition' class='tag-link-887 tag-link-position-16' title='8 topics' style='font-size: 10.1875pt;'>exposition</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=expression' class='tag-link-501 tag-link-position-17' title='7 topics' style='font-size: 9.09375pt;'>expression</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=form' class='tag-link-106 tag-link-position-18' title='6 topics' style='font-size: 8pt;'>form</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=formula' class='tag-link-109 tag-link-position-19' title='7 topics' style='font-size: 9.09375pt;'>formula</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=function' class='tag-link-111 tag-link-position-20' title='30 topics' style='font-size: 22pt;'>function</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=graph' class='tag-link-126 tag-link-position-21' title='19 topics' style='font-size: 17.84375pt;'>graph</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=group' class='tag-link-129 tag-link-position-22' title='9 topics' style='font-size: 11.28125pt;'>group</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=image' class='tag-link-139 tag-link-position-23' title='15 topics' style='font-size: 15.65625pt;'>image</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=language' class='tag-link-888 tag-link-position-24' title='6 topics' style='font-size: 8pt;'>language</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=logic' class='tag-link-184 tag-link-position-25' title='11 topics' style='font-size: 13.03125pt;'>logic</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=math-education' class='tag-link-196 tag-link-position-26' title='10 topics' style='font-size: 12.15625pt;'>math education</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=mathematica' class='tag-link-199 tag-link-position-27' title='30 topics' style='font-size: 22pt;'>mathematica</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=mathematical-discourse' class='tag-link-201 tag-link-position-28' title='7 topics' style='font-size: 9.09375pt;'>mathematical discourse</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=mathematical-english' class='tag-link-202 tag-link-position-29' title='11 topics' style='font-size: 13.03125pt;'>mathematical English</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=mathematical-object' class='tag-link-203 tag-link-position-30' title='18 topics' style='font-size: 17.40625pt;'>mathematical object</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=metaphor' class='tag-link-212 tag-link-position-31' title='30 topics' style='font-size: 22pt;'>metaphor</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=monad' class='tag-link-560 tag-link-position-32' title='7 topics' style='font-size: 9.09375pt;'>monad</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=notation' class='tag-link-408 tag-link-position-33' title='10 topics' style='font-size: 12.15625pt;'>notation</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=pattern-recognition' class='tag-link-245 tag-link-position-34' title='7 topics' style='font-size: 9.09375pt;'>pattern recognition</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=proof' class='tag-link-891 tag-link-position-35' title='14 topics' style='font-size: 15.21875pt;'>proof</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=representation' class='tag-link-278 tag-link-position-36' title='15 topics' style='font-size: 15.65625pt;'>representation</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=rigor' class='tag-link-281 tag-link-position-37' title='6 topics' style='font-size: 8pt;'>rigor</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=set' class='tag-link-291 tag-link-position-38' title='7 topics' style='font-size: 9.09375pt;'>set</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=sketch' class='tag-link-297 tag-link-position-39' title='6 topics' style='font-size: 8pt;'>sketch</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=specification' class='tag-link-400 tag-link-position-40' title='6 topics' style='font-size: 8pt;'>specification</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=symbol' class='tag-link-307 tag-link-position-41' title='8 topics' style='font-size: 10.1875pt;'>symbol</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=symbolic-language' class='tag-link-309 tag-link-position-42' title='15 topics' style='font-size: 15.65625pt;'>symbolic language</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=tree' class='tag-link-325 tag-link-position-43' title='13 topics' style='font-size: 14.5625pt;'>tree</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=understanding-math' class='tag-link-892 tag-link-position-44' title='7 topics' style='font-size: 9.09375pt;'>understanding math</a>
+<a href='http://www.abstractmath.org/Word%20Press/?tag=variable' class='tag-link-539 tag-link-position-45' title='9 topics' style='font-size: 11.28125pt;'>variable</a></div>
+</aside><aside id="linkcat-344" class="widget widget_links"><h1 class="widget-title">A: My other sites</h1>
+	<ul class='xoxo blogroll'>
+<li><a href="http://abstractmath.org/">Abstractmath</a></li>
+<li><a href="http://www.case.edu/artsci/math/wells/home.html">My research home page</a></li>
+<li><a href="/MM/Mathematica/" title="Mathematica notebooks used in posts">Mathematica notebooks</a></li>
+
+	</ul>
+</aside>
+<aside id="linkcat-345" class="widget widget_links"><h1 class="widget-title">B: Books</h1>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.case.edu/artsci/math/wells/pub/html/abouthbk.html">Handbook of Mathematical Discourse</a></li>
+<li><a href="http://www.tac.mta.ca/tac/reprints/articles/22/tr22abs.html">Category Theory for Computing Science</a></li>
+<li><a href="http://www.tac.mta.ca/tac/reprints/articles/12/tr12.pdf">Toposes, Triples and Theories</a></li>
+<li><a href="/MM/dm.pdf" title="Unpublished lecture notes on discrete mathematics">Discrete Mathematics Lecture Notes</a></li>
+
+	</ul>
+</aside>
+<aside id="linkcat-731" class="widget widget_links"><h1 class="widget-title">C: Some of my articles</h1>
+	<ul class='xoxo blogroll'>
+<li><a href="/Articles/Forms.htm">An introduction to forms</a></li>
+
+	</ul>
+</aside>
+<aside id="linkcat-2" class="widget widget_links"><h1 class="widget-title">D: Blogroll</h1>
+	<ul class='xoxo blogroll'>
+<li><a href="http://explainingmaths.wordpress.com/">Gödel’s Lost Letter and P=NP</a></li>
+<li><a href="http://linguistlist.org/">Linguist&#039;s list</a></li>
+<li><a href="http://blog.matthen.com/">Matthen</a></li>
+<li><a href="http://golem.ph.utexas.edu/category/">n-Category Café</a></li>
+<li><a href="http://pballew.blogspot.com/">Pat&#039;s Blog</a></li>
+<li><a href="http://plus.maths.org/blog/">Plus Math Magazine</a></li>
+<li><a href="http://terrytao.wordpress.com/">Terence Tao’s math blog</a></li>
+<li><a href="http://xkcd.com/">XKCD</a></li>
+<li><a href="http://www.blog.republicofmath.com/">Republic of Mathematics</a></li>
+<li><a href="http://gowers.wordpress.com/">Gowers&#039;s Weblog</a></li>
+<li><a href="http://explainingmaths.wordpress.com/">Explaining Mathematics</a></li>
+<li><a href="http://blogs.ethz.ch/kowalski/">Kowalski&#039;s Blog</a></li>
+<li><a href="http://blog.tanyakhovanova.com/">Tanya Khovanova’s Math Blog</a></li>
+<li><a href="http://demonstrations.wolfram.com/index.html">Wolfram Demonstrations Project</a></li>
+<li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
+<li><a href="http://johncarlosbaez.wordpress.com/">Azimuth</a></li>
+<li><a href="http://richardelwes.co.uk/blog/">Richard Elwes&#039; Blog</a></li>
+<li><a href="http://gottwurfelt.wordpress.com/">God plays dice</a></li>
+<li><a href="http://aperiodical.com/">The Aperiodical</a></li>
+<li><a href="http://math.andrej.com/">Mathematics and Computation</a></li>
+<li><a href="http://homotopytypetheory.org/">Homotopy Type Theory</a></li>
+<li><a href="http://blogs.ams.org/visualinsight/">Visual Insight</a></li>
+<li><a href="http://blogs.scientificamerican.com/roots-of-unity/">Roots of unity</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/hott-amateurs">HOTT amateurs</a></li>
+<li><a href="http://www.patrickstevens.co.uk/wordpress/">Patrick Stevens</a></li>
+<li><a href="http://www.artofmathematics.org/blogs/cvonrenesse/">Art of mathematics</a></li>
+<li><a href="http://mathwithbaddrawings.com/">Math with bad drawing</a></li>
+<li><a href="https://qchu.wordpress.com">Annoying Precision</a></li>
+<li><a href="http://www.ams.org/samplings/math-sites/math-sites?utm_source=Informz&#038;utm_medium=email&#038;utm_campaign=Informz+Mailing">AMS list of websites</a></li>
+<li><a href="http://blogs.ams.org/matheducation/">On teachng and learning math</a></li>
+<li><a href="https://usamo.wordpress.com/">Power Overwhelming</a></li>
+<li><a href="http://visualizingmathsandphysics.blogspot.com/">Visualizing maths</a></li>
+<li><a href="http://mathcounterexamples.net/feed">Math Counterexamples</a></li>
+<li><a href="http://www.math3ma.com/">Math3ma</a></li>
+<li><a href="http://www.flyingcoloursmaths.co.uk/">Flying colours</a></li>
+<li><a href="https://kettenreihen.wordpress.com/" title="maps of complex functions">math kettehreihen</a></li>
+
+	</ul>
+</aside>
+	</div><!-- #primary-sidebar -->
+	</div><!-- #secondary -->
+
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			
+			<div class="site-info">
+								<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201723'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Junaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.abstractmath.org/Word%20Press/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.7.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var featuredSliderDefaults = {"prevText":"Previous","nextText":"Next"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.abstractmath.org/Word%20Press/wp-content/themes/twentyfourteen/js/slider.js?ver=20131205'></script>
+<script type='text/javascript' src='http://www.abstractmath.org/Word%20Press/wp-content/themes/twentyfourteen/js/functions.js?ver=20150315'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"title":".entry-title","published":".entry-date","content":".post","exclude":".sharedaddy"}):setTimeout(k,500);})();
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://d1xnn692s7u6t6.cloudfront.net/widget.js'></script>
+<script type='text/javascript' src='http://www.abstractmath.org/Word%20Press/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201723.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.8.3',blog:'78180489',post:'0',tz:'-5',srv:'www.abstractmath.org'} ]);
+	_stq.push([ 'clickTrackerInit', '78180489', '0' ]);
+</script>
+</body>
+</html>

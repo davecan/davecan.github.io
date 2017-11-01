@@ -1,0 +1,4155 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<!-- saved from url=(0014)about:internet --><!-- MSIE Mark of the Web -->
+
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=keywords content="MathPageGen">
+
+<meta name=Generator content="MathPage 1.0.1">
+<meta name=Originator content="Microsoft Word 11">
+
+
+
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Abstract Math: Groups</title>
+
+
+
+<!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+h1
+	{margin-right:0in;
+	margin-bottom:1.2pt;
+	margin-left:0in;
+	text-indent:0in;
+	font-size:20.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h2
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	font-size:16.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+h3
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h4
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h5
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h6
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:7.5pt;
+	font-family:Arial;
+	color:green;
+	font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:normal;
+	font-size:9.0pt;
+	font-family:Arial;
+	}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:normal;
+	font-size:8.0pt;
+	font-family:Arial;
+	}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.MsoCommentReference
+	{}
+p.MsoList, li.MsoList, div.MsoList
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+
+
+strong
+	{font-family:Arial;
+	color:windowtext;
+	font-style:italic;
+	}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	}
+p
+	{margin-top:3.0pt;
+	margin-right:7.5pt;
+	margin-bottom:7.5pt;
+	margin-left:0in;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+tt
+	{font-family:"Courier New";
+	}
+span.CharChar4
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar3
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar2
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar1
+	{font-family:Arial;
+	}
+span.smallChar
+	{font-family:Helvetica;
+	}
+p.small, li.small, div.small
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+span.CharChar
+	{font-family:Arial;
+	}
+p.Secondhead, li.Secondhead, div.Secondhead
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:.2in;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.ChildrenChar
+	{font-family:Arial;
+	}
+p.Children, li.Children, div.Children
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Subchildren, li.Subchildren, div.Subchildren
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.05in;
+	margin-bottom:.0001pt;
+	text-indent:.05in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.PurpleProseChar
+	{font-family:Arial;
+	color:purple;
+	font-weight:bold;
+	font-style:italic;
+	}
+p.PurpleProse, li.PurpleProse, div.PurpleProse
+	{margin-top:0in;
+	margin-right:12.95pt;
+	margin-bottom:0in;
+	margin-left:9.35pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:0in;
+	line-height:14.0pt;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:purple;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.TodoChar
+	{font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;}
+p.Todo, li.Todo, div.Todo
+	{margin-top:0in;
+	margin-right:9.0pt;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;}
+span.LlistCharChar1
+	{font-family:Arial;
+	}
+p.Llist, li.Llist, div.Llist
+	{margin-top:3.0pt;
+	margin-right:9.35pt;
+	margin-bottom:3.0pt;
+	margin-left:30.6pt;
+	text-indent:5.4pt;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Subllist, li.Subllist, div.Subllist
+	{margin-top:3.0pt;
+	margin-right:9.35pt;
+	margin-bottom:3.0pt;
+	margin-left:.05in;
+	text-indent:23.4pt;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+p.purple, li.purple, div.purple
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	}
+p.Alist, li.Alist, div.Alist
+	{margin-top:3.0pt;
+	margin-right:9.35pt;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.Abmath
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+span.amhead
+	{font-family:Arial;
+	color:teal;
+	border:none windowtext 1.0pt;
+	padding:0in;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+span.Chaptitle
+	{font-family:Arial;
+	color:teal;
+	border:none windowtext 1.0pt;
+	padding:0in;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+span.InsetHead
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+span.Head4
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.roman
+	{font-family:Verdana;
+	font-weight:normal;
+	font-style:normal;}
+p.Small0, li.Small0, div.Small0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:8.0pt;
+	font-family:Arial;
+	}
+span.blue
+	{font-family:Arial;
+	color:blue;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+p.abmathheading, li.abmathheading, div.abmathheading
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:9.0pt;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	border:none;
+	padding:0in;
+	font-size:24.0pt;
+	font-family:Arial;
+	color:#CC3300;}
+span.Inset
+	{font-family:Arial;
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;
+	}
+p.amsecondheaed, li.amsecondheaed, div.amsecondheaed
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:0in;
+	font-size:24.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;}
+p.ToDo0, li.ToDo0, div.ToDo0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#FF6600;
+	font-weight:bold;
+	}
+span.Tiny
+	{font-family:Arial;
+	}
+p.Boxed, li.Boxed, div.Boxed
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:Arial;
+	}
+p.postdate, li.postdate, div.postdate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:0in;
+	line-height:normal;
+	font-size:8.0pt;
+	font-family:Arial;
+	color:teal;
+	font-style:italic;
+	}
+p.Postdate0, li.Postdate0, div.Postdate0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:8.0pt;
+	font-family:Arial;
+	color:teal;
+	font-style:italic;
+	}
+span.Char5CharChar
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar5
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+span.Char5Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char4Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.LlistChar
+	{font-family:Arial;
+	}
+span.purpleChar
+	{font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	}
+p.children0, li.children0, div.children0
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.05in;
+	margin-bottom:.0001pt;
+	text-indent:.05in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+p.subchildren0, li.subchildren0, div.subchildren0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+p.ToDO1, li.ToDO1, div.ToDO1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	color:olive;
+	font-weight:bold;
+	}
+span.ToDOChar0
+	{font-family:Helvetica;
+	color:olive;
+	font-weight:bold;
+	}
+p.purplecentered, li.purplecentered, div.purplecentered
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+p.mpph, li.mpph, div.mpph
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.mpphspan, li.mpphspan, div.mpphspan
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.mpentity, li.mpentity, div.mpentity
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.Head, li.Head, div.Head
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:navy;
+	}
+p.TOC, li.TOC, div.TOC
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	color:black;
+	}
+span.Purple0
+	{font-family:Arial;
+	color:#993366;
+	font-weight:bold;
+	}
+span.InsetChar
+	{font-family:Helvetica;
+	color:teal;
+	font-weight:bold;
+	}
+span.Char3Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char2Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.smallCharChar
+	{font-family:Helvetica;
+	}
+span.Char1Char
+	{font-family:Arial;
+	color:green;
+	font-weight:bold;}
+span.ChildrenCharChar
+	{font-family:Arial;
+	}
+span.PurpleProseCharChar
+	{font-family:Arial;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+span.TodoCharChar
+	{font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;
+	}
+span.LlistCharChar1Char
+	{font-family:Arial;
+	}
+p.faq, li.faq, div.faq
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:olive;
+	font-weight:bold;
+	}
+span.faqChar
+	{font-family:Arial;
+	color:olive;
+	font-weight:bold;
+	}
+span.TinyChar
+	{font-family:Arial;
+	}
+p.Red, li.Red, div.Red
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#993300;}
+p.Blue0, li.Blue0, div.Blue0
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:navy;
+	font-weight:bold;
+	}
+p.Preface, li.Preface, div.Preface
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:navy;}
+span.mw-headline
+	{}
+span.texhtml
+	{}
+p.Amhead0, li.Amhead0, div.Amhead0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:28.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+p.Amhead2, li.Amhead2, div.Amhead2
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:0in;
+	font-size:18.0pt;
+	font-family:Arial;
+	color:purple;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.LlistCharChar
+	{font-family:Arial;
+	}
+span.GlossaryLetter
+	{font-family:Arial;
+	color:#993300;}
+p.Moral, li.Moral, div.Moral
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	background:#CC99FF;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	}
+p.Aliste, li.Aliste, div.Aliste
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.LittleHead, li.LittleHead, div.LittleHead
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:#333399;
+	font-weight:bold;
+	}
+p.StyleNormal, li.StyleNormal, div.StyleNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.apple-style-span
+	{}
+span.apple-converted-space
+	{}
+span.ptbrand
+	{}
+span.binding
+	{}
+span.format
+	{}
+p.lllist, li.lllist, div.lllist
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.StyleDarkBlue
+	{font-family:Arial;
+	color:navy;}
+p.BlueHead, li.BlueHead, div.BlueHead
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:navy;}
+p.Question, li.Question, div.Question
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:maroon;
+	font-weight:bold;
+	}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 9.0pt;
+	}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{}
+@list l0:level1
+	{margin-left:.25in;
+	text-indent:0in;}
+@list l1
+	{}
+@list l1:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l2
+	{}
+@list l2:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l3
+	{}
+@list l3:level1
+	{margin-left:.15in;
+	text-indent:-.05in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l4
+	{}
+@list l4:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l4:level2
+	{text-indent:-.25in;
+	font-family:"Courier New";
+	}
+@list l5
+	{}
+@list l5:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l5:level2
+	{text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5:level3
+	{text-indent:-.25in;
+	font-family:Wingdings;}
+@list l5:level4
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level5
+	{text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5:level6
+	{text-indent:-.25in;
+	font-family:Wingdings;}
+@list l5:level7
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level8
+	{text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5:level9
+	{text-indent:-.25in;
+	font-family:Wingdings;}
+@list l6
+	{}
+@list l6:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l6:level2
+	{text-indent:-.25in;}
+@list l6:level3
+	{text-indent:-.25in;}
+@list l6:level4
+	{text-indent:-.25in;}
+@list l6:level5
+	{text-indent:-.25in;}
+@list l6:level6
+	{text-indent:-.25in;}
+@list l6:level7
+	{text-indent:-.25in;}
+@list l6:level8
+	{text-indent:-.25in;}
+@list l6:level9
+	{text-indent:-.25in;}
+@list l7
+	{}
+@list l7:level1
+	{text-indent:-.25in;}
+@list l7:level2
+	{text-indent:-.25in;}
+@list l7:level3
+	{text-indent:-.25in;}
+@list l7:level4
+	{text-indent:-.25in;}
+@list l7:level5
+	{text-indent:-.25in;}
+@list l7:level6
+	{text-indent:-.25in;}
+@list l7:level7
+	{text-indent:-.25in;}
+@list l7:level8
+	{text-indent:-.25in;}
+@list l7:level9
+	{text-indent:-.25in;}
+@list l8
+	{}
+@list l8:level1
+	{margin-left:.05in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l9
+	{}
+@list l9:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l10
+	{}
+@list l10:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l10:level2
+	{text-indent:-.25in;}
+@list l10:level3
+	{text-indent:-.25in;}
+@list l10:level4
+	{text-indent:-.25in;}
+@list l10:level5
+	{text-indent:-.25in;}
+@list l10:level6
+	{text-indent:-.25in;}
+@list l10:level7
+	{text-indent:-.25in;}
+@list l10:level8
+	{text-indent:-.25in;}
+@list l10:level9
+	{text-indent:-.25in;}
+@list l11
+	{}
+@list l11:level1
+	{text-indent:0in;}
+@list l11:level2
+	{text-indent:-.25in;}
+@list l11:level3
+	{text-indent:-.25in;}
+@list l11:level4
+	{text-indent:-.25in;}
+@list l11:level5
+	{text-indent:-.25in;}
+@list l11:level6
+	{text-indent:-.25in;}
+@list l11:level7
+	{text-indent:-.25in;}
+@list l11:level8
+	{text-indent:-.25in;}
+@list l11:level9
+	{text-indent:-.25in;}
+@list l12
+	{}
+@list l12:level1
+	{margin-left:30.6pt;
+	text-indent:5.4pt;
+	font-family:Symbol;
+	color:windowtext;}
+@list l12:level2
+	{text-indent:-.25in;}
+@list l12:level3
+	{text-indent:-.25in;}
+@list l12:level4
+	{text-indent:-.25in;}
+@list l12:level5
+	{text-indent:-.25in;}
+@list l12:level6
+	{text-indent:-.25in;}
+@list l12:level7
+	{text-indent:-.25in;}
+@list l12:level8
+	{text-indent:-.25in;}
+@list l12:level9
+	{text-indent:-.25in;}
+@list l13
+	{}
+@list l13:level1
+	{margin-left:.05in;
+	text-indent:.05in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l13:level2
+	{text-indent:-.25in;}
+@list l13:level3
+	{text-indent:-.25in;}
+@list l13:level4
+	{text-indent:-.25in;}
+@list l13:level5
+	{text-indent:-.25in;}
+@list l13:level6
+	{text-indent:-.25in;}
+@list l13:level7
+	{text-indent:-.25in;}
+@list l13:level8
+	{text-indent:-.25in;}
+@list l13:level9
+	{text-indent:-.25in;}
+@list l14
+	{}
+@list l14:level1
+	{text-indent:-.25in;
+	color:windowtext;}
+@list l15
+	{}
+@list l15:level1
+	{text-indent:-.25in;}
+@list l15:level2
+	{text-indent:-.25in;}
+@list l15:level3
+	{text-indent:-.25in;}
+@list l15:level4
+	{text-indent:-.25in;}
+@list l15:level5
+	{text-indent:-.25in;}
+@list l15:level6
+	{text-indent:-.25in;}
+@list l15:level7
+	{text-indent:-.25in;}
+@list l15:level8
+	{text-indent:-.25in;}
+@list l15:level9
+	{text-indent:-.25in;}
+@list l16
+	{}
+@list l16:level1
+	{text-indent:-.25in;
+	color:windowtext;}
+@list l17
+	{}
+@list l17:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l18
+	{}
+@list l18:level1
+	{margin-left:0in;
+	text-indent:.15in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l19
+	{}
+@list l19:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l19:level2
+	{text-indent:-.25in;
+	font-family:"Courier New";
+	}
+@list l19:level3
+	{text-indent:-.25in;
+	font-family:Wingdings;}
+@list l20
+	{}
+@list l20:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l21
+	{}
+@list l21:level1
+	{text-indent:-.25in;}
+@list l21:level2
+	{text-indent:-.25in;}
+@list l21:level3
+	{text-indent:-.25in;}
+@list l21:level4
+	{text-indent:-.25in;}
+@list l21:level5
+	{text-indent:-.25in;}
+@list l21:level6
+	{text-indent:-.25in;}
+@list l21:level7
+	{text-indent:-.25in;}
+@list l21:level8
+	{text-indent:-.25in;}
+@list l21:level9
+	{text-indent:-.25in;}
+@list l22
+	{}
+@list l22:level1
+	{text-indent:-.25in;}
+@list l22:level2
+	{text-indent:-.25in;}
+@list l22:level3
+	{text-indent:-.25in;}
+@list l22:level4
+	{text-indent:-.25in;}
+@list l22:level5
+	{text-indent:-.25in;}
+@list l22:level6
+	{text-indent:-.25in;}
+@list l22:level7
+	{text-indent:-.25in;}
+@list l22:level8
+	{text-indent:-.25in;}
+@list l22:level9
+	{text-indent:-.25in;}
+@list l23
+	{}
+@list l23:level1
+	{margin-left:5.4pt;
+	text-indent:9.0pt;
+	font-family:Symbol;
+	color:windowtext;}
+@list l23:level2
+	{text-indent:-.25in;}
+@list l23:level3
+	{text-indent:-.25in;}
+@list l23:level4
+	{text-indent:-.25in;}
+@list l23:level5
+	{text-indent:-.25in;}
+@list l23:level6
+	{text-indent:-.25in;}
+@list l23:level7
+	{text-indent:-.25in;}
+@list l23:level8
+	{text-indent:-.25in;}
+@list l23:level9
+	{text-indent:-.25in;}
+@list l24
+	{}
+@list l24:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l25
+	{}
+@list l25:level1
+	{margin-left:.15in;
+	text-indent:-.05in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l26
+	{}
+@list l26:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l26:level2
+	{text-indent:-.25in;
+	font-family:"Courier New";
+	}
+@list l27
+	{}
+@list l27:level1
+	{margin-left:.15in;
+	text-indent:-.05in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l28
+	{}
+@list l28:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l29
+	{}
+@list l29:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l29:level2
+	{text-indent:-.25in;
+	font-family:"Courier New";}
+@list l29:level3
+	{text-indent:-.25in;
+	font-family:Wingdings;}
+@list l29:level4
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l29:level5
+	{text-indent:-.25in;
+	font-family:"Courier New";}
+@list l29:level6
+	{text-indent:-.25in;
+	font-family:Wingdings;}
+@list l29:level7
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l29:level8
+	{text-indent:-.25in;
+	font-family:"Courier New";}
+@list l29:level9
+	{text-indent:-.25in;
+	font-family:Wingdings;}
+@list l30
+	{}
+@list l30:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l30:level2
+	{text-indent:-.25in;}
+@list l30:level3
+	{text-indent:-.25in;}
+@list l30:level4
+	{text-indent:-.25in;}
+@list l30:level5
+	{text-indent:-.25in;}
+@list l30:level6
+	{text-indent:-.25in;}
+@list l30:level7
+	{text-indent:-.25in;}
+@list l30:level8
+	{text-indent:-.25in;}
+@list l30:level9
+	{text-indent:-.25in;}
+@list l31
+	{}
+@list l31:level1
+	{margin-left:-.1in;
+	text-indent:.2in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l31:level2
+	{text-indent:-.25in;}
+@list l31:level3
+	{text-indent:-.25in;}
+@list l31:level4
+	{text-indent:-.25in;}
+@list l31:level5
+	{text-indent:-.25in;}
+@list l31:level6
+	{text-indent:-.25in;}
+@list l31:level7
+	{text-indent:-.25in;}
+@list l31:level8
+	{text-indent:-.25in;}
+@list l31:level9
+	{text-indent:-.25in;}
+@list l32
+	{}
+@list l32:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l32:level2
+	{text-indent:-.25in;
+	font-family:"Courier New";
+	}
+@list l33
+	{}
+@list l33:level1
+	{margin-left:.55in;
+	text-indent:-.25in;}
+@list l34
+	{}
+@list l34:level1
+	{margin-left:.05in;
+	text-indent:.2in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l34:level2
+	{text-indent:-.25in;}
+@list l34:level3
+	{text-indent:-.25in;}
+@list l34:level4
+	{text-indent:-.25in;}
+@list l34:level5
+	{text-indent:-.25in;}
+@list l34:level6
+	{text-indent:-.25in;}
+@list l34:level7
+	{text-indent:-.25in;}
+@list l34:level8
+	{text-indent:-.25in;}
+@list l34:level9
+	{text-indent:-.25in;}
+@list l35
+	{}
+@list l35:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l36
+	{}
+@list l36:level1
+	{margin-left:.8in;
+	text-indent:-.25in;}
+@list l37
+	{}
+@list l37:level1
+	{margin-left:.25in;
+	text-indent:0in;
+	color:windowtext;}
+@list l37:level2
+	{text-indent:-.25in;}
+@list l37:level3
+	{text-indent:-.25in;}
+@list l37:level4
+	{text-indent:-.25in;}
+@list l37:level5
+	{text-indent:-.25in;}
+@list l37:level6
+	{text-indent:-.25in;}
+@list l37:level7
+	{text-indent:-.25in;}
+@list l37:level8
+	{text-indent:-.25in;}
+@list l37:level9
+	{text-indent:-.25in;}
+@list l38
+	{}
+@list l38:level1
+	{margin-left:.3in;
+	text-indent:0in;
+	color:windowtext;}
+@list l39
+	{}
+@list l39:level1
+	{margin-left:0in;
+	text-indent:.3in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l40
+	{}
+@list l40:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Arial;
+	color:windowtext;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+<!-- MP HEAD( -->
+<style>
+.MPPH { visibility:hidden; page-break-inside:avoid }
+.MPPHSpan { text-indent:0 }
+sub,sup { font-size:x-small }
+#MPDpiSpan { position:absolute; top:1in; left:1in; width:100px; border:none; visibility:hidden }
+.MPEntity { font-family:'Times New Roman',Times,serif }
+</style>
+<style media=screen>
+.MPScreenEqn { position:absolute; visibility:visible; z-index:98 }
+.MPPrintEqn { display:none }
+.MPScreenPH { }
+.MPPrintPH { display:none }
+.MPPopup { position:absolute; visibility:hidden; z-index:99; top:0; left:0; text-indent:0; cursor:hand; 
+border:solid blue 1px; padding:5px; background-color:#FFFFCC; 
+filter:progid:DXImageTransform.Microsoft.DropShadow(color=#444444,offx=3,offy=3,positive=1) 
+}
+.MPPopupNoBg { position:absolute; visibility:hidden; z-index:99; top:0; left:0; text-indent:0; cursor:hand; 
+border:solid blue 1px; padding:5px; 
+filter:progid:DXImageTransform.Microsoft.DropShadow(color=#444444,offx=3,offy=3,positive=1) 
+}
+</style>
+<style media=print>
+.MPScreenEqn { display:none }
+.MPPrintEqn { position:absolute; visibility:visible }
+.MPScreenPH { display:none }
+.MPPrintPH { }
+.MPPopup { display:none }
+.MPPopupNoBg { display:none }
+</style>
+<script language=javascript src='mathpage.js'></script>
+<script language=javascript>
+if (typeof DSMP == 'undefined') {
+	alert('MathPage Javascript file missing; equations and symbols will not display.');
+	var DSMP = new Object;
+	MPBodyInit=MPSetEqnAttrs=MPSetChAttrs=MPEquation=MPInlineChar=MPDeleteCode=MPNNCalcTopLeft=MPHidePopup=MPShowPopup=MPNNSelectScreenEqn=MPWebEQApplet=MPTechexplorerObject=function(){};
+	DSMP.gEmptySrc=DSMP.gPlaceholderHeight=DSMP.gPlaceholderWidth=DSMP.gPlaceholder2Height=DSMP.gNNPopupBgColor=DSMP.gPopupEqnSrc=DSMP.gPopupEqnPadding=DSMP.gNNLayerTop=DSMP.gNNLayerLeft=DSMP.gScreenEqnSrc=DSMP.gScreenEqnWidth=DSMP.gScreenEqnHeight=DSMP.gPrintEqnSrc=null;
+}
+DSMP.gPageVersion = '1.1';
+DSMP.gMaxCharCompat = 1;
+DSMP.gGenMathZoom = 1;
+DSMP.gPopupEqnBgColorDefault = '#FFFFCC';
+DSMP.gPopupEqnPaddingDefault = 5;
+DSMP.gPlaceholderPadding = 4;
+DSMP.gOldJSMessage = 'Warning: this MathPage document requires a newer JavaScript file and may not display correctly.';
+DSMP.gCompatMessage = 'Warning: this MathPage document was generated for Windows IE5 or later only and may not display correctly.';
+DSMP.gMinBrowserMessage = 'Warning: MathPage requires a version 4 or later browser.';
+DSMP.gHidePopupMessage = 'Click on a MathZoom equation to dismiss it, or shift-Click to close all.';
+DSMP.gShowPopupMessage = 'Click on an equation to show the enlarged MathZoom version.';
+</script>
+<!-- )MP HEAD -->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink="#CC3300" >
+<!-- MP BODY(-->
+<span id=MPDpiSpan></span>
+<script language=javascript>
+MPBodyInit('MMGroups_files')
+</script>
+<!-- )MP BODY -->
+
+
+<div class=Section1>
+
+<div style='border:solid teal 2.25pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Amhead0 style='border:none;padding:0in'>abstractmath.org</p>
+
+<p class=Amhead2 style='line-height:normal;border:none;padding:0in'>help with abstract math</p>
+
+<pre style='text-indent:0in;line-height:normal;border:none;padding:0in'><span class=Abmath><span
+style='font-size:11.0pt'>Produced by </span></span><span style='font-size:11.0pt'><a
+href="http://www.cwru.edu/artsci/math/wells/home.html"><span style='text-decoration:
+none'>Charles Wells.</span></a></span><span class=Abmath><span
+style='font-size:11.0pt'>     </span></span><span
+class=MsoHyperlink><span style='font-size:11.0pt;text-decoration:none;
+'><a href="MMIntro.htm"><span style='text-decoration:none;
+'>Home</span></a><a name="_Toc105947357">     </a><a
+href="MMTOC.htm"><span
+style='text-decoration:none'>Website TOC  </span></a>    <a
+href="MMIndex.htm"><span
+style='text-decoration:none'>Website Index</span></a></span></span><span class=MsoHyperlink><span
+style='font-size:11.0pt'>    </span></span><strong><span style='font-size:11.0pt;
+color:blue;font-weight:normal;font-style:normal'></span></strong></pre></div>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span style='color:teal'>Posted </span><span style='color:teal'>21 May 2009</span><span style='color:teal;mso-bidi-font-weight:
+bold'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:0in'><span style='color:teal'>&nbsp;</span></p>
+
+<div >
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=288 height=96
+ align=right>
+ <tr>
+  <td valign=top align=left height=96 style='padding-top:0in;padding-right:
+  9.35pt;padding-bottom:0in;padding-left:9.35pt'>
+  <p class=MsoToc1 style='background:white'><b>Contents</b></p>
+  <p class=MsoToc1 style='background:white'><span
+  class=MsoHyperlink><a href="#_Toc214769365"><span
+  style='border:none windowtext 1.0pt;padding:0in'>Groups as abstraction of symmetry</span><span style='color:windowtext;display:none;text-decoration:
+  none'>  </span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'>1</span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'></span></a></span><span
+  style='font-family:"Times New Roman"'></span></p>
+  <p class=MsoToc1 style='background:white'><span class=MsoHyperlink><a href="#_Toc214769366">Axioms for groups<span
+  style='color:windowtext;display:none;
+  text-decoration:none'>  </span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'>2</span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'></span></a></span><span
+  style='font-family:"Times New Roman"'></span></p>
+  <p class=MsoToc1 style='background:white'><span class=MsoHyperlink><a href="#_Toc214769367">Properties of groups<span
+  style='color:windowtext;display:none;
+  text-decoration:none'>  </span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'>7</span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'></span></a></span><span
+  style='font-family:"Times New Roman"'></span></p>
+  <p class=MsoToc1 style='background:white'><span class=MsoHyperlink><a href="#_Toc214769368">Links<span
+  style='color:windowtext;display:none;
+  text-decoration:none'>  </span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'>7</span><span
+  style='color:windowtext;display:none;
+  text-decoration:none'></span></a></span><span
+  style='font-family:"Times New Roman"'></span></p>
+  <p class=MsoNormal style='text-indent:0in;background:white'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:0in'><span class=Chaptitle><span
+style='font-size:24.0pt'>GROUPS  </span></span></p>
+
+<p class=Blue0><span class=Chaptitle><span style='color:navy;
+font-weight:normal'>Groups are </span></span><span
+class=Chaptitle><span style='color:navy'><a href="MMMathStructure.htm"><span
+style='color:navy;font-weight:normal;
+'>mathematical structures</span></a></span></span><span
+class=Chaptitle><span style='color:navy;font-weight:normal;
+'> that are an <a
+href="MMOtherAspectsUnderstanding.htm#abstraction"><span style='color:navy'>abstraction</span><b><span style='color:navy'> </span></b></a>of <a
+href="http://en.wikipedia.org/wiki/Symmetry_(mathematics)"><span
+style='color:navy'>symmetry</span><b><span
+style='color:navy'>.</span></b></a>   This
+article is a brief introduction to groups skewed in the usual abstractmath.org
+way toward giving qualitative discussions about groups along with a brief look
+at the actual math involved in groups. 
+The section on group axioms is a good place to learn about the <a
+href="MMOtherAspectsUnderstanding.htm#axiomaticmethod"><span style='color:navy'>axiomatic method</span><b><span style='color:navy'> </span></b></a>in a detailed example.</span></span></p>
+
+<h1><!--[if gte vml 1]><v:group id="_x0000_s1036" editas="canvas" style='position:absolute;
+ margin-left:517.65pt;margin-top:0;width:251.15pt;height:198.85pt;z-index:6;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' coordorigin="1733,1076" coordsize="1231,974"
+ o:allowoverlap="f">
+ <o:lock v:ext="edit" aspectratio="t" />
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter" />
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0" />
+   <v:f eqn="sum @0 1 0" />
+   <v:f eqn="sum 0 0 @1" />
+   <v:f eqn="prod @2 1 2" />
+   <v:f eqn="prod @3 21600 pixelWidth" />
+   <v:f eqn="prod @3 21600 pixelHeight" />
+   <v:f eqn="sum @0 0 1" />
+   <v:f eqn="prod @6 1 2" />
+   <v:f eqn="prod @7 21600 pixelWidth" />
+   <v:f eqn="sum @8 21600 0" />
+   <v:f eqn="prod @7 21600 pixelHeight" />
+   <v:f eqn="sum @10 21600 0" />
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+  <o:lock v:ext="edit" aspectratio="t" />
+ </v:shapetype><v:shape id="_x0000_s1035" type="#_x0000_t75" style='position:absolute;
+  left:1733;top:1076;width:1231;height:974' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t" />
+  <v:path o:extrusionok="t" o:connecttype="none" />
+  <o:lock v:ext="edit" text="t" />
+ </v:shape><v:shape id="_x0000_s1043" type="#_x0000_t75" style='position:absolute;
+  left:2399;top:1096;width:558;height:835'>
+  <v:imagedata src="MMGroups_files/image001.jpg" o:title="SymNotChurch" />
+ </v:shape><v:shape id="_x0000_s1126" type="#_x0000_t75" style='position:absolute;
+  left:1733;top:1096;width:627;height:835'>
+  <v:imagedata src="MMGroups_files/image002.jpg" o:title="FrenchChurch" />
+ </v:shape><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter" />
+  <v:path gradientshapeok="t" o:connecttype="rect" />
+ </v:shapetype><v:shape id="_x0000_s1373" type="#_x0000_t202" style='position:absolute;
+  left:1893;top:1936;width:353;height:93' stroked="f">
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>Church A</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1374" type="#_x0000_t202" style='position:absolute;
+  left:2498;top:1936;width:353;height:93' stroked="f">
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>Church B</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type="square" />
+</v:group><![endif]--><![if !vml]><img width=335 height=265
+src="MMGroups_files/image003.gif" align=right v:shapes="_x0000_s1036 _x0000_s1035 _x0000_s1043 _x0000_s1126 _x0000_s1373 _x0000_s1374"><![endif]><a
+name="_Toc214769365"></a><span
+class=Chaptitle>Groups
+as abstraction of symmetry</span><span class=Chaptitle></span></h1>
+
+<p class=MsoNormal>Church A is symmetric in shape when viewed from the
+front.  Church B is not.  </p>
+
+<p class=MsoNormal>Mathematicians view <a name=symmetry><b >symmetry</b></a> as an <strong>action
+</strong><strong><span style='font-weight:normal;font-style:normal'>rather than a
+property.  For example, church A has a
+symmetry that flips the building around the vertical axis up the middle of the bell
+tower.  This operation called a symmetry
+because after flipping it the building looks the same in its form (but not in
+its decoration).  You can flip the right
+building around the central vertical axis but it won’t look the same in form.  So that operation is </span></strong><strong>not </strong><strong><span
+style='font-weight:normal;font-style:normal'>a symmetry of the building.  </span></strong><span style='display:none;
+'> </span><strong><span
+style='font-weight:normal;font-style:normal'></span></strong></p>
+
+<p class=MsoNormal><strong><span style='font-weight:normal;font-style:normal'>That particular
+kind of symmetry is called a </span></strong><strong><span style='font-style:normal'>mirror symmetry</span></strong><strong>.</strong><strong><span
+style='font-weight:normal;font-style:normal'></span></strong></p>
+
+<h3><strong><span style='font-size:13.0pt;color:teal;
+font-style:normal'>Example: The symmetries of a square</span></strong></h3>
+
+<p class=MsoNormal style='text-indent:0in'><strong><span style='font-weight:normal;font-style:normal'>Below
+are two symmetries</span></strong><strong><span style='font-weight:normal'> </span></strong><strong><span
+style='font-weight:normal;font-style:normal'>r</span></strong><strong><span style='font-weight:normal'> </span></strong><strong><span
+style='font-weight:normal;font-style:normal'>and h of a square. 
+ The letters label the corners of
+the squares, and they serve to show where the corners go (see <a
+href="MMGlossaryA.htm#alias">alias</a>).   The symmetry </span></strong>r<i
+> </i>rotates the square by an angle of <!-- MP EQPHNS( --><script id=mpeq0001s1>
+	MPSetEqnAttrs('eq0001','',3,[[24,12,3,-1,-1],[31,16,4,-1,-1],[39,21,5,-1,-1],[37,19,5,-1,-1],[46,25,6,-1,-1],[59,31,8,-1,-1],[99,52,14,-2,-2]])
+</script><![if !ie]><span id=mpnneq0001ph class=MPNNCode
+	><img border=0 name=mpeq0001ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0001s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> clockwise, and<i > </i>h is a mirror symmetry that flips the square around the diagonal
+shown in red.   Note that these two symmetries are <strong>not </strong><strong><span
+style='font-weight:normal;font-style:normal'>symmetries of the square-with-labels, but just of the
+square itself.  It is the square that
+does not look different when you rotate or flip it.  The labels change.  </span></strong></p><!-- MP EQRA( --><script id=mpeq0001s1>
+	MPSetEqnAttrs('eq0001','',3,[[24,12,3,-1,-1],[31,16,4,-1,-1],[39,21,5,-1,-1],[37,19,5,-1,-1],[46,25,6,-1,-1],[59,31,8,-1,-1],[99,52,14,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0001 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0001ph,'')
+	</script><layer id=mpeq0001pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0001pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0001 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0001,mpeq0001pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0001s3>
+	MPDeleteCode('eq0001')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal style='text-indent:0in'><strong><span style='font-weight:normal;font-style:normal'>&nbsp;</span></strong></p>
+
+<p class=MsoNormal style='text-indent:0in'><strong><span
+style='font-weight:normal;font-style:normal'><!--[if gte vml 1]><v:group id="_x0000_s1375" editas="canvas"
+ style='width:221.85pt;height:110.25pt;mso-position-horizontal-relative:char;
+ mso-position-vertical-relative:line' coordorigin="2959,-336" coordsize="3008,1495">
+ <o:lock v:ext="edit" aspectratio="t" />
+ <v:shape id="_x0000_s1376" type="#_x0000_t75" style='position:absolute;left:2959;
+  top:-336;width:3008;height:1495' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t" />
+  <v:path o:extrusionok="t" o:connecttype="none" />
+  <o:lock v:ext="edit" text="t" />
+ </v:shape><v:rect id="_x0000_s1377" style='position:absolute;left:3207;top:-30;
+  width:976;height:976' />
+ <v:rect id="_x0000_s1378" style='position:absolute;left:4724;top:-28;width:976;
+  height:975' />
+ <v:shape id="_x0000_s1379" type="#_x0000_t202" style='position:absolute;
+  left:2959;top:-336;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1379'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>a</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1380" type="#_x0000_t202" style='position:absolute;
+  left:4118;top:-333;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1380'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>b</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1381" type="#_x0000_t202" style='position:absolute;
+  left:4118;top:854;width:369;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1381'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>c</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1382" type="#_x0000_t202" style='position:absolute;
+  left:4487;top:854;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1382'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>c</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1383" type="#_x0000_t202" style='position:absolute;
+  left:2960;top:854;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1383'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>d</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1384" type="#_x0000_t202" style='position:absolute;
+  left:4487;top:-336;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1384'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>d</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1385" type="#_x0000_t202" style='position:absolute;
+  left:5629;top:-333;width:246;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1385'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>a</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1386" type="#_x0000_t202" style='position:absolute;
+  left:5629;top:854;width:246;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1386'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>b</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1387" style='position:absolute' from="4312,467"
+  to="4598,468">
+  <v:stroke endarrow="block" />
+ </v:line><v:shape id="_x0000_s1388" type="#_x0000_t202" style='position:absolute;
+  left:4312;top:467;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox style='mso-next-textbox:#_x0000_s1388'>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>r</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type="none" />
+ <w:anchorlock />
+</v:group><![endif]--><![if !vml]><img width=298 height=152
+src="MMGroups_files/image004.gif" v:shapes="_x0000_s1375 _x0000_s1376 _x0000_s1377 _x0000_s1378 _x0000_s1379 _x0000_s1380 _x0000_s1381 _x0000_s1382 _x0000_s1383 _x0000_s1384 _x0000_s1385 _x0000_s1386 _x0000_s1387 _x0000_s1388"><![endif]></span></strong><strong><span
+style='font-weight:normal;font-style:normal'></span></strong></p>
+
+<p class=MsoNormal style='text-indent:0in'><strong><span style='font-weight:normal;font-style:normal'>&nbsp;</span></strong></p>
+
+<h3><a name="_Toc214769366"></a><span style='mso-bookmark:_Toc214769366'></span><span
+style='mso-bookmark:_Toc214769366'><strong><span style='font-size:10.0pt;
+mso-bidi-font-size:18.0pt;font-weight:normal;mso-bidi-font-weight:bold'><!--[if gte vml 1]><v:group
+ id="_x0000_s1404" editas="canvas" style='width:221.45pt;height:113.05pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="6907,-104" coordsize="3003,1533">
+ <o:lock v:ext="edit" aspectratio="t" />
+ <v:shape id="_x0000_s1405" type="#_x0000_t75" style='position:absolute;left:6907;
+  top:-104;width:3003;height:1533' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t" />
+  <v:path o:extrusionok="t" o:connecttype="none" />
+  <o:lock v:ext="edit" text="t" />
+ </v:shape><v:rect id="_x0000_s1406" style='position:absolute;left:7155;top:202;
+  width:977;height:976' />
+ <v:rect id="_x0000_s1407" style='position:absolute;left:8700;top:202;width:975;
+  height:976' />
+ <v:shape id="_x0000_s1408" type="#_x0000_t202" style='position:absolute;
+  left:9589;top:1123;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>c</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1409" style='position:absolute' from="8265,700"
+  to="8571,701">
+  <v:stroke endarrow="block" />
+ </v:line><v:shape id="_x0000_s1410" type="#_x0000_t202" style='position:absolute;
+  left:8265;top:701;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>h</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1411" style='position:absolute' from="7155,202"
+  to="8132,1179" strokecolor="red" />
+ <v:shape id="_x0000_s1412" type="#_x0000_t202" style='position:absolute;
+  left:8053;top:1123;width:249;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>c</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1413" type="#_x0000_t202" style='position:absolute;
+  left:6907;top:1124;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>d</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1414" type="#_x0000_t202" style='position:absolute;
+  left:8513;top:-101;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>a</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1415" type="#_x0000_t202" style='position:absolute;
+  left:9589;top:-104;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>d</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1416" type="#_x0000_t202" style='position:absolute;
+  left:8496;top:1123;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>b</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1417" type="#_x0000_t202" style='position:absolute;
+  left:6907;top:-103;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>a</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1418" type="#_x0000_t202" style='position:absolute;
+  left:8083;top:-101;width:245;height:303' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>b=b</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type="none" />
+ <w:anchorlock />
+</v:group><![endif]--><![if !vml]><img width=297 height=155
+src="MMGroups_files/image005.gif" v:shapes="_x0000_s1404 _x0000_s1405 _x0000_s1406 _x0000_s1407 _x0000_s1408 _x0000_s1409 _x0000_s1410 _x0000_s1411 _x0000_s1412 _x0000_s1413 _x0000_s1414 _x0000_s1415 _x0000_s1416 _x0000_s1417 _x0000_s1418"><![endif]></span></strong></span><!--[if mso & !supportInlineShapes & supportFields]><span
+style='mso-bookmark:_Toc214769366'></span><v:shape id="_x0000_i1026" type="#_x0000_t75"
+ style='width:221.45pt;height:113.05pt'>
+ <v:imagedata croptop="-65520f" cropbottom="65520f" />
+</v:shape><span style='mso-bookmark:_Toc214769366'><strong><span
+style='font-size:10.0pt;mso-bidi-font-size:18.0pt;mso-bidi-font-weight:normal;
+font-style:normal'><span style='mso-element:field-end'></span></span></strong></span><![endif]--><span
+style='mso-bookmark:_Toc214769366'><strong><span style='font-size:10.0pt;
+mso-bidi-font-size:18.0pt;mso-bidi-font-weight:normal;font-style:normal'><o:p></o:p></span></strong></span></h3>
+
+<h3>&nbsp;</h3>
+
+<p class=MsoNormal>You can perform <strong>two symmetries one after the
+other.  </strong>The operation of
+doing one symmetry after another is called <a name=compositionofsymmetries><b
+>composing</b></a><b > </b>the symmetries.  <strong><span
+style='font-weight:normal;font-style:normal'>If you do r, then h, the result is another symmetry,
+denoted by hr: </span></strong><strong><span style='font-weight:normal;font-style:normal'></span></strong></p>
+
+<p class=MsoNormal style='text-indent:0in'><!--[if mso & !supportInlineShapes & supportFields]><span
+style='mso-bookmark:_Toc214769366'></span><span style='mso-element:field-begin;
+mso-field-lock:yes'></span><span style='mso-bookmark:_Toc214769366'><span
+style='mso-spacerun:yes'> </span>SHAPE<span style='mso-spacerun:yes'> 
+</span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc214769366'><!--[if gte vml 1]><v:group id="_x0000_s1359"
+ editas="canvas" style='width:226.15pt;height:110.25pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="2866,-336" coordsize="3067,1495">
+ <o:lock v:ext="edit" aspectratio="t" />
+ <v:shape id="_x0000_s1360" type="#_x0000_t75" style='position:absolute;left:2866;
+  top:-336;width:3067;height:1495' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t" />
+  <v:path o:extrusionok="t" o:connecttype="none" />
+  <o:lock v:ext="edit" text="t" />
+ </v:shape><v:rect id="_x0000_s1361" style='position:absolute;left:3207;top:-30;
+  width:976;height:976' />
+ <v:rect id="_x0000_s1362" style='position:absolute;left:4724;top:-30;width:976;
+  height:975' />
+ <v:shape id="_x0000_s1363" type="#_x0000_t202" style='position:absolute;
+  left:2959;top:-336;width:248;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>a</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1364" type="#_x0000_t202" style='position:absolute;
+  left:4118;top:-333;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>b</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1365" type="#_x0000_t202" style='position:absolute;
+  left:4118;top:854;width:369;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>c</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1366" type="#_x0000_t202" style='position:absolute;
+  left:4487;top:854;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>a</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1367" type="#_x0000_t202" style='position:absolute;
+  left:2960;top:854;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>d</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1368" type="#_x0000_t202" style='position:absolute;
+  left:4487;top:-336;width:247;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>d</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1369" type="#_x0000_t202" style='position:absolute;
+  left:5629;top:-333;width:246;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>c</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1370" type="#_x0000_t202" style='position:absolute;
+  left:5629;top:854;width:246;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>b</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:line id="_x0000_s1371" style='position:absolute' from="4312,467"
+  to="4598,468">
+  <v:stroke endarrow="block" />
+ </v:line><v:shape id="_x0000_s1372" type="#_x0000_t202" style='position:absolute;
+  left:4261;top:467;width:337;height:305' stroked="f">
+  <v:fill opacity="0" />
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'>hr</p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type="none" />
+ <w:anchorlock />
+</v:group><![endif]--><![if !vml]><img width=302 height=152
+src="MMGroups_files/image006.gif" v:shapes="_x0000_s1359 _x0000_s1360 _x0000_s1361 _x0000_s1362 _x0000_s1363 _x0000_s1364 _x0000_s1365 _x0000_s1366 _x0000_s1367 _x0000_s1368 _x0000_s1369 _x0000_s1370 _x0000_s1371 _x0000_s1372"><![endif]></span><!--[if mso & !supportInlineShapes & supportFields]><span
+style='mso-bookmark:_Toc214769366'></span><v:shape id="_x0000_i1027" type="#_x0000_t75"
+ style='width:226.15pt;height:110.25pt'>
+ <v:imagedata croptop="-65520f" cropbottom="65520f" />
+</v:shape><span style='mso-bookmark:_Toc214769366'><span style='mso-element:
+field-end'></span></span><![endif]--><span style='mso-bookmark:_Toc214769366'></span></p>
+
+<div >
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=336 height=101
+ align=right>
+ <tr>
+  <td valign=top align=left height=101 style='padding-top:0in;padding-right:
+  9.35pt;padding-bottom:0in;padding-left:9.35pt'>
+  <div style='border:solid black 1.0pt;padding:4.0pt 7.0pt 4.0pt 7.0pt;background:white;
+  '>
+  <p class=MsoNormal style='text-indent:0in;line-height:normal;background:white;
+  border:none;padding:0in'><span class=Tiny><span style='font-size:
+  8.0pt'>Symmetries
+  can always be</span></span><span
+  class=Tiny><span style='font-size:9.0pt'>
+  </span></span><a
+  href="MMRepsModels.htm"><span style='mso-bookmark:_Toc214769366'><span
+  style='font-size:9.0pt;mso-bidi-font-family:"Times New Roman"'>represented</span></span><span
+  style='mso-bookmark:_Toc214769366'></span></a><span style='mso-bookmark:_Toc214769366'><span
+  class=Tiny><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  "Times New Roman"'> as functions.<span style='mso-spacerun:yes'>  </span>For
+  example, r corresponds to the function <!-- MP EQPH( --><script id=mpeq0002s1>
+	MPSetEqnAttrs('eq0002','',3,[[141,11,3,0,0],[187,13,3,-1,-1],[233,17,4,-1,-1],[210,15,5,-1,-1],[280,20,5,-1,-1],[351,25,7,-1,-1],[584,43,13,-2,-2]])
+</script><![if !ie]><span id=mpnneq0002ph class=MPNNCode
+	><img border=0 align=bottom name=mpeq0002ph src="&{DSMP.gEmptySrc};" height="&{DSMP.gPlaceholderHeight};"
+		width="&{DSMP.gPlaceholderWidth};" 
+	><img border=0 align=top src="&{DSMP.gEmptySrc};" width=1 
+		height="&{DSMP.gPlaceholder2Height};" 
+></span><![endif]><script id=mpeq0002s2>
+	MPEquation()
+</script><!-- )MP EQPH --><span
+  style='mso-spacerun:yes'> </span>(see</span></span></span><span
+  style='mso-bookmark:_Toc214769366'><span class=Tiny><span style='font-size:
+  9.0pt;mso-bidi-font-family:"Times New Roman"'> </span></span></span><span
+  style='mso-bookmark:_Toc214769366'></span><a href="MMFuncSpec.htm#barredarrow"><span
+  style='mso-bookmark:_Toc214769366'><span style='font-size:9.0pt;mso-bidi-font-family:
+  "Times New Roman"'>barred arrow notation</span></span><span style='mso-bookmark:
+  _Toc214769366'></span></a><span style='mso-bookmark:_Toc214769366'><span
+  class=Tiny><span style='font-size:8.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:
+  "Times New Roman"'>).<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></span></span></p>
+  <p class=MsoNormal style='text-indent:0in;background:white;border:none;padding:0in'><span class=Tiny><span style='font-size:
+  8.0pt'>&nbsp;</span></span></p>
+  </div>
+  </td>
+ </tr>
+</table><!-- MP EQRA( --><script id=mpeq0002s1>
+	MPSetEqnAttrs('eq0002','',3,[[141,11,3,0,0],[187,13,3,-1,-1],[233,17,4,-1,-1],[210,15,5,-1,-1],[280,20,5,-1,-1],[351,25,7,-1,-1],[584,43,13,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0002 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0002ph,'1')
+	</script><layer id=mpeq0002pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0002pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0002 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0002,mpeq0002pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0002s3>
+	MPDeleteCode('eq0002')
+</script><![endif]><!-- )MP EQ -->
+
+</div>
+
+<p class=MsoNormal>Thus hr is the
+symmetry of flipping about the horizontal center line.  Notice that hr means <strong>do r, then h </strong><strong><span
+style='font-weight:normal;font-style:normal'>(you perform them right to left).  Some authors write it the other way.  This way of doing it agrees with the usual
+way of writing </span></strong><a href="MMFuncComposition.htm">composition
+of functions</a><strong><span style='font-weight:normal;font-style:normal'>.  </span></strong><strong><span
+style='font-weight:normal;font-style:
+normal'></span></strong></p>
+
+<p class=MsoNormal><strong><span
+style='font-weight:normal;font-style:normal'>The tables below show all the symmetries of the square
+and how they compose.  To find the
+product of </span></strong><strong><span style='font-weight:normal'>xy</span></strong><strong><span
+style='font-weight:normal;font-style:normal'> from the table, you look at the element in the row
+labels </span></strong><strong><span style='font-weight:normal'>x </span></strong><strong><span
+style='font-weight:normal;font-style:normal'>and the column labeled </span></strong><strong><span
+style='font-weight:normal'>y.  </span></strong><strong><span
+style='font-weight:normal;font-style:normal'>Thus the table says that hr = g.  Such tables are called </span></strong><strong><span
+style='font-style:normal'>multiplication
+tables</span></strong><strong><span style='font-weight:normal'>, </span></strong><strong><span
+style='font-weight:normal;font-style:normal'>but remember this multiplication is composition of
+symmetries and has nothing to do with numbers. </span></strong></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><!--[if mso & !supportInlineShapes & supportFields]><span
+style='mso-bookmark:_Toc214769366'></span><span style='mso-element:field-begin;
+mso-field-lock:yes'></span><span style='mso-bookmark:_Toc214769366'><span
+style='mso-spacerun:yes'> </span>SHAPE<span style='mso-spacerun:yes'> 
+</span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='mso-bookmark:_Toc214769366'><!--[if gte vml 1]><v:group id="_x0000_s1121"
+ editas="canvas" style='width:453.75pt;height:231.6pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="1732,1066" coordsize="6152,3140">
+ <o:lock v:ext="edit" aspectratio="t" />
+ <v:shape id="_x0000_s1122" type="#_x0000_t75" style='position:absolute;left:1732;
+  top:1066;width:6152;height:3140' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t" />
+  <v:path o:extrusionok="t" o:connecttype="none" />
+  <o:lock v:ext="edit" text="t" />
+ </v:shape><v:shape id="_x0000_s1123" type="#_x0000_t202" style='position:absolute;
+  left:1825;top:1122;width:2385;height:2237' stroked="f">
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;color:teal'>All the symmetries <o:p></o:p></span></b></p>
+     <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+     style='font-size:11.0pt;color:teal'>of the square<o:p></o:p></span></b></p>
+     <p class=MsoNormal style='text-indent:0in'>e identity (do nothing)</p>
+     <p class=MsoNormal style='text-indent:0in'>r rotate clockwise by <span
+     style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><v:shape id="_x0000_i1067"
+      type="#_x0000_t75" style='width:27.15pt;height:18.35pt' o:ole="">
+      <v:imagedata src="MMGroups_files/image007.wmz" o:title="" />
+     </v:shape></span><![if gte mso 9]><o:OLEObject Type="Embed"
+      ProgID="Equation.DSMT4" ShapeID="_x0000_i1067" DrawAspect="Content"
+      ObjectID="_1304410554">
+     </o:OLEObject>
+    <![endif]></p>
+     <p class=MsoNormal style='text-indent:0in'>s rotate clockwise by <strong><span
+     style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+     mso-bidi-font-weight:bold;font-style:normal'><span style='position:relative;
+     top:2.0pt;mso-text-raise:-2.0pt'><v:shape id="_x0000_i1068" type="#_x0000_t75"
+      style='width:10.85pt;height:10.2pt' o:ole="">
+      <v:imagedata src="MMGroups_files/image008.wmz" o:title="" />
+     </v:shape></span><![if gte mso 9]><o:OLEObject Type="Embed"
+      ProgID="Equation.DSMT4" ShapeID="_x0000_i1068" DrawAspect="Content"
+      ObjectID="_1304410555">
+     </o:OLEObject>
+    <![endif]><o:p></o:p></span></strong></p>
+     <p class=MsoNormal style='text-indent:0in'><strong><span style='mso-bidi-font-family:
+     "Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:
+     normal'>t<span style='mso-spacerun:yes'>  </span>rotate clockwise by </span></strong><strong><span
+     style='mso-bidi-font-family:"Times New Roman";position:relative;
+     top:6.0pt;mso-text-raise:-6.0pt;mso-bidi-font-weight:normal'><v:shape
+      id="_x0000_i1069" type="#_x0000_t75" style='width:33.3pt;height:18.35pt'
+      o:ole="">
+      <v:imagedata src="MMGroups_files/image009.wmz" o:title="" />
+     </v:shape></span></strong><strong><span style='mso-bidi-font-family:"Times New Roman";
+     font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'><![if gte mso 9]><o:OLEObject
+      Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1069"
+      DrawAspect="Content" ObjectID="_1304410556">
+     </o:OLEObject>
+    <![endif]><o:p></o:p></span></strong></p>
+     <p class=MsoNormal style='text-indent:0in'><strong><span style='mso-bidi-font-family:
+     "Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:
+     normal'>f<span style='mso-spacerun:yes'>  </span>flip about vertical
+     center line<o:p></o:p></span></strong></p>
+     <p class=MsoNormal style='text-indent:0in'><strong><span style='mso-bidi-font-family:
+     "Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:
+     normal'>g flip about horizontal center line<o:p></o:p></span></strong></p>
+     <p class=MsoNormal style='text-indent:0in'><strong><span style='mso-bidi-font-family:
+     "Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:
+     normal'>h flip about diagonal from NW to SE<o:p></o:p></span></strong></p>
+     <p class=MsoNormal style='text-indent:0in'><strong><span style='mso-bidi-font-family:
+     "Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:
+     normal'>k flip about diagonal from NE to SW<o:p></o:p></span></strong></p>
+     <p class=MsoNormal style='text-indent:0in'><o:p>&nbsp;</o:p></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1124" type="#_x0000_t202" style='position:absolute;
+  left:4312;top:1122;width:2743;height:3084' stroked="f">
+  <v:textbox>
+   <![if !mso]>
+   <table cellpadding=0 cellspacing=0 width="100%">
+    <tr>
+     <td><![endif]>
+     <div>
+     <p class=MsoNormal style='text-indent:0in'><b style='mso-bidi-font-weight:
+     normal'><span style='font-size:11.0pt;color:teal'>Table for composing <o:p></o:p></span></b></p>
+     <p class=MsoNormal style='text-indent:0in'><b style='mso-bidi-font-weight:
+     normal'><span style='font-size:11.0pt;color:teal'>symmetries of the square<o:p></o:p></span></b></p>
+     <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+      style='margin-left:-.7pt;border-collapse:collapse;border:none;mso-border-alt:
+      solid windowtext .5pt;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+      mso-border-insideh:.5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+      <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'><o:p>&nbsp;</o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:solid windowtext 1.5pt;
+       border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-left-alt:solid windowtext 1.5pt;mso-border-alt:solid windowtext 1.5pt;
+       mso-border-right-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:solid windowtext 1.5pt;
+       border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:1.5pt;
+       mso-border-left-alt:.5pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:
+       .5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:solid windowtext 1.5pt;
+       border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:1.5pt;
+       mso-border-left-alt:.5pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:
+       .5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:solid windowtext 1.5pt;
+       border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:1.5pt;
+       mso-border-left-alt:.5pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:
+       .5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:solid windowtext 1.5pt;
+       border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:1.5pt;
+       mso-border-left-alt:.5pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:
+       .5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:solid windowtext 1.5pt;
+       border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:1.5pt;
+       mso-border-left-alt:.5pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:
+       .5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:solid windowtext 1.5pt;
+       border-left:none;border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-left-alt:solid windowtext .5pt;mso-border-top-alt:1.5pt;
+       mso-border-left-alt:.5pt;mso-border-bottom-alt:1.5pt;mso-border-right-alt:
+       .5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border:solid windowtext 1.5pt;
+       border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:1;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:solid windowtext 1.5pt;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-alt:solid windowtext 1.5pt;
+       mso-border-bottom-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-top-alt:1.5pt;mso-border-left-alt:1.5pt;mso-border-bottom-alt:
+       .5pt;mso-border-right-alt:.5pt;mso-border-color-alt:windowtext;
+       mso-border-style-alt:solid;padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-top-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext 1.5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-top-alt:1.5pt;mso-border-left-alt:.5pt;mso-border-bottom-alt:
+       .5pt;mso-border-right-alt:1.5pt;mso-border-color-alt:windowtext;
+       mso-border-style-alt:solid;padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:2;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:solid windowtext 1.5pt;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:.5pt;
+       mso-border-left-alt:1.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+       1.5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:3;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:solid windowtext 1.5pt;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:.5pt;
+       mso-border-left-alt:1.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+       1.5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:4;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:solid windowtext 1.5pt;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:.5pt;
+       mso-border-left-alt:1.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+       1.5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:5;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:solid windowtext 1.5pt;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:.5pt;
+       mso-border-left-alt:1.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+       1.5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:6;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:solid windowtext 1.5pt;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:.5pt;
+       mso-border-left-alt:1.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+       1.5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:7;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:solid windowtext 1.5pt;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-top-alt:.5pt;
+       mso-border-left-alt:1.5pt;mso-border-bottom-alt:.5pt;mso-border-right-alt:
+       1.5pt;mso-border-color-alt:windowtext;mso-border-style-alt:solid;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-right-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+      <tr style='mso-yfti-irow:8;mso-yfti-lastrow:yes;height:19.45pt'>
+       <td width=28 style='width:19.25pt;border:solid windowtext 1.5pt;
+       border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;
+       height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext 1.5pt;
+       mso-border-top-alt:.5pt;mso-border-left-alt:1.5pt;mso-border-bottom-alt:
+       1.5pt;mso-border-right-alt:.5pt;mso-border-color-alt:windowtext;
+       mso-border-style-alt:solid;padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>k<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>f<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>h<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>g<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>r<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>s<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.0pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       mso-border-alt:solid windowtext .5pt;mso-border-bottom-alt:solid windowtext 1.5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>t<o:p></o:p></span></strong></p>
+       </td>
+       <td width=28 style='width:19.25pt;border-top:none;border-left:none;
+       border-bottom:solid windowtext 1.5pt;border-right:solid windowtext 1.5pt;
+       mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+       padding:0in 5.4pt 0in 5.4pt;height:19.45pt'>
+       <p class=MsoNormal style='text-indent:0in'><strong><span
+       style='mso-bidi-font-family:"Times New Roman";font-weight:normal;
+       mso-bidi-font-weight:bold;font-style:normal'>e<o:p></o:p></span></strong></p>
+       </td>
+      </tr>
+     </table>
+     <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+     </div>
+     <![if !mso]></td>
+    </tr>
+   </table>
+   <![endif]></v:textbox>
+ </v:shape><w:wrap type="none" />
+ <w:anchorlock />
+</v:group><![endif]--><![if !vml]><img width=605 height=311
+src="MMGroups_files/image010.gif" v:shapes="_x0000_s1121 _x0000_s1122 _x0000_s1123 _x0000_s1124"><![endif]></span><!--[if mso & !supportInlineShapes & supportFields]><span
+style='mso-bookmark:_Toc214769366'></span><v:shape id="_x0000_i1028" type="#_x0000_t75"
+ style='width:453.75pt;height:231.6pt'>
+ <v:imagedata croptop="-65520f" cropbottom="65520f" />
+</v:shape><span style='mso-bookmark:_Toc214769366'><span style='mso-element:
+field-end'></span></span><![endif]--><span style='mso-bookmark:_Toc214769366'></span></h3>
+
+<h2>Properties of the symmetries of a
+square</h2>
+
+<p class=MsoNormal style='text-indent:0in'>You
+can check that all these properties are true of the set of symmetries of the
+square:</p>
+
+<p class=Llist><span
+lang=EN style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>
+</span></span><b><span lang=EN>Closure.  </span></b><span lang=EN>Composing two
+symmetries gives another symmetry.</span></p>
+
+<p class=Llist><span
+lang=EN style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>
+</span></span><b><span lang=EN>Existence of identity element.</span></b><span
+lang=EN>  Doing nothing, the operation e,
+ is a symmetry.  It has the property that for any symmetry u,
+eu = e and ue = e.   The operation e is called the <b>identity
+element</b> of the multiplication.</span></p>
+
+<p class=Llist><span
+lang=EN style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>
+</span></span><b><span lang=EN>Associativity.  </span></b><span lang=EN>The multiplication
+is associative. </span></p>
+
+<p class=Llist><span
+lang=EN style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>
+</span></span><b><span lang=EN>Existence of inverses. </span></b><span
+lang=EN> Every element has an inverse
+with respect to e:  For each <i
+>x </i>there is an element y such that <i
+>xy</i> = e and <i >yx</i> = e.  The element<i
+> y</i> is the <b>inverse </b>of<i
+> x </i>and is denoted by <!-- MP EQPHNS( --><script id=mpeq0003s1>
+	MPSetEqnAttrs('eq0003','',3,[[15,11,0,-1,-1],[19,13,0,-1,-1],[23,18,-1,-1,-1],[21,16,0,-1,-1],[30,22,0,-1,-1],[36,27,0,-1,-1],[61,43,-1,-2,-2]])
+</script><![if !ie]><span id=mpnneq0003ph class=MPNNCode
+	><img border=0 name=mpeq0003ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0003s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span></p><!-- MP EQRA( --><script id=mpeq0003s1>
+	MPSetEqnAttrs('eq0003','',3,[[15,11,0,-1,-1],[19,13,0,-1,-1],[23,18,-1,-1,-1],[21,16,0,-1,-1],[30,22,0,-1,-1],[36,27,0,-1,-1],[61,43,-1,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0003 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0003ph,'')
+	</script><layer id=mpeq0003pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0003pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0003 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0003,mpeq0003pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0003s3>
+	MPDeleteCode('eq0003')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist><span
+lang=EN style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>
+</span></span><b><span lang=EN>Uniqueness of identity.  </span></b><span lang=EN>There is exactly one
+identity element.</span></p>
+
+<p class=Llist><span
+lang=EN style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>
+</span></span><b><span lang=EN>Uniqueness of inverses.</span></b><span
+lang=EN>  Each element <i
+>x </i>has exactly one inverse.</span></p>
+
+<p class=MsoNormal><strong>All</strong><b
+><i > </i></b>sets
+of symmetries of a geometric figure have these properties.  </p>
+
+<p class=MsoNormal>One property that
+the composition of symmetries of the square does not have is
+commutativity:   For example,  hr = g but rh = f.   By contrast, an isosceles triangle has just
+two symmetries and the multiplication is commutative.  <strong>So some figures have commuting symmetries and some don’t.  </strong><i ></i></p>
+
+<h1>Axioms for groups</h1>
+
+<h2><a name=groupdefinition><span class=Chaptitle>Definition</span></a><span
+class=Chaptitle></span></h2>
+
+<p class=MsoNormal>A <b >group </b>is an <a
+href="http://en.wikipedia.org/wiki/Algebraic_structure">algebraic structure</a> <!-- MP EQPHNS( --><script id=mpeq0004s1>
+	MPSetEqnAttrs('eq0004','',3,[[39,10,2,-1,-1],[50,13,3,-1,-1],[64,17,4,-1,-1],[56,15,4,-1,-1],[76,19,4,-1,-1],[93,24,6,-1,-1],[157,41,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0004ph class=MPNNCode
+	><img border=0 name=mpeq0004ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0004s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> with <i >e</i>
+a constant (<a href="http://en.wikipedia.org/wiki/Arity#Nullary">nullary</a> operation), <i
+>i </i>a <a
+href="http://en.wikipedia.org/wiki/Unary_operation">unary</a> operation, and <!-- MP EQPHNS( --><script id=mpeq0005s1>
+	MPSetEqnAttrs('eq0005','',3,[[4,6,0,-1,-1],[6,7,-1,-1,-1],[8,9,-2,-1,-1],[7,7,-1,-1,-1],[9,10,-1,-1,-1],[11,13,-1,-1,-1],[19,22,-3,-2,-2]])
+</script><![if !ie]><span id=mpnneq0005ph class=MPNNCode
+	><img border=0 name=mpeq0005ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0005s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> a <a href="MMFuncExamples.htm#binaryoperation">binary operation</a>,
+satisfying the following <a
+href="MMOtherAspectsUnderstanding.htm#axiomaticmethod">axioms</a>:</p><!-- MP EQRA( --><script id=mpeq0005s1>
+	MPSetEqnAttrs('eq0005','',3,[[4,6,0,-1,-1],[6,7,-1,-1,-1],[8,9,-2,-1,-1],[7,7,-1,-1,-1],[9,10,-1,-1,-1],[11,13,-1,-1,-1],[19,22,-3,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0005 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0005ph,'')
+	</script><layer id=mpeq0005pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0005pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0005 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0005,mpeq0005pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0005s3>
+	MPDeleteCode('eq0005')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0004s1>
+	MPSetEqnAttrs('eq0004','',3,[[39,10,2,-1,-1],[50,13,3,-1,-1],[64,17,4,-1,-1],[56,15,4,-1,-1],[76,19,4,-1,-1],[93,24,6,-1,-1],[157,41,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0004 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0004ph,'')
+	</script><layer id=mpeq0004pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0004pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0004 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0004,mpeq0004pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0004s3>
+	MPDeleteCode('eq0004')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>1)  For all <!-- MP EQPHNS( --><script id=mpeq0006s1>
+	MPSetEqnAttrs('eq0006','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0006ph class=MPNNCode
+	><img border=0 name=mpeq0006ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0006s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0007s1>
+	MPSetEqnAttrs('eq0007','',3,[[75,7,1,-1,-1],[98,8,1,-1,-1],[123,10,1,-1,-1],[111,9,2,-1,-1],[148,13,1,-1,-1],[185,16,2,-1,-1],[309,28,4,-2,-2]])
+</script><![if !ie]><span id=mpnneq0007ph class=MPNNCode
+	><img border=0 name=mpeq0007ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0007s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->   (e is
+an <b >identity element</b>)</p><!-- MP EQRA( --><script id=mpeq0007s1>
+	MPSetEqnAttrs('eq0007','',3,[[75,7,1,-1,-1],[98,8,1,-1,-1],[123,10,1,-1,-1],[111,9,2,-1,-1],[148,13,1,-1,-1],[185,16,2,-1,-1],[309,28,4,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0007 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0007ph,'')
+	</script><layer id=mpeq0007pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0007pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0007 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0007,mpeq0007pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0007s3>
+	MPDeleteCode('eq0007')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0006s1>
+	MPSetEqnAttrs('eq0006','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0006 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0006ph,'')
+	</script><layer id=mpeq0006pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0006pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0006 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0006,mpeq0006pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0006s3>
+	MPDeleteCode('eq0006')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>2)  For all <!-- MP EQPHNS( --><script id=mpeq0008s1>
+	MPSetEqnAttrs('eq0008','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0008ph class=MPNNCode
+	><img border=0 name=mpeq0008ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0008s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,  <!-- MP EQPHNS( --><script id=mpeq0009s1>
+	MPSetEqnAttrs('eq0009','',3,[[95,10,2,-1,-1],[126,13,3,-1,-1],[159,17,4,-1,-1],[142,15,4,-1,-1],[190,19,4,-1,-1],[237,24,6,-1,-1],[396,41,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0009ph class=MPNNCode
+	><img border=0 name=mpeq0009ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0009s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->  (<i >i</i>(<i
+>a</i>) is an <b >inverse</b> to <i >a</i>)</p><!-- MP EQRA( --><script id=mpeq0009s1>
+	MPSetEqnAttrs('eq0009','',3,[[95,10,2,-1,-1],[126,13,3,-1,-1],[159,17,4,-1,-1],[142,15,4,-1,-1],[190,19,4,-1,-1],[237,24,6,-1,-1],[396,41,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0009 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0009ph,'')
+	</script><layer id=mpeq0009pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0009pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0009 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0009,mpeq0009pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0009s3>
+	MPDeleteCode('eq0009')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0008s1>
+	MPSetEqnAttrs('eq0008','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0008 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0008ph,'')
+	</script><layer id=mpeq0008pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0008pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0008 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0008,mpeq0008pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0008s3>
+	MPDeleteCode('eq0008')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>3)  For all <!-- MP EQPHNS( --><script id=mpeq0010s1>
+	MPSetEqnAttrs('eq0010','',3,[[44,10,2,-1,-1],[56,12,1,-1,-1],[73,15,2,-1,-1],[65,14,2,-1,-1],[87,19,2,-1,-1],[109,24,3,-1,-1],[181,39,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0010ph class=MPNNCode
+	><img border=0 name=mpeq0010ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0010s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0011s1>
+	MPSetEqnAttrs('eq0011','',3,[[98,10,2,-1,-1],[129,13,3,-1,-1],[162,17,4,-1,-1],[145,15,4,-1,-1],[194,19,4,-1,-1],[242,24,6,-1,-1],[403,41,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0011ph class=MPNNCode
+	><img border=0 name=mpeq0011ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0011s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->  (<b >associative</b>
+law)</p><!-- MP EQRA( --><script id=mpeq0011s1>
+	MPSetEqnAttrs('eq0011','',3,[[98,10,2,-1,-1],[129,13,3,-1,-1],[162,17,4,-1,-1],[145,15,4,-1,-1],[194,19,4,-1,-1],[242,24,6,-1,-1],[403,41,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0011 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0011ph,'')
+	</script><layer id=mpeq0011pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0011pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0011 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0011,mpeq0011pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0011s3>
+	MPDeleteCode('eq0011')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0010s1>
+	MPSetEqnAttrs('eq0010','',3,[[44,10,2,-1,-1],[56,12,1,-1,-1],[73,15,2,-1,-1],[65,14,2,-1,-1],[87,19,2,-1,-1],[109,24,3,-1,-1],[181,39,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0010 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0010ph,'')
+	</script><layer id=mpeq0010pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0010pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0010 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0010,mpeq0010pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0010s3>
+	MPDeleteCode('eq0010')
+</script><![endif]><!-- )MP EQ -->
+
+<h2>Other axiom systems for groups</h2>
+
+<h3>Traditional axiom system</h3>
+
+<p class=MsoNormal>The commonest definition in the math literature uses one
+binary operation but has two axioms containing <a
+href="MMExistenceAssertions.htm">existential
+quantifiers:</a></p>
+
+<p class=MsoNormal>A group is a set with a binary operation <!-- MP EQPHNS( --><script id=mpeq0012s1>
+	MPSetEqnAttrs('eq0012','',3,[[4,5,0,-1,-1],[6,6,-1,-1,-1],[7,7,-2,-1,-1],[6,6,-1,-1,-1],[8,9,-1,-1,-1],[10,12,-1,-1,-1],[17,19,-3,-2,-2]])
+</script><![if !ie]><span id=mpnneq0012ph class=MPNNCode
+	><img border=0 name=mpeq0012ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0012s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> for which </p><!-- MP EQRA( --><script id=mpeq0012s1>
+	MPSetEqnAttrs('eq0012','',3,[[4,5,0,-1,-1],[6,6,-1,-1,-1],[7,7,-2,-1,-1],[6,6,-1,-1,-1],[8,9,-1,-1,-1],[10,12,-1,-1,-1],[17,19,-3,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0012 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0012ph,'')
+	</script><layer id=mpeq0012pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0012pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0012 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0012,mpeq0012pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0012s3>
+	MPDeleteCode('eq0012')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>1’) There is an element <!-- MP EQPHNS( --><script id=mpeq0013s1>
+	MPSetEqnAttrs('eq0013','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0013ph class=MPNNCode
+	><img border=0 name=mpeq0013ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0013s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> for which for all <!-- MP EQPHNS( --><script id=mpeq0014s1>
+	MPSetEqnAttrs('eq0014','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0014ph class=MPNNCode
+	><img border=0 name=mpeq0014ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0014s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0015s1>
+	MPSetEqnAttrs('eq0015','',3,[[75,7,1,-1,-1],[98,8,1,-1,-1],[123,10,1,-1,-1],[111,9,2,-1,-1],[148,13,1,-1,-1],[185,16,2,-1,-1],[309,28,4,-2,-2]])
+</script><![if !ie]><span id=mpnneq0015ph class=MPNNCode
+	><img border=0 name=mpeq0015ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0015s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.</p><!-- MP EQRA( --><script id=mpeq0015s1>
+	MPSetEqnAttrs('eq0015','',3,[[75,7,1,-1,-1],[98,8,1,-1,-1],[123,10,1,-1,-1],[111,9,2,-1,-1],[148,13,1,-1,-1],[185,16,2,-1,-1],[309,28,4,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0015 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0015ph,'')
+	</script><layer id=mpeq0015pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0015pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0015 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0015,mpeq0015pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0015s3>
+	MPDeleteCode('eq0015')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0014s1>
+	MPSetEqnAttrs('eq0014','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0014 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0014ph,'')
+	</script><layer id=mpeq0014pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0014pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0014 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0014,mpeq0014pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0014s3>
+	MPDeleteCode('eq0014')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0013s1>
+	MPSetEqnAttrs('eq0013','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0013 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0013ph,'')
+	</script><layer id=mpeq0013pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0013pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0013 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0013,mpeq0013pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0013s3>
+	MPDeleteCode('eq0013')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>2’) For every element <!-- MP EQPHNS( --><script id=mpeq0016s1>
+	MPSetEqnAttrs('eq0016','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0016ph class=MPNNCode
+	><img border=0 name=mpeq0016ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0016s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> there is an element <!-- MP EQPHNS( --><script id=mpeq0017s1>
+	MPSetEqnAttrs('eq0017','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0017ph class=MPNNCode
+	><img border=0 name=mpeq0017ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0017s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> for which <!-- MP EQPHNS( --><script id=mpeq0018s1>
+	MPSetEqnAttrs('eq0018','',3,[[74,8,1,-1,-1],[98,11,1,-1,-1],[124,14,1,-1,-1],[111,12,2,-1,-1],[149,17,1,-1,-1],[186,20,2,-1,-1],[310,36,5,-2,-2]])
+</script><![if !ie]><span id=mpnneq0018ph class=MPNNCode
+	><img border=0 name=mpeq0018ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0018s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></p><!-- MP EQRA( --><script id=mpeq0018s1>
+	MPSetEqnAttrs('eq0018','',3,[[74,8,1,-1,-1],[98,11,1,-1,-1],[124,14,1,-1,-1],[111,12,2,-1,-1],[149,17,1,-1,-1],[186,20,2,-1,-1],[310,36,5,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0018 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0018ph,'')
+	</script><layer id=mpeq0018pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0018pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0018 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0018,mpeq0018pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0018s3>
+	MPDeleteCode('eq0018')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0017s1>
+	MPSetEqnAttrs('eq0017','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0017 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0017ph,'')
+	</script><layer id=mpeq0017pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0017pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0017 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0017,mpeq0017pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0017s3>
+	MPDeleteCode('eq0017')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0016s1>
+	MPSetEqnAttrs('eq0016','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0016 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0016ph,'')
+	</script><layer id=mpeq0016pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0016pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0016 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0016,mpeq0016pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0016s3>
+	MPDeleteCode('eq0016')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>3) For all <!-- MP EQPHNS( --><script id=mpeq0019s1>
+	MPSetEqnAttrs('eq0019','',3,[[44,10,2,-1,-1],[56,12,1,-1,-1],[73,15,2,-1,-1],[65,14,2,-1,-1],[87,19,2,-1,-1],[109,24,3,-1,-1],[181,39,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0019ph class=MPNNCode
+	><img border=0 name=mpeq0019ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0019s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0020s1>
+	MPSetEqnAttrs('eq0020','',3,[[98,10,2,-1,-1],[129,13,3,-1,-1],[162,17,4,-1,-1],[145,15,4,-1,-1],[194,19,4,-1,-1],[242,24,6,-1,-1],[403,41,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0020ph class=MPNNCode
+	><img border=0 name=mpeq0020ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0020s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.</p><!-- MP EQRA( --><script id=mpeq0020s1>
+	MPSetEqnAttrs('eq0020','',3,[[98,10,2,-1,-1],[129,13,3,-1,-1],[162,17,4,-1,-1],[145,15,4,-1,-1],[194,19,4,-1,-1],[242,24,6,-1,-1],[403,41,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0020 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0020ph,'')
+	</script><layer id=mpeq0020pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0020pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0020 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0020,mpeq0020pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0020s3>
+	MPDeleteCode('eq0020')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0019s1>
+	MPSetEqnAttrs('eq0019','',3,[[44,10,2,-1,-1],[56,12,1,-1,-1],[73,15,2,-1,-1],[65,14,2,-1,-1],[87,19,2,-1,-1],[109,24,3,-1,-1],[181,39,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0019 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0019ph,'')
+	</script><layer id=mpeq0019pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0019pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0019 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0019,mpeq0019pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0019s3>
+	MPDeleteCode('eq0019')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>To show that these axioms are equivalent to 1) through 3)
+you need to show that 1’), 2’) and 3) imply that there is a <strong>unique </strong><strong><span
+style='font-weight:normal;font-style:normal'>element of </span></strong><strong><span
+style='font-weight:normal'>G</span></strong><strong><span style='font-weight:normal;font-style:normal'> for which </span></strong>for
+all <!-- MP EQPHNS( --><script id=mpeq0021s1>
+	MPSetEqnAttrs('eq0021','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0021ph class=MPNNCode
+	><img border=0 name=mpeq0021ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0021s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0022s1>
+	MPSetEqnAttrs('eq0022','',3,[[75,7,1,-1,-1],[98,8,1,-1,-1],[123,10,1,-1,-1],[111,9,2,-1,-1],[148,13,1,-1,-1],[185,16,2,-1,-1],[309,28,4,-2,-2]])
+</script><![if !ie]><span id=mpnneq0022ph class=MPNNCode
+	><img border=0 name=mpeq0022ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0022s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> and for each <!-- MP EQPHNS( --><script id=mpeq0023s1>
+	MPSetEqnAttrs('eq0023','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0023ph class=MPNNCode
+	><img border=0 name=mpeq0023ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0023s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> there is a <strong>unique </strong><strong><span style='font-weight:normal;font-style:normal'>element
+</span></strong><!-- MP EQPHNS( --><script id=mpeq0024s1>
+	MPSetEqnAttrs('eq0024','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0024ph class=MPNNCode
+	><img border=0 name=mpeq0024ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0024s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> for which <!-- MP EQPHNS( --><script id=mpeq0025s1>
+	MPSetEqnAttrs('eq0025','',3,[[74,8,1,-1,-1],[98,11,1,-1,-1],[124,14,1,-1,-1],[111,12,2,-1,-1],[149,17,1,-1,-1],[186,20,2,-1,-1],[310,36,5,-2,-2]])
+</script><![if !ie]><span id=mpnneq0025ph class=MPNNCode
+	><img border=0 name=mpeq0025ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0025s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> (then define <i >i</i>(<i >a</i>) = <i
+>b).  </i></p><!-- MP EQRA( --><script id=mpeq0025s1>
+	MPSetEqnAttrs('eq0025','',3,[[74,8,1,-1,-1],[98,11,1,-1,-1],[124,14,1,-1,-1],[111,12,2,-1,-1],[149,17,1,-1,-1],[186,20,2,-1,-1],[310,36,5,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0025 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0025ph,'')
+	</script><layer id=mpeq0025pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0025pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0025 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0025,mpeq0025pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0025s3>
+	MPDeleteCode('eq0025')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0024s1>
+	MPSetEqnAttrs('eq0024','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0024 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0024ph,'')
+	</script><layer id=mpeq0024pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0024pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0024 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0024,mpeq0024pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0024s3>
+	MPDeleteCode('eq0024')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0023s1>
+	MPSetEqnAttrs('eq0023','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0023 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0023ph,'')
+	</script><layer id=mpeq0023pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0023pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0023 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0023,mpeq0023pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0023s3>
+	MPDeleteCode('eq0023')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0022s1>
+	MPSetEqnAttrs('eq0022','',3,[[75,7,1,-1,-1],[98,8,1,-1,-1],[123,10,1,-1,-1],[111,9,2,-1,-1],[148,13,1,-1,-1],[185,16,2,-1,-1],[309,28,4,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0022 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0022ph,'')
+	</script><layer id=mpeq0022pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0022pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0022 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0022,mpeq0022pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0022s3>
+	MPDeleteCode('eq0022')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0021s1>
+	MPSetEqnAttrs('eq0021','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0021 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0021ph,'')
+	</script><layer id=mpeq0021pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0021pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0021 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0021,mpeq0021pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0021s3>
+	MPDeleteCode('eq0021')
+</script><![endif]><!-- )MP EQ -->
+
+<h3><strong><span style='font-size:13.0pt;color:teal;
+font-style:normal'>Weaker axiom system</span></strong></h3>
+
+<p class=MsoNormal>The identities in the <a href="#groupdefinition">definition</a> above are
+stronger than they need to be.  You can
+define a group by requiring only that <i >e</i>
+be a “left identity” and <i >i</i>(<i
+>a</i>) be a <!--[if gte vml 1]><v:shape
+ id="_x0000_s1029" type="#_x0000_t202" style='position:absolute;left:0;
+ text-align:left;margin-left:819.9pt;margin-top:0;width:103.55pt;height:433.75pt;
+ text-indent:0;z-index:5;mso-position-horizontal:right;
+ mso-position-horizontal-relative:text;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f" stroked="f">
+ <v:textbox style='mso-next-textbox:#_x0000_s1029'>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal style='text-indent:0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+    class=Abmath><span style='font-size:11.0pt;font-weight:normal'><script language="VBScript">
+<!--
+
+-->
+    </script></span></span><span class=Abmath><span style='font-size:11.0pt'><script  type="text/javascript">
+<!--
+google_ad_client = "pub-0839594169704668";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "B4D0DC";
+google_color_bg = "FFFFFF";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "6F6F6F";
+//-->
+    </script><script  type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script></span></span><span style='color:teal;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></p>
+    <p class=Llist style='margin-left:.25in;text-indent:0in;mso-list:none;
+    tab-stops:-9.0pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+    lang=EN><o:p>&nbsp;</o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" />
+</v:shape><![endif]--><![if !vml]><img width=142 height=582
+src="MMGroups_files/image011.gif" align=right hspace=12 alt="Text Box: "
+v:shapes="_x0000_s1029"><![endif]>“left inverse”.  Precisely, a <b >group </b>is an algebraic structure <!-- MP EQPHNS( --><script id=mpeq0026s1>
+	MPSetEqnAttrs('eq0026','',3,[[39,10,2,-1,-1],[50,13,3,-1,-1],[64,17,4,-1,-1],[56,15,4,-1,-1],[76,19,4,-1,-1],[93,24,6,-1,-1],[157,41,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0026ph class=MPNNCode
+	><img border=0 name=mpeq0026ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0026s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> with <i >e</i>
+a constant (mullary operation), <i >i </i>a
+unary operation, and <!-- MP EQPHNS( --><script id=mpeq0027s1>
+	MPSetEqnAttrs('eq0027','',3,[[4,6,0,-1,-1],[6,7,-1,-1,-1],[8,9,-2,-1,-1],[7,7,-1,-1,-1],[9,10,-1,-1,-1],[11,13,-1,-1,-1],[19,22,-3,-2,-2]])
+</script><![if !ie]><span id=mpnneq0027ph class=MPNNCode
+	><img border=0 name=mpeq0027ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0027s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> a binary operation, satisfying the following identities:</p><!-- MP EQRA( --><script id=mpeq0027s1>
+	MPSetEqnAttrs('eq0027','',3,[[4,6,0,-1,-1],[6,7,-1,-1,-1],[8,9,-2,-1,-1],[7,7,-1,-1,-1],[9,10,-1,-1,-1],[11,13,-1,-1,-1],[19,22,-3,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0027 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0027ph,'')
+	</script><layer id=mpeq0027pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0027pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0027 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0027,mpeq0027pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0027s3>
+	MPDeleteCode('eq0027')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0026s1>
+	MPSetEqnAttrs('eq0026','',3,[[39,10,2,-1,-1],[50,13,3,-1,-1],[64,17,4,-1,-1],[56,15,4,-1,-1],[76,19,4,-1,-1],[93,24,6,-1,-1],[157,41,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0026 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0026ph,'')
+	</script><layer id=mpeq0026pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0026pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0026 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0026,mpeq0026pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0026s3>
+	MPDeleteCode('eq0026')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>1”) For all <!-- MP EQPHNS( --><script id=mpeq0028s1>
+	MPSetEqnAttrs('eq0028','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0028ph class=MPNNCode
+	><img border=0 name=mpeq0028ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0028s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0029s1>
+	MPSetEqnAttrs('eq0029','',3,[[41,7,1,-1,-1],[53,8,1,-1,-1],[68,10,1,-1,-1],[60,9,2,-1,-1],[80,13,1,-1,-1],[100,16,2,-1,-1],[168,28,4,-2,-2]])
+</script><![if !ie]><span id=mpnneq0029ph class=MPNNCode
+	><img border=0 name=mpeq0029ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0029s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.</p><!-- MP EQRA( --><script id=mpeq0029s1>
+	MPSetEqnAttrs('eq0029','',3,[[41,7,1,-1,-1],[53,8,1,-1,-1],[68,10,1,-1,-1],[60,9,2,-1,-1],[80,13,1,-1,-1],[100,16,2,-1,-1],[168,28,4,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0029 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0029ph,'')
+	</script><layer id=mpeq0029pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0029pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0029 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0029,mpeq0029pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0029s3>
+	MPDeleteCode('eq0029')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0028s1>
+	MPSetEqnAttrs('eq0028','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0028 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0028ph,'')
+	</script><layer id=mpeq0028pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0028pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0028 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0028,mpeq0028pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0028s3>
+	MPDeleteCode('eq0028')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal>2”)  For every element
+<!-- MP EQPHNS( --><script id=mpeq0030s1>
+	MPSetEqnAttrs('eq0030','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0030ph class=MPNNCode
+	><img border=0 name=mpeq0030ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0030s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0031s1>
+	MPSetEqnAttrs('eq0031','',3,[[51,10,2,-1,-1],[67,13,3,-1,-1],[86,17,4,-1,-1],[76,15,4,-1,-1],[102,19,4,-1,-1],[127,24,6,-1,-1],[212,41,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0031ph class=MPNNCode
+	><img border=0 name=mpeq0031ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0031s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></p><!-- MP EQRA( --><script id=mpeq0031s1>
+	MPSetEqnAttrs('eq0031','',3,[[51,10,2,-1,-1],[67,13,3,-1,-1],[86,17,4,-1,-1],[76,15,4,-1,-1],[102,19,4,-1,-1],[127,24,6,-1,-1],[212,41,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0031 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0031ph,'')
+	</script><layer id=mpeq0031pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0031pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0031 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0031,mpeq0031pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0031s3>
+	MPDeleteCode('eq0031')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0030s1>
+	MPSetEqnAttrs('eq0030','',3,[[26,9,2,-1,-1],[33,12,2,-1,-1],[44,15,2,-1,-1],[39,13,3,-1,-1],[52,18,2,-1,-1],[64,21,3,-1,-1],[107,38,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0030 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0030ph,'')
+	</script><layer id=mpeq0030pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0030pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0030 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0030,mpeq0030pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0030s3>
+	MPDeleteCode('eq0030')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal style='margin-left:.55in;text-indent:-.25in'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>For
+all <!-- MP EQPHNS( --><script id=mpeq0032s1>
+	MPSetEqnAttrs('eq0032','',3,[[44,10,2,-1,-1],[56,12,1,-1,-1],[73,15,2,-1,-1],[65,14,2,-1,-1],[87,19,2,-1,-1],[109,24,3,-1,-1],[181,39,6,-2,-2]])
+</script><![if !ie]><span id=mpnneq0032ph class=MPNNCode
+	><img border=0 name=mpeq0032ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0032s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+<!-- MP EQPHNS( --><script id=mpeq0033s1>
+	MPSetEqnAttrs('eq0033','',3,[[98,10,2,-1,-1],[129,13,3,-1,-1],[162,17,4,-1,-1],[145,15,4,-1,-1],[194,19,4,-1,-1],[242,24,6,-1,-1],[403,41,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0033ph class=MPNNCode
+	><img border=0 name=mpeq0033ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0033s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.</p><!-- MP EQRA( --><script id=mpeq0033s1>
+	MPSetEqnAttrs('eq0033','',3,[[98,10,2,-1,-1],[129,13,3,-1,-1],[162,17,4,-1,-1],[145,15,4,-1,-1],[194,19,4,-1,-1],[242,24,6,-1,-1],[403,41,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0033 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0033ph,'')
+	</script><layer id=mpeq0033pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0033pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0033 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0033,mpeq0033pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0033s3>
+	MPDeleteCode('eq0033')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0032s1>
+	MPSetEqnAttrs('eq0032','',3,[[44,10,2,-1,-1],[56,12,1,-1,-1],[73,15,2,-1,-1],[65,14,2,-1,-1],[87,19,2,-1,-1],[109,24,3,-1,-1],[181,39,6,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0032 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0032ph,'')
+	</script><layer id=mpeq0032pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0032pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0032 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0032,mpeq0032pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0032s3>
+	MPDeleteCode('eq0032')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal style='text-indent:0in'>The calculations below prove that
+these axioms imply 1), 2) and 3) above:</p>
+
+<p class=MsoNormal style='text-indent:0in'>&nbsp;</p>
+
+<p class=MsoNormal style='text-indent:0in'><span class=Chaptitle><span
+style='color:black'>a) </span></span><span
+class=Chaptitle><!-- MP EQPHNS( --><script id=mpeq0034s1>
+	MPSetEqnAttrs('eq0034','',3,[[374,36,15,-1,-1],[498,47,20,-2,-2],[624,61,26,-2,-2],[560,53,23,-2,-2],[749,72,31,-2,-2],[935,89,38,-3,-3],[1560,150,65,-5,-5]])
+</script><![if !ie]><span id=mpnneq0034ph class=MPNNCode
+	><img border=0 name=mpeq0034ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0034s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span><span
+class=Chaptitle><span style='font-size:24.0pt;color:black;font-weight:normal'></span></span></p><!-- MP EQRA( --><script id=mpeq0034s1>
+	MPSetEqnAttrs('eq0034','',3,[[374,36,15,-1,-1],[498,47,20,-2,-2],[624,61,26,-2,-2],[560,53,23,-2,-2],[749,72,31,-2,-2],[935,89,38,-3,-3],[1560,150,65,-5,-5]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0034 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0034ph,'')
+	</script><layer id=mpeq0034pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0034pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0034 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0034,mpeq0034pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0034s3>
+	MPDeleteCode('eq0034')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal><span class=Chaptitle><span style='font-size:11.0pt;
+color:black;font-weight:normal'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:0in'><span class=Chaptitle><span
+style='color:black'>b)</span></span><span
+class=Chaptitle><span style='font-size:24.0pt;color:black;font-weight:normal'> </span></span><span
+class=Chaptitle><!-- MP EQPHNS( --><script id=mpeq0035s1>
+	MPSetEqnAttrs('eq0035','',3,[[208,13,3,-1,-1],[277,15,3,-2,-2],[349,19,4,-2,-2],[312,19,4,-2,-2],[417,24,5,-2,-2],[520,29,6,-3,-3],[867,49,11,-5,-5]])
+</script><![if !ie]><span id=mpnneq0035ph class=MPNNCode
+	><img border=0 name=mpeq0035ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0035s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span><span
+class=Chaptitle><span style='font-size:24.0pt;color:black;font-weight:normal'></span></span></p><!-- MP EQRA( --><script id=mpeq0035s1>
+	MPSetEqnAttrs('eq0035','',3,[[208,13,3,-1,-1],[277,15,3,-2,-2],[349,19,4,-2,-2],[312,19,4,-2,-2],[417,24,5,-2,-2],[520,29,6,-3,-3],[867,49,11,-5,-5]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0035 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0035ph,'')
+	</script><layer id=mpeq0035pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0035pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0035 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0035,mpeq0035pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0035s3>
+	MPDeleteCode('eq0035')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal style='text-indent:0in'><span class=Chaptitle><span
+style='color:black;
+font-weight:normal'>&nbsp;</span></span></p>
+
+<p class=MsoNormal style='text-indent:0in'><span class=Chaptitle><span
+style='color:black;
+font-weight:normal'>It is a good exercise to check </span></span><strong>each equality</strong><b
+> </b>in calculations <b >a) </b>and <b >b)</b> to see which
+axiom justifies it.  For example, the
+first equality in <b >a) </b>is an
+application of 1”) and the second one is an application of 2”)  with <i >i</i>(<i
+>a</i>) substituted for <i >a.  </i></p>
+
+<h1><a name="_Toc214769367">Properties of groups</a></h1>
+
+<p class=MsoNormal>Until I get this section written, check the links below.</p>
+
+<h1><a name="_Toc214769368">Links</a></h1>
+
+<h2>Links to articles on group theory</h2>
+
+<p class=MsoNormal style='text-indent:0in'><a
+href="http://members.tripod.com/dogschool/">Dogschool</a></p>
+
+<p class=MsoNormal style='text-indent:0in'><a
+href="http://www.math.niu.edu/~rusin/known-math/index/20-XX.html">The Mathematical Atlas</a></p>
+
+<p class=MsoNormal style='text-indent:0in'><a
+href="http://plus.maths.org/issue48/package/index.html">The Plus Group Theory Package</a></p>
+
+<p class=MsoNormal style='text-indent:0in'><a
+href="http://en.wikipedia.org/wiki/Group_theory">Wikipedia</a></p>
+
+<h2>Popular books on group theory</h2>
+
+<p class=MsoNormal><span class=apple-style-span><i ><span style='color:black'>Symmetry and the Monster: The Story of One of
+the Greatest Quests of Mathematics,</span></i><span style='color:black'> by
+Mark Ronan.  <st1:place w:st="on"><st1:PlaceName
+ w:st="on">Oxford</st1:PlaceName> <st1:PlaceType w:st="on">University</st1:PlaceType></st1:place>
+Press, 2006.</span></span></p>
+
+<p class=MsoNormal><span class=apple-style-span><i ><a
+href="http://www.amazon.com/Symmetry-Journey-into-Patterns-Nature/dp/0060789409/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1227026408&amp;sr=1-1"><span
+style='color:windowtext;text-decoration:none'>Symmetry: A
+Journey into the Patterns of Nature</span></a>, </i></span><span
+class=apple-converted-space><i > </i></span><span
+class=ptbrand>by
+Marcus Du Sautoy</span><span class=apple-converted-space>.  HarperCollins, 2008.</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,589 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Derivatives</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-03-26
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+</pre><br />
+<p class=smallind><i>If I see a derivative, I run the other way.</i> --Warren Buffett</p>
+<h1>DERIVATIVES</h1>
+
+<p class=blue><i>This is a new version of the Derivatives chapter. Every part of abstractmath.org is in a beta version, but as of March, 2017, this chapter is a particularly rough beta which I will improve over time.</i></p>
+
+<p class=blue>This section of abstractmath.org is devoted <font color="#911B1B">solely to understanding</font> the concept of derivative</font> by showing you graphs of curves and their derivatives. I do not go into how you get the epsilon-definition  which is necessary for producing the formulas you learn in calculus class for calculating the derivative.</p>
+
+<p class=blue>The way to use this section is to stare at them to see how the function and its derivatives are related to each other. (See <a href="#aboutthegraphs">About the graphs</a>.) <font color="#911B1B">You don’t have to know the formula for the derivative to understand these relations.</font>  Of course, you need the formula if you are going to <font color="#911B1B">use</font> the derivative.</p>
+
+<p class=smallind>One of the values of putting things on the web is that I can include many more examples than would be practical to put in a book.</p>
+
+<h2>Mathematica sources</h2>
+
+<p class=bluesmall>The file <a href="Mathematica/Derivatives/Derivatives.nb">Derivatives.nb</a> contains the source code that generated the illustrations in this article.</p>
+<ul>
+
+<li>If you own <a href="http://www.wolfram.com/mathematica/">Mathematica</a>, you can download these files and modify the code to get other examples.</li>
+<li>The abmath file <a href="Mathematica/Derivatives">Mathematica/Derivatives</a> contains other relevant files that you may want to investigate as well.</li>
+
+</ul>
+
+<a name="definitionofderivative"></a>
+
+<h2>Definition of derivative</h2>
+<p>A <a href="https://en.wikipedia.org/wiki/Continuous_function">continuous function</a> $f$ may have a <b>derivative</b>, which is another function $f'$. Thus taking the derivative <i>maps functions to functions.</i>  Such mappings are examples of <a href="https://en.wikipedia.org/wiki/Operator_(mathematics)">operators</a>.</p>
+
+<p class=boxed><b>Definition:</b> For each real number $a$ where $f$ is defined, the derivative $f'(a)$ is the slope of the <a href="https://en.wikipedia.org/wiki/Tangent">tangent line</a> at the point $(a,f(a))$ on the curve.</p> 
+
+<p class=smallind>Of course, the curve $y=f(x)$ may not have a tangent line at $(a,f(a))$ (for example, the <a href="#absolutevalue">absolute value function</a> does not have a tangent at $(0,0)$).  In that case the value $f'(a)$ is undefined.</p>
+  
+<p>This is a <b>conceptual definition</b> of “derivative”.  The “conceptual definition” isn’t a <a href="/MM/MMDefs.htm">mathematical definition</a> until you define what "<a href="https://en.wikipedia.org/wiki/Tangent">tangent line</a>" means.  If you work out all the definitions concerned, you get an <a href="https://en.wikipedia.org/wiki/(%CE%B5,_%CE%B4)-definition_of_limit">epsilon-delta definition</a> of derivative that often allows you to prove statements about them. This is illustrated in more detail in <a href="MMConceptualComputational.htm#derivative">Concept and Computation</a> and in <a href="/Word%20Press/?p=8501">The Power of Being Naive</a>.</p>
+
+<a name="aboutthegraphs"></a>
+<h2>About the graphs</h2>
+ <p>The derivatives are shown in each graph by color.</p><br />
+<div align="center"><img 
+src="Mathematica/Derivatives/Colorlist.png"></div>
+
+<p>To help people who are color blind, the curves are also labeled  "<b>0</b>" (the function), "<b>1</b>" (the first derivative), "<b>2</b>" (the second derivative) and so on.</p>
+
+
+<h3>Studying the graphs</h3> 
+
+<p class=purpleprose>Find evidence in each picture <span class=red>(not using the formulas!)</span> that the various colored curves have the relationship to each other that the colors claim.</p>
+
+<p>The point is for you to gain a solid intuitive understanding of the relationship of the derivative to the function <span class=purple>just from the graphs</span>.</p>
+
+
+
+<ul>
+<li>The $y$ value at any point on the red curve (first derivative) is the slope of the blue curve (the function).</li>
+<li>The red curve crosses the $x$-axis wherever the blue curve has a local maximum or minimum. (The first graph where you can see this is the <a href="#squaringfunction">squaring function</a>.)</li>
+<li>The $y$ value at any point on the the green curve (second derivative) shows the slope of the red curve and also whether the blue curve is concave up or down.</li> 
+
+<li>If the $y$ value of the green curve is $0$ then the blue curve has a critical point there. (The first graph where you can see this is the <a href="#firstcubicfunction">first cubic function</a>.)</li>
+
+<li>You can follow these suggestions for other colors, too.  For example, the green curve is the derivative of the red curve and the gold curve is the second derivative of the red curve.</li>
+
+<li>And so on.</li>
+</ul>
+
+
+
+
+
+<a name="straightlines"></a>
+
+<h2>Baby examples: Straight Lines</h2>
+<p class=bluesmall><span class=purple>Don't underestimate baby examples.</span>  Looking at a picture of one solidifies your understanding of what I have written above.</p> 
+
+<h3>A constant function: $y=1$</h3>
+<p>The tangent line to the straight line $y = 1$ is itself.</p>
+
+<p>The derivative is the constant function $y= 0$ because the straight line $y = 1$ has slope $0$. You need to know only the definition of derivative to know that. You don't need to know any "formula".</p>
+
+<p>This is the graph of the constant function $y=1$ and its derivative.</p>
+<br />
+
+<div align="center"><img 
+src="Mathematica/Derivatives/const.png"></div>
+
+
+<a name="identityfunction"></a>
+<h3>The identity function $y=x$
+</h3>
+
+<p>The identity function $y=x$ has slope 
+$1$ at every point. So the first derivative will be the constant function $y= 1$ and the second derivative will be $y= 0$. Note that the second derivative of <i>any</i> nonvertical straight line is the constant zero function.</p>
+<br />
+<div align="center"><img 
+src="Mathematica/Derivatives/id.png"></div>
+
+<h3>Some more straight lines<h3>
+
+<h4>$y= x-\frac{1}{4}$</h4>
+
+<p>It has the same slope as the identity function so it has the same first and second derivatives.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/slslip.png"></div>
+
+<h4>$y=-\frac{5}{4}x+1$</h4>
+<p>This has a different slope.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/sldown.png"></div>
+
+<a name="absolutevalue"></a><a name="absolutevaluefunction"></a>
+
+
+<h2>Absolute Value</h2>
+
+<p>This is the function \[f(x)=\begin{cases}
+0& \text{ if } x=0\\
+-x & \text{ if } x\lt0\\
+x & \text{ if } x\gt0\end
+{cases}\]</p>
+
+<p>The point $(0,0)$ is on the graph of the absolute value function. Neither the point $(0,1)$ nor $(0,-1)$ is on the graph of the first derivative because there's no tangent line at $(0, 0)$. The graph of the absolute value function has a corner there.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/abval.png"></div>
+
+<h2>Quadratic functions</h2>
+
+<h3>The squaring function $y= x^2$</h3>
+
+<a name="squaringfunction"></a>
+
+
+<p>This function has one local minimum. The picture fits with the facts that the first derivative is $0$ at the squaring function's minimum, and the second derivative is positive there (not to mention everywhere else). You don't need to know the formulas for the function and its derivatives.
+</p>
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/q1.png"></div>
+
+<h3>A function with two roots: $y=(x-2)(x+1)$</h3>
+
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/q2.png"></div>
+
+<h4>More quadratics</h4>
+
+<h4>$y=4-(x-1)^2$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/q3.png"></div>
+
+<h4>$.5x^2-1$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/q4.png"></div>
+
+<h4>$2(x+.5)^2+1$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/q5.png"></div>
+
+<a name="firstcubicfunction"></a>
+
+
+<h2>Cubic functions</h2>
+
+<h3>$y=x^3$</h3>
+
+<p>This function has no local maxima or minima because the first derivative has only one zero and the second derivative tells you that the function has an inflection point there. The function has  only that one inflection point. You can't deduce this from the (blue) graph of the function because it might have an inflection point at minus a million or something. But you can deduce it from the second derivative, which has only one zero.</p> 
+
+<p>The function has exactly one zero, at $x=0$. You can't tell that it only has one zero just by looking at the graph, but you can tell there is only one using the formula, because $x^3$ is positive for $x\gt0$ and negative for $x\lt0$. You can't always trust graphs.</p>
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/cu1.png"></div>
+
+
+<a name="secondcubicfunction"></a>
+
+<h4>$y=x^3+x$</h4>
+
+<p>This function has no maxima or minima or critical points. It has one inflection point. Its roots are 
+$0$, $i$ and $-i$.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/cu2.png"></div>
+
+<a name="thirdcubicfunction"></a>
+
+<h4>$y=x^3+x^2$</h4>
+
+
+
+<p>This function has two real roots, one of multiplicity two, and   a local maximum and minimum.</p>
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/cu3.png"></div>
+
+<a name="fourthcubicfunction"></a>
+
+
+
+<h4>$y=(x+.5)^3-x$</h4>
+
+<p>This function has one real root, a local maximum and a local minimum.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/cu4.png"></div>
+
+
+<a name="fifthcubicfunction"></a>
+
+<h4>$y=-x^3 + x^2-.1$</h4>
+<p>This function has local maxima and minima and three real roots.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/cu5.png"></div>
+
+
+
+<a name="sixthcubicfunction"></a>
+
+<h4>$y=x^3+x^2+x$</h4>
+
+<p>This function factors as $x(x^2+x+1)$.  It has no local maxima or minima and three distinct roots, two of them complex.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/cu6.png"></div>
+
+
+<a name="firstquarticfunction">
+
+<h2>Quartics</h2>
+
+
+
+</a>
+
+<h4>$y=\frac{1}{4}x^4$</h4>
+
+
+<p>I scaled it by $\frac{1}{4}$ because it is hard to see the third derivative for $x\mapsto x^4$. This function has one quadruple zero at $(0,0)$ and it is <i>extremely flat</i> there. Note that the value at $0.3$ is just $0.002025$. Each of the three derivatives shown has just one zero, at $0$, which makes it hard for the function to get off the ground near $0$, so to speak.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/quart1.png"></div>
+<a name="secondquarticfunction"></a>
+
+<h4>$y=\frac{1}{4}(x^4-x^2+x)$</h4>
+
+
+
+<p>This function has two real roots and two complex roots. It has to have at least two since it factors as $x$ times a cubic, and a cubic always has a real root. It has a local minimum but no local maximum. That is sort of clear from the graph but the fact that the first derivative has only one zero proves that the function has only one local extremum.  The function has two just barely visible inflection points where you see two zeros of the second derivative.</p>
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/quart2.png"></div>
+
+<h4>$\frac{1}{4} \left(x^4-x^3+x^2-x\right)$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/quart4.png"></div>
+
+<h4>$y=\frac{1}{4}x(x+1)(x-1)(x-1.5)$</h4>
+
+<p>These derivatives make a very nice pattern that is worth enjoying for 15 minutes or so. All the formulas, for the function and its derivatives, have been simplified by collecting terms.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/quart5b.png"></div>
+
+
+<a name="quintic"></a>
+
+<h2>Quintics</h2>
+
+<h3>Fifth power function</h3>
+
+<h4>$y=.02 x^5$</h4>
+<p>This is $x^5$, flattened to separate the derivatives. Compare this with the graphs of
+<a href="#squaringfuncton">$y=x^2$</a>, <a href="#firstcubicfunction">$y=x^3$</a>, and <a href="#firstquarticfunction">$y=.25x^4$</a>.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/q5low.png"></div>
+
+<h3>A beautiful quintic</h3>
+
+
+
+<h4>$y=0.01 x^5-0.015 x^4-0.19 x^3+0.2 x^2+0.5 x-0.5$</h4>
+
+
+<p>I fiddled with this polynomial until I got the function and all four derivatives to be separated from each other. All the roots of the function and all its derivatives are real and all are shown. Isn't it gorgeous?</p>
+
+
+<p class=smallind>Note: This document is written by a mathematician, so a number like $0.015$ means <i>exactly</i> $0.015$, in other words $\frac{15}{1000}$, which is $\frac{3}{200}$. If you have a scientific background, you might want to treat $0.015$ as an <i>approximation</i> or as an <i>estimate</i>, but that is not what is meant here.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/quint.png"></div>
+
+
+<h2>Rational Functions</h2>
+
+<h3>Hyperbola</h3>
+
+
+<h4>$y=\dfrac{1}{x^2}$</h4>
+
+<p>This curve has an asymptote at $y=0$. Notice the way the curves are evenly spaced.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/rat1.png"></div>
+
+<p>TO DO: The curves to the left of the $y$-axis should be labeled 5, 4, 3, 2, 1, 0 from left to right.</p>
+
+<h3>More rational functions</h3>
+<h4> $y=\dfrac{1}{x^3}$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/curt2.png"></div>
+
+
+
+<h4>$y=\dfrac{x-1}{10(x+1)}$</h4>
+
+<p>This function (and its derivatives) has an asymptote at $y=-1$.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/rat2.png"></div>
+
+
+<h4>$y=\dfrac{x - 1}{2(x^2 + 1)}$</h4>
+
+<p>This function (and even more the next one) have a nice flowing graph but wiggly first and second derivatives. Analyze how this works out.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/rat3.png"></div>
+
+<h4>$y=\dfrac{x^4}{(x^2 + 1) (x^2 + 2)}$</h4>
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/rat5.png"></div>
+
+
+<a name="rat6"></a>
+
+
+<h4>$y=\dfrac{1}{x^2 + 1}$</h4>
+
+<p>Compare the <a href="#arctan">arctangent function</a>.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/rat6.png"></div>
+
+
+
+
+<h2>Functions involving roots</h2>
+
+<p>Notice how very similar the graphs of the square root and the cube root are.</p>
+
+<h4>$y=\sqrt{x}$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/Sqrt.png"></div>
+
+<h4>$y=x^{1/3}$</h4>
+<div align="center"><img 
+src="Mathematica/Derivatives/cur1.png"></div>
+
+<h4>$y=\sqrt{x^2+1}$</h4>
+<p>This is positively baroque.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/curn.png"></div>
+
+
+<h4>$y=\dfrac{1}{\sqrt{x^2 + 1}}$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/sqxsq.png"></div>
+
+<a name="sine"></a>
+
+<h2>Trig functions</h2>
+
+<h4>Sine and Cosine</h4>
+
+<h4>$y=\sin x$</h4>
+
+<p>The sine function is its own fourth derivative.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/sin.png"></div>
+
+
+<h4>$y= \cos x$</h4>
+
+<p>This is also its own fourth derivative. Be sure you understand the difference between this graph and the one for the sine function.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/cos.png"></div>
+
+<h4>$y=\sin x+\cos x$</h4>
+<p>This is also it own fourth derivative. (Why is that not a surprise?) How tall are the waves?</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/splusc.png"></div>
+
+
+<h4>$y=\sin 1.3x$</h4>
+
+<p>Each derivative is slightly taller.  So this function is not its own fourth derivative.</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/sin3.png"></div>
+
+<h4>$y=\sin x\cos x$</h4>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/sxc.png"></div>
+
+<a name="tangentfunction"></a>
+<h2>Tangent</h2>
+
+<h4>$y=\tan x$</h4>
+<p>Since $\tan x$ and $\sec x$ both have $\cos x$ in their denominators, and since $\cos\frac{\pi}{2}=0$, the function and all its derivatives, which contain $\tan$ or $\sec$ or both, have asymptotes at odd multiples of $\frac{\pi}{2}$.  The graph shows four of the asymptotes (dashed vertical lines).</p>
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/tan.png"></div>
+
+<h2>Secant</h2>
+
+<h4>$y=\sec x=\dfrac{1}{\cos x}$</h4>
+
+<p>The vertical lines are asymptotes. Study the similarities and differences between this graph and that of $\tan x$.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/sec.png"></div>
+
+<h2>ArcTan x</h2>
+
+<a name="arctan"></a>
+<h3>$y=\arctan x$</h3>
+<p>The function has two horizontal asymptotes. What are they?</p>
+<div align="center"><img 
+src="Mathematica/Derivatives/arctan.png"></div>
+
+<h2>ArcSin</h2>
+
+<a name="arcsin"></a>
+<h4>$y=\arcsin x$</h4>
+<div align="center"><img 
+src="Mathematica/Derivatives/asn.png"></div>
+
+<h2>Exponential functions</h2>
+
+<h3>$x\mapsto e^x$</h3>
+
+<p>This is "the" exponential function.  It is its own derivative.  So in the picture below you see only one curve. The function and its derivative are all on top of each other.</p>
+
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/First Exponential.png"></div>
+
+<h3>$y=e^{0.8x}$</h3>
+
+<p>This function spreads its derivatives out like a peacock's tail so you can see all of them.</p>
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/expmod1.png"></div>
+
+<h3>A function that is its own <i>second</i> derivative</h3>
+
+<h3>$y=e^x+e^{-x}$</h3>
+
+
+
+<p>See if you can find evidence <i>in the picture</i> (not in the formulas) that the function is plausibly the derivative of its derivative.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/ownsd.png"></div>
+
+<h3>A function that is its own third derivative</h3>
+
+<p>Here you should try to find evidence that the derivative of curve number 2 is curve number 0.</p>
+$y=0.3 \left(e^x+e^{-x/2} \cos
+   \left(\dfrac{\sqrt{3} x}{2}\right)\right)$
+   
+<div align="center"><img 
+src="Mathematica/Derivatives/shrunkowntd.png"></div>
+
+
+<h2>Log functions</h2>
+
+$y=\log x$
+
+<p>This is the natural log.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/log.png"></div>
+
+$y=\log_{10} x$
+
+<div align="center"><img 
+src="Mathematica/Derivatives/log10.png"></div>
+
+$y=x\log x$
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/\xxlog.png"></div>
+
+
+$y=\dfrac{\log x}{x}$
+
+<div align="center"><img 
+src="Mathematica/Derivatives/\logoverx.png"></div>
+
+<h2>Miscellaneous combinations</h2>
+
+
+$y=\dfrac{1}{30} (x-3)^2+\sin (x)+2$
+
+<p>Note that the first derivative (red) is rising slowly.</p>
+
+<div align="center"><img 
+src="Mathematica/Derivatives/\spsine.png"></div>
+
+
+$y=.3 \sin(x^2 - 1)$
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/\spol.png"></div>
+
+
+
+$y=3 \sin (\cos x)$
+
+
+<div align="center"><img 
+src="Mathematica/Derivatives/\spol3.png"></div>
+
+
+$y=x\sin x$
+<div align="center"><img 
+src="Mathematica/Derivatives/\xsin.png"></div>
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+  </body>
+</html>

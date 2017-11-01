@@ -1,0 +1,2583 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[    126841,       2574]
+NotebookOptionsPosition[    124934,       2507]
+NotebookOutlinePosition[    125299,       2523]
+CellTagsIndexPosition[    125256,       2520]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Chunking Riemann", "Section",
+ CellChangeTimes->{{3.516722827570177*^9, 3.516722836757677*^9}, {
+  3.5394512548416586`*^9, 3.539451265870858*^9}}],
+
+Cell[TextData[{
+ "This ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " notebook is produced by ",
+ ButtonBox["Charles Wells. ",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://sixwingedseraph.wordpress.com/"], None},
+  ButtonNote->"http://sixwingedseraph.wordpress.com/"],
+ "It is licensed under a ",
+ Cell[BoxData[
+  RowBox[{
+   TagBox[
+    ButtonBox[
+     PaneSelectorBox[{
+      False->"\<\"Creative Commons Attribution - ShareAlike 3.0 License\"\>", 
+      True->
+      StyleBox["\<\"Creative Commons Attribution - ShareAlike 3.0 \
+License\"\>", "HyperlinkActive"]}, Dynamic[
+       CurrentValue["MouseOver"]],
+      BaseStyle->{"Hyperlink"},
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     BaseStyle->"Hyperlink",
+     ButtonData->{
+       URL["http://creativecommons.org/licenses/by-sa/3.0/"], None},
+     ButtonNote->"http://creativecommons.org/licenses/by-sa/3.0/"],
+    Annotation[#, "http://creativecommons.org/licenses/by-sa/3.0/", 
+     "Hyperlink"]& ], " "}]],
+  CellChangeTimes->{{3.516312542019249*^9, 3.5163126250020304`*^9}}],
+ StyleBox[".\n",
+  FontWeight->"Bold"],
+ "Some of the examples are used in the post Chunking Riemann (not available \
+yet) on ",
+ ButtonBox["Gyre&Gimble.",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://www.abstractmath.org/Word%20Press/"], None},
+  ButtonNote->"http://www.abstractmath.org/Word%20Press/"]
+}], "Text",
+ Evaluatable->False,
+ CellChangeTimes->{{3.51611951760275*^9, 3.516119657634*^9}, 
+   3.516120664774625*^9, {3.516120746837125*^9, 3.51612074916525*^9}, 
+   3.516120830243375*^9, 3.51612090022775*^9, 3.516120944055875*^9, {
+   3.516121051618375*^9, 3.5161211093215*^9}, {3.516121230337125*^9, 
+   3.51612123135275*^9}, {3.516121283305875*^9, 3.516121332009*^9}, {
+   3.516121381024625*^9, 3.516121383962125*^9}, {3.516121434337125*^9, 
+   3.5161214348215*^9}, {3.516121468274625*^9, 3.516121501743375*^9}, {
+   3.516121535462125*^9, 3.516121541274625*^9}, {3.5161279704465*^9, 
+   3.516128130055875*^9}, {3.5163122776337*^9, 3.516312416834152*^9}, {
+   3.5163126056274023`*^9, 3.516312632939378*^9}, {3.516312928761823*^9, 
+   3.5163130078071804`*^9}, {3.5163130407127986`*^9, 
+   3.5163131184300566`*^9}, {3.5164812129469624`*^9, 3.516481214321944*^9}, {
+   3.516555426265625*^9, 3.516555493953125*^9}, 3.516723123460802*^9, {
+   3.516723186460802*^9, 3.516723192945177*^9}, {3.516723265773302*^9, 
+   3.516723305507677*^9}, {3.5394512691624584`*^9, 3.5394513481296587`*^9}, {
+   3.5394514773312583`*^9, 3.5394514773468585`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Riemann Package", "Subsection",
+ CellChangeTimes->{{3.482750361528*^9, 3.4827503673789997`*^9}}],
+
+Cell[TextData[{
+ "This package provides ",
+ StyleBox["PlotRiemann",
+  FontWeight->"Bold"],
+ ", which shows Riemann sum of a given integral with various choices of \
+parameters, and ",
+ StyleBox["RiemannSumlist",
+  FontWeight->"Bold"],
+ ", which plots the values of a number of random Riemann sums of the given \
+integral.  It is a work in progress. You are encouraged to improve this work \
+and to use it in your own publications and coursework.  "
+}], "Text",
+ CellChangeTimes->{{3.516711469484375*^9, 3.51671156396875*^9}, {
+   3.516722719273302*^9, 3.516722747304552*^9}, 3.516722867617052*^9, {
+   3.516722994617052*^9, 3.516723043304552*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"SetOptions", "[", 
+    RowBox[{"Plot", ",", 
+     RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]}], "]"}], ";"}], 
+  " "}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"PlotBounded", "[", 
+   RowBox[{"expression_", ",", "range_", ",", "options___"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "g", ",", "f", ",", "left", ",", "right", ",", "newleft", ",", 
+      "newright", ",", "var", ",", "leftheight", ",", "rightheight", ",", 
+      "width", ",", "newrange"}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"var", "=", 
+      RowBox[{"range", "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"f", "=", 
+      RowBox[{"Function", "[", 
+       RowBox[{
+        RowBox[{"Release", "[", "var", "]"}], ",", "expression"}], "]"}]}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"left", "=", 
+      RowBox[{"range", "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"right", "=", 
+      RowBox[{"range", "[", 
+       RowBox[{"[", "3", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"width", "=", 
+      RowBox[{"right", "-", "left"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"leftheight", "=", 
+      RowBox[{"f", "[", "left", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"rightheight", "=", 
+      RowBox[{"f", "[", "right", "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"newleft", "=", 
+      RowBox[{"left", "-", 
+       RowBox[{"0.25", "*", "width"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"newright", "=", 
+      RowBox[{"right", "+", 
+       RowBox[{"0.25", "*", "width"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"newrange", "=", 
+      RowBox[{"{", 
+       RowBox[{"var", ",", "newleft", ",", "newright"}], "}"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"g", ":=", 
+      RowBox[{"Plot", "[", 
+       RowBox[{"expression", ",", 
+        RowBox[{"Release", "[", "newrange", "]"}], ",", 
+        RowBox[{"DisplayFunction", "\[Rule]", "Identity"}], ",", 
+        RowBox[{"PlotStyle", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"{", 
+           RowBox[{"RGBColor", "[", 
+            RowBox[{"0", ",", "0", ",", "1"}], "]"}], "}"}], "}"}]}], ",", 
+        "options"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Show", "[", 
+      RowBox[{"g", ",", 
+       RowBox[{"Graphics", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"left", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"left", ",", "leftheight"}], "}"}]}], "}"}], "]"}], ",", 
+          RowBox[{"Line", "[", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{"right", ",", "0"}], "}"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"right", ",", "rightheight"}], "}"}]}], "}"}], "]"}]}], 
+         "}"}], "]"}], ",", 
+       RowBox[{"DisplayFunction", "\[Rule]", "$DisplayFunction"}]}], 
+      "]"}]}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RandomPartition", "[", 
+   RowBox[{"range_", ",", "mesh_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"u", "=", 
+       RowBox[{"range", "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ",", 
+      RowBox[{"top", "=", 
+       RowBox[{"range", "[", 
+        RowBox[{"[", "3", "]"}], "]"}]}], ",", 
+      RowBox[{"list", "=", 
+       RowBox[{"{", 
+        RowBox[{"range", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "}"}]}], ",", "v", ",", "newlist", 
+      ",", 
+      RowBox[{"actualmesh", "=", "0"}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"While", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"u", "+", "mesh"}], "<", "top"}], ",", 
+       RowBox[{
+        RowBox[{"v", "=", 
+         RowBox[{"u", "+", 
+          RowBox[{"Random", "[", 
+           RowBox[{"Real", ",", "mesh"}], "]"}]}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"actualmesh", "=", 
+         RowBox[{"Max", "[", 
+          RowBox[{"actualmesh", ",", 
+           RowBox[{"v", "-", "u"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"newlist", ":=", 
+         RowBox[{"Append", "[", 
+          RowBox[{"list", ",", "v"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"u", "=", "v"}], ";", "\[IndentingNewLine]", 
+        RowBox[{"list", "=", "newlist"}]}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"partitionstring", "=", 
+      RowBox[{"StringJoin", "[", 
+       RowBox[{"\"\<Random partition with maximum norm \>\"", ",", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"mesh", "//", "TraditionalForm"}], "]"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"actualmesh", "=", 
+      RowBox[{"Max", "[", 
+       RowBox[{"actualmesh", ",", 
+        RowBox[{"top", "-", 
+         RowBox[{"Last", "[", "list", "]"}]}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Append", "[", 
+         RowBox[{"list", ",", "top"}], "]"}], ",", "actualmesh"}], "}"}], 
+      "]"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.5394503062546587`*^9, 3.539450309842658*^9}, {
+  3.5394504329266586`*^9, 3.539450436093458*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UniformPartition", "[", 
+   RowBox[{"range_", ",", "number_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"bottom", "=", 
+       RowBox[{
+        RowBox[{"range", "[", 
+         RowBox[{"[", "2", "]"}], "]"}], "//", "N"}]}], ",", 
+      RowBox[{"top", "=", 
+       RowBox[{
+        RowBox[{"range", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], "//", "N"}]}], ",", "actualmesh"}], 
+     "}"}], ",", 
+    RowBox[{
+     RowBox[{"actualmesh", "=", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"top", "-", "bottom"}], ")"}], "/", "number"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"partitionstring", "=", 
+      RowBox[{"StringJoin", "[", 
+       RowBox[{"\"\<Uniform partition into \>\"", ",", 
+        RowBox[{"ToString", "[", "number", "]"}], ",", 
+        "\"\< subintervals\>\""}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Return", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"N", "[", 
+         RowBox[{"Range", "[", 
+          RowBox[{"bottom", ",", "top", ",", "actualmesh"}], "]"}], "]"}], 
+        ",", "actualmesh"}], "}"}], "]"}]}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Slices", "[", 
+   RowBox[{
+   "expression_", ",", "variable_", ",", "list_", ",", "options___Rule"}], 
+   "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"i", "=", "1"}], ",", 
+      RowBox[{"startlist", "=", "list"}], ",", "leftlist", ",", "rightlist", 
+      ",", "widthlist", ",", "selectlist", ",", "arealist", ",", "heightlist",
+       ",", "valuelist", ",", 
+      RowBox[{"opt", "=", 
+       RowBox[{
+        RowBox[{"Height", "/.", 
+         RowBox[{"{", "options", "}"}]}], "/.", 
+        RowBox[{"Options", "[", "RiemannData", "]"}]}]}], ",", 
+      RowBox[{"f", "=", 
+       RowBox[{"Function", "[", 
+        RowBox[{"variable", ",", "expression"}], "]"}]}]}], "}"}], ",", 
+    RowBox[{
+     RowBox[{"leftlist", "=", 
+      RowBox[{"Drop", "[", 
+       RowBox[{"list", ",", 
+        RowBox[{"-", "1"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"rightlist", "=", 
+      RowBox[{"Drop", "[", 
+       RowBox[{"list", ",", "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"widthlist", "=", 
+      RowBox[{"rightlist", "-", "leftlist"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"selectlist", "=", 
+      RowBox[{"Switch", "[", 
+       RowBox[{"opt", ",", "LeftSide", ",", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+          "heightstring", "=", 
+           "\"\<Left edge of subinterval used for height\>\""}], ";", 
+          "leftlist"}], ")"}], ",", "RightSide", ",", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+          "heightstring", "=", 
+           "\"\<Right edge of subinterval used for height\>\""}], ";", 
+          "rightlist"}], ")"}], ",", "Midpoint", ",", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+          "heightstring", "=", 
+           "\"\<Midpoint of subinterval used for height\>\""}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"leftlist", "+", 
+           RowBox[{"0.5", "*", "widthlist"}]}]}], ")"}], ",", "Random", ",", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+          "heightstring", "=", 
+           "\"\<Random point in subinterval used for height\>\""}], ";", 
+          "\[IndentingNewLine]", 
+          RowBox[{"leftlist", "+", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Random", "[", 
+               RowBox[{"Real", ",", "#"}], "]"}], "&"}], "/@", "widthlist"}], 
+            ")"}]}]}], ")"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"heightlist", "=", 
+      RowBox[{"f", "/@", "selectlist"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"arealist", "=", 
+      RowBox[{"heightlist", "*", "widthlist"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"heightlist", ",", "arealist"}], "}"}]}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Boxx", "[", 
+   RowBox[{"bottom_", ",", "top_", ",", "left_", ",", "right_"}], "]"}], ":=", 
+  RowBox[{"Line", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"left", ",", "bottom"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"right", ",", "bottom"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"right", ",", "top"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"left", ",", "top"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"left", ",", "bottom"}], "}"}]}], "}"}], "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ShowSlices", "[", 
+   RowBox[{"partition_", ",", "heightlist_"}], "]"}], ":=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Boxx", "[", 
+     RowBox[{"0", ",", 
+      RowBox[{"heightlist", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], ",", 
+      RowBox[{"partition", "[", 
+       RowBox[{"[", "i", "]"}], "]"}], ",", 
+      RowBox[{"partition", "[", 
+       RowBox[{"[", 
+        RowBox[{"i", "+", "1"}], "]"}], "]"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"i", ",", "1", ",", 
+      RowBox[{
+       RowBox[{"Length", "[", "partition", "]"}], "-", "1"}]}], "}"}]}], 
+   "]"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Options", "[", "RiemannData", "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Subintervals", "\[Rule]", "12"}], ",", 
+    RowBox[{"Partition", "\[Rule]", "Uniform"}], ",", 
+    RowBox[{"Mesh", "\[Rule]", 
+     RowBox[{"intervallength", "/", "6.0"}]}], ",", 
+    RowBox[{"Height", "\[Rule]", "Midpoint"}]}], "}"}]}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"RiemannData", "[", 
+   RowBox[{"expression_", ",", " ", "range_", ",", " ", "options___Rule"}], 
+   "]"}], " ", ":=", "\n", "\t", 
+  RowBox[{"Block", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"M", "=", 
+       RowBox[{
+        RowBox[{"Mesh", " ", "/.", " ", 
+         RowBox[{"{", "options", "}"}]}], " ", "\n", "\t\t\t", "/.", " ", 
+        RowBox[{"Options", "[", "RiemannData", "]"}]}]}], ",", "\n", "\t\t", 
+      RowBox[{"S", "=", 
+       RowBox[{
+        RowBox[{"Subintervals", " ", "/.", " ", 
+         RowBox[{"{", "options", "}"}]}], " ", "\n", "\t\t\t", "/.", " ", 
+        RowBox[{"Options", "[", "RiemannData", "]"}]}]}], ",", "\n", "\t\t", 
+      RowBox[{"P", "=", 
+       RowBox[{
+        RowBox[{"Partition", " ", "/.", " ", 
+         RowBox[{"{", "options", "}"}]}], " ", "\n", "\t\t\t", "/.", " ", 
+        RowBox[{"Options", "[", "RiemannData", "]"}]}]}], ",", "\n", "\t\t", 
+      RowBox[{"variable", "=", 
+       RowBox[{"range", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ",", "\n", "\t\t", 
+      RowBox[{"intervallength", "=", 
+       RowBox[{
+        RowBox[{"range", "[", 
+         RowBox[{"[", "3", "]"}], "]"}], "-", 
+        RowBox[{"range", "[", 
+         RowBox[{"[", "2", "]"}], "]"}]}]}]}], "}"}], ",", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"list", "=", 
+      RowBox[{"Switch", "[", 
+       RowBox[{"P", ",", " ", "Uniform", ",", " ", "\n", "\t\t\t", 
+        RowBox[{"UniformPartition", "[", 
+         RowBox[{"range", ",", " ", "S"}], "]"}], ",", "\n", "\t\t\t", 
+        "Random", ",", "\n", "\t\t\t", 
+        RowBox[{"RandomPartition", "[", 
+         RowBox[{"range", ",", " ", "M"}], "]"}]}], "\n", "           ", 
+       "]"}]}], ";", " ", "\n", "\t", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"list", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "}"}], " ", "~", "Join", "~", " ", 
+      "\n", "\t\t", 
+      RowBox[{"Slices", "[", 
+       RowBox[{"expression", ",", " ", "variable", ",", " ", 
+        RowBox[{"list", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], ",", " ", "options"}], "]"}], "\n", 
+      "\t\t", "~", "Join", "~", " ", 
+      RowBox[{"{", 
+       RowBox[{"list", "[", 
+        RowBox[{"[", "2", "]"}], "]"}], "}"}]}]}]}], "]"}]}]], "Input"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"PlotRiemann", "[", 
+    RowBox[{"expression_", ",", "range_"}], "]"}], ":=", 
+   RowBox[{"PlotRiemann", "[", 
+    RowBox[{"expression", ",", "range", ",", 
+     RowBox[{"{", "}"}], ",", 
+     RowBox[{"{", "}"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"PlotRiemann", "[", 
+   RowBox[{"expression_", ",", "range_", ",", 
+    RowBox[{"{", "plotoptions___", "}"}], ",", 
+    RowBox[{"{", "riemannoptions___", "}"}]}], "]"}], ":=", 
+  RowBox[{"Block", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "g", ",", "u", ",", "partition", ",", "heightlist", ",", "sum", ",", 
+      "mesh", ",", "integralvalue", ",", "outstring"}], "}"}], ",", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"u", "=", 
+       RowBox[{"RiemannData", "[", 
+        RowBox[{"expression", ",", "range", ",", "riemannoptions"}], "]"}]}], 
+      ";", "\[IndentingNewLine]", 
+      RowBox[{"partition", "=", 
+       RowBox[{"u", "[", 
+        RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"heightlist", "=", 
+       RowBox[{"u", "[", 
+        RowBox[{"[", "2", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"sum", "=", 
+       RowBox[{"Apply", "[", 
+        RowBox[{"Plus", ",", 
+         RowBox[{"u", "[", 
+          RowBox[{"[", "3", "]"}], "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"mesh", "=", 
+       RowBox[{"u", "[", 
+        RowBox[{"[", "4", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"integralvalue", "=", 
+       RowBox[{"NIntegrate", "[", 
+        RowBox[{"expression", ",", "range"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"outstring", "=", 
+       RowBox[{"StringJoin", "[", 
+        RowBox[{
+        "\"\<\\n\>\"", ",", "partitionstring", ",", "\"\<\\n\>\"", ",", 
+         "heightstring", ",", "\"\<\\n\>\"", ",", "\"\<Norm = \>\"", ",", 
+         RowBox[{"ToString", "[", "mesh", "]"}], ",", "\"\<\\n\>\"", ",", 
+         "\"\<Riemann Sum = \>\"", ",", 
+         RowBox[{"ToString", "[", 
+          RowBox[{"Chop", "[", "sum", "]"}], "]"}], ",", "\"\<\\n\>\"", ",", 
+         "\"\<Definite Integral = \>\"", ",", 
+         RowBox[{"ToString", "[", "integralvalue", "]"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"g", ":=", 
+       RowBox[{"Plot", "[", 
+        RowBox[{"expression", ",", "range", ",", 
+         RowBox[{"DisplayFunction", "\[Rule]", "Identity"}], ",", 
+         RowBox[{"PlotLabel", "\[Rule]", "outstring"}], ",", 
+         RowBox[{"PlotStyle", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"{", 
+            RowBox[{"RGBColor", "[", 
+             RowBox[{"0", ",", "0", ",", "1"}], "]"}], "}"}], "}"}]}], ",", 
+         "plotoptions"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"h", ":=", 
+       RowBox[{"Graphics", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"RGBColor", "[", 
+           RowBox[{".8", ",", ".3", ",", "0"}], "]"}], ",", 
+          RowBox[{"ShowSlices", "[", 
+           RowBox[{"partition", ",", "heightlist"}], "]"}]}], "}"}], "]"}]}], 
+      ";", "\[IndentingNewLine]", 
+      RowBox[{"Show", "[", 
+       RowBox[{"g", ",", "h", ",", 
+        RowBox[{"DisplayFunction", "\[Rule]", "$DisplayFunction"}]}], "]"}]}],
+      ")"}]}], "]"}]}]}], "Input"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Examples", "Subsection",
+ CellChangeTimes->{{3.5394512052358584`*^9, 3.5394512263872585`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlotRiemann", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "Pi"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"ImageSize", "\[Rule]", "Medium"}], "}"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Partition", " ", "->", " ", "Random"}], ",", 
+     RowBox[{"Height", " ", "->", " ", "Random"}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    {RGBColor[0, 0, 1], LineBox[CompressedData["
+1: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
+WQjmSrO1dK793/8D/wMuq3uF
+      "]]}}, 
+   {RGBColor[0.8, 0.3, 0], 
+    LineBox[{{0, 0}, {0.1034277729822604, 0}, {0.1034277729822604, 
+      0.020672617401819544`}, {0, 0.020672617401819544`}, {0, 0}}], 
+    LineBox[{{0.1034277729822604, 0}, {0.15781106099231174`, 0}, {
+      0.15781106099231174`, 0.1484749882652229}, {0.1034277729822604, 
+      0.1484749882652229}, {0.1034277729822604, 0}}], 
+    LineBox[{{0.15781106099231174`, 0}, {0.5067062915442726, 0}, {
+      0.5067062915442726, 0.17328910581679158`}, {0.15781106099231174`, 
+      0.17328910581679158`}, {0.15781106099231174`, 0}}], 
+    LineBox[{{0.5067062915442726, 0}, {0.8056919205777705, 0}, {
+      0.8056919205777705, 0.6859465627450264}, {0.5067062915442726, 
+      0.6859465627450264}, {0.5067062915442726, 0}}], 
+    LineBox[{{0.8056919205777705, 0}, {1.0548376996899995`, 0}, {
+      1.0548376996899995`, 0.8673635594348325}, {0.8056919205777705, 
+      0.8673635594348325}, {0.8056919205777705, 0}}], 
+    LineBox[{{1.0548376996899995`, 0}, {1.0827575938320841`, 0}, {
+      1.0827575938320841`, 0.8796785377915787}, {1.0548376996899995`, 
+      0.8796785377915787}, {1.0548376996899995`, 0}}], 
+    LineBox[{{1.0827575938320841`, 0}, {1.1333407917788128`, 0}, {
+      1.1333407917788128`, 0.8954031427679418}, {1.0827575938320841`, 
+      0.8954031427679418}, {1.0827575938320841`, 0}}], 
+    LineBox[{{1.1333407917788128`, 0}, {1.1856981315852633`, 0}, {
+      1.1856981315852633`, 0.9225204775047086}, {1.1333407917788128`, 
+      0.9225204775047086}, {1.1333407917788128`, 0}}], 
+    LineBox[{{1.1856981315852633`, 0}, {1.347511743901152, 0}, {
+      1.347511743901152, 0.9374046154151244}, {1.1856981315852633`, 
+      0.9374046154151244}, {1.1856981315852633`, 0}}], 
+    LineBox[{{1.347511743901152, 0}, {1.5007434445516945`, 0}, {
+      1.5007434445516945`, 0.989952332429812}, {1.347511743901152, 
+      0.989952332429812}, {1.347511743901152, 0}}], 
+    LineBox[{{1.5007434445516945`, 0}, {1.6077782474376106`, 0}, {
+      1.6077782474376106`, 0.9996892607756867}, {1.5007434445516945`, 
+      0.9996892607756867}, {1.5007434445516945`, 0}}], 
+    LineBox[{{1.6077782474376106`, 0}, {1.9935604020766828`, 0}, {
+      1.9935604020766828`, 0.9965042043355563}, {1.6077782474376106`, 
+      0.9965042043355563}, {1.6077782474376106`, 0}}], 
+    LineBox[{{1.9935604020766828`, 0}, {2.3419366453229538`, 0}, {
+      2.3419366453229538`, 0.8047670270130969}, {1.9935604020766828`, 
+      0.8047670270130969}, {1.9935604020766828`, 0}}], 
+    LineBox[{{2.3419366453229538`, 0}, {2.571366135078711, 0}, {
+      2.571366135078711, 0.7081940083337305}, {2.3419366453229538`, 
+      0.7081940083337305}, {2.3419366453229538`, 0}}], 
+    LineBox[{{2.571366135078711, 0}, {2.8855976534803953`, 0}, {
+      2.8855976534803953`, 0.4390233866165433}, {2.571366135078711, 
+      0.4390233866165433}, {2.571366135078711, 0}}], 
+    LineBox[NCache[{{2.8855976534803953`, 0}, {Pi, 0}, {
+       Pi, 0.2471759602828803}, {2.8855976534803953`, 0.2471759602828803}, {
+       2.8855976534803953`, 0}}, {{2.8855976534803953`, 0}, {
+       3.141592653589793, 0}, {3.141592653589793, 0.2471759602828803}, {
+       2.8855976534803953`, 0.2471759602828803}, {2.8855976534803953`, 0}}]]}},
+  Axes->True,
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  ImageSize->Medium,
+  PlotLabel->FormBox[
+   "\"\\nRandom partition with maximum norm \
+\\!\\(TraditionalForm\\`0.5235987755982988`\\)\\nRandom point in subinterval \
+used for height\\nNorm = 0.385782\\nRiemann Sum = 2.0489\\nDefinite Integral \
+= 2.\"", TraditionalForm],
+  PlotRange->
+   NCache[{{0, Pi}, {0., 0.9999999707682925}}, {{0, 3.141592653589793}, {0., 
+     0.9999999707682925}}],
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{3.5394509126422586`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlotRiemann", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "Pi"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"ImageSize", "\[Rule]", "Medium"}], "}"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Partition", " ", "->", " ", "Random"}], ",", 
+     RowBox[{"Height", " ", "->", " ", "Random"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", 
+      RowBox[{"intervallength", "/", "32"}]}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.53943973234625*^9, 3.539439733299375*^9}, {
+   3.539450795891858*^9, 3.5394508372318583`*^9}, 3.5394509402698584`*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    {RGBColor[0, 0, 1], LineBox[CompressedData["
+1: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
+WQjmSrO1dK793/8D/wMuq3uF
+      "]]}}, 
+   {RGBColor[0.8, 0.3, 0], 
+    LineBox[{{0, 0}, {0.041362792627641164`, 0}, {0.041362792627641164`, 
+      0.025905424780535025`}, {0, 0.025905424780535025`}, {0, 0}}], 
+    LineBox[{{0.041362792627641164`, 0}, {0.0448613776897594, 0}, {
+      0.0448613776897594, 0.04453717541219858}, {0.041362792627641164`, 
+      0.04453717541219858}, {0.041362792627641164`, 0}}], 
+    LineBox[{{0.0448613776897594, 0}, {0.13842813785814584`, 0}, {
+      0.13842813785814584`, 0.05676910403760981}, {0.0448613776897594, 
+      0.05676910403760981}, {0.0448613776897594, 0}}], 
+    LineBox[{{0.13842813785814584`, 0}, {0.1725447319087624, 0}, {
+      0.1725447319087624, 0.15319292980716484`}, {0.13842813785814584`, 
+      0.15319292980716484`}, {0.13842813785814584`, 0}}], 
+    LineBox[{{0.1725447319087624, 0}, {0.2699926362695076, 0}, {
+      0.2699926362695076, 0.22254239928954636`}, {0.1725447319087624, 
+      0.22254239928954636`}, {0.1725447319087624, 0}}], 
+    LineBox[{{0.2699926362695076, 0}, {0.2796971523450732, 0}, {
+      0.2796971523450732, 0.2667491065717133}, {0.2699926362695076, 
+      0.2667491065717133}, {0.2699926362695076, 0}}], 
+    LineBox[{{0.2796971523450732, 0}, {0.33784753647832155`, 0}, {
+      0.33784753647832155`, 0.32103611504667273`}, {0.2796971523450732, 
+      0.32103611504667273`}, {0.2796971523450732, 0}}], 
+    LineBox[{{0.33784753647832155`, 0}, {0.34613434749667416`, 0}, {
+      0.34613434749667416`, 0.335045759726444}, {0.33784753647832155`, 
+      0.335045759726444}, {0.33784753647832155`, 0}}], 
+    LineBox[{{0.34613434749667416`, 0}, {0.35025245298416474`, 0}, {
+      0.35025245298416474`, 0.3427260304616746}, {0.34613434749667416`, 
+      0.3427260304616746}, {0.34613434749667416`, 0}}], 
+    LineBox[{{0.35025245298416474`, 0}, {0.4448514953507766, 0}, {
+      0.4448514953507766, 0.4236687804855032}, {0.35025245298416474`, 
+      0.4236687804855032}, {0.35025245298416474`, 0}}], 
+    LineBox[{{0.4448514953507766, 0}, {0.46042600943090917`, 0}, {
+      0.46042600943090917`, 0.43460417123126044`}, {0.4448514953507766, 
+      0.43460417123126044`}, {0.4448514953507766, 0}}], 
+    LineBox[{{0.46042600943090917`, 0}, {0.4699087389342677, 0}, {
+      0.4699087389342677, 0.4514468703967598}, {0.46042600943090917`, 
+      0.4514468703967598}, {0.46042600943090917`, 0}}], 
+    LineBox[{{0.4699087389342677, 0}, {0.5234171065996703, 0}, {
+      0.5234171065996703, 0.4886381787450554}, {0.4699087389342677, 
+      0.4886381787450554}, {0.4699087389342677, 0}}], 
+    LineBox[{{0.5234171065996703, 0}, {0.5351125267205071, 0}, {
+      0.5351125267205071, 0.5031078577521906}, {0.5234171065996703, 
+      0.5031078577521906}, {0.5234171065996703, 0}}], 
+    LineBox[{{0.5351125267205071, 0}, {0.6240238964049776, 0}, {
+      0.6240238964049776, 0.5564225739130112}, {0.5351125267205071, 
+      0.5564225739130112}, {0.5351125267205071, 0}}], 
+    LineBox[{{0.6240238964049776, 0}, {0.6543065353671399, 0}, {
+      0.6543065353671399, 0.596332368162643}, {0.6240238964049776, 
+      0.596332368162643}, {0.6240238964049776, 0}}], 
+    LineBox[{{0.6543065353671399, 0}, {0.7212553713368504, 0}, {
+      0.7212553713368504, 0.6366086659023961}, {0.6543065353671399, 
+      0.6366086659023961}, {0.6543065353671399, 0}}], 
+    LineBox[{{0.7212553713368504, 0}, {0.7989702829789018, 0}, {
+      0.7989702829789018, 0.6672864301893078}, {0.7212553713368504, 
+      0.6672864301893078}, {0.7212553713368504, 0}}], 
+    LineBox[{{0.7989702829789018, 0}, {0.8728249175105469, 0}, {
+      0.8728249175105469, 0.752136900022723}, {0.7989702829789018, 
+      0.752136900022723}, {0.7989702829789018, 0}}], 
+    LineBox[{{0.8728249175105469, 0}, {0.8809330052663622, 0}, {
+      0.8809330052663622, 0.7685057011756314}, {0.8728249175105469, 
+      0.7685057011756314}, {0.8728249175105469, 0}}], 
+    LineBox[{{0.8809330052663622, 0}, {0.9037958408670026, 0}, {
+      0.9037958408670026, 0.77223249709578}, {0.8809330052663622, 
+      0.77223249709578}, {0.8809330052663622, 0}}], 
+    LineBox[{{0.9037958408670026, 0}, {0.9437500694286977, 0}, {
+      0.9437500694286977, 0.7910071881192213}, {0.9037958408670026, 
+      0.7910071881192213}, {0.9037958408670026, 0}}], 
+    LineBox[{{0.9437500694286977, 0}, {0.9885132291409983, 0}, {
+      0.9885132291409983, 0.8105747371320112}, {0.9437500694286977, 
+      0.8105747371320112}, {0.9437500694286977, 0}}], 
+    LineBox[{{0.9885132291409983, 0}, {1.0698461247305764`, 0}, {
+      1.0698461247305764`, 0.8612417134795223}, {0.9885132291409983, 
+      0.8612417134795223}, {0.9885132291409983, 0}}], 
+    LineBox[{{1.0698461247305764`, 0}, {1.1495209381282567`, 0}, {
+      1.1495209381282567`, 0.8932596287230008}, {1.0698461247305764`, 
+      0.8932596287230008}, {1.0698461247305764`, 0}}], 
+    LineBox[{{1.1495209381282567`, 0}, {1.1859765816278336`, 0}, {
+      1.1859765816278336`, 0.9170605543883529}, {1.1495209381282567`, 
+      0.9170605543883529}, {1.1495209381282567`, 0}}], 
+    LineBox[{{1.1859765816278336`, 0}, {1.2353477515964288`, 0}, {
+      1.2353477515964288`, 0.9426803517989203}, {1.1859765816278336`, 
+      0.9426803517989203}, {1.1859765816278336`, 0}}], 
+    LineBox[{{1.2353477515964288`, 0}, {1.2825640531353906`, 0}, {
+      1.2825640531353906`, 0.9466364617663418}, {1.2353477515964288`, 
+      0.9466364617663418}, {1.2353477515964288`, 0}}], 
+    LineBox[{{1.2825640531353906`, 0}, {1.3629657325970066`, 0}, {
+      1.3629657325970066`, 0.9768444534897383}, {1.2825640531353906`, 
+      0.9768444534897383}, {1.2825640531353906`, 0}}], 
+    LineBox[{{1.3629657325970066`, 0}, {1.389716860021018, 0}, {
+      1.389716860021018, 0.9801184987388891}, {1.3629657325970066`, 
+      0.9801184987388891}, {1.3629657325970066`, 0}}], 
+    LineBox[{{1.389716860021018, 0}, {1.4791124162810458`, 0}, {
+      1.4791124162810458`, 0.9851112697214826}, {1.389716860021018, 
+      0.9851112697214826}, {1.389716860021018, 0}}], 
+    LineBox[{{1.4791124162810458`, 0}, {1.5180419068016549`, 0}, {
+      1.5180419068016549`, 0.9979123836677544}, {1.4791124162810458`, 
+      0.9979123836677544}, {1.4791124162810458`, 0}}], 
+    LineBox[{{1.5180419068016549`, 0}, {1.5943254807757803`, 0}, {
+      1.5943254807757803`, 0.9986442018712458}, {1.5180419068016549`, 
+      0.9986442018712458}, {1.5180419068016549`, 0}}], 
+    LineBox[{{1.5943254807757803`, 0}, {1.6246523362578607`, 0}, {
+      1.6246523362578607`, 0.9993853800168825}, {1.5943254807757803`, 
+      0.9993853800168825}, {1.5943254807757803`, 0}}], 
+    LineBox[{{1.6246523362578607`, 0}, {1.6984733784377561`, 0}, {
+      1.6984733784377561`, 0.9937309274460534}, {1.6246523362578607`, 
+      0.9937309274460534}, {1.6246523362578607`, 0}}], 
+    LineBox[{{1.6984733784377561`, 0}, {1.7279201394550066`, 0}, {
+      1.7279201394550066`, 0.9883379639626896}, {1.6984733784377561`, 
+      0.9883379639626896}, {1.6984733784377561`, 0}}], 
+    LineBox[{{1.7279201394550066`, 0}, {1.7506953457637295`, 0}, {
+      1.7506953457637295`, 0.9867754579863267}, {1.7279201394550066`, 
+      0.9867754579863267}, {1.7279201394550066`, 0}}], 
+    LineBox[{{1.7506953457637295`, 0}, {1.769326781124973, 0}, {
+      1.769326781124973, 0.9836691743180154}, {1.7506953457637295`, 
+      0.9836691743180154}, {1.7506953457637295`, 0}}], 
+    LineBox[{{1.769326781124973, 0}, {1.8524112240450792`, 0}, {
+      1.8524112240450792`, 0.9774755778767296}, {1.769326781124973, 
+      0.9774755778767296}, {1.769326781124973, 0}}], 
+    LineBox[{{1.8524112240450792`, 0}, {1.9497501165248485`, 0}, {
+      1.9497501165248485`, 0.9501747231547265}, {1.8524112240450792`, 
+      0.9501747231547265}, {1.8524112240450792`, 0}}], 
+    LineBox[{{1.9497501165248485`, 0}, {2.003751257288542, 0}, {
+      2.003751257288542, 0.9140748668435157}, {1.9497501165248485`, 
+      0.9140748668435157}, {1.9497501165248485`, 0}}], 
+    LineBox[{{2.003751257288542, 0}, {2.042842551432415, 0}, {
+      2.042842551432415, 0.8917412827372612}, {2.003751257288542, 
+      0.8917412827372612}, {2.003751257288542, 0}}], 
+    LineBox[{{2.042842551432415, 0}, {2.052072359820876, 0}, {
+      2.052072359820876, 0.8886952877904658}, {2.042842551432415, 
+      0.8886952877904658}, {2.042842551432415, 0}}], 
+    LineBox[{{2.052072359820876, 0}, {2.14130316454483, 0}, {2.14130316454483,
+       0.8459389114558946}, {2.052072359820876, 0.8459389114558946}, {
+      2.052072359820876, 0}}], 
+    LineBox[{{2.14130316454483, 0}, {2.172441469707883, 0}, {
+      2.172441469707883, 0.8304672159053365}, {2.14130316454483, 
+      0.8304672159053365}, {2.14130316454483, 0}}], 
+    LineBox[{{2.172441469707883, 0}, {2.269753305714742, 0}, {
+      2.269753305714742, 0.78268673914387}, {2.172441469707883, 
+      0.78268673914387}, {2.172441469707883, 0}}], 
+    LineBox[{{2.269753305714742, 0}, {2.3323947248155834`, 0}, {
+      2.3323947248155834`, 0.7478867456266761}, {2.269753305714742, 
+      0.7478867456266761}, {2.269753305714742, 0}}], 
+    LineBox[{{2.3323947248155834`, 0}, {2.340292633949959, 0}, {
+      2.340292633949959, 0.7220689196469027}, {2.3323947248155834`, 
+      0.7220689196469027}, {2.3323947248155834`, 0}}], 
+    LineBox[{{2.340292633949959, 0}, {2.389930896140013, 0}, {
+      2.389930896140013, 0.710696252136798}, {2.340292633949959, 
+      0.710696252136798}, {2.340292633949959, 0}}], 
+    LineBox[{{2.389930896140013, 0}, {2.4507870886472953`, 0}, {
+      2.4507870886472953`, 0.6641398882304724}, {2.389930896140013, 
+      0.6641398882304724}, {2.389930896140013, 0}}], 
+    LineBox[{{2.4507870886472953`, 0}, {2.464057337779541, 0}, {
+      2.464057337779541, 0.6317507213671705}, {2.4507870886472953`, 
+      0.6317507213671705}, {2.4507870886472953`, 0}}], 
+    LineBox[{{2.464057337779541, 0}, {2.5229137157996364`, 0}, {
+      2.5229137157996364`, 0.6199360095307922}, {2.464057337779541, 
+      0.6199360095307922}, {2.464057337779541, 0}}], 
+    LineBox[{{2.5229137157996364`, 0}, {2.590325068952755, 0}, {
+      2.590325068952755, 0.5625492736845908}, {2.5229137157996364`, 
+      0.5625492736845908}, {2.5229137157996364`, 0}}], 
+    LineBox[{{2.590325068952755, 0}, {2.624430134036026, 0}, {
+      2.624430134036026, 0.5204645717982352}, {2.590325068952755, 
+      0.5204645717982352}, {2.590325068952755, 0}}], 
+    LineBox[{{2.624430134036026, 0}, {2.646479597332925, 0}, {
+      2.646479597332925, 0.48606925308849425`}, {2.624430134036026, 
+      0.48606925308849425`}, {2.624430134036026, 0}}], 
+    LineBox[{{2.646479597332925, 0}, {2.6664064848324114`, 0}, {
+      2.6664064848324114`, 0.46712035948465924`}, {2.646479597332925, 
+      0.46712035948465924`}, {2.646479597332925, 0}}], 
+    LineBox[{{2.6664064848324114`, 0}, {2.7557090344360855`, 0}, {
+      2.7557090344360855`, 0.43305145175704246`}, {2.6664064848324114`, 
+      0.43305145175704246`}, {2.6664064848324114`, 0}}], 
+    LineBox[{{2.7557090344360855`, 0}, {2.759487244037276, 0}, {
+      2.759487244037276, 0.37380981057861773`}, {2.7557090344360855`, 
+      0.37380981057861773`}, {2.7557090344360855`, 0}}], 
+    LineBox[{{2.759487244037276, 0}, {2.805890435578961, 0}, {
+      2.805890435578961, 0.3448867118401437}, {2.759487244037276, 
+      0.3448867118401437}, {2.759487244037276, 0}}], 
+    LineBox[{{2.805890435578961, 0}, {2.894545332485878, 0}, {
+      2.894545332485878, 0.27875069086241594`}, {2.805890435578961, 
+      0.27875069086241594`}, {2.805890435578961, 0}}], 
+    LineBox[{{2.894545332485878, 0}, {2.961072675780829, 0}, {
+      2.961072675780829, 0.24092199660815214`}, {2.894545332485878, 
+      0.24092199660815214`}, {2.894545332485878, 0}}], 
+    LineBox[{{2.961072675780829, 0}, {3.0443942204454575`, 0}, {
+      3.0443942204454575`, 0.12390415097500287`}, {2.961072675780829, 
+      0.12390415097500287`}, {2.961072675780829, 0}}], 
+    LineBox[NCache[{{3.0443942204454575`, 0}, {Pi, 0}, {
+       Pi, 0.05087877348472203}, {3.0443942204454575`, 0.05087877348472203}, {
+       3.0443942204454575`, 0}}, {{3.0443942204454575`, 0}, {
+       3.141592653589793, 0}, {3.141592653589793, 0.05087877348472203}, {
+       3.0443942204454575`, 0.05087877348472203}, {
+       3.0443942204454575`, 0}}]]}},
+  Axes->True,
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  ImageSize->Medium,
+  PlotLabel->FormBox[
+   "\"\\nRandom partition with maximum norm \
+\\!\\(TraditionalForm\\`\[Pi]\\/32\\)\\nRandom point in subinterval used for \
+height\\nNorm = 0.0974479\\nRiemann Sum = 2.00325\\nDefinite Integral = 2.\"",
+     TraditionalForm],
+  PlotRange->
+   NCache[{{0, Pi}, {0., 0.9999999707682925}}, {{0, 3.141592653589793}, {0., 
+     0.9999999707682925}}],
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{3.5394509452306585`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlotRiemann", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "Pi"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"ImageSize", "\[Rule]", "Medium"}], "}"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Partition", " ", "->", " ", "Random"}], ",", 
+     RowBox[{"Height", " ", "->", " ", "Random"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", 
+      RowBox[{"intervallength", "/", "32"}]}]}], "}"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    {RGBColor[0, 0, 1], LineBox[CompressedData["
+1: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
+WQjmSrO1dK793/8D/wMuq3uF
+      "]]}}, 
+   {RGBColor[0.8, 0.3, 0], 
+    LineBox[{{0, 0}, {0.04461551612287759, 0}, {0.04461551612287759, 
+      0.038619902184285654`}, {0, 0.038619902184285654`}, {0, 0}}], 
+    LineBox[{{0.04461551612287759, 0}, {0.13163285824041132`, 0}, {
+      0.13163285824041132`, 0.1036734192073955}, {0.04461551612287759, 
+      0.1036734192073955}, {0.04461551612287759, 0}}], 
+    LineBox[{{0.13163285824041132`, 0}, {0.22156151620130954`, 0}, {
+      0.22156151620130954`, 0.18256654712715745`}, {0.13163285824041132`, 
+      0.18256654712715745`}, {0.13163285824041132`, 0}}], 
+    LineBox[{{0.22156151620130954`, 0}, {0.2653015167784789, 0}, {
+      0.2653015167784789, 0.23328892409561644`}, {0.22156151620130954`, 
+      0.23328892409561644`}, {0.22156151620130954`, 0}}], 
+    LineBox[{{0.2653015167784789, 0}, {0.29233438998334754`, 0}, {
+      0.29233438998334754`, 0.27753084047893894`}, {0.2653015167784789, 
+      0.27753084047893894`}, {0.2653015167784789, 0}}], 
+    LineBox[{{0.29233438998334754`, 0}, {0.30144006970894127`, 0}, {
+      0.30144006970894127`, 0.2899768069269671}, {0.29233438998334754`, 
+      0.2899768069269671}, {0.29233438998334754`, 0}}], 
+    LineBox[{{0.30144006970894127`, 0}, {0.39005642592075984`, 0}, {
+      0.39005642592075984`, 0.353470122432977}, {0.30144006970894127`, 
+      0.353470122432977}, {0.30144006970894127`, 0}}], 
+    LineBox[{{0.39005642592075984`, 0}, {0.4536425842479531, 0}, {
+      0.4536425842479531, 0.3974179819776772}, {0.39005642592075984`, 
+      0.3974179819776772}, {0.39005642592075984`, 0}}], 
+    LineBox[{{0.4536425842479531, 0}, {0.47021120552529333`, 0}, {
+      0.47021120552529333`, 0.4405324389490117}, {0.4536425842479531, 
+      0.4405324389490117}, {0.4536425842479531, 0}}], 
+    LineBox[{{0.47021120552529333`, 0}, {0.5168655399487697, 0}, {
+      0.5168655399487697, 0.48175469656248726`}, {0.47021120552529333`, 
+      0.48175469656248726`}, {0.47021120552529333`, 0}}], 
+    LineBox[{{0.5168655399487697, 0}, {0.604817141137717, 0}, {
+      0.604817141137717, 0.5471167141719144}, {0.5168655399487697, 
+      0.5471167141719144}, {0.5168655399487697, 0}}], 
+    LineBox[{{0.604817141137717, 0}, {0.6784547632647083, 0}, {
+      0.6784547632647083, 0.5732728181431073}, {0.604817141137717, 
+      0.5732728181431073}, {0.604817141137717, 0}}], 
+    LineBox[{{0.6784547632647083, 0}, {0.7131786801742367, 0}, {
+      0.7131786801742367, 0.6327403290165268}, {0.6784547632647083, 
+      0.6327403290165268}, {0.6784547632647083, 0}}], 
+    LineBox[{{0.7131786801742367, 0}, {0.7859343733157553, 0}, {
+      0.7859343733157553, 0.6815913697666722}, {0.7131786801742367, 
+      0.6815913697666722}, {0.7131786801742367, 0}}], 
+    LineBox[{{0.7859343733157553, 0}, {0.7986321981602854, 0}, {
+      0.7986321981602854, 0.7135549409556095}, {0.7859343733157553, 
+      0.7135549409556095}, {0.7859343733157553, 0}}], 
+    LineBox[{{0.7986321981602854, 0}, {0.8180338237848375, 0}, {
+      0.8180338237848375, 0.7193051928606546}, {0.7986321981602854, 
+      0.7193051928606546}, {0.7986321981602854, 0}}], 
+    LineBox[{{0.8180338237848375, 0}, {0.8702246433080141, 0}, {
+      0.8702246433080141, 0.7581817904923767}, {0.8180338237848375, 
+      0.7581817904923767}, {0.8180338237848375, 0}}], 
+    LineBox[{{0.8702246433080141, 0}, {0.9528627456568589, 0}, {
+      0.9528627456568589, 0.8013804353767172}, {0.8702246433080141, 
+      0.8013804353767172}, {0.8702246433080141, 0}}], 
+    LineBox[{{0.9528627456568589, 0}, {1.0476921895416857`, 0}, {
+      1.0476921895416857`, 0.8232863548239404}, {0.9528627456568589, 
+      0.8232863548239404}, {0.9528627456568589, 0}}], 
+    LineBox[{{1.0476921895416857`, 0}, {1.1392732465719198`, 0}, {
+      1.1392732465719198`, 0.8853231428937517}, {1.0476921895416857`, 
+      0.8853231428937517}, {1.0476921895416857`, 0}}], 
+    LineBox[{{1.1392732465719198`, 0}, {1.2186351462953546`, 0}, {
+      1.2186351462953546`, 0.9367065503218047}, {1.1392732465719198`, 
+      0.9367065503218047}, {1.1392732465719198`, 0}}], 
+    LineBox[{{1.2186351462953546`, 0}, {1.264999587429104, 0}, {
+      1.264999587429104, 0.9453592716562803}, {1.2186351462953546`, 
+      0.9453592716562803}, {1.2186351462953546`, 0}}], 
+    LineBox[{{1.264999587429104, 0}, {1.2963680883140296`, 0}, {
+      1.2963680883140296`, 0.9579682711917131}, {1.264999587429104, 
+      0.9579682711917131}, {1.264999587429104, 0}}], 
+    LineBox[{{1.2963680883140296`, 0}, {1.3889946092391277`, 0}, {
+      1.3889946092391277`, 0.9752838898186836}, {1.2963680883140296`, 
+      0.9752838898186836}, {1.2963680883140296`, 0}}], 
+    LineBox[{{1.3889946092391277`, 0}, {1.423740992839685, 0}, {
+      1.423740992839685, 0.9839219436894345}, {1.3889946092391277`, 
+      0.9839219436894345}, {1.3889946092391277`, 0}}], 
+    LineBox[{{1.423740992839685, 0}, {1.4812628622805815`, 0}, {
+      1.4812628622805815`, 0.9946166336877352}, {1.423740992839685, 
+      0.9946166336877352}, {1.423740992839685, 0}}], 
+    LineBox[{{1.4812628622805815`, 0}, {1.5208774756292898`, 0}, {
+      1.5208774756292898`, 0.9985382939838601}, {1.4812628622805815`, 
+      0.9985382939838601}, {1.4812628622805815`, 0}}], 
+    LineBox[{{1.5208774756292898`, 0}, {1.5697639959772185`, 0}, {
+      1.5697639959772185`, 0.9992704869616035}, {1.5208774756292898`, 
+      0.9992704869616035}, {1.5208774756292898`, 0}}], 
+    LineBox[{{1.5697639959772185`, 0}, {1.5774775063729072`, 0}, {
+      1.5774775063729072`, 0.9999965276434869}, {1.5697639959772185`, 
+      0.9999965276434869}, {1.5697639959772185`, 0}}], 
+    LineBox[{{1.5774775063729072`, 0}, {1.62589369608821, 0}, {
+      1.62589369608821, 0.9994506656377748}, {1.5774775063729072`, 
+      0.9994506656377748}, {1.5774775063729072`, 0}}], 
+    LineBox[{{1.62589369608821, 0}, {1.6750667236497807`, 0}, {
+      1.6750667236497807`, 0.9978289055979815}, {1.62589369608821, 
+      0.9978289055979815}, {1.62589369608821, 0}}], 
+    LineBox[{{1.6750667236497807`, 0}, {1.758541856095197, 0}, {
+      1.758541856095197, 0.9832512251260684}, {1.6750667236497807`, 
+      0.9832512251260684}, {1.6750667236497807`, 0}}], 
+    LineBox[{{1.758541856095197, 0}, {1.8478615156382265`, 0}, {
+      1.8478615156382265`, 0.9766610127893633}, {1.758541856095197, 
+      0.9766610127893633}, {1.758541856095197, 0}}], 
+    LineBox[{{1.8478615156382265`, 0}, {1.8496233709300531`, 0}, {
+      1.8496233709300531`, 0.9614510439125649}, {1.8478615156382265`, 
+      0.9614510439125649}, {1.8478615156382265`, 0}}], 
+    LineBox[{{1.8496233709300531`, 0}, {1.9090195677273576`, 0}, {
+      1.9090195677273576`, 0.9525236831894126}, {1.8496233709300531`, 
+      0.9525236831894126}, {1.8496233709300531`, 0}}], 
+    LineBox[{{1.9090195677273576`, 0}, {1.9188570780457828`, 0}, {
+      1.9188570780457828`, 0.9404733357212847}, {1.9090195677273576`, 
+      0.9404733357212847}, {1.9090195677273576`, 0}}], 
+    LineBox[{{1.9188570780457828`, 0}, {1.9734528206792838`, 0}, {
+      1.9734528206792838`, 0.9375794994234801}, {1.9188570780457828`, 
+      0.9375794994234801}, {1.9188570780457828`, 0}}], 
+    LineBox[{{1.9734528206792838`, 0}, {2.000633753254273, 0}, {
+      2.000633753254273, 0.916297177921237}, {1.9734528206792838`, 
+      0.916297177921237}, {1.9734528206792838`, 0}}], 
+    LineBox[{{2.000633753254273, 0}, {2.0473321252070473`, 0}, {
+      2.0473321252070473`, 0.8920955777485245}, {2.000633753254273, 
+      0.8920955777485245}, {2.000633753254273, 0}}], 
+    LineBox[{{2.0473321252070473`, 0}, {2.1359427803256015`, 0}, {
+      2.1359427803256015`, 0.8605074108210858}, {2.0473321252070473`, 
+      0.8605074108210858}, {2.0473321252070473`, 0}}], 
+    LineBox[{{2.1359427803256015`, 0}, {2.138347703435926, 0}, {
+      2.138347703435926, 0.8441022061624595}, {2.1359427803256015`, 
+      0.8441022061624595}, {2.1359427803256015`, 0}}], 
+    LineBox[{{2.138347703435926, 0}, {2.181065304086751, 0}, {
+      2.181065304086751, 0.8285084603131524}, {2.138347703435926, 
+      0.8285084603131524}, {2.138347703435926, 0}}], 
+    LineBox[{{2.181065304086751, 0}, {2.23110900257938, 0}, {2.23110900257938,
+       0.7993967820073408}, {2.181065304086751, 0.7993967820073408}, {
+      2.181065304086751, 0}}], 
+    LineBox[{{2.23110900257938, 0}, {2.326313371092381, 0}, {
+      2.326313371092381, 0.7765877238731766}, {2.23110900257938, 
+      0.7765877238731766}, {2.23110900257938, 0}}], 
+    LineBox[{{2.326313371092381, 0}, {2.347531164903952, 0}, {
+      2.347531164903952, 0.7222727826582717}, {2.326313371092381, 
+      0.7222727826582717}, {2.326313371092381, 0}}], 
+    LineBox[{{2.347531164903952, 0}, {2.4420590948457086`, 0}, {
+      2.4420590948457086`, 0.7001739324748477}, {2.347531164903952, 
+      0.7001739324748477}, {2.347531164903952, 0}}], 
+    LineBox[{{2.4420590948457086`, 0}, {2.4607342924534117`, 0}, {
+      2.4607342924534117`, 0.6408375773800902}, {2.4420590948457086`, 
+      0.6408375773800902}, {2.4420590948457086`, 0}}], 
+    LineBox[{{2.4607342924534117`, 0}, {2.4633121400413147`, 0}, {
+      2.4633121400413147`, 0.6281256918601914}, {2.4607342924534117`, 
+      0.6281256918601914}, {2.4607342924534117`, 0}}], 
+    LineBox[{{2.4633121400413147`, 0}, {2.547958320677009, 0}, {
+      2.547958320677009, 0.6060118494947146}, {2.4633121400413147`, 
+      0.6060118494947146}, {2.4633121400413147`, 0}}], 
+    LineBox[{{2.547958320677009, 0}, {2.584964381177869, 0}, {
+      2.584964381177869, 0.5457121651389188}, {2.547958320677009, 
+      0.5457121651389188}, {2.547958320677009, 0}}], 
+    LineBox[{{2.584964381177869, 0}, {2.662199735861545, 0}, {
+      2.662199735861545, 0.5074393495970823}, {2.584964381177869, 
+      0.5074393495970823}, {2.584964381177869, 0}}], 
+    LineBox[{{2.662199735861545, 0}, {2.7140658335262002`, 0}, {
+      2.7140658335262002`, 0.4415226045237553}, {2.662199735861545, 
+      0.4415226045237553}, {2.662199735861545, 0}}], 
+    LineBox[{{2.7140658335262002`, 0}, {2.7909985037662057`, 0}, {
+      2.7909985037662057`, 0.35453189094108906`}, {2.7140658335262002`, 
+      0.35453189094108906`}, {2.7140658335262002`, 0}}], 
+    LineBox[{{2.7909985037662057`, 0}, {2.877763144976444, 0}, {
+      2.877763144976444, 0.2694461328429561}, {2.7909985037662057`, 
+      0.2694461328429561}, {2.7909985037662057`, 0}}], 
+    LineBox[{{2.877763144976444, 0}, {2.9058254720985492`, 0}, {
+      2.9058254720985492`, 0.25816921601807385`}, {2.877763144976444, 
+      0.25816921601807385`}, {2.877763144976444, 0}}], 
+    LineBox[{{2.9058254720985492`, 0}, {2.972391207742469, 0}, {
+      2.972391207742469, 0.2024363668038576}, {2.9058254720985492`, 
+      0.2024363668038576}, {2.9058254720985492`, 0}}], 
+    LineBox[{{2.972391207742469, 0}, {3.058178988864126, 0}, {
+      3.058178988864126, 0.12386617731413038`}, {2.972391207742469, 
+      0.12386617731413038`}, {2.972391207742469, 0}}], 
+    LineBox[NCache[{{3.058178988864126, 0}, {Pi, 0}, {
+       Pi, 0.07956012493982925}, {3.058178988864126, 0.07956012493982925}, {
+       3.058178988864126, 0}}, {{3.058178988864126, 0}, {
+       3.141592653589793, 0}, {3.141592653589793, 0.07956012493982925}, {
+       3.058178988864126, 0.07956012493982925}, {3.058178988864126, 0}}]]}},
+  Axes->True,
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  ImageSize->Medium,
+  PlotLabel->FormBox[
+   "\"\\nRandom partition with maximum norm \
+\\!\\(TraditionalForm\\`\[Pi]\\/32\\)\\nRandom point in subinterval used for \
+height\\nNorm = 0.0952044\\nRiemann Sum = 2.00678\\nDefinite Integral = 2.\"",
+     TraditionalForm],
+  PlotRange->
+   NCache[{{0, Pi}, {0., 0.9999999707682925}}, {{0, 3.141592653589793}, {0., 
+     0.9999999707682925}}],
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{3.5394510529954586`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"PlotRiemann", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "Pi"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ImageSize", "\[Rule]", "Medium"}], "}"}], ",", "\n", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Partition", " ", "->", " ", "Random"}], ",", 
+       RowBox[{"Height", " ", "->", " ", "Random"}], ",", 
+       RowBox[{"Mesh", "\[Rule]", 
+        RowBox[{"intervallength", "/", "n"}]}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "12"}], "}"}], ",", "1", ",", "100", ",", "1"}], 
+    "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.539439913815*^9, 3.53943992128375*^9}, {
+   3.539440014315*^9, 3.53944001469*^9}, 3.53944012140875*^9, 
+   3.53944019409625*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = 15, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n$$], 12}, 1, 100, 1}}, Typeset`size$$ = {
+    450., {149., 156.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`n$3682$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = 12}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$3682$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> $CellContext`PlotRiemann[
+        Sin[$CellContext`x], {$CellContext`x, 0, Pi}, {ImageSize -> Medium}, {
+        Partition -> Random, $CellContext`Height -> Random, 
+         Mesh -> $CellContext`intervallength/$CellContext`n$$}], 
+      "Specifications" :> {{{$CellContext`n$$, 12}, 1, 100, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{505., {203., 210.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`PlotRiemann[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          
+          Blank[]]] := $CellContext`PlotRiemann[$CellContext`expression, \
+$CellContext`range, {}, {}], $CellContext`PlotRiemann[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          Blank[]], {
+          Pattern[$CellContext`plotoptions, 
+           BlankNullSequence[]]}, {
+          Pattern[$CellContext`riemannoptions, 
+           BlankNullSequence[]]}] := 
+       Block[{$CellContext`g, $CellContext`u, $CellContext`partition, \
+$CellContext`heightlist, $CellContext`sum, $CellContext`mesh, \
+$CellContext`integralvalue, $CellContext`outstring}, $CellContext`u = \
+$CellContext`RiemannData[$CellContext`expression, $CellContext`range, \
+$CellContext`riemannoptions]; $CellContext`partition = 
+          Part[$CellContext`u, 1]; $CellContext`heightlist = 
+          Part[$CellContext`u, 2]; $CellContext`sum = Apply[Plus, 
+            Part[$CellContext`u, 3]]; $CellContext`mesh = 
+          Part[$CellContext`u, 4]; $CellContext`integralvalue = 
+          NIntegrate[$CellContext`expression, $CellContext`range]; \
+$CellContext`outstring = 
+          StringJoin[
+           "\n", $CellContext`partitionstring, 
+            "\n", $CellContext`heightstring, "\n", "Norm = ", 
+            ToString[$CellContext`mesh], "\n", "Riemann Sum = ", 
+            ToString[
+             Chop[$CellContext`sum]], "\n", "Definite Integral = ", 
+            ToString[$CellContext`integralvalue]]; $CellContext`g := 
+          Plot[$CellContext`expression, $CellContext`range, DisplayFunction -> 
+            Identity, PlotLabel -> $CellContext`outstring, PlotStyle -> {{
+               RGBColor[0, 0, 1]}}, $CellContext`plotoptions]; $CellContext`h := 
+          Graphics[{
+             RGBColor[0.8, 0.3, 0], 
+             $CellContext`ShowSlices[$CellContext`partition, \
+$CellContext`heightlist]}]; 
+         Show[$CellContext`g, $CellContext`h, 
+           DisplayFunction -> $DisplayFunction]], $CellContext`RiemannData[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`options, 
+          BlankNullSequence[Rule]]] := Block[{$CellContext`M = ReplaceAll[
+            ReplaceAll[Mesh, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`S = ReplaceAll[
+            ReplaceAll[$CellContext`Subintervals, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`P = ReplaceAll[
+            ReplaceAll[Partition, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`variable = 
+          Part[$CellContext`range, 1], $CellContext`intervallength = 
+          Part[$CellContext`range, 3] - 
+           Part[$CellContext`range, 2]}, $CellContext`list = 
+          Switch[$CellContext`P, $CellContext`Uniform, 
+            $CellContext`UniformPartition[$CellContext`range, $CellContext`S],
+             Random, 
+            $CellContext`RandomPartition[$CellContext`range, $CellContext`M]]; 
+         Join[
+           Join[{
+             Part[$CellContext`list, 1]}, 
+            $CellContext`Slices[$CellContext`expression, \
+$CellContext`variable, 
+             Part[$CellContext`list, 1], $CellContext`options]], {
+            Part[$CellContext`list, 2]}]], 
+       Options[$CellContext`RiemannData] := {$CellContext`Subintervals -> 12, 
+         Partition -> $CellContext`Uniform, 
+         Mesh -> $CellContext`intervallength/
+          6., $CellContext`Height -> $CellContext`Midpoint}, \
+$CellContext`list = {{
+         0, 0.15840968133837902`, 0.45021392430370916`, 0.6134701974746948, 
+          1.0807735701600678`, 1.283561048887073, 1.4651495902677134`, 
+          1.7225933664169037`, 1.9160885440779296`, 2.0230725608421793`, 
+          2.059087134984859, 2.372621363154391, 2.607988570608069, 
+          2.9565523853064017`, Pi}, 
+         0.46730337268537303`}, $CellContext`UniformPartition[
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`number, 
+          Blank[]]] := Module[{$CellContext`bottom = N[
+            Part[$CellContext`range, 2]], $CellContext`top = N[
+            
+            Part[$CellContext`range, 
+             3]], $CellContext`actualmesh}, $CellContext`actualmesh = \
+($CellContext`top - $CellContext`bottom)/$CellContext`number; \
+$CellContext`partitionstring = StringJoin["Uniform partition into ", 
+            ToString[$CellContext`number], " subintervals"]; Return[{
+            N[
+             
+             Range[$CellContext`bottom, $CellContext`top, \
+$CellContext`actualmesh]], $CellContext`actualmesh}]], \
+$CellContext`partitionstring = 
+       "Random partition with maximum norm \
+\!\(TraditionalForm\`0.5235987755982988`\)", $CellContext`RandomPartition[
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`mesh, 
+          Blank[]]] := 
+       Module[{$CellContext`u = Part[$CellContext`range, 2], $CellContext`top = 
+          Part[$CellContext`range, 3], $CellContext`list = {
+            
+            Part[$CellContext`range, 
+             2]}, $CellContext`v, $CellContext`newlist, \
+$CellContext`actualmesh = 0}, 
+         While[$CellContext`u + $CellContext`mesh < $CellContext`top, \
+$CellContext`v = $CellContext`u + 
+             Random[Real, $CellContext`mesh]; $CellContext`actualmesh = 
+            Max[$CellContext`actualmesh, $CellContext`v - $CellContext`u]; \
+$CellContext`newlist := 
+            Append[$CellContext`list, $CellContext`v]; $CellContext`u = \
+$CellContext`v; $CellContext`list = $CellContext`newlist]; \
+$CellContext`partitionstring = 
+          StringJoin["Random partition with maximum norm ", 
+            ToString[
+             TraditionalForm[$CellContext`mesh]]]; $CellContext`actualmesh = 
+          Max[$CellContext`actualmesh, $CellContext`top - 
+            Last[$CellContext`list]]; Return[{
+            
+            Append[$CellContext`list, $CellContext`top], \
+$CellContext`actualmesh}]], $CellContext`Slices[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`variable, 
+          Blank[]], 
+         Pattern[$CellContext`list, 
+          Blank[]], 
+         Pattern[$CellContext`options, 
+          BlankNullSequence[Rule]]] := 
+       Module[{$CellContext`i = 
+          1, $CellContext`startlist = $CellContext`list, \
+$CellContext`leftlist, $CellContext`rightlist, $CellContext`widthlist, \
+$CellContext`selectlist, $CellContext`arealist, $CellContext`heightlist, \
+$CellContext`valuelist, $CellContext`opt = ReplaceAll[
+            ReplaceAll[$CellContext`Height, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`f = 
+          Function[$CellContext`variable, $CellContext`expression]}, \
+$CellContext`leftlist = Drop[$CellContext`list, -1]; $CellContext`rightlist = 
+          Drop[$CellContext`list, 
+            1]; $CellContext`widthlist = $CellContext`rightlist - \
+$CellContext`leftlist; $CellContext`selectlist = 
+          Switch[$CellContext`opt, $CellContext`LeftSide, \
+$CellContext`heightstring = 
+             "Left edge of subinterval used for height"; \
+$CellContext`leftlist, $CellContext`RightSide, $CellContext`heightstring = 
+             "Right edge of subinterval used for height"; \
+$CellContext`rightlist, $CellContext`Midpoint, $CellContext`heightstring = 
+             "Midpoint of subinterval used for height"; $CellContext`leftlist + 
+             0.5 $CellContext`widthlist, 
+            Random, $CellContext`heightstring = 
+             "Random point in subinterval used for height"; \
+$CellContext`leftlist + 
+             Map[Random[
+               Real, #]& , $CellContext`widthlist]]; $CellContext`heightlist = 
+          Map[$CellContext`f, $CellContext`selectlist]; $CellContext`arealist = \
+$CellContext`heightlist $CellContext`widthlist; {$CellContext`heightlist, \
+$CellContext`arealist}], $CellContext`heightstring = 
+       "Random point in subinterval used for height", $CellContext`h := 
+       Graphics[{
+          RGBColor[0.8, 0.3, 0], 
+          $CellContext`ShowSlices[$CellContext`partition, \
+$CellContext`heightlist]}], $CellContext`ShowSlices[
+         Pattern[$CellContext`partition, 
+          Blank[]], 
+         Pattern[$CellContext`heightlist, 
+          Blank[]]] := Table[
+         $CellContext`Boxx[0, 
+          Part[$CellContext`heightlist, $CellContext`i], 
+          Part[$CellContext`partition, $CellContext`i], 
+          Part[$CellContext`partition, $CellContext`i + 1]], {$CellContext`i, 
+          1, Length[$CellContext`partition] - 1}], $CellContext`Boxx[
+         Pattern[$CellContext`bottom, 
+          Blank[]], 
+         Pattern[$CellContext`top, 
+          Blank[]], 
+         Pattern[$CellContext`left, 
+          Blank[]], 
+         Pattern[$CellContext`right, 
+          Blank[]]] := 
+       Line[{{$CellContext`left, $CellContext`bottom}, {$CellContext`right, \
+$CellContext`bottom}, {$CellContext`right, $CellContext`top}, \
+{$CellContext`left, $CellContext`top}, {$CellContext`left, \
+$CellContext`bottom}}], $DisplayFunction = Identity}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.5394399255025*^9, 3.53944001690875*^9, 3.539440196830625*^9, 
+   3.5394501425482583`*^9, {3.5394503188126583`*^9, 3.5394503235550585`*^9}, 
+   3.5394504544390583`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlotRiemann", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "Pi"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"ImageSize", "\[Rule]", "Medium"}], "}"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Partition", " ", "->", " ", "Uniform"}], ",", 
+     RowBox[{"Height", " ", "->", " ", "Midpoint"}]}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.53943975359625*^9, 3.5394397548775*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    {RGBColor[0, 0, 1], LineBox[CompressedData["
+1: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
+WQjmSrO1dK793/8D/wMuq3uF
+      "]]}}, 
+   {RGBColor[0.8, 0.3, 0], 
+    LineBox[{{0., 0}, {0.2617993877991494, 0}, {0.2617993877991494, 
+      0.13052619222005157`}, {0., 0.13052619222005157`}, {0., 0}}], 
+    LineBox[{{0.2617993877991494, 0}, {0.5235987755982988, 0}, {
+      0.5235987755982988, 0.3826834323650898}, {0.2617993877991494, 
+      0.3826834323650898}, {0.2617993877991494, 0}}], 
+    LineBox[{{0.5235987755982988, 0}, {0.7853981633974483, 0}, {
+      0.7853981633974483, 0.6087614290087205}, {0.5235987755982988, 
+      0.6087614290087205}, {0.5235987755982988, 0}}], 
+    LineBox[{{0.7853981633974483, 0}, {1.0471975511965976`, 0}, {
+      1.0471975511965976`, 0.7933533402912352}, {0.7853981633974483, 
+      0.7933533402912352}, {0.7853981633974483, 0}}], 
+    LineBox[{{1.0471975511965976`, 0}, {1.308996938995747, 0}, {
+      1.308996938995747, 0.9238795325112867}, {1.0471975511965976`, 
+      0.9238795325112867}, {1.0471975511965976`, 0}}], 
+    LineBox[{{1.308996938995747, 0}, {1.5707963267948966`, 0}, {
+      1.5707963267948966`, 0.9914448613738104}, {1.308996938995747, 
+      0.9914448613738104}, {1.308996938995747, 0}}], 
+    LineBox[{{1.5707963267948966`, 0}, {1.832595714594046, 0}, {
+      1.832595714594046, 0.9914448613738105}, {1.5707963267948966`, 
+      0.9914448613738105}, {1.5707963267948966`, 0}}], 
+    LineBox[{{1.832595714594046, 0}, {2.0943951023931953`, 0}, {
+      2.0943951023931953`, 0.9238795325112867}, {1.832595714594046, 
+      0.9238795325112867}, {1.832595714594046, 0}}], 
+    LineBox[{{2.0943951023931953`, 0}, {2.356194490192345, 0}, {
+      2.356194490192345, 0.7933533402912352}, {2.0943951023931953`, 
+      0.7933533402912352}, {2.0943951023931953`, 0}}], 
+    LineBox[{{2.356194490192345, 0}, {2.617993877991494, 0}, {
+      2.617993877991494, 0.6087614290087209}, {2.356194490192345, 
+      0.6087614290087209}, {2.356194490192345, 0}}], 
+    LineBox[{{2.617993877991494, 0}, {2.8797932657906435`, 0}, {
+      2.8797932657906435`, 0.3826834323650903}, {2.617993877991494, 
+      0.3826834323650903}, {2.617993877991494, 0}}], 
+    LineBox[{{2.8797932657906435`, 0}, {3.141592653589793, 0}, {
+      3.141592653589793, 0.13052619222005157`}, {2.8797932657906435`, 
+      0.13052619222005157`}, {2.8797932657906435`, 0}}]}},
+  Axes->True,
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  ImageSize->Medium,
+  PlotLabel->FormBox[
+   "\"\\nUniform partition into 12 subintervals\\nMidpoint of subinterval \
+used for height\\nNorm = 0.261799\\nRiemann Sum = 2.00572\\nDefinite Integral \
+= 2.\"", TraditionalForm],
+  PlotRange->
+   NCache[{{0, Pi}, {0., 0.9999999707682925}}, {{0, 3.141592653589793}, {0., 
+     0.9999999707682925}}],
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{
+  3.539439714643125*^9, 3.539439756736875*^9, 3.5394501428134584`*^9, {
+   3.5394503192182584`*^9, 3.5394503239762583`*^9}, 3.539450454938258*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlotRiemann", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "Pi"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"ImageSize", "\[Rule]", "Medium"}], "}"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Partition", " ", "->", " ", "Uniform"}], ",", 
+     RowBox[{"Height", " ", "->", " ", "Midpoint"}], ",", " ", 
+     RowBox[{"Subintervals", "\[Rule]", "32"}]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.539451020797058*^9, 3.5394510320914583`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    {RGBColor[0, 0, 1], LineBox[CompressedData["
+1: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
+WQjmSrO1dK793/8D/wMuq3uF
+      "]]}}, 
+   {RGBColor[0.8, 0.3, 0], 
+    LineBox[{{0., 0}, {0.09817477042468103, 0}, {0.09817477042468103, 
+      0.049067674327418015`}, {0., 0.049067674327418015`}, {0., 0}}], 
+    LineBox[{{0.09817477042468103, 0}, {0.19634954084936207`, 0}, {
+      0.19634954084936207`, 0.14673047445536175`}, {0.09817477042468103, 
+      0.14673047445536175`}, {0.09817477042468103, 0}}], 
+    LineBox[{{0.19634954084936207`, 0}, {0.2945243112740431, 0}, {
+      0.2945243112740431, 0.24298017990326387`}, {0.19634954084936207`, 
+      0.24298017990326387`}, {0.19634954084936207`, 0}}], 
+    LineBox[{{0.2945243112740431, 0}, {0.39269908169872414`, 0}, {
+      0.39269908169872414`, 0.33688985339222005`}, {0.2945243112740431, 
+      0.33688985339222005`}, {0.2945243112740431, 0}}], 
+    LineBox[{{0.39269908169872414`, 0}, {0.4908738521234052, 0}, {
+      0.4908738521234052, 0.4275550934302821}, {0.39269908169872414`, 
+      0.4275550934302821}, {0.39269908169872414`, 0}}], 
+    LineBox[{{0.4908738521234052, 0}, {0.5890486225480862, 0}, {
+      0.5890486225480862, 0.5141027441932217}, {0.4908738521234052, 
+      0.5141027441932217}, {0.4908738521234052, 0}}], 
+    LineBox[{{0.5890486225480862, 0}, {0.6872233929727672, 0}, {
+      0.6872233929727672, 0.5956993044924334}, {0.5890486225480862, 
+      0.5956993044924334}, {0.5890486225480862, 0}}], 
+    LineBox[{{0.6872233929727672, 0}, {0.7853981633974483, 0}, {
+      0.7853981633974483, 0.6715589548470183}, {0.6872233929727672, 
+      0.6715589548470183}, {0.6872233929727672, 0}}], 
+    LineBox[{{0.7853981633974483, 0}, {0.8835729338221293, 0}, {
+      0.8835729338221293, 0.7409511253549591}, {0.7853981633974483, 
+      0.7409511253549591}, {0.7853981633974483, 0}}], 
+    LineBox[{{0.8835729338221293, 0}, {0.9817477042468103, 0}, {
+      0.9817477042468103, 0.8032075314806448}, {0.8835729338221293, 
+      0.8032075314806448}, {0.8835729338221293, 0}}], 
+    LineBox[{{0.9817477042468103, 0}, {1.0799224746714913`, 0}, {
+      1.0799224746714913`, 0.8577286100002721}, {0.9817477042468103, 
+      0.8577286100002721}, {0.9817477042468103, 0}}], 
+    LineBox[{{1.0799224746714913`, 0}, {1.1780972450961724`, 0}, {
+      1.1780972450961724`, 0.9039892931234433}, {1.0799224746714913`, 
+      0.9039892931234433}, {1.0799224746714913`, 0}}], 
+    LineBox[{{1.1780972450961724`, 0}, {1.2762720155208536`, 0}, {
+      1.2762720155208536`, 0.9415440651830208}, {1.1780972450961724`, 
+      0.9415440651830208}, {1.1780972450961724`, 0}}], 
+    LineBox[{{1.2762720155208536`, 0}, {1.3744467859455345`, 0}, {
+      1.3744467859455345`, 0.970031253194544}, {1.2762720155208536`, 
+      0.970031253194544}, {1.2762720155208536`, 0}}], 
+    LineBox[{{1.3744467859455345`, 0}, {1.4726215563702154`, 0}, {
+      1.4726215563702154`, 0.989176509964781}, {1.3744467859455345`, 
+      0.989176509964781}, {1.3744467859455345`, 0}}], 
+    LineBox[{{1.4726215563702154`, 0}, {1.5707963267948966`, 0}, {
+      1.5707963267948966`, 0.9987954562051724}, {1.4726215563702154`, 
+      0.9987954562051724}, {1.4726215563702154`, 0}}], 
+    LineBox[{{1.5707963267948966`, 0}, {1.6689710972195777`, 0}, {
+      1.6689710972195777`, 0.9987954562051724}, {1.5707963267948966`, 
+      0.9987954562051724}, {1.5707963267948966`, 0}}], 
+    LineBox[{{1.6689710972195777`, 0}, {1.7671458676442586`, 0}, {
+      1.7671458676442586`, 0.989176509964781}, {1.6689710972195777`, 
+      0.989176509964781}, {1.6689710972195777`, 0}}], 
+    LineBox[{{1.7671458676442586`, 0}, {1.8653206380689396`, 0}, {
+      1.8653206380689396`, 0.970031253194544}, {1.7671458676442586`, 
+      0.970031253194544}, {1.7671458676442586`, 0}}], 
+    LineBox[{{1.8653206380689396`, 0}, {1.9634954084936207`, 0}, {
+      1.9634954084936207`, 0.9415440651830208}, {1.8653206380689396`, 
+      0.9415440651830208}, {1.8653206380689396`, 0}}], 
+    LineBox[{{1.9634954084936207`, 0}, {2.061670178918302, 0}, {
+      2.061670178918302, 0.9039892931234432}, {1.9634954084936207`, 
+      0.9039892931234432}, {1.9634954084936207`, 0}}], 
+    LineBox[{{2.061670178918302, 0}, {2.1598449493429825`, 0}, {
+      2.1598449493429825`, 0.8577286100002721}, {2.061670178918302, 
+      0.8577286100002721}, {2.061670178918302, 0}}], 
+    LineBox[{{2.1598449493429825`, 0}, {2.2580197197676637`, 0}, {
+      2.2580197197676637`, 0.8032075314806452}, {2.1598449493429825`, 
+      0.8032075314806452}, {2.1598449493429825`, 0}}], 
+    LineBox[{{2.2580197197676637`, 0}, {2.356194490192345, 0}, {
+      2.356194490192345, 0.740951125354959}, {2.2580197197676637`, 
+      0.740951125354959}, {2.2580197197676637`, 0}}], 
+    LineBox[{{2.356194490192345, 0}, {2.454369260617026, 0}, {
+      2.454369260617026, 0.6715589548470186}, {2.356194490192345, 
+      0.6715589548470186}, {2.356194490192345, 0}}], 
+    LineBox[{{2.454369260617026, 0}, {2.552544031041707, 0}, {
+      2.552544031041707, 0.5956993044924331}, {2.454369260617026, 
+      0.5956993044924331}, {2.454369260617026, 0}}], 
+    LineBox[{{2.552544031041707, 0}, {2.650718801466388, 0}, {
+      2.650718801466388, 0.5141027441932218}, {2.552544031041707, 
+      0.5141027441932218}, {2.552544031041707, 0}}], 
+    LineBox[{{2.650718801466388, 0}, {2.748893571891069, 0}, {
+      2.748893571891069, 0.4275550934302824}, {2.650718801466388, 
+      0.4275550934302824}, {2.650718801466388, 0}}], 
+    LineBox[{{2.748893571891069, 0}, {2.84706834231575, 0}, {2.84706834231575,
+       0.3368898533922199}, {2.748893571891069, 0.3368898533922199}, {
+      2.748893571891069, 0}}], 
+    LineBox[{{2.84706834231575, 0}, {2.945243112740431, 0}, {
+      2.945243112740431, 0.24298017990326407`}, {2.84706834231575, 
+      0.24298017990326407`}, {2.84706834231575, 0}}], 
+    LineBox[{{2.945243112740431, 0}, {3.043417883165112, 0}, {
+      3.043417883165112, 0.14673047445536225`}, {2.945243112740431, 
+      0.14673047445536225`}, {2.945243112740431, 0}}], 
+    LineBox[{{3.043417883165112, 0}, {3.141592653589793, 0}, {
+      3.141592653589793, 0.049067674327417966`}, {3.043417883165112, 
+      0.049067674327417966`}, {3.043417883165112, 0}}]}},
+  Axes->True,
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  ImageSize->Medium,
+  PlotLabel->FormBox[
+   "\"\\nUniform partition into 32 subintervals\\nMidpoint of subinterval \
+used for height\\nNorm = 0.0981748\\nRiemann Sum = 2.0008\\nDefinite Integral \
+= 2.\"", TraditionalForm],
+  PlotRange->
+   NCache[{{0, Pi}, {0., 0.9999999707682925}}, {{0, 3.141592653589793}, {0., 
+     0.9999999707682925}}],
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{3.5394510341974583`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"PlotRiemann", "[", 
+    RowBox[{
+     RowBox[{"Sin", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "Pi"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ImageSize", "\[Rule]", "Medium"}], "}"}], ",", "\n", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Partition", " ", "->", " ", "Uniform"}], ",", 
+       RowBox[{"Height", " ", "->", " ", "Midpoint"}], ",", 
+       RowBox[{"Subintervals", " ", "\[Rule]", "n"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "12"}], "}"}], ",", "1", ",", "100", ",", "1"}], 
+    "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.539450540504258*^9, 3.5394505731082582`*^9}, 
+   3.539450607365858*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = 37, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n$$], 12}, 1, 100, 1}}, Typeset`size$$ = {
+    450., {141., 148.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`n$5095$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = 12}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$5095$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> $CellContext`PlotRiemann[
+        Sin[$CellContext`x], {$CellContext`x, 0, Pi}, {ImageSize -> Medium}, {
+        Partition -> $CellContext`Uniform, $CellContext`Height -> \
+$CellContext`Midpoint, $CellContext`Subintervals -> $CellContext`n$$}], 
+      "Specifications" :> {{{$CellContext`n$$, 12}, 1, 100, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{505., {195., 202.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`PlotRiemann[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          
+          Blank[]]] := $CellContext`PlotRiemann[$CellContext`expression, \
+$CellContext`range, {}, {}], $CellContext`PlotRiemann[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          Blank[]], {
+          Pattern[$CellContext`plotoptions, 
+           BlankNullSequence[]]}, {
+          Pattern[$CellContext`riemannoptions, 
+           BlankNullSequence[]]}] := 
+       Block[{$CellContext`g, $CellContext`u, $CellContext`partition, \
+$CellContext`heightlist, $CellContext`sum, $CellContext`mesh, \
+$CellContext`integralvalue, $CellContext`outstring}, $CellContext`u = \
+$CellContext`RiemannData[$CellContext`expression, $CellContext`range, \
+$CellContext`riemannoptions]; $CellContext`partition = 
+          Part[$CellContext`u, 1]; $CellContext`heightlist = 
+          Part[$CellContext`u, 2]; $CellContext`sum = Apply[Plus, 
+            Part[$CellContext`u, 3]]; $CellContext`mesh = 
+          Part[$CellContext`u, 4]; $CellContext`integralvalue = 
+          NIntegrate[$CellContext`expression, $CellContext`range]; \
+$CellContext`outstring = 
+          StringJoin[
+           "\n", $CellContext`partitionstring, 
+            "\n", $CellContext`heightstring, "\n", "Norm = ", 
+            ToString[$CellContext`mesh], "\n", "Riemann Sum = ", 
+            ToString[
+             Chop[$CellContext`sum]], "\n", "Definite Integral = ", 
+            ToString[$CellContext`integralvalue]]; $CellContext`g := 
+          Plot[$CellContext`expression, $CellContext`range, DisplayFunction -> 
+            Identity, PlotLabel -> $CellContext`outstring, PlotStyle -> {{
+               RGBColor[0, 0, 1]}}, $CellContext`plotoptions]; $CellContext`h := 
+          Graphics[{
+             RGBColor[0.8, 0.3, 0], 
+             $CellContext`ShowSlices[$CellContext`partition, \
+$CellContext`heightlist]}]; 
+         Show[$CellContext`g, $CellContext`h, 
+           DisplayFunction -> $DisplayFunction]], $CellContext`RiemannData[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`options, 
+          BlankNullSequence[Rule]]] := Block[{$CellContext`M = ReplaceAll[
+            ReplaceAll[Mesh, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`S = ReplaceAll[
+            ReplaceAll[$CellContext`Subintervals, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`P = ReplaceAll[
+            ReplaceAll[Partition, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`variable = 
+          Part[$CellContext`range, 1], $CellContext`intervallength = 
+          Part[$CellContext`range, 3] - 
+           Part[$CellContext`range, 2]}, $CellContext`list = 
+          Switch[$CellContext`P, $CellContext`Uniform, 
+            $CellContext`UniformPartition[$CellContext`range, $CellContext`S],
+             Random, 
+            $CellContext`RandomPartition[$CellContext`range, $CellContext`M]]; 
+         Join[
+           Join[{
+             Part[$CellContext`list, 1]}, 
+            $CellContext`Slices[$CellContext`expression, \
+$CellContext`variable, 
+             Part[$CellContext`list, 1], $CellContext`options]], {
+            Part[$CellContext`list, 2]}]], 
+       Options[$CellContext`RiemannData] := {$CellContext`Subintervals -> 12, 
+         Partition -> $CellContext`Uniform, 
+         Mesh -> $CellContext`intervallength/
+          6., $CellContext`Height -> $CellContext`Midpoint}, \
+$CellContext`list = {{
+         0, 0.13246951576382676`, 0.2691875449612734, 0.3342332097288194, 
+          0.4698997191632409, 0.616634670791542, 0.6266446332332315, 
+          0.8042684705768341, 0.9037250072479611, 0.982360253695071, 
+          1.0482389172457622`, 1.185424952935528, 1.2738371101711083`, 
+          1.3321038798039824`, 1.4897811421263893`, 1.6580771995389967`, 
+          1.7826286640142277`, 1.933169265612805, 1.9522195129216597`, 
+          2.079189641132716, 2.112458815945098, 2.1778605125938966`, 
+          2.326274460784594, 2.4428479911001055`, 2.633810529255199, 
+          2.776182220379491, 2.787878139372742, 2.8394060049207073`, 
+          2.8947020336413796`, 3.09977828337669, Pi}, 
+         0.20507624973531025`}, $CellContext`UniformPartition[
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`number, 
+          Blank[]]] := Module[{$CellContext`bottom = N[
+            Part[$CellContext`range, 2]], $CellContext`top = N[
+            
+            Part[$CellContext`range, 
+             3]], $CellContext`actualmesh}, $CellContext`actualmesh = \
+($CellContext`top - $CellContext`bottom)/$CellContext`number; \
+$CellContext`partitionstring = StringJoin["Uniform partition into ", 
+            ToString[$CellContext`number], " subintervals"]; Return[{
+            N[
+             
+             Range[$CellContext`bottom, $CellContext`top, \
+$CellContext`actualmesh]], $CellContext`actualmesh}]], \
+$CellContext`partitionstring = 
+       "Random partition with maximum norm \!\(TraditionalForm\`\[Pi]\/15\)", \
+$CellContext`RandomPartition[
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`mesh, 
+          Blank[]]] := 
+       Module[{$CellContext`u = Part[$CellContext`range, 2], $CellContext`top = 
+          Part[$CellContext`range, 3], $CellContext`list = {
+            
+            Part[$CellContext`range, 
+             2]}, $CellContext`v, $CellContext`newlist, \
+$CellContext`actualmesh = 0}, 
+         While[$CellContext`u + $CellContext`mesh < $CellContext`top, \
+$CellContext`v = $CellContext`u + 
+             Random[Real, $CellContext`mesh]; $CellContext`actualmesh = 
+            Max[$CellContext`actualmesh, $CellContext`v - $CellContext`u]; \
+$CellContext`newlist := 
+            Append[$CellContext`list, $CellContext`v]; $CellContext`u = \
+$CellContext`v; $CellContext`list = $CellContext`newlist]; \
+$CellContext`partitionstring = 
+          StringJoin["Random partition with maximum norm ", 
+            ToString[
+             TraditionalForm[$CellContext`mesh]]]; $CellContext`actualmesh = 
+          Max[$CellContext`actualmesh, $CellContext`top - 
+            Last[$CellContext`list]]; Return[{
+            
+            Append[$CellContext`list, $CellContext`top], \
+$CellContext`actualmesh}]], $CellContext`Slices[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`variable, 
+          Blank[]], 
+         Pattern[$CellContext`list, 
+          Blank[]], 
+         Pattern[$CellContext`options, 
+          BlankNullSequence[Rule]]] := 
+       Module[{$CellContext`i = 
+          1, $CellContext`startlist = $CellContext`list, \
+$CellContext`leftlist, $CellContext`rightlist, $CellContext`widthlist, \
+$CellContext`selectlist, $CellContext`arealist, $CellContext`heightlist, \
+$CellContext`valuelist, $CellContext`opt = ReplaceAll[
+            ReplaceAll[$CellContext`Height, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`f = 
+          Function[$CellContext`variable, $CellContext`expression]}, \
+$CellContext`leftlist = Drop[$CellContext`list, -1]; $CellContext`rightlist = 
+          Drop[$CellContext`list, 
+            1]; $CellContext`widthlist = $CellContext`rightlist - \
+$CellContext`leftlist; $CellContext`selectlist = 
+          Switch[$CellContext`opt, $CellContext`LeftSide, \
+$CellContext`heightstring = 
+             "Left edge of subinterval used for height"; \
+$CellContext`leftlist, $CellContext`RightSide, $CellContext`heightstring = 
+             "Right edge of subinterval used for height"; \
+$CellContext`rightlist, $CellContext`Midpoint, $CellContext`heightstring = 
+             "Midpoint of subinterval used for height"; $CellContext`leftlist + 
+             0.5 $CellContext`widthlist, 
+            Random, $CellContext`heightstring = 
+             "Random point in subinterval used for height"; \
+$CellContext`leftlist + 
+             Map[Random[
+               Real, #]& , $CellContext`widthlist]]; $CellContext`heightlist = 
+          Map[$CellContext`f, $CellContext`selectlist]; $CellContext`arealist = \
+$CellContext`heightlist $CellContext`widthlist; {$CellContext`heightlist, \
+$CellContext`arealist}], $CellContext`heightstring = 
+       "Random point in subinterval used for height", $CellContext`h := 
+       Graphics[{
+          RGBColor[0.8, 0.3, 0], 
+          $CellContext`ShowSlices[$CellContext`partition, \
+$CellContext`heightlist]}], $CellContext`ShowSlices[
+         Pattern[$CellContext`partition, 
+          Blank[]], 
+         Pattern[$CellContext`heightlist, 
+          Blank[]]] := Table[
+         $CellContext`Boxx[0, 
+          Part[$CellContext`heightlist, $CellContext`i], 
+          Part[$CellContext`partition, $CellContext`i], 
+          Part[$CellContext`partition, $CellContext`i + 1]], {$CellContext`i, 
+          1, Length[$CellContext`partition] - 1}], $CellContext`Boxx[
+         Pattern[$CellContext`bottom, 
+          Blank[]], 
+         Pattern[$CellContext`top, 
+          Blank[]], 
+         Pattern[$CellContext`left, 
+          Blank[]], 
+         Pattern[$CellContext`right, 
+          Blank[]]] := 
+       Line[{{$CellContext`left, $CellContext`bottom}, {$CellContext`right, \
+$CellContext`bottom}, {$CellContext`right, $CellContext`top}, \
+{$CellContext`left, $CellContext`top}, {$CellContext`left, \
+$CellContext`bottom}}], $DisplayFunction = Identity}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.5394501428758583`*^9, {3.5394503193430586`*^9, 3.5394503241010585`*^9}, 
+   3.539450455156658*^9, {3.5394505808770585`*^9, 3.5394506083642583`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"PlotRiemann", "[", 
+    RowBox[{
+     RowBox[{"Sqrt", "[", 
+      RowBox[{"4", "-", 
+       RowBox[{"x", "^", "2"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"ImageSize", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"350", ",", "350"}], "}"}]}], "}"}], ",", "\n", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Partition", " ", "->", " ", "Uniform"}], ",", 
+       RowBox[{"Height", " ", "->", " ", "Midpoint"}], ",", 
+       RowBox[{"Subintervals", " ", "\[Rule]", "n"}]}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"n", ",", "12"}], "}"}], ",", "1", ",", "200", ",", "1"}], 
+    "}"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "]"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = 12, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`n$$], 12}, 1, 200, 1}}, Typeset`size$$ = {
+    438., {215., 223.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`n$3839$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = 12}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$3839$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> $CellContext`PlotRiemann[
+        Sqrt[4 - $CellContext`x^2], {$CellContext`x, 0, 2}, {
+        ImageSize -> {350, 350}}, {
+        Partition -> $CellContext`Uniform, $CellContext`Height -> \
+$CellContext`Midpoint, $CellContext`Subintervals -> $CellContext`n$$}], 
+      "Specifications" :> {{{$CellContext`n$$, 12}, 1, 200, 1}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{493., {269., 276.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`PlotRiemann[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          
+          Blank[]]] := $CellContext`PlotRiemann[$CellContext`expression, \
+$CellContext`range, {}, {}], $CellContext`PlotRiemann[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          Blank[]], {
+          Pattern[$CellContext`plotoptions, 
+           BlankNullSequence[]]}, {
+          Pattern[$CellContext`riemannoptions, 
+           BlankNullSequence[]]}] := 
+       Block[{$CellContext`g, $CellContext`u, $CellContext`partition, \
+$CellContext`heightlist, $CellContext`sum, $CellContext`mesh, \
+$CellContext`integralvalue, $CellContext`outstring}, $CellContext`u = \
+$CellContext`RiemannData[$CellContext`expression, $CellContext`range, \
+$CellContext`riemannoptions]; $CellContext`partition = 
+          Part[$CellContext`u, 1]; $CellContext`heightlist = 
+          Part[$CellContext`u, 2]; $CellContext`sum = Apply[Plus, 
+            Part[$CellContext`u, 3]]; $CellContext`mesh = 
+          Part[$CellContext`u, 4]; $CellContext`integralvalue = 
+          NIntegrate[$CellContext`expression, $CellContext`range]; \
+$CellContext`outstring = 
+          StringJoin[
+           "\n", $CellContext`partitionstring, 
+            "\n", $CellContext`heightstring, "\n", "Norm = ", 
+            ToString[$CellContext`mesh], "\n", "Riemann Sum = ", 
+            ToString[
+             Chop[$CellContext`sum]], "\n", "Definite Integral = ", 
+            ToString[$CellContext`integralvalue]]; $CellContext`g := 
+          Plot[$CellContext`expression, $CellContext`range, DisplayFunction -> 
+            Identity, PlotLabel -> $CellContext`outstring, PlotStyle -> {{
+               RGBColor[0, 0, 1]}}, $CellContext`plotoptions]; $CellContext`h := 
+          Graphics[{
+             RGBColor[0.8, 0.3, 0], 
+             $CellContext`ShowSlices[$CellContext`partition, \
+$CellContext`heightlist]}]; 
+         Show[$CellContext`g, $CellContext`h, 
+           DisplayFunction -> $DisplayFunction]], $CellContext`RiemannData[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`options, 
+          BlankNullSequence[Rule]]] := Block[{$CellContext`M = ReplaceAll[
+            ReplaceAll[Mesh, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`S = ReplaceAll[
+            ReplaceAll[$CellContext`Subintervals, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`P = ReplaceAll[
+            ReplaceAll[Partition, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`variable = 
+          Part[$CellContext`range, 1], $CellContext`intervallength = 
+          Part[$CellContext`range, 3] - 
+           Part[$CellContext`range, 2]}, $CellContext`list = 
+          Switch[$CellContext`P, $CellContext`Uniform, 
+            $CellContext`UniformPartition[$CellContext`range, $CellContext`S],
+             Random, 
+            $CellContext`RandomPartition[$CellContext`range, $CellContext`M]]; 
+         Join[
+           Join[{
+             Part[$CellContext`list, 1]}, 
+            $CellContext`Slices[$CellContext`expression, \
+$CellContext`variable, 
+             Part[$CellContext`list, 1], $CellContext`options]], {
+            Part[$CellContext`list, 2]}]], 
+       Options[$CellContext`RiemannData] := {$CellContext`Subintervals -> 12, 
+         Partition -> $CellContext`Uniform, 
+         Mesh -> $CellContext`intervallength/
+          6., $CellContext`Height -> $CellContext`Midpoint}, \
+$CellContext`list = {{0., 0.2617993877991494, 0.5235987755982988, 
+         0.7853981633974483, 1.0471975511965976`, 1.308996938995747, 
+         1.5707963267948966`, 1.832595714594046, 2.0943951023931953`, 
+         2.356194490192345, 2.617993877991494, 2.8797932657906435`, 
+         3.141592653589793}, 
+         0.2617993877991494}, $CellContext`UniformPartition[
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`number, 
+          Blank[]]] := Module[{$CellContext`bottom = N[
+            Part[$CellContext`range, 2]], $CellContext`top = N[
+            
+            Part[$CellContext`range, 
+             3]], $CellContext`actualmesh}, $CellContext`actualmesh = \
+($CellContext`top - $CellContext`bottom)/$CellContext`number; \
+$CellContext`partitionstring = StringJoin["Uniform partition into ", 
+            ToString[$CellContext`number], " subintervals"]; Return[{
+            N[
+             
+             Range[$CellContext`bottom, $CellContext`top, \
+$CellContext`actualmesh]], $CellContext`actualmesh}]], \
+$CellContext`partitionstring = 
+       "Uniform partition into 12 subintervals", $CellContext`RandomPartition[
+         Pattern[$CellContext`range, 
+          Blank[]], 
+         Pattern[$CellContext`mesh, 
+          Blank[]]] := 
+       Module[{$CellContext`u = Part[$CellContext`range, 2], $CellContext`top = 
+          Part[$CellContext`range, 3], $CellContext`list = {
+            
+            Part[$CellContext`range, 
+             2]}, $CellContext`v, $CellContext`newlist, \
+$CellContext`actualmesh = 0}, 
+         While[$CellContext`u + $CellContext`mesh < $CellContext`top, \
+$CellContext`v = $CellContext`u + 
+             Random[Real, $CellContext`mesh]; $CellContext`actualmesh = 
+            Max[$CellContext`actualmesh, $CellContext`v - $CellContext`u]; \
+$CellContext`newlist := 
+            Append[$CellContext`list, $CellContext`v]; $CellContext`u = \
+$CellContext`v; $CellContext`list = $CellContext`newlist]; \
+$CellContext`partitionstring = 
+          StringJoin["Random partition with maximum norm ", 
+            ToString[
+             TraditionalForm[$CellContext`mesh]]]; $CellContext`actualmesh = 
+          Max[$CellContext`actualmesh, $CellContext`top - 
+            Last[$CellContext`list]]; Return[{
+            
+            Append[$CellContext`list, $CellContext`top], \
+$CellContext`actualmesh}]], $CellContext`Slices[
+         Pattern[$CellContext`expression, 
+          Blank[]], 
+         Pattern[$CellContext`variable, 
+          Blank[]], 
+         Pattern[$CellContext`list, 
+          Blank[]], 
+         Pattern[$CellContext`options, 
+          BlankNullSequence[Rule]]] := 
+       Module[{$CellContext`i = 
+          1, $CellContext`startlist = $CellContext`list, \
+$CellContext`leftlist, $CellContext`rightlist, $CellContext`widthlist, \
+$CellContext`selectlist, $CellContext`arealist, $CellContext`heightlist, \
+$CellContext`valuelist, $CellContext`opt = ReplaceAll[
+            ReplaceAll[$CellContext`Height, {$CellContext`options}], 
+            Options[$CellContext`RiemannData]], $CellContext`f = 
+          Function[$CellContext`variable, $CellContext`expression]}, \
+$CellContext`leftlist = Drop[$CellContext`list, -1]; $CellContext`rightlist = 
+          Drop[$CellContext`list, 
+            1]; $CellContext`widthlist = $CellContext`rightlist - \
+$CellContext`leftlist; $CellContext`selectlist = 
+          Switch[$CellContext`opt, $CellContext`LeftSide, \
+$CellContext`heightstring = 
+             "Left edge of subinterval used for height"; \
+$CellContext`leftlist, $CellContext`RightSide, $CellContext`heightstring = 
+             "Right edge of subinterval used for height"; \
+$CellContext`rightlist, $CellContext`Midpoint, $CellContext`heightstring = 
+             "Midpoint of subinterval used for height"; $CellContext`leftlist + 
+             0.5 $CellContext`widthlist, 
+            Random, $CellContext`heightstring = 
+             "Random point in subinterval used for height"; \
+$CellContext`leftlist + 
+             Map[Random[
+               Real, #]& , $CellContext`widthlist]]; $CellContext`heightlist = 
+          Map[$CellContext`f, $CellContext`selectlist]; $CellContext`arealist = \
+$CellContext`heightlist $CellContext`widthlist; {$CellContext`heightlist, \
+$CellContext`arealist}], $CellContext`heightstring = 
+       "Midpoint of subinterval used for height", $CellContext`h := Graphics[{
+          RGBColor[0.8, 0.3, 0], 
+          $CellContext`ShowSlices[$CellContext`partition, \
+$CellContext`heightlist]}], $CellContext`ShowSlices[
+         Pattern[$CellContext`partition, 
+          Blank[]], 
+         Pattern[$CellContext`heightlist, 
+          Blank[]]] := Table[
+         $CellContext`Boxx[0, 
+          Part[$CellContext`heightlist, $CellContext`i], 
+          Part[$CellContext`partition, $CellContext`i], 
+          Part[$CellContext`partition, $CellContext`i + 1]], {$CellContext`i, 
+          1, Length[$CellContext`partition] - 1}], $CellContext`Boxx[
+         Pattern[$CellContext`bottom, 
+          Blank[]], 
+         Pattern[$CellContext`top, 
+          Blank[]], 
+         Pattern[$CellContext`left, 
+          Blank[]], 
+         Pattern[$CellContext`right, 
+          Blank[]]] := 
+       Line[{{$CellContext`left, $CellContext`bottom}, {$CellContext`right, \
+$CellContext`bottom}, {$CellContext`right, $CellContext`top}, \
+{$CellContext`left, $CellContext`top}, {$CellContext`left, \
+$CellContext`bottom}}], $DisplayFunction = Identity}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.5394501429226584`*^9, {3.5394503194054585`*^9, 3.5394503241946583`*^9}, 
+   3.5394504552346582`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{835, 699},
+WindowMargins->{{Automatic, 57}, {Automatic, 3}},
+Magnification->1.25,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 152, 2, 88, "Section"],
+Cell[734, 26, 2564, 58, 77, "Text",
+ Evaluatable->False],
+Cell[CellGroupData[{
+Cell[3323, 88, 102, 1, 46, "Subsection"],
+Cell[3428, 91, 647, 14, 99, "Text"],
+Cell[4078, 107, 181, 6, 35, "Input"],
+Cell[4262, 115, 2949, 74, 388, "Input"],
+Cell[7214, 191, 2231, 60, 256, "Input"],
+Cell[9448, 253, 1197, 34, 146, "Input"],
+Cell[10648, 289, 2833, 73, 410, "Input"],
+Cell[13484, 364, 554, 16, 80, "Input"],
+Cell[14041, 382, 637, 19, 80, "Input"],
+Cell[14681, 403, 367, 9, 58, "Input"],
+Cell[15051, 414, 2278, 55, 388, "Input"],
+Cell[17332, 471, 3298, 80, 388, "Input"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20667, 556, 100, 1, 46, "Subsection"],
+Cell[CellGroupData[{
+Cell[20792, 561, 418, 11, 58, "Input"],
+Cell[21213, 574, 9179, 157, 307, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30429, 736, 645, 15, 58, "Input"],
+Cell[31077, 753, 18130, 299, 323, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49244, 1057, 504, 13, 58, "Input"],
+Cell[49751, 1072, 17173, 283, 323, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66961, 1360, 926, 24, 80, "Input"],
+Cell[67890, 1386, 11194, 223, 433, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[79121, 1614, 487, 13, 58, "Input"],
+Cell[79611, 1629, 8298, 144, 307, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[87946, 1778, 548, 13, 58, "Input"],
+Cell[88497, 1793, 12004, 202, 307, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[100538, 2000, 843, 22, 80, "Input"],
+Cell[101384, 2024, 11549, 227, 417, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[112970, 2256, 860, 24, 80, "Input"],
+Cell[113833, 2282, 11061, 220, 565, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

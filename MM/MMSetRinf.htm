@@ -1,0 +1,199 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Sets: Rules of Inference</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-03-03
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>
+<a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+<a href="MMSets.htm">Back to head of Sets chapter</a>
+</pre></head>
+  <body>
+<h1>SETS: RULES OF INFERENCE</h1>
+ 
+<h2>The method of comprehension </h2>
+  
+<p class=blue>The <font color="#911B1B">method of comprehension</font> is the main tool for proving statements involving setbuilder notation.</p> 
+
+<h4>Warning</h4>
+
+<ul>
+
+<li>The name "method of comprehension" can cause <a href="MMCognitiveDissonance.htm#semanticcontamination">semantic contamination.</a> </li>
+
+<li>"Comprehension" to most people means <b>understanding</b>. <span class=purple>Ignore that meaning.</span> In the olden days, "comprehend" meant "contain". </li>
+
+<li>If I were dictator of the math language, I would call it the "Method of whatsinit".</li>
+
+</ul>
+
+<h3>Method of proof for setbuilder notation:</h3>
+
+<p>Let $P(x)$ be an assertion and let $A$ be the set $\{x\,|\,P(x)\}$. Then the following two statements are true:</p>
+
+<ul>
+
+<li>(<b>ES)</b> If you know that $a\in A$, then you can conclude that the statement $P(a)$ is true.</li>
+
+<li>(<b>SE</b>) If $P(a)$ is a true statement then you can conclude that $a\in A$.</li>
+
+
+<li> <b>(ES)</b> and <b>(SE)</b> together mean that if $A=\{x\,|\,P(x)\}$, then every $x$ for which $P(x)$ is true is an element of $A$, and <i>nothing else is</i>.</li> 
+ 
+</ul>
+
+<p class=purpleprose>The elements of $\{x\,|\,P(x)\}$ are <i><b>exactly</b> all those $x$ that make $P(x)$ true</i>.</p>
+ 
+<h4 class=redit>Example</h4>
+ 
+
+<p>For an integer $n$, the assertion \[\{n\,|\,1\lt n\lt6\}=\{2,3,4,5\}\] is correct.</p> 
+<ul>
+<li>The method of comprehension allow you to state
+
+<ul>
+
+<li>Since $3\in\{2,3,4,5\}$, <b>ES</b> says $1\lt3\lt6$.</li>
+<b></b>
+<li>Since $1\lt3\lt6$, <b>SE</b> says $3\in\{2,3,4,5\}$.</li>
+
+</ul>
+
+<li>It would be wrong to say that \[\{n\,|\,1\lt n\lt6\}=\{2,3,4,6\}\] because $1\lt6\lt5$ is false, violating <b>ES</b>.
+</li>
+
+
+
+<li>It would be wrong to say that \[\{n\,|\,1\lt n\lt6\}=\{2,3,4\}\] because $1\lt5\lt6$ but $5\notin\{2,3,4\}$, violating <b>SE</b>.</li>
+
+</ul>
+
+<h4 class=redit>Other examples</h4>
+<ul><li>$\{n\,|\,1\lt n\text{ and }1\gt n\}=\emptyset$.</li>
+
+<li>$\{n\,|\,2\gt n\text{ or }0\lt n\}=\mathbb{N}$.</li>
+
+</ul>
+ <h3>The method of comprehension and equivalence</h3>
+
+<p>Another way of stating the method of comprehension is that the statements "$a\in A$" and "$P(a)$" are <a href="MMConditional.htm#equivalenceofassertions">equivalent</a>. This means:</p>
+
+<p class=purpleprose>The method of comprehension works both ways.</p>
+
+<h4 class=redit>Example</h4>
+<p>Let $E$ be the set of even integers. Then:</p>
+<ul>
+
+<li>$E=\{n\,|\,n\text{ is even.}\}$</li>
+
+<li>$42\in E$ because $42$ is even.</li>
+
+<li>$43\notin E$ because $43$ is not even.</li>
+
+<li>Suppose you know that the integer $m$ is even. Then $m\in E$.</li>
+
+<li>Suppose you know that $k$ is odd.  Then $k\notin E$.</li>
+</ul>
+
+<h4>Warning</h4>
+
+<p>The definite article “the” has a special role when defining a set.  For example “the set of even integers” automatically means the set of <i>all</i> even integers. There is more about this in the <a href="MMGlossary.htm#defartsetbuild">Glossary</a>.</p>
+
+<a name="inclusion"></a>
+
+<h2>Set inclusion</h2>
+
+<p>Inclusion is discussed in detail in the article <a href="MMSetSubset.htm">Subsets and Inclusion</a>. There is a rule of inference for inclusion:</p>
+
+<h3>Method of proof for inclusion</h3>
+<p class=bluesmall>To prove that $A\subseteq B$, you must prove that any element of $A$ is an element of $B$.</p>
+
+<h5>Examples</h5>
+<a name="emptysetineveryset"></a>
+<ul>
+
+<li>Let $A=\{1,2,3\}$ and $B=\{1,2,3,4\}$.  Then $A\subseteq B$ because, going through the elements of $A$, $1\in B$, $2\in B$ and $3\in B$.</li>
+
+<li>$A\subseteq \mathbb{R}$ because $1$, $2$ and $3$ are all real numbers.</li>
+
+<li>It is not true that $\{1,2,3,\pi\}\subseteq\mathbb{Z}$, because $\pi$ is not an integer.</li>
+
+<li>For any set $A$, $\emptyset\subseteq A$ because it is <a href="MMConditional.htm#vacuoustruth">vacuously true</a> that if $x\in\emptyset$ then $x\in A$.</li>
+
+</ul>
+ 
+<p>Thus <b>the empty set is included in every set</b>. But the empty set is not an element of every set.  For example, it is not an element of $\{1,2,3\}$, as you can see by looking at the list of elements in $\{1,2,3\}$ -- you don't see "$\emptyset$" in that list, do you?</p>
+
+<p class=smallind>The notion that the empty set is an element of every set is a <b>myth</b> widely believed by undergraduate math students. Get over it.</p>
+
+<h2>Set equality</h2>
+
+<p>This is a basic fact about sets:</p>
+
+<p class=boxed>$A\subseteq B$ and $B\subseteq A$ if and only if $A$ and $B$ are the same set.</p>
+
+<p>In other words, For "$A=B$" to be true, $A$ and $B$ have to have exactly the same elements.</p>
+
+
+<h3>Inequality</h3>
+<p>So how do you show that two sets are <i>not</i> equal? Answer: You have to show that <i>at least one</i> of the following statements is true:</p>
+
+<ol>
+
+<li>There is an element $x\in A$ for which $x\notin B$.</li>
+
+<li>There is an element $x\in B$ for which $x\notin A$.</li>
+
+</ol>
+
+<p>Think through the three examples below. Altogether, they show you that it can happen that <i>one</i> of the statements above can be true and the other false, and also that <i>both</i> statements can be true.</p>
+<ul>
+
+<li>$A=\{1,2,3\}$, $B=\{1,2\}$.</li>
+
+<li>$A=\{1,2,3\}$, $B=\{1,2,3,4\}$.</li>
+
+<li>$A=\{1,2,3\}$, $B=\{1,2,4\}$.</li>
+
+
+</ul>
+
+
+  
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+
+  </body>
+</html>

@@ -1,0 +1,899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css"href="MM2.css"><banner></banner>
+
+<!-- <link rel="stylesheet" type="text/css" href="MM2.css">
+ -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Functions: Notation and Terminology</title>
+
+<script type="text/javascript"  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  jax: ["input/TeX","output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+  TeX: {
+    extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+    tex2jax: {
+      inlineMath: [ ['$','$'] ],
+      processEscapes: true
+    }
+  });</script>
+
+  </head>
+
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Revised 2015-12-24
+<a href="MMIntro.htm">Introduction to this website</a>     <a href="MMTOC.htm">website TOC</a>     <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>    <a href="MMFunctions.htm">Back to head of functions chapter</a>	
+</pre>
+
+<!--END OF INSERTION-->
+
+
+<h1>FUNCTIONS: NOTATION AND TERMINOLOGY</h1>
+
+<h2>Terminology for functions</h2>
+
+
+<h3>Other words meaning "function"</h3>
+
+<p>Functions are called by many other names in the literature.  This section mentions some of the most common words used to mean "function".
+<i><b>Authors may not explain the terminology they use.</b></i> (See <a href="MMDefs.htm#nostandardization">no standardization</a>.)</p>
+
+<a name="map"></a><a name="mapping"></a>
+
+<h4>Map, mapping</h4>
+<p>A function is very commonly referred to as a <b>map</b> or <b>mapping</b>.
+    In some cases, an author will impose conditions on a function to be called a "map".  For example, some require that a mapping be a <i>continuous</i> function.  Another usage is that a map have a specified
+<a href="MMFuncSpec.htm#specification">codomain.</a>
+Other uses of the word are described in
+<a href="http://en.wikipedia.org/wiki/Map_(mathematics)">Wikipedia.</a>
+</p>
+
+  <p class='smallind' >The name "map" is suggested by common <a href="MMImagesMetaphorsFunctions.htm#map">metaphors</a>
+for functions.</p>
+
+<a name="transformation"></a>
+
+<h4>Transformation</h4>
+    <p> The word <b>transformation</b> is commonly used when the domain and the codomain are the same (as in a
+<a href="http://en.wikipedia.org/wiki/Transformation_group">transformation group</a>
+), but that is not the case when it is used in the phrase
+<a href="http://en.wikipedia.org/wiki/Linear_transformation">linear transformation.</a> See also <a href="MMImagesMetaphorsFunctions.htm#transformer">Images and metaphors for functions</a>.</p>
+
+<a name="operator"></a>
+
+<h4>Operator</h4>
+<p>A function between vector spaces may be called an <b>operator</b>.   Most functions called "operator" are linear, and the word seems to be most commonly used when the domain is a function space.</p>
+
+<p>Taking the derivative is a linear operator on some suitable vector space of differ&shy;entiable functions.
+The article in
+<a href="http://en.wikipedia.org/wiki/Operator_mathematics">Wikipedia</a>
+gives an extensive list of examples.
+</p>
+
+<a name="functional"></a>
+<h4>Functional</h4>
+
+<p>The word <b> functional</b> is used as a noun to denote some special class of
+<a href="MMFunctions.htm">functions</a>. The most common use seems to be to denote a linear function whose domain consists of some vector space and whose values are elements of the field.    But the word is used in other senses, as well.  See the
+<a href="http://en.wikipedia.org/wiki/Functional_(mathematics)">Wikipedia entry.</a>
+</p>
+
+<p>In mathe&shy;ma&shy;tical English, the word "functional" is a <i><b>noun</b></i>.  In ordinary English, it is almost always an adjec&shy;tive whose meaning has <b><i>little to do with the mathe&shy;matical meaning.</i></b>
+</p>
+
+<a name="operation"></a>
+<h4>Operation</h4>
+
+<p>A function of the form $f:S\times S\to S$ may be called a <b>binary operation</b> on $S$.   ($S\times S$ denotes the
+<a href="http://en.wikipedia.org/wiki/Cartesian_product">cartesian product</a>). The main point to notice is that it takes pairs of elements of $S$ to the <i><b>same set</b></i> $S$. See <a href="MMFuncExamples.htm#binaryoperations">Examples of functions</a>. 
+</p>
+
+
+<p class='smallind' >
+In the 1960's some mathe&shy;ma&shy;ticians  were taken aback by the idea that addition of real numbers (for example) is a function.  I observed this personally. I don't think any mathe&shy;ma&shy;tician would react this way today.</p>
+<p>A binary operation is a special case of <b>n-ary operation</b> for any natural number $n$, which is a function of the form $f:S^n\to S$.  A $1$-ary (unary) operation on $S$ is a function from a set to itself (such as the map that takes an element of a group to its inverse), and a $0$-ary operation on $S$ is a constant.</p>
+
+
+<p>It is useful at times to consider <b>multisorted algebra</b>, where a binary operation can be a function $f:S_1\times S_2\to S_3$ where the $S_i$ are possibly <i>differ&shy;ent</i> sets.</p>
+
+
+
+<a name="arrownotation"></a>
+
+
+<h3>Arrow Notation</h3>
+
+<p>
+The notation $f:S\to T$ means $f$ is a function with domain $S$ and codomain $T$. The is <b>arrow notation</b>, sometimes called <b>straight arrow notation</b> to distinguish it from <a href= "#barredarrownotation">barred arrow notation</a>.
+</p>
+
+<h4>Pronunciation of arrow notation</h4>
+
+   <p> The expression "$f :A\to B$" can be used as name or as an independent sentence, so it has
+<a href="MMMoreLanguage.htm"> context-sensitive pronunciation</a>.</p>
+<ul>
+
+<li>
+	Standing alone, the expression may be read aloud this way:  "$f $ is a function from A to B" or "$f $ goes from $A$ to $B$".
+</li>
+	<li>
+	The expression may occur embedded in a sentence, as in "Let  $f :A\to B$ be a differ&shy;entiable function."  This may be read "Let $f$ from $A$ to $B$ be a differ&shy;entiable function."
+
+</li></ul>
+
+<h5>Example:</h5>
+<p> A mathe&shy;matician might write, "Let $h:\mathbb{Z}\to\mathbb{N}$ be defined by $h(n)=n^2$."  This means that the domain of $h$ is $\mathbb{Z}$,  the codomain is $\mathbb{N}$ and the value at $n$ is $n^2$.    In this sentence the phrase $h:\mathbb{Z}\to\mathbb{N}$ would be pronounced
+ "$h$ from $\mathbb{Z}$ to $\mathbb{N}$".
+</p>
+
+
+
+<p>
+ Note that if someone writes, "Let $h:\mathbb{Z}\to\mathbb{N}$ be a function", <i><b>they have not defined the function</b></i>.  To define it you must also give some way of determining the value at each input; knowing the domain and codomain are not enough.
+</p>
+
+<h2>Ways of defining a function</h2>
+
+
+<p>When a math text "defines a function" it may or may not tell you what the domain or the codomain are.    Sometimes, the context makes the domain or codomain clear and other times it doesn't really matter what it is.  More about this in
+<a href="MMFuncDomCod.pdf">Functions: Specification and Definition</a>.</p>
+
+
+
+<h3>Table</h3>
+
+    <p>A function defined on a finite set may be given by a <b>table</b>; for example, the
+<a href="MMFuncExamples.htm#finitefunction">finite function</a>
+defined in the examples section. The table determines the domain of the function (the domain  is the set of all first coordinates of the ordered pairs in the table), but not the codomain.</p>
+<p>That example also shows a way of defining a finite function using <b>arrows</b> (its <a href="/Word%20Press/?p=2034">cograph</a>}</p><p class='smallind'> Warning: the word "cograph" means something else to graph theorists.
+</p>
+
+
+<h3>Formula</h3>
+
+   <p>A function may be defined by giving an algebraic expression (its <b>formula</b>) that determines its value.  An example is the function $g$ defined by $g(x)={{x}^{2}}+2x-4$.</p>
+<ul>
+   <li> The expression "$g(x)={{x}^{2}}+2x-4$" may be called the <b>defining equation</b>  of the function, and "${{x}^{2}}+2x-4$" its <b>defining expression</b>.</li>
+
+        <li>The defining expression may be used as its <a href="#namefuncformula">name</a>
+ as in "${{x}^{2}}+2x-4$ has one local minimum".</li>
+
+      <li> In a calculus book you can assume the domain is <a href="MMAlphabets.htm#_Toc212951213">$\mathbb{R}$</a>.  In a complex analysis text its domain could be <a href="MMAlphabets.htm#_Toc212951213">$\mathbb{C}$</a>, but in that text it would probably be written "$g(z)={{z}^{2}}+2z-4$", using the variable $z$. That is by
+<a href="MMVarMeanings.htm#convention">convention</a>.</li>
+        <li>Two functions given by <b>differ&shy;ent</b> formulas may be the same function. If you define $f:\mathbb{R}\to\mathbb{R}$  by $f(x)=x^2+2x-4$ and $g:\mathbb{R}\to\mathbb{R}$ by
+        $g(x)=(x+1)^2-5$
+        then $f$ and $g$ are the <i><b>same function</b></i>.</li>
+</ul>
+
+<h3>Algorithm</h3>
+
+<p>You may define a function using an <a href="http://en.wikipedia.org/wiki/Algorithm"><b>algorithm</b></a>, which to start with you can think of as  a computer program that calculates the function's value at every input.
+</p>
+
+<p>One example most everyone sees in high school or college is
+<a href="http://en.wikipedia.org/wiki/Newton%27s_method">Newton's method</a>
+ for finding the root of a polynomial.  You can find examples on the web of programs implementing Newton's method in
+
+<a href="http://deadline.3x.ro/newtoncode.html">C</a> and
+<a href="http://mathworld.wolfram.com/NewtonsMethod.html">Mathematica</a>
+(and  dozens of other languages).</p>
+
+<p>If you think more about this idea, you run into subtleties:</p>
+<ul>
+
+
+
+<li>The program may fail or run forever on some inputs. This is true of Newton's method.
+
+<li>Are two programs in differ&shy;ent languages that "do the same thing" the "same algorithm"?</li>
+
+<li>Are two programs that give the same output for each input the "same algorithm"?</li>
+
+<li>"Give the same output" and "do the same thing" are not the same thing!</li>
+
+</ul>
+
+
+<h3>Geometric definition</h3>
+
+   <p>The circumference function $C(r)$ could be defined using a <b>geometric definition</b> this way:  "$C(r)$ is the circumference of a circle with radius $r$".  Of course it can be given by a formula, too:  $C(r)=2\pi r$.
+</p>
+
+<p>Be clear that
+    <i><b>the geometric definition is just as good a definition as the formula is.</b></i>. It defines the function as
+<a href="MMRealDecimalRep.htm#exact">exactly</a>
+    as the formula $C(r)=2\pi r$ does, although of course if you don't know the formula, you have to do some reasoning to figure out what $f(3)$ is (for example).
+</p>
+<a name="barredarrownotation"></a>
+
+<h3>Barred arrow notation</h3>
+
+  <p>  Another naming technique is <b>barred arrow notation</b>.  If $E$ is some mathematical expression that has a definite value for each $x$ in the domain, then you can refer to the function  $ x\mapsto E $ without having to give it a name.
+
+     Barred arrow notation may not be familiar to you, but it is becoming more common.  Like the defining expression, it allows you to refer to a function without giving it a name, so it is a form of <a href="#anonymousnotation">anonymous notation</a>.</p>
+
+<h5>Example:</h5>
+    <p>
+	"The function  $ x\mapsto {{x}^{2}}+2$ is positive for all real numbers $x$."  Here $E$ is the expression  ${{x}^{2}}+2 $.
+</p>
+
+<p>I could also have written "The function $x\mapsto {{x}^{2}}+2:\mathbb{R}\to \mathbb{R}$ is always positive" using the barred arrow notation together with
+the <a href="#arrownotation">straight arrow notation</a>.
+</p>
+
+<center><table border='0'><tr><td>
+<p class='purpleprose'>
+The straight arrow goes from domain to codomain. The barred arrow goes from element of the domain to element of the codomain.
+</p></td></tr></table></center>
+
+<!--
+<center><table border="0"><tr><td>
+<p class='purpleprose'>Mathematical definitions are crisp:<br>
+something either is or is not an
+example, period</p></td>
+</tr>
+</table></center>
+-->
+<p>
+Since "$ x\mapsto {{x}^{2}}+2$" is the
+<a href="#funcname">name of a function</a>,
+you can use it to show a value at the input, for example,
+$(x\mapsto {{x}^{2}}+2)(3)=11$. This usage is not common, but it ought to be!
+
+</p>
+
+
+
+
+<h4>Use with parameters</h4>
+   <p> Using the barred arrow clears up ambiguity when the defining expression has
+<a href="MMParameters.htm">parameters</a>
+in it.</p>
+
+<h5>Example:</h5>
+   <p>Let $(x\mapsto {{x}^{2}}+yx+z):\mathbb{R}\to \mathbb{R}$.  This notation tells you that $x$ is the function variable and $y$ and $z$ are parameters. </p>
+
+     <p>Of course, if you had written, "Consider the function ${{x}^{2}}+ax+b$" the experienced reader will <b><i>assume you mean </i></b>
+that $x$ is the variable and $a$ and $b$ are parameters, because of the <a href="MMMoreLanguage.htm">convention</a> that $x$ is a variable and $a$ and $b$ are parameters.  The barred arrow notation does not depend on knowledge of
+conventions.
+ Even so, the <b><i>kind</i></b>
+ math writer would use $a$ and $b$ in the barred arrow version above: "Let $(x\mapsto {{x}^{2}}+ax+b):\mathbb{R}\to \mathbb{R}$. "</p>
+
+<h4>With finite functions</h4>
+   <p> A variant of barred arrow notation is to define functions on finite sets element by element.  For example the
+<a href="">finite function</a>
+$F$ could be defined by: $1\mapsto 3,\,\,\,2\mapsto 3,\,\,\,3\mapsto 2,\,\,\,6\mapsto 1$.</p>
+
+<a name="funcname"></a>
+
+
+
+<h2>The name of a function</h2>
+
+<p>
+    Functions may have <b>names</b>, for example "sine" or "the exponential function".
+    The name in English and the
+<a href="MMSymLang.htm">symbol</a>
+ for the function in the symbolic language may be differ&shy;ent; for example, "sine" is the name of the sine function, but in the <a href="MMSymLang.htm">symbolic language</a>
+it is called "sin".
+
+</p>
+
+<h3>Naming a function by a letter</h3>
+
+
+<p>A function may be named by a letter of
+<a href="MMAlphabets.htm"> some alphabet</a>, for temporary use in that particular section of text.
+</p>
+
+
+
+<h5>Examples:</h5>
+<ul>
+<li>A paragraph may begin,  "Let $ f:\mathbb{R}\to\mathbb{R} $ be the squaring function", then the name of the function <i>in that paragraph</i> (or perhaps in that section) is $f$.  The
+<b>value</b>
+of the function at $3$ is denoted by "$f(3)$", which in this example is $9$.</li>
+
+<li>"Let $ \phi :\mathbb{R}\to \mathbb{R} $ be a continuous function with no derivative at 0."  In this case, the letter $\phi$
+        (<a href="MMAlphabets.htm#greekalphabet">phi</a>) does not refer to a <i>specific</i> function such as the squaring function, but an unspecified function that is subject to the
+<a href="MMIntent.htm#constraint">constraint</a> that it has no derivative at $0$.</li>
+
+	<li> "Let  $ \psi (x)={{x}^{2}}-1 $ ".   $ \psi  $  is the letter <a href="MMGreekAlphabet.htm">psi.</a>
+This names the function and simultaneously gives a formula for calculating its value.
+</li>
+</ul>
+
+
+<p class='smallind'>Symbolic expressions that are <i>not</i> functions may also be given names. The expres&shy;sion "$E$" mentioned under <a href=#barredarrownotation>barred arrow nota&shy;tion</a> is an example. Using letters for naming functions and expressions are examples of <b>local identifiers.</b></p>
+
+
+
+<h3>Global names</h3>
+
+ <p>By
+<a href="MMVarMeanings.htm/#convention">convention</a>
+in particular subfields of math, some letters are assumed by
+<a href="MMVarMeanings.htm/#default">default</a>
+to be the names of certain
+ commonly used functions in that field.
+</p>
+
+
+<h5>Example:</h5>
+<p>An article about complex functions might refer to "the $\Gamma$ function"
+without defining it.  The author expects that the reader will know that it refers to a certain
+<a href="http://en.wikipedia.org/wiki/Gamma_function">well-known function</a>
+that generalizes the factorial function.  But nothing stops mathe&shy;maticians  from using "$\Gamma$" with other meanings, and they often do that.</p>
+<p class='smallind' >$\Gamma$ is the upper&shy;case form of the Greek letter <a href="MMAlphabets.htm/#greekalphabet">gamma</a></p>
+
+<a name="namefuncformula"></a>
+
+
+<h3>Naming a function by its value at  $x$</h3>
+   <p> It is common to refer to a function that has been named  $ \phi  $  as  "$ \phi  (x)$" (of course some other variable may be used instead of  $x$). This is used with functions of more than one variable, too.</p>
+
+<p class='smallind' >For functions given by formulas, this notation has the value of telling you what letter will be used  for the input variable.  Barred arrow notation also has this property.</p>
+
+<h5>Examples:</h5>
+ <ul>
+	<li>"Let $h(x)$ be a continuous function."</li>
+<li>
+"$ \sin x $  is periodic."
+</li>
+</ul>
+
+
+
+<p>This usage is very widespread, but strict writers would prefer "Let $h$ be a continuous function" and "The sine function is bounded".
+I recommend the strict practice: "$ \sin x $" is strictly speaking not the name of a function, but an expression denoting its value at $x$.</p>
+
+<p class=smallind>Abstractmath does not always follow this strict practice.</p>
+
+<a name="formulaasnameoffunction"></a>
+<h3>Formula or equation as name of a function</h3>
+
+<p>A function may be referred to by using its
+<a href="MMFuncSpec.htm/#formula">defining expression</a>
+or defining equation. This is common in calculus books.</p>
+
+<h5>Example:</h5>
+   <p> "The derivative of  $ {{x}^{3}} $ is always nonnegative."</p>
+
+<h5>Example:</h5>
+
+<p>Very often the defining <i>equation</i> is used:
+    "The derivative of  $ y={{x}^{3}} $ is always nonnegative."
+If you analyze this example carefully, you see that it is literally nonsense.   The equation  $ y={{x}^{3}} $  is a <i>statement</i>.  How can a statement have a derivative?  Many mathe&shy;maticians <span class='purple'><b>Frown Fiercely</b></span> at this usage, but it is ubiquitous in math classrooms.
+<a name="anonymousnotation"></a>
+</p>
+
+<h3>Anonymous notation</h3>
+
+<p>
+Using barred arrow notation ("the function  $x\mapsto {{x}^{2}}+2x+5 $") or the defining expression ("the function  $ {{x}^{2}}+2x+5 $ ") to refer to a function are two examples of <b>anonymous notation</b> for functions. This means <b><i>no letter or word has been chosen to be a name for the function,</i></b> which is desirable if you expect to refer to it only once or twice.
+</p>
+   <p> Another anonymous notation used in theoretical computing science is <a href="http://en.wikipedia.org/wiki/Lambda_calculus">lambda notation</a>, where you would refer to the same function as  $\lambda x.{{x}^{2}}+2x+5 $. This usage is unfamiliar to most mathe&shy;maticians outside computing science.
+</p>
+
+<p class='smallind' >Anonymous notation is used for many kinds of math objects other than func&shy;tions, for example <a href="MMSetNotation.htm#setbuildernotation">set&shy;builder nota&shy;tion</a>,
+ and the usual nota&shy;tion for
+<a href="http://en.wikipedia.org/wiki/Matrix_%28mathematics%29">
+matrices.</a>
+</p>
+
+<a name="value"></a>
+<h2>Notation for the value of a function </h2>
+
+<p>
+    In most math texts and on this website, the value of a function  $ \phi  $ at an input $x$ is written  $ \phi (x) $.  For example, if  $ \phi  $ is the squaring function,  $ \phi (3)=9 $. (<a href="#prefix">prefix notation</a>, or "writing functions on the left"). But there are several other common ways to write the value of a function:
+</p>
+<ul>	
+	<li> Factorial function: $x!$ (<a href="#postfix">postfix notation</a>, or "writing functions on the right").{/li>
+
+
+<li>Absolute value: $ \left| x \right| $ (<a href="#outfixnotation">outfix notation</a>).</li>
+
+     <li> Addition: $x + y$ (<a href="#infixnotation">infix notation</a>).</li>
+
+	<li> Time derivative: $ \dot{x} $  (over the $x$).
+</li>
+
+<li>Square root: $ \sqrt{x} $ (to the left and over the $x$).</li>
+</ul>
+
+<p>	
+	This section describes the major possibilities in some detail.
+
+</p>
+
+<a name="prefixnotation"></a>
+<h3>Prefix notation</h3>
+
+   <p> An
+<a href="MMSymLang.htm">expression</a>
+  is in <b>prefix notation</b> if the function symbols are written on the left of the input.  This may be referred to as "writing functions on the left". This is the <i><b>common way we write function values</b></i>.</p>
+
+ <!--  We write $f(x)$ for an arbitrary function of one variable, and we write $\sin x$, $\log\,x$ or $\log(x)$, and so on.  This includes functions of more than one variable if the function is written with a letter.
+ -->
+	
+<h4>Parentheses around the input</h4>
+ <p>The traditional
+<a href="MMSymLang.htm">math symbolic language</a>
+has certain conventions about prefix notation.
+</p>
+<ul>
+<li>
+Most functions are written with the function named followed by the input name inside
+<a href="MMDelimiters.htm">parentheses.</a>
+</li>
+  <li>
+    It is customary to omit parentheses around the argument for trig functions such as "sin" and often for
+<a href="MMGlossaryL.htm">log</a>
+functions, so we may write "$\sin \pi$" or "$\log 2$".
+   </li>
+ <li>
+	This includes  functions of two or more variables when the function name is written with a letter, as in "$f(3,5)$".
+For example, let  $ f(x,y)={{x}^{2}}+2{{y}^{2}}$.  Then  $ f(3,5)=59 $.  Note that $f(3,5)\neq f(5,3)$.
+</li>	
+	<li> Many mathematical writers omit the parentheses in other situations too, writing "fx" instead of "f(x)". In their notation,     "$fx$" does not mean "$f$ times $x$" and "$\sin x$" does not mean "$\sin$ times $x$".  (This is
+<a href="#Polishnotation">Polish notation</a>.)
+</li>
+</ul>
+
+   <center><table border="0"><tr><td>
+<p class='purpleprose'>
+Don't  confuse multiplication<br> with prefix notation without parentheses.
+</p></td></tr></table></center>
+
+<p class='smallind' >Pascal and many other computer languages require parentheses around <i><b>all</b></i> arguments to functions. Mathematica requires
+<a href="MMDelimiters.htm/#squarebracket">square brackets</a>
+and in fact reserves square brackets for that use.</p>
+
+<a name="infixnotation"></a>
+
+<h3>Infix notation</h3>
+<p><b>Infix notation</b> is used for functions of two variables.  You write the name of the function <i><b>between the variables</b></i>.  Many functions denoted by symbols (as opposed to letters)  are normally written this way, for example $x + y$ or $3/5$.
+</p>
+
+<ul>
+
+<li>
+The expression "$x + y$" written in prefix notation would be "$+(x,y)$".
+</li>
+
+<li>$(x+y)+z$ would be $+(+(x,y),z)$ and $x+(y+z)$ would be $+(x,+(y,z))$. Since addition is <a href="http://en.wikipedia.org/wiki/Associative">associative</a>, $(x+y)+z=x+(y+z) $, which in infix notation is normally written $x+y+z$.
+</li>
+
+<li>In many programming languages that use prefix notation, you may write $+(x,y,z)$ and similarly for other associative operations</li>
+
+<li>Subtraction is not associative, and as a result an expression such as $x-y-z$ is ambiguous; it must be written either $(x-y)-z$ or $x-(y-z)$.
+</li>
+</ul>
+<a name="juxtaposition"></a>
+
+<h4>Juxtaposition</h4>
+
+
+  <p> A special case of infix notation is <b>juxtaposition</b> or <b>concatenation</b>, which means writing <i>nothing</i> between two variables.</p>
+
+ <ul>
+   <li>In standard algebraic notation, we write the  product of numbers $x$ and $y$ as "$xy$".  This is used only for variables represented by single <i>letters</i>, not digits:  "23" does not mean 2 times 3.</li>
+
+   <li>If $f$ and $g$ are composable functions, the <a href="http://en.wikipedia.org/wiki/Composition_of_functions">composite</a>
+is commonly written "$gf$".</li>
+
+<li>In an algebraic structure, a binary operation may be written by juxtaposition. This is the default notation for the multiplication in a <a href="https://en.wikipedia.org/wiki/Ring_(mathematics)">ring</a> or <a href="https://en.wikipedia.org/wiki/Field_(mathematics)">field</a>, and it is the most common notation for the binary operation that defines a <a href="https://en.wikipedia.org/wiki/Monoid">monoid</a> or a <a href="https://en.wikipedia.org/wiki/Group_(mathematics)">group</a>.</li>
+</ul>
+
+<a name="multiplication"></a>
+
+<h4>Multiplication  </h4>
+   <p> Multiplication has many notations:</p>
+<ul>
+<li>   $ \times  $  as in  $ 3\times 5 $  or  x  $ \times  $ y.  But this symbol means vector product when put between 3-dimensional vectors.  More
+<a href="MMOtherSymbols.htm">here</a></li>
+
+<li>
+Juxtaposition, as mentioned above.</li>
+<li>
+	Centered dot as in  "$ 3\cdot 5 $"  or  "$ x\cdot y $".
+</li>
+
+<a name="asterisk"></a><a name="star"></a>
+<li>
+	Asterisk as in  "$ 3\star 5 $"  or  "$ x\star y $" (mostly in programming languages).  Variables in programming languages tend to have multiletter names, and juxtaposition doesn't work with them.
+    </li>
+	
+<li><a href="/Word%20Press/?p=1773">Blank space</a>, as in "3 5"  or "$x\ y$" (in Mathematica).</li>
+</ul>
+
+<h4>Notes</h4>
+
+<ul>	
+<li><a href="http://en.wikipedia.org/wiki/Mathematica">Mathematica</a>
+allows you to write any function of two variables between the arguments, but if its name is a string made up of letters, you have to mark it with
+<a href="MMOtherSymbols.htm">tildes</a></li>
+
+
+<li>
+Infix notation is also used for
+<a href="MMRelationsBasics.htm">binary relations</a>.
+</li>
+
+<li>See also <a href="MMGlossary.htm#multiplication">Multiplication</a> in the Glossary.</li>
+
+</ul>
+
+<a name="postfix"></a><a name="postfixnotation"></a>
+	
+	
+<h3>Postfix notation</h3>
+
+
+
+<p>
+    Using <b>postfix notation</b>, you write the name of the function after its input.  Most authors write functions of one variable in prefix notation, but some algebraists use postfix notation.  Postfix notation may be  called "writing functions on the right".</p>
+
+
+
+
+<h5>Examples</h5>
+
+<ul>
+<li>The expression $f(x)$ (which is in prefix notation) would be written $(x)f$ or $xf$ in postfix notation.  The version without parentheses is much more common.</li>
+
+ <li>The symbol "!" denoting the factorial function is normally written in postfix notation.
+    </li>
+	
+	 <li>The expression $x+y$ in postfix notation is $(x, y)+$</li>
+</ul>
+
+<p class='smallind' >During the 1970's I wrote several papers using postfix notation.  Many people complained.  So I stopped doing so.  On the other hand, the
+<a href="http://www.cwru.edu/artsci/math/wells/pub/pdf/AGEPackage.pdf">paper I wrote</a>
+that got the most citations of my whole career was one of those papers.  On the <i>other</i> other hand, at least three authors rewrote my proof$\ldots$</p>
+
+<h4>Polish notation</h4>
+
+<p>When the traditional
+<a href="#infixnotation">infix notation</a>
+is used for the basic operations of arithmetic, you have to use <i>parentheses</i> to distinguish between certain expressions.  For example,  $ a+bc $ and  $\left( a+b \right)c $  give differ&shy;ent values for most choices of numbers $a$, $b$, $c$.
+</p>
+
+
+
+
+<p>When binary operations are written in prefix or postfix notation, <i>you don't need parentheses</i>.  This is exhibited in the table below, in which I use  $\ast $  for multiplication because the traditional juxtaposition notation doesn't work for prefix and postfix notation.  (Think about it).
+</p>
+
+<p><table border="1"  width=300" align="center">
+  <tr><!-- Row 1 -->
+     <td><p class=small><p class=small><i>Infix</i></p></p></td><!-- Col 1 -->
+     <td><p class=small><i>Prefix</i></p></td><!-- Col 2 -->
+     <td><p class=small><i>Postfix</i></p></td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td><p class=small>$a + b \ast c$</p></td><!-- Col 1 -->
+     <td><p class=small>$+ a \ast b\,\, c$</p></td><!-- Col 2 -->
+     <td><p class=small>$a\,\, b\,\, c \ast +$</p></td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td><p class=small>$(a + b)\ast c$</p></td><!-- Col 1 -->
+     <td><p class=small>$\ast+ a\,\, b\,\, c$</p></td><!-- Col 2 -->
+     <td><p class=small>$a\,\, b + c \ast$</p></td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td><p class=small>$a\ast b + c$</p></td><!-- Col 1 -->
+     <td><p class=small>$+\ast a\,\, b\,\, c$</p></td><!-- Col 2 -->
+     <td><p class=small>$a\,\, b \ast c +$</p></td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td><p class=small>$a \ast (b + c)$</p></td><!-- Col 1 -->
+     <td><p class=small>$\ast\,\, a + b\,\, c$</p></td><!-- Col 2 -->
+     <td><p class=small>$\,\,a\,\, b\,\, c + \ast$</p></td><!-- Col 3 -->
+  </tr>
+</table></p>
+
+
+
+<p>
+	Prefix notation without parentheses is called <b>Polish notation</b> and postfix notation without parentheses is called <b>reverse Polish notation</b>.
+</p>
+
+	<p>The programming language
+<a href="http://en.wikipedia.org/wiki/Lisp">Lisp</a>
+uses a form of Polish notation and the languages
+<a href="http://en.wikipedia.org/wiki/Forth_(programming_language)"> Forth</a>
+and
+<a href="http://en.wikipedia.org/wiki/PostScript">PostScript</a>
+ use reverse Polish notation exclusively.  <i>Most</i> computer languages use infix notation, which computer people call <b>algebraic notation</b>.
+</p>
+<p class='smallind' >Polish notation is named after the eminent Polish logician
+<a href="http://en.wikipedia.org/wiki/Jan_ukasiewicz">Jan
+&#0321;ukasiewicz</a>, who invented the notation in the 1920's for use in logic.   The terminology "reverse Polish notation" is a natural modification of this phrase and is not an ethnic slur.</p>
+
+<a name="outfixnotation"></a>
+
+<h3>Outfix notation</h3>
+
+   <p> A function is displayed in <b>outfix notation</b> (also called <b>matchfix notation</b>) if its
+<a href="MMGlossary.htm#symbol">symbol</a>
+consists of characters (letters, digits and the like) or expressions put on <i>both sides</i> of the name of the input to the function (the
+<a href="MMFuncSpec.htm/#input">argument</a>). The pair of characters, one for each side, are called
+<a href="MMDelimiters.htm">delimiters</a>.
+</p>
+
+<h5>Examples</h5>
+<ul>
+
+	<li>
+	The <b>absolute value</b> of a number $r$ is denoted by  $ \left| r \right| $. The two delimiters are identical vertical lines.
+ </li>
+
+ <li>
+<a href="http://en.wikipedia.org/wiki/Inner_product_space">Inner products</a>
+on vector spaces may be denoted by
+$\left\langle v,\,\,w \right\rangle$.
+</li>
+
+ <li>
+	 The notation $(a, b)$ may denote any one of several functions, discussed in the
+<a href="MMDelimiters.htm">abmath article on delimiters.</a>.
+ The delimiters are "(" (left) and ")" (right).
+    </li>
+	
+	<li>
+	The
+	"<a href="http://en.wikipedia.org/wiki/Floor_and_ceiling_functions">greatest integer</a> in a real number	 $x$", or the <b>floor</b> of $x$, is sometimes denoted by  $\left\lfloor x \right\rfloor$.  For example,$ \left\lfloor \pi  \right\rfloor =3$ and $ \left\lfloor -1.5 \right\rfloor =-2$ (not $-1$!).
+</li>
+
+</ul>
+
+<h3>Other notation styles</h3>
+
+<ul>
+
+<li>The <a href="http://en.wikipedia.org/wiki/Inner_product_space"><b>bra-ket</b> notation</a> for the inner product of two vectors $v$ and $w$ is "$ \left\langle  v | w \right\rangle  $". This combines infix and outfix notation.
+
+</li>
+
+
+<li>
+The definite inte&shy;gral  $\int_{a}^{b}f(x)\,dx$  is a function that takes two num&shy;bers $ a$ and $b$ and a function $f$ and gives you a number.
+So the way we write the definite integral can be seen as a fancy way of writing a function of three variables.
+If we call this function "Int" and write it in
+<a href="#prefixnotation">prefix notation</a>, we could say
+   \[\text{Int}(a,b,f)=\int_{a}^{b}{f(x)\,dx}\]
+   For example,
+    \[\text{Int}(0,\pi,\text{sin}) =\int_{0}^{\pi }{\sin \,x\,dx}=2\]
+</li><p class='small' >Functions like the integral  whose inputs include func&shy;tions are almost always called <b>operators</b>. Note that the variable $x$ does not appear in the list of arguments for Int.  That is because it is a
+<a href="http://en.wikipedia.org/wiki/Bound_variable">dummy variable.</a></p>
+
+
+<a name="funconindexset"></a>
+<li>
+    Any <b>list</b>  $ \left( {{a}_{1}},\,{{a}_{2}},\,{{a}_{3}},\,... \right) $ can be thought of as a <a href="http://en.wikipedia.org/wiki/Tuple#Tuples_as_functions">function on its index set</a>.   For example, the ordered triple \[ \left( {{a}_{1}},\,{{a}_{2}},\,{{a}_{3}}\right)=(3, 5,0)\] has index set  $\{1,\,2,\,3\}$, and thought of as a function it is \[f:\{1,2,3\}\to\{0,3,5\}\] defined by  $f(1):=3$, $f(2):=5$, $f(3):=0$.  In <a href="#barredarrownotation">barred arrow notation</a> the function  is \[1\mapsto 3, 2\mapsto 5, 3\mapsto 0\]
+</ul>
+<a name="nameandvalue"></a>
+
+<h2>Name and value</h2>
+
+  <p> In
+<a href="MMMathEnglish.htm">math English</a>,  those who use prefix notation (the usual notation) would say that the value of a function $f$ at an input $c$ ($f(c)$ in the
+
+<a href="MMSymLang.htm">symbolic language</a>
+)
+  is "$f$ of $c$".   We  pronounce $\sin x$ as "sine of $x$".
+</p>
+    <p>Some very common functions have a more complicated naming system.
+</p>
+
+<a name="commonarithmeticoperations"></a>
+
+<h3>Common arithmetic operations</h3>
+<p>
+    First we look at addition, subtraction, multiplication and division.
+</p>
+<ul>
+	<li>The <b>procedure</b> for carrying out the operation has a <b>name</b>, for example <b>addition</b>.</li>
+
+	<li>The <b>verb</b> that describes carrying out the operation may be a differ&shy;ent word.  For example, we "<b>add</b> $3$ and $4$" to get $7$.</li>
+
+	<li>The <b>value</b> of the function at an input has another name.   For example we say, "The <b>sum</b> of 3 and $4$ is $7$" (not "the addition of $3$ and $4$.")</li>
+
+	<li>The operation is denoted by one or more <b>symbols</b>.  For addition, the symbol is "$+$".</li>
+
+	<li>The <b>symbol</b> has a name.  The name of the symbol "$+$" is <b>plus</b>.
+</li>
+</ul>
+
+<p>	So if you <i><b>add</b></i> $3$ and $4$, you get $7$, which you say is the <i><b>sum</b></i> of $3$ and $4$.  If you write the result of the <i><b>addition</b></i>, you write  $3+4$ , which you <i>pronounce</i> "$3$ <i><b>plus</b></i> $4$".
+The table shows these details for the common arithmetic functions.</p>
+
+<br>
+
+
+<table border="1"  width=500pt"  align="center">
+  <tr><!-- Row 1 -->
+     <td><p class=small><p class=small><p class=small><i>function</i></p></p></p></td>
+     <td><p class=small><p class=small><p class=small><i>verb</i> (Note 1)</p></p></p></td>
+     <td><p class=small><p class=small><p class=small><i>symbol</i></p></p></p></td>
+     <td><p class=small><p class=small><p class=small><i>symbol name</i></p></p></p></td>
+     <td><p class=small><p class=small><p class=small><i>value</i></p></p></p></td>
+  </tr>
+  <tr><!-- Row 2 -->
+     <td><p class=small><p class=small><p class=small>addition</p></p></p></td>
+     <td><p class=small><p class=small><p class=small>add</p></p></p></td>
+     <td><p class=small><p class=small><p class=small>$+$</p></p></p></td>
+     <td><p class=small><p class=small><p class=small>plus</p></p></p></td>
+     <td><p class=small><p class=small>sum</p></p></td>
+  </tr>
+  <tr><!-- Row 3 -->
+     <td><p class=small><p class=small>subtraction</p></p></td>
+     <td><p class=small><p class=small>subtract</p></p></td>
+     <td><p class=small><p class=small>$-$</p></p></td>
+     <td><p class=small><p class=small>minus</p></p></td>
+     <td><p class=small><p class=small>difference</p></p></td>
+  </tr>
+  <tr><!-- Row 4 -->
+     <td><p class=small><p class=small>multiplication</p></p></td>
+     <td><p class=small><p class=small>multiply</p></p></td>
+     <td><p class=small><p class=small>(Note 2)</p></p></td>
+     <td><p class=small><p class=small>times</p></p></td>
+     <td><p class=small><p class=small>product</p></p></td>
+  </tr>
+  <tr><!-- Row 5 -->
+     <td><p class=small><p class=small>division</p></p></td>
+     <td><p class=small><p class=small>divide</p></p></td>
+     <td><p class=small><p class=small>(Note 3)</p></p></td>
+     <td><p class=small><p class=small>(Note 3)</p></p></td>
+     <td><p class=small><p class=small>quotient</p></p></td>
+  </tr>
+</table>
+</p>
+
+
+<h4>Notes</h4>
+
+<p><b>Note 1</b>. These verbs use different prepositional phrases:</p>
+
+<ul>
+<li> "Add $2$ and $3$" or  "Add $2$ to $3$" means "$2+3$".
+</li>
+
+<li>"Subtract $2$ from $3$" means $3-2$ (note the reversal).
+</li>
+
+<li> "Multiply $2$ by $3$" means $2\times 3$.</li>
+
+<li>"Divide $2$ by $3$" means $2/3$ or $3\div 2$.</li>
+
+<li>But "Divide $2$ <i>into</i> $3$ means $3/2$ or $2\div  3$ (!).</li>
+
+</ul>
+
+<p><b>Note 2</b>
+<ul>
+<li>Multiplication may be denoted by the asterisk  as in $a\ast b$, by concatenation as in $ab$ or by the centered dot as in $a\cdot b$.
+</li>
+
+<li>
+The expressions "$a\cdot b$" and "$a\times b$" are both pronounced "a <b>times</b> b" when the symbol denotes numerical multiplication or multiplication of matrices.
+</li>
+
+ <li>The expression "$a\cdot b$" is pronounced "a <b>dot</b> b" when $a$ and $b$ are vectors, and "$a\times b$" is pronounced "a <b>cross</b> b" when $a$ and $b$ are three-dimensional vectors.  </li>
+
+<li>Both symbols are used with other meanings, in some cases with other pronunciations, as well.</li>
+</ul>
+
+<p><b>Note 3</b> </p>
+<ul>
+
+<li>Either symbol "$/$" or "$\div$" may be called "the division symbol".
+</li>
+
+<li>
+ Either phrase  "$a/b$" or "$a\div b$" is <i>pronounced</i> "a divided by b", and "$a/b$" is also pronunced "a over b".
+</li>
+
+<li>The symbol "$\div$" as far as I know does not have a common name like "plus" for "$+$".  The symbol "$/$" is often called <b>slash</b>, but usually "$a/b$" is pronounced "a over b".</li>
+</ul>
+<p>
+Note that for addition and subtraction, the name of the symbol is also the way you pronounce it in an expression: For example, "$+$" is pronounced "plus" and "$a+b$" is pronounced "a plus b".</p>
+
+
+<h4>Remarks</h4>
+    <p>In the remarks below, "shouldn't" means "if you do, people may look at you funny."
+ Some students do say these things occasionally.</p>
+
+<ul>
+<li>
+<i>You shouldn't use the operation name for the result.</i>  For example, you shouldn't say "the addition of 3 and 5" (say "sum") or "the differ&shy;entiation of f" (say "derivative".
+</li>
+	<li>
+	<i>You shouldn't use the symbol name for the result.</i>  For example, you shouldn't say "the times of 3 and 5"  (say "product").
+</li>
+</ul>
+
+
+<h3>Don't lean on a vertical line</h3>
+
+<p>The expression "$a | b$" <i>doesn't refer to a binary operation</i> but I will mention it here anyway, since it causes enormous confusion in number theory and discrete math classes.</p> <ul><li>"$a | b$" is a <b>sentence</b>, meaning "a divides b with no remainder" and <i>is used only for integers.</i></li><li>In other words, "$a | b$" means <b>$b/a$ is an integer.</b></li></ul>
+
+  <h5>Examples</h5>
+  <ul>
+  <li>"$3|6$" is <i>true</i> because $6/3=2$, an integer.</li>
+<li>"$3|5$" is <i>false</i> because $5/3$ is <i>not</i> an integer.</li></ul>
+
+<center><table border='0'><tr><td>
+<p class='purpleprose'>
+"$a/b$" is a number<br>
+"$a|b$" is a <i>statement which is either true or false</i>.
+</p></td></tr></table></center>
+
+<h4>Composition of functions</h4>
+
+<ul>
+<li>
+The <a href="http://en.wikipedia.org/wiki/Composition_of_functions">composite</a> of functions $f:A\to B$ and $g:B\to C$ may be written  $(g\circ  f) $ or $gf$.  The value
+at an input $x$  is most commonly written $g(f(x))$.
+</li>
+<li>	
+	 When you pronounce  $ g\circ  f$ you can say "$g$ composed with $f$" or "the composite of $g$ and $f$". It really means "do $f$ then $g$". I have heard people say "$f$ then $g$" or "$f$ followed by $g$".
+</li>
+
+<li>Watch out: $gf(x)$ can mean either $(g\circ f)(x))$ or $g(x)f(x)$ in a situ&shy;ation where elements in the domain and codomain can be multiplied (for example if they are real numbers). For example, if $f(x)=x+1$ and $g(x)=x^2$, then $gf(x)$ can mean either $(x+1)^2$ (the composite) or $x^2(x+1)$ (the product).</li>  
+
+<li>Also there is a horrendous problem with people who want to write $f\circ  g$ instead of $g\circ  f$.
+<a href="http://en.wikipedia.org/wiki/Composition_of_functions#Alternative_notations">Wikipedia</a>
+dis&shy;cusses this.</li>
+
+<li>	
+	 Many writers blur the distinction between "composition" and "composite" and refer to  $ g\circ  f$  as the "composition" of $g$ and f.  I personally hate this usage, but see
+<a href="MMAttitude.htm#howlanguagechanges">how languages change.</a>
+</li>
+</ul>
+
+
+<h3>Differ&shy;entiation</h3>
+
+<p>Differ&shy;entiation is an operator that takes a function to its deriv&shy;ative.
+</p>
+
+<ul>
+<li>The name of the <i><b>operation</b></i> is "differ&shy;entiation".
+</li>
+<li>
+The <i><b>verb</b></i> is "differ&shy;entiate", but you can also say "take the deriv&shy;ative of".
+</li>
+
+<li>The <i><b>result</b></i> of differ&shy;entiating $f$ is called the <b>deriv&shy;ative</b> of $f$.</li>  
+
+<li>As you probably know, there are bunches of ways of writing it.  $Df$, $\frac{df}{dx}$, and $f'$ are some of them.</li>  
+
+<li>If $x$ is a function of $t$ you can write the deriv&shy;ative of $x$ with respect to $t$ as "$\dot{x}$".
+</li>
+</ul>
+
+<br />
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ </body></html>

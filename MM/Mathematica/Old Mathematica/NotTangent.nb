@@ -1,0 +1,299 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9380,        290]
+NotebookOptionsPosition[      8668,        260]
+NotebookOutlinePosition[      9036,        276]
+CellTagsIndexPosition[      8993,        273]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ptsl", "[", 
+    RowBox[{"m_", ",", "p_", ",", "x_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"m", " ", 
+      RowBox[{"(", 
+       RowBox[{"x", "-", 
+        RowBox[{"p", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}], "+", " ", 
+     RowBox[{"p", "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}], "//", "Simplify"}]}], ";", 
+  RowBox[{
+   RowBox[{"csp", "[", "x_", "]"}], ":=", 
+   RowBox[{"Piecewise", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"x", "-", 
+             RowBox[{"1", "/", "2"}]}], ")"}], "^", "2"}]}], "+", 
+         RowBox[{"7", "/", "4"}]}], ",", 
+        RowBox[{"x", "<", "0"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"x", "+", 
+             RowBox[{"1", "/", "2"}]}], ")"}], "^", "2"}]}], "+", 
+         RowBox[{"7", "/", "4"}]}], ",", 
+        RowBox[{"x", "\[GreaterEqual]", "0"}]}], "}"}]}], "}"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.527340642650625*^9, 3.527340646885*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"csp", "[", "0", "]"}]], "Input",
+ CellChangeTimes->{{3.527510914879813*^9, 3.5275109175047626`*^9}}],
+
+Cell[BoxData[
+ FractionBox["3", "2"]], "Output",
+ CellChangeTimes->{3.5275109185984917`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"csp", "[", "x", "]"}]], "Input",
+ CellChangeTimes->{{3.5275110485647464`*^9, 3.5275110499709697`*^9}}],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {
+        RowBox[{
+         FractionBox["7", "4"], "-", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", 
+             FractionBox["1", "2"]}], "+", "x"}], ")"}], "2"]}], 
+        RowBox[{"x", "<", "0"}]},
+       {
+        RowBox[{
+         FractionBox["7", "4"], "-", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox["1", "2"], "+", "x"}], ")"}], "2"]}], 
+        RowBox[{"x", "\[GreaterEqual]", "0"}]},
+       {"0", 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{
+       "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}, "RowsIndexed" -> {}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}},
+   GridBoxItemSize->{
+    "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+     "RowsIndexed" -> {}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}, "RowsIndexed" -> {}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.527511051830309*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"csp", "[", "x", "]"}], "//", "TeXForm"}]], "Input",
+ CellChangeTimes->{{3.527511028283886*^9, 3.5275110397211666`*^9}}],
+
+Cell["\<\
+\\begin{array}{cc}
+ \\{ & 
+\\begin{array}{cc}
+ \\frac{7}{4}-\\left(x-\\frac{1}{2}\\right)^2 & x<0 \\\\
+ \\frac{7}{4}-\\left(x+\\frac{1}{2}\\right)^2 & x\\geq 0
+\\end{array}
+
+\\end{array}\
+\>", "Output",
+ CellChangeTimes->{3.527511040533651*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Show", "[", "\[IndentingNewLine]", 
+     RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"csp", "[", "x", "]"}], ",", 
+         RowBox[{"ptsl", "[", 
+          RowBox[{"m", ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1.5"}], "}"}], ",", "x"}], "]"}]}], 
+        "\[IndentingNewLine]", "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"0", ",", "3"}], "}"}]}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{"Blue", ",", "Red"}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "Small"}]}], "\[IndentingNewLine]", 
+      "]"}], "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"m", ",", "0"}], "}"}], ",", 
+      RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+   "]"}], "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`m$$ = -0.10599999999999998`, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`m$$], 0}, -1, 1}}, Typeset`size$$ = {
+    225., {112., 120.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`m$3504$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`m$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`m$$, $CellContext`m$3504$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{
+          $CellContext`csp[$CellContext`x], 
+          $CellContext`ptsl[$CellContext`m$$, {
+           0, 1.5}, $CellContext`x]}, {$CellContext`x, -1.5, 1.5}, 
+         PlotRange -> {{-1.5, 1.5}, {0, 3}}, PlotStyle -> {Blue, Red}, 
+         AspectRatio -> 1, ImageSize -> Small]], 
+      "Specifications" :> {{{$CellContext`m$$, 0}, -1, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{316., {166., 174.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`csp[
+         Pattern[$CellContext`x, 
+          Blank[]]] := 
+       Piecewise[{{-($CellContext`x - 1/2)^2 + 7/4, $CellContext`x < 
+           0}, {-($CellContext`x + 1/2)^2 + 7/4, $CellContext`x >= 
+           0}}], $CellContext`ptsl[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`p, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := 
+       Simplify[$CellContext`m ($CellContext`x - Part[$CellContext`p, 1]) + 
+         Part[$CellContext`p, 2]]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.527340654400625*^9}]
+}, Open  ]]
+},
+WindowSize->{715, 858},
+WindowMargins->{{174, Automatic}, {-48, Automatic}},
+Magnification->1.25,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1233, 40, 102, "Input"],
+Cell[CellGroupData[{
+Cell[1815, 64, 124, 2, 35, "Input"],
+Cell[1942, 68, 92, 2, 53, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2071, 75, 126, 2, 35, "Input"],
+Cell[2200, 79, 1989, 60, 93, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4226, 144, 154, 3, 35, "Input"],
+Cell[4383, 149, 254, 10, 180, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4674, 164, 1602, 40, 366, "Input"],
+Cell[6279, 206, 2373, 51, 360, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

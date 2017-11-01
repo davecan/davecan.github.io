@@ -1,0 +1,590 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Category Theory</title>
+<script type="text/javascript"  async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-11-04
+<a href="MMIntro.htm">Introduction to this website</a>    
+<a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+</pre><br />
+<p class=smallind><i>Category theory turns math inside-out. Definitions depend on nothing inside, but on everything outside. </i>-- John Cook</p>
+
+<h1>About this post</h1>
+
+<p>This is a draft of the first part of an article on category theory.</p>
+
+<p>During the last year or so, I have been monitoring the category theory questions on <a href="http://math.stackexchange.com/search?tab=newest&q=category">Math Stack Exchange</a>. Some of the queries are clearly from people who do not have enough of a mathematical background to understand basic abstract reasoning, for example the importance of <a href="MMDefs.htm">definitions</a> and the difficulties described in the abmath artice on <a href="MMDysfunctional.htm">Dysfunctional attitudes and behaviors</a>. Category theory has become important in several fields outside mathematics, for example computer science and database theory.</p>
+
+<p>This article is intended to get people started in category theory by giving a very detailed definition of "category" and some examples described in detail with an emphasis on how the example fits the definition of category. That's all the present version does, but I intend to add some examples of constructions and properties such as the dual category, product, and other concepts that some of the inquirers on Math Stack Exchange had great difficulty with.</p>  
+
+<p>There is no way in which this article is a proper introduction to category theory. It is intended only to give beginners some help over the initial steps of understanding the subject, particularly the aspects of understanding that cause many hopeful math majors to fall off the <a href="/Word%20Press/?tag=abstraction-cliff">Abstraction Cliff</a>.</p>
+
+<h1>About categories</h1>
+
+
+
+<p><span class=red><b>To be written.</b></span></p>
+
+<h1>Definition of category</h1>
+
+<p>A category is a type of <b><a href="MMMathStructure.htm">Mathematical structure</a></b> consisting of two types of <b>data</b>, whose relationships are entirely determined by some <b>axioms</b>. After the definition is complete, I introduce several example categories with a detailed discussion of each one, explaining how they fit the definition of category.</p>
+
+<a name="object"></a>
+<a name="arrow"></a>
+
+<h2>Axiom 1: Data</h2>
+
+<p class=blue>A <font color="#911B1B">category</font> consists of two types of data: <font color="#911B1B">objects</font> and <font color="#911B1B">arrows</font>.</p>
+
+<h3>Notes for Axiom 1</h3>
+
+<ul>
+
+<li>You will see in the section on <a href="#examplesofcategories">Examples of categories</a> that every definition of a category $\mathsf{C}$ starts by specifying what the objects of $\mathsf{C}$ are and what the arrows of $\mathsf{C}$ are. That is what Axiom I requires.</li>
+
+<li>An object of a category can be any kind of mathematical object. It does not have to be a set and it does not have to have elements.</li>
+
+<li>Arrows of a category are also called <b>morphisms</b>. You may be familiar with "homomorphisms", "homeomorphisms" or "isomorphisms", all of which are functions. <span class=purple>This does not mean that a "morphism" in an arbitrary category is a function.</span></li>
+
+</ul>
+
+<a name="domain"></a>
+<a name="codomain"></a>
+
+<h2>Axiom 2: Domain and codomain</h2>
+
+<p class=blue>Each arrow of a category has a <font color="#911B1B">domain</font> and a <font color="#911B1B">codomain</font>, each of which is an object of the category.</p>
+
+
+
+</ol>
+
+
+<h3>Notes for Axiom 2</h3>
+
+<ul>
+<li>The domain and the codomain of an arrow may or may not be the same object.</li>
+
+<li>Each arrow has only one domain and only one codomain.</li>
+<li>If $f$ is an arrow with domain $A$ and codomain $B$, that fact is typically shown either by the notation "$f:A\to B$" or by a diagram like this:</li>
+    
+<br /><div align="center"><img src="Mathematica/Category%20Theory/Arrowex2.gif" width="100" height="20" align="middle" alt="" title="" /></div>
+<br />
+
+<li><span class=purple>Warning: The notation "$f:A\to B$" is like that used for functions. This notation may be used in any category, but it does not imply that $f$ is a function or that $A$ and $B$ have elements.</span>
+</li>
+<li>For an arrow $f:A\to B$, the notation "$\text{dom}(f)$" refers to $A$ and "$\text{cod}(f)$" refers to $B$.</li>
+
+<li>For a given category $\mathsf{C}$, the collection of all the arrows with domain $A$ and codomain $B$ may be denoted by
+
+<ul>
+<li>"$\text{Hom}(A,B)$" or </li>
+
+<li>"$\text{Hom}_\mathsf{C}(A,B)$" or</li>
+
+<li>"$\mathsf{C}(A,B)$".</li>
+</ul>
+
+<a name="source"></a>
+<a name="target"></a>
+
+</li><li>Some newer books and articles in category theory use the name <b>source</b> for domain and <b>target</b> for codomain. This usage has the advantage that a newcomer to category theory will be less likely to think of an arrow as a function.</li> 
+
+</ul>
+
+<a name="composition"></a>
+<a name="composite"></a>
+
+<h2>Axiom 3: Composition</h2>
+<p class=blue>If $f$ and $g$ are arrows in a category for which $\text{cod}(f)=\text{dom}(g)$, as in this diagram:
+<div class=diagram align="center"><img src="Mathematica/Category%20Theory/Composablearrows.gif" width="180" height="102"  alt="" title=""/></div>
+<p class=axiomnoind>then there is a unique arrow with domain $A$ and codomain $C$ called the <font color="#911B1B">composite</font> of $f$ and $g$.</p>
+
+
+<h3>Notes for Axiom 3</h3>
+
+<ul>
+
+<li>The unique arrow required by Axiom 3 may be denoted by "$g\circ f$" or "$gf$". "$g\circ f$" is more explicit, but "$gf$" is much more commonly used by category theorists.</li>
+
+<li>Many constructions in categories may be shown by <b>diagrams</b>, like the one used just above.</li>
+
+<li>The diagram <div class=diagram align="center"><img src="Mathematica/Category%20Theory/Composite.png" width="180" height="102" alt="" title="" /></div> is said to <b>commute</b> if $h=g\circ f$.</li>
+
+<li> It is useful to think of $f$ followed by $g$ as a <b>path</b> in the diagram. Then a <a href="MMImagesMetaphors.htm">metaphor</a> for composition is: <span class=purple>Every path of length 2 has exactly one composite</span>.</li>
+
+<li>It is customary in some texts in category theory to indicate that a diagram commutes by putting a <b>gyre</b> in the middle:
+<div class=diagram align="center"><img src="Mathematica/Category%20Theory/Compositecirc.png" width="180" height="102" alt="" title="" /></div></li>
+
+<li>Note that the composite of the path that I described as "$f$ followed by $g$" is written as "$g\circ f$" or "$gf$", which seems backward. Nevertheless, the most common notation in category theory for the composite of "$f$ followed by $g$" is $gf$. Some authors in computer science write "$f;g$" for "$gf$" to get around this problem.</li>
+
+<li>The concept of category is an <a href="http://abstractmath.org/MM/MMOtherAspectsUnderstanding.htm#abstraction"><b>abstraction</b></a> of the idea of function, and the composition of arrows is an abstraction of the <a href="https://en.wikipedia.org/wiki/Function_composition"><b>composition of functions</b></a>.  It uses the same notation, "$g\circ f$". If $f$ and $g$ are set functions, then for an element $x$ in the domain of $f$, \[(g\circ f)(x)=g(f(x))\]</li> 
+
+<li class=purple>But in arbitrary category, it may make no sense to evaluate an arrow $f$ at some element $x$; indeed, the domain of $f$ may not have elements at all, and then the statement "$(g\circ f)(x)=g(f(x))$" is <font color="#911B1B">meaningless</font>.</li> 
+
+</ul>
+
+<a name="4a"></a><a name="4b"></a><a name="4c"></a><a name="4d"></a>
+<h2>Axiom 4: Identity arrows</h2>
+
+<ol type="a">
+
+<li class=axiom>For each object $A$ of a category, there is an arrow denoted by $\mathsf{id}_A$.</li>
+
+<li class=axiom>$\textsf{dom}(\textsf{id}_A)=A$ and $\textsf{cod}(\textsf{id}_A)=A$.</li>
+
+<li class=axiom>For any object $B$ and any arrow $f:B\to A$, the diagram<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Id1diagram.gif"  alt="" title="" /></div></p> commutes.</li>
+
+<li class=axiom>For any object $C$ and any arrow $g:A\to C$, the diagram<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Id2diagram.gif" alt="" title="" /></div></p> commutes.</li>
+
+</ol>
+
+<h3>Notes for Axiom 4</h3>
+
+<ul>
+
+<li>The fact stated in Axiom 4(b) could be shown diagrammatically either as<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/CategoryTerminal.gif" width="144" height="94" alt="" title="" /></div></p>or as<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/idarrow.gif" width="111" height="31" alt="" title="" /></div></p></li>
+<li>
+Facts (c) and (d) can be written in algebraic notation: For any arrow $f$ going <i><b>to</b></i> $A$,\[\textsf{id}_A\circ f=f\]and for any arrow $g$ coming <b><i>from</i></b> $A$,\[g\circ \textsf{id}_A=g\] </li>
+
+<li>There may be many arrows with domain and codomain both equal to $A$ (for example in the category <a href="#manyarrows">$\mathsf{Set}$</a>), but only one of them is $\textsf{id}_A$. It can be proved that $\textsf{id}_A$ is the <i>unique</i> arrow satisfying both (c) and (d) of the axiom.</li>
+
+</ul>
+
+<h2>Axiom 5: Associativity</h2>
+
+
+<ol type="a">
+
+<li class=axiom>If $f$, $g$ and $h$ are arrows in a category for which $\text{cod}(f)=\text{dom}(g)$ and $\text{cod}(g)=\text{dom}(h)$, as in this diagram:
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Threecomposablearrows.gif" alt="" title="" /></div></p>
+<p class=axiomnoind>then there is a unique arrow $k$ with domain $A$ and codomain $D$ called the <font color="#911B1B">composite</font> of $f$, $g$ and $h$.</p></li>
+
+<li class=axiom>In the diagram below, the two triangles containing $k$ must both commute.<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Threecompstage3.gif"  alt="" title="" /></div></p></li>
+
+</ol>
+
+<h3>Notes for Axiom 5</h3>
+
+<ul>
+
+<li>Axiom 5b requires that \[h\circ(g\circ f)=(h\circ g)\circ f\](which both equal $k$), which is the usual algebraic notation for <a href="https://en.wikipedia.org/wiki/Associative_property">associativity</a>.</li>
+
+<li>Note that the top two triangles commute by Axiom 3.</li>
+
+<li>The associativity axiom means that we can get rid of parentheses and write \[k=h\circ f\circ g\]just as we do for addition and multiplication of numbers.</li>
+
+
+<li>In my opinion the notation using categorical diagrams communicates information much more clearly than algebraic notation does. In particular, <span class=purple>you don't have to remember the domains and codomains of the functions -- they appear in the picture</span>. I admit that diagrams take up much more space, but now that we read math stuff on a computer screen instead of on paper, <span class=purple>space is free</span>.</li>
+
+</ul>
+
+<a name="examplesofcategories"></a>
+<h1>Examples of categories</h1>
+
+<p>For these examples, I give a detailed explanation about how they fit the definition of category.</p>
+
+<a name="myfin"></a>
+
+<h2>Example 1: MyFin</h2>
+
+<p>This first example is a small, finite category which I have named $\mathsf{MyFin}$ ("my finite category"). It is not at all an important category, but it has advantages as a first example.</p>
+
+<ul> 
+
+<li>It's small enough that you can see all the objects and arrows on the screen at once, but big enough not to be trivial.</li>
+
+<li><span class=purple>The objects and arrows have no properties other than being objects and arrows.</span> (Some of the other examples involve familiar math objects.)</li>
+
+<li>So in order to check that $\mathsf{MyFin}$ really obeys the axioms for a category, <span class=purple>you can use only the skeletal information given here.</span> As a result, you must <span class=redit>really understand the axioms!</span></li>
+
+</ul>
+
+<p class=purpleprose>A correct proof will be based on <span class=red>axioms and theorems</span>.<br />The proof can be suggested by your intuitions,<br />but intuitions are not enough.<br />When working with $\mathsf{MyFin}$ you won't have any intuitions! </p>
+
+<h3>A diagram for $\mathsf{MyFin}$</h3>
+<a name="myfindiagram"></a>
+
+<p>This diagram gives a <i>partial</i> description of $\mathsf{MyFin}$.</p>
+
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/myfin.gif"/></div></p>
+
+<p>Now let's see how to make the diagram above into a category.</p> 
+
+<h3>Axiom 1: Data</h3>
+
+<ul>
+
+<li>The objects of $\mathsf{MyFin}$ are $A$, $B$, $C$ and $D$.</li>
+
+<li>The arrows are $f$, $g$, $h$, $j$, $k$, $r$, $s$, $u$, $v$, $w$ and $x$.</li>
+
+<li>You can regard the letters just listed as <b>names</b> of the objects and arrows. The point is that at this stage <span class=purple>all you know about the objects and arrows are their names</span>.</li> 
+
+<li>If you prefer, you can think of the arrows as the actual arrows shown in the <a href=#myfindiagram>$\mathsf{MyFin}$ diagram</a>.</li>
+
+<li>Our definition of $\mathsf{MyFin}$ is an <b>abstract definition</b>. You may have seen multiplication tables of groups given in terms of undefined letters. (If you haven't, don't worry.) Those are also abstract definitions.</li>
+
+<li>Our other definitions of categories involve math objects you actually know something about.</li>
+
+</ul>
+
+
+<h3>Axiom 2: Domain and Codomain</h3>
+
+<ul>
+
+<li>The domains and codomains of the arrows are shown by the diagram above. </li>
+
+<li>For example, $\text{dom}(r)=A$ and $\text{cod}(r)=C$, and $\text{dom}(v)=\text{cod}(v)=B$.</li>
+
+</ul>
+
+<h3>Axiom 3: Composition</h3>
+
+<p class=purpleprose>Showing the <a href=#myfindiagram>$\mathsf{MyFin}$ diagram</a> does not completely define $\mathsf{MyFin}$. We must say what the composites of all the paths of length 2 are.</p>
+
+
+<ul>
+
+<li>In fact, most of them are forced, but two of them are not.</li>
+<li>We must have $g\circ f=r$ because $r$ is the only arrow possible for the composite, and Axiom 3 requires that every path of length 2 must have a composite.</li>
+
+<li>For the same reason, $h\circ g=s$.</li>
+
+<li>All the paths involving $u$, $v$, $w$ and $x$ are forced:</li>
+
+</ul><ul type=none>
+
+<a name="pees"></a>
+
+<li><b>(p1)</b> $u\circ u=u$, $v\circ v=v$, $w\circ w=w$ and  $x\circ x=x$.</li>
+
+<li><b>(p2)</b> $f\circ u=f$, $r\circ u=r$, $j\circ u=j$ and $k\circ u=k$. You can see that, for example, $f\circ u=f$ by opening up the loop on $f$ like this:<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/compositeques.png"/></div></p>There is only one arrow going from $A$ to $B$, namely$f$, so $f$ has to be the composite $f\circ u$.</li>
+
+<li><b>(p3)</b> $v\circ f=f$, $g\circ v=g$ and $s\circ v=s$.</li>
+
+<li><b>(p4)</b> $w\circ g=g$, $w\circ r=r$ and $h\circ w=h$.</li>
+
+<li><b>(p5)</b> $x\circ h=h$, $x\circ s=s$, $x\circ j=j$ and $x\circ k=k$.</li>
+
+
+
+<a name="onlyassoc"></a>
+<li>For $s\circ f$ and $h\circ r$, we have to choose between $j$ and $k$ as composites.  Since $s\circ f=(h\circ g)\circ f$ and $h\circ r=h\circ (g\circ f)$, Axiom 3 requires that we must chose <i>one</i> of $j$ and $k$ to be <i>both</i> composites.<p class=purpleprose>Definition: $s\circ f=h\circ r=j$.</p>If we had defined $s\circ f=h\circ r=k$ we would have a <i>different</i> category, although one that is "isomorphic" to $\mathsf{MyFin}$ (you have to define "isomorphic" or <a href="https://en.wikipedia.org/wiki/Isomorphism_of_categories">look it up</a>.)
+</li></ul> 
+
+
+<h3>Axiom 4: Identity arrows</h3>
+
+<ul>
+
+<li>It is clear from the <a href=#myfindiagram>$\mathsf{MyFin}$ diagram</a> that for each object there is just one arrow that has that object both as domain and as codomain, as required by <a href="#4b">Axiom 4b</a>.</li>
+
+<li>The requirements in <a href="#4c">Axioms 4c and 4d</a> are satisfied by statements <a href=#pees><b>(p1)</b> through <b>(p5)</b></a>.</li>
+
+</ul>
+
+
+<h3>Axiom 5: Associativity</h3>
+
+<ul>
+
+<li>Since we have <a href=#onlyassoc>already</a> required both $(h\circ g)\circ f$ and $h\circ(g\circ f)$ to be $k$, composition is associative.</li>
+
+</ul>
+
+<a name="integerdiv"></a>
+
+<h2>Example 2: IntegerDiv</h2>
+
+<ul>
+
+<li>This example uses familiar mathematical objects -- <a href="MMNaturalNumbers.htm#representations">positive integers</a>.</li> 
+
+<li><span class=purple>The arrows are not functions that can be applied to elements</span>, since integers do not have elements.</li>
+
+</ul>
+
+<h3>Axiom 1: Data</h3>
+
+<ul>
+
+<li>The objects of IntegerDiv are all the positive integers.</li>  
+
+<li>Suppose $m$ and $n$ are positive integers:</li>
+
+<ul>
+
+<li>If $m$ divides $n$, there is exactly one arrow from $m$ to $n$. I will call this arrow $\textsf{mdn}$. (This is my notation. There is no standard notation for this category.) For example there is one arrow from $2$ to $6$, denoted by $\textsf{2d6}$.</li>
+
+<li>If $m$ does not divide $n$, there is no arrow from $m$ to $n$.</li>
+
+</ul>
+
+</ul>
+
+
+
+<h3>Axiom 2: Domain and codomain</h3>
+
+<p>The arrow denoted by $\textsf{mdn}$ has domain $m$ and codomain $n$.</p> 
+
+<h5 class=red>Example</h5>
+
+<div align="center"><img src="Mathematica/Category%20Theory/integerdivarrowex1.png"  align="middle" alt="" title="" /></div>
+<br />
+
+
+<h5 class=red>Example</h5>
+
+<div align="center"><img src="Mathematica/Category%20Theory/integerdivarrowex2.png"  align="middle" alt="" title="" /></div>
+<br />
+
+<h5 class=red>Example</h5>
+
+<p><div align="center"><img src="Mathematica/Category%20Theory/integerdivarrowex3.png"  align="middle" alt="" title="" /></div></p> 
+
+<p class=noind>which may also be shown as <div align="center"><img align="middle" src="Mathematica/Category%20Theory/integerdivarrowexloop2.png" alt="" title="" /></div></p>
+<br />
+
+
+<h3>Axiom 3: Composition</h3>
+
+<p>The composite of</p> <p><div align="center"><img src="Mathematica/Category%20Theory/integerdivcomp.png"  align="middle" alt="" title="" /></div></p><p class=noind>must be $\textsf{rdt}$, since that is the only arrow with domain $r$ and codomain $t$.</p>
+
+<p>This fact can also be written this way: \[\mathsf{sdt}\circ\textsf{rds}=\textsf{rdt}\]</p>
+
+<h3>Axiom 4: Identity arrows</h3>
+
+<p>The composites</p><p><div align="center"><img src="Mathematica/Category%20Theory/idid1diagram.png" align="middle" alt="" title="" /></div></p><p class=noind>and <p><div align="center"><img src="Mathematica/Category%20Theory/idid2diagram.png" align="middle" alt="" title="" /></div></p><p class=noind>must commute since the arrows shown are the only possible arrows with the domains and codomains shown. In other words, $\textsf{id}_\textsf{r}=\textsf{rdr}$ and $\textsf{id}_\textsf{s}=\textsf{sds}$.</p>
+
+<h3>Axiom 5: Associativity</h3>
+
+
+<p>In the diagram below,</p><p><div align="center"><img src="Mathematica/Category%20Theory/integerdivassoc.png" align="middle" alt="" title="" /></div></p><br /><p class=noind> there is only one arrow from one integer to another, so $\textsf{k}$ must be both \[\textsf{tdu}\circ(\textsf{sdt}\circ\textsf{rds})\] and \[(\textsf{tdu}\circ\textsf{sdt})\circ\textsf{rds}\] as required.</p>
+
+
+<h2>Example 3: The category of Sets</h2>
+
+<p>In this section, I define the category $\mathsf{Set}$ (that is standard terminology in category theory.) This example will be very different from $\mathsf{MyFin}$, because it involves known mathematical objects -- <a href="MMSets.htm">sets</a> and <a href="MMFunctions.htm">functions</a>.</p>
+
+<h3>Axiom 1: Data</h3>
+
+<ul>
+
+<li>Every set is an object of $\mathsf{Set}$ and nothing else is.</li>
+
+<li>Every function between sets is an arrow of $\mathsf{Set}$ and nothing else is an arrow of $\mathsf{Set}$.</li>
+
+</ul>
+
+<h3>Axiom 2: Domain and codomain</h3>
+
+<p>For a given function $f$, $\text{dom}(f)$ is the domain of the function $f$ in the usual sense, and $\text{cod}(f)$ is the codomain of $f$ in the usual sense. (See <a href="MMFuncSpec.htm">Functions: specification and definition</a> for more about domain and codomain.)</p>
+
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>Let $f:\mathbb{R}\to\mathbb{R}$ be the function defined by $f(x):=x^2$.  Then the arrow $f$ in $\mathsf{Set}$ satisfies $\text{dom}(f)= \mathbb{R}$ and also $\text{cod}(f)=\mathbb{R}$.</li>
+
+<li>Let $j:\{1,2,3\}\to\{1,2,3,4\}$ be defined by $j(1):=1$, $j(2):=4$ and $j(3):=3$. Then $\text{dom}(j)=\{1,2,3\}$ and $\text{cod}(j)=\{1,2,3,4\}$.</li>
+
+</ul>
+
+<h3>Axiom 3: Composition</h3>
+<a name="DC"></a>
+<p>The composite of $f:A\to B$ and $g:B\to C$ is the function $g\circ f:A\to C$ defined by \[\text{(DC)}\,\,\,\,\,\,\,\,\,\,(g\circ f)(a):=g(f(a))\]</p>
+<h4>Note</h4>
+<p>Many other categories have a similar definition of composition, including categories whose objects are <a href="MMMathStructure.htm">math structures</a> with underlying sets and whose arrows are structure-preserving functions between the underlying sets. <span class=purple>But be warned: There are many useful categories whose arrows do not evaluate at an element of an object because the objects don't have elements.</span>  In that case, (DC) is meaningless. This is true of <a href="#myfin">$\mathsf{MyFin}$</a> and <a href="#integerdiv">$\mathsf{IntegerDiv}$</a>.</p>  
+
+<h3>Axiom 4: Identity arrows</h3>
+
+<p>For a set $A$, the identity arrow $\textsf{id}_A:A\to A$ is, as you might expect, the identity function defined by $\textsf{id}_A(a)=a$ for every $a\in A$. We must prove that these diagrams commute:</p>
+<div class=diagram align="center"><img src="Mathematica/Category%20Theory/Id1diagram.gif" width="150" height="113" alt="" title="" /></div>
+<div class=diagram align="center"><img src="Mathematica/Category%20Theory/Id2diagram.gif" width="150" height="113" alt="" title="" /></div> 
+<p class=noind>The calculations below show that they commute. They use the definition of composite given by <a href="#DC">(DC)</a>.</p>
+<a name="manyarrows"></a>
+<ul>
+
+<li>For any $b\in B$, \[(\textsf{id}_A\circ f)(b)=\textsf{id}_A(f(b))=f(b)\]</li>
+
+<li>For any $a\in A$, \[(g\circ \textsf{id}_A)(a)=g(\textsf{id}_A(a))=g(a)\]</li>
+
+</ul>
+
+
+
+<p><b>Note:</b> In $\mathsf{Set}$, there are generally many arrows from a particular set $S$ to itself (for example there are $4$ from $\{1,2\}$ to itself), but only one is the identity arrow.</p>
+
+<h3>Axiom 5: Associativity</h3>
+
+<p>Composition of arrows in $\mathsf{Set}$ is associative because function composition is associative. Suppose we have functions as in this diagram:</p>
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Threecomposablearrows.gif"  alt="" title="" /></div></p>
+<p>We must show that the two triangles containing $k$ in this diagram commute:</p> 
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Threecompstage3.gif" alt="" title="" /></div></p>
+<p>In algebraic notation, this requires showing that for every element $a\in A$,\[(h\circ(g\circ f))(a))=((h\circ g)\circ f)(a)\]
+</p>
+
+
+
+<p>The calculation below does that. It makes repeated use of Definition (DC) of composition. For any $a\in A$,\[\begin{equation}
+\begin{split}
+\big(h\circ (g\circ f)\big)(a)
+& = h\big((g\circ f)(a)\big) \\
+ & = h\big(g(f(a))\big) \\
+ & = (h\circ g)(f(a)) \\
+ & = \big((h\circ g)\circ f\big)(a)
+\end{split}
+\end{equation}\]
+</p>
+
+
+
+</ul>
+
+<h2>Example 4: The category of Monoids</h2>
+ 
+<a name="monoid"></a>
+
+<a name="MM"></a>
+<a name="ME"></a>
+
+<ul>
+
+<li>This definition makes repeated use of the fact that a <a href="MMMathStructure.htm#monoidhomomorphism">homomorphism of monoids</a> is a set function. Specifically, if $(S,\Delta)$ and $(T,\nabla)$ are monoids with identities $e_S$ and $e_{T}$, a homomorphism $h:S\to T$ must be a set function that satisfies the following two axioms:  \[\text{(ME)}\,\,\,\,\,\,\,\,h(e_S)=e_T\] and for all elements $s, s'$ of $S$, \[\text{(MM)}\,\,\,\,\,\,\,\,h(s\Delta s')=h(s)\nabla h(s')\]</li>
+
+<li>The category of monoids may be denoted by $\mathsf{Mon}$.</li> 
+
+</ul>
+
+<h3>Axiom 1: Data</h3>
+
+<ul>
+
+<li>Every <a href="MMMathStructure.htm#monoid">monoid</a> is an object of the category of monoids, and nothing else is.</li>
+
+<li>If $f$ is a <a href="MMMathStructure.htm#monoidhomomorphism">homomorphism of monoids</a>, then $f$ is an arrow of the category of monoids, and nothing else is.</li>
+
+</ul>
+
+
+
+<h3>Axiom 2: Domain and codomain</h3>
+<p>If $(S,\Delta)$ and $(T,\nabla)$ are monoids and $f:(S,\Delta)\to(T,\nabla)$ is a homomorphism of monoids, then the domain of $f$ is $(S,\Delta)$ and the codomain of $f$ is $(T,\nabla)$.</p>
+
+<h4>Notes</h4>
+
+<ul>
+
+<li>Since $f$ takes elements of the set $S$ to elements of the set $T$, it is also an arrow in the category $\mathsf{Set}$. In general, very few functions from $S$ to $T$ will be monoid homomorphisms from $(S,\Delta)$ to $(T,\nabla)$.</li>
+
+<li>Many authors do not distinguish between $f$ regarded as an arrow of $\mathsf{Mon}$ and $f$ regarded as an arrow of $\mathsf{Set}$. Others may write $U(f)$ for the arrow in $\mathsf{Set}$. "$U$" stands for "<a href="https://en.wikipedia.org/wiki/Forgetful_functor">underlying functor</a>", also called "forgetful functor".</li>
+
+</ul>
+
+<h3>Axiom 3: Composition</h3>
+
+<p>The composite of</p>
+
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/monoidcompos.png"  alt="" title="" /></div></p>
+
+<p class=noind>is the composite $g\circ f$ as set functions:</p>
+
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/monoidcompostri.png"  alt="" title="" /></div></p>
+
+<p>It is necessary to check that $g\circ f$ is a monoid homomorphism. The following calculation shows that it preserves the monoid operation; it makes repeated use of equations <a href="#DC">(DC)</a> and <a href="#MM">(MM)</a>.</p>
+
+<p >The calculation: For elements $r$ and $r'$ of $R$,\[\begin{align*}
+(g\circ f)(r\,{\scriptstyle \square}\, r')
+&=g\left(f(r\, {\scriptstyle \square}\, r')\right)\,\,\,\,\,\text{(DC)}\\ &=g\left(f(r) {\scriptstyle\, \Delta}\, f(r')\right)\,\,\,\,\,\text{(MM)}\\ 
+&=g(f(r)){\scriptstyle \,\nabla}\, g(f(r'))\,\,\,\,\text{(MM)}\\ 
+&=(g\circ f)(r){\scriptstyle \,\nabla}\,(g\circ f)(r')\,\,\,\,\,\text{(DC)}
+\end{align*}\]</p>
+
+<p>The fact that $g\circ f$ preserves the identity of the monoid is shown in the next section.</p>
+
+<h3>Axiom 4: Identity arrows</h3>
+
+<p>For a monoid $(S,\Delta)$, the identity function $\text{id}_S:S\to S$ preserves the monoid operation $\Delta$, because $\text{id}_S(s\Delta s')=s\Delta s'$ by definition of the identity function, and that is $\text{id}_S(s)\Delta \text{id}_S(s')$ for the same reason.</p>
+
+<p>The required diagrams below must commute because the set functions commute and, by Axiom 3, the set composition of a monoid homomorphism is a monoid homomorphism.</p>
+
+<div class=diagram align="center"><img src="Mathematica/Category%20Theory/Id1diagrammon.gif"  alt="" title="" /></div>
+<div class=diagram align="center"><img src="Mathematica/Category%20Theory/Id2diagrammon.gif" alt="" title="" /></div> 
+
+<p>We also need to show that $g\circ f$ as in</p> 
+
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/monoidcompostri.png"  alt="" title="" /></div></p>
+
+<p class=noind>preserves identities. This calculation proves that it does; it uses <a href="#DC">(DC)</a> and <a href="#ME">(ME)</a></p>
+
+\[\begin{align*}
+(g\circ f)(\text{id}_R)
+&=g(f((\text{id}_R))\\
+&=g(\text{id}_S)\\
+&=\text{id}_T
+\end{align*}\]
+
+<h3>Axiom 5: Associativity</h3>
+
+<p>The diagram</p>
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Threecompstage3newletters.gif" alt="" title="" /></div></p>
+<p class=noind>in the category $\mathsf{Set}$ commutes, so the diagram</p> 
+<p><div class=diagram align="center"><img src="Mathematica/Category%20Theory/Threecompstage3mon.gif"  alt="" title="" /></div></p>
+<p class=noind>must also commute.</p>
+
+<h1>References</h1>
+
+<p>All these references are available on line.</p>
+<ul>
+
+<li><a href="http://www.tac.mta.ca/tac/reprints/articles/22/tr22.pdf">Category theory for computing science</a>, by Michael Barr and Charles Wells.</li>
+
+<li><a href="http://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">Category theory for programmers</a>, Bartosz Milewski.</li>
+
+<li><a href="http://www.math.jhu.edu/~eriehl/727/context.pdf">Category theory in context</a>, by Emily Riehl.</li>
+
+<li>  <a href="https://www.academia.edu/21694792/A_Gentle_Introduction_to_Category_Theory_Feb_2016_version_">A gentle introduction to category theory</a>, Peter Smith.</li>
+
+<li>The list <a href="http://www.logicmatters.net/categories/">Category Theory</a> in Logic Matters gives a pretty complete coverage of every introduction to category theory that is available online.</li> 
+
+</ul>
+
+<br />
+ <pre>  <img border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/>        </pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+ 
+ </body></html>

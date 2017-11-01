@@ -1,0 +1,606 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Examples of functions</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-08-19
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>     <a href="MMFunctions.htm">Back to head of functions chapter</a>
+</pre>
+
+<h1>EXAMPLES OF FUNCTIONS</h1>
+
+<h2>Basic functions</h2>
+
+<p class=blue>The examples given here:</p>
+
+<ul class=blue>
+
+<li>are
+basic types of functions that are used everywhere in abstract math</li>
+
+<li>are
+functions you need to be familiar with</li>
+
+<li>are
+(sigh) boring.</li>
+
+</ul>
+
+<a name="identity"></a><a name="identityfunction"></a>
+
+<h3 class=red>Identity function </h3>
+
+<p class=blue>For any set $A$, the <font color="#911B1B">identity
+function</font> ${{\operatorname{id}}_{A}}:A\to A$ is the function
+that takes each element of $A$ to itself.</p>
+
+<ul>
+
+<li>This means that for any set $A$, for every element $a\in A$, ${{\operatorname{id}}_{A}}(a)=a$. For example, ${{\operatorname{id}}_{\mathbb{Z}}}(42)=42$.</li>
+
+
+<li>The identity function on a set $A$ can be thought of as the function that <b>does nothing</b> to each element of A.</li>
+
+<li>The identity function on $\mathbb{R}$ is the familiar function
+defined by $f(x)=x$.</li>
+
+<li>Another common notation for the identity function on $A$ is "${{1}_{A}}:A\to A$."</li>
+
+<li>The word "identity" has two other <a href="MMGlossary.htm#identity">commonly used meanings.</a></li>
+
+<li>There is a different identity
+function for each different set. (See <a
+href="MMMoreLanguage.htm#overloadednotation">overloaded
+notation</a>.)  These functions all have the “same” formula:  ${{\operatorname{id}}_{A}}(a)=a$ for every $a\in A$. But they are technically <i>different
+functions</i> because they have different <a
+href="MMFuncSpec.htm#domain">domains</a>.</li>
+
+</ul>
+
+<a name="inclusion"></a><a name="inclusionfunction"></a>
+
+<h3 class=red>Inclusion function</h3>
+
+<p class=blue>If $A\subseteq B$ (see <a
+href="MMSetSUbset.htm">inclusion</a>),
+then the <font color="#911B1B">inclusion function</font> $\operatorname{inc}:A\to B$ that takes every element in $A$ to the same element regarded as an element in $B$. In
+other words, $\operatorname{inc}(a)=a$ for every element $a\in A$.</p>
+<ul>
+
+<li>The inclusion map is often written $A\hookrightarrow B$.</li>
+
+<li>The
+<a href="MMFuncSpec.htm#graph">graph</a> of $\text{inc}$ is the same as the graph of ${{\operatorname{id}}_{A}}$ and they
+have the same <a href="MMFuncSpec.htm#graph">domain</a>, so that the only difference
+between them is what the <a href="MMFuncSpec.htm#graph">codomain</a> is.</li>
+
+<li>For any set $A$, $A\subseteq A$, so the identity function ${{\operatorname{id}}_{A}}:A\to A$ is an inclusion function.</li>
+
+</ul>
+
+<a name="constantfunction"></a>
+
+<h3 class=red>Constant function</h3>
+
+<p class=blue>If $A$ and $B$ are
+nonempty sets and $b$ is a specific element of $B$, then then <font color="#911B1B">constant
+function</font> ${{C}_{b}}:A\to B$ is the function that takes every element of $A$ to $b$; that is, ${{C}_{b}}(a)=b$ for
+all $a\in A$.</p>
+
+<ul>
+
+<li>The notation ${{C}_{b}}$ is not common.  There is no standard
+notation for constant functions.</li>
+
+<li>A
+constant function ${{C}_{b}}$
+takes any element of $A$ to $b$.  It has a <b>one-track
+mind.</b></li>
+
+<li>A
+constant function from $\mathbb{R}$ to $\mathbb{R}$ has a <b>horizontal line</b> as its
+graph.</li>
+
+<li>See the Wikipedia article <a href="https://en.wikipedia.org/wiki/Constant_function">Constant function.</a></li>
+
+</ul>
+
+<a name="emptyfunction"></a>
+
+<h3 class=red>Empty function</h3>
+
+<p class=blue>If $A$ is any set, there is exactly one function $E:\varnothing
+\to A$. This function is called the <font color="#911B1B">empty
+function.</font></p>
+
+<ul>
+
+
+<li>An
+identity function does nothing. An empty function <b>has nothing to do.</b></li>
+
+<li>The <a href="MMFuncSpec.htm#graph">graph</a> of the empty function is the empty set, and so is its <a href="https://en.wikipedia.org/wiki/Image_(mathematics)">image.</a></li>
+
+<li>For any set $A$, there is exactly one empty function from $\varnothing\to A$.</li>
+
+<li>The empty function from $\varnothing\to A$ is an inclusion function <a href="MMConditional.htm#vacuoustruth">vacuously.</a></li>
+
+</ul>
+
+<h3 class=red>Coordinate function</h3>
+
+<p class=blue>If $A$ and $B$ are sets, there are two <font color="#911B1B">coordinate
+functions</font> ${{p}_{1}}:A\times B\to A$ and ${{p}_{2}}:A\times
+B\to B$, defined for $a\in A$ and $b\in B$ by ${{p}_{1}}(a,b)=a$
+and ${{p}_{2}}(a,b)=b$.</p>
+
+<ul>
+
+<li>$A\times B$ is the set of all ordered pairs $(a,b)$ with $a\in A$ and $b\in B$.  See <a
+href="http://en.wikipedia.org/wiki/Cartesian_product">cartesian product.</a></li>
+
+<li>Coordinate functions are also called <b>projections.</b></li>
+
+<li>The coordinate function ${{p}_{i}}$ may be denoted by "${{\pi
+}_{i}}$".</li>
+ 
+<li>In general for an $n$-fold cartesian product, the function ${{p}_{i}}$ takes an $n$-tuple
+to its $i$th coordinate.</li>
+
+<li>If  either $A$ or $B$ is empty, then so is $A\times B$.  In that case, each ${{p}_{i}}$
+is the empty function.</li>
+
+<li>For any
+set $S$, there are two <i>different</i> coordinate functions ${{p}_{1}}:S\times
+S\to S$ and ${{p}_{2}}:S\times S\to S$.  For example, if $S$ is the set of
+real numbers, then ${{p}_{1}}(2,-3)=2$ and ${{p}_{2}}(2,-3)=-3$.</li>
+
+</ul>
+
+<a name="sequence"></a><a name="sequences"></a><a name="tuple"></a><a name="indexset"></a>
+
+<h3 class=red>Sequences</h3>
+
+<p>A <b>sequence</b> is a list of math objects.</p>
+
+<h4 class=redit>Example: A finite sequence</h4>
+
+<ul>
+
+<li>The list $L:=(1,4,4,2,-3,-2)$ is a <b>finite sequence</b> of integers. The $3$rd <b>entry</b> in $L$ is $4$ and the $4$th <b>entry</b> is $2$.</li>
+
+<li>$L$ could be written as \[(n_1,n_2,n_3,n_4,n_5,n_6)\] and then one would say for example that $n_3=4$ and $n_4=2$.</li>
+
+<li>The <b>index set</b> of $L$ is the set ${1,2,3,4,5,6}$.</li>
+
+<li>A finite sequence is also called a <b>tuple</b>. $L$ is a <b>6-tuple</b>. A $2$-tuple is the same thing as an ordered pair.</li>
+
+</ul>
+<h4 class=redit>Example: An infinite sequence</h4>
+<ul>
+
+<li>$S:=(1,4,9,16,25,\dots)$ (the $n$th entry is $n^2$) is an <b>infinite sequence</b> of integers.</li> 
+
+<li>The index set of $S$ is the set of positive integers. </li>
+
+<li>Such a sequence may be  written this way:\[S:=(n^2)\,,\,n>0\]</li>
+
+</ul>
+<a name="ratcheteffect"></a>
+<h4>A basic fact about sequences</h4>
+
+<p class=purpleprose>A sequence is a function on its index set.</p>
+
+<p class=smallnote>This statement causes a major <a href="MMOtherAspectsUnderstanding.htm#ratcheteffect">ratchet effect</a> for some students. It looks like <span class=purple>random nonsense</span> until you suddenly understand it, after which it is <span class=purple>totally obvious</span>.</p>
+
+<p class=bluesmall><span class=red>A sequence is a function.</span>  Its domain is the index set and the value at $i$ is the entry indexed as $i$ in the sequence.</p> 
+  
+
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>The sequence $L$ is the function $f:(1,2,3,4,5,6)\to\mathbb{Z}$ given by</p> 
+
+<div style=" text-align: center; text-indent: 20px; padding: 0px 0px 0px 0px; margin: 0px 0px 30px 0px;"><table width="30" border="1" cellpadding="2" cellspacing="2" style="background-color: #ffffff;">
+<tr valign="top">
+<td style="border-width : 0px;">$f(1)=1$<br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 0px;">$f(2)=4$<br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 0px;">$f(3)=4$<br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 0px;">$f(4)=2$<br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 0px;">$f(5)=-3$<br />
+</td>
+</tr>
+<tr valign="top">
+<td style="border-width : 0px;">$f(6)=-2$<br />
+</td>
+</tr>
+</table>
+</div></li>
+<li>The infinite sequence $S$ is the function \[n\mapsto n^2:\mathbb{N}\to\mathbb{N}\] where $\mathbb{N}$ is the set of <a href="MMNaturalNumbers.htm">natural numbers</a> (positive integers).</li>
+</ul>
+
+<p>There is much more information on tuples and sequences in the Wikipedia articles <a href="https://en.wikipedia.org/wiki/Tuple">Tuple</a> and <a href="https://en.wikipedia.org/wiki/Sequence">Sequence</a>.</p>
+
+
+<a name="binaryoperations"></a> 
+<a name="binaryoperation"></a>
+
+<h3 class=red>Binary operations </h3>
+
+<p class=blue>A <font color="#911B1B">binary operation</font> on a
+set $S$ is a function $F:S\times S\to S$.  (See <a
+href="http://en.wikipedia.org/wiki/Cartesian_product">cartesian product</a>).</p>
+
+<ul>
+
+<li>The operation
+of <b>adding</b> two real numbers gives a binary operation $(x,\,y)\mapsto
+x+y:\mathbb{R}\times \mathbb{R}\to \mathbb{R}$.</li>
+
+<li><b>Subtraction</b><span
+lang=EN> $-:\mathbb{R}\times \mathbb{R}\to \mathbb{R}$ is also a binary operation
+on the real numbers.  Observe that, unlike addition, it cannot be regarded as a
+binary operation on the <i>positive</i> real numbers.  </li>
+
+<li><b>Multiplication</b> of real numbers is also a binary operation $(x,\,y)\mapsto
+xy:\mathbb{R}\times \mathbb{R}\to \mathbb{R}$.</li>
+
+<li><b>Division</b> is <i>not
+</i>a binary
+operation on the real numbers because you can’t divide by $0$.  However, it is a
+binary operation $(x,\,y)\mapsto x/y:\mathbb{R}^*\times\mathbb{R}^*\to\mathbb{R}^*$ on the <i>nonzero</i> real numbers ("${\mathbb{R}^{*}}$" is
+standard notation for the set of all nonzero real numbers).</li> 
+
+<li>Now look at the function $(x,\,y)\mapsto
+x/y:\mathbb{R}\times\mathbb{R}^*\to \mathbb{R}$.  It is well defined since $0/y$ is defined even though $y/0$ is not. This is a perfectly good function but strictly speaking it is not a binary operation because<a
+href="MMDefs.htm"> by definition</a> a binary
+operation has to fit the pattern $F:S\times S\to S$ where <i>all
+three sets are the same.</i></li>
+
+<li>For any set $S$, the two projections ${{p}_{1}}:S\times
+S\to S$ and ${{p}_{2}}:S\times S\to S$ are both binary operations on $S$.</li>
+
+<li>The <a href="https://en.wikipedia.org/wiki/Greatest_common_divisor"><b>greatest common divisor</b></a> function $\operatorname{GCD}:\mathbb{N}\times\mathbb{N}$ is a binary operation on the set of all nonnegative integers.</li>
+
+<li>With a
+binary operation <i>symbol</i>, <a
+href="MMFuncNotation.htm#infixnotation">infix
+notation</a> is usually used: the name of the binary operation is put <i>between
+the arguments</i>.  For example we write $3 + 5 = 8$, not $+(3, 5) = 8$.  Note that there are no symbols for the $\text{GCD}$ function and for the projections from a cartesian product.
+</li>
+
+<li>Binary
+operations are the basis of most of algebra.</li>
+
+</ul>
+
+<h2>Consciousness-expanding
+examples of functions</h2>
+
+<p class=blue>In this section I give you examples of really weird
+functions that you may never have thought of as functions before, because if
+you are a beginner in abstract math, you probably need to:</p>
+<p class=purpleprose>Loosen up
+narrow-minded ideas about what a function is</p>
+
+<p>Other consciousness-expanding examples of functions are
+listed in an <a href="#appendix">appendix</a>.</p>
+
+<a name="split"></a><a name="splitfunction"></a>
+<h3 class=red>Example: "Split"</h3>
+<p class=blue>A function can be
+given by different rules on different parts of its domain. It is still <i>one
+function</i>.</p>
+
+<p>Let $F:[0,1]\to\mathbb{R}$ be defined by 
+\[F(x):=\left\{
+\begin{align}
+2x\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(0\le
+x\le 0.5) \\ 
+3(x-1)^2\,\,\,\,(0.5\lt x\le 1) \\ 
+\end{align}\right.\]
+This is the graph of $F$:</p>
+<br>
+<div align="center"><img width=220 height=210
+  src="Mathematica/Examples of Functions/Split.png"></div>
+
+<ul>
+<li>$F$ is given by a <b>split definition</b>.  It is defined by one formula
+for part of its domain and by another on the rest. $F$ is nevertheless <b>one
+function</b>, defined
+on the closed interval $[0,1]$.</li>
+
+<li>$F$ is <i>not continuous</i> at $x=0.5$.</li>
+
+<li>$F$ does not have a derivative</i> at $x=0.5$</li>
+
+<li>The
+graph <i>does not and cannot</i> show the precise behavior of the
+function near $x=0.5$.  </li>
+
+<li>The point $\left( 0.5,1 \right)$ is on the graph, because the
+definition of $F$ says that $F(x)=2x$ for $x$ between $0$
+and $0.5$ <i>inclusive</i>.</li>
+
+<li>For
+any point $x$ to the right of $0.5$, $F(x)=3{{\left( x-1 \right)}^{2}}$.</li>
+
+<li>$\underset{x\to {{0.5}^{-}}}{\mathop{\lim
+}}\,F(x)=1$  but $\underset{x\to {{0.5}^{+}}}{\mathop{\lim }}\,F(x)=0.75$.</li>
+
+<li>Nevertheless, $F(0.5)=1$, not $0.75$.  That implies that $F$ is <i>not continuous</i> at $x=0.5.$</li>
+
+<li>It would be wrong to say something like: “$F(x)=3{{\left(
+x-1 \right)}^{2}}$
+starting at the first point to the right of $x=0.5$”. <i>There is no "first
+point to the right of</i> $0.5$." 
+See <a href="MMRealDensity.htm">density.</a></li>
+</ul>
+
+
+<a name="finite"></a><a name="finitefunction"></a><a name="table"></a>
+
+<h3 class=red>Example "Finite"</h3>
+
+<p class=blue>(1) A function may not be defined by a formula, and (2) it need not involves numbers at all.</p>
+
+<p>Let
+the function $F$ be defined on the set $\left\{\textsf{a},\textsf{b},\textsf{c},\textsf{d }\right\}$ like this:  \[F(\textsf{a})=\textsf{a},\,F(\textsf{b})=\textsf{c},\,F(\textsf{c})=\textsf{c},\,F(\textsf{d})=\textsf{b}\]
+In this definition, $\textsf{a}$, $\textsf{b}$, $\textsf{c}$ and $\textsf{d}$ are <i>letters of the alphabet,</i> not variables.
+</p>
+<ul>
+
+<li>$F$ is defined <i>only</i> for inputs $\textsf{a}$, $\textsf{b}$, $\textsf{c}$ and $\textsf{d}$. For
+example, neither "$F(4)$" nor "$F(\textsf{u})$" are defined.</li>
+
+<li>I have not defined $F$ using a formula. $F(\textsf{b})=\textsf{c}$ <i>entirely and only because the definition of $F$ says it is.</i></li>
+
+<li>You could define $F$ by saying "Let $F$ be defined on the set $\left\{\textsf{a},\textsf{b},\textsf{c},\textsf{d }\right\}$ by the diagram below." That definition gives the same function.
+
+<div align="center"><img src="Mathematica/Examples of Functions/Finite.png"></div>This diagram is called the <a href="MMFunctionRepresentations.htm#cograph">cograph</a> of the function.
+
+<li><a href="https://en.wikipedia.org/wiki/Database">Databases</a> involve many functions that don't involve numbers. For example the personnel database of a company will likely contain a function that takes the name of each employee to their job title.</li>
+
+</ul>
+
+<p>The article <a href="MMFunctionRepresentations.htm#graphsoffinitefunctions">Representations of functions</a> describes how to represent finite functions in much more detail.</p>
+
+<a name="wordlength"></a>
+
+<h3 class=red>Example: "Word Length"</h3 class=red>
+
+<p class=blue>The domain and codomain of a function can be completely different sets.</p>
+
+<p>Let $S$ be some <a href="MMSets.htm">set</a>
+of English words, for example the set of words in a given dictionary. Then the <b>length
+of a word</b> is a function; call it $L$.</p>
+
+<ul>
+
+<li>$L$ takes English words as inputs. </li>
+
+<li>$L$ outputs the number of letters in the word.  For example, $L('\text{cat}')=3$
+and $L('\text{polysyllabic}')=12$.</li>
+
+<li>The method of computation for this function is: count the number of letters. In a computer program, an English word would be stored as a list of characters, and most any computer language has a command that returns the length of a list.</li>
+
+</ul>
+
+<a name="primepair"></a>
+
+<h3 class=red>Example: "$n$th pair of primes"</h3>
+
+<p class=blue>You can correctly define a function you know you can't calculate.</p>
+
+<p>A <a href="https://en.wikipedia.org/wiki/Twin_prime"><b>prime pair</b></a> consists of a pair of primes that differ by $2$.  The first six prime pairs are $(3,5)$, $(5,7)$, $(9,11)$, $(11,13)$, $(17,19)$ and $(29,31)$.</p> 
+
+<p>Let $PP:\mathbb{N}\to\mathbb{N}\times\mathbb{N}$ be defined like this: (1) If there are fewer than $n$ prime pairs, then $PP(n)=0$. (2) Otherwise, $PP(n)$ is the $n$th prime pair in order. </p>
+
+<ul>
+
+<li>For example $PP(6)=(29,31)$.</li>
+
+<li>It is not known whether there is only a finite number of prime pairs or an infinite number.</li>
+
+<li>The largest prime pair known has <a href="https://en.wikipedia.org/wiki/Order_of_magnitude">order of magnitude</a> $10^{19}$. We do not know the value of $n$ for which this number is $PP(n)$.</li>
+
+<li>So for very large numbers $n$ <i>we know that we do not know how to calculate</i> $PP(n)$.  Nevertheless, $PP$ is a perfectly well-defined function.</li>
+
+<li>There is more information about prime pairs in the Mathworld article <a href="http://mathworld.wolfram.com/TwinPrimes.html">Twin primes</a> and in the Wikipedia article <a href="https://en.wikipedia.org/wiki/Twin_prime">Twin primes</a>.</li>
+</ul>
+
+<a name="dirichletfunction"></a><a name="dirichlet"></a><a name="ratnot"></a>
+
+<h3 class=red>Example: "Dirichlet”</h3>
+
+<p class=blue>A real-valued function may not have a graph you can draw.</p>
+
+<p class=headed>Let $F:\mathbb{R}\to\mathbb{R}$ be defined by
+\[F(x):=
+\begin{cases}
+1 &
+\text{if }x\text{ is rational}\\
+\frac{1}{2} &
+\text{if }x\text{ is irrational}\\ \end{cases}\]  for all real $x$.</p>
+
+<ul>
+
+<li>$F$ is called the <b>Dirichlet function.</b></li>
+
+<li>$F(1/3)=1$, $F(-42)=1$, but $F(\pi)=\frac{1}{2}$ because $\pi$ is not <a href="MMRationalNumbers.htm">rational</a>.</li>
+
+<li>$F$ is not continuous.</li>
+
+<div align=center><img src="Mathematica/Examples of Functions/Dirichlet.png" ></div>
+
+<li><span class=purple>The "graph" above is completely misleading.</span> <i>Both horizontal lines are full of holes.</i></li> 
+
+<ul>
+
+<li>The point $(\sqrt{2},\frac{1}{2})$ is missing from the top line because $\sqrt{2}$ is not rational.</li>
+
+<li>The point $(1.2,1)$ is missing from the lower line because $1.2=\frac{12}{10}$, which <i>is</i> rational.</li>
+
+<li>This means that the left vertical line does not intersect the lower line and the right vertical line does not intersect the top line.</li>
+
+</ul>
+
+<li><span class=purple>The "graph" is worse than that.</span> </li> 
+
+<ul>
+
+<li>Both lines are missing <i>infinitely many points.</i></li>
+
+<li>No matter how much you magnify either line, you will not see any of the holes, because no matter how small a nonzero distance you name -- call it $\epsilon$ -- there is a point that <i>is</i> on the line that is closer than $\epsilon$ to the hole.</li>
+
+<li>There is also a hole closer than $\epsilon$ to any point that <i>is</i> on the line.</li>
+
+<li>See <a href="MMRationalNumbers.htm#Density">Density of the rationals</a> and <a href="MMRealDensity.htm#density">Density of the reals</a>.</a> 
+</li>
+
+</ul>
+
+<li>You can read more about this function in the Wikipedia article <a
+href="http://en.wikipedia.org/wiki/Dirichlet_function">Dirichlet function.</a></i></li>
+
+</ul>
+
+<a name="sineblur"></a>
+<h3 class=red>Example: Sine Blur</h3>
+<p class=blue>The graph of a real valued function on a finite interval can
+be an infinitely long curve.</p>
+
+<div align=center><img width=300
+height=150
+ src="Mathematica/Examples of Functions/Sine Blur.png" ></div>
+
+<p>Let $F(x):=.5 \sin \left( \frac{50}{x}
+\right),\,\,\,\,\,\,\left( x \gt0 \right)$.</p>
+
+<ul>
+
+<li>The frequency of the curve goes up rapidly as you get close to the $y$-axis
+from the right, since $\frac{50}{x}$ grows very rapidly as $x$ moves toward
+$0$.</li><li>Drawing the graph near the $y$-axis is impossible because the
+curve between $x = 0$ and  any larger number is <i>infinitely long</i> even though it
+occurs in a finite interval.</li>
+
+<li><a
+href="http://math.bu.edu/people/tkohl/teaching/fall1999/sin1overx.pdf#search=%22sin%201%2Fx%22">More
+about this function</a>.</li>
+
+</ul>
+
+<a name="derivative"></a>
+<h2>Example: Derivative</h2>
+
+<p class=blue>A function can have a function as input and a function as output.</p>
+
+<p ckass=headed>Let $\mathcal{D}$ be the set of all differentiable functions from $\mathbb{R}$ to $\mathbb{R}$, and $\mathcal{A}$ the set of all functions from $\mathbb{R}$ to $\mathbb{R}$. Define $D:\mathcal{D}\to\mathcal{A}$ be the function that takes a function $f$ in $\mathcal{D}$ (in other words a function that has a derivative) to its derivative.</p>
+
+<ul>
+
+<li>If $f(x):={{x}^{2}}$
+then $\text{D}(f)(x)=2x$. Using <a
+href="MMFuncSpec.htm#barredarrow">barred arrow
+notation</a>, $D(x\mapsto {{x}^{2}})=x\mapsto 2x$.</li>
+
+<li>If $f(x):=\sin
+x$ then $\text{D}(f)(x)$ is $x\mapsto\cos x$, in other word $D(x\mapsto\sin x)=x\mapsto\cos x$.</li>
+
+<li>D takes a function as input and outputs another function,
+namely the derivative of the first one.  The <i>whole
+function is the input</i>, not some value of the function, not the rule that defines
+the function, not the graph.  You have to think of the function as a <i>single thing</i>, in other words as a <a
+href="MMImagesMetaphorsFunctions.htm#funcasmathobj">math
+object.</a></li>
+
+<li>Functions whose inputs are
+complicated structures such as functions may be called </i><a
+name=operator></a><a href="http://en.wikipedia.org/wiki/Operator"><span
+lang=EN>operators</a><i> </i><i><span
+lang=EN style='font-weight:normal;font-style:normal'>.</i><i><span
+lang=EN style='font-style:normal'>  </i><i><span lang=EN
+style='font-weight:normal;font-style:normal'>(Usage varies in different
+specialties.)</i><i>  </i><span
+lang=EN>This function $D$ is the <b>differentiation operator</b>.</li>
+
+<li>The
+differentiation operator is not injective.  For
+example, $f(x):={{x}^{2}}$ and $g(x):={{x}^{2}}+42$ have the same derivative,
+namely $2x$.</li>
+
+
+</ul>
+
+<p>The chapter <a href="MMDerivatives.htm">Derivatives</a> contains many graphs, each showing a function and several of its derivatives.</p>
+
+<a name="appendix"></a>
+
+<h3>Appendix</h3>
+
+<h4>Other consciousness-expanding examples of functions</h4>
+
+<ul>
+
+<li> <a
+href="http://en.wikipedia.org/wiki/Ackermann_function">The Ackermann function</a>.</li>
+
+
+<li><a
+href="http://en.wikipedia.org/wiki/Space-filling_curve">Space-filling curves</a></li>
+
+</ul>
+
+<br />
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"><![endif]></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+
+</body>
+</html>
+
+

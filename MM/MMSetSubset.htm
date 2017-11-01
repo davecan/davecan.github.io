@@ -1,0 +1,185 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Subsets and inclusion</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-07-24
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press">blog</a>
+<a href="MMSets.htm">Back to head of Sets chapter</a>
+</pre>
+
+
+<h1>SUBSETS AND INCLUSION</h1>
+
+<p class=blue>Every <a
+href="MMIntegers.htm">integer</a> is a <a
+href="MMRationalNumbers.htm">rational</a> number. 
+This means that the <a href="MMSets.htm">sets</a>
+$\mathbb{Z}$ and $\mathbb{Q}$ have a special relationship to each other: <i>every
+element of $\mathbb{Z}$ is an element of $\mathbb{Q}$</i>. This is the relationship
+captured by the following definition.</p>
+
+<a name="inclusion"></a><a name="subset"></a><a name="include"></a>
+
+<h2>Definition of inclusion</h2>
+
+<p class=bluesmall><a name=includef></a>Definition: For all sets $A$ and $B$, the assertion "$A\subseteq
+B$" is true if and only if every element of $A$ is also an element of $B$.</p>
+
+<p>This is a <a href="MMDefs.htm">mathematical definition</a>. It means that <b>both the following statements are true</b> for all sets $A$ and $B$:</p>
+
+<p class=purpleprose>If you know that $A\subseteq B$,<br /> then you know that every element of $A$ is an element of $B$.</p>
+
+<p class=purpleprose>If you know that every element of $A$ is an element of $B$,<br /> then you know that $A\subseteq B$.</p>
+
+<p>The definition of inclusion gives a <b>rule of inference</b>, described in the article <a href="MMSetRinf.htm#inclusion">Set: Rules of Inference</a>.</p>
+
+<a name="include"></a><a name="subset"></a><a name="contain"></a>
+
+
+<h6>Examples</h6>
+
+<ul>
+
+<li>$\mathbb{Q}\subseteq
+\mathbb{R}$ and $\mathbb{Z}\subseteq \mathbb{R}$.</li>
+
+<li>The set $\left\{ 1,\,2,\,3
+\right\}\subseteq \left\{ 1,\,2,\,3,\,4 \right\}$.</li>
+
+<li>The <a href="MMSetSpecific.htm#interval">interval</a> $\left[
+0,\,1 \right]\subseteq\left[
+0,\,2\right]$.</li>
+
+<li>The interval $\left[
+0,\,1 \right]\subseteq \mathbb{R}$.</li>
+
+</ul>
+
+<h2>Notation and terminology</h2>
+
+<p>
+The statement "$A\subseteq B$" is read as:</p>
+
+
+<ul>
+
+<li>"$A$ is <b>contained in</b> $B$",</li>
+
+<li>"$A$ is <b>included in</b> $B$", or</li>
+
+<li>"$A$ is a <b>subset of</b> $B$."</li>
+
+</ul>
+
+
+<h2>Basic facts about inclusion</h2>
+
+<p><b>Fact:</b> For every set $A$, $A\subseteq A$. In
+other words, <span class=purple>every set is a subset of itself.</span>
+</p>
+
+<p><b>Fact:</b> If $A\subseteq B$ and $B\subseteq A$ then $A=B$. In other words, <span class=purple>if $A$ and $B$ include each other, then they are the same set.</span></p>
+
+<p><b>Fact:</b> For every set $A$, $\varnothing \subseteq
+A$. In other words, <span class=purple>the empty set is a subset of every set.</span> <a href="MMSetRinf.htm#emptysetineveryset">Proof.</a></p>
+
+<a name="warning"></a>
+<h3>Warning</h3>
+
+<p>The statement that every set is a subset of itself can cause
+<a href="MMCognitiveDissonance.htm">cognitive
+dissonance</a>, because the "sub" prefix may lead you to believe that it is saying "$A$ is smaller than itself." The phrases "contained in" and "included in" also can cause cognitive dissonance for similar reasonss.</p>
+
+
+<a name="propersubset"></a>
+
+<h2>Proper inclusion</h2>
+
+<p class=bluesmall>The assertion "$A\,\subsetneq B$"
+($A$ is a <span class=red>proper subset</span> of $B$) means that
+every element of $A$ is an element of $B$, but there is at least one
+element of $B$ that is not an element of $A$.</p><p>For example, $\mathbb{Z}\,\,\subsetneq
+\,\mathbb{R}$ because every integer is a real number but there are real
+numbers that are not integers. (See <a
+href="MMGlossary.htm#proper">proper</a> for some
+ambiguity in the use of this word.)</p>
+
+<h3>A sad event that has caused countless grad students grief</h3>
+
+
+<p>The notation for inclusion has gotten <span class=large><font color="#AF3020"><b>Horribly Messed Up</b></font></span> in the last fifty years.</p>
+
+<p>The problem is that in the mathematical research literature, the expression "$A\subset B$" means $A\subseteq B$, whereas in many college texts, and invariably in high school, "$A\subset B$" means $A\subsetneq&nbsp; B$. The sad story is discussed in detail in the section
+on <a href="MMOtherSymbols.htm#inclusion">symbols.</a></p>
+
+<p>Because of this confusion, I do not use the expression "$A\subset B$" in abstractmath.org except when I am talking about this major notational disaster.</p>
+
+<h2>Assertions form subsets</h2>
+
+<p>If $P(x)$ is an <a
+href="MMMathEnglish.htm#assertion">assertion</a> whose
+only variable is $x$ then the set of elements of a set $S$ for
+which $P(x)$ is true is a subset of $S$. Using <a href="MMSetNotation.htm#setbuildernotation">setbuilder notation</a>, this subset is denoted by $\left\{ x\,|\,x\in S\text{ and }P(x) \right\}$.</p>
+
+<h4>Examples</h4>
+
+<ul>
+
+<li>Let $S$= $\{2, 3,
+4, 5 ,6\}$ and let $P(n)$ be the assertion "$n$ is an
+even integer".  Then $P$ determines the subset $\{2, 4, 6\}$ of $S$, and
+we could write the subset as $\left\{ n\,|\,n\in S\text{ and }n\text{ is even}
+\right\}$.</li>
+
+<li>The circle of radius
+$1$ with center at the origin is the subset $\left\{ (x,y)\,|\,{{x}^{2}}+{{y}^{2}}=1
+\right\}$ of the $xy$ plane.</li>
+
+<li>If $x$ is a <a href="MMRealNumbers.htm">real</a> variable,
+then $\left\{ x\,|\,{{x}^{2}}=-1 \right\}$ is a subset of the set $\mathbb{R}$ of
+real numbers. It is the empty set.</li>
+
+<li>If $x$ is a <a href="https://en.wikipedia.org/wiki/Complex_number">complex</a> variable,
+then the set $\left\{ x\,|\,{{x}^{2}}=-1 \right\}$ is a subset of $\mathbb{C}$.  In fact, $\left\{
+x|{{x}^{2}}=-1 \right\}=\left\{ i,-i \right\}$.</li>  </ul>
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+
+</body>
+
+</html>

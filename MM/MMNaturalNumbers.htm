@@ -1,0 +1,205 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Natural numbers</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+
+}
+});</script>
+<title>Natural Numbers</title>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-10-23
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+</pre>
+
+
+
+
+<h1>NATURAL NUMBERS</h1>
+
+<p class=blue>The natural numbers are the positive integers (whole numbers): the numbers $1, 2, 3, 4,$ and so on.   You have known about them since kindergarten.</p>
+
+<p class=blue>Many authors include $0$ in the natural numbers, especially in computing science.  </p>
+
+<p class=smallind>In nineteenth century mathematical writing, “natural number” may mean any <a href="MMIntegers.htm">integer</a>.</p>
+
+<a name="propnatnums"></a>
+
+<a name="propertiesofthenaturalnumbers"></a>
+
+<h2>Properties of the natural numbers</h2>
+
+<p>This is a short list of some of the properties that make the natural numbers important in math.</p>
+
+<a name="closure"></a>
+
+<h3>Closure</h3>
+
+<p>If $m$ and $n$ are integers, then so are $m+n$ and $mn$. This is described by saying that the natural numbers are <b><a href="https://en.wikipedia.org/wiki/Closure_(mathematics)">closed under addition and multiplication.</a></b> This is intrinsic to the use of natural numbers as representing quantity.</p>
+
+<p>The natural numbers are <i>not</i> closed under subtraction or division.  For example, $3$ and $5$ are natural numbers but $3-5$ and $3/5$ are not natural numbers.</p>
+
+<a name="uniquefactorization"></a>
+
+<h3>Unique factorization</h3>
+
+<p>Every natural number greater than $1$ has a <b>unique factorization</b>: it can be expressed as a product of primes (counting multiplicity) in exactly one way.  For example, $12=2\times2\times3$ and there is no other such factorization for $12$ (rearranging the primes doesn't count). This fact is the source of some of the deepest pure mathematics of all.  The subject is called <a href="https://en.wikipedia.org/wiki/Number_theory">number theory,</a> which in spite of its name means specifically the study of <i>natural</i> numbers.</p>
+
+<a name="wellordered"></a>
+
+<h3>Well-ordered</h3>
+
+<p>The natural numbers are <a href="http://en.wikipedia.org/wiki/Well-order"><b>well-ordered</b>.</a> This allows <a href="http://en.wikipedia.org/wiki/Mathematical_induction"><b>proof by mathematical induction.</b></a> Inductive proofs are a basic tool in <a href="https://en.wikipedia.org/wiki/Mathematical_logic">mathematical logic</a> and in <a href="https://en.wikipedia.org/wiki/Theoretical_computer_science">theoretical computer science.</a> Other number systems – <a href="MMIntegers.htm">integers</a>, <a href="MMRationalNumbers.htm">rational</a>, <a href="MMRealNumbers.htm">real</a> and <a href="http://en.wikipedia.org/wiki/Complex_number">complex numbers</a> –
+do not allow proof by induction.</p>
+
+<a name="imagesandmetaphorsforthenaturalnumbers"></a>
+
+
+<h2>Images and metaphors for the natural numbers </h2>
+
+<p class=blue>This section is about useful ways to think about the natural numbers for the purpose of doing math.</p><p>It is not about what the natural numbers "<a href="MMMathObj.htm#reallyare"><b>really are</b></a>".</p>
+
+<p>In contrast to most objects that occur in abstract math, you have been thinking about the natural numbers for most of your life.  Here I will point out several important aspects of natural numbers, making explicit some things you probably already know implicitly.</p>
+
+
+<a name="order"></a>
+<h3>Order</h3>
+
+
+
+
+<p class=blue>Each natural number corresponds to a position in a sequence.</p>
+
+<p>For example, the letter ‘d’ is the fourth letter of the alphabet, which is a sequence of $26$ letters.  This is the familiar use of integers as <a href="http://en.wikipedia.org/wiki/Ordinal_number"><b>ordinal numbers.</b></a> The natural numbers themselves are ordered in an infinite <a href="https://en.wikipedia.org/wiki/Sequence"><b>sequence</b></a>
+
+\[1\;2\;3\;4\;5\;\ldots\]
+
+that starts at 1 <i>but has no end:</i> <font color="#8000A0"><b>There is no “last” natural number.</b></font></p>
+
+<p class=smallind>Computer people some&shy;times start sequences at 0, so that for example the element $a_3$ is the <i>fourth</i> entry in the sequence $a_0, a_1, a_2, a_3,\ldots$
+</p>
+
+<a name="quantity"></a>
+
+<h3>Quantity</h3>
+
+<p>Each natural number corresponds to a quantity of distinct individual things.  For example the set of letters $S:=\{\text{a},\text{c},\text{e},\text{r},\text{x}\}$ contains five letters. This is the use of integers as <a href="http://en.wikipedia.org/wiki/Cardinal_number"><b>cardinal numbers.</b></a> In this case, you can say "The set $S$ contains <b>five elements,"</b> or "The set $S$ has <b>cardinality $5$."</b></p>
+
+
+<h4>Fine point about sets of letters:  </h4>
+
+<p>I referred to the set $\{\text{a},\text{c},\text{e},\text{r},\text{x}\}$ as a <b>set of letters</b>. If these five symbols were five <i>variables,</i> then the set might contain <i>fewer than</i>
+five elements.  Example: Let $a=e=r=13$, $c=4$ and $x=7$.  Then the set $\{a,c,e,r,x\}$ has <i>three</i> elements. It is the same set as $\{4,7,13\}$.</p><p> Notice that I use upright forms for letters and numbers, and italics for variables.  Not everyone does this. </p>
+
+
+
+<a name="aboutorderandquantity"></a>
+
+<h3>About order and quantity</h3>
+
+<p><b>Order</b> and <b>Quantity</b> are two <i>genuinely different ideas.</i>  One aspect of the difference is that ordinal numbers should start at $1$ (for the first thing in a sequence) but cardinal numbers should start at $0$, since it is possible to discover that you don’t have <i>any</i> instances of some kind of thing. (See <a href="MMSets.htm#emptyset">empty set</a>.)</p>
+<p>Order and quantity become <b>radically different</b> when you consider infinite sets.  Compare the Wikipedia articles on <a href="http://en.wikipedia.org/wiki/Cardinal_number">cardinal numbers</a> and <a href="http://en.wikipedia.org/wiki/Ordinal_number">ordinal numbers</a>.</p>
+
+<a name=nmo></a>
+
+<a name="thesetnofnaturalnumbers">
+</a>
+
+<h3>The set $\mathbb{N}$ of natural numbers</h3>
+
+<p>The set of natural numbers may be denoted by "$\mathbb{N}$", but be careful because some authors include $0$ in $\mathbb{N}$ and others do not.  People sometimes informally write $\{1,2,3,4,\ldots\}$ or $\{0,1,2,3,4,\ldots\}$ to refer to $\mathbb{N}$.</p>
+
+<p>Don't let the informal notation $\{1,2,3,4,\ldots\}$ for the set of natural numbers mislead you.</p><p class=purpleprose>$\mathbb{N}$ has every natural number as an element, <span class=red>all at once.</span></b></p>
+
+<p>It is plain wrong to think that the natural numbers "go on forever". The reason it is wrong to say that is that there is no sense in which a natural numbers pop into existence at a certain point in time, one after another. You should think of a number as an <b>unchanging mathe&shy;matical object</b>.</p> 
+
+<p class=smallind>I claim that that is the only useful way to think about natural numbers.  I am not claiming anything about what they "really are".</p>
+
+
+<a name="representationofnaturalnumbers"></a>
+<a name=representation></a>
+
+<h2>Representation of natural numbers</h2>
+
+<p>One aspect of natural numbers that causes difficulty for people new to abstract math is this:</p><p class=purpleprose>A number is not the same thing as its repre&shy;sentation.</p>
+
+<p>A natural number is a <a href="MMMathObj.htm">mathematical object.</a> The number of states in the United States of America is a natural number. In the usual notation, that natural number is written '$50$'.</p>
+
+<p>The expression '50' is a <b>sequence of typographical characters.</b> It is not itself the natural number it represents. <span class=purple>The notation ‘50’ is not the number $50$, although it</span> <span class=red>represents</span><span class=purple> the number $50$.</span></p>
+
+<p>That integer can be represented in many ways: </p>
+<ul>
+<li>in decimal notation as ‘50’.</li>
+
+<li>in <a href="MMNumberTheory.htm#hexadecimal">hexadecimal</a> as ‘32’.</li>
+
+<li> in <a href="MMNumberTheory.htm#binary">binary</a> as ‘110010’.</li>
+
+<li> as a <a href="http://en.wikipedia.org/wiki/Roman_numerals">Roman numeral </a>`L'.</li>
+
+<li>as a product of powers of primes as $2\cdot5^2$ (see <a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic">Fundamental Theorem of Arithmetic</a>).</li>
+
+<li>by the English word
+"fifty".</li>
+
+<li>by the phrase "the number of states in the United
+States of America".</li>
+</ul>  
+
+<p>Some more examples of representations of natural numbers are given in the article <a href="MMRepsModels.htm#representationofintegers">Representations and models</a>.</p>
+  
+<p>The first three items are examples of the representation of natural numbers to different <a href="http://mathworld.wolfram.com/Base.html">bases</a>.  Decimal notation is what we normally use, but from the point of view of abstract mathematics no representation to a particular base is more or less valid than any other.</p>
+
+<p class='smallind'>All base representations are equally valid, but one may be more useful than another in a given situa&shy;tion.  For example, binary notation takes too long to write but provides a useful direct repre&shy;senta&shy;tion of computer memory.</p>
+
+
+<a name="propandrep"></a>
+
+<a name="propertiesandrepresentations"></a>
+
+<h3>Properties and representations</a></h3>
+
+<p>You need to distinguish between <b>properties of natural numbers</b> and<b> properties of their representations</b>.  </p>
+
+<h5>Examples</h5>
+
+<ul>
+<li>Being <a href="http://en.wikipedia.org/wiki/Parity_(mathematics)">even</a> is a property of the number, not of its representation.</li>
+
+<li>On the other hand, “ending in an even digit” is a property of the representation.  The number $16$ (in decimal) is even, but its representation in base $3$ is "$121$", which does not end in an even digit. Nevertheless, $121_{3}$ is even.</li>
+
+<li>If you are asked, "Is $24$ <a href="http://en.wikipedia.org/wiki/Divisor">divisible</a> by $3$?", don’t ask, "In what base?", because being divisible by $3$ (or by any other natural number) is a property of the number, not of its representation.</li>
+
+</ul>
+
+<br />
+ <p><img border=0 width=88 height=31 src="CreativeCommons.gif" alt="Creative Commons License" v:shapes="_x0000_i1035"><![endif]></a></pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br />
+
+</body>
+
+</html>

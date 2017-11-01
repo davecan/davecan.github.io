@@ -1,0 +1,242 @@
+<html><head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Intent of assertions</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-01-28
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>   
+<a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+<a href="MMLangMath.htm">Return to Languages head</a>
+</pre>
+
+<h1>INTENT OF ASSERTIONS</h1>
+
+<p class=purpleprose>Assertions in math texts can play many different roles.</p>
+
+
+<p class=blue>English sentences can state facts, ask question, give commands, and other things.  The intent of an English sentence is often obvious, but sometimes it can be different from what is apparent in the sentence.  For example, the statement “Could you turn the TV down?” is <i>apparently</i> a question expecting a yes or no answer, but in fact it is a <i>request</i> (meaning "Please turn the TV down". (See the Wikipedia article on <a href="http://en.wikipedia.org/wiki/Speech_act">speech acts</a>.) Such things are normally understood by people who know each other, but people for whom English is a foreign language or who have a different culture have difficulties with them. </p>
+
+<p class=blue>There are some problems of this sort in math English and the symbolic language, too.  An assertion can have the intent of being a <a href="#claim">claim</a>, a <a href="#definition">definition</a>, or a <a href="#constraint">constraint</a>. It may be difficult to determine the intent of the author.  That is discussed briefly here.</p>
+
+<p class=blue>Most of the time the intent of an assertion in math is obvious. <i>But there are conventions and special formats that newcomers to abstract math may not recognize,</i> so they misunderstand the point of the assertion. This section takes a brief look at some of the problems.</p>
+
+<h3>Terminology</h3>
+
+<p>The way I am using the words <a href="MMMathEnglish.htm#assertion">“assertion”</a>, “claim”, and “constraint” is not standard usage in math, logic or linguistics. On the other hand, the word "definition" has a specific technical meaning in math that is described in detail in the <a href="MMDefs.htm">article on definitions</a>.</p>
+
+<a name="claim"></a>
+<a name="claims"></a>
+
+<h2>Claims</h2>
+
+<p class=bluesmall>In most circumstances, you would expect that if a lecturer or author makes a math <a href="MMMathEnglish.htm#assertion">assertion</a>, they are <span class=red>claiming</span> that it is a true statement, and you would be right.</p>
+
+<h5>Examples</h5>
+
+<p>All of these examples are <b>claims</b>:</p>
+ 
+<ol type=a>
+
+<li>"The $240$th digit of $\pi$ after the decimal point is $4$."</li>
+
+<li>"If a function is differentiable, it must be continuous."</li>
+
+<li>"$7\gt3$"</li>
+
+</ol>
+
+<h4>Remarks</h4>
+
+<ul>
+
+<li>You don’t have to know whether these statements are true or not to recognize them as claims. An incorrect claim is still a claim.</li>
+
+<li>The assertion in (a) is a statement, in this case a false one.  If it claimed the googolth digit was $4$ you would never be able to tell whether it is true or not, but it
+<i>still</i> would be an assertion intended as a claim.</li>
+
+<li>The assertion in (b) uses the standard math convention that an indefinite noun phrase (such as “a widget”) in the subject of a sentence is <a href="MMUnivTrue.htm">universally quantified</a> (see also the  article about "a" in <a
+href="MMGlossary.htm">the Glossary.</a>) In other words, “An integer divisible by $4$ must be even” claims that <i>any integer</i> divisible by $4$ is even. This statement is a claim, and it is true.</li>
+
+<li>(c) is a (true) claim in the <a
+href="MMSymLang.htm">symbolic language</a>.</li>
+</ul>
+
+<a name="definition"></a>
+<a name="definitions"></a>
+
+<h2>Definitions</h2>
+
+<p class=bluesmall>Definitions are discussed primarily in the <a
+href="MMDefs.htm">chapter on definitions</a>. <i>A definition is not the same thing as a claim.</i>  </p>
+
+</ul>
+
+<h5>Example</h5>
+
+<p>The <b>definition</b></p>
+
+<p style='text-align:center'>“An integer is <b>even</b> if it is divisible by $2$”</p>
+
+<p class=noind>means that after this statement in the text, a reference to an "even integer" means that the integer is divisible by $2$. In other words:</p>
+
+<p class=purpleprose>This definition is an assertion that<br /> from now on this is how the word "even"<br />will be used in this text.</p>
+
+
+<a name="unmarkeddefinitions"></a>
+
+<h3>Unmarked definitions</h3>
+
+<p>Math texts sometimes define something without saying that it is a definition. Because of that, students may sometimes think a <i>claim</i> is a <i>definition.</i>
+
+<h5>Example</h5>
+
+<p>Suppose that the concept of “even integer” was new to you and the book said, “A number is even if it is divisible by $4$.” Perhaps you thought that this was a definition. Later the book refers to $6$ as even and you pull your hair out wondering why. The statement is a <i>correct claim</i> but an <i>incorrect definition.</i> A <i>good</i> writer would write something like “Recall that a number is even if it is divisible by $2$, so that in particular it is even if it is divisible by $4$.”</p>
+
+<p class=headed>On the other hand, you may think a <i>definition</i> is only a <i>claim.</i></p>
+
+<h5>Example</h5>
+
+<p>A lecturer may <i>say</i> "By definition, an integer is even if it is divisible by $2$", and you write down: "An integer is even if it is divisible by $2$". Later, you get all panicky wondering <font color="#911B1B"><b>How did she know that??</b></font> (This has happened to me.)</p>
+
+<p class=headed>The confusion in the preceding example can also occur if a book says, "An integer is <b>even</b> if it is divisible by $2$" and you don't know about the convention that when an author puts a word or phrase in boldface or italics it may mean that they are defining it.</p>
+
+<p class=purpleprose>A good writer always labels definitions</p>
+
+<a name="constraint"></a>
+<a name="constraints"></a>
+
+<h2>Constraints</h2>
+
+<p>Here are two assertions that contain variables.</p>
+
+<ul>
+
+<li>"$n$ is even."</li>
+
+<li>"$x\gt1$".</li>
+
+</ul>
+
+<p>Such an assertion is a <b>constraint</b> (or a <b>condition</b>) if the intent is
+that the assertion will hold in that part of the text (the <a href="MMVarMeanings.htm#scope">scope</a> of the constraint). The part of the text in which it holds is usually the immediate vicinity unless the authors explicitly says it will hold in a larger part of the text such as “this chapter” or “in the rest of the book”.</p>
+
+<h5>Examples</h5>
+
+<ul>
+
+<li>Sometimes the wording makes it clear that the phrase is a constraint. So a statement such as “Suppose $3x^2-2x-5\geq0$" is a constraint on the possible values of $x$.</li>
+
+<li>The statement “Suppose $n$ is even” is an <i>explicit</i> requirement that $n$ be even and an <i>implicit</i> requirement that $n$ be an integer.</li>
+
+<li>A condition for which you are told to find the solution(s) is a constraint. For example: “Solve the equation $3x^2-2x-5=0$". This equation is a constraint on the variable $x$. “Solving” the equation means saying explicitly which numbers make the equation true.</li></ul>
+		
+<h3>Postconditions</h3>
+
+<p>The constraint may appear in parentheses <i>after</i> the assertion as a <a
+href="MMMoreLanguage.htm#postcondition">postcondition</a> on an assertion.</p>
+
+<h5>Example</h5>
+
+<p style='text-align:center'>"$x^2\gt x\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,(\text{all }x\gt1)$"</p>
+
+<p class=noind>which means that if the constraint "$x\gt1$" holds, then "$x^2\gt x$" is true. In other words, <i>for all</i> $x\gt1$, the statement $x^2\gt x$ is true. In this statement, "$x^2\gt x$" is not a constraint, but a <a href="#claim">claim</a> which is true <i>when the constraint is true.</i></p>
+
+<a name="equals"></a><a name="equation"></a>
+
+<h2>Equations</h2>
+
+<p>"$2 + 2$" and "$1 + 3$" are two different names of the same <a
+href="MMMathObj.htm">math object</a>.  The statement "$2 + 2  = 1 + 3$" ("$2 + 2$" <b>equals
+</b>"$1 + 3$") means just that.  Such an expression is called an <b>equation</b>.   There is more information in the <a
+href="https://en.wikipedia.org/wiki/Equality_(mathematics)">Wikipedia article</a>.</p>
+
+<h4>Equations and expressions</h4>
+
+<p class=blue>An equation may have an <span class=red>intent</span> that goes beyond the bare statement that two
+things are the same. </p>
+
+<p>"$2 + 2$" and "$1 + 3$" are expressions that denote a number.  They
+denote the same number, namely $4$.  <span class=purple>But the expression "$2 + 2$" contains
+more information than naming the number $4$.  It expresses $4$ as a <i>particular</i>
+sum.</span>  </p>
+
+<p>This
+phenomenon is a <i>general fact about equations</i>.   It is uninteresting to say an
+object is equal to itself.  It may be more interesting to say that <i>this</i>
+expression names
+the same object as <i>tha</i>t expression.  Because the expressions may
+contain additional information about the object, an equation may communicate
+information about the object.   Just what information is being communicated depends on
+the context, and may not be obvious.</p>
+
+<h4 class=redit>Examples</h4>
+<ol>
+
+<li>
+ The intent
+of the equation $2\times 3=6$ for a grade school student may be a
+“multiplication fact":  Multiply $2$  by $3$ gives $6$.  <span class=purple>The new information is $6$.</span></li>
+
+<li>
+ When I was
+a child, I discovered that $3\times 37=111$, which I thought was quite
+wonderful.  The new information there was that $3\times 37$ is a factorization
+of $111$ – <span class=purple>it
+was the $3$ and the $37$ that constituted new information.</span> Note that this is <i>just the opposite of the first example</i>.</li>
+
+<li>
+ An equation containing <a
+href="MMVarSub.htm#variables">variables</a> may be an <b>identity</b>, meaning it is a
+statement that the two objects are the same for all values of the variables
+that satisfy the hypotheses up to this point in the text. For example,\[(x+y)^2=x^2+2xy+y^2\,\,\,\,\,\,\text{(A)}\] is true for all real numbers $x$ and $y$. So if we are doing a proof and we need to know that $x^2+2xy+y^2$ is nonnegative, we can quote the identity (A) <span class=purple>because it allows us to rewrite the right side of (A) as the left side</span>.</li>
+
+<li>On the other hand, if we knew that $x$ and $y$ were positive and we need to know that \[(x+y)^2\gt x^2+y^2\] then we could quote (A) <span class=purple>because it allows us to write the left side of (A) as the right side.</span></li> 
+
+
+<li>
+An equation containing variables
+may be a <a href="MMIntent#constraint">constraint</a>, for example: "Now
+suppose $x=y^2$". This means that later in the text, you can write, "We know that $x\geq0$" <span class=purple>because we can write $x$ as as square</span>.</li>
+
+
+<li>Some students often get stuck with a proof because, although they know the distributive law \[A(B+C)=AB+AC\] it never occurs to them to rewrite $AB+AC$ as $A(B+C)$. Converting in the other direction doesn't seem to be a problem for such students.</li>
+
+
+</ol>
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+</body>
+
+</html>

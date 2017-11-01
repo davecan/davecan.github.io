@@ -1,0 +1,2287 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<!-- saved from url=(0014)about:internet --><!-- MSIE Mark of the Web -->
+
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=keywords content="MathPageGen">
+
+<meta name=Generator content="MathPage 1.0.1">
+<meta name=Originator content="Microsoft Word 11">
+
+
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>ExistenceAssertions</title>
+
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	}
+@font-face
+	{font-family:"MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;
+	}
+@font-face
+	{font-family:"\@MS Mincho";
+	panose-1:2 2 6 9 4 2 5 8 3 4;
+	}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+h1
+	{margin-right:0in;
+	margin-bottom:1.2pt;
+	margin-left:0in;
+	text-indent:0in;
+	font-size:20.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+h2
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	font-size:16.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h3
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:13.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+h4
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+h5
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+h6
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:7.5pt;
+	font-family:Arial;
+	color:green;
+	font-weight:bold;
+	}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.15in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:normal;
+	font-size:9.0pt;
+	font-family:Arial;
+	}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:20.15pt;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:normal;
+	font-size:8.0pt;
+	font-family:Arial;
+	}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.MsoCommentReference
+	{}
+p.MsoList, li.MsoList, div.MsoList
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+
+
+strong
+	{font-family:Arial;
+	color:windowtext;
+	font-style:italic;
+	}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	}
+p
+	{margin-top:3.0pt;
+	margin-right:7.5pt;
+	margin-bottom:7.5pt;
+	margin-left:0in;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+tt
+	{font-family:"Courier New";
+	}
+span.CharChar6
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar5
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar4
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+span.CharChar3
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+span.Char5Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char4Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar2
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+span.CharChar1
+	{font-family:Arial;
+	}
+p.Secondhead, li.Secondhead, div.Secondhead
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:.2in;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.Abmath
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+span.amhead
+	{font-family:Arial;
+	color:teal;
+	border:none windowtext 1.0pt;
+	padding:0in;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+span.Chaptitle
+	{font-family:Arial;
+	color:teal;
+	border:none windowtext 1.0pt;
+	padding:0in;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+p.Tiny, li.Tiny, div.Tiny
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:8.0pt;
+	font-family:Arial;
+	}
+p.Postdate, li.Postdate, div.Postdate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:8.0pt;
+	font-family:Arial;
+	color:teal;
+	font-style:italic;
+	}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+span.ChildrenChar
+	{font-family:Arial;
+	}
+p.Children, li.Children, div.Children
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:-.1in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Subchildren, li.Subchildren, div.Subchildren
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:-.1in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.PurpleProseChar
+	{font-family:Arial;
+	color:purple;
+	font-weight:bold;
+	font-style:italic;
+	}
+p.PurpleProse, li.PurpleProse, div.PurpleProse
+	{margin-top:0in;
+	margin-right:12.95pt;
+	margin-bottom:0in;
+	margin-left:9.35pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:0in;
+	line-height:14.0pt;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:purple;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.TodoChar
+	{font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;
+	}
+p.Todo, li.Todo, div.Todo
+	{margin-top:0in;
+	margin-right:9.0pt;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;
+	}
+span.LlistChar
+	{font-family:Arial;
+	}
+p.Llist, li.Llist, div.Llist
+	{margin-top:3.0pt;
+	margin-right:9.35pt;
+	margin-bottom:0in;
+	margin-left:-.1in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Subllist, li.Subllist, div.Subllist
+	{margin-top:3.0pt;
+	margin-right:9.35pt;
+	margin-bottom:0in;
+	margin-left:-.1in;
+	margin-bottom:.0001pt;
+	text-indent:23.4pt;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.purple, li.purple, div.purple
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	}
+span.purpleChar
+	{font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	}
+p.Alist, li.Alist, div.Alist
+	{margin-top:3.0pt;
+	margin-right:9.35pt;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Small, li.Small, div.Small
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:8.0pt;
+	font-family:Arial;
+	}
+p.ToDo0, li.ToDo0, div.ToDo0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#FF6600;
+	font-weight:bold;}
+p.amsecondheaed, li.amsecondheaed, div.amsecondheaed
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:0in;
+	font-size:24.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;}
+p.children0, li.children0, div.children0
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.05in;
+	margin-bottom:.0001pt;
+	text-indent:.05in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+p.subchildren0, li.subchildren0, div.subchildren0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+p.ToDO1, li.ToDO1, div.ToDO1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	color:olive;
+	font-weight:bold;}
+span.ToDOChar0
+	{font-family:Helvetica;
+	color:olive;
+	font-weight:bold;}
+span.InsetHead
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+span.Head4
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.roman
+	{font-family:Verdana;
+	font-weight:normal;
+	font-style:normal;}
+span.Inset
+	{font-family:Arial;
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;
+	}
+p.purplecentered, li.purplecentered, div.purplecentered
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+p.mpph, li.mpph, div.mpph
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.mpphspan, li.mpphspan, div.mpphspan
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.mpentity, li.mpentity, div.mpentity
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.Head, li.Head, div.Head
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#7F7F00;
+	font-weight:bold;
+	}
+p.TOC, li.TOC, div.TOC
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	color:black;
+	}
+span.Purple0
+	{font-family:Arial;
+	color:#993366;
+	font-weight:bold;
+	}
+span.InsetChar
+	{font-family:Helvetica;
+	color:teal;
+	font-weight:bold;
+	}
+span.Char3Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char2Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.smallCharChar
+	{font-family:Helvetica;
+	}
+p.smallChar, li.smallChar, div.smallChar
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+span.Char1Char
+	{font-family:Arial;
+	color:green;
+	font-weight:bold;}
+span.CharChar
+	{font-family:Arial;
+	}
+span.ChildrenCharChar
+	{font-family:Arial;
+	}
+span.PurpleProseCharChar
+	{font-family:Arial;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+span.TodoCharChar
+	{font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;
+	}
+span.LlistCharChar1Char
+	{font-family:Arial;
+	}
+p.LlistCharChar1, li.LlistCharChar1, div.LlistCharChar1
+	{margin-top:0in;
+	margin-right:9.0pt;
+	margin-bottom:0in;
+	margin-left:5.4pt;
+	margin-bottom:.0001pt;
+	text-indent:9.0pt;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.small0, li.small0, div.small0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+span.LlistCharChar
+	{font-family:Arial;
+	}
+span.SmallChar0
+	{font-family:Arial;
+	}
+span.inheadingChar
+	{font-family:Helvetica;
+	color:teal;
+	font-weight:bold;}
+p.inheading, li.inheading, div.inheading
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Helvetica;
+	color:teal;
+	font-weight:bold;
+	}
+p.FinePrint, li.FinePrint, div.FinePrint
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:9.0pt;
+	font-family:Arial;
+	}
+span.inheadingchar0
+	{font-family:Helvetica;
+	color:#6B8195;
+	font-weight:bold;}
+p.Question, li.Question, div.Question
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	color:maroon;
+	}
+p.LittleHead, li.LittleHead, div.LittleHead
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:#333399;
+	font-weight:bold;}
+span.LittleHeadChar
+	{font-family:Arial;
+	color:#333399;
+	font-weight:bold;}
+span.Heading1Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Heading3Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+p.PurpleProse2, li.PurpleProse2, div.PurpleProse2
+	{margin-top:0in;
+	margin-right:12.95pt;
+	margin-bottom:0in;
+	margin-left:9.35pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:.2in;
+	line-height:normal;
+	border:none;
+	padding:0in;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+span.purpleChar1
+	{font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+span.Char5CharChar
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char4CharChar
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char3CharChar
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char2CharChar
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char5CharChar0
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+p.faq, li.faq, div.faq
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:olive;
+	font-weight:bold;}
+span.faqChar
+	{font-family:Arial;
+	color:olive;
+	font-weight:bold;}
+p.Boxed, li.Boxed, div.Boxed
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:Arial;
+	}
+span.TinyChar
+	{font-family:Arial;
+	}
+p.Red, li.Red, div.Red
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#993300;
+	}
+p.Blue, li.Blue, div.Blue
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:navy;
+	font-weight:bold;
+	}
+p.Preface, li.Preface, div.Preface
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:olive;
+	font-weight:bold;}
+p.Aliste, li.Aliste, div.Aliste
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.3in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.GlossaryLetter
+	{font-family:Arial;
+	color:#993300;}
+p.Moral, li.Moral, div.Moral
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.25in;
+	line-height:14.0pt;
+	background:#CC99FF;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.StyleNormal, li.StyleNormal, div.StyleNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:normal;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+ /* Page Definitions */
+ @page
+	{}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:72.05pt 52.3pt 143.5pt 157.95pt;
+	}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{}
+@list l0:level1
+	{margin-left:.25in;
+	text-indent:0in;}
+@list l1
+	{}
+@list l1:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;}
+@list l2
+	{}
+@list l2:level1
+	{margin-left:.1in;
+	text-indent:0in;
+	letter-spacing:.15pt;
+	layout-grid-mode:both;}
+@list l3
+	{}
+@list l3:level1
+	{margin-left:.15in;
+	text-indent:0in;
+	layout-grid-mode:both;}
+@list l4
+	{}
+@list l4:level1
+	{margin-left:.35in;
+	text-indent:-.2in;
+	letter-spacing:.1pt;
+	layout-grid-mode:both;}
+@list l5
+	{}
+@list l5:level1
+	{margin-left:.1in;
+	text-indent:.05in;
+	layout-grid-mode:both;}
+@list l6
+	{}
+@list l6:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l7
+	{}
+@list l7:level1
+	{text-indent:0in;}
+@list l7:level2
+	{text-indent:-.25in;}
+@list l7:level3
+	{text-indent:-.25in;}
+@list l7:level4
+	{text-indent:-.25in;}
+@list l7:level5
+	{text-indent:-.25in;}
+@list l7:level6
+	{text-indent:-.25in;}
+@list l7:level7
+	{text-indent:-.25in;}
+@list l7:level8
+	{text-indent:-.25in;}
+@list l7:level9
+	{text-indent:-.25in;}
+@list l8
+	{}
+@list l8:level1
+	{margin-left:.05in;
+	text-indent:.2in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l9
+	{}
+@list l9:level1
+	{margin-left:0in;
+	text-indent:.3in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l10
+	{}
+@list l10:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l11
+	{}
+@list l11:level1
+	{margin-left:0in;
+	text-indent:.25in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l12
+	{}
+@list l12:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l13
+	{}
+@list l13:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l14
+	{}
+@list l14:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l15
+	{}
+@list l15:level1
+	{text-indent:-.25in;}
+@list l16
+	{}
+@list l16:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+@list l17
+	{}
+@list l17:level1
+	{margin-left:.8in;
+	text-indent:-.25in;}
+@list l18
+	{}
+@list l18:level1
+	{margin-left:-.1in;
+	text-indent:.2in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l18:level2
+	{text-indent:-.25in;}
+@list l18:level3
+	{text-indent:-.25in;}
+@list l18:level4
+	{text-indent:-.25in;}
+@list l18:level5
+	{text-indent:-.25in;}
+@list l18:level6
+	{text-indent:-.25in;}
+@list l18:level7
+	{text-indent:-.25in;}
+@list l18:level8
+	{text-indent:-.25in;}
+@list l18:level9
+	{text-indent:-.25in;}
+@list l19
+	{}
+@list l19:level1
+	{margin-left:.3in;
+	text-indent:0in;
+	color:windowtext;}
+@list l20
+	{}
+@list l20:level1
+	{margin-left:0in;
+	text-indent:.3in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l21
+	{}
+@list l21:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+<!-- MP HEAD( -->
+<style>
+.MPPH { visibility:hidden; page-break-inside:avoid }
+.MPPHSpan { text-indent:0 }
+sub,sup { font-size:x-small }
+#MPDpiSpan { position:absolute; top:1in; left:1in; width:100px; border:none; visibility:hidden }
+.MPEntity { font-family:'Times New Roman',Times,serif }
+</style>
+<style media=screen>
+.MPScreenEqn { position:absolute; visibility:visible; z-index:98 }
+.MPPrintEqn { display:none }
+.MPScreenPH { }
+.MPPrintPH { display:none }
+.MPPopup { position:absolute; visibility:hidden; z-index:99; top:0; left:0; text-indent:0; cursor:hand; 
+border:solid blue 1px; padding:5px; background-color:#FFFFCC; 
+filter:progid:DXImageTransform.Microsoft.DropShadow(color=#444444,offx=3,offy=3,positive=1) 
+}
+.MPPopupNoBg { position:absolute; visibility:hidden; z-index:99; top:0; left:0; text-indent:0; cursor:hand; 
+border:solid blue 1px; padding:5px; 
+filter:progid:DXImageTransform.Microsoft.DropShadow(color=#444444,offx=3,offy=3,positive=1) 
+}
+</style>
+<style media=print>
+.MPScreenEqn { display:none }
+.MPPrintEqn { position:absolute; visibility:visible }
+.MPScreenPH { display:none }
+.MPPrintPH { }
+.MPPopup { display:none }
+.MPPopupNoBg { display:none }
+</style>
+<script language=javascript src='mathpage.js'></script>
+<script language=javascript>
+if (typeof DSMP == 'undefined') {
+	alert('MathPage Javascript file missing; equations and symbols will not display.');
+	var DSMP = new Object;
+	MPBodyInit=MPSetEqnAttrs=MPSetChAttrs=MPEquation=MPInlineChar=MPDeleteCode=MPNNCalcTopLeft=MPHidePopup=MPShowPopup=MPNNSelectScreenEqn=MPWebEQApplet=MPTechexplorerObject=function(){};
+	DSMP.gEmptySrc=DSMP.gPlaceholderHeight=DSMP.gPlaceholderWidth=DSMP.gPlaceholder2Height=DSMP.gNNPopupBgColor=DSMP.gPopupEqnSrc=DSMP.gPopupEqnPadding=DSMP.gNNLayerTop=DSMP.gNNLayerLeft=DSMP.gScreenEqnSrc=DSMP.gScreenEqnWidth=DSMP.gScreenEqnHeight=DSMP.gPrintEqnSrc=null;
+}
+DSMP.gPageVersion = '1.1';
+DSMP.gMaxCharCompat = 1;
+DSMP.gGenMathZoom = 1;
+DSMP.gPopupEqnBgColorDefault = '#FFFFCC';
+DSMP.gPopupEqnPaddingDefault = 5;
+DSMP.gPlaceholderPadding = 4;
+DSMP.gOldJSMessage = 'Warning: this MathPage document requires a newer JavaScript file and may not display correctly.';
+DSMP.gCompatMessage = 'Warning: this MathPage document was generated for Windows IE5 or later only and may not display correctly.';
+DSMP.gMinBrowserMessage = 'Warning: MathPage requires a version 4 or later browser.';
+DSMP.gHidePopupMessage = 'Click on a MathZoom equation to dismiss it, or shift-Click to close all.';
+DSMP.gShowPopupMessage = 'Click on an equation to show the enlarged MathZoom version.';
+</script>
+<!-- )MP HEAD -->
+</head>
+
+<body lang=EN-US link=blue vlink="#CC3300" >
+<!-- MP BODY(-->
+<span id=MPDpiSpan></span>
+<script language=javascript>
+MPBodyInit('MMExistenceAssertions_files')
+</script>
+<!-- )MP BODY -->
+
+
+<div class=Section1>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+class=Abmath><span style='font-size:11.0pt'>&nbsp;</span></span></p>
+
+<div style='border:solid teal 2.25pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=Tiny style='border:none;padding:0in;
+'><span class=amhead><span
+style='font-size:28.0pt;border:none'><span style='border:none'>abstractmath.org</span></span></span><span
+class=amhead><u><span style='font-size:28.0pt;border:none'></span></u></span></p>
+
+<p class=Secondhead style='text-indent:0in;line-height:normal;border:none;
+padding:0in'><span
+style='color:purple'>help with abstract math</span></p>
+
+<pre style='text-indent:0in;line-height:normal;border:none;padding:0in'><a name="_Toc105947357"><span
+class=Abmath><span style='font-size:11.0pt'>Produced by </span></span></a><a
+href="http://www.cwru.edu/artsci/math/wells/home.html"><span style='font-size:11.0pt;text-decoration:none'>Charles Wells.</span></a><span class=Abmath><span style='font-size:
+11.0pt'>  </span></span><a href="MMIntro.htm"><span
+style='mso-bookmark:_Toc105947357'><span style='font-size:11.0pt;text-decoration:
+none;text-underline:none'>Home</span></span></a><span style='mso-bookmark:_Toc105947357'><span
+class=MsoHyperlink><span style='font-size:11.0pt;text-decoration:none;
+text-underline:none'><span style='mso-spacerun:yes'>    </span></span></span></span><a
+href="MMTOC.htm"><span style='mso-bookmark:_Toc105947357'><span
+style='font-size:11.0pt;text-decoration:none;text-underline:none'>Website TOC </span></span></a><span
+style='mso-bookmark:_Toc105947357'><span class=MsoHyperlink><span
+style='font-size:11.0pt;text-decoration:none;text-underline:none'><span style='mso-spacerun:yes'>   </span></span></span></span><a
+href="MMIndex.htm"><span style='mso-bookmark:_Toc105947357'><span
+style='font-size:11.0pt;text-decoration:none;text-underline:none'>Website Index</span></span></a><span
+style='mso-bookmark:_Toc105947357'><span class=MsoHyperlink><span
+style='font-size:11.0pt;text-decoration:none;text-underline:none'> </span></span><strong><span
+style='mso-bidi-font-family:"Courier New";font-weight:normal;font-style:normal'><o:p></o:p></span></strong></span></pre></div>
+
+
+
+<div style='mso-element:frame;mso-element-frame-width:1.0in;mso-element-frame-hspace:
+.1in;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+page;mso-element-left:right;mso-element-top:.05pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=116 align=right>
+ <tr>
+  <td valign=top align=left style='padding-top:0in;padding-right:.1in;
+  padding-bottom:0in;padding-left:.1in'>
+  <p class=MsoNormal style='text-indent:0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+  mso-element:frame;mso-element-frame-width:1.0in;mso-element-frame-hspace:
+  .1in;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:right;mso-element-top:
+  .05pt;mso-height-rule:exactly'><a name="_Toc127846306"><span class=Abmath><span
+  style='font-size:11.0pt;font-weight:normal;mso-bidi-font-weight:bold'><script language="VBScript">
+<!--
+
+-->
+  </script></span></span></a><span style='mso-bookmark:_Toc127846306'><span
+  class=Abmath><span style='font-size:11.0pt;mso-bidi-font-weight:bold'><script  type="text/javascript">
+<!--
+google_ad_client = "pub-0839594169704668";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel ="";
+google_color_border = "B4D0DC";
+google_color_bg = "FFFFFF";
+google_color_link = "0000CC";
+google_color_url = "008000";
+google_color_text = "6F6F6F";
+//-->
+  </script><script  type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  </script><o:p>&nbsp;</o:p></span></span></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+style='mso-bookmark:_Toc127846306'><span style='color:teal;mso-bidi-font-weight:
+normal'>Last edited <span style='mso-field-code:" SAVEDATE   \\* MERGEFORMAT "'><span
+style='mso-no-proof:yes'>9/26/2008 10:16:00 AM</span></span></span></span><span
+style='color:teal;mso-bidi-font-weight:normal'><o:p></o:p></span></p>
+
+<div style='mso-element:frame;mso-element-frame-width:1.0in;mso-element-frame-hspace:
+.1in;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+page;mso-element-left:right;mso-element-top:.05pt;mso-height-rule:exactly'>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=116 align=right>
+ <tr>
+  <td valign=top align=left style='padding-top:0in;padding-right:.1in;
+  padding-bottom:0in;padding-left:.1in'>
+  <p class=MsoNormal style='text-indent:0in;tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+  mso-element:frame;mso-element-frame-width:1.0in;mso-element-frame-hspace:
+  .1in;mso-element-wrap:around;mso-element-anchor-vertical:paragraph;
+  mso-element-anchor-horizontal:page;mso-element-left:right;mso-element-top:
+  .05pt;mso-height-rule:exactly'><span class=Abmath><span style='font-size:
+  11.0pt;mso-bidi-font-weight:bold'><o:p>&nbsp;</o:p></span></span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+class=Chaptitle><span style='font-size:24.0pt;mso-bidi-font-size:36.0pt;
+mso-bidi-font-weight:normal'>EXISTENCE ASSERTIONS </span></span><span
+class=ToDOChar0><span lang=EN style='font-size:12.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+class=ToDOChar0><span lang=EN style='font-size:12.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:"Times New Roman"'>Not written yet.<span
+style='mso-spacerun:yes'>  </span>Meanwhile, check out <a
+href="http://en.wikipedia.org/wiki/Existential_quantification"><span
+style='mso-ascii-font-family:Helvetica;mso-hansi-font-family:Helvetica;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold'>existential quantification</span></a> in Wikipedia<o:p></o:p></span></span></p>
+
+<h2><a name=existentialquantifier><span style='display:none;mso-hide:all'>existential
+quantifier<o:p></o:p></span></a></h2>
+
+<span style='mso-bookmark:existentialquantifier'></span>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>For a <a
+href="HB/hb.html#predicate"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>assertion</span></a>&nbsp;
+P, an <a href="HB/hb.html#assertion"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>assertion</span></a>
+of the form </span></span><span class=LlistCharChar><span lang=EN
+style='font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";display:none;
+mso-hide:all'><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter" />
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0" />
+  <v:f eqn="sum @0 1 0" />
+  <v:f eqn="sum 0 0 @1" />
+  <v:f eqn="prod @2 1 2" />
+  <v:f eqn="prod @3 21600 pixelWidth" />
+  <v:f eqn="prod @3 21600 pixelHeight" />
+  <v:f eqn="sum @0 0 1" />
+  <v:f eqn="prod @6 1 2" />
+  <v:f eqn="prod @7 21600 pixelWidth" />
+  <v:f eqn="sum @8 21600 0" />
+  <v:f eqn="prod @7 21600 pixelHeight" />
+  <v:f eqn="sum @10 21600 0" />
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect" />
+ <o:lock v:ext="edit" aspectratio="t" />
+</v:shapetype><v:shape id="_x0000_i1028" type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0001 DIMS='[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]]' CHARID=ch0 INSUBSUPER=0/]"
+ style='width:10.85pt;height:10.85pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0001s1>
+	MPSetChAttrs('ch0001','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><![if !ie]><span id=mpnnch0001ph class=MPNNCode
+	><img border=0 name=mpch0001ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0001s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span></span><span class=LlistCharChar><span
+lang=EN style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:
+all'>x</span></span><span class=LlistCharChar><span lang=EN style='mso-fareast-font-family:
+"MS Mincho";mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0002s1>
+	MPSetChAttrs('ch0002','ch',[[6,1,0,0,0],[7,1,0,0,0],[9,1,0,0,0],[],[],[],[23,1,0,0,0]])
+</script><![if !ie]><span id=mpnnch0002ph class=MPNNCode
+	><img border=0 name=mpch0002ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0002s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span></span><span
+class=LlistCharChar><span lang=EN style='mso-bidi-font-family:"Times New Roman";
+display:none;mso-hide:all'>P(x) means that there is at least one <a
+href="HB/hb.html#mathematical%20object"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>mathematical object</span></a>&nbsp;
+c of the <a href="HB/hb.html#type"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>type</span></a>
+of&nbsp; x for which the <a href="HB/hb.html#assertion"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>assertion</span></a>
+P(c) is <a href="HB/hb.html#true"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>true</span></a>. The
+<a href="HB/hb.html#symbol"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>symbol</span></a> </span></span><span
+class=LlistCharChar><span lang=EN style='font-family:"MS Gothic";mso-bidi-font-family:
+"MS Gothic";display:none;mso-hide:all'><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0003 DIMS='[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]]' CHARID=ch0 INSUBSUPER=0/]"
+ style='width:10.85pt;height:10.85pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0003s1>
+	MPSetChAttrs('ch0003','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><![if !ie]><span id=mpnnch0003ph class=MPNNCode
+	><img border=0 name=mpch0003ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0003s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span></span><span class=LlistCharChar><span
+lang=EN style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:
+all'><span style='mso-spacerun:yes'> </span>is pronounced &quot;there is&quot;
+or &quot;there are&quot; and is called the existential quantifier. See
+Remark&nbsp; under <a href="HB/hb.html#such%20that"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>such
+that</span></a>. <o:p></o:p></span></span></p><!-- MP SYRA( --><script id=mpch0003s1>
+	MPSetChAttrs('ch0003','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0003 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0003ph,'')
+	</script><layer id=mpch0003 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0003s3>
+	MPDeleteCode('ch0003')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0002s1>
+	MPSetChAttrs('ch0002','ch',[[6,1,0,0,0],[7,1,0,0,0],[9,1,0,0,0],[],[],[],[23,1,0,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0002 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0002ph,'')
+	</script><layer id=mpch0002 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0002s3>
+	MPDeleteCode('ch0002')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0001s1>
+	MPSetChAttrs('ch0001','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0001 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0001ph,'')
+	</script><layer id=mpch0001 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0001s3>
+	MPDeleteCode('ch0001')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Example<o:p></o:p></span></h3>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>Let&nbsp;
+n be of <a href="HB/hb.html#type"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>type</span></a>
+integer and suppose P(n) is the assertion &quot; n is divisible by&nbsp;
+6&quot;. Then the <a href="HB/hb.html#assertion"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>assertion</span></a>
+</span></span><span class=LlistCharChar><span lang=EN style='font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0004 DIMS='[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]]' CHARID=ch0 INSUBSUPER=0/]"
+ style='width:10.85pt;height:10.85pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0004s1>
+	MPSetChAttrs('ch0004','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><![if !ie]><span id=mpnnch0004ph class=MPNNCode
+	><img border=0 name=mpch0004ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0004s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span></span><span class=LlistCharChar><span
+lang=EN style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:
+all'>n</span></span><span class=LlistCharChar><span lang=EN style='mso-fareast-font-family:
+"MS Mincho";mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0005s1>
+	MPSetChAttrs('ch0005','ch',[[6,1,0,0,0],[7,1,0,0,0],[9,1,0,0,0],[],[],[],[23,1,0,0,0]])
+</script><![if !ie]><span id=mpnnch0005ph class=MPNNCode
+	><img border=0 name=mpch0005ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0005s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span></span><span
+class=LlistCharChar><span lang=EN style='mso-bidi-font-family:"Times New Roman";
+display:none;mso-hide:all'>P(n) can be expressed in the <a
+href="HB/hb.html#mathematical%20register"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>mathematical
+register</span></a> in these ways: <o:p></o:p></span></span></p><!-- MP SYRA( --><script id=mpch0005s1>
+	MPSetChAttrs('ch0005','ch',[[6,1,0,0,0],[7,1,0,0,0],[9,1,0,0,0],[],[],[],[23,1,0,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0005 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0005ph,'')
+	</script><layer id=mpch0005 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0005s3>
+	MPDeleteCode('ch0005')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0004s1>
+	MPSetChAttrs('ch0004','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0004 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0004ph,'')
+	</script><layer id=mpch0004 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0004s3>
+	MPDeleteCode('ch0004')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MTDisplayEquation><a name="there_is"><span class=LlistCharChar><span
+lang=EN style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:
+all'>There is</span></span></a><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'> an
+integer divisible by&nbsp; 6. Citation: LewPap9820, Mea93387. <o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>There
+exists an integer divisible by&nbsp; 6. Citation: Che88744, Kre94903. <o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>There
+are integers divisible by&nbsp; 6. Citation: HenLarMarWoo94213, Ros93293. <o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>Some
+integers are divisible by&nbsp; 6. Citation: Mea61152. <o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>For
+some integer n, 6 divides n. Citation: Kle99678, Sto952614. <o:p></o:p></span></span></p>
+
+<h3><span style='display:none;mso-hide:all'>Remark<o:p></o:p></span></h3>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>If the
+assertion </span></span><span class=LlistCharChar><span lang=EN
+style='font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";display:none;
+mso-hide:all'><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ alt="[!DSTAG SYMBOL ID=ch0006 DIMS='[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]]' CHARID=ch0 INSUBSUPER=0/]"
+ style='width:10.85pt;height:10.85pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0006s1>
+	MPSetChAttrs('ch0006','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><![if !ie]><span id=mpnnch0006ph class=MPNNCode
+	><img border=0 name=mpch0006ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0006s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span></span><span class=LlistCharChar><span
+lang=EN style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:
+all'>x</span></span><span class=LlistCharChar><span lang=EN style='mso-fareast-font-family:
+"MS Mincho";mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0007s1>
+	MPSetChAttrs('ch0007','ch',[[6,1,0,0,0],[7,1,0,0,0],[9,1,0,0,0],[],[],[],[23,1,0,0,0]])
+</script><![if !ie]><span id=mpnnch0007ph class=MPNNCode
+	><img border=0 name=mpch0007ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0007s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span></span><span
+class=LlistCharChar><span lang=EN style='mso-bidi-font-family:"Times New Roman";
+display:none;mso-hide:all'>P(x) is <a href="HB/hb.html#true"><span
+style='mso-bidi-font-family:"Times New Roman";color:windowtext;text-decoration:
+none;text-underline:none'>true</span></a>, there may be only one <a
+href="HB/hb.html#mathematical%20object"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>object</span></a>&nbsp;
+c for which P(c) is true, there may be many&nbsp; c for which P(c) is true, and
+in fact P(x) may be true for every&nbsp; x of the appropriate type. For
+example, in mathematical English the assertion, &quot;Some of the computers
+have sound cards&quot;, allows as a possibility that only one computer has a
+sound card, and it also allows as a possibility that all the computers have
+sound cards. Neither of these interpretations reflect ordinary English usage. <o:p></o:p></span></span></p><!-- MP SYRA( --><script id=mpch0007s1>
+	MPSetChAttrs('ch0007','ch',[[6,1,0,0,0],[7,1,0,0,0],[9,1,0,0,0],[],[],[],[23,1,0,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0007 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0007ph,'')
+	</script><layer id=mpch0007 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0007s3>
+	MPDeleteCode('ch0007')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0006s1>
+	MPSetChAttrs('ch0006','ch0',[[5,7,-1,-2,-4],[8,9,-1,-2,-4],[11,11,-1,-3,-4],[],[],[],[24,31,0,-10,-11]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0006 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0006ph,'')
+	</script><layer id=mpch0006 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0006s3>
+	MPDeleteCode('ch0006')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>In
+particular, in mathematical discourse, the <a href="HB/hb.html#assertion"><span
+style='mso-bidi-font-family:"Times New Roman";color:windowtext;text-decoration:
+none;text-underline:none'>assertion</span></a> <o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>&quot;Some
+primes are less than&nbsp; 3.&quot;<o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>is <a
+href="HB/hb.html#true"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>true</span></a>,
+even though there is exactly one prime less than&nbsp; 3. However, I do not
+have an unequivocal <a href="HB/hb.html#citation"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>citation</span></a>
+for this. It would be a mistake to regard such a statement as false since we
+often find ourselves making existential statements in cases where we do not
+know how many <a href="HB/hb.html#witness"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>witnesses</span></a>
+there are. <o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>In
+general, the passage from the quantifying English expressions to their
+interpretations as quantifiers is fraught with difficulty. Some of the basic
+issues are discussed in [], Chapter&nbsp;3; see also [], [] and [],
+page&nbsp;12 (written for students). <o:p></o:p></span></span></p>
+
+<p class=MTDisplayEquation><span class=LlistCharChar><span lang=EN
+style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'>See
+also <a href="HB/hb.html#universal%20quantifier"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>universal
+quantifier</span></a>, <a href="HB/hb.html#order%20ofquantifiers"><span
+style='mso-bidi-font-family:"Times New Roman";color:windowtext;text-decoration:
+none;text-underline:none'>order of quantifiers</span></a>, and Example&nbsp;
+under <a href="HB/hb.html#indefinite%20article"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>indefinite
+article</span></a>. <o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<h2><span style='display:none;mso-hide:all'>existential instantiation<o:p></o:p></span></h2>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+class=LlistCharChar><span lang=EN style='mso-bidi-font-family:"Times New Roman";
+display:none;mso-hide:all'>When </span></span><span class=LlistCharChar><span
+lang=EN style='font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";
+display:none;mso-hide:all'><!--[if gte vml 1]><v:shape id="_x0000_i1035"
+ type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0008 DIMS='[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]]' CHARID=ch2 INSUBSUPER=0/]"
+ style='width:10.2pt;height:10.2pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0008s1>
+	MPSetChAttrs('ch0008','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0008ph class=MPNNCode
+	><img border=0 name=mpch0008ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0008s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span></span><span class=LlistCharChar><span
+lang=EN style='mso-bidi-font-family:"Times New Roman";display:none;mso-hide:
+all'>(x)P(x) is known to be <a href="HB/hb.html#true"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>true</span></a>
+(see <a href="HB/hb.html#existential%20quantifier"><span style='mso-bidi-font-family:
+"Times New Roman";color:windowtext;text-decoration:none;text-underline:none'>existential
+quantifier</span></a>), one may choose a <a href="HB/hb.html#symbol"><span
+style='mso-bidi-font-family:"Times New Roman";color:windowtext;text-decoration:
+none;text-underline:none'>symbol</span></a> c and assert P(c). The symbol c
+then denotes a <a href="HB/hb.html#variable%20mathematical%20object"><span
+style='mso-bidi-font-family:"Times New Roman";color:windowtext;text-decoration:
+none;text-underline:none'>variable mathematical object</span></a> that <a
+href="HB/hb.html#satisfy"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>satisfies</span></a>
+P. That this is a legitimate practice is a standard rule of inference in <a
+href="HB/hb.html#mathematical%20logic"><span style='mso-bidi-font-family:"Times New Roman";
+color:windowtext;text-decoration:none;text-underline:none'>mathematical logic</span></a>.
+Citations: HasRee93774. <o:p></o:p></span></span></p><!-- MP SYRA( --><script id=mpch0008s1>
+	MPSetChAttrs('ch0008','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0008 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0008ph,'')
+	</script><layer id=mpch0008 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0008s3>
+	MPDeleteCode('ch0008')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+class=LlistCharChar><span lang=EN style='mso-bidi-font-family:"Times New Roman";
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></span></p>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>[ label:
+exqdef]&nbsp;Let Q(x) be a assertion. The proposition </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0009 DIMS='[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]]' CHARID=ch2 INSUBSUPER=0/]"
+ style='width:10.2pt;height:10.2pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0009s1>
+	MPSetChAttrs('ch0009','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0009ph class=MPNNCode
+	><img border=0 name=mpch0009ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0009s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span><span style='mso-bidi-font-family:
+Arial;display:none;mso-hide:all'>xQ(x) means there is some value of x for which
+the assertion Q(x) is true. The symbol </span><span style='mso-fareast-font-family:
+"MS Gothic";mso-hansi-font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";
+display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0010s1>
+	MPSetChAttrs('ch0010','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0010ph class=MPNNCode
+	><img border=0 name=mpch0010ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0010s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'><span
+style='mso-spacerun:yes'> </span>is called an </span><a
+name="existential_quantifier"><b style='mso-bidi-font-weight:normal'><span
+style='display:none;mso-hide:all'>existential quantifier</span></b></a><span
+style='display:none;mso-hide:all'>, and a proposition of the form </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0011s1>
+	MPSetChAttrs('ch0011','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0011ph class=MPNNCode
+	><img border=0 name=mpch0011ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0011s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xQ(x) is called</span><span
+style='display:none;mso-hide:all'> an </span><a name="existential_statement"><b
+style='mso-bidi-font-weight:normal'><span style='display:none;mso-hide:all'>existential
+proposition</span></b></a><span style='display:none;mso-hide:all'>. A value c
+for which Q(c) is true is called a </span><a name=witness><b style='mso-bidi-font-weight:
+normal'><span style='display:none;mso-hide:all'>witness</span></b></a><span
+style='display:none;mso-hide:all'> to the proposition </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0012s1>
+	MPSetChAttrs('ch0012','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0012ph class=MPNNCode
+	><img border=0 name=mpch0012ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0012s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xQ(x). </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0012s1>
+	MPSetChAttrs('ch0012','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0012 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0012ph,'')
+	</script><layer id=mpch0012 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0012s3>
+	MPDeleteCode('ch0012')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0011s1>
+	MPSetChAttrs('ch0011','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0011 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0011ph,'')
+	</script><layer id=mpch0011 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0011s3>
+	MPDeleteCode('ch0011')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0010s1>
+	MPSetChAttrs('ch0010','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0010 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0010ph,'')
+	</script><layer id=mpch0010 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0010s3>
+	MPDeleteCode('ch0010')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0009s1>
+	MPSetChAttrs('ch0009','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0009 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0009ph,'')
+	</script><layer id=mpch0009 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0009s3>
+	MPDeleteCode('ch0009')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Remark<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>One may indicate the
+type of the variable in an existential proposition in the same way as in a
+universal proposition. <o:p></o:p></span></p>
+
+<h3><span style='display:none;mso-hide:all'>Example<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>Let x be a real
+variable and let Q(x) be the <a href="DM/dmc.html#predicate"><span
+class=CharChar6><span style='mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;
+color:black;text-decoration:none;text-underline:none'>assertion</span></span></a>
+x&gt;50. This is certainly not true for all <a href="DM/dmc.html#integer"><span
+class=CharChar6><span style='mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;
+color:black;text-decoration:none;text-underline:none'>integer</span></span></a>s
+x. Q(40) is false, for example. However, Q(62) is true. Thus there are some <a
+href="DM/dmc.html#integer"><span class=CharChar6><span style='mso-ansi-font-size:
+10.0pt;mso-bidi-font-size:10.0pt;color:black;text-decoration:none;text-underline:
+none'>integer</span></span></a>s x for which Q(x) is true. Therefore </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0013 DIMS='[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]]' CHARID=ch2 INSUBSUPER=0/]"
+ style='width:10.2pt;height:10.2pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0013s1>
+	MPSetChAttrs('ch0013','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0013ph class=MPNNCode
+	><img border=0 name=mpch0013ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0013s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span><span style='mso-bidi-font-family:
+Arial;display:none;mso-hide:all'>xRQ(x) is true, and 62 is a witness. </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0013s1>
+	MPSetChAttrs('ch0013','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0013 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0013ph,'')
+	</script><layer id=mpch0013 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0013s3>
+	MPDeleteCode('ch0013')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>Find an <a
+href="DM/dmc.html#existential%20statement"><span class=CharChar6><span
+style='mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;color:black;
+text-decoration:none;text-underline:none'>existential proposition</span></span></a>
+about real numbers with exactly 42 witnesses. <o:p></o:p></span></p>
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>In the following
+sentences, the variables are always <a href="DM/dmc.html#natural%20number"><span
+class=CharChar6><span style='mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;
+color:black;text-decoration:none;text-underline:none'>natural number</span></span></a>s.
+P(n) means n is a <a href="DM/dmc.html#prime"><span class=CharChar6><span
+style='mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;color:black;
+text-decoration:none;text-underline:none'>prime</span></span></a>, E(n) means n
+is <a href="DM/dmc.html#even"><span class=CharChar6><span style='mso-ansi-font-size:
+10.0pt;mso-bidi-font-size:10.0pt;color:black;text-decoration:none;text-underline:
+none'>even</span></span></a>. State which are true and which are false. Give
+reasons for your answers. <o:p></o:p></span></p>
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>, </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0014 DIMS='[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]]' CHARID=ch2 INSUBSUPER=0/]"
+ style='width:10.2pt;height:10.2pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0014s1>
+	MPSetChAttrs('ch0014','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0014ph class=MPNNCode
+	><img border=0 name=mpch0014ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0014s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span><span style='mso-bidi-font-family:
+Arial;display:none;mso-hide:all'>n(E(n)P(n) ) </span><span style='display:none;
+mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0014s1>
+	MPSetChAttrs('ch0014','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0014 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0014ph,'')
+	</script><layer id=mpch0014 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0014s3>
+	MPDeleteCode('ch0014')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:
+"MS Gothic";mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0015s1>
+	MPSetChAttrs('ch0015','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0015ph class=MPNNCode
+	><img border=0 name=mpch0015ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0015s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='display:none;mso-hide:all'>n (E(n)&amp;vee;P(n) ) <o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0015s1>
+	MPSetChAttrs('ch0015','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0015 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0015ph,'')
+	</script><layer id=mpch0015 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0015s3>
+	MPDeleteCode('ch0015')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:
+"MS Gothic";mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0016s1>
+	MPSetChAttrs('ch0016','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0016ph class=MPNNCode
+	><img border=0 name=mpch0016ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0016s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='display:none;mso-hide:all'>n(E(n)</span><span style='mso-fareast-font-family:
+"MS Gothic";mso-hansi-font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";
+display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0017s1>
+	MPSetChAttrs('ch0017','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><![if !ie]><span id=mpnnch0017ph class=MPNNCode
+	><img border=0 name=mpch0017ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0017s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='display:none;mso-hide:all'>P(n)) <o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0017s1>
+	MPSetChAttrs('ch0017','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0017 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0017ph,'')
+	</script><layer id=mpch0017 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0017s3>
+	MPDeleteCode('ch0017')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0016s1>
+	MPSetChAttrs('ch0016','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0016 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0016ph,'')
+	</script><layer id=mpch0016 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0016s3>
+	MPDeleteCode('ch0016')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:
+"MS Gothic";mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0018s1>
+	MPSetChAttrs('ch0018','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0018ph class=MPNNCode
+	><img border=0 name=mpch0018ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0018s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='display:none;mso-hide:all'>n(E(n)</span><span style='mso-fareast-font-family:
+"MS Gothic";mso-hansi-font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";
+display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0019s1>
+	MPSetChAttrs('ch0019','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><![if !ie]><span id=mpnnch0019ph class=MPNNCode
+	><img border=0 name=mpch0019ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0019s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='display:none;mso-hide:all'>P(n))<o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0019s1>
+	MPSetChAttrs('ch0019','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0019 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0019ph,'')
+	</script><layer id=mpch0019 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0019s3>
+	MPDeleteCode('ch0019')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0018s1>
+	MPSetChAttrs('ch0018','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0018 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0018ph,'')
+	</script><layer id=mpch0018 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0018s3>
+	MPDeleteCode('ch0018')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='display:none;mso-hide:all'>Answer: </span></b><span style='display:none;
+mso-hide:all'>a: True. Witness: 2. b: False. Counterexample: 9. c: True.
+Witness: 2. d: False. Counterexample: 3. <o:p></o:p></span></p>
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>[ label: andQ]&nbsp;
+Which of these propositions are true for all possible one-variable <a
+href="DM/dmc.html#predicate"><span class=CharChar6><span style='mso-ansi-font-size:
+10.0pt;mso-bidi-font-size:10.0pt;color:black;text-decoration:none;text-underline:
+none'>assertion</span></span></a>s P(x) and Q(x)? Give <a
+href="DM/dmc.html#counterexample"><span class=CharChar6><span style='mso-ansi-font-size:
+10.0pt;mso-bidi-font-size:10.0pt;color:black;text-decoration:none;text-underline:
+none'>counterexample</span></span></a>s for those which are not always true. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>,, </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1047" type="#_x0000_t75" alt="[!DSTAG SYMBOL ID=ch0020 DIMS='[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]]' CHARID=ch3 INSUBSUPER=0/]"
+ style='width:10.2pt;height:10.2pt'>
+ <v:imagedata src="MMExistenceAssertions_files/temp.gif" />
+</v:shape><![endif]--><![if !vml]><!-- MP SYPH( --><script id=mpch0020s1>
+	MPSetChAttrs('ch0020','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0020ph class=MPNNCode
+	><img border=0 name=mpch0020ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0020s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><![endif]></span><span style='mso-bidi-font-family:
+Arial;display:none;mso-hide:all'>x</span><span style='display:none;mso-hide:
+all'>(P(x)Q(x))</span><span style='mso-fareast-font-family:"MS Gothic";
+mso-hansi-font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";display:
+none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0021s1>
+	MPSetChAttrs('ch0021','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><![if !ie]><span id=mpnnch0021ph class=MPNNCode
+	><img border=0 name=mpch0021ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0021s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><!-- MP SYPH( --><script id=mpch0022s1>
+	MPSetChAttrs('ch0022','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0022ph class=MPNNCode
+	><img border=0 name=mpch0022ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0022s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xP(x)</span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0023s1>
+	MPSetChAttrs('ch0023','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0023ph class=MPNNCode
+	><img border=0 name=mpch0023ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0023s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xQ(x) </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0023s1>
+	MPSetChAttrs('ch0023','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0023 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0023ph,'')
+	</script><layer id=mpch0023 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0023s3>
+	MPDeleteCode('ch0023')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0022s1>
+	MPSetChAttrs('ch0022','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0022 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0022ph,'')
+	</script><layer id=mpch0022 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0022s3>
+	MPDeleteCode('ch0022')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0021s1>
+	MPSetChAttrs('ch0021','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0021 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0021ph,'')
+	</script><layer id=mpch0021 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0021s3>
+	MPDeleteCode('ch0021')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0020s1>
+	MPSetChAttrs('ch0020','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0020 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0020ph,'')
+	</script><layer id=mpch0020 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0020s3>
+	MPDeleteCode('ch0020')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>,, </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0024s1>
+	MPSetChAttrs('ch0024','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0024ph class=MPNNCode
+	><img border=0 name=mpch0024ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0024s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xP(x)</span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0025s1>
+	MPSetChAttrs('ch0025','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0025ph class=MPNNCode
+	><img border=0 name=mpch0025ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0025s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xQ(x)</span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0026s1>
+	MPSetChAttrs('ch0026','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><![if !ie]><span id=mpnnch0026ph class=MPNNCode
+	><img border=0 name=mpch0026ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0026s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><!-- MP SYPH( --><script id=mpch0027s1>
+	MPSetChAttrs('ch0027','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><![if !ie]><span id=mpnnch0027ph class=MPNNCode
+	><img border=0 name=mpch0027ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0027s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>x(P(x)Q(x)) </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0027s1>
+	MPSetChAttrs('ch0027','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0027 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0027ph,'')
+	</script><layer id=mpch0027 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0027s3>
+	MPDeleteCode('ch0027')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0026s1>
+	MPSetChAttrs('ch0026','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0026 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0026ph,'')
+	</script><layer id=mpch0026 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0026s3>
+	MPDeleteCode('ch0026')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0025s1>
+	MPSetChAttrs('ch0025','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0025 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0025ph,'')
+	</script><layer id=mpch0025 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0025s3>
+	MPDeleteCode('ch0025')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0024s1>
+	MPSetChAttrs('ch0024','ch3',[[6,6,-1,-1,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,28,0,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0024 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0024ph,'')
+	</script><layer id=mpch0024 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0024s3>
+	MPDeleteCode('ch0024')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>,, </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0028s1>
+	MPSetChAttrs('ch0028','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0028ph class=MPNNCode
+	><img border=0 name=mpch0028ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0028s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>x(P(x)Q(x))</span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0029s1>
+	MPSetChAttrs('ch0029','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><![if !ie]><span id=mpnnch0029ph class=MPNNCode
+	><img border=0 name=mpch0029ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0029s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><!-- MP SYPH( --><script id=mpch0030s1>
+	MPSetChAttrs('ch0030','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0030ph class=MPNNCode
+	><img border=0 name=mpch0030ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0030s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xP(x)</span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0031s1>
+	MPSetChAttrs('ch0031','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0031ph class=MPNNCode
+	><img border=0 name=mpch0031ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0031s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xQ(x) </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0031s1>
+	MPSetChAttrs('ch0031','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0031 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0031ph,'')
+	</script><layer id=mpch0031 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0031s3>
+	MPDeleteCode('ch0031')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0030s1>
+	MPSetChAttrs('ch0030','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0030 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0030ph,'')
+	</script><layer id=mpch0030 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0030s3>
+	MPDeleteCode('ch0030')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0029s1>
+	MPSetChAttrs('ch0029','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0029 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0029ph,'')
+	</script><layer id=mpch0029 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0029s3>
+	MPDeleteCode('ch0029')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0028s1>
+	MPSetChAttrs('ch0028','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0028 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0028ph,'')
+	</script><layer id=mpch0028 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0028s3>
+	MPDeleteCode('ch0028')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>,, </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0032s1>
+	MPSetChAttrs('ch0032','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0032ph class=MPNNCode
+	><img border=0 name=mpch0032ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0032s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xP(x)</span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0033s1>
+	MPSetChAttrs('ch0033','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0033ph class=MPNNCode
+	><img border=0 name=mpch0033ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0033s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>xQ(x)</span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0034s1>
+	MPSetChAttrs('ch0034','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><![if !ie]><span id=mpnnch0034ph class=MPNNCode
+	><img border=0 name=mpch0034ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0034s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --><!-- MP SYPH( --><script id=mpch0035s1>
+	MPSetChAttrs('ch0035','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><![if !ie]><span id=mpnnch0035ph class=MPNNCode
+	><img border=0 name=mpch0035ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0035s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>x(P(x)Q(x)) </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0035s1>
+	MPSetChAttrs('ch0035','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0035 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0035ph,'')
+	</script><layer id=mpch0035 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0035s3>
+	MPDeleteCode('ch0035')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0034s1>
+	MPSetChAttrs('ch0034','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0034 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0034ph,'')
+	</script><layer id=mpch0034 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0034s3>
+	MPDeleteCode('ch0034')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0033s1>
+	MPSetChAttrs('ch0033','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0033 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0033ph,'')
+	</script><layer id=mpch0033 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0033s3>
+	MPDeleteCode('ch0033')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0032s1>
+	MPSetChAttrs('ch0032','ch2',[[5,7,0,-2,-3],[7,9,0,-3,-3],[9,13,0,-3,-4],[],[],[],[22,28,0,-9,-10]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0032 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0032ph,'')
+	</script><layer id=mpch0032 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0032s3>
+	MPDeleteCode('ch0032')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='display:none;mso-hide:all'>Answer: </span></b><span style='display:none;
+mso-hide:all'>(a) True. (b) True. (c) True. (d) False; a counterexample is
+given by taking P to be x&gt;7 and Q to be x&lt;7. <o:p></o:p></span></p>
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>Do the same as for
+Problem&nbsp; [andQ] with ` &amp;vee;' in the propositions in place of ` </span><span
+style='mso-fareast-font-family:"MS Gothic";mso-hansi-font-family:"MS Gothic";
+mso-bidi-font-family:"MS Gothic";display:none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0036s1>
+	MPSetChAttrs('ch0036','ch5',[[5,6,-1,-2,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,33,2,-6,-6]])
+</script><![if !ie]><span id=mpnnch0036ph class=MPNNCode
+	><img border=0 name=mpch0036ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0036s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>'. </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0036s1>
+	MPSetChAttrs('ch0036','ch5',[[5,6,-1,-2,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,33,2,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0036 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0036ph,'')
+	</script><layer id=mpch0036 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0036s3>
+	MPDeleteCode('ch0036')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Exercise<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='display:none;mso-hide:all'>Do the same as for
+Problem&nbsp; [andQ] with ` </span><span style='mso-fareast-font-family:"MS Gothic";
+mso-hansi-font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";display:
+none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0037s1>
+	MPSetChAttrs('ch0037','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><![if !ie]><span id=mpnnch0037ph class=MPNNCode
+	><img border=0 name=mpch0037ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0037s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>' in the
+propositions in place of ` </span><span style='mso-fareast-font-family:"MS Gothic";
+mso-hansi-font-family:"MS Gothic";mso-bidi-font-family:"MS Gothic";display:
+none;mso-hide:all'><!-- MP SYPH( --><script id=mpch0038s1>
+	MPSetChAttrs('ch0038','ch5',[[5,6,-1,-2,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,33,2,-6,-6]])
+</script><![if !ie]><span id=mpnnch0038ph class=MPNNCode
+	><img border=0 name=mpch0038ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0038s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></span><span
+style='mso-bidi-font-family:Arial;display:none;mso-hide:all'>'. </span><span
+style='display:none;mso-hide:all'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0038s1>
+	MPSetChAttrs('ch0038','ch5',[[5,6,-1,-2,-3],[9,9,0,-2,-2],[11,13,0,-2,-3],[],[],[],[29,33,2,-6,-6]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0038 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0038ph,'')
+	</script><layer id=mpch0038 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0038s3>
+	MPDeleteCode('ch0038')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0037s1>
+	MPSetChAttrs('ch0037','ch4',[[9,7,0,0,-1],[11,7,-1,-1,-1],[15,9,-2,0,-1],[],[],[],[35,21,-4,-3,-3]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0037 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0037ph,'')
+	</script><layer id=mpch0037 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0037s3>
+	MPDeleteCode('ch0037')
+</script><![endif]><!-- )MP SY -->
+
+<h3><span style='display:none;mso-hide:all'>Usage<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+class=ToDOChar0><span lang=EN style='font-size:12.0pt;mso-bidi-font-size:14.0pt;
+mso-bidi-font-family:"Times New Roman";display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></span></p>
+
+</div>
+
+</body>
+
+</html>

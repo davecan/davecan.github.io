@@ -1,0 +1,325 @@
+<html>
+
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Real Numbers</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-12-28
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>    <a href="MMNumbers.htm">head of chapter on Numbers</a>
+</pre>
+
+<h1>REAL NUMBERS</h1>
+<h2>Introduction</h2>
+
+<p class=blue>A real number is a number that can be represented as a (possibly infinite) decimal expansion, such as $2.56$, $-3$ (which is $-3.0$), $1/3$ (which has the infinite decimal expansion $0.333...$), and $\pi$. Every integer and every rational number is a real number, but numbers such as $\sqrt{2}$ and $\pi$ are real numbers that are not rational.</p>
+
+<ul>
+
+
+<li>I will not give a <a href="MMDefs.htm">mathematical definition</a> of “real number”.  There are<a href="http://en.wikipedia.org/wiki/Real_numbers"> several equivalent definitions</a> of real number all of which are quite complicated. Mathema&shy;ticians rarely think about real numbers in terms of these definitions; what they have in mind when they work with them are their familiar algebraic and topological properties.</li>
+
+<li>Every real number can be represented by its <a href="#decimalrepresentationoftherealnumbers">decimal representation</a>, which consists of a finite list of digits, a decimal point, and an infinite list of digits. (You can always adjoin an infinite number of zeroes for numbers such as $2.56$.)</li> 
+
+<li class=bluesmall>The infinite list of digits includes all possible random choices of integers. You will know that you really understand this fact when you are totally astonished. See <a href="https://mathwithbaddrawings.com/2016/12/28/why-the-number-line-freaks-me-out">Why the Number Line Freaks Me Out</a>.</li>
+
+<li>
+“Real number” is a <a href="/Word%20Press/?p=1682">technical term</a>.  Real numbers are not any more “genuine” that any other numbers.</li>
+
+<li><ahref ="MMIntegers.htm">Integers and </ahref><ahref ="MMRationalNumbers.htm"> rational numbers are real numbers, but there are real numbers that are not integers or rationals. One such number is $\sqrt{2}$. Such numbers are called <a accesskey=""href="http://en.wikipedia.org/wiki/Irrational_number">irrational numbers.</a></ahref></li>
+
+
+</ul>
+
+<a name="propertiesoftherealnumbers"></a>
+
+<h2>Properties of the real numbers</h2>
+
+<h3>Closure</h3>
+
+<p class=blue>The real numbers are closed under addition, subtraction, and multiplication, as well as division by a nonzero number.</p>  
+
+<p>Notice that these are exactly the same arithmetic closure properties that <a href="MMRationalNumbers.htm">rational numbers</a> have.  In the previous sections in this chapter on numbers, each new number system -- <a href="MMNaturalNumbers.htm">natural numbers,</a> <a href="MMIntegers.htm">integers</a> and rational numbers -- were closed under more arithmetic operations than the earlier ones. We don't appear to have gained anything concerning arithmetic operations in going from the rationals to the reals.</p>
+
+<p class=smallind>The real numbers <i>do</i> allow you to find <a href="http://en.wikipedia.org/wiki/Zero_of_a_function">zeroes</a> of some polynomials that don't have rational zeroes.  For example, the equation $x^2-2=0$ has the root $x=\sqrt{2}$, which is a real number but not a rational number. However, you get only some zeroes of polynomials by going to the reals -- consider the equation $x^2+2=0$, which requires going to the <a href="https://en.wikipedia.org/wiki/Complex_number">complex numbers</a> to get a root.
+</p>
+
+<h3>Closed under limits</h3>
+
+<p class=blue>The real numbers are closed under another operation (not an algebraic operation) that rational numbers are not closed under:</p> 
+
+<p class=purpleprose>The real numbers are closed under taking <a href="https://en.wikipedia.org/wiki/Limit_(mathematics)"><span class=red>limits.</span></a><br />That fact is the primary reason real numbers are so important<br /> in math, science and engineering.</p>
+
+<p>Consider: The concepts of continuous function, derivative and integral -- the basic ideas in calculus and differential equations -- are <i>all defined in terms of limits.</i> Those are the basic building blocks of <a href="http://en.wikipedia.org/wiki/Mathematical_analysis">mathematical analysis,</a> which provides most of the mathematical tools used by scientists and engineers.</p>
+
+<a name="someimagesandmetaphorsforrealnumbers"></a>
+
+<h2>Some images and metaphors for real numbers</h2>
+
+ <a name="linesegments"></a>
+
+<h3>Line segments</h3>
+
+<p class=blue>The length of any <a href="http://en.wikipedia.org/wiki/Line_segment"><span class=red>line segment</span></a> is given by a positive real number.</p>  
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=11 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=200 height=200 src="Mathematica/Real%20Numbers/MMRealNumbers2.png"/></td>
+ </tr>
+</table>
+
+<h5>Example</h5>
+<p>The diagonal of the square above has length $2\sqrt{2}$.</p>  
+
+<h4>Directed line segments</h4>
+
+<p>Measuring <b>directed line segments</b> requires the use of negative real numbers as well as positive ones. You can regard the diagonal above as a <b>directed line segment</b>. If you regard “left to right” as the positive direction (which is what we usually do), then if you measure it from right to left you get $-2\sqrt{2}$.</p>
+
+<a name="quantity"></a>
+
+<h3>Real numbers are <font color="#911B1B">quantities</font></h3>
+
+<p class=blue>Real numbers are used to measure continuous variable quantities.</p>
+
+<h5>Examples</h5>
+<ul>
+
+<li>The <b>temperature</b> at a given place and a given time.</li>
+
+<li>The <b>speed</b> of a moving car.
+
+</li><li>The <b>amount</b> of water in a particular jar.</li>
+
+</ul>
+
+<h4>Remarks</h4>
+
+<ul>
+
+<li>Temperature, speed, volume of water are thought of as quantities that <i>can change</i>, or <i>be changed</i>, which is why I called them "variable" quantities.</li> 
+
+<li>The name “continuous” for these quantities indicates that the quantity can change from one value to another without “jumping”. (This is a metaphor, not a mathematical definition!)</li>
+
+</ul>
+
+<h5>Example</h5>
+
+
+
+<p>
+If you have $1.334 \text{ cm}^3$ of water in a jar you can add any additional small amount into it or you can withdraw any small amount from it.  The volume does not suddenly jump from $1.334$ to $1.335$ – as you put in the water it goes up <i>gradually</i> from $1.334$ to $1.335$.</p>
+
+<h4>Caveat</h4>
+
+<p>This explanation of “continuous quantity” is done in terms of <i>how we think about continuous quantities,</i> not in terms of a <a href="MMDefs.htm">mathematical definition.</a>  In fact. since you can’t measure an amount smaller than one molecule of water, the volume <i>does</i> jump up in tiny discrete amounts.   Because of <a href="http://en.wikipedia.org/wiki/Quantum">quantum phenomena</a>, temperature and speed change in tiny jumps, too (much tinier than molecules).  </p>
+
+<p>Quantum jumps and individual molecules are ignored in large-scale physical applications because the scale at which they occur is so tiny it doesn’t matter.  For such applications, physicists and chemists (and cooks and traffic policemen!) think of the quantities they are measuring as continuous, even though at tiny scales they are not.</p>
+
+<p class=smallind>The fact that scientists and engineers treat changes of physical quantities as continuous, ignoring the fact that they are not continuous at tiny scales, is sometimes called the "continuum hypothesis".  This is not what mathematicians mean by that phrase: see <a href="http://en.wikipedia.org/wiki/Continuum_hypothesis">continuum hypothesis</a> in Wikipedia.</p> 
+
+<a name="therealline"></a>
+
+<h3>The real line</h3>
+
+<p class=blue>It is useful to visualize the set of real numbers as the <font color="#911B1B">real line</font> (or the <font color="#911B1B">number line</font>).</p>
+
+<p>The real line goes off to infinity in both directions.  Each real number represents a <b>location</b> on the real line. Some locations are shown here:</p>
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=11 height=0></td>
+ </tr>
+ <tr>
+  <td></td>
+  <td><img width=538 height=77 src="Mathematica/Real%20Numbers/MMRealNumbers1.png"/></td>
+ </tr>
+</table>
+<p>The locations are commonly called <b>points</b> on the real line.  This can lead to a <i>seriously mistaken mental image</i> of the reals as a row of points, like beads.  Just as in the case of the <a href="MMRationalNumbers.htm#Density">rationals,</a> there is no real number “just to the right” of a given real number.</p>
+
+
+
+
+<a name="decimalrepresentationoftherealnumbers"></a>
+<h2>Decimal representation of the real numbers</h2>
+
+<p>In this section, I will go into more detail about the <b>decimal representation of the real numbers.</b>  There are two reasons for doing this.</p>
+
+<ul>
+
+<li>People just beginning abstract math tend to think in terms of <b>bad metaphors</b> about the real numbers as decimals, and I want to introduce ways of thinking about them that are more helpful.</li>
+
+<li>The real numbers can be <b>defined</b> in terms of the decimal representation.  This is spelled out in a <a href="https://www.dpmms.cam.ac.uk/~wtg10/decimals.html">blog post</a> by Tim Gowers.  The definition requires some detail and in some ways is inelegant compared to the definitions usually used in analysis textbooks.  But it means that the more you understand about the decimal representation, the better you understand real numbers, and in a pretty direct way.</li>
+
+</ul>
+
+<p>See also <a href="https://en.wikipedia.org/wiki/Number_line">The Number Line</a> and <a href="https://mathwithbaddrawings.com/2016/12/28/why-the-number-line-freaks-me-out">Why the Number Line Freaks Me Out</a>.</p>
+
+<p class=smallind>The decimal representation of a real number is also called its <b>decimal expansion</b>.  A representation can be given to other bases besides $10$; more about that <a href="http://mathworld.wolfram.com/Base.html">here.</a></p>
+
+<h3>Decimal representation as directed length.</h3>
+<p class=blue>The decimal representation of a real number gives the approximate location of the number on the <a href="#realline"><font color="#911B1B">real line</font></a> as its directed distance from $0$.</p>
+
+<h5>Examples</h5>
+
+<ul>
+<li>The <a href="MMRationalNumbers.htm">rational number</a> $1/2$ is real and has the decimal representation $0.5$.</li>
+<li>The rational number $-1/2$ has the representation $-0.5$.</li>
+
+<li>The number $1/3$ is also real and has the infinite decimal representation $1.333\ldots$. Thereis an infinite number of $3$’s, or to put it another way, for every
+positive integer $n$, the $n$th decimal place of the decimal representation of $1/3$ is $3$.</li>
+
+<li>The number $\pi $ has a decimal representation beginning $3.14159\ldots$. So you can locate $\pi$ approximately by going $3.14$ units to the right from $0$.  You can locate it more exactly by going $3.14159$ units to the right, if you can measure that accurately.  The decimal representation of $\pi$ is infinitely long so you can theoretically represent it with <i>as much accuracy as you wish.</i>  In practice, of course, it would take longer than the age of the universe to find the first ${{10}^{({{10}^{10}})}}$ digits.</li>
+
+</ul>
+
+<h3>Bar notation</h3>
+
+<p>It is customary to put a bar over a sequence of digits at the end of a decimal representation to indicate that the sequence is repeated forever. 
+
+<h5>Examples</h5>
+
+<ul>
+
+<li>$42\frac{1}{3}=42.\overline{3}$</li>
+
+<li>$52.71656565\ldots$ (the group $65$ repeating infinitely often) may be written $52.71\overline{65}$.</li>
+
+<li>A decimal representation that is only finitely long, for example $5.477$, could also be written $5.477\overline{0}$.</li>
+
+<li>In particular, $6=6.0=6.\overline{0}$, and that works for any integer.</li>
+
+</ul>
+
+<a name="approximation"></a>
+
+<h3>Approximations</h3>
+
+</p><p>If you give the first few decimal places of a real number, you are giving an <b>approximation</b> to it.  Mathematicians on the one hand and scientists and engineers on the other tend to treat expressions such as $3.14159$ in two different ways:</p>
+
+<ul>
+
+<li>The <i>mathematician</i> may think of it as <i>a precisely given number</i>, namely $\frac{314159}{100000}$, so in particular it represents a <a href="MMRationalNumbers.htm">rational number</a>. This number is not $\pi$, although it is close to it.</li>
+
+<li>The <i>scientist or engineer</i> will probably treat it as the <i>known part</i> of the decimal representation of a real number. From their point of view, one knows $3.14159$ to six <a href="http://en.wikipedia.org/wiki/Significant_figures">significant figures.</a></li>
+
+<li>Abstractmath.org always takes the mathematician's point of view.  If I refer to $3.14159$, I mean the rational number $\frac{314159}{100000}$.  I may also refer to $\pi$ as “approximately $3.15159$”.</li>
+
+</ul>
+<a name="computerconvention"></a>
+<h3>Integers and reals in computer languages</h3>
+
+<p>Computer languages typically treat integers as if they were distinct from real numbers. In particular, many languages have the <a href="MMConventions.htm">convention</a> that the expression ‘$2$’ denotes the integer and the expression ‘$2.0$’ denotes the real number.   Mathematicians do not use this convention.  They usually regard the integer $2$ and the real number $2.0$ as the same mathematical object.</p>
+
+<a name="decimalrepresentationandinfiniteseries"></a>
+
+<h2>Decimal representation and infinite series</h2>
+
+<p>The <b>decimal representation</b> of a real number is shorthand for a particular infinite series.  Suppose the part before the decimal place is the integer $n$ and the part after the decimal place is\[{{d}_{1}}{{d}_{2}}{{d}_{3}}...\]where ${{d}_{i}}$ is the digit in the $i$th place.  (For example, for $\pi$, $n=3$, ${{d}_{1}}=1,\,\,\,{{d}_{2}}=4,\,\,\,{{d}_{3}}=1,$ and so forth.)  Then the decimal notation $n.{{d}_{1}}{{d}_{2}}{{d}_{3}}...$ represents the limit of the infinite series\[n+\sum\limits_{i=1}^{\infty }{\frac{{{d}_{i}}}{{{10}^{i}}}}\]</p>
+
+<h4>Example</h4>
+             \[42\frac{1}{3}=42+\sum\limits_{i=1}^{\infty}{\frac{3}{{{10}^{i}}}}\]
+
+<p>The number $42\frac{1}{3}$ is <i>exactly equal</i> to the sum of the infinite series, which is represented by the expression $42.\overline{3}$.</p>
+
+<p>If you stop the series after a finite number of terms, then the number is <i>approximately</i> equal to the resulting sum. For example, $42\frac{1}{3}$ is approximately equal to\[42+\frac{3}{10}+\frac{3}{100}+\frac{3}{1000}\]which is the same as $42.333$.</p>
+
+<p>This inequality gives an estimate of the accuracy of this approximation:\[42.333\lt42\frac{1}{3}\lt42.334\]</p>
+
+<a name="infinitedecimalrepresentations"></a>
+
+<h3>How to think about infinite decimal representations</h3>
+ 
+<p>The expression $42.\overline{3}$ must be thought of as including <b>all the $3$'s all at once</b> rather than as gradually extending to the right over an infinite period of time.</p>
+
+<p>In ordinary English, the “…” often indicates <i>continuing through time</i>, as in this example</p>
+
+<p>“They climbed to the top of the ridge, and saw another, higher ridge in the distance, so they walked to that ridge and climbed it, only to see another one still further away…”</p>
+
+<p>But the situation with decimal representations is different:</p>
+
+<p class=purpleprose>The decimal representation of $42\frac{1}{3}$ as $42.333\ldots$must be thought of as a complete, infinitely long sequence of decimal digits, every one of which (after the decimal point) is a “$3$” <font color="#911B1B">right now.</font></p>
+
+<p>In the same way, you need to think of the decimal expansion of $\sqrt{2}$ as having <i>all its decimal digits in place at once.</i>  Of course, in this case you have to calculate them in order. And note that calculating them is only <i>finding out what they are.</i> The digits are already there!</p>
+
+<p>The preceding description is about how a mathematican <i>thinks about</i> infinite decimal expansions.  The thinking has some sort of physical representation in your head that allows you to think about to the hundred millionth decimal place of $\sqrt{2}$ or of $\pi$ even if you don’t know what it is. This does not mean that you have an infinite number of slots in your brain, one for each decimal place!  Nor does it mean that the infinite number of decimal places actually exist “somewhere”.  After all, you can think about unicorns and <i>they</i> don’t actually exist somewhere.</p>
+
+<a name="exactdefinitions"></a>
+
+<h2>Exact definitions</h2>
+
+<p>Both the following statements are true:</p>
+
+<ul>
+
+<li>The numbers $1/3$, $\sqrt{2}$and $\pi $ have <i>infinitely long decimal representations</i>, in contrast for example to $\frac{1}{2}$, whose decimal representation is exactly $0.5$.</li>
+<li>The expressions “$1/3$”, “$\sqrt{2}$” and “$\pi $” <i>exactly determine</i> the numbers $1/3$, $\sqrt{2}$ and $\pi$:
+
+</li></ul>
+
+<p><i>These two statements don’t contradict each other.</i> All three numbers have <b>exact definitions.</b></p>
+<ul>
+<li>$1/3$ is exactly the number that gives 1 when multiplied by $3$.</li>
+
+<li>$\sqrt{2}$is exactly the unique positive real number whose square is 2.</li>
+
+<li>$\pi $ is exactly the ratio of the circumference of a circle to its
+diameter.</li>
+</ul>
+
+<p> The decimal representation of each one to a finite number of places provides an <i>approximate location of that number on the real line</i> On the other hand, the <i>complete</i> decimal representation of each one represents it <i>exactly,</i> although you can’t write it down.</p>
+
+<h2>Different decimal representations for the same number</h2>
+
+<p>The decimal representations of two different real numbers must be different. However, <i>two different decimal representations can, in certain circumstances, represent the same real number.</i> This happens when the decimal representation ends in an infinite sequence of $9$’s or an infinite sequence of $0$’s.</p>
+
+<h4>Examples</h4>
+
+<ul>
+<li>$0.\overline{9}=1.\overline{0}$. This means that $0.\overline{9}$ <i>is exactly the same number as</i> $1$. It is not just an approximation of $1$</li>
+
+<li>$3.4\bar{9}=3.5\overline{0}$. Indeed, $3.4\overline{9}$, $3.5$, $35/10$, and $7/2$ are all different representations of the same number. </li>
+
+
+
+</ul>
+
+<p>The Wikipedia article "<a href="http://en.wikipedia.org/wiki/0.999...">$0.\overline{9}$</a>" is an elaborate discussion of the fact that $0.\overline{9}=1$, a fact that many students find hard to believe.
+</p>
+
+<br />
+
+<a name="creativecommons"></a>
+<br /> <pre><img border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"/></pre>
+<p>This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br />

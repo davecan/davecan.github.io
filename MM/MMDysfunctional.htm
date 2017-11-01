@@ -1,0 +1,868 @@
+<html>
+
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<link rel="stylesheet" type="text/css"href="MM2.css">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Dysfunctional attitudes and behaviors</title>
+
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+
+</head>
+
+
+<body>
+
+
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+</body>
+</html>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2016-10-05
+<a href="MMIntro.htm">Introduction to this website</a>    
+<a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>	
+<a href="MMDoingMath.htm">Back to head of doing math chapter</a>
+</pre>
+ <h1>DYSFUNCTIONAL ATTITUDES AND BEHAVIORS</h1>
+
+<table align=center cellpadding=0
+style='border:none;'>
+<tr style='border:none;'>
+<td valign=top style='width:500.0pt;border:none;'>
+<p class="toc">
+<span class="red"><b>CONTENTS</b></span>
+</p>
+<p class="toc">
+<a href="#analogy">Analogy</a>
+</p>
+<p class="toc"><a href="#boundaryvaluesofdefinitions">
+Boundary values of definitions</a>
+</p>
+<p class="toc"><a href="#cointimidator">
+Co-intimidator</a>
+</p>
+<p class="toc"><a href="#elements">
+Elements</a>
+</p>
+<p class="toc"><a href="#enthymeme">
+Enthymeme</a>
+</p>
+<p class="toc"><a href="#existentialbigamy">
+Existential bigamy</a>
+</p>
+
+<p class="toc"><a href="#falsesymmetry">
+False symmetry</a>
+</p>
+<p class="toc"><a href="#jumpthefence">
+Jump the fence</a>
+</p>
+<p class="toc"><a href="#literalism">
+Literalism</a>
+</p>
+
+<p class="toc"><a href="#malrule">
+Malrule</a>
+</p>
+<p class="toc"><a href="#methodaddiction">
+Method addiction</a>
+</p>
+<p class="toc"><a href="#proofbyexample">
+Proof by Example</a>
+</p>
+
+<p class="toc"><a href="#rabbits">
+Rabbits</a>
+</p>
+
+<p class="toc"><a href="#readingvariablenamesaslabels">
+Reading variable names as labels</a>
+</p>
+
+<p class="toc"><a href="#therepresentationistheobject">
+The representation is the object</a>
+</p>
+
+<p class="toc"><a href="#unique">
+Unique</a>
+</p>
+
+<p class="toc"><a href="#unnecessarilyweakassertion">
+Unnecessarily weak assertion</a>
+</p>
+
+</td></tr></table>
+
+
+
+
+
+
+<a name="analogy"></a>
+<h2>Analogy</h2>
+
+<p>Analogy may suggest new theorems or ways of doing things. You may think that some kind of behavior of a certain type of math object may also work for another similar kind of object. Sometimes that works out and you get a new theorem.</p>
+
+<p>But analogy is fallible. What happens particularly often with people learning abstract math is applying a rule to a situation where it is not appropriate. <span class=purple>This is an easy trap to fall into when the notation in two different cases <i>has the same form.</i></span></p>
+
+
+
+
+
+<h3>Matrix multiplication</h3>
+
+<h4>Matrix multiplication is not commutative</h4>
+
+<p>If $r$ and $s$ are real numbers then the products $rs$ and $sr$ are always the same number. In other words, multiplication of real numbers is <a href="https://en.wikipedia.org/wiki/Commutative_property">commutative</a>: $rs = sr$ for all real numbers $r$ and $s$. </p>
+
+<p>The <a href="http://en.wikipedia.org/wiki/Matrix_multiplication">product of two matrices</a> $M$ and $N$ is written $MN$, just as for numbers. But matrix multiplication is <i>not</i> commutative. For example,
+\[\left(
+\begin{array}{cc}
+1 & 2 \\
+ 3 & 4\\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+ 3 & 1 \\
+ 3 &2\\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+ 9 & 5\\
+21 & 11 \\
+\end{array}
+\right)\]
+but
+\[\left(
+\begin{array}{cc}
+ 3 & 1 \\
+ 3 & 2\\
+\end{array}
+\right)
+\left(\begin{array}{cc}
+ 1 & 2 \\
+ 3 & 4\\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+ 6 & 10\\
+ 9 & 14 \\
+\end{array}
+\right)\]
+Because $rs = sr$ for numbers, the formal similarity of the notation suggests $MN$ = $NM$, which is wrong.</p>
+ <p> This means you can't blindly manipulate $MNM$ to become $M^2N$. More generally, <i>a law such as $(MN)^n=M^nN^n$ is not correct when $M$ and $N$ are matrices.</i>
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+You must know the types<br  /> of the symbols you manipulate.
+</p></td></tr></table></center>
+
+<h4> The product of two nonzero matrices can be $0$ </h4>
+
+<p>If the product of two numbers is $0$, then one or both of the numbers is zero. But that is not true for matrix multiplication:
+\[\left(
+\begin{array}{cc}
+-2 & 2 \\
+-1 & 1\\
+\end{array}
+\right)
+\left(
+\begin{array}{cc}
+1 & 1 \\
+1 &1\\
+\end{array}
+\right)
+=
+\left(
+\begin{array}{cc}
+0 &0\\
+0 & 0 \\
+\end{array}
+\right)\]
+</p>
+
+<p class=smallind>When <a href="http://en.wikipedia.org/wiki/William_Rowan_Hamilton">William Rowan Hamilton</a> was trying to understand the new type of number called <b>quaternions</b> (<a href="http://mathworld.wolfram.com/Quaternion.html">MW</a>, <a href="http://en.wikipedia.org/wiki/Quaternion">Wik</a>) that he invented, he assumed by analogy that like other numbers, quaternion multiplication was commutative. It took him a long time to realize that that wasn't true. If matrix multiplication had already been well-known when he was struggling with quaternions, he probably would have thought of noncommutativity much more quickly.</p>
+
+
+<h3>Canceling<a name=cancelsine></a> sine</h3>
+
+<ul>
+<li>Beginning calculus students have already learned algebra. </li>
+
+<li>They have learned that an expression such as $xy$ means $x$ times $y$. </li>
+
+<li>They have learned to cancel like terms in a quotient, so that for example \[\frac{3x}{3y}=\frac{x}{y}\]</li>
+
+<li>They have learned to write the value of a function $f$ at the input $x$ by $f(x)$. </li>
+
+<li>They have seen people write $\sin x$ instead of $\sin(x)$ but have never really thought about it. </li>
+
+<li>So they write \[\frac{\sin x}{\sin y}=\frac{x}{y}\]</li>
+</ul>
+
+<p>This happens occasionally in freshman calculus classes. </p>
+
+<a name="boundaryvalues"></a>
+<a name="boundaryvaluesofdefinitions"></a>
+<h2>Boundary values of definitions</h2>
+
+<h3>Definitions are usually inclusive</h3>
+<p>Definitions of math concepts usually include the <a name=specialcase>special cases</a> they <a href="MMOtherAspectsUnderstanding.htm#generalization">generalize</a>.
+</p>
+
+<h4>Examples </h4>
+
+<ul>
+<li> A square is a special case of rectangle. Texts that define "rectangle" include squares in the definition. Thus <span class=purple>a square is a rectangle.</span> </li>
+
+<li> <span class=purple>A straight line is a curve.</span> </li>
+
+<li> <span class=purple> A <a href="http://mathworld.wolfram.com/Group.html">group</a> is a <a href="http://mathworld.wolfram.com/Semigroup.html">semigroup</a>.</span> </li>
+
+<li> <span class=purple>An <a href="MMIntegers.htm">integer</a> is a <a href="MMRealNumbers.htm">rational number</a>.</span></li>
+
+<li> <span class=purple>An integer is a <a href="MMRealNumbers.htm">real number</a>.</span> (But not always in computing languages -- see <a href="https://en.wikipedia.org/wiki/Data_type">here</a>.)</li>
+
+<li><span class=purple>A real number is a <a href="https://en.wikipedia.org/wiki/Complex_number">complex number</a>.</span></li>
+
+
+</ul>
+
+
+
+<h3>Definitions usually include <a href="http://abstractmath.org/MM/MMGlossary.htm#trivialmathobjects">trivial</a> and <a href="http://abstractmath.org/MM/MMGlossary.htm#proper">improper</a> cases</h3>
+
+<h4>Examples</h4>
+<ul>
+<li> If $S$ is a set, it is a subset of itself. (More about this in the <a href="MMSetSubset.htm#warning">section on subsets</a>.)</li> 
+
+<li>The empty set is also a subset of $S$.</li>
+
+<li> The positive divisors of $6$ are $1$, $2$, $3$ and $6$, not just $2$ and $3$.</li>
+</ul>
+
+<h3> But definitions don't always include extreme or limiting cases</h3>
+<ul>
+<li> The positive real numbers include everything bigger than $0$, but <i>not</i> $0$. (<a href="MMGlossary.htm#positive">Note</a>).</li>
+
+<li> The axioms of a <a href="http://mathworld.wolfram.com/Field.html">field</a> include a bunch of axioms that a one-element set satisfies, plus a special axiom that does nothing except exclude the one-element set. So a field has to have at least two elements, and that fact does not follow from the other axioms. </li>
+<li> Boolean algebras are usually defined that way, too, but not always. <a href="http://mathworld.wolfram.com/BooleanAlgebra.html">MathWorld</a> gives historical definitions of Boolean algebra that disagree on this point.</li>
+ </ul>
+
+ 
+
+<h3>Blunders</h3>
+
+<p>A definition that includes trivial or extreme cases may be called <a name=inclusive><b>inclusive</b></a>; otherwise it is <a name=exclusive><b>exclusive</b></a>. <span class=purpleprose>People new to abstract math very commonly use words defined <i>inclusively</i> as if their definition was <i>exclusive</i>.</span></p>
+
+<ul>
+<li> They say things such as "That's not a rectangle, it is a square!" and "Is that a group or a semigroup?" </li>
+
+<li> They object if you say "Consider the complex number $\pi $." </li>
+
+</ul>
+
+<h3>Vacuous truth</h3>
+
+<p>A conditional assertion of the form "If $P$ then $Q$" is true if $P$ is always false. This is an extreme case of of conditional assertions and it causes students no end of grief. It is discussed in detail in the chapter on <a href="http://abstractmath.org/MM/MMConditional.htm#vacuoustruth">Conditional Assertions</a>.</p>
+
+
+
+
+
+<h2><a name=cointimidator>Co-intimidator</a></h2>
+<ul>
+<li> You attend a math lecture and the speaker starts talking about things you never heard of. </li>
+
+<li>Your fellow students babble at you about manifolds and tensors and you thought they were car parts and lamps.</li>
+
+<li>You suspect your professor is deliberately talking over your head to put you down.</li>
+
+<li>You suspect your friends are trying to make you believe they are much smarter than you are.</li>
+
+<li>You suspect your friends <i>are</i> smarter than you are.</li>
+</ul>
+
+<h3>There are two possibilities: </h3>
+
+<ul>
+<li>They are not trying to intimidate you (most common). </li>
+
+<li>They are deliberately setting out to intimidate you with their arcane knowledge so you will know what a worm you are. There <i>are</i> people like that. </li>
+</ul>
+
+
+
+<p>Another possibility, which can overlap with the two above, is: </li>
+<ul>
+<li>You <i>expect to be intimidated.</i> You may be what might be called a <b>co-intimidator,</b> similar to the way someone who is <b>codependent</b> wants some other person to be dependent on them. </li>
+</ul>
+
+
+<p class='smallind' >
+This is not like the "co" in category theory: "product" and "coproduct" have a <i>symmetric</i> relationship with each other, but the co-intimidator relation is <i>asymmetric.</i></p>
+
+<h3>There are many ways to get around being intimidated. </h3>
+<ul>
+<li> Ask "What the heck is a manifold?"</li>
+
+<li> (In a lecture where it might be imprudent or impractical to ask) Write down what they say, then later ask a friend or look it up.</li>
+
+<li> Most teachers like to be asked to explain something. Yes, I know some professors repeatedly put down people. Change sections! If you can't, live with it! <i>Not knowing something says nothing bad about you.</i> </li></ul>
+
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+If you don't know something <br /> usually some other students don't know it either.
+</p></td></tr></table></center>
+
+<p>This statement is based on surveys math educators have made.</p>
+<a name="elements"></a>
+<a name="element"></a>
+<h2>Elements</h2>
+
+<h3>First Myth</h3>
+
+<p><b><font color="#800080">MYTH</font></b>: There are two kinds of <a
+href="MMMathObj.htm">mathematical objects</a>:
+"sets" and "elements". </p>
+
+<p> This is
+the <b><font color="#800080">TRUTH</font></b>: Being
+an element is not a property that some math objects have and others don't.  "Element" is a <i>binary</i> relation; it relates an object and a set.  So "$3$ is an element" means nothing, but "$3$ is an element of the set of integers" is true and relates two mathematical objects to each other.
+</p>
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+Any mathematical object can be an element of a set<br/>In particular, <i>any set</i> can be the
+element of another set.
+</p></td></tr></table></center>
+
+<h4>Examples</h4>
+
+<ul>
+<li>The number $42$ is not a set, but it is an element of the set $\{5,10,41,42,-30\}$.
+</li>
+
+<li>The sine function is not a set, but it is an element of the set of all differentiable functions defined on the <a href="MMRealNumbers.htm">real numbers</a>.</li>
+
+<li>The set $\{1,2,5\}$ <i>is</i> a set, but it is also an element of the set $\left\{\{1,2,5\},\{3,5\}, \emptyset,\{42\}\right\}$. It is <i>not</i> an element of the set $\{1,2,3,4,5\}$.</li>
+</ul>
+
+<p>If you find these examples confusing, read <a
+href="MMSetSpec.htm#setasels">this.</a></p>
+
+<h3>Second Myth</h3>
+
+<p><b><font color="#800080">MYTH</font></b>: The <a href="MMSetSpecific.htm#emptyset">empty set</a> is an element of every set. </p>
+
+<p>This is the <b><font color="#800080">TRUTH</font></b>:
+The empty set is an element of a set $S$ if and only if the definition of $S$ requires it to be an element.
+
+</p>
+<h4>Examples</h4>
+<ul>
+<li>The empty set is not an element of every set. It is not an element of the set $\{2,3\}$ for example; that set has only the elements $2$ and $3$.
+</li>
+<li>The empty set <i>is</i> an element of the set $\{2,3,\emptyset\}$.</li>
+<li>The empty set is a <a href="MMSetSubset.htm#subset">subset</a> of every set. </li>
+</ul>
+<h3>Other ways to misunderstand sets</h3>
+<p> The myths just listed are explicit; students tell them to each other. The links below tell you about other misunderstanding about sets which are usually subconscious.  </p>
+
+<ul>
+
+<li><a href="MMSetNotation.htm#setbuildernotation">Setbuilder notation</a></li>
+
+<li><a href="MMSetNotation.htm#arbitrarysets">Sets are arbitrary</a></li>
+
+<li><a href="MMSetMetaphorImage.htm">Sets: metaphors and images</a></li>
+
+<li><a href="http:abstractmath.org/MM/MMSetSubset.htm">Subsets and inclusions</a></li>
+
+</ul>
+
+<a name="enthymeme"></a>
+<h2>Enthymeme</h2>
+
+<p>An <a href="https://en.wikipedia.org/wiki/Enthymeme">enthymeme</a> is an argument based partly on unexpressed beliefs. Beginners at the art of writing proofs often produce enthymemes.</p>
+
+<h4>Example</h4>
+
+<p>In the process of showing that the intersection of two equivalence relations $E$ and $E'$ is also an equivalence relation, a student may write
+"$E\cap E'$ is transitive because $E$ and $E'$ are transitive."</p>
+<ul>
+<li>This is an enthymeme; it omits stating, much less proving, that the intersection of transitive relations is transitive.</li>
+
+<li>The student may "know" that it is obvious that the intersection of transitive relations is transitive, having never considered the similar question of the union of transitive relations, which might <i>not</i> be transitive.</li>
+
+<li>It is very possible that the student possesses (probably subconsciously) a malrule to the effect that for any property $P$ the union or intersection of relations with property $P$ also has property $P$.</li>
+
+<li>The instructor very possibly suspects this. For some students, of course, the suspicion will be unjustified, but for which ones? </li>
+
+<li>This sort of thing is a frequent source of tension between student and instructor: "Why did you take points off because I assumed the intersection of transitive relations is transitive?  It's <i>true</i>!"
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+But the teacher wants <font color="#B31B1B"><i>to know that you know it is true.</i></font>
+</p></td></tr></table></center>
+</li>
+</ul>
+<a name="existentialbigamy">
+</a>
+<h2> Existential bigamy</h2>
+
+<p>Beginning abstract math students sometimes make a particular type of mistake that occurs in connection with a property $P$ of an <a href="MMMathObj.htm">mathematical object</a> $x$ that is defined by requiring the existence of an item $y$ with a certain relationship to $x$. When students have a proof that assumes that there are two items $x$ and $x'$ with property $P$, they sometimes assume that <i>the same $y$ serves for both of them.</i> This mistake is called <b>existential bigamy</b>: The fact that Muriel and Bertha are both married (there is a person to whom Muriel is married and there is a person to whom Bertha is married) <i>doesn't mean they are married to the same person.</i></p>
+
+<h4>Example</h4>
+
+<p>Let $m$ and $n$ be integers. By definition, $m$ divides $n$ if there is an integer $q$ such that $n=qm$. Suppose you are asked to prove that if $m$ divides both $n$ and $p$, then $m$ divides $n+p$. If you begin the proof by saying, "Let $n = qm$ and $p = qm$..." then you are committing existential bigamy.
+You need to begin the proof this way: "Let $n = qm$ and $p = q'm…"$</p>
+
+
+<!-- <h2>Every number is an integer</h2> -->
+<a name="falsesymmetry"></a>
+<a name="false symmetry"></a>
+
+<h2>False symmetry</h2>
+
+<h3>Bases of vector spaces</h3>
+
+<p>Suppose $V$ is a vector space with subspace $W$. Then the following two statements are correct:</p>
+
+<ul>
+
+<li>If $B$ is a basis for $W$, there is a basis $W'$ of $V$ for which $W\subseteq W'$.</li>
+
+<li>In general, there are bases of $V$ that do not contain a basis of $W$ as a subset.</li>
+
+</ul>
+
+<p>This is a tragic lack of symmetry that causes innocent students to lose points in linear algebra courses.</p>
+
+<h4>Example</h4>
+
+<p>The plane $P$ defined by $x=y$ is a two-dimensional subspace of the three dimensional Euclidean space with axes $x,y,z$. One basis of $P$ is \[\{(1,1,0),(0,0,1)\}\]  It can be extended to the basis \[\{(1,1,0),(0,1,0),(0,0,1)\}\] of $\mathbb{R}^3$.  On the other hand, the basis \[\{(1,0,0),(0,1,0),(0,0,1)\}\] of $\mathbb{R}^3$ does not contain a subset that is a basis of $P$.</p>
+<!--
+<img
+border=0 width=250 height=241 src="Mathematica/PlaneIn3 space.jpg"
+</a> -->
+
+<h3>Normal subgroups</h3>
+
+<ul>
+
+<li>It is a theorem that every subgroup $B$ of a commutative group $A$ is a <a href="https://en.wikipedia.org/wiki/Normal_subgroup">normal subgroup</a> of $A$.</li><li>But if $B$ is an <i>commutative</i> subgroup of a <i>non-commutative</i> group $S$, then $B$ may not be a normal subgroup of $S$.</li> 
+
+</ul>
+
+<h4>Example</h4>
+
+<p>$\text{Sym}_3$ (the group of symmetries of an equilateral triangle) has three subgroups with two elements each.  Each subgroup is commutative, but is not a normal subgroup of  $\text{Sym}_3$. </p>
+
+<a name="jumpthefence"></a>
+<h2>Jump the fence</h2>
+
+<p> If you are working with an <a href="MMSymLang.htm#symbolicexpression"> expression</a> whose <a href="MMVarSub.htm#variable">variables</a> are constrained to certain values, and you substitute a value in the expression that violates the constraint, you <b>jump the fence</b>
+(also called a <b>fencepost error</b>). </p>
+
+<h4>Example</h4>
+
+<p>The Fibonacci numbers (<a href="http://mathworld.wolfram.com/FibonacciNumber.html">MW</a>, <a href="http://en.wikipedia.org/wiki/Fibonacci_number">Wi</a>) are usually defined inductively like this:
+\[F(n)=\left\{ \begin{align}
+& 0\text{ if }n=0 \\
+& 1\text{ if }n=1 \\
+& F(n-1)+F(n-2)\text{ if }n\gt 1 \\
+\end{align} \right.\]
+In calculating a sum of Fibonacci numbers, you might write
+
+ \[\sum_{k=0}^{n}{F(k)=}\sum_{k=0}^{n}{F(k-1)+}\sum_{k=0}^{n}{F(k-2)}\]
+This contains errors: the sums on the right involve $F(-1)$ and $F(-2)$, which are not defined by the definition above. You could add
+\[F(n)=0\text{ if }n\lt 0\]
+to the definition to get around this, or keep better track of the fence by writing </p>
+ \[\sum_{k=0}^{n}{F(k)=}\sum_{k=1}^{n}{F(k-1)+}\sum_{k=2}^{n}{F(k-2)}\,\,\,\,\,\,\,\,\,\text{
+}(n>1)\]
+
+<p>(The notation "$(n \gt 1)$" means "for all $n$ greater than $1$."  See <a href="MMUnivTrue.htm#universalworded">here</a> ) </p>
+
+<a name="literalism"></a>
+
+<h2>Literalism</h2>
+
+<!-- <h2>Definitional literalism</h2> -->
+
+<p>Every type of math object has to have a <a href="MMDefs.htm">definition.</a> In giving a definition, a few of the many ingredients that are involved in that type of object are selected as a basis for the definition. <i>They are not necessarily the most important parts.</i> People who make definitions try to use as little as possible in the definition so that it is easier to verify that something is an example of the thing being defined. </p>
+
+<p> A <b>definitional literalist</b> is someone who insists on thinking about a type of math object primarily in terms of what the definition says it is. </p>
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+Definitional literalism inhibits<br /> your understanding of abstract math.
+</p></td></tr></table></center>
+
+<h3>Ordered pairs</h3>
+
+<p>One of the major tools in the study of the foundations of mathematics is to try to define all <a href="MMMathObj.htm">mathematical objects</a> in terms of as few as possible objects. Until the advent of <a href="https://en.wikipedia.org/wiki/Product_(category_theory)">category theory</a>, the most common form this took was to define everything in terms of sets. For example, the <b>ordered pair</b> $(a,b)$ can be defined to be the set $\{a, \{a, b\}\}$.
+(See <a href="http://en.wikipedia.org/wiki/Ordered_pair">Wi</a>). A <b>definitional literalist</b> will conclude that the ordered pair $(a,b)$ <i><b>is</b></i> the set $\{a, \{a, b\}\}$.</p>
+
+<p>
+This would mean that it makes sense to say that $a\in(a,b)$ but $b\notin(a,b)$.
+<span class=purple>No reasonable mathematician would ever think of saying such things.</p>
+
+<p>
+What is important about an ordered pair is its <a href="MMDefs.htm#Specifications">specification</a>:</p>
+<ul>
+<li>
+An ordered pair has a first coordinate and a second coordinate.
+</li>
+<li>What the first and second coordinates are completely determine the ordered pair.</li>
+</ul>
+<p>It is ludicrous to say something like "$a\in (a,b)$". The "definition" that $(a,b)$ is the set $\{a,\{\{a,b\}\}$ is done purely for the purpose of showing that the study of ordered pairs can be reduced to the study of sets. It is not a fact about ordered pairs that we can use. </p>
+
+<h3>Equivalence relations</h3>
+
+<p> An <a href="https://en.wikipedia.org/wiki/Equivalence_relation">equivalence relation</a> on a set S is a relation on S with certain properties. A <a href="http://abstractmath.org/MM/MMGlossary.htm#partition">partition</a> on S is a set of subsets with certain properties. The two definitions can be proven to give the same structure (see <a href="https://en.wikipedia.org/wiki/Equivalence_relation#Fundamental_theorem_of_equivalence_relations">Wikipedia</a>).</p>
+
+<p> I have personally heard literalists say,
+"How can they give the same structure? One is a relation and one is a partition." The point is that an equivalence relation/partition on a set has a <b>total structure</b> which can be described by axioms in two ways:</p>
+
+<ul>
+<li>Start with a relation and impose axioms.</li> 
+
+<li>Start with a set of subsets and imposing axioms.</li>
+
+</ul>
+
+<p class=noind>Each set of axioms describes exactly the <i>same total structure</i>; every theorem that can be deduced from the axioms for the equivalence relation can be deduced from the axioms for the partition, and vice versa.</p>
+
+<h3>Functions </h3>
+
+<p> The
+(less strict) <a href="MMFuncSpec.htm#lessstrict">definition of function</a> says that a function is a set of ordered pairs with the <a href="MMFuncSpec.htm#funcprop">functional property. </a></p>
+
+<p> This does not mean that if your function is $F ( x ) = 2 x + 1$, then you would say "$\left( 3,\,7 \right)\in F$" . The most common practice is to say that "$F (3) = 7$" or "the value of $F$ at $3$ is $7$" or something of the sort. </p>
+
+<p>I do know mathematicians who tell me that they <i>really do</i> think of a function as a set of ordered pairs and would indeed say "$\left( 3,\,7 \right)\in F$".
+</p>
+
+<h3>
+Vanishing</h3>
+
+<p>When I was a graduate student, I had a math professor who hated it with a purple passion if anyone said a function <b>vanishes</b> at some number $a$, meaning its value at $a$ is $0$. If you said, "The function $x^2-1$ vanishes at $1$", he would say, "Pah! The function is still there isn't it?"</p>
+
+<p>
+There are in fact two different points a literalist can make about such a statement. </p>
+
+<ul>
+<li>The function's <i>value</i> at $1$ is $0$.  The function is not zero anywhere, it is $x^2-1$, or if you have <a href="MMFuncNotation.htm#formulaasnameoffunction">other literalness attitudes</a>, it is "the function $f(x)$ defined by $f(x):=x^2-1$".</li>
+
+<li>Even its value doesn't literally "vanish". The value is written as "$0$".  Look at it closely.  You can <i>see</i> it. It has not vanished.</li>
+</ul>
+
+<p>The phrase "the function vanishes at $a$" is a <a href="MMImagesMetaphors.htm">metaphor</a>. <span class=purple>Mathematicians use metaphors in writing and talking about math <i>all the time</i></span>, just as people do in writing and talking about anything.  Nevertheless, being occasionally the obnoxious literalist <span class=purple>sometimes clears up misunderstanding</span>. That is why mathematicians have a reputation for literalism.
+ </p>
+
+ <a name="malrule"></a>
+<h2>Malrule</h2>
+<p>A <b>malrule</b> is an incorrect rule for syntactic transformation of a mathematical expression.</p>
+
+<h4>Examples</h4>
+
+<ul>
+
+<li>The malrule \[\sqrt{x+y}=\sqrt{x}+\sqrt{y}\]invented by algebra students may come from the pattern given by the distributive law \[a(x+y)=ax+ay\]</li> 
+
+<li>The malrule invented by many first year calculus students that transforms $\frac{d(uv)}{dx}$ to $\frac{du}{dx}\frac{dv}{dx}$ may have been generated by extrapolating from the correct rule
+\[\frac{d(u+v)}{dx}=\frac{du}{dx}+\frac{dv}{dx}\] by changing addition to multiplication.</li>  
+
+</ul>
+
+<p>Both are examples of "every operation is <a href="https://en.wikipedia.org/wiki/Linearity">linear</a>", which many students unconsciously expect to be true, although they are not aware of it.</p>
+
+
+<a name="methodaddiction"></a>
+<h2>Method addiction </a></h2>
+
+<p><a name="tth_sEc9"></a> Beginners at abstract math sometimes have the attitudes that a problem must be solved or a proof constructed by a <i> specific procedure.</i> They become quite uncomfortable when faced with problem solutions that involve <a href="MMUsefulAdd.htm#guessing">guessing</a> or <a href="MMConceptualComputational.htm">conceptual</a> proofs that involve little or no calculation. </p>
+
+<h4>Example</h4>
+
+<p>Once I gave a problem in my Theoretical Computer Science class that in order to solve it required finding the largest integer $n$ for which $n!\lt109$. Most students solved it correctly, but several wrote apologies on their paper for doing it by <b>trial and error</b>. Of course: </p>
+
+<center><table border="0">
+<tr>
+<td><p class='purpleprose'>
+Trial and error is a perfectly valid method.
+</p></td></tr></table></center>
+
+
+<h4>Example</h4>
+
+<p> Students at a more advanced level may feel insecure in the case where they are faced with solving a problem for which they know there is no known feasible <a href="MMGlossary.htm#algorithm">algorithm</a>, a situation that occurs mostly in senior and graduate level classes. For example, there are no known feasible general algorithms for determining if two finite <a href="http://en.wikipedia.org/wiki/Group_%28mathematics%29">groups</a> given by their multiplication tables are isomorphic, and there is no algorithm at all to determine if two presentations (<a href="http://en.wikipedia.org/wiki/Generator_(groups)">generators</a> and relations) give the same group.</p>
+
+<p>Even so, the question, "Are the <a href="https://en.wikipedia.org/wiki/Quaternion_group">quaternion group</a> and the <a href="https://en.wikipedia.org/wiki/Dihedral_group">group of symmetries of the square</a> isomorphic?" is not hard. (Answer: No, they have different numbers of elements of order  $2$ and $4$.)</p>
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+Sometimes you <i>can</i> solve special cases of unsolvable problems.
+</p></td></tr></table></center>
+
+
+<p> See also<b> <a href="MMUsefulBehaviors.htm#lookahead">look ahead</a></b> and <b><a href="MMConceptualComputational.htm">conceptual</b>. </a> </p>
+
+<a name="proofbyexample"></a>
+<h2>Proof by Example</h2>
+
+<p><a href="MMDefs.htm">Definition</a>: An integer is <a name=even><b>even</b> </a>if it is <a href="MMNumberTheory.htm#division">divisible</a> by 2. </p>
+
+<p><a href="MMGlossary.htm#theorem">Theorem </a>: Prove that if
+$n$  is an even integer then so is ${{n}^{2}}$. </p>
+
+<p> This is proved by <a href="MMUnivTrue.htm#universalgeneralization">universal generalization </a>.</p>
+
+<p> One type of mistake made by beginners for proofs like this would be the following: </p>
+
+<p>"Proof: Let $n = 8$. Then ${{n}^{2}}=64$ and $64$ is even." </p>
+
+<p> This violates the requirement of universal generalization that you have "made no restrictions on $c$"  – you have restricted it to being a particular even integer! </p>
+
+<p> It may be that some people who make this kind of mistake don't understand <a href="MMUnivTrue.htm#universalgeneralization">universal generalization</a> (see also <a href="MMVarMeanings.htm#boundvariable">bound variable</a>).  But for others, the mistake is caused by misreading the phrase "An integer is even if…" to read that you can prove the statement by picking an integer and showing that it is true for that integer. But in fact, "an" in a statement like this means "any". See <a href="MMGlossary.htm#a">indefinite article.</a></p>
+
+
+<a name=rabbits></a>
+<a name=rabbit></a>
+<a name=lookahead></a>
+<a name=walkingblindfolded></a>
+
+<h2>Rabbits</h2>
+
+<p>Sometimes when you are reading or listening to a proof you will find yourself following each step but with no idea why these steps are going to give a proof. This can happen with the whole structure of the proof or with the sudden appearance of a step that seems like the prover pulled a <b>rabbit out of a hat</b> </a>. You feel as if you are walking blindfolded. </p>
+
+<h3> Example
+(mysterious proof structure) </h3>
+
+<p> The lecturer says he will prove that for an integer $n$, if $n^2$ is even then $n$ is even. He begins the proof: Let $n^2$ be odd" and then continues to the conclusion, "Therefore $n$ is odd." </p>
+
+<p> <i>Why</i> did he begin a proof about being even with the assumption that $n$ is odd? </p>
+
+<p> The answer is that in this case he is doing a <a href="MMFormsProof.htm#contrapositive">proof by contrapositive </a>. If you don't recognize the pattern of the proof you may be totally lost. This can happen if you don't recognize other forms, for example <a href="MMFormsProof.htm#proofbycontradiction">contradiction </a> and <a href="https://en.wikipedia.org/wiki/Inductive_proof">induction</a>. </p>
+
+<h3> Example (rabbit) </h3>
+
+<p> You are reading a proof that $\underset{x\to
+2}{\mathop{\lim }}{{x}^{2}}=4$. It is an $\varepsilon \text{-}\delta$ proof, so what must be proved is: </p>
+<ul>
+<li>
+ (*) For any positive real number $\varepsilon $,</li>
+
+<li>there is a positive real number $\delta $ for which:
+</li>
+<li>if $\left| x-2 \right|\lt\delta$ then
+</li>
+<li>$\left| x^2-4 \right|\lt\varepsilon$.
+</li>
+</ul>
+<h4> Proof </h4>
+
+<p> Here is the proof, with what I imagine might be your <b><font color="#B31B1B">agitated reaction</font></b> to certain steps. Below is a proof with <a href="#_Proof_with_detailed"> detailed explanations </a> . </p>
+
+
+
+<p>1) Suppose $\varepsilon \gt0$ is given. </p>
+
+<p>2) Let $\delta =\text{min}\,(1,\,\frac{\varepsilon }{5})$ (the minimum of the two numbers 1 and $\frac{\varepsilon}{5}$ ).</p><p> <b><font color="#B31B1B">Where the *!#@! did <i>that</i> come from? They pulled it out of thin air! I can't see where we are going with this proof!</font> </b></p>
+
+
+<p>3) Suppose that $\left| x-2 \right|\lt\delta$. </p>
+
+<p>4) Then $\left| x-2 \right|\lt1$ by (2) and (3).</p>
+
+<p>5) By (4) and algebra, $\left|x+2 \right|\lt5$. </p>
+
+<p><b><font color="#B31B1B">Well, so what? We know that $\left| x+39
+\right|\lt42$ and lots of other things, too.  Why did they do <i>this</i>?</p></font></b>
+</p>
+<p>6) Also $\left| x-2 \right|\lt\frac{\varepsilon }{5}$ by (2). </p>
+
+<p> 7) Then $\left| {{x}^{2}}-4
+\right|=\left| (x-2)(x+2) \right|\lt\frac{\varepsilon }{5}\cdot 5=\varepsilon$ by (5) and (6). End of Proof.</p>
+<h4>Remarks</h4>
+<p> This proof is typical of proofs in texts.
+<ul>
+
+<li>Steps 2) and 5) look like they were rabbits pulled out of a hat.</li>
+<li>The author gives no explanation of where they came from.</li>
+
+<li>Even so, each step of the proof follows from previous steps, so the proof is correct.</li>
+<li>Whether you are surprised or not has nothing to do with whether it is correct.</li>
+<li>In order to understand a proof, you do not have to know where the rabbits came from.</li>
+<li>In general, the author did not think up the proof steps in the order they occur in the proof. (See <a href="MMFormsProof.htm#comingup">this remark</a> in the section on Forms of Proofs.)</li>
+<li>See also <a href="MMUsefulBehaviors.htm#lookahead">look ahead</a>.</li>
+
+</ul>
+
+
+<h3>Acknowledgments</h3>
+
+<p>Thanks to Robert Burns for corrections and suggestions
+
+<a name="readingvariablenamesaslabels"></a>
+<h2>Reading variable names as labels</h2>
+
+<p>An assertion such as “There are six times as many students as professors” is translated by some students as $6s = p$ instead of $6p = s$ (where $p$ and $s$ have the obvious meanings). This sort of thing can be avoided by <i>plugging in numbers for the variables to see if the resulting equations make sense.</i> You know it's wrong to say that if you have $12$ professors then you have $2$ students! This problem is discussed in more detail <a href="MMUsefulBehaviors.htm#selfmonitoring.htm">here</a>.</p>
+
+<a name="therepresentationistheobject"></a>
+<h2>The representation is the object</h2>
+
+<p>Many newbies at abstract mathematics firmly believe that the <i>number</i> $735$ is the <i>expression</i> “735”. In fact, the number $735$ is an abstract <a href="MMMathObj.htm">math object</a>, not a string of symbols that <i>represents</i> the number. This attitude inhibits your ability to use whatever representation of an object is best for the purpose.</p>
+
+<h4>Example</h4>
+
+<p>Someone faced with a question such as “Does $21$ divide $3 \cdot5\cdot72$?” may immediately multiply the expression out to get $1080$ and then carry out long division to see if indeed $21$ divides $1080$. They will say things such as, “I can’t tell what the number is until I multiply it out.”
+</p>
+<p>
+In this example, it is easy to see that $21$ does not divide $3 \cdot5\cdot72$, because if it did, $7$ would be a prime factor, but $7$ does not divide $72$.</p>
+<p>
+Integers have many representations: decimal, binary, the prime factorization, and so on. Clearly the prime factorization is the best form for determining divisors, whereas for example the decimal notation is a good form for determining which of two integers is the larger.  For example, is $3 \cdot5\cdot72$ bigger or smaller than $2\cdot 11\cdot49$?
+</p>
+<a name=unique>
+<h2>Unique</a></h2>
+
+<p> By definition, a set $R$ of <a href="http://en.wikipedia.org/wiki/Ordered_pair">ordered pairs</a> has the <a href="MMFuncDef.htm#functional_property"><b>functional property</b></a> if <a href="MMGlossary.htm#two">two</a> pairs in $R$ with the same first coordinate have to have the same second coordinate </p>
+
+<p>
+It is <i>wrong</i> to rephrase the definition this way: "The first coordinate determines a unique second coordinate."  <i>That use of "unique" is ambiguous.</i> It could mean the set \[\{(1,2),
+(2,4), (3,2), (5,8)\}\] does not have the functional property because the first coordinate in $(1,2)$ determines $2$ and the first coordinate in $(3,2)$ determines $2$, so it is "not unique". <i>This statement is wrong. </i>. The set <i>does</i> have the functional property.</p>
+<p>A related error is to reword the definition of <a href="MMFuncProperties.htm#injective">injective</a> by saying, "For each input there is a unique output." It is easy to read this and think injectivity is merely the functional property.</p>
+
+<p>It seemed to me that during the 35 years I taught calculus and discrete math, students fell into this trap about 100,000 times. Of course, this could be a slight exaggeration. </p>
+
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+Avoid rewording any definition that does not use the word unique<br />
+so that it DOES use the word unique. <br />
+Such activity fries your brain and turns A's into B's.
+</p></td></tr></table></center>
+
+<a name=unnecessarilyweakassertion></a>
+<a name=unnweakass></a>
+<h2>Unnecessarily weak assertion</h2>
+
+<h4>Examples</h4>
+<ul>
+<li> The statement "Either $x \gt 0$ or $x \lt 2$" is true (for real numbers). Yes, you could make a stronger statement, for example "Either $x\le 0$ or $x \gt 0$". But the statement "Either $x \gt 0$ or $x \lt 2$" is still true. </li>
+
+<li> Some students have problems with the true statements "$2\le 2$" and with "$2\le 3$" for a similar reason, since in fact $2 = 2$ and $2 \lt 3$. </li>
+
+<li> You may get a twinge if someone says "Many primes are odd", since in fact there is only one that is <i>not</i>
+odd. But it is still true that many primes are odd.</li>
+</ul>
+<p>An unnecessarily weak assertion may occur in math texts because it is the form your proof gives you, or it is the form you need for a proof. In the latter case you may feel the author has pulled a <a href="#rabbits">rabbit out of a hat</a>. </p>
+
+</table></center>
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+It is not wrong for an author to make an unnecessarily weak assertion.
+</p></td></tr></table></center>
+<p class=headed> <img
+border=0 width=88 height=31  src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></a></p>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+ 
+<br />
+<br />
+<!-- <a name=variable clash></a>
+<h2>Variable clash</h2> -->
+</body>
+
+</html>
+
+
+ <!-- <p>In short, you are<b> intimidated.</b> Quite possibly, you <b>co-operate with being intimidated</b>. I call that being a <b>co-intimidator.</b>
+ </p><table align=right cellpadding=0><tr>
+ <td valign=top style='width:155.0pt;border:solid windowtext 1.0pt;
+ padding:4pt 4pt 4pt 4pt;height:20.05pt'>
+ <p class='small' > I copied this construc&shy;tion from the word "codependent", mean&shy;ing some&shy;one who wants a certain person to be dependent on them. It has nothing to do with cate&shy;gory theory. Really and truly.
+</p></td></tr></table> -->
+
+
+<!--
+
+When performing a calculation to solve a problem, one may look ahead to the form the solution must take to guide the manipulations one carries out. Example 1 Given a right triangle with legs a and b and hypoteneuse c, one can derive the Pythagorean Theorem a2 + b2 =
+c2 from the identity
+sin2 è + cos2 è = 1
+by rewriting it as
+a2
+c2 + b2
+c2 = 1
+and then multiplying by c2. Olson [1998] discovered that when asked to reverse the process to derive the trig identity from the Pythagorean Theorem, some students balked at the first step, which is to divide the equation a2 + b2 = c2 by c2, because “there is no reason to divide by c2”: The students apparently could think of no method or algorithm which said to do this. Of course there is a method — look ahead to see what form of the equation you need. More about this example in section (a) under attitudes. This is related to walking blindfolded. -->
+
+<!-- Sometimes a lecturer lists steps in an argument that will indeed culminate in a valid proof, but the reason   for the steps is not apparent to the student. The student may feel like someone who is walking straight ahead with a blindfold on: how do you know you won’t bump into a wall or fall off a cliff? That is walking blindfolded (my name). This is closely related to the attitude described in section (a) under attitudes. It is my observation that many students find it difficult or impossible to follow a proof when they cannot see where it is going.
+
+Example 1 under look ahead discusses the example in [Olson, 1998] of deriving a trig identity from the Pythagorean identity. One student, faced with the first step in the derivation, dividing the equation by c, said, “How would I ever know to divide by c?” I have noticed that it is common for a student to be bothered by a step that he feels he could not have thought of. My response in class to this is to say: Nevertheless, you can understand the proof, and now you know a new trick. --><!-- <p>  </p>
+
+<h4><a name=detailedproof></a><a name="_Proof_with_detailed"></a>Proof with detailed explanations</h4>
+
+<h4></h4>
+
+<p> 1) Suppose $\varepsilon \gt0$ is given. We are starting a proof by <b><a href="MMUnivTrue.htm#universalgeneralization">universal generalization</a> . </p>
+
+<p> 2)
+ Let (the minimum of the two numbers 1 and $\frac{\varepsilon }{5}$ ). Rabbit out of the hat. You can let any symbol mean anything you want, so this is a legitimate thing to do even if you don't see where this is all going. </p>
+
+<p> 3) Suppose $\left| x-2 \right|\lt\delta $ . We are about to prove the conditional statement "If $\left| x-2 \right|\lt\delta
+$then \[\left| {{x}^{2}}-4 \right|\lt\varepsilon \]" and we are proceeding by the <a href="MMFormsProof.htm#directmethod"><b>direct method. </a> </p>
+
+<p> 4) Then $\left| x-2 \right|\lt1$ by (2) and (3) . The fact that $\delta =\text{min}\,(1,\,\frac{\varepsilon }{5})$ means that $\delta
+\le 1$ and that $\delta \le \frac{\varepsilon }{5}$. Since $\left| x-2
+\right|\lt\delta $, the statement $\left| x-2 \right|\lt1$ follows by transitivity of "\lt". </p>
+ -->
+<!-- <p> 5)
+ So $\left| x+2 \right|\lt5$ by algebra. $\left| x-2 \right|\lt1$ means that $-1\ltx-2\lt1$. Add 4 to each term in this equation to get $3\ltx+2\lt5$. This is another rabbit, but it is a correct statement!$\left| (x-2)(x+2) \right|\lt\varepsilon
+$$\left| x-2 \right|\lt\frac{\varepsilon }{5}$$\delta
+=\text{min}\,(1,\,\frac{\varepsilon }{5})$$\left| {{x}^{2}}-4
+\right|\lt\varepsilon $$\delta $$\delta $$\left| (x-2)(x+2)
+\right|\lt\varepsilon $$\left| {{x}^{2}}-4 \right|=\left| (x-2)(x+2)
+\right|\lt\frac{\varepsilon }{5}\cdot 5=\varepsilon $$\left| x+2 \right|\lt5$ </p>
+
+<p> 6) Also by (2). Same reasoning as in (4). </p>
+
+<p> 7) Then by (5) and (6). </p> --> 

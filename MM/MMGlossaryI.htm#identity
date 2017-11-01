@@ -1,0 +1,2556 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:st1="urn:schemas-microsoft-com:office:cs:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<!-- saved from url=(0014)about:internet --><!-- MSIE Mark of the Web -->
+
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=keywords content="MathPageGen">
+
+<meta name=Generator content="MathPage 1.0.1">
+<meta name=Originator content="Microsoft Word 11">
+
+
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Glossary I</title>
+
+<!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	}
+@font-face
+	{font-family:"Arial Narrow";
+	panose-1:2 11 5 6 2 2 2 3 2 4;
+	}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+h1
+	{margin-right:0in;
+	margin-bottom:1.2pt;
+	margin-left:0in;
+	text-indent:0in;
+	font-size:18.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h2
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:14.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h3
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	font-size:18.0pt;
+	font-family:Arial;
+	color:#993300;
+	font-weight:bold;}
+h4
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:12.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;
+	}
+h5
+	{margin-top:3.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+h6
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:7.5pt;
+	font-family:Arial;
+	color:green;
+	font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:11.0pt;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.MsoCommentReference
+	{}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+
+
+strong
+	{font-family:Arial;
+	font-style:italic;
+	}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Tahoma;
+	}
+p
+	{margin-top:3.0pt;
+	margin-right:.1in;
+	margin-bottom:7.5pt;
+	margin-left:0in;
+	text-indent:.2in;
+	line-height:116%;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+tt
+	{font-family:"Courier New";
+	}
+span.CharChar6
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar5
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar4
+	{font-family:Arial;
+	color:#993300;
+	font-weight:bold;}
+span.CharChar3
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.Char5Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char4Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar2
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.CharChar1
+	{font-family:Arial;
+	}
+p.Secondhead, li.Secondhead, div.Secondhead
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:.2in;
+	border:none;
+	padding:0in;
+	font-size:18.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.Abmath
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+span.amhead
+	{font-family:Arial;
+	color:teal;
+	border:none windowtext 1.0pt;
+	padding:0in;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+span.Chaptitle
+	{font-family:Arial;
+	color:teal;
+	border:none windowtext 1.0pt;
+	padding:0in;
+	font-weight:bold;
+	text-decoration:none;
+	text-decoration:none;
+	}
+p.Tiny, li.Tiny, div.Tiny
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	border:none;
+	padding:0in;
+	font-size:8.0pt;
+	font-family:Arial;
+	}
+p.Postdate, li.Postdate, div.Postdate
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:right;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:8.0pt;
+	font-family:Arial;
+	color:teal;
+	font-style:italic;
+	}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+span.ChildrenChar
+	{font-family:Arial;
+	}
+p.Children, li.Children, div.Children
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.05in;
+	margin-bottom:.0001pt;
+	text-indent:.05in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Subchildren, li.Subchildren, div.Subchildren
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+span.PurpleProseChar
+	{font-family:Arial;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;
+	}
+p.PurpleProse, li.PurpleProse, div.PurpleProse
+	{margin-top:0in;
+	margin-right:12.95pt;
+	margin-bottom:0in;
+	margin-left:9.35pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:0in;
+	line-height:14.0pt;
+	border:none;
+	padding:0in;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.TodoChar
+	{font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;
+	}
+p.Todo, li.Todo, div.Todo
+	{margin-top:0in;
+	margin-right:9.0pt;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;
+	}
+span.LlistChar
+	{font-family:Arial;
+	}
+p.Llist, li.Llist, div.Llist
+	{margin-top:0in;
+	margin-right:9.35pt;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Subllist, li.Subllist, div.Subllist
+	{margin-top:0in;
+	margin-right:9.35pt;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:23.4pt;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.purple, li.purple, div.purple
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	}
+span.purpleChar
+	{font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	}
+p.Alist, li.Alist, div.Alist
+	{margin-top:0in;
+	margin-right:9.35pt;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	text-indent:-.25in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.Small, li.Small, div.Small
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:8.0pt;
+	font-family:Arial;
+	}
+p.ToDo0, li.ToDo0, div.ToDo0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Arial;
+	color:#FF6600;
+	font-weight:bold;
+	}
+p.amsecondheaed, li.amsecondheaed, div.amsecondheaed
+	{margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	font-size:24.0pt;
+	font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+p.children0, li.children0, div.children0
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.05in;
+	margin-bottom:.0001pt;
+	text-indent:.05in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+p.subchildren0, li.subchildren0, div.subchildren0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.2in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	}
+p.ToDO1, li.ToDO1, div.ToDO1
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:14.0pt;
+	font-family:Helvetica;
+	color:#C8A200;
+	font-weight:bold;
+	}
+span.ToDOChar0
+	{font-family:Helvetica;
+	color:#C8A200;
+	font-weight:bold;
+	}
+span.InsetHead
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;
+	}
+span.Head4
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.roman
+	{font-family:Verdana;
+	font-weight:normal;
+	font-style:normal;}
+span.Inset
+	{font-family:Arial;
+	color:windowtext;
+	font-weight:bold;
+	font-style:italic;
+	}
+p.purplecentered, li.purplecentered, div.purplecentered
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:11.0pt;
+	font-family:Helvetica;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+p.mpph, li.mpph, div.mpph
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.mpphspan, li.mpphspan, div.mpphspan
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.mpentity, li.mpentity, div.mpentity
+	{margin-right:0in;
+	margin-left:0in;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+p.Head, li.Head, div.Head
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	font-size:24.0pt;
+	font-family:Arial;
+	color:#7F7F00;
+	font-weight:bold;}
+p.TOC, li.TOC, div.TOC
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:.3in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	color:black;
+	}
+span.Purple0
+	{font-family:Arial;
+	color:#993366;
+	font-weight:bold;
+	}
+span.InsetChar
+	{font-family:Helvetica;
+	color:teal;
+	font-weight:bold;
+	font-style:italic;
+	}
+span.Char3Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.Char2Char
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+span.smallCharChar
+	{font-family:Helvetica;
+	}
+p.smallChar, li.smallChar, div.smallChar
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+span.Char1Char
+	{font-family:Arial;
+	color:green;
+	font-weight:bold;}
+span.CharChar
+	{font-family:Arial;
+	}
+span.ChildrenCharChar
+	{font-family:Arial;
+	}
+span.PurpleProseCharChar
+	{font-family:Arial;
+	color:#990066;
+	font-weight:bold;
+	font-style:italic;}
+span.TodoCharChar
+	{font-family:Helvetica;
+	color:#FF9900;
+	font-weight:bold;
+	}
+span.LlistCharChar1Char
+	{font-family:Arial;
+	}
+p.LlistCharChar1, li.LlistCharChar1, div.LlistCharChar1
+	{margin-top:0in;
+	margin-right:9.0pt;
+	margin-bottom:0in;
+	margin-left:5.4pt;
+	margin-bottom:.0001pt;
+	text-indent:9.0pt;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Arial;
+	}
+p.small0, li.small0, div.small0
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-indent:0in;
+	line-height:14.0pt;
+	font-size:10.0pt;
+	font-family:Helvetica;
+	}
+span.LlistCharChar
+	{font-family:Arial;
+	}
+span.Char5
+	{font-family:Arial;
+	color:teal;
+	font-weight:bold;}
+ /* Page Definitions */
+ @page
+	{}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:75.7pt 185.85pt 270.3pt 74.15pt;
+	}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:8.5in 11.0in;
+	margin:75.7pt 72.75pt 270.3pt 187.25pt;
+	}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:8.5in 11.0in;
+	margin:55.0pt 203.7pt 270.55pt 56.3pt;
+	}
+div.Section3
+	{page:Section3;}
+@page Section4
+	{size:8.5in 11.0in;
+	margin:63.35pt 1.0in 1.0in .25in;
+	}
+div.Section4
+	{page:Section4;}
+ /* List Definitions */
+ @list l0
+	{}
+@list l0:level1
+	{margin-left:0in;
+	text-indent:0in;
+	letter-spacing:.05pt;
+	layout-grid-mode:both;
+	}
+@list l1
+	{}
+@list l1:level1
+	{margin-left:0in;
+	text-indent:0in;
+	letter-spacing:.1pt;
+	layout-grid-mode:both;
+	}
+@list l2
+	{}
+@list l2:level1
+	{text-indent:0in;}
+@list l2:level2
+	{text-indent:-.25in;}
+@list l2:level3
+	{text-indent:-.25in;}
+@list l2:level4
+	{text-indent:-.25in;}
+@list l2:level5
+	{text-indent:-.25in;}
+@list l2:level6
+	{text-indent:-.25in;}
+@list l2:level7
+	{text-indent:-.25in;}
+@list l2:level8
+	{text-indent:-.25in;}
+@list l2:level9
+	{text-indent:-.25in;}
+@list l3
+	{}
+@list l3:level1
+	{margin-left:0in;
+	text-indent:.3in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l4
+	{}
+@list l4:level1
+	{margin-left:.55in;
+	text-indent:-.25in;}
+@list l5
+	{}
+@list l5:level1
+	{margin-left:-.1in;
+	text-indent:.2in;
+	font-family:Symbol;
+	color:windowtext;}
+@list l5:level2
+	{text-indent:-.25in;}
+@list l5:level3
+	{text-indent:-.25in;}
+@list l5:level4
+	{text-indent:-.25in;}
+@list l5:level5
+	{text-indent:-.25in;}
+@list l5:level6
+	{text-indent:-.25in;}
+@list l5:level7
+	{text-indent:-.25in;}
+@list l5:level8
+	{text-indent:-.25in;}
+@list l5:level9
+	{text-indent:-.25in;}
+@list l6
+	{}
+@list l6:level1
+	{text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+<!-- MP HEAD( -->
+<style>
+.MPPH { visibility:hidden; page-break-inside:avoid }
+.MPPHSpan { text-indent:0 }
+sub,sup { font-size:x-small }
+#MPDpiSpan { position:absolute; top:1in; left:1in; width:100px; border:none; visibility:hidden }
+.MPEntity { font-family:'Times New Roman',Times,serif }
+</style>
+<style media=screen>
+.MPScreenEqn { position:absolute; visibility:visible; z-index:98 }
+.MPPrintEqn { display:none }
+.MPScreenPH { }
+.MPPrintPH { display:none }
+.MPPopup { position:absolute; visibility:hidden; z-index:99; top:0; left:0; text-indent:0; cursor:hand; 
+border:solid blue 1px; padding:5px; background-color:#FFFFCC; 
+filter:progid:DXImageTransform.Microsoft.DropShadow(color=#444444,offx=3,offy=3,positive=1) 
+}
+.MPPopupNoBg { position:absolute; visibility:hidden; z-index:99; top:0; left:0; text-indent:0; cursor:hand; 
+border:solid blue 1px; padding:5px; 
+filter:progid:DXImageTransform.Microsoft.DropShadow(color=#444444,offx=3,offy=3,positive=1) 
+}
+</style>
+<style media=print>
+.MPScreenEqn { display:none }
+.MPPrintEqn { position:absolute; visibility:visible }
+.MPScreenPH { display:none }
+.MPPrintPH { }
+.MPPopup { display:none }
+.MPPopupNoBg { display:none }
+</style>
+<script language=javascript src='mathpage.js'></script>
+<script language=javascript>
+if (typeof DSMP == 'undefined') {
+	alert('MathPage Javascript file missing; equations and symbols will not display.');
+	var DSMP = new Object;
+	MPBodyInit=MPSetEqnAttrs=MPSetChAttrs=MPEquation=MPInlineChar=MPDeleteCode=MPNNCalcTopLeft=MPHidePopup=MPShowPopup=MPNNSelectScreenEqn=MPWebEQApplet=MPTechexplorerObject=function(){};
+	DSMP.gEmptySrc=DSMP.gPlaceholderHeight=DSMP.gPlaceholderWidth=DSMP.gPlaceholder2Height=DSMP.gNNPopupBgColor=DSMP.gPopupEqnSrc=DSMP.gPopupEqnPadding=DSMP.gNNLayerTop=DSMP.gNNLayerLeft=DSMP.gScreenEqnSrc=DSMP.gScreenEqnWidth=DSMP.gScreenEqnHeight=DSMP.gPrintEqnSrc=null;
+}
+DSMP.gPageVersion = '1.1';
+DSMP.gMaxCharCompat = 1;
+DSMP.gGenMathZoom = 1;
+DSMP.gPopupEqnBgColorDefault = '#FFFFCC';
+DSMP.gPopupEqnPaddingDefault = 5;
+DSMP.gPlaceholderPadding = 4;
+DSMP.gOldJSMessage = 'Warning: this MathPage document requires a newer JavaScript file and may not display correctly.';
+DSMP.gCompatMessage = 'Warning: this MathPage document was generated for Windows IE5 or later only and may not display correctly.';
+DSMP.gMinBrowserMessage = 'Warning: MathPage requires a version 4 or later browser.';
+DSMP.gHidePopupMessage = 'Click on a MathZoom equation to dismiss it, or shift-Click to close all.';
+DSMP.gShowPopupMessage = 'Click on an equation to show the enlarged MathZoom version.';
+</script>
+<!-- )MP HEAD -->
+</head>
+
+<body lang=EN-US link=blue vlink="#CC3300" >
+<!-- MP BODY(-->
+<span id=MPDpiSpan></span>
+<script language=javascript>
+MPBodyInit('MMGlossaryI_files')
+</script>
+<!-- )MP BODY -->
+
+
+<div class=Section1>
+
+<p class=PurpleProse style='border:none'><a
+name="OLE_LINK2"></a><a name="OLE_LINK1"></a><a name="OLE_LINK6"></a><a
+name="OLE_LINK5"><span class=Abmath><script language="VBScript">
+<!--
+
+-->
+</script></span></a><span class=Abmath><span style='font-weight:
+normal'><script  type="text/javascript">
+<!--
+google_ad_client = "pub-0839594169704668";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text";
+google_ad_channel ="";
+//-->
+</script></span></span><span class=Abmath><script  type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></span><span style='color:teal;font-weight:normal'>&nbsp;</span></p>
+
+<span style='mso-bookmark:OLE_LINK1'></span><span
+style='mso-bookmark:OLE_LINK6'></span><span style='mso-bookmark:OLE_LINK5'></span>
+
+<p class=Tiny style='text-indent:0in;line-height:normal;border:none;mso-padding-alt:
+0in 0in 0in 0in'><!--[if gte vml 1]><v:shapetype id="_x0000_t202" coordsize="21600,21600"
+ o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter" />
+ <v:path gradientshapeok="t" o:connecttype="rect" />
+</v:shapetype><v:shape id="_x0000_s1070" type="#_x0000_t202" style='position:absolute;
+ margin-left:0;margin-top:0;width:38.95pt;height:58.25pt;z-index:1;
+ mso-position-horizontal:left;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f" strokecolor="#930"
+ strokeweight="2pt">
+ <v:textbox style='mso-next-textbox:#_x0000_s1070'>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+    style='font-size:48.0pt;color:#993300'>I<o:p></o:p></span></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" />
+</v:shape><![endif]--><![if !vml]><img width=59 height=85
+src="MMGlossaryI_files/image001.gif" align=left hspace=12 alt="Text Box: I"
+v:shapes="_x0000_s1070"><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1073"
+ type="#_x0000_t202" style='position:absolute;margin-left:335.65pt;
+ margin-top:0;width:123.05pt;height:58.05pt;z-index:2;
+ mso-position-horizontal:right;mso-position-vertical:top;
+ mso-position-vertical-relative:line' o:allowoverlap="f" strokecolor="teal"
+ strokeweight="2pt">
+ <v:textbox style='mso-next-textbox:#_x0000_s1073'>
+  <![if !mso]>
+  <table cellpadding=0 cellspacing=0 width="100%">
+   <tr>
+    <td><![endif]>
+    <div>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+    class=MsoHyperlink><span style='font-size:9.0pt'><a href="MMIntro.htm">Home</a><a
+    name="_Toc105947357"><o:p></o:p></a></span></span></p>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+    style='mso-bookmark:_Toc105947357'></span><a href="MMIndex.htm"><span
+    style='mso-bookmark:_Toc105947357'><span style='font-size:9.0pt'>Index </span></span></a><span
+    style='mso-bookmark:_Toc105947357'><span class=MsoHyperlink><span
+    style='font-size:9.0pt'><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></span></span></p>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><span
+    style='mso-bookmark:_Toc105947357'></span><a href="MMTOC.htm"><span
+    style='mso-bookmark:_Toc105947357'><span style='font-size:9.0pt'>Table of
+    Contents </span></span></a><span style='mso-bookmark:_Toc105947357'><span
+    class=MsoHyperlink><span style='font-size:9.0pt'><span
+    style='mso-spacerun:yes'> </span></span></span></span><span
+    style='mso-bookmark:_Toc105947357'><strong><span style='font-size:9.0pt;
+    color:teal;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+    padding:0in;font-style:normal'><o:p></o:p></span></strong></span></p>
+    <span style='mso-bookmark:_Toc105947357'></span>
+    <p class=MsoNormal style='text-indent:0in;line-height:normal'><o:p>&nbsp;</o:p></p>
+    </div>
+    <![if !mso]></td>
+   </tr>
+  </table>
+  <![endif]></v:textbox>
+ <w:wrap type="square" />
+</v:shape><![endif]--><![if !vml]><img width=172 height=85
+src="MMGlossaryI_files/image002.gif" align=right hspace=12
+alt="Text Box: Home&#13;&#10;Index   &#13;&#10;Table of Contents  &#13;&#10;&#13;&#10;"
+v:shapes="_x0000_s1073"><![endif]><span class=amhead><span style='font-size:
+18.0pt'>abstractmath.org <span style='mso-spacerun:yes'> </span></span></span><span
+class=amhead><span style='font-size:26.0pt'>GLOSSARY</span></span><span
+class=Abmath><span style='font-size:11.0pt'> </span></span><span class=Abmath><span
+style='font-size:18.0pt;border:none windowtext 1.0pt;mso-border-alt:none windowtext 0in;
+padding:0in;mso-bidi-font-weight:bold'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></span></p>
+
+<h3><span style='font-size:10.0pt;mso-font-kerning:18.0pt'><o:p>&nbsp;</o:p></span></h3>
+
+<h1><span style='font-size:20.0pt;mso-font-kerning:0pt'><a
+href="MMGlossaryA.htm">A</a> <a href="MMGlossaryB.htm">B</a> <a
+href="MMGlossaryC.htm">C</a> <a href="MMGlossaryD.htm">D</a> <a
+href="MMGlossaryE.htm">E</a> <a href="MMGlossaryF.htm">F</a> <a
+href="MMGlossaryG.htm">G</a> <a href="MMGlossaryH.htm">H</a> <a
+href="MMGlossaryI.htm">I</a> <a href="MMGlossaryJ.htm">J</a> K <a
+href="MMGlossaryL.htm">L</a> <a href="MMGlossaryM.htm">M</a> <a
+href="MMGlossaryN.htm">N</a> <a href="MMGlossaryO.htm">O</a> <a
+href="MMGlossaryP.htm">P</a> <a href="MMGlossaryQ.htm">Q</a> <a
+href="MMGlossaryR.htm">R</a> <a href="MMGlossaryS.htm">S</a> <a
+href="MMGlossaryT.htm">T</a> <a href="MMGlossaryU.htm">U</a> <a
+href="MMGlossaryV.htm">V</a> <a href="MMGlossaryW.htm">W</a> X <a
+href="MMGlossaryY.htm">Y</a> <a href="MMGlossaryZ.htm">Z</a><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='text-indent:0in'><span style='font-size:9.0pt;
+color:teal;mso-bidi-font-weight:bold'>Posted </span><!--[if supportFields]><span
+style='font-size:9.0pt;color:teal;mso-bidi-font-weight:bold'><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>DATE \@ &quot;d MMMM yyyy&quot; <span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-size:9.0pt;color:teal;mso-bidi-font-weight:bold'><span
+style='mso-no-proof:yes'>26 September 2007</span></span><!--[if supportFields]><span
+style='font-size:9.0pt;color:teal;mso-bidi-font-weight:bold'><span
+style='mso-element:field-end'></span></span><![endif]--></p>
+
+<h3>I</h3>
+
+<p class=Llist style='margin-top:3.0pt;margin-right:9.35pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;tab-stops:-9.0pt list .45in left 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><b><span style='mso-bidi-font-size:10.0pt'>I </span></b></span><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>(<a
+href="MMAlphabets.htm#bold">bold</a>) may denote the unit interval, the set of
+real numbers <i style='mso-bidi-font-style:normal'>x</i> for which <!-- MP EQPHNS( --><script id=mpeq0001s1>
+	MPSetEqnAttrs('eq0001','',3,[[40,10,2,-1,-1],[54,13,2,-1,-1],[68,17,3,-1,-1],[60,14,2,-1,-1],[82,20,3,-1,-1],[102,24,4,-1,-1],[169,41,7,-2,-2]])
+</script><![if !ie]><span id=mpnneq0001ph class=MPNNCode
+	><img border=0 name=mpeq0001ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0001s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.<span
+style='mso-spacerun:yes'>  </span>It may however denote any bounded interval of
+real numbers. <o:p></o:p></span></span></p><!-- MP EQRA( --><script id=mpeq0001s1>
+	MPSetEqnAttrs('eq0001','',3,[[40,10,2,-1,-1],[54,13,2,-1,-1],[68,17,3,-1,-1],[60,14,2,-1,-1],[82,20,3,-1,-1],[102,24,4,-1,-1],[169,41,7,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0001 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0001ph,'')
+	</script><layer id=mpeq0001pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0001pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0001 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0001,mpeq0001pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0001s3>
+	MPDeleteCode('eq0001')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-top:3.0pt;margin-right:9.35pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;tab-stops:-9.0pt list .45in left 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><i style='mso-bidi-font-style:normal'><span
+style='mso-bidi-font-size:10.0pt'>I</span></i></span><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'> may be used as the name of an arbitrary
+index set. <o:p></o:p></span></span></p>
+
+<p class=Llist style='margin-top:3.0pt;margin-right:9.35pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;tab-stops:-9.0pt list .45in left 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>For some authors,<i
+style='mso-bidi-font-style:normal'> </i><b>I </b>(bold) or <!-- MP EQPHNS( --><script id=mpeq0002s1>
+	MPSetEqnAttrs('eq0002','',3,[[4,8,0,-1,-1],[5,10,1,-1,-1],[7,13,0,-1,-1],[7,12,0,-1,-1],[8,15,0,-1,-1],[11,20,0,-1,-1],[16,32,0,-2,-2]])
+</script><![if !ie]><span id=mpnneq0002ph class=MPNNCode
+	><img border=0 name=mpeq0002ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0002s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>(<a href="MMAlphabets.htm#blackboardbold">blackboard
+bold</a>)<span style='mso-spacerun:yes'>  </span>means the set of integers;
+however, <b>Z </b>or <!-- MP EQPHNS( --><script id=mpeq0003s1>
+	MPSetEqnAttrs('eq0003','',3,[[7,8,0,-1,-1],[10,10,1,-1,-1],[11,13,0,-1,-1],[11,12,0,-1,-1],[13,15,0,-1,-1],[17,20,0,-1,-1],[29,32,0,-2,-2]])
+</script><![if !ie]><span id=mpnneq0003ph class=MPNNCode
+	><img border=0 name=mpeq0003ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0003s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>is also used for this. <o:p></o:p></span></span></p><!-- MP EQRA( --><script id=mpeq0003s1>
+	MPSetEqnAttrs('eq0003','',3,[[7,8,0,-1,-1],[10,10,1,-1,-1],[11,13,0,-1,-1],[11,12,0,-1,-1],[13,15,0,-1,-1],[17,20,0,-1,-1],[29,32,0,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0003 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0003ph,'')
+	</script><layer id=mpeq0003pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0003pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0003 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0003,mpeq0003pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0003s3>
+	MPDeleteCode('eq0003')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0002s1>
+	MPSetEqnAttrs('eq0002','',3,[[4,8,0,-1,-1],[5,10,1,-1,-1],[7,13,0,-1,-1],[7,12,0,-1,-1],[8,15,0,-1,-1],[11,20,0,-1,-1],[16,32,0,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0002 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0002ph,'')
+	</script><layer id=mpeq0002pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0002pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0002 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0002,mpeq0002pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0002s3>
+	MPDeleteCode('eq0002')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-top:3.0pt;margin-right:9.35pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;tab-stops:-9.0pt list .45in left 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><![if !supportLists]><span
+class=TodoCharChar><span style='mso-ansi-font-size:10.0pt;mso-bidi-font-size:
+10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:windowtext;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><i style='mso-bidi-font-style:normal'><span
+style='mso-bidi-font-size:10.0pt'>I </span></i></span><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>may denote the </span></span><span
+class=MsoHyperlink><span style='mso-bidi-font-size:10.0pt'>identity function</span></span><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>.<span
+style='mso-spacerun:yes'>  </span>“id” is also used for this.<span
+style='mso-spacerun:yes'>  </span></span></span><span class=TodoCharChar><span
+style='mso-ansi-font-size:10.0pt;mso-bidi-font-size:10.0pt;font-family:Arial;
+mso-bidi-font-weight:bold'>Give hyperlink.<o:p></o:p></span></span></p>
+
+<p class=Llist style='margin-top:3.0pt;margin-right:9.35pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;tab-stops:-9.0pt list .45in left 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><b><span style='mso-bidi-font-size:10.0pt'>I </span></b></span><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>may denote the
+identity matrix for a dimension given by context. <o:p></o:p></span></span></p>
+
+<p class=Llist style='margin-top:3.0pt;margin-right:9.35pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;tab-stops:-9.0pt list .45in left 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><a
+name=i><![if !supportLists]><span class=LlistCharChar><span style='mso-bidi-font-size:
+10.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span></span><![endif]><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'>i </span></span></a><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>(usually lowercase)
+denotes one of the square roots of <!-- MP SYPH( --><script id=mpch0001s1>
+	MPSetChAttrs('ch0001','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><![if !ie]><span id=mpnnch0001ph class=MPNNCode
+	><img border=0 name=mpch0001ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0001s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH -->1.<span
+style='mso-spacerun:yes'>  </span>(The other one is then <!-- MP SYPH( --><script id=mpch0002s1>
+	MPSetChAttrs('ch0002','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><![if !ie]><span id=mpnnch0002ph class=MPNNCode
+	><img border=0 name=mpch0002ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0002s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH -->i).<span
+style='mso-spacerun:yes'>  </span>In engineering, j is very frequently used
+instead of I for this.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></span></p><!-- MP SYRA( --><script id=mpch0002s1>
+	MPSetChAttrs('ch0002','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0002 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0002ph,'')
+	</script><layer id=mpch0002 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0002s3>
+	MPDeleteCode('ch0002')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0001s1>
+	MPSetChAttrs('ch0001','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0001 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0001ph,'')
+	</script><layer id=mpch0001 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0001s3>
+	MPDeleteCode('ch0001')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal><span class=LlistCharChar><span style='mso-bidi-font-size:
+10.0pt'>These various meanings are quite commonly used without explanation.</span>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:Arial;mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></p>
+
+<h3><a name=ie>i.e. </a></h3>
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+Arial'>The expression “<b>i.e.” </b>means <a href="MMGlossaryT.htm#thatis">that
+is</a>.<span style='mso-spacerun:yes'>  </span>This abbreviation is confused by
+many readers and writers (including writers in the research literature) with
+“e.g.”, which means “for example”.<span style='mso-spacerun:yes'>  </span></span><strong><span
+style='mso-bidi-font-family:"Times New Roman"'>This is a very significant
+difference in meaning.<span style='mso-spacerun:yes'>   </span></span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'>Consider<o:p></o:p></span></strong></p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><strong><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></strong><![endif]><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'>“Let </span></strong><strong><span style='mso-bidi-font-family:
+"Times New Roman";font-weight:normal;mso-bidi-font-weight:bold'>n</span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'> be an even integer, e.g. 6.”<span
+style='mso-spacerun:yes'>   </span></span></strong><strong><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman";color:green;
+font-style:normal'>Good</span></strong><strong><span style='mso-bidi-font-family:
+"Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'><o:p></o:p></span></strong></p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><strong><span
+style='mso-bidi-font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol;font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span></strong><![endif]><strong><span style='mso-bidi-font-family:
+"Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>“Let
+</span></strong><strong><span style='mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold'>n </span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'>be an even integer, i.e. 6.”<span
+style='mso-spacerun:yes'>     </span></span></strong><strong><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman";color:purple;
+font-style:normal'>Bad. <span style='mso-spacerun:yes'> </span></span></strong><strong><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+color:purple;font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>It
+suggests that 6 is the </span></strong><strong><span style='mso-bidi-font-family:
+"Times New Roman";color:purple'>only</span></strong><strong><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+color:purple;font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>
+even integer.</span></strong><strong><span style='mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'><o:p></o:p></span></strong></p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='mso-bidi-font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>¨<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]>“Let
+<i style='mso-bidi-font-style:normal'>n</i> be an even integer, e.g. divisible
+by 2.”<strong><span style='mso-bidi-font-family:"Times New Roman";font-weight:
+normal;mso-bidi-font-weight:bold;font-style:normal'> <span
+style='mso-spacerun:yes'> </span></span></strong><strong><span
+style='font-size:12.0pt;mso-bidi-font-family:"Times New Roman";color:purple;
+font-style:normal'>Bad.<span style='mso-spacerun:yes'>  </span></span></strong><strong><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+color:purple;font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>It
+literally says “for example, an even integer divisible by 2”.<span
+style='mso-spacerun:yes'>  </span>I guess this is literally correct, but it is
+very misleading, since </span></strong><strong><span style='mso-bidi-font-family:
+"Times New Roman";color:purple'>every</span></strong><strong><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:"Times New Roman";
+color:purple;font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>
+even integer has to be divisible by 2.<span style='mso-spacerun:yes'>  </span></span></strong><b><span
+style='mso-bidi-font-size:10.0pt'><o:p></o:p></span></b></p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]>“Let <i style='mso-bidi-font-style:normal'>n </i>be
+an even integer, i.e. divisible by 2.”<span style='mso-spacerun:yes'>   </span><b><span
+style='font-size:12.0pt;color:green'>Good</span><span style='color:green'><o:p></o:p></span></b></p>
+
+<p class=Llist style='text-indent:0in;mso-list:none;tab-stops:137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><b><span
+style='color:green'><o:p>&nbsp;</o:p></span></b></p>
+
+<div style='mso-element:para-border-div;border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt'>
+
+<p class=MsoNormal style='border:none;mso-border-alt:solid windowtext .5pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt'><strong><span
+style='mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:normal'><span class=MPEntity>&#8594;</span></span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'><span style='mso-spacerun:yes'> </span>If you </span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman"'>desperately want to be
+understood</span></strong><strong><span style='mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>, you should </span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman"'>never</span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'> use “i.e.” and “e.g.” <o:p></o:p></span></strong></p>
+
+<p class=MsoNormal style='border:none;mso-border-alt:solid windowtext .5pt;
+padding:0in;mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt'><strong><span
+style='mso-bidi-font-family:"Times New Roman";mso-bidi-font-weight:normal'><span class=MPEntity>&#8594;</span></span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'><span style='mso-spacerun:yes'> </span>If you want to
+impress people with your command of academic prose, go ahead and use them.<o:p></o:p></span></strong></p>
+
+</div>
+
+<h3><o:p>&nbsp;</o:p></h3>
+
+<h3><a name=identify>identify</a> </h3>
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+Arial;letter-spacing:.2pt'>To <b>identify </b>an object <i>A </i>with another
+object <i>B </i>is to regard </span><span style='mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:Arial'>them as </span><strong><span style='mso-bidi-font-family:
+"Times New Roman"'>the same object.</span></strong><span style='mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:Arial'> <span style='mso-spacerun:yes'> </span>In
+particular each point in <i style='mso-bidi-font-style:normal'>A</i> is
+regarded as the same as a particular point in <i style='mso-bidi-font-style:
+normal'>B.<span style='mso-spacerun:yes'>  </span></i>In most cases, the author
+has in mind a particular way of matching the points in <i style='mso-bidi-font-style:
+normal'>A</i> and the points in <i style='mso-bidi-font-style:normal'>B.<span
+style='mso-spacerun:yes'>  </span></i>This “particular way” may be presented
+informally or as a formal mathematical construction.<o:p></o:p></span></p>
+
+<h5>Examples</h5>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]>You may regard each point of the <b>real plane</b>
+as having <strong><span style='mso-bidi-font-family:"Times New Roman"'>specific
+coordinates</span></strong>, an ordered pair of real numbers.<span
+style='mso-spacerun:yes'>  </span>(“Consider the point with coordinates (2.3,
+-1.45).”)<span style='mso-spacerun:yes'>  </span>On the other hand, you may
+think of the points of the real plane as <b>identified </b>with ordered pairs
+of real numbers.<span style='mso-spacerun:yes'>  </span>(“Consider the point
+(2.3, -1.45).”)<span style='mso-spacerun:yes'>   </span>You can get away with
+either way of envisioning the real plane, and it appears to me that most people
+in math don’t notice the difference.<span style='mso-spacerun:yes'>  </span>I
+have presented this as a <strong><span style='mso-bidi-font-family:"Times New Roman"'>way
+of thinking </span></strong><strong><span style='mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>(an example of <a
+href="http://en.wikipedia.org/wiki/Conceptual_blending"><span style='mso-bidi-font-family:
+"Times New Roman"'>conceptual blending</span></a>)</span></strong>, but in fact
+if a textbook defines the real plane the author has to decide whether its
+points are going to be <strong><span style='mso-bidi-font-family:"Times New Roman"'>represented
+by </span></strong><strong><span style='mso-bidi-font-family:"Times New Roman";
+font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>pairs of real</span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman"'> </span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'>numbers</span></strong> or are going to <strong><span
+style='mso-bidi-font-family:"Times New Roman"'>be </span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'>pairs of</span></strong><strong><span style='mso-bidi-font-family:
+"Times New Roman"'> </span></strong><strong><span style='mso-bidi-font-family:
+"Times New Roman";font-weight:normal;mso-bidi-font-weight:bold;font-style:normal'>real
+numbers</span></strong>.<span style='mso-spacerun:yes'>  </span>Note that both <a
+href="http://en.wikipedia.org/wiki/Plane_%28mathematics%29"><span
+style='mso-bidi-font-family:"Times New Roman"'>Wikipedia</span></a> and <a
+href="http://mathworld.wolfram.com/Plane.html"><span style='mso-bidi-font-family:
+"Times New Roman"'>MathWorld</span></a> do it the first way.</p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='mso-bidi-font-size:10.0pt;font-family:Symbol;mso-fareast-font-family:
+Symbol;mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>¨<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span><![endif]><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial;letter-spacing:
+.05pt'>The <a name=mobiusglue></a><a
+href="http://en.wikipedia.org/wiki/Mobius_strip"><span style='mso-bookmark:
+mobiusglue'>Möbius strip</span><span style='mso-bookmark:mobiusglue'></span></a><span
+style='mso-bookmark:mobiusglue'></span> may be constructed by <b>identifying</b>
+or <a href="MMGlossaryG.htm#glue">gluing</a> the </span><span style='mso-bidi-font-size:
+10.0pt;mso-bidi-font-family:Arial'>edge<o:p></o:p></span></p>
+
+<p class=Llist align=center style='text-align:center;text-indent:0in;
+mso-list:none;tab-stops:137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><!-- MP EQPHNS( --><script id=mpeq0004s1>
+	MPSetEqnAttrs('eq0004','',3,[[82,14,5,-1,-1],[106,19,6,-1,-1],[135,24,7,-1,-1],[119,22,7,-1,-1],[160,27,8,-1,-1],[200,35,11,-1,-1],[335,56,17,-2,-2]])
+</script><![if !ie]><span id=mpnneq0004ph class=MPNNCode
+	><img border=0 name=mpeq0004ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0004s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></p><!-- MP EQRA( --><script id=mpeq0004s1>
+	MPSetEqnAttrs('eq0004','',3,[[82,14,5,-1,-1],[106,19,6,-1,-1],[135,24,7,-1,-1],[119,22,7,-1,-1],[160,27,8,-1,-1],[200,35,11,-1,-1],[335,56,17,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0004 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0004ph,'')
+	</script><layer id=mpeq0004pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0004pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0004 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0004,mpeq0004pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0004s3>
+	MPDeleteCode('eq0004')
+</script><![endif]><!-- )MP EQ -->
+
+</div>
+
+<span style='font-size:10.0pt;font-family:Arial;
+'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<div class=Section2>
+
+<p class=Llist style='text-indent:0in'><span
+style='letter-spacing:
+.05pt'>of the unit square with the edge</span></p>
+
+<p class=Llist align=center style='text-align:center;text-indent:0in;
+'><!-- MP EQPHNS( --><script id=mpeq0005s1>
+	MPSetEqnAttrs('eq0005','',3,[[80,14,5,-1,-1],[104,19,6,-1,-1],[131,24,7,-1,-1],[117,22,7,-1,-1],[156,27,8,-1,-1],[197,35,11,-1,-1],[327,56,17,-2,-2]])
+</script><![if !ie]><span id=mpnneq0005ph class=MPNNCode
+	><img border=0 name=mpeq0005ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0005s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></p><!-- MP EQRA( --><script id=mpeq0005s1>
+	MPSetEqnAttrs('eq0005','',3,[[80,14,5,-1,-1],[104,19,6,-1,-1],[131,24,7,-1,-1],[117,22,7,-1,-1],[156,27,8,-1,-1],[197,35,11,-1,-1],[327,56,17,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0005 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0005ph,'')
+	</script><layer id=mpeq0005pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0005pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0005 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0005,mpeq0005pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0005s3>
+	MPDeleteCode('eq0005')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='text-indent:0in'><span
+style='letter-spacing:
+.05pt'>in such a way that (<i >x</i>, 0<i>) </i>is
+<b>identified with</b> (1 <!-- MP SYPH( --><script id=mpch0005s1>
+	MPSetChAttrs('ch0005','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><![if !ie]><span id=mpnnch0005ph class=MPNNCode
+	><img border=0 name=mpch0005ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0005s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --> <i >x</i>,
+1)<i>. </i>This can be thought of as
+saying that the coordinates <i> </i>(<i
+>x</i>, 0<i>) </i>and (1 <!-- MP SYPH( --><script id=mpch0006s1>
+	MPSetChAttrs('ch0006','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><![if !ie]><span id=mpnnch0006ph class=MPNNCode
+	><img border=0 name=mpch0006ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0006s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --> <i >x</i>,
+1) </span><strong>refer to
+the same point</strong><span style='letter-spacing:.05pt'>.  This
+is an example of identifying objects by a formal mathematical construction.</span></p><!-- MP SYRA( --><script id=mpch0006s1>
+	MPSetChAttrs('ch0006','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0006 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0006ph,'')
+	</script><layer id=mpch0006 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0006s3>
+	MPDeleteCode('ch0006')
+</script><![endif]><!-- )MP SY --><!-- MP SYRA( --><script id=mpch0005s1>
+	MPSetChAttrs('ch0005','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0005 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0005ph,'')
+	</script><layer id=mpch0005 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0005s3>
+	MPDeleteCode('ch0005')
+</script><![endif]><!-- )MP SY -->
+
+<h5>Usage</h5>
+
+<p class=MsoNormal><span style='letter-spacing:.25pt'>In ordinary English, “identify” means to </span><strong>give a name to</strong><span
+style='letter-spacing:
+.25pt'>. </span>This presumably could cause <a href="MMCognitiveDissonance.htm">cognitive
+dissonance.</a></p>
+
+<h3><a name=identity>identity </a></h3>
+
+<p class=MsoNormal>This word has three common meanings.</p>
+
+<h4>Equation that always holds</h4>
+
+<p class=MsoNormal>An <b>identity </b>in this sense is an equation that holds between two
+expressions for <strong>any
+valid values of the variables in the expressions</strong>. Thus, for real
+numbers (in fact for complex numbers), the equation </p>
+
+<p class=MTDisplayEquation><span lang=EN>                                                       <!-- MP EQPHNS( --><script id=mpeq0006s1>
+	MPSetEqnAttrs('eq0006','',3,[[90,11,2,-1,-1],[117,15,3,-1,-1],[148,17,3,-1,-1],[133,16,3,-1,-1],[177,21,4,-1,-1],[222,26,5,-1,-1],[369,43,8,-2,-2]])
+</script><![if !ie]><span id=mpnneq0006ph class=MPNNCode
+	><img border=0 name=mpeq0006ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0006s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span></p><!-- MP EQRA( --><script id=mpeq0006s1>
+	MPSetEqnAttrs('eq0006','',3,[[90,11,2,-1,-1],[117,15,3,-1,-1],[148,17,3,-1,-1],[133,16,3,-1,-1],[177,21,4,-1,-1],[222,26,5,-1,-1],[369,43,8,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0006 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0006ph,'')
+	</script><layer id=mpeq0006pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0006pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0006 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0006,mpeq0006pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0006s3>
+	MPDeleteCode('eq0006')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal style='text-indent:0in'>is an identity. </p>
+
+<h5>Fine point</h5>
+
+<p class=MsoNormal style='text-indent:0in'>The assertion</p>
+
+<p class=MsoNormal align=center style='text-align:center'>“If <i>x </i>= 1,
+then <i>x</i><sup>2</sup><i> </i>= <i>x</i>,”<i></i></p>
+
+<p class=MsoNormal style='text-indent:0in'>is true for all real numbers <i
+>x </i>(<a
+href="MMConditional.htm#vacuoustruth">vacuously true</a> for all but one of
+them!).  </p>
+
+<p class=MsoNormal style='text-indent:0in'>In this situation the equation <i>x</i><sup>2</sup><i>
+</i>= <strong><span style='font-weight:normal'>x</span></strong><strong> </strong><strong><span
+style='font-weight:normal;font-style:normal'>would not be called an identity</span></strong><b
+><i >.</i></b> </p>
+
+<h5>Usage</h5>
+
+<p class=MsoNormal style='text-indent:0in'>Sometimes in the case of an identity the
+symbol <i>≡ </i>is used instead of the equals sign. </p>
+
+</div>
+
+<span style='font-size:10.0pt;font-family:Arial'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=Section3>
+
+<h4>Identity element of an algebraic structure</h4>
+
+<p class=MsoNormal><span style='letter-spacing:.15pt'>If <!-- MP EQPHNS( --><script id=mpeq0007s1>
+	MPSetEqnAttrs('eq0007','',3,[[68,7,0,-1,-1],[90,9,0,-1,-1],[113,12,0,-1,-1],[101,11,1,-1,-1],[136,14,0,-1,-1],[169,18,1,-1,-1],[282,30,1,-2,-2]])
+</script><![if !ie]><span id=mpnneq0007ph class=MPNNCode
+	><img border=0 name=mpeq0007ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0007s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> for all elements <i>x </i>in an algebraic
+structure with binary operation </span><!-- MP SYPH( --><script id=mpch0007s1>
+	MPSetChAttrs('ch0007','ch1',[[7,7,0,1,0],[8,9,0,0,0],[8,11,0,0,-1],[],[],[],[24,29,0,0,-1]])
+</script><![if !ie]><span id=mpnnch0007ph class=MPNNCode
+	><img border=0 name=mpch0007ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0007s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH -->,
+then <i>e </i>is an <b>identity </b>or <b>identity element </b>for the
+structure. Such an <span style='letter-spacing:-.1pt'>element is also called a </span><a
+name=unitelement><b >unit element</b></a><b><span style='letter-spacing:-.1pt'> </span></b><span style='mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:Arial;letter-spacing:-.1pt'>or <a name=unity><b>unity.</b></a><b>
+</b></span><span style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial'><o:p></o:p></span></p><!-- MP SYRA( --><script id=mpch0007s1>
+	MPSetChAttrs('ch0007','ch1',[[7,7,0,1,0],[8,9,0,0,0],[8,11,0,0,-1],[],[],[],[24,29,0,0,-1]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0007 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0007ph,'')
+	</script><layer id=mpch0007 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0007s3>
+	MPDeleteCode('ch0007')
+</script><![endif]><!-- )MP SY --><!-- MP EQRA( --><script id=mpeq0007s1>
+	MPSetEqnAttrs('eq0007','',3,[[68,7,0,-1,-1],[90,9,0,-1,-1],[113,12,0,-1,-1],[101,11,1,-1,-1],[136,14,0,-1,-1],[169,18,1,-1,-1],[282,30,1,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0007 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0007ph,'')
+	</script><layer id=mpeq0007pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0007pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0007 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0007,mpeq0007pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0007s3>
+	MPDeleteCode('eq0007')
+</script><![endif]><!-- )MP EQ -->
+
+<h4>Identity function</h4>
+
+<p class=MsoNormal>For a given set <i>S, </i>the function from <i>S </i>to <i>S
+</i>that takes every element of <i>S </i>to itself is called the <b>identity
+function. </b>This is an example of a <a
+href="MMSymLangMore.htm#overloadednotation">polymorphic definition.</a>  By the way, the identity function on <i
+>S </i>is the identity element of the
+algebraic structure consisting of all functions from a set <i >S</i> to itself with <a
+href="http://en.wikipedia.org/wiki/Function_composition">composition</a> as
+operation.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3><a name=if>if</a></h3>
+
+<h4>In conditional assertions </h4>
+
+<p class=MsoNormal><span style='letter-spacing:.05pt'>The ways <b >if </b>is
+used in stating conditional assertions is discussed <a
+href="MMConditional.htm#howword">here.</a></span></p>
+
+<h4>In definitions </h4>
+
+<p class=MsoNormal><span style='letter-spacing:-.05pt'>It is a convention that the word <b
+>if </b>used to introduce </span><span
+style='letter-spacing:
+.05pt'>the <a href="MMDefs.htm#definiens">definiens</a> in a definition means
+“if and only if”.  (See also <a
+href="MMFuncDef.htm#moreif">here</a>.)</span></p>
+
+<h5>Example</h5>
+
+<p class=MsoNormal><b>a: <i> </i></b>“An integer is <b>even
+</b>if it is divisible by 2.” </p>
+
+<p class=MsoNormal style='text-indent:0in'>Some authors regularly use <a
+href="#ifandonlyif">if and only if</a> or “iff” in definition, so the
+definition above would be given as</p>
+
+<p class=MsoNormal><b>b:<i>  </i></b>“An integer is <b>even
+</b>if and only if it is divisible by 2.” </p>
+
+<p class=MsoNormal style='text-indent:0in'>But note: 
+The following statement is <strong>not </strong><strong><span style='font-weight:normal;font-style:normal'>a
+definition, but an equivalence:</span></strong></p>
+
+<p class=MsoNormal style='text-indent:0in'><strong><span style='font-weight:normal;font-style:normal'>        </span></strong><strong><span
+style='font-style:normal'>c: </span></strong><strong> </strong><strong><span
+style='font-weight:normal;font-style:normal'>“An integer is divisible by 2 if and only if it is
+divisible by </span></strong><strong><!-- MP SYPH( --><script id=mpch0008s1>
+	MPSetChAttrs('ch0008','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><![if !ie]><span id=mpnnch0008ph class=MPNNCode
+	><img border=0 name=mpch0008ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0008s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></strong><strong><span
+style='font-weight:normal;font-style:normal'>2.”</span></strong></p><!-- MP SYRA( --><script id=mpch0008s1>
+	MPSetChAttrs('ch0008','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0008 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0008ph,'')
+	</script><layer id=mpch0008 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0008s3>
+	MPDeleteCode('ch0008')
+</script><![endif]><!-- )MP SY -->
+
+<p class=MsoNormal style='text-indent:0in'><strong><span style='font-weight:normal;font-style:normal'>Even
+though “if and only if” is used in both sentences, they </span></strong><strong>don’t have the same status</strong><strong><span
+style='font-weight:normal;font-style:normal'>.   In statement </span></strong><strong><span
+style='font-style:normal'>b</span></strong><strong><span
+style='font-weight:normal;font-style:normal'> the left side and the right side </span></strong><strong>are not symmetric.</strong><strong><span
+style='font-style:normal'>  </span></strong><strong><span
+style='font-weight:normal;font-style:normal'>The point of statement </span></strong><strong><span
+style='font-style:normal'>b</span></strong><strong><span
+style='font-weight:normal;font-style:normal'> is to </span></strong><strong>give a meaning to the left side.  </strong><strong><span
+style='font-weight:normal;font-style:normal'>Statement </span></strong><strong><span
+style='font-style:normal'>c</span></strong><strong><span
+style='font-weight:normal;font-style:normal'> </span></strong><strong>is </strong><strong><span style='font-weight:normal;font-style:normal'>symmetric;
+you could just as correctly say</span></strong></p>
+
+<p class=MsoNormal style='text-indent:0in'><strong><span style='font-weight:normal;font-style:normal'>              “An integer is divisible by </span></strong><strong><!-- MP SYPH( --><script id=mpch0009s1>
+	MPSetChAttrs('ch0009','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><![if !ie]><span id=mpnnch0009ph class=MPNNCode
+	><img border=0 name=mpch0009ph src='&{DSMP.gEmptySrc};' height=1 width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpch0009s2>
+	MPInlineChar(0)
+</script><!-- )MP SYPH --></strong><strong><span
+style='font-weight:normal;font-style:normal'>2 if and only if it is divisible by 2.”</span></strong></p><!-- MP SYRA( --><script id=mpch0009s1>
+	MPSetChAttrs('ch0009','ch0',[[6,1,-2,0,0],[7,1,-3,0,0],[9,1,-4,0,0],[],[],[],[23,3,-9,0,0]])
+</script><!-- )MP SYRA --><!-- MP SY( --><![if !ie]><div id=mpnnch0009 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpch0009ph,'')
+	</script><layer id=mpch0009 z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+	></layer></div><script id=mpch0009s3>
+	MPDeleteCode('ch0009')
+</script><![endif]><!-- )MP SY -->
+
+<h4>In the precondition of a definition </h4>
+
+<p class=MsoNormal><b ><span
+style='letter-spacing:
+.2pt'>If </span></b><span style='letter-spacing:.2pt'>can be used in the pre</span><span style='letter-spacing:-.2pt'>condition of a
+definition to introduce some requirements on an object mentioned in the
+definition.  For example, </span> definition <b >a</b> above could have been worded this way:</p>
+
+<p class=MsoNormal>“If <i >n</i> is an
+integer, then it is<i > </i><b
+>even</b> if it is divisible by&nbsp; <st1:NumConv6p0
+sch="1" val="2" w:st="on">2</st1:NumConv6p0>.”</p>
+
+<p class=MsoNormal><b>&nbsp;</b></p>
+
+<h3><a name=ifandonlyif>if and only if </a></h3>
+
+<p class=MsoNormal>If <i >P</i> and <i >Q</i> are two assertions, the statement “<i >P </i><b >if and only if</b> <i
+>Q</i>” is an assertion that <i
+>P</i> and <i >Q</i>  are <a
+href="MMConditional.htm#equivalent">equivalent</a>.</p>
+
+<p class=MsoNormal style='text-indent:0in'>This statement may be abbreviated “<i
+>P </i><b >iff
+</b><i >Q</i>”.  </p>
+
+<h3>image <span class=ToDOChar0><span lang=EN style='font-size:14.0pt;
+'>to do</span></span></h3>
+
+<h3>imply <span class=ToDOChar0><span lang=EN style='font-size:14.0pt;
+'>to do</span></span><span lang=EN style='font-size:
+14.0pt;font-family:Helvetica;color:#C8A200;
+'></span></h3>
+
+<h3><a name=in>in</a></h3>
+
+
+
+<p class=MsoNormal><span class=LlistCharChar><b><span style='mso-bidi-font-size:
+10.0pt'>In</span></b></span><span class=LlistCharChar><span style='mso-bidi-font-size:
+10.0pt'> is used in <a href="HB/hb.html#mathematical%20discourse"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>math
+discourse</span></a> in all its English meanings, as well as in some meanings
+that are peculiar to mathematics. <o:p></o:p></span></span></p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>“<i
+style='mso-bidi-font-style:normal'>A</i> is<b> in </b><i style='mso-bidi-font-style:
+normal'>B</i>” can mean <!-- MP EQPHNS( --><script id=mpeq0008s1>
+	MPSetEqnAttrs('eq0008','',3,[[26,9,1,-1,-1],[32,11,1,-1,-1],[43,15,1,-1,-1],[37,13,2,-1,-1],[51,17,1,-1,-1],[63,21,2,-1,-1],[107,35,3,-2,-2]])
+</script><![if !ie]><span id=mpnneq0008ph class=MPNNCode
+	><img border=0 name=mpeq0008ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+>&nbsp;</span><![endif]><script id=mpeq0008s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><o:p></o:p></span></span></p><!-- MP EQRA( --><script id=mpeq0008s1>
+	MPSetEqnAttrs('eq0008','',3,[[26,9,1,-1,-1],[32,11,1,-1,-1],[43,15,1,-1,-1],[37,13,2,-1,-1],[51,17,1,-1,-1],[63,21,2,-1,-1],[107,35,3,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0008 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0008ph,'')
+	</script><layer id=mpeq0008pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0008pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0008 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0008,mpeq0008pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0008s3>
+	MPDeleteCode('eq0008')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>“<i
+style='mso-bidi-font-style:normal'>A</i> is <b>in</b> <i style='mso-bidi-font-style:
+normal'>B</i>” can mean <!-- MP EQPHNS( --><script id=mpeq0009s1>
+	MPSetEqnAttrs('eq0009','',3,[[27,10,2,-1,-1],[34,13,2,-1,-1],[45,17,3,-1,-1],[39,14,2,-1,-1],[53,20,3,-1,-1],[66,24,4,-1,-1],[113,41,7,-2,-2]])
+</script><![if !ie]><span id=mpnneq0009ph class=MPNNCode
+	><img border=0 name=mpeq0009ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0009s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><i
+style='mso-bidi-font-style:normal'>.</i> <o:p></o:p></span></span></p><!-- MP EQRA( --><script id=mpeq0009s1>
+	MPSetEqnAttrs('eq0009','',3,[[27,10,2,-1,-1],[34,13,2,-1,-1],[45,17,3,-1,-1],[39,14,2,-1,-1],[53,20,3,-1,-1],[66,24,4,-1,-1],[113,41,7,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0009 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0009ph,'')
+	</script><layer id=mpeq0009pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0009pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0009 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0009,mpeq0009pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0009s3>
+	MPDeleteCode('eq0009')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>You may say “<i
+style='mso-bidi-font-style:normal'>A</i> is <b>in</b> <i style='mso-bidi-font-style:
+normal'>B</i>” when <i style='mso-bidi-font-style:normal'>A</i> is an equation
+whose solution set is included in <i style='mso-bidi-font-style:normal'>B</i>,
+or a geometric figure whose points are included in <i style='mso-bidi-font-style:
+normal'>B</i>. Example: <o:p></o:p></span></span></p>
+
+<p class=Llist align=center style='text-align:center;text-indent:0in;
+mso-list:none;tab-stops:137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt'><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>&quot;The unit
+circle <!-- MP EQPHNS( --><script id=mpeq0010s1>
+	MPSetEqnAttrs('eq0010','',3,[[52,13,2,-1,-1],[68,17,4,-1,-1],[87,23,4,-1,-1],[79,20,4,-1,-1],[106,27,5,-1,-1],[133,34,7,-1,-1],[219,54,10,-2,-2]])
+</script><![if !ie]><span id=mpnneq0010ph class=MPNNCode
+	><img border=0 name=mpeq0010ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0010s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>is <b>in</b> the Euclidean plane.&quot;<o:p></o:p></span></span></p><!-- MP EQRA( --><script id=mpeq0010s1>
+	MPSetEqnAttrs('eq0010','',3,[[52,13,2,-1,-1],[68,17,4,-1,-1],[87,23,4,-1,-1],[79,20,4,-1,-1],[106,27,5,-1,-1],[133,34,7,-1,-1],[219,54,10,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0010 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0010ph,'')
+	</script><layer id=mpeq0010pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0010pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0010 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0010,mpeq0010pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0010s3>
+	MPDeleteCode('eq0010')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>You may say “<i
+style='mso-bidi-font-style:normal'>A</i> is <b>in </b><i style='mso-bidi-font-style:
+normal'>B</i>” when <i style='mso-bidi-font-style:normal'>A</i> is a
+subexpression of <i style='mso-bidi-font-style:normal'>B.<span
+style='mso-spacerun:yes'>  </span></i><span
+style='mso-spacerun:yes'> </span>For example, <i style='mso-bidi-font-style:
+normal'>x</i> is a variable<b> in <!-- MP EQPHNS( --><script id=mpeq0011s1>
+	MPSetEqnAttrs('eq0011','',3,[[52,13,2,-1,-1],[69,17,4,-1,-1],[86,23,4,-1,-1],[79,20,4,-1,-1],[105,27,5,-1,-1],[132,34,7,-1,-1],[219,54,10,-2,-2]])
+</script><![if !ie]><span id=mpnneq0011ph class=MPNNCode
+	><img border=0 name=mpeq0011ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0011s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></b>,
+and <!-- MP EQPHNS( --><script id=mpeq0012s1>
+	MPSetEqnAttrs('eq0012','',3,[[16,11,0,-1,-1],[21,14,0,-1,-1],[26,18,0,-1,-1],[24,16,1,-1,-1],[33,22,0,-1,-1],[41,26,0,-1,-1],[67,43,0,-2,-2]])
+</script><![if !ie]><span id=mpnneq0012ph class=MPNNCode
+	><img border=0 name=mpeq0012ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0012s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>is a term <b>in <!-- MP EQPHNS( --><script id=mpeq0013s1>
+	MPSetEqnAttrs('eq0013','',3,[[52,13,2,-1,-1],[69,17,4,-1,-1],[86,23,4,-1,-1],[79,20,4,-1,-1],[105,27,5,-1,-1],[132,34,7,-1,-1],[219,54,10,-2,-2]])
+</script><![if !ie]><span id=mpnneq0013ph class=MPNNCode
+	><img border=0 name=mpeq0013ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0013s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></b>.
+<o:p></o:p></span></span></p><!-- MP EQRA( --><script id=mpeq0013s1>
+	MPSetEqnAttrs('eq0013','',3,[[52,13,2,-1,-1],[69,17,4,-1,-1],[86,23,4,-1,-1],[79,20,4,-1,-1],[105,27,5,-1,-1],[132,34,7,-1,-1],[219,54,10,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0013 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0013ph,'')
+	</script><layer id=mpeq0013pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0013pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0013 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0013,mpeq0013pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0013s3>
+	MPDeleteCode('eq0013')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0012s1>
+	MPSetEqnAttrs('eq0012','',3,[[16,11,0,-1,-1],[21,14,0,-1,-1],[26,18,0,-1,-1],[24,16,1,-1,-1],[33,22,0,-1,-1],[41,26,0,-1,-1],[67,43,0,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0012 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0012ph,'')
+	</script><layer id=mpeq0012pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0012pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0012 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0012,mpeq0012pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0012s3>
+	MPDeleteCode('eq0012')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0011s1>
+	MPSetEqnAttrs('eq0011','',3,[[52,13,2,-1,-1],[69,17,4,-1,-1],[86,23,4,-1,-1],[79,20,4,-1,-1],[105,27,5,-1,-1],[132,34,7,-1,-1],[219,54,10,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0011 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0011ph,'')
+	</script><layer id=mpeq0011pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0011pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0011 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0011,mpeq0011pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0011s3>
+	MPDeleteCode('eq0011')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><i style='mso-bidi-font-style:normal'><span
+style='mso-bidi-font-size:10.0pt'>A</span></i></span><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'> is <i style='mso-bidi-font-style:normal'>P</i>
+<b>in</b> <i style='mso-bidi-font-style:normal'>B</i>, where <i
+style='mso-bidi-font-style:normal'>P</i> is a property, may mean that <i
+style='mso-bidi-font-style:normal'>A</i> has property <i style='mso-bidi-font-style:
+normal'>P</i> with respect to <i style='mso-bidi-font-style:normal'>B</i>,
+where <i style='mso-bidi-font-style:normal'>B</i> is a constituent of <i
+style='mso-bidi-font-style:normal'>A</i> or a related structure (for example a
+containing structure). Thus in group theory you can say<span
+style='mso-spacerun:yes'>  </span><i style='mso-bidi-font-style:normal'>A</i>
+is normal<b> in </b><i style='mso-bidi-font-style:normal'>B</i>, where <i
+style='mso-bidi-font-style:normal'>A</i> is a subgroup of the group <i
+style='mso-bidi-font-style:normal'>B</i>. As another example, <!-- MP EQPHNS( --><script id=mpeq0014s1>
+	MPSetEqnAttrs('eq0014','',3,[[52,13,2,-1,-1],[69,17,4,-1,-1],[86,23,4,-1,-1],[79,20,4,-1,-1],[105,27,5,-1,-1],[132,34,7,-1,-1],[219,54,10,-2,-2]])
+</script><![if !ie]><span id=mpnneq0014ph class=MPNNCode
+	><img border=0 name=mpeq0014ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0014s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>is differentiable <b>in </b><i
+style='mso-bidi-font-style:normal'>y</i> (and <i style='mso-bidi-font-style:
+normal'>x</i>). <o:p></o:p></span></span></p><!-- MP EQRA( --><script id=mpeq0014s1>
+	MPSetEqnAttrs('eq0014','',3,[[52,13,2,-1,-1],[69,17,4,-1,-1],[86,23,4,-1,-1],[79,20,4,-1,-1],[105,27,5,-1,-1],[132,34,7,-1,-1],[219,54,10,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0014 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0014ph,'')
+	</script><layer id=mpeq0014pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0014pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0014 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0014,mpeq0014pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0014s3>
+	MPDeleteCode('eq0014')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></span></span><![endif]><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>You may describe an
+intersection using &quot;<b>in</b>&quot;. For example, the sets {<st1:NumConv6p0
+sch="1" val="1" w:st="on">1</st1:NumConv6p0>, 2, 3, 4} and {<st1:NumConv6p0
+sch="1" val="1" w:st="on">1</st1:NumConv6p0>, 3, 5, 7} intersect <b>in</b> {1,
+3} (or intersect<b> in</b> <st1:NumConv6p0 sch="1" val="1" w:st="on">1</st1:NumConv6p0>
+and <st1:NumConv6p0 val="3" sch="1" w:st="on">3</st1:NumConv6p0>.) <o:p></o:p></span></span></p>
+
+<h3>in gen<a name=ingeneral></a>eral </h3>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]>Statements such as “<b>In general</b>, <i
+style='mso-bidi-font-style:normal'>P</i>” or “<i style='mso-bidi-font-style:
+normal'>P </i>is true <b>in general</b>” mean that <i style='mso-bidi-font-style:
+normal'>P </i>is true no matter what values you substitute for its variables. </p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]>Statements such as “In general, not <i
+style='mso-bidi-font-style:normal'>P</i>” mean that <i style='mso-bidi-font-style:
+normal'>P</i> is <strong><span style='mso-bidi-font-family:"Times New Roman"'>not
+necessarily true</span></strong>.” </p>
+
+<h5>Examples</h5>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]>“The equation <!-- MP EQPHNS( --><script id=mpeq0015s1>
+	MPSetEqnAttrs('eq0015','',3,[[89,11,2,-1,-1],[115,15,3,-1,-1],[144,17,3,-1,-1],[129,16,3,-1,-1],[174,21,4,-1,-1],[218,26,5,-1,-1],[362,43,8,-2,-2]])
+</script><![if !ie]><span id=mpnneq0015ph class=MPNNCode
+	><img border=0 name=mpeq0015ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0015s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>is true in general” <span
+style='mso-spacerun:yes'> </span>means that <strong><span style='mso-bidi-font-family:
+"Times New Roman"'>for all x,</span></strong> <!-- MP EQPHNS( --><script id=mpeq0016s1>
+	MPSetEqnAttrs('eq0016','',3,[[89,11,2,-1,-1],[115,15,3,-1,-1],[144,17,3,-1,-1],[129,16,3,-1,-1],[174,21,4,-1,-1],[218,26,5,-1,-1],[362,43,8,-2,-2]])
+</script><![if !ie]><span id=mpnneq0016ph class=MPNNCode
+	><img border=0 name=mpeq0016ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0016s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>is true.<span style='mso-spacerun:yes'> 
+</span></p><!-- MP EQRA( --><script id=mpeq0016s1>
+	MPSetEqnAttrs('eq0016','',3,[[89,11,2,-1,-1],[115,15,3,-1,-1],[144,17,3,-1,-1],[129,16,3,-1,-1],[174,21,4,-1,-1],[218,26,5,-1,-1],[362,43,8,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0016 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0016ph,'')
+	</script><layer id=mpeq0016pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0016pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0016 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0016,mpeq0016pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0016s3>
+	MPDeleteCode('eq0016')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0015s1>
+	MPSetEqnAttrs('eq0015','',3,[[89,11,2,-1,-1],[115,15,3,-1,-1],[144,17,3,-1,-1],[129,16,3,-1,-1],[174,21,4,-1,-1],[218,26,5,-1,-1],[362,43,8,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0015 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0015ph,'')
+	</script><layer id=mpeq0015pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0015pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0015 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0015,mpeq0015pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0015s3>
+	MPDeleteCode('eq0015')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><span style='letter-spacing:.2pt'>“In general,
+not every subgroup of a group is normal in the group” <span
+style='mso-spacerun:yes'> </span>means that an arbitrary subgroup of a group </span><strong><span
+style='mso-bidi-font-family:"Times New Roman"'>need not be normal in the group.<span
+style='mso-spacerun:yes'>  </span></span></strong><strong><span
+style='mso-bidi-font-family:"Times New Roman";font-weight:normal;mso-bidi-font-weight:
+bold;font-style:normal'>It specifically implies that there are examples where
+the subgroup is </span></strong><strong><span style='mso-bidi-font-family:"Times New Roman"'>not</span></strong><b><i
+style='mso-bidi-font-style:normal'> </i></b>normal in the group.</p>
+
+<h5>Remark</h5>
+
+<p class=MsoNormal>In most circumstances, you can substitute <a name=generally><b
+style='mso-bidi-font-weight:normal'>generally</b> </a>for “in general”.</p>
+
+<h3><a name=increasing>increasing</a> </h3>
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+Arial;letter-spacing:-.1pt'>Let <i style='mso-bidi-font-style:normal'><!-- MP EQPHNS( --><script id=mpeq0017s1>
+	MPSetEqnAttrs('eq0017','',3,[[43,8,0,-1,-1],[58,11,1,-1,-1],[72,14,0,-1,-1],[65,12,0,-1,-1],[87,16,0,-1,-1],[110,21,0,-1,-1],[181,34,0,-2,-2]])
+</script><![if !ie]><span id=mpnneq0017ph class=MPNNCode
+	><img border=0 name=mpeq0017ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0017s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span></i>be a function.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p><!-- MP EQRA( --><script id=mpeq0017s1>
+	MPSetEqnAttrs('eq0017','',3,[[43,8,0,-1,-1],[58,11,1,-1,-1],[72,14,0,-1,-1],[65,12,0,-1,-1],[87,16,0,-1,-1],[110,21,0,-1,-1],[181,34,0,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0017 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0017ph,'')
+	</script><layer id=mpeq0017pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0017pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0017 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0017,mpeq0017pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0017s3>
+	MPDeleteCode('eq0017')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><i style='mso-bidi-font-style:normal'>f</i> is <b>increasing
+</b>if for all <i style='mso-bidi-font-style:normal'>x </i>and <i
+style='mso-bidi-font-style:normal'>y, </i>if <i>x &lt; y </i>then <i>f</i>(<i>x)
+&lt; f</i>(<i>y). </i><i style='mso-bidi-font-style:normal'><o:p></o:p></i></p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><i>f </i><span style='mso-bidi-font-style:italic'>is
+<a name=decreasing><b>decreasing</b><i> </i></a>if </span>for all <i
+style='mso-bidi-font-style:normal'>x </i>and <i style='mso-bidi-font-style:
+normal'>y, </i>if <i>x &lt; y </i>then <i>f</i>(<i>x) &gt; f</i>(<i>y). </i><i
+style='mso-bidi-font-style:normal'><o:p></o:p></i></p>
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><i style='mso-bidi-font-style:normal'>f </i>is <a
+name=nonincreasing><b>nonincreasing</b></a> if for all <i style='mso-bidi-font-style:
+normal'>x </i>and <i style='mso-bidi-font-style:normal'>y, </i>if <i>x &lt; y </i>then
+<!-- MP EQPHNS( --><script id=mpeq0018s1>
+	MPSetEqnAttrs('eq0018','',3,[[45,9,2,-1,-1],[58,13,3,-1,-1],[74,15,3,-1,-1],[66,14,3,-1,-1],[89,19,4,-1,-1],[112,24,5,-1,-1],[184,40,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0018ph class=MPNNCode
+	><img border=0 name=mpeq0018ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0018s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><i>.
+</i><i style='mso-bidi-font-style:normal'><o:p></o:p></i></p><!-- MP EQRA( --><script id=mpeq0018s1>
+	MPSetEqnAttrs('eq0018','',3,[[45,9,2,-1,-1],[58,13,3,-1,-1],[74,15,3,-1,-1],[66,14,3,-1,-1],[89,19,4,-1,-1],[112,24,5,-1,-1],[184,40,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0018 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0018ph,'')
+	</script><layer id=mpeq0018pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0018pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0018 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0018,mpeq0018pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0018s3>
+	MPDeleteCode('eq0018')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=Llist style='margin-left:0in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></span><![endif]><i style='mso-bidi-font-style:normal'>f </i>is <a
+name=nondecreasing><b>nondecreasing</b></a> if for all <i style='mso-bidi-font-style:
+normal'>x </i>and <i style='mso-bidi-font-style:normal'>y, </i>if <i>x &lt; y </i>then
+<i><!-- MP EQPHNS( --><script id=mpeq0019s1>
+	MPSetEqnAttrs('eq0019','',3,[[45,9,2,-1,-1],[58,13,3,-1,-1],[74,15,3,-1,-1],[66,14,3,-1,-1],[89,19,4,-1,-1],[112,24,5,-1,-1],[184,40,9,-2,-2]])
+</script><![if !ie]><span id=mpnneq0019ph class=MPNNCode
+	><img border=0 name=mpeq0019ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0019s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.
+</i><i style='mso-bidi-font-style:normal'><o:p></o:p></i></p><!-- MP EQRA( --><script id=mpeq0019s1>
+	MPSetEqnAttrs('eq0019','',3,[[45,9,2,-1,-1],[58,13,3,-1,-1],[74,15,3,-1,-1],[66,14,3,-1,-1],[89,19,4,-1,-1],[112,24,5,-1,-1],[184,40,9,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0019 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0019ph,'')
+	</script><layer id=mpeq0019pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0019pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0019 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0019,mpeq0019pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0019s3>
+	MPDeleteCode('eq0019')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+Arial;letter-spacing:-.1pt'>These words can be used for functions from and to
+other ordered sets, as well.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:
+Arial;letter-spacing:-.1pt'>They are also used for sequences, since a sequence
+is a <a href="MMFunctionValue.htm#funconindexset">function on its index set</a>.
+<span style='mso-spacerun:yes'>  </span>For example, a </span><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-family:Arial'>sequence <!-- MP EQPHNS( --><script id=mpeq0020s1>
+	MPSetEqnAttrs('eq0020','',3,[[47,8,3,-1,-1],[62,11,4,-1,-1],[77,14,4,-1,-1],[70,11,4,-1,-1],[94,16,5,-1,-1],[116,20,7,-1,-1],[195,33,11,-2,-2]])
+</script><![if !ie]><span id=mpnneq0020ph class=MPNNCode
+	><img border=0 name=mpeq0020ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0020s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --><span
+style='mso-spacerun:yes'> </span>is <b>increasing </b>if for all <i
+style='mso-bidi-font-style:normal'>i </i>and <i style='mso-bidi-font-style:
+normal'>j</i> in its index set, <!-- MP EQPHNS( --><script id=mpeq0021s1>
+	MPSetEqnAttrs('eq0021','',3,[[26,9,4,-1,-1],[36,13,5,-1,-1],[43,15,6,-1,-1],[40,14,6,-1,-1],[55,18,7,-1,-1],[67,23,9,-1,-1],[111,39,15,-2,-2]])
+</script><![if !ie]><span id=mpnneq0021ph class=MPNNCode
+	><img border=0 name=mpeq0021ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0021s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.</span></p><!-- MP EQRA( --><script id=mpeq0021s1>
+	MPSetEqnAttrs('eq0021','',3,[[26,9,4,-1,-1],[36,13,5,-1,-1],[43,15,6,-1,-1],[40,14,6,-1,-1],[55,18,7,-1,-1],[67,23,9,-1,-1],[111,39,15,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0021 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0021ph,'')
+	</script><layer id=mpeq0021pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0021pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0021 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0021,mpeq0021pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0021s3>
+	MPDeleteCode('eq0021')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0020s1>
+	MPSetEqnAttrs('eq0020','',3,[[47,8,3,-1,-1],[62,11,4,-1,-1],[77,14,4,-1,-1],[70,11,4,-1,-1],[94,16,5,-1,-1],[116,20,7,-1,-1],[195,33,11,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0020 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0020ph,'')
+	</script><layer id=mpeq0020pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0020pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0020 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0020,mpeq0020pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0020s3>
+	MPDeleteCode('eq0020')
+</script><![endif]><!-- )MP EQ -->
+
+</div>
+
+<span style='font-size:10.0pt;font-family:Arial'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=Section4>
+
+<h3><a name=inequality>inequality</a></h3>
+
+<p class=MsoNormal><b> </b>An <b>inequality </b>is
+an assertion of the form <!-- MP EQPHNS( --><script id=mpeq0022s1>
+	MPSetEqnAttrs('eq0022','',3,[[18,7,0,-1,-1],[23,9,0,-1,-1],[28,12,-1,-1,-1],[26,11,1,-1,-1],[35,15,0,-1,-1],[44,17,0,-1,-1],[75,30,0,-2,-2]])
+</script><![if !ie]><span id=mpnneq0022ph class=MPNNCode
+	><img border=0 name=mpeq0022ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0022s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->,
+where <i>s </i>and <i>t </i>are terms and <i>α </i>is one of the relations <i>&lt;,
+&gt;, <!-- MP EQPHNS( --><script id=mpeq0023s1>
+	MPSetEqnAttrs('eq0023','',3,[[6,8,2,-1,-1],[8,10,2,-1,-1],[11,14,3,-1,-1],[9,12,2,-1,-1],[12,16,3,-1,-1],[15,19,3,-1,-1],[26,33,7,-2,-2]])
+</script><![if !ie]><span id=mpnneq0023ph class=MPNNCode
+	><img border=0 name=mpeq0023ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0023s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> or <!-- MP EQPHNS( --><script id=mpeq0024s1>
+	MPSetEqnAttrs('eq0024','',3,[[6,8,2,-1,-1],[8,10,2,-1,-1],[11,14,3,-1,-1],[9,12,2,-1,-1],[12,16,3,-1,-1],[15,19,3,-1,-1],[25,33,7,-2,-2]])
+</script><![if !ie]><span id=mpnneq0024ph class=MPNNCode
+	><img border=0 name=mpeq0024ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0024s2>
+	MPEquation()
+</script><!-- )MP EQPHNS -->.
+</i> An assertion of the form <!-- MP EQPHNS( --><script id=mpeq0025s1>
+	MPSetEqnAttrs('eq0025','',3,[[20,7,0,-1,-1],[26,9,0,-1,-1],[33,12,0,-1,-1],[29,11,1,-1,-1],[39,15,0,-1,-1],[49,18,1,-1,-1],[82,30,1,-2,-2]])
+</script><![if !ie]><span id=mpnneq0025ph class=MPNNCode
+	><img border=0 name=mpeq0025ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0025s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --> is <strong>not called an inequality.</strong></p><!-- MP EQRA( --><script id=mpeq0025s1>
+	MPSetEqnAttrs('eq0025','',3,[[20,7,0,-1,-1],[26,9,0,-1,-1],[33,12,0,-1,-1],[29,11,1,-1,-1],[39,15,0,-1,-1],[49,18,1,-1,-1],[82,30,1,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0025 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0025ph,'')
+	</script><layer id=mpeq0025pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0025pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0025 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0025,mpeq0025pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0025s3>
+	MPDeleteCode('eq0025')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0024s1>
+	MPSetEqnAttrs('eq0024','',3,[[6,8,2,-1,-1],[8,10,2,-1,-1],[11,14,3,-1,-1],[9,12,2,-1,-1],[12,16,3,-1,-1],[15,19,3,-1,-1],[25,33,7,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0024 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0024ph,'')
+	</script><layer id=mpeq0024pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0024pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0024 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0024,mpeq0024pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0024s3>
+	MPDeleteCode('eq0024')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0023s1>
+	MPSetEqnAttrs('eq0023','',3,[[6,8,2,-1,-1],[8,10,2,-1,-1],[11,14,3,-1,-1],[9,12,2,-1,-1],[12,16,3,-1,-1],[15,19,3,-1,-1],[26,33,7,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0023 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0023ph,'')
+	</script><layer id=mpeq0023pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0023pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0023 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0023,mpeq0023pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0023s3>
+	MPDeleteCode('eq0023')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0022s1>
+	MPSetEqnAttrs('eq0022','',3,[[18,7,0,-1,-1],[23,9,0,-1,-1],[28,12,-1,-1,-1],[26,11,1,-1,-1],[35,15,0,-1,-1],[44,17,0,-1,-1],[75,30,0,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0022 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0022ph,'')
+	</script><layer id=mpeq0022pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0022pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0022 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0022,mpeq0022pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0022s3>
+	MPDeleteCode('eq0022')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal><i >&nbsp;</i></p>
+
+<p class=MsoNormal style='text-indent:0in'><a name=inhabit><span
+class=CharChar4><span style='font-size:18.0pt'>inhabit</span></span></a></p>
+
+<p class=MsoNormal>The phrase “A <b >inhabits</b>
+B” can mean any of several things:</p>
+
+<p class=Llist style='margin-left:0in'><span
+style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A is an element of B.</p>
+
+<p class=Llist style='margin-left:0in'><span
+style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A is an entry in the list B.</p>
+
+<p class=Llist style='margin-left:0in'><span
+style='font-family:Symbol'>¨<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span>A is an expression in the delimiters B.  (For example, “The function inhabiting the
+curly braces is increasing.”)</p>
+
+<p class=MsoNormal style='text-indent:0in'><b >Lives
+in</b> is used similarly in conversation, but I have found only a few citations
+in print.</p>
+
+<h3><a name=injective>injective</a> </h3>
+
+<p class=MsoNormal>Functions can have a property called <a
+href="MMFuncProperties.htm#injective">injective</a>,
+and so can <a href="http://mathworld.wolfram.com/InjectiveModule.html">modules</a>.  These two uses are unrelated.</p>
+
+<h3><a name=integral>integral</a></h3>
+
+
+
+<p class=MsoNormal><a name="_Toc130095391"><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'>This word has three different meanings. <o:p></o:p></span></span></a></p>
+
+<h4><span style='mso-bookmark:_Toc130095391'>Being an integer</span></h4>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc130095391'><span
+class=LlistCharChar><b><span style='mso-bidi-font-size:10.0pt'>Integral</span></b></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'> is used as an adjective to require that the
+noun phrase it modifies denote an integer.<span style='mso-spacerun:yes'> 
+</span>For example, 8 is an integral </span></span></span><span
+style='mso-bookmark:_Toc130095391'></span><a href="#_power"><span
+style='mso-bookmark:_Toc130095391'><span style='mso-bidi-font-size:10.0pt'>power</span></span></a><span
+style='mso-bookmark:_Toc130095391'><span class=MsoHyperlink><span
+style='mso-bidi-font-size:10.0pt'> </span></span></span><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>of
+2 but 9 is not.<span style='mso-spacerun:yes'>  </span>This is also used for
+the more general notion of algebraic integer (</span></span></span><a
+href="http://mathworld.wolfram.com/AlgebraicInteger.html"><span
+style='mso-bookmark:_Toc130095391'><span style='mso-bidi-font-size:10.0pt'>MW</span></span><span
+style='mso-bookmark:_Toc130095391'></span></a><span style='mso-bookmark:_Toc130095391'><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>, </span></span></span><a
+href="http://en.wikipedia.org/wiki/Algebraic_integer"><span style='mso-bookmark:
+_Toc130095391'><span style='mso-bidi-font-size:10.0pt'>Wi</span></span><span
+style='mso-bookmark:_Toc130095391'></span></a><span style='mso-bookmark:_Toc130095391'><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>).</span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></span></span></p>
+
+<h4><span style='mso-bookmark:_Toc130095391'>Antiderivative </span></h4>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc130095391'><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>An <b>integral </b>of
+a </span></span></span><a href="HB/hb.html#function"><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;
+color:windowtext;text-decoration:none;text-underline:none'>function</span></span></span></a><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'> is an antiderivative of the function.<span
+style='mso-spacerun:yes'>  </span>It may be called the <b>indefinite integral</b>
+to distinguish it from the definite integral below.<span
+style='mso-spacerun:yes'>  </span></span></span></span><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;
+mso-bidi-font-weight:normal'><o:p></o:p></span></span></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc130095391'><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>The indefinite
+integral of f may be denoted by </span></span></span><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;
+mso-bidi-font-weight:normal'><!-- MP EQPHNS( --><script id=mpeq0026s1>
+	MPSetEqnAttrs('eq0026','',3,[[42,18,7,-1,-1],[56,25,9,-1,-1],[69,29,11,-1,-1],[63,28,10,-1,-1],[83,36,13,-1,-1],[103,46,17,-1,-1],[172,76,28,-2,-2]])
+</script><![if !ie]><span id=mpnneq0026ph class=MPNNCode
+	><img border=0 name=mpeq0026ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0026s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'><span style='mso-spacerun:yes'> </span>which
+determines the integral only </span></span></span><a href="MMGlossaryU.htm#upto"><span
+style='mso-bookmark:_Toc130095391'><span style='mso-bidi-font-size:10.0pt'>up
+to</span></span><span style='mso-bookmark:_Toc130095391'></span></a><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'> a constant. </span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></span></span></p><!-- MP EQRA( --><script id=mpeq0026s1>
+	MPSetEqnAttrs('eq0026','',3,[[42,18,7,-1,-1],[56,25,9,-1,-1],[69,29,11,-1,-1],[63,28,10,-1,-1],[83,36,13,-1,-1],[103,46,17,-1,-1],[172,76,28,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0026 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0026ph,'')
+	</script><layer id=mpeq0026pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0026pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0026 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0026,mpeq0026pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0026s3>
+	MPDeleteCode('eq0026')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc130095391'><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>You may also refer
+to a specific antiderivative using the form </span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-weight:normal'><!-- MP EQPHNS( --><script id=mpeq0027s1>
+	MPSetEqnAttrs('eq0027','',3,[[46,22,7,-1,-1],[60,28,9,-1,-1],[77,35,12,-1,-1],[68,34,11,-1,-1],[90,44,15,-1,-1],[111,55,18,-1,-1],[187,91,31,-2,-2]])
+</script><![if !ie]><span id=mpnneq0027ph class=MPNNCode
+	><img border=0 name=mpeq0027ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0027s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'>.</span></span></span><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt;
+mso-bidi-font-weight:normal'><o:p></o:p></span></span></span></p><!-- MP EQRA( --><script id=mpeq0027s1>
+	MPSetEqnAttrs('eq0027','',3,[[46,22,7,-1,-1],[60,28,9,-1,-1],[77,35,12,-1,-1],[68,34,11,-1,-1],[90,44,15,-1,-1],[111,55,18,-1,-1],[187,91,31,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0027 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0027ph,'')
+	</script><layer id=mpeq0027pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0027pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0027 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0027,mpeq0027pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0027s3>
+	MPDeleteCode('eq0027')
+</script><![endif]><!-- )MP EQ -->
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc130095391'><span
+class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>The word <b>integral
+</b>is also used to denote a solution of a more general differential equation. </span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></span></span></p>
+
+<h4><span style='mso-bookmark:_Toc130095391'>Definite integral</span></h4>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc130095391'><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-size:10.0pt;
+mso-bidi-font-family:Arial'>Integral </span></b></span><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>is
+also used to denote a </span></span></span><span style='mso-bookmark:_Toc130095391'><strong><span
+style='mso-bidi-font-size:10.0pt'>definite integral:</span></strong></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'> this operator takes an integrable function
+and an </span></span></span><a href="HB/hb.html#interval"><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;color:windowtext;text-decoration:none;
+text-underline:none'>interval</span></span></span></a><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>
+(or more general </span></span></span><a href="HB/hb.html#space"><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;color:windowtext;text-decoration:none;
+text-underline:none'>space</span></span></span></a><span style='mso-bookmark:
+_Toc130095391'><span class=LlistCharChar><span style='mso-bidi-font-size:10.0pt'>)
+on which the function is defined and produces a number. The definite integral
+of <i style='mso-bidi-font-style:normal'>f </i>on an interval [<i
+style='mso-bidi-font-style:normal'>a, b</i>] is denoted </span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-weight:normal'><!-- MP EQPHNS( --><script id=mpeq0028s1>
+	MPSetEqnAttrs('eq0028','',3,[[49,22,7,-1,-1],[65,28,9,-1,-1],[82,36,12,-1,-1],[74,34,11,-1,-1],[97,44,15,-1,-1],[121,55,18,-1,-1],[202,91,31,-2,-2]])
+</script><![if !ie]><span id=mpnneq0028ph class=MPNNCode
+	><img border=0 name=mpeq0028ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0028s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'><span style='mso-spacerun:yes'> </span>or </span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-weight:normal'><!-- MP EQPHNS( --><script id=mpeq0029s1>
+	MPSetEqnAttrs('eq0029','',3,[[21,22,7,-1,-1],[27,28,9,-1,-1],[34,36,12,-1,-1],[30,34,11,-1,-1],[40,44,15,-1,-1],[50,55,18,-1,-1],[85,91,31,-2,-2]])
+</script><![if !ie]><span id=mpnneq0029ph class=MPNNCode
+	><img border=0 name=mpeq0029ph src='&{DSMP.gEmptySrc};' height=1
+		width='&{DSMP.gPlaceholderWidth};'
+></span><![endif]><script id=mpeq0029s2>
+	MPEquation()
+</script><!-- )MP EQPHNS --></span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt'>. </span></span></span><span
+style='mso-bookmark:_Toc130095391'><span class=LlistCharChar><span
+style='mso-bidi-font-size:10.0pt;mso-bidi-font-weight:normal'><span
+style='mso-spacerun:yes'> </span><o:p></o:p></span></span></span></p><!-- MP EQRA( --><script id=mpeq0029s1>
+	MPSetEqnAttrs('eq0029','',3,[[21,22,7,-1,-1],[27,28,9,-1,-1],[34,36,12,-1,-1],[30,34,11,-1,-1],[40,44,15,-1,-1],[50,55,18,-1,-1],[85,91,31,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0029 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0029ph,'')
+	</script><layer id=mpeq0029pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0029pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0029 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0029,mpeq0029pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0029s3>
+	MPDeleteCode('eq0029')
+</script><![endif]><!-- )MP EQ --><!-- MP EQRA( --><script id=mpeq0028s1>
+	MPSetEqnAttrs('eq0028','',3,[[49,22,7,-1,-1],[65,28,9,-1,-1],[82,36,12,-1,-1],[74,34,11,-1,-1],[97,44,15,-1,-1],[121,55,18,-1,-1],[202,91,31,-2,-2]]);
+</script><!-- )MP EQRA --><!-- MP EQ( --><![if !ie]><div id=mpnneq0028 class=MPNNCode
+	><script>
+		MPNNCalcTopLeft(document.mpeq0028ph,'')
+	</script><layer id=mpeq0028pop bgcolor='&{DSMP.gNNPopupBgColor};' z-index=99 visibility=hidden top=0 left=0
+		 onmouseover="status=DSMP.gHidePopupMessage"  onmouseout="status=''" 
+		><a href='&{DSMP.gPopupEqnSrc};' onmousedown='return MPHidePopup(event,mpeq0028pop)'
+			><img border=0 src='&{DSMP.gPopupEqnSrc};' hspace='&{DSMP.gPopupEqnPadding};' vspace='&{DSMP.gPopupEqnPadding};'
+		></a></layer><layer id=mpeq0028 bgcolor='' z-index=98 visibility='visible' top='&{DSMP.gNNLayerTop};' left='&{DSMP.gNNLayerLeft};'
+		 onmouseover="status=DSMP.gShowPopupMessage" onmouseout="status=''" 
+		><a href='&{DSMP.gScreenEqnSrc};' onmousedown='return MPShowPopup(mpeq0028,mpeq0028pop,event)'
+			><img border=0 width='&{DSMP.gScreenEqnWidth};' height='&{DSMP.gScreenEqnHeight};'
+			 src='&{DSMP.gPrintEqnSrc};' onload='MPNNSelectScreenEqn(this)'
+		></a></layer></div><script id=mpeq0028s3>
+	MPDeleteCode('eq0028')
+</script><![endif]><!-- )MP EQ -->
+
+<h3><span style='mso-bookmark:_Toc130095391'><a name=intuition>intuition</a></span></h3>
+
+<p class=MsoNormal>Mathematicians may use the word <b style='mso-bidi-font-weight:
+normal'>intuitively</b> in referring to some <a
+href="MMImagesMetaphors.htm#image"><span style='mso-bidi-font-family:"Times New Roman"'>image</span></a>
+or <a href="MMImagesMetaphors.htm#metaphor"><span style='mso-bidi-font-family:
+"Times New Roman"'>metaphor</span></a> they have about a type of object.<span
+style='mso-spacerun:yes'>  </span></p>
+
+<h4>Examples</h4>
+
+<p class=MsoNormal>“Intuitively, the squaring function is a machine that turns,
+for example, 3 into 9.” </p>
+
+<p class=MsoNormal>They may <strong><span style='mso-bidi-font-family:"Times New Roman"'>admit
+the intuition but point out its weaknesses</span></strong>:</p>
+
+<p class=MsoNormal>“Intuitively, an open set in the plane is every point in a
+region not including its boundary.<span style='mso-spacerun:yes'>  </span>In
+fact, not all open sets fit this description, for example…”<span
+style='mso-spacerun:yes'>  </span></p>
+
+<h3><span style='mso-font-kerning:18.0pt'>is<o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='mso-font-kerning:18.0pt'>See <a
+href="MMGlossaryB.htm#be"><span style='mso-bidi-font-family:"Times New Roman"'>be</span></a>.<o:p></o:p></span></p>
+
+<h3><span style='mso-font-kerning:18.0pt'><o:p>&nbsp;</o:p></span></h3>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

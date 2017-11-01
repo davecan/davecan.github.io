@@ -1,0 +1,625 @@
+<html>
+
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>The symbolic language of mathematics</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+
+}
+});</script>
+<title>The symbolic language of math</title>
+</head>
+<body>
+
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2017-01-22
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+</pre>
+
+<h1>THE SYMBOLIC LANGUAGE OF MATH</h1>
+
+<p class="toc"><span class="red"><b>CONTENTS</b></span>
+</p>
+
+<p class="toc">
+<a href="#symbolicexpressions">Symbolic expressions</a></p>
+
+<p class="toc">
+<a href="#readingsymbolicexpressions">Reading symbolic expressions</a></p>
+
+
+<p class="toc">
+<a href="#immetsymex">Images and metaphors for symbolic expressions</a></p>
+
+<p class="toc">
+<a href="#grammar">Grammar of the symbolic language</a></p>
+
+
+<p class="toc"><a href="MMVarSub.htm">Variables and substitution</a></p>
+
+<p class="toc"><a href="MMVariableObj.htm">Variable objects</a></p>
+
+<p class="toc"><a href="MMAlphabets.htm">Alphabets</a></p>
+<p class="toc"><a href="MMDelimiters.htm">Delimiters</a></p>
+<p class="toc"><a href="MMOtherSymbols.htm">Other symbols</a></p>
+
+
+<p class="blue">The symbolic language of
+math is a distinct special-purpose language.  Unlike <a href="MMMathEnglish.htm">mathematical
+English</a>,<i> it is not a variety of English.</i>  It has its own
+rules of grammar that are quite different from those of English.  You can
+usually read expressions in the symbolic language in any math article written
+in <i>any</i> language.</p>
+
+<p class="blue">This chapter discusses aspects of the symbolic language that may cause difficulties to newcomers. It is not a systematic introduction to the symbolic language.  You can find more information in the <a href="MMLangMath.htm#links">links</a> in <a href="MMLangMath.htm">The languages of math.</a></p>
+
+<p><span class=red>Warning:</span> The terminology used here to talk about symbolic expressions is nonstandard. See <a href="#variationsinterminology">Variations in terminology</a> for more detail.</p>
+
+<p>The chapter <a href="MMMoreLanguage.htm">More about
+the languages of math</a> discusses topics that involve both the symbolic
+language and mathematical English.</p>
+
+<a name="symbolicexpressions"></a>
+
+<h2>Symbolic expressions</h2>
+
+<p class=blue>The symbolic language consists of <span class=red>symbolic expressions</span> written in the way
+mathematicians traditionally write them.</p>  
+
+<p>A symbolic expression consists
+of <a href="MMGlossary.htm#symbol">symbols</a> arranged according to specific
+rules. Every symbolic expression is one of two types: <b>symbolic assertion</b> and <b>symbolic term.</b> </p>
+<p class='purpleprose'>
+Every expression in the symbolic language <br />is either a
+<span class=red>symbolic assertion</span> or a <span class=red>symbolic term</span>.
+</p>
+
+
+
+
+<p><a name=symbolicassertion></a>
+
+<h3>Symbolic assertions</h3>
+
+
+<p class=blue>A <span class=red>symbolic assertion</span> is a 
+complete statement that <i>stands alone as a sentence</i>.</p>
+<p class='purpleprose'>
+A symbolic
+assertion says something.
+</p>
+
+<ul>
+
+<li>Symbolic assertions play the same role in the symbolic language as <a
+href="MMMathEnglish.htm#assertion">assertions</a> do in <a href="MMMathEnglish.htm">math
+English</a>.</li>
+
+<li>A symbolic assertion may contain variables and it may be true for
+some values of the variables and false for others.</li>  
+
+</ul>
+
+<h5 class=red>Examples</h5>
+<ul>
+<li>"$\pi\gt0$" is a symbolic assertion.  It is true.</li>
+
+<li>"$\pi=3$" is a symbolic assertion.  It is false, but it is nevertheless a symbolic assertion.</li> 
+
+<li>"$x\gt0$" is true for $x=42$ and many other numbers  and false for $x=-.233$ and many other numbers.</li>
+
+<li>The symbolic assertion "$x^2-x-2=0$" is true for the numbers $x=-1$ and $x=2$, but not for any other number.</li>
+
+<li>"$x^2-y^2=(x-y)(x+y)$" is a symbolic assertion with two variables. It is true for <i>all</i> numbers $x$ and $y$. Such a thing is commonly called an algebraic <a href="MMGlossary.htm#identity"><b>identity</b></a> or <b>identity relation</b></a>. 
+</li>
+
+<li>The assertion "$x^2\geq0$" is true for all real numbers, but not for all complex numbers.  So the <a href="MMVarSub.htm#type">data type</a> of a variable matters in determining whether an assertion containing the variable is always true or not.</li>
+
+<li>The assertion "$x^2\lt0$" is false for all real numbers.</li>
+
+<li>The assertion "${{x}^{2}}-6x+4y\gt0$" is true for some values of $x$ and $y$ and false for others.  For example, it is false for $x=1$ and $y = 0$ and true for $x= 1$ and $y = 2$. There is more about symbolic assertions
+like this one in the section on <a href="MMIntent.htm#constraint">constraints</a></li>
+</ul>
+
+<a name=symbolicstatement></a>
+
+<h4>Symbolic statements</h4>
+
+<p class=blue>A <span class=red>symbolic statement</span> is a symbolic assertion <i>without</i> variables.</p>
+
+<ul>
+<li>A symbolic statement is either true or false.</li>
+
+<li>A symbolic statement is regarded as a special case of a symbolic assertion.  What makes it special is that it contains no variables.</li>
+
+</ul>
+
+<h5 class=red>Examples</h5>
+
+<ul>
+<li>$\pi\gt0$  and  $3^2=9$ are true symbolic statements.</li>
+
+<li>
+$\pi\lt0$ and $2+3=6$ are  false symbolic statements.  Even though false, they are still regarded as symbolic statements.</li>
+</ul>
+
+
+<a name=symbolicterm></a>
+
+<h3>Symbolic terms</h3>
+
+<p>
+A <a href="MMGlossary.htm#term"><b>symbolic term</b></a> is a symbolic expression that refers to some mathematical object. </p>
+
+
+<p class='purpleprose'>A symbolic term
+names something.
+</p>
+<p>Terms play the same role
+in the symbolic language that <a href="MMGlossary.htm#description">descriptions</a> do in math English. 
+</p>
+
+<h5 class=red>Examples</h5>
+
+
+
+<ul>
+
+<li>  The expression “${{3}^{2}}$” is a <b>symbolic term</b>.  It is
+another name for the number $9$.  </li>
+
+<li>"$x^2$" is a symbolic term containing a <a href="MMVarSub.htm#variable">variable</a> $x$. This means the term has  <a href="/MM/MMVariableObj.htm">variable meaning</a>
+depending on which value is <a href="MMVarSub.htm">substituted</a> for $x$. 
+For example, if you set $x=-2$, you get $(-2)^2$, another name for $4$. 
+</li>
+
+
+<li>  ${{x}^{2}}-6x+4y$ (mentioned above) is symbolic term with <i>two</i> variables. 
+If you substitute $2$ for $x$ and $3$ for $y$ then the expression denotes
+the integer $4$.  </li>
+</ul>
+
+<a name="variationsinterminology"></a>
+
+<h3>Variations in terminology</h3>
+
+<p>The names “symbolic assertion” and “symbolic term” are <i>not
+standard usage in math</i>.  In mathematical logic:</p> 
+
+<ul>
+<li>Symbolic assertions may be called <a href="MMGlossary.htm#formula">formulas</a> or <b>predicates.</b> 
+</li>
+
+<li><b><i>True</i></b> assertions may be called <a
+href="MMGlossary.htm#proposition">propositions</a> or <b>sentences</b>.</li>
+</ul>
+
+<p>All
+these words, as well as my use of “<a href="MMGlossary.htm#term">term</a>”,
+can cause <a href="MMCognitiveDissonance.htm">cognitive dissonance:</a></p>
+<ul>
+<li>Many people would refer to “${{\text{H}}_{\text{2}}}\text{O}$”
+as “the formula for water”, but it is <i>not</i> a formula in sense of logic because it does not make
+a statement. </li>
+
+<li>In everyday usage “proposition” may mean a statement to be
+debated, or a proposal for action, but in math logic the meaning is simply a <a
+href="MMMathEnglish.htm#statement">statement</a>.</li>
+
+<li>The name “<a name=term2>term</a>”
+comes from mathematical logic.  The expression “${{x}^{3}}\left( {{y}^{2}}-1
+\right)$” contains symbolic terms ${{x}^{3}}$ and ${{y}^{2}}-1$, which would in math English be called <b>factors</b> rather than "terms".</li>  
+</ul>
+
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+This kind of conflict between different parts of math<br />happens all the time.<br />Neither side is right or wrong.  Get used to it. 
+</p></td></tr></table></center>
+
+
+
+<h3>Non-algebraic
+expressions</h3>
+
+<p class=blue>Symbolic expressions don’t have to have algebraic form and they
+do not have to name numbers.</p>
+<h5 class=red>Examples</h5>
+
+<ul>
+
+<li>Texts on group theory
+use the expression  "<a href="http://en.wikipedia.org/wiki/Symmetric_group">${{\text{S}}_{n}}$</a>" to denote the group of all permutations of an $n$-element set, with composition as operation.</li><li>The group ${{\text{S}}_{3}}$ contains six elements.  You can write them out and make a table of the group multiplication (described </b><a
+href="http://en.wikipedia.org/wiki/Dihedral_group_of_order_6">here</a>).</li><li>All true statements about ${{\text{S}}_{3}}$ are implied by the symbol.</li>
+
+<li>Operations can be performed on groups, just as they can for numbers.  One operation is the <a href="http://en.wikipedia.org/wiki/Product_of_group">product of two groups</a>.  In particular one can form the product ${{\text{S}}_{n}}\times\mathbb{Z}/3$. (<a href="https://en.wikipedia.org/wiki/Cyclic_group">$\mathbb{Z}/3$</a> is another group.) This is a symbolic term just like "$a\times b$", but in group theory rather than in elementary algebra.</li>
+</ul>
+
+<p>Each branch of mathematics is concerned with certain particular kinds of mathematical objects, and <i>every one of them</i> studies many different kinds of <b>operations on the objects</b>, expressed (usually) in symbolic notation.</p>
+
+<a name="readingsymbolicexpressions"></a>
+<h2>Reading symbolic expressions</h2>
+
+<h4>Distinguish between assertions and terms</h4>
+ <p>A fundamental difficulty many people new to algebra have is that they don't pay attention to the difference betweeen assertions and terms.</p>
+
+<h5 class=red>Examples</h5>
+<p>An expression such as “$x\alpha y$, where $\alpha$ is any old symbol, may be an <b>assertion</b>
+(<i>saying</i> something) or a <b>term </b> (<i>naming</i>
+something).</p>
+<ul>
+ <li> “$x \lt y$” is an <i>assertion</i> – a complete statement.  If $x$
+and $y$ have specific real number values, then the statement is either true or false.</li>
+
+<li> “$x+y$” is a <i>term</i> – an expression to be evaluated.  For this expression, if you plug in $x=2$ and $y=3$ then it names the number $5$.  See <a href="#encapsulated">encapsulated computation</a> below.</li>
+
+<li>To write "If $x\lt y$, then $x\lt y+1$" is the same same as saying, "If $x$ is less than $y$, then $x$ is less than $y+1$".  Not only is it OK to say it, it's true.</li>
+
+<li>To say "If $x+y$ then $x\lt x+y$" is nonsense.  The expression "$x+y$" is <i>not a sentence</i> and so can't be a <a href="http://en.wikipedia.org/wiki/Clause">clause</a> after "if".  In the same way, it is nonsense to say "If my house, then it is white".</li>
+</ul>
+
+<h4>Division and fractions</h4>
+<p>Two symbols used in the study of <a href="https://en.wikipedia.org/wiki/Integer">integers</a> are notorious for their confusing similarity. </p>
+
+<ul>
+<li>The expression "$m/n$" is a <b>term</b> denoting the number obtained by dividing $m$ by $n$.  Thus "$12/3$" denotes $4$ and "$12/5$" denotes the number $2.4$.</li>
+
+<li>The expression "$m|n$" is the <b>assertion</b> that "$m$ <a href="https://en.wikipedia.org/wiki/Division_(mathematics)">divides</a> $n$ with no remainder".  So for example "$3|12$", read "$3$ divides $12$" or "$12$ is a multiple of $3$", is a <i>true</i> statement and "$5|12$" is a <i>false</i> statement.</li>
+</ul>
+
+<p>Notice that $m/n$ is an integer if and only if $n|m$. Not only is $m/n$ a <i>number</i> and $n|m$ a <i>statement</i>, but the statement "one is an integer if and only if the other is true" is correct <span class=purple>only after the $m$ and $n$ are switched!</span> </p> 
+
+
+
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+It is wise to be a bit paranoid<br /> about whether you <font size="3"><font color="#990040
+">really</font></font> understand<br /> a particular kind of math notation.
+</p></td></tr></table></center>
+
+<h4>Be patient</h4>
+<p>When you see a complicated assertion or term you have to be
+<i>patient</i>. You must stop and <a href="MMGlossary.htm#unwind">unwind</a>
+it.  Read the tiresomely long example of unwinding an expression in <a
+href="MMUsefulBehaviors.htm#zoomchunk">Zooming and Chunking.</a></p>
+
+
+
+<h3><a name=symexpname>Giving names</a> to symbolic expressions </h3>
+
+<h4>Turning symbolic terms into functions</h4>
+
+<p>The expression "${{x}^{2}}-1$" is a symbolic term.  You may define a <a
+href="MMFunctions.htm">function</a> $f$ whose value at $x$
+is given by the expression ${{x}^{2}}-1$. After we say that, "$f$" is a name for the function.</p>
+
+<p>See <a href="MMImagesMetaphorsFunctions.htm#formula">Functions: images and metaphors.</a>
+</p>
+
+<h4>Naming assertions</h4>
+
+<p>You can also give names to  <a
+href="#symbolicexpression">symbolic assertions.</a> </p>
+
+<h5>Example</h5>
+<ul>
+<li> Let $P(x)$ be the expression “$x\gt1$”.  In this case, you could write statements such as “$P(3)$ is true” and
+“$P(1/2)$ is false", as well as more complicated statements such as "For any number $x$, if $P(x)$ then $x\gt0$."</li>
+
+<li>Don’t let this notation mislead you into thinking “$P(3)$”
+is a number.  “$P(3)$” is a <b>statement,</b>
+namely the statement “$3\gt1$”.  Of course, $P$ may be thought of as a
+function $f:\mathbb{R}\to \{\text{true, false}\}$.</li>
+
+
+</ul>
+
+
+<p>Using notation such as “$P(x)$”
+for statements occurs mostly but not entirely in texts on logic.  (This claim needs lexicographical research.) An overview of its use in first-order logic is given in <a href="MMMathReasoning.htm">Mathematical reasoning.</a> See also the Wikipedia articles on various kinds of logic:</p>
+<ul>
+<li><a href="/Mathematica/Subtotals.jpg">First-order logic</a>
+</li>
+<li><a href="MMPatternRecognition.htm">Intuitionistic logic</a></li>
+
+<li><a href="http://en.wikipedia.org/wiki/Type_theory">Type theory</a></li>
+</ul>
+
+<a name="immetsymex"></a>
+<h2>Images and
+metaphors for symbolic expressions</h2>
+
+<a name="encapsulated">
+<h3>Symbolic terms are encapsulated computations</h3>
+
+<h4>Algebraic terms are encapsulated computations</h4>
+
+<table border="0"><tr><td>
+<p class='purpleproseleft'>
+A symbolic expression in algebra is both of these things:<br />$\bullet$ The name of a mathematical object<br />$\bullet$ An
+<span class=red>encapsulated computation</span> of the mathematical object it names
+</p></td></tr></table></center>
+
+
+
+
+<p>If you are fairly proficient in algebra, you already know
+this subconsciously about algebraic expressions.</p>
+
+
+<h5 class=red>Examples</h5>
+<ul>
+<li>The expression “$2\cdot 2+3$” is both a <i>name</i>
+for the number $7$ and a <i>description</i> of a particular calculation that gives $7$.</li>  
+
+<li>In the math ed literature, we say that the expression “$2\cdot 2+3$” <b>encapsulates</b> the process of multiplying $2$ by itself and adding $3$.  See the article <a href="http://wrap.warwick.ac.uk/471/1/WRAP_Tall_dot2000a-objec-encap-jmb.pdf">What is the object of the encapsulation of a process?</a>.
+</li>
+
+
+<li>The expression “$63/9$” is also a name for the number $7$ and encapsulates  a <i>different</i> calculation that results in $7$.</li>
+
+<li>The expression “$7$” is a name for the number $7$.
+<ul><li>It encapsulates
+a <b>proper-name</b> calculation, because in our culture “$7$” is the <a href="MMVarMeanings.htm#defaults">default</a> symbolic name of the number.</li> 
+<li>A proper-name calculation is like referring to "Henry" in a conversation where those present know which Henry you are talking about.</li>  
+<li>In the case of $7$, the context is that we are talking about math, where everyone is supposed to know what the symbol "$7$" means.</li></ul>
+
+<li>The expression “$371$” is our default name for $371$.  It is in
+decimal notation and encapsulates the calculation “$3\cdot 100+7\cdot 10+1$”. </li>
+
+<li>The expression “The largest positive root of ${{x}^{3}}-9{{x}^{2}}+15x-7$”
+is a name for $7$, but that fact requires a more difficult calculation that $2\cdot
+2+3$ or $63/9$.  Indeed, you don’t even know that the expression is a correctly formed
+name of a number until you work out that ${{x}^{3}}-9{{x}^{2}}+15x-7$ <i>has</i> a positive root.</li>
+
+
+<li>The expression \[3{{x}^{2}}-2x-5\] names a <a
+href="MMVariableObj.htm">variable number</a>.  Like most variable
+mathematical objects, some statements about it must be said to be neither true nor false.  For example, "$3{{x}^{2}}-2x-5\leq12$" is neither true nor false.  On the other hand, it is a nice calculus exercise to show that “$3{{x}^{2}}-2x-5\le -6$” is definitely false for any $x$.</li>
+</ul>
+
+<h4>Non-algebraic expressions</h4>
+
+<p>Most math objects can be combined into new constructions, making expressions like algebraic expressions except that the variables represent structures or objects instead of numbers. Groups, various kinds of spaces, and lots of math objects you never heard of can be combined into "products" and "coproducts", and many of them have "quotients", "function spaces" and other constructions.  Most Wikipedia articles about important kinds of math objects describe some of these constructions.  The expressions representing such things can still be thought of as both an encapsulated computation and as the name of another math object.</p>     
+
+<h3>Symbolic expressions as trees</h3>
+
+<p>Symbolic expressions such as "$4(x-2)=3$" and the very similar looking "$4x-2=3$" have <i>different</i> abstract structures. The difference results in different solutions: $x=11/4$ and $x=5/4$ respectively.  The abstract structures are largely invisible, with the only hint about the difference being the presence or absence of parentheses.</p>
+
+<p>There are other ways to exhibit symbolic expressions that make the abstract structure much more obvious.  One way is to use <b>trees</b>.  Examples of the tree representation of expressions are given in the following posts in Gyre&Gimble:</p>
+
+
+<ul>
+<li><a href="/Word%20Press/?p=9236">Presenting binops as trees</a></li>
+
+<li><a href="/Word%20Press/?p=9246">The only axiom of algebra</a></li>
+
+<li><a href="/Word%20Press/?p=4845">A visualization of a computation in tree form</a></li>
+</ul>
+
+<p>I expect to include examples like these in a future revision of this article.
+</p>
+
+<a name="grammar"></a>
+
+<h2>Grammar of the symbolic language</h2>
+
+<h3>Arrangement of symbols is meaningful</h3>
+<p>In symbolic expressions, the <b>symbols</b> and the <b>arrangement of the symbols</b> both communicate meaning. </p> 
+
+<h5 class=red>Examples</h5>
+
+<ul>
+<li>   “${{\sin }^{2}}x$” , “$\sin 2x$” and “$2\sin x$” all mean different
+things. </li>
+
+<li>   “$x{{2}^{\sin }}$” is <b>meaningless.</b> </li>
+
+<li>  “${{\sin }^{2}}x$” and “${{\left( \sin x \right)}^{2}}$” <b>mean the same thing</b>.  If you took a
+class in precalculus or calculus, you may have had this fact expressed explicitly or you may have learned it by osmosis (see “osmosis theory” in the <a
+href="https://case.edu/artsci/math/wells/pub/pdf/hyperhbk.pdf#osmosistheory">Handbook</a>.). 
+</li></ul>
+
+<h3>Subexpressions</h3>
+
+<p>An expression may contain several <a name=subexpression><b>subexpression</b></a><b>s</b>.
+The rules for forming expressions and the use of <a
+href="MMDelimiters.htm">delimiters</a> let you determine the subexpressions.
+</p>
+
+<h5 class=red>Examples</h5>
+<ul>
+<li> 
+The subexpressions in “${{x}^{2}}$”
+are “<i>x”</i> and “$2$”.    </li>
+
+<li> 
+The subexpressions in “${{(2x+5)}^{3}}$”
+are "$2$", "$x$", “$2x$”, "$5$", “$2x+5$” and "$3$". </li>
+</ul>
+
+<h4>Math English
+subexpressions</h4>
+
+<p>A
+phrase in <a href="MMMathEnglish.htm">math English</a> can be a subexpression
+of a symbolic expression.</p>
+
+<h5>Example</h5>
+<ul>
+<li>The set $\left\{ {{n}^{3}}|n\in
+\mathrm{}\text{, }n\gt0 \right\}$ could also be written as$\left\{
+{{n}^{3}}|n\text{ is a positive integer} \right\}$.</li>
+</ul>
+
+<h3>Embedded symbolic expressions in math English</h3> 
+
+<p>Symbolic expressions in texts are usually embedded in sentences in math English, although they may stand independently.</p>
+
+<h4>Examples</h4>
+
+<ul>
+<li>"If $x\lt y$, then $x\lt y+1$."  This math English sentence occurred earlier in this chapter.</li>
+
+<li>"The indefinite integral of the function $x^2+1$ is $\frac{x^3}{3}+x+C$, where $C$ is an arbitrary real number."</li>
+
+<li>The statement "$\int (x^2+1)dx=\frac{x^3}{3}+x+C$" <i>could</i> occur in a text by itself as a sentence, but that is uncommon except perhaps in lists.</li>  
+
+</ul>
+
+<p>Embedded symbolic expressions in math English involves a remarkable number of subtleties.  Teachers almost never tell you about these subtleties.  The abstractmath article <a href="MMMoreLanguage.htm#embedding">Embedding</a> reveals a few of these secrets.  Generally, students learn these facts unconsciously.  Some don't, and those generally don't become math majors.</p>
+
+<h3><a name=precedence></a>Precedence</h3>
+
+<p>The expression $xy+z$ means $(xy)+z$,
+not $x(y+z)$.  This is an illustration of the principle
+that in an algebraic expression, <i>multiplication is performed first, then
+addition</i>.  We say multiplication has a <b>higher <a href="http://en.wikipedia.org/wiki/Order_of_operations">precedence</a></b> that addition. 
+</p>
+<h4>PEMDAS</h4>
+<p>When two operations have the same precedence, the operations
+should be done from left to right.  The mnemonic “Please Excuse My Dear Aunt
+Sally” (PEMDAS) describes the order of the common operations:</p>
+<ol>
+<li>  <b>Parentheses</b> (calculate what is inside the parentheses before you do anything alse.)</li>
+
+<li>  <b>Exponentiation</b></li>
+
+<li>  <b>Multiplication and Division</b></li>
+
+<li>  <b>Addition and Subtraction.</b></li>
+</ol>
+
+<h4>One more rule</h4>
+
+<p><b>The names of functions of one variable generally have the highest precedence,
+except for <a href="MMGlossary.htm#minus">unary minus</a>, which has <i>lowest</i>
+precedent.</b></p>
+
+
+
+<h5 class=red>Examples</h5>
+<ul>
+<li>  "$2\cdot 3+5$" means do the multiplication first, then add the five,
+getting 11, whereas "$2\cdot (3+5)$" means do the addition first, then multiply
+the result by $2$, getting $16$.</li>
+
+<li>"$4+3^2$" means <i>first</i> calculate $3^2=9$, getting $4+9$, <i>then</i> calculate $4+9$, getting $13$. But <q>$(4+3)^2$</q> means $7^2$.
+</li>
+<li>  The expression "$\sin x+y$" means calculate $\sin x$ and add $y$ to the result. 
+The expression "$\sin(x+y)$" means calculate $x+y$,
+then take the sine of the result.</li>
+
+<li>  $-{{3}^{2}}$ requires you to calculate ${{3}^{2}}$ first, then apply
+the minus sign, yielding $-9$.  On the other hand, ${{(-3)}^{2}}$ yields $9$.  </li>
+
+<li>  Because so many people new to math misread some of these expressions, I
+have acquired the habit of putting in theoretically unnecessary parentheses for
+clarity.  So for example I would write $(\sin x)+y$ instead of $\sin x+y$
+and $-({{3}^{2}})$ instead of $-{{3}^{2}}$.  </li>
+
+<li>  There is supposed to be a rule that says that ${{2}^{{{x}^{\,y}}}}$ denotes
+$2{{\,}^{\left( {{x}^{\,y}} \right)}}$, but this is even more widely unknown,
+so I always write $2{{\,}^{\left( {{x}^{\,y}} \right)}}$.</li>
+
+<li>But <b>note:</b>  ${{({{2}^{x}})}^{\,y}}={{2}^{x\,y}}$,
+which is <i>not</i> usually equal to $2{{\,}^{\left( {{x}^{\,y}} \right)}}$</b>.</li>
+
+<li>  <a href="http://en.wikipedia.org/wiki/Order_of_operations">Wikipedia</a>
+has an excellent detailed description of the precedence rules of algebra.</li>
+</ul>
+<h3>Irregular syntax in the symbolic language</h3>
+
+<p>The symbolic language of math has developed over the
+centuries the way natural languages do.  In particular, the symbolic language,
+like English, has <b>definite rules</b> and it has <b>irregularities.</b></p>
+
+<h4>Rules</h4>
+<p>In English, the plural of a noun is normally formed by adding “s” or
+“es” according to fairly precise rules.  (The plural of car is cars, the plural
+of loss is losses.)</p>
+
+<p>But English rules have <b>exceptions</b>. Think mouse/mice (instead of mouses) and hold/held (instead of holded for the past tense). .</p>
+
+<p>The symbolic language of math has a lot of rules too.
+In the symbolic language, the symbol for a <a
+href="MMFunctions.htm">function</a> is <a name=funcleft> <i>usually</i> put to the left of the
+input (<a href="MMFunctions.htm">argument</a>) and the input is put in
+parentheses.  For example if $f$ is the function defined by $f(x)=x+1$, then the value of $f$ at $3$ is denoted by $f(3)$ (which of course evaluates to
+$4$.)  </p>
+
+
+
+
+<h4>Irregularities</h4>
+
+<p>Just
+as English has irregular plurals and past tenses, the
+symbolic language has <b>irregular syntax for certain expressions.</b> Here are two of many examples of irregularities. </p>
+<ul>
+<li>The symbol “!” for the factorial (<a
+href="http://mathworld.wolfram.com/Factorial.html">MW</a>,<a
+href="http://en.wikipedia.org/wiki/Factorial"> Wi</a>)  function is put <i>after</i> the argument. For example, $6! = 720$. </li>
+
+<li>The parentheses around the argument of a function are <i>omitted</i> for the <a href="http://en.wikipedia.org/wiki/Trig_function">trig</a>
+and log (<a href="http://mathworld.wolfram.com/Logarithm.html">MW</a>, <a
+href="http://en.wikipedia.org/wiki/Logarithm">Wi</a>) functions, so we
+typically write $\sin x$ instead of $\sin(x)$ and $\log x$ instead of $\log(x)$.   More about that<a
+href="MMDysfunctional.htm#argument_by_analogy"> here.</a></li>
+
+</ul>
+<p>There are many other examples of irregularities in symbolic notation in these places:</p>
+
+<ul>
+
+<li><a href="MMFuncNotation.htm#barredarrownotation#valuenotation">Notation for the value of a function</a></li>
+
+<li><a href="MMVarMeanings.htm#convention">Variations in meaning</a></li>
+
+<li>The <a href="http://abstractmath.org/Books/handbkhyper.pdf#irregularsyntax">Handbook</a> (search for "Irregular syntax").</li>
+
+</ul>
+
+<br />
+
+<p class=bluenoindent><font size="4">Other sections of this chapter are in separate files:</font></p>
+
+<h3><a href="MMVarSub.htm">Variables and substitution</a></h3>
+<h3><a href="MMVariableObj.htm">Variable objects</a></h3>
+<h3><a href="MMAlphabets.htm">Alphabets</a></h3>
+<h3><a href="MMDelimiters.htm">Delimiters</a></h3>
+<h3><a href="MMOtherSymbols.htm">Other symbols</a></h3>
+
+
+<br /><br />
+ <p><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"><![endif]></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br />
+
+
+</body>
+
+</html>

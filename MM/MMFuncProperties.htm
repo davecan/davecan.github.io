@@ -1,0 +1,300 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Properties of functions</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2015-10-06
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>
+<a href="/Word%20Press/">blog</a>    <a href="/MM/MMFunctions.htm">Back to head of functions chapter</a>
+</pre>
+
+<h1>Properties of functions</h1>
+
+<a name="injective"></a>
+
+<h2>Injectivity</h2>
+
+<h3>Definition</h3>
+
+
+<p>A function $F:A\to B$ is <b>injective</b> if for any elements $a,\,\,a'$ in the <a href="MMFuncSpec.htm#domain">domain</a> $A$,</p>
+
+<p align=center style='text-align:center'>If $a\ne a'$ then $F(a)\ne
+F(a')$.</p>
+
+<p>It is the <i>whole function</i> that is or is not injective.</p>
+
+<h4>Useful rewordings of the definition:</h4>
+
+<ul>
+
+<li>$F:A\to B$ is <b>injective</b> if and only if for all $a,\,\,a'\in
+A$, if $F(a)=F(a')$ then $a=a'$. This is the <a
+href="MMConditional.htm#contrapositive">contrapositive</a> of the <a
+href="MMDefs.htm">definition</a>, and so is <a
+href="MMConditional.htm#equivalenceofassertions">equivalent</a> to it. <i> In many
+cases this is the best version of the definition to use in a proof.</i></li>
+
+<li>$F:A\to B$ is <b>injective</b> if and only if "different inputs
+give different outputs", or in another wording, if and only if "different
+elements of $A$ go to different elements of $B$." </li>
+
+</ul>
+
+
+
+<h3>Usage</h3>
+
+<p>To say "$F$ is injective", you can also say</p>
+
+<ul>
+
+<li>$F$ is one-to-one.</li>
+
+<li>$F$ is an injection.</li>
+
+<li>$F$ is monic.</li>
+
+</ul>
+
+
+<p><b>Warning:</b> 
+Do not try to reword this
+definition using the word "unique". It is too easy to
+get it mixed up with the definition of functional
+property. This is explained in the <a href="MMDysfunctional.htm#unique">article on dysfunction.</a></p>
+
+<h3>Examples</h3>
+
+
+
+<ul>
+
+<li>The <a href="MMFuncExamples.htm#identity">identity</a> and <a href="MMFuncExamples.htm">inclusion</a> functions are injective.</li> 
+
+<li>The <a href="MMFuncExamples.htm#constantfunction">constant function</a> $k:\mathbb{R}\to\mathbb{R}$ for which $k(x)=3$ for all $x\in\mathbb{R}$ (in other words the function $x\mapsto 3$) is not injective, since for example $k(0)=k(\pi)=k(42)=3$.</li> 
+
+<li>On the other hand, the function $x\mapsto 4:\{4\}\to\{4\}$ <i>is</i> injective, since the domain $\{4\}$ has only one element, so "different elements go to different elements" <a href="MMConditional.htm#vacuoustruth">vacuously</a> because the domain does not have two different elements.</li>
+
+<li>The doubling function
+$x\mapsto 2x$ is injective on the real numbers and in fact on the complex
+numbers, because doubling different numbers gives different numbers.</p>
+
+<li>The squaring function
+$x\mapsto {{x}^{2}}$ is not injective, because for example ${{2}^{2}}={{(-2)}^{2}}$: 
+Squaring two different numbers <i>can</i> give you the same number.</li>
+
+<li>The cubing function on
+the reals is injective.  It is not injective on the complex numbers, because
+for example                \[{{2}^{3}}={{(-1-i\sqrt{3})}^{3}}={{(-1+i\sqrt{3})}^{3}}=8\]</li>
+
+</ul>
+
+<p>See <a
+href="http://en.wikipedia.org/wiki/Injective">Wikipedia</a> for more examples
+and more discussion.</p>
+
+
+</ul>
+
+<h3>Horizontal line
+crosses the graph only once at most</h3>
+
+<p>Let $F:\mathbb{R}\to \mathbb{R}$ be a real continuous function. 
+Then $F$ is injective if <i>no horizontal line cuts the graph of the function twice.</i>  This is a useful way of thinking about injective continuous functions, but it doesn’t
+work with arbitrary functions.</p>
+
+<h4>Examples</h4>
+
+<ul>
+
+<li>This is a plot of part of $y=F(x)={{x}^{3}}$ (which is injective) with
+some horizontal lines. The $x$=axis is one of the lines cutting it. You can't tell just by looking at the graph that the graph isn't horizontal for a short distance along the $x$-axis near zero, but you know from calculus that $F'(x)=3x^2$, which is zero only at zero and nowhere else.<div><img 
+src="/MM/Mathematica/Examples of Functions/Cubic.png"></div></li>
+
+
+<li>On the other hand, $G(x)={{x}^{3}}-x$ is not injective.  Note that <i>some</i>
+horizontal
+lines cut it more than once, but others cut it only once.  
+<div><img 
+src="/MM/Mathematica/Examples of Functions/AnotherCubic.png"></div></li>
+
+<li>Horizontal lines don’t have to cut
+a function at all.  The graph below is part of $y={{x}^{2}}$.  Horizontal lines below zero
+don’t cut its graph because $0$ is its minimum.  There <i>are </i> horizontal lines that cut it twice, so it is not
+injective. Note that the $x$-axis cuts the curve exactly once, but that does not change the fact that the function is not injective because other lines cut it twice.
+<div><img 
+src="/MM/Mathematica/Examples of Functions/Quadratic.png"></div></li>
+</ul>
+
+<h3>No information loss</h3>
+
+<p>An injective function $F:A\to B$ <i>loses no
+information</i>.  If you have an output from the function, you know it
+came from exactly one input.</p>
+
+<ul>
+
+<li> If you got $8$ when
+you cubed a <i>real</i> number, the real number had to be $2$.  The cubing function is
+injective on the reals, as shown previously. But if you got $8$ when you cubed a <i>complex</i> number, the
+complex number could be any of three numbers (see above); the cubing function
+is not injective on the complex numbers.</li>
+
+<li>If you got $4$ when you
+squared something, the something could have been either $2$ or $-2$:  You <i>lost</i> some
+information about the input, namely its sign in this case.  The squaring
+function is not injective.</p>
+
+<li>If
+you get $\frac{1}{2}$ as an output from the sine 
+function, it could have come from any one of an <i>infinite number of
+inputs</i>.  The sine function is ridiculously noninjective: $\sin t=\frac{1}{2}$ if and only if $t=\frac{\pi}{6}+2n\pi$ or $t=\frac{5\pi}{6}+2n\pi$ <i>for any integer $n$</i>.
+<div align="center"><img 
+src="/MM/Mathematica/Examples of Functions/Sine at onehalf.png"></div></li>
+
+</ul>
+
+<h2>Surjectivity</h2>
+
+<h3>Definition</h3>
+
+<p>A function $F:A\to B$ is <a name=surjective><b>surjective</b></a>
+if and only if for every element $b$ in the <a
+href="MMFuncSpec.htm#codomain">codomain</a> <i>B</i> there is an element $a$ in the <a href="MMFuncSpec.htm#domain">domain</a> $A$ for which $F(a)=b$. </p>
+
+<h4>Useful rewordings of the definition:</h4>
+
+<ul>
+
+<li>$F:A\to B$ is surjective if and only if the <a
+href="http://en.wikipedia.org/wiki/Image_(mathematics)">image</a> of $F$ is
+the same as the codomain $B$.</li>
+
+<li>$F:A\to B$ is surjective if and only if every element of $B$ is the value of some element of $A$.</li>
+
+<li>More informally, $F:A\to B$ is surjective if and only if every element of $B$ "comes from" some element of $A$.</li>
+
+</ul>
+
+<h3>Examples</h3>
+
+<ul>
+
+<li>Let $F:\mathbb{R}\to \mathbb{R}$ be the squaring function,
+so $F(x)={{x}^{2}}$ for every real number $x$.  Then $F$ is <i>not surjective</i>, since for any negative
+number $b$, there is no real number $a$ such that $F(a)=b$. (You can’t solve ${{x}^{2}}=-2$, for example).</li>
+
+<li>But if you define $G:\mathbb{R}\to
+{{\mathbb{R}}^{+}}$ (where ${{\mathbb{R}}^{+}}$ denotes the set of <i>nonnegative</i>
+reals) by $G(x)={{x}^{2}}$, then $G$ <i>is</i> surjective.  As you can
+see, whether a function is surjective or
+not depends on the codomain you specify for it.   Note that "$G$ is surjective" says exactly that every nonnegative real number has a square root.</li>
+
+</ul>
+<h3>Usage</h3>
+
+<p>Another way of saying that $F:A\to B$ is surjective is to say "$F$ is <b>onto</b>" or "$F$ is <b>onto</b> $B$."</p>
+
+<h3>Every horizontal line crosses the graph at least once.</h3>
+
+<p>A function $F:\mathbb{R}\to \mathbb{R}$ is surjective</a> if every horizontal line
+crosses its graph one or more times. The graphs above suggest (correctly) that $x\mapsto x^3:\mathbb{R}\to \mathbb{R}$ and $x\mapsto x^3-x:\mathbb{R}\to \mathbb{R}$ are surjective, but $x\mapsto x^2:\mathbb{R}\to \mathbb{R}$ and $x\mapsto \sin x:\mathbb{R}\to \mathbb{R}$ are not surjective.</p>
+
+<p>However, $x\mapsto x^2:\mathbb{R}\to \mathbb{R}^+$ and $x\mapsto \sin x:\mathbb{R}\to [0,1]$ <i>are</i> surjective. ($[0,1]$ is the <a href="MMSetSpecific.htm#interval">closed interval</a> $\{x\in\mathbb{R}|-1\lt x\lt 1\}$.)</p>
+
+<a name="bijective"></a>
+
+<h2>Bijectivity</h2>
+
+
+
+<h4>Definition</h4>
+
+<p>A function that is both injective and surjective is said to be <b>bijective</b>.</p>
+
+<h3>Usage</h3>
+
+<p>A bijection $F:A\to B$ <i>matches
+up the elements of $A$ and $B$</i> -- each element of $A$ corresponds to exactly one
+element of $B$ and each element of $B$ corresponds to exactly one element of $A$. For this reason, a bijection is also called a <b>one-to-one correspondence.</b></p>
+
+
+
+<h3>Examples</h3>
+
+<ul>
+<li>Any <a href="/MM/MMFuncExamples.htm#identityfunction">identity function</a> is bijective.</li> 
+
+<li>If $A$ is a subset of $B$ and $A\neq B$ (we say $A$ is a <b>proper subset</b> of $B$) then the inclusion function $\text{inc}:A\to B$ is injective but is not bijective.</li>
+
+<li>The function $x\mapsto x^3:\mathbb{R}\to\mathbb{R}$ is bijective, but the other functions shown in the graphs above are not bijective.</li>
+
+</ul>
+
+<a name="cograph"></a>
+<a name="properiesoffinitefunctions"></a>
+
+<h2>Properties of finite functions</h2>
+
+<p>You can see whether a finite function is injective, surjective or both by looking at its <a href="/MM/MMImagesMetaphorsFunctions.htm#graphsofdiscretefunctions#cograph">cograph</a>.</p>
+
+<h3>Examples</h3>
+
+<ul>
+
+<li>This function is bijective:
+<div><img 
+src="/MM/Mathematica/Examples of Functions/Bijective1.png"></div></li>
+
+<li>This is injective but not surjective:
+<div><img 
+src="/MM/Mathematica/Examples of Functions/Injective2.png"></div></li>
+
+<li>This is surjective but not injective:
+<div><img 
+src="/MM/Mathematica/Examples of Functions/Surjective1.png"></div></li>
+
+<li>This is neither injective nor surjective:
+<div><img 
+src="/MM/Mathematica/Examples of Functions/Neither1.png"></div></li>
+
+
+</ul>
+
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="/MM/CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />

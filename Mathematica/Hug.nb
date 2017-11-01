@@ -1,0 +1,241 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8426,        232]
+NotebookOptionsPosition[      8045,        214]
+NotebookOutlinePosition[      8412,        230]
+CellTagsIndexPosition[      8369,        227]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"hug", "[", "x_", "]"}], ":=", 
+   RowBox[{"Piecewise", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"x", "-", 
+             RowBox[{"1", "/", "2"}]}], ")"}], "^", "2"}]}], "+", 
+         RowBox[{"7", "/", "4"}]}], ",", 
+        RowBox[{"x", "<", "0"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"x", "+", 
+         RowBox[{"3", "/", "2"}]}], ",", 
+        RowBox[{"1", ">=", "x", "\[GreaterEqual]", "0"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"x", "-", 
+            RowBox[{"1", "/", "2"}]}], ")"}], "^", "2"}], "+", 
+         RowBox[{"9", "/", "4"}]}], ",", 
+        RowBox[{"x", "\[GreaterEqual]", "1"}]}], "}"}]}], "}"}], "]"}]}], ";", 
+  RowBox[{
+   RowBox[{"ptsl", "[", 
+    RowBox[{"m_", ",", "p_", ",", "x_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"m", " ", 
+      RowBox[{"(", 
+       RowBox[{"x", "-", 
+        RowBox[{"p", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}], ")"}]}], "+", " ", 
+     RowBox[{"p", "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}], "//", "Simplify"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.5275081966563606`*^9, {3.527508228264927*^9, 3.527508230561743*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Show", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"hug", "[", "x", "]"}], ",", 
+         RowBox[{"ptsl", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"hug", "'"}], "[", "a", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"a", ",", 
+             RowBox[{"hug", "[", "a", "]"}]}], "}"}], ",", "x"}], "]"}], ",", 
+         RowBox[{
+          RowBox[{"hug", "'"}], "[", "x", "]"}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "1"}], ",", "2"}], "}"}], ",", 
+       RowBox[{"PlotRange", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "4.5"}], "}"}]}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"PlotStyle", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{"Blue", ",", "Red", ",", "Green"}], "}"}]}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"AspectRatio", "\[Rule]", 
+        RowBox[{"5.5", "/", "3"}]}], ",", 
+       RowBox[{"PlotPoints", "\[Rule]", "200"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "200"}], ",", 
+       RowBox[{"Ticks", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "2"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "0", ",", "1", ",", "2", ",", "3", ",", 
+            "4"}], "}"}]}], "}"}]}]}], "\[IndentingNewLine]", "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{"Black", ",", "\[IndentingNewLine]", 
+        RowBox[{"PointSize", "[", ".02", "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Point", "[", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", 
+           RowBox[{"hug", "[", "a", "]"}]}], "}"}], "]"}], ","}], 
+       "\[IndentingNewLine]", "}"}], "\[IndentingNewLine]", "]"}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", 
+       RowBox[{
+        RowBox[{"-", "1"}], "/", "2"}]}], "}"}], ",", 
+     RowBox[{"-", "1"}], ",", "2", ",", ".01"}], "}"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5275916553942614`*^9, 3.5275916572223864`*^9}, {
+  3.5275917295192614`*^9, 3.5275917404098864`*^9}, {3.5275918032223864`*^9, 
+  3.5275918392067614`*^9}, {3.5275918719255114`*^9, 3.5275918831755114`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = Rational[-1, 2], Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 
+       Rational[-1, 2]}, -1, 2, 0.01}}, Typeset`size$$ = {250., {219., 227.}},
+     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`a$6498$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`a$$ = Rational[-1, 2]}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$6498$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{
+          $CellContext`hug[$CellContext`x], 
+          $CellContext`ptsl[
+           Derivative[
+           1][$CellContext`hug][$CellContext`a$$], {$CellContext`a$$, 
+            $CellContext`hug[$CellContext`a$$]}, $CellContext`x], 
+          Derivative[
+          1][$CellContext`hug][$CellContext`x]}, {$CellContext`x, -1, 2}, 
+         PlotRange -> {{-1, 2}, {-1, 4.5}}, PlotStyle -> {Blue, Red, Green}, 
+         AspectRatio -> 5.5/3, PlotPoints -> 200, ImageSize -> 200, 
+         Ticks -> {{-1, 0, 1, 2}, {-1, 0, 1, 2, 3, 4}}], 
+        Graphics[{Black, 
+          PointSize[0.02], 
+          Point[{$CellContext`a$$, 
+            $CellContext`hug[$CellContext`a$$]}], Null}]], 
+      "Specifications" :> {{{$CellContext`a$$, 
+          Rational[-1, 2]}, -1, 2, 0.01}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{312., {273., 281.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`hug[
+         Pattern[$CellContext`x, 
+          Blank[]]] := 
+       Piecewise[{{-($CellContext`x - 1/2)^2 + 7/4, $CellContext`x < 
+           0}, {$CellContext`x + 3/2, 1 >= $CellContext`x >= 
+           0}, {($CellContext`x - 1/2)^2 + 9/4, $CellContext`x >= 
+           1}}], $CellContext`ptsl[
+         Pattern[$CellContext`m, 
+          Blank[]], 
+         Pattern[$CellContext`p, 
+          Blank[]], 
+         Pattern[$CellContext`x, 
+          Blank[]]] := 
+       Simplify[$CellContext`m ($CellContext`x - Part[$CellContext`p, 1]) + 
+         Part[$CellContext`p, 2]], 
+       Attributes[Derivative] = {NHoldAll, ReadProtected}}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.5275082713263245`*^9, 3.5275083968231115`*^9, 3.5275916597692614`*^9, {
+   3.5275917336442614`*^9, 3.5275917408942614`*^9}, 3.5275918060192614`*^9, 
+   3.5275918395817614`*^9, 3.5275918843005114`*^9, 3.5275919381442614`*^9}]
+}, Open  ]]
+},
+WindowSize->{715, 767},
+WindowMargins->{{258, Automatic}, {Automatic, 41}},
+Magnification->1.25,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1409, 44, 102, "Input"],
+Cell[CellGroupData[{
+Cell[1991, 68, 2857, 73, 410, "Input"],
+Cell[4851, 143, 3178, 68, 574, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

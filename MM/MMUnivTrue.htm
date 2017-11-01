@@ -1,0 +1,296 @@
+<html>
+
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css"href="MM2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Universally True Assertions</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2015-09-05
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>    <a href="/Word%20Press/">blog</a>
+<a href="MMProofs.htm">Head of Math Reasoning Chapter</a>
+</pre>
+
+
+<h1>UNIVERSALLY TRUE ASSERTIONS</h1>
+<a name="universally_true"></a>
+<a name="universallytrue"></a>
+<a name="universalassertion"></a>
+
+<p class=blue>An <a
+href="MMMathEnglish.htm#assertion">assertion</a>
+containing a <a href="MMVarSub.htm">variable</a> that is true for <i>any</i> value of the correct
+<a href="MMVarSub.htm#type">type</a> of that variable is
+called <font color="#911B1B"><b>universally
+true</b></font> (or a <font color="#911B1B"><b>universal assertion</b></font>).</p>
+
+<h5>Example</h5>
+
+<a name="identity"></a>
+
+<p>The assertion \[{{x}^{2}}-1=(x-1)(x+1)\,\,\,\,\,\,\,\,\text{(A)}\] is true for any <a
+href="MMNumbers.htm#real_number">real number</a> $x$. 
+In particular, $42$ is a real number, so we know that ${{42}^{2}}-1=(42-1)(42+1)$. 
+You <i>don’t</i> have to calculate out what ${{42}^{2}}-1$  and $(42-1)(42+1)$ are to
+know that they are the same because you know  assertion (A) is true for all
+real numbers.</p>
+
+
+<a name="law"></a><a name="identity"></a>
+
+<h3>Usage</h3>
+
+
+<p>Assertion (A) is an <b>identity</b>, which means that it is a
+universally true equation. (This is one of <a href="MMGlossary.htm#identity">several meanings</a> of the word "identity").</li>
+
+<p>In some contexts, a universally true
+assertion is called a <a name=law><b>law</b></a>.  This word is usually applied
+to equations, but not always.</p>
+
+
+<h5>More examples</h5>
+<ul>
+<li>The statement  "$x+3\gt x$" is a universally true assertion for real numbers, but it would
+not be called an identity because it is not an equation.</li>
+
+<li>The statement  "$x = x$" is a universally true assertion no matter what the <a href="MMVarSub.htm#type">type</a> of the variable $x$ is.</li>
+
+<li>The statement "$x+3=5$" is not a universally true assertion for $x$ a variable of <a href="MMVarSub.htm#type">type</a> real.  In fact it is true only for $x =2$.</li></ul>
+
+<a name="forallsymbol"></a>
+
+<h2>The universal quantifier
+symbol</h2>
+
+<p>The notation "$\forall x$" is used in <a
+href="MMMathReasoning.htm#mathlogic">mathematical
+logic</a> to denote that the assertion following it is true of all $x$.</p>
+
+<h5>Example</h5>
+
+<a name="universalstatement"></a>
+
+<p>Suppose x is a real variable.  Then the statement "$\forall x(x+3\ge x)$" means that for every real number $x$, $x+3\ge x$.  It is an example of a <b>universal statement</b>.</p>
+
+<ul>
+
+<li>"$x+3\ge x$" is an <a
+href="MMMathEnglish.htm#assertion"><b>assertion</b></a>. It is true for
+all real $x$. You can substitute any real number of $x$ and the result is a true statement.</li>
+
+<li>"$\forall x(x+3\ge x)$" is a <a href="MMMathEnglish.htm#statement"><b>statement</b></a>. It is true. The variable $x$ in this expression is a <a href="MMVarSub.htm#boundvariable">bound variable</a>.  <i>You cannot substitute for it.</i> It would be silly -- more than silly, <i>meaningless</i> -- to write $\forall 6(6+3\ge 6)$".</li>
+
+</ul>
+
+<h5>More examples</h5>
+
+<ul>
+
+<li>"$\forall
+x(x\gt x)$" is false.  Any number is a counterexample.</li>
+
+<li>"$\forall x(x\ge x)$"
+is true.</li>
+
+<li>"$\forall x(x\ne 0)$" is
+false. $0$ is a counterexample (it is the only one). It is <span class=red><b>wrong</b></span> to say that "$\forall x(x\ne 0)$" is "almost always true" or "just barely false".</li>
+
+</ul>
+
+<a name="universalquantifier"></a>
+
+<p class=purpleprose>"$\forall x(x\ne 0)$" is just plain false.  Period.</p>
+
+<p>The symbol $\forall$ is called the <b>universal quantifier</b>.  It is expressed in
+mathematical English in a great many ways, some of which cause considerable confusion to people not in the know. This is discussed <a
+href="#universalworded">below</a> and briefly in the <a href="MMOtherSymbols.htm#quantifiers">symbols chapter</a>.</p>
+
+<a name="universalworded"></a>
+
+<h2>How universal assertions are worded</h2>
+
+<p>Here is an incomplete list of the ways the assertion "For
+all $x$, ${{x}^{2}}+1\gt0$" might be worded. Words in square brackets may be omitted. This certainly does not cover all possible variations.</p><p>Universally true <i>conditional</i>
+assertions are discussed <a
+href="MMConditional.htm#univtruecond">here.</a></p>
+
+<a name="symbolic"></a>
+
+<h3>Symbolic</h3>
+
+<p>The symbolic version can be displayed in any of the following
+ways:</p>
+
+<ul>
+
+<li>"$\forall x\,({{x}^{2}}+1\gt 0)$." This form is used more often at the blackboard than in print, except in logic texts.</li>
+
+<li><q>${{x}^{2}}+1\gt 0\,\,\,\,\, (\text{all }x)$.</q> </li>
+
+<li><q>${{x}^{2}}+1\gt 0\,\,\,\,\,  (x)$.</q> Using "$(x)$" to mean "for all $x$" is now old fashioned but you still see it. The motivation for this notation is that if you wrote, for example, "$(x\gt1)$" it would put the <a
+href="MMIntent.htm#constraint">constraint</a> that $x\gt 1$ on the assertion; so writing "$(x)$" was thought of as an <i>empty</i> constraint -- a constraint that was no constraint. I have never run across any text that explained this notation.</li>  
+
+<li>"$(\text{all } x)$" or "$(x)$" may be replaced by a type expression such as "$(\text{all }x\in \mathbb{R})$" or "$(x\in \mathbb{R})$", which still means "for all $x$ in $\mathbb{R}$".</li>
+
+</ul>
+
+<p class=smallind>The "$(x)$" form to mean "for all $x$" is used in the great classic text <i>Linear Operators</i> by Dunford and Schwarz.  It confused the hell out of me when I was a graduate student.</p>
+
+<a name="all"></a><a name="any"></a><a name="every"></a><a name="each"></a>
+
+
+<h3>All, Any, Every, (Each?)</h3>
+
+<p>In the following expressions, "all" can be replaced by "any" or "every". Of course, "$x^2+1\gt0$" can be replaced by "$x^2+1$ is positive".</p>
+
+<p class=smallind>"For each real number..." doesn't sound wrong to me but I don't recall every seeing it used in print.</p>
+
+<ul>
+
+<li>"For all [real] $x$, $x^2+1\gt0$" or "$x^2+1\gt0$ for all [real] $x$". </li>
+
+<li>"All real numbers $x$ satisfy [the inequality] $x^2+1\gt0$".</li> 
+
+</ul>
+
+<p>"Any" may also be used with a connotation of <a href="MMGlossary.htm#arbitrary">arbitrary</a>.</p>
+
+<a name="always"></a>
+
+<h3>Always</h3>
+
+<ul>
+
+<li>"$x^2+1$ is always greater than $0$" or "...is always positive".</li>
+
+</ul>
+
+<p>This use of "always" is noticeably less formal than the
+other usages above.  The image behind it is that you can vary $x$ all over
+the place as long as you want and the expression stays greater than $0$.  Of
+course, in the <a href="MMImagesMetaphors.htm#rigorousview">rigorous
+view</a>, <i>nothing is changing</i>.</p>
+
+<h3>Universally true equations</h3>
+
+<p>Universally true equations may be given bare: \[x^2-1=(x-1)(x+1)\]
+</p>
+
+<p>One clue that the equation is meant
+universally is that it might be referred to as an <a href="#identity">identity</a> or as a <a href="#law">law</a>.</p>
+
+<p>The symbol "$\equiv$" may also be used to
+indicate that it is an identity, as in \[x^2-1\equiv (x-1)(x+1)\] but be warned: "$\equiv$" is
+also used to denote a congruence (in any of that word’s <a
+href="http://en.wikipedia.org/wiki/Congruence">several related meanings</a>). 
+See also <a href="MMGlossary.htm#constraint">constraint</a>.</p>
+
+<a name="methodsofdeduction"></a>
+
+<h2>Methods of deduction for universal assertions</a></h2>
+
+<a name="universalinstantiation"></a>
+
+<h3>Universal instantiation</h3>
+
+<p>If "$\forall x P(x)$" is a correct
+mathematical assertion about objects $x$ of some <a href="MMVarSub.htm#type">type</a>, and $c$ is some particular object of that type, then it is correct to assert that $P(c)$ is true. This
+method of <a href="MMMathReasoning.htm#methodsofdeduction">deduction</a> is called <b>universal instantiation</b>.</p>
+
+<h5>Example</h5>
+
+<p>For real numbers $x$, the statement \[\forall x\left[x^2-1=(x-1)(x+1)\right]\] is correct.  Therefore, the statement \[42^2-1=(42-1)(42+1)\] <i>is correct by universal instantiation</i>. (The object $c$ in the preceding
+paragraph is $42$.) In other words, the fact that $42^2-1=41\times43$ follows from universal instantiation. </p>
+
+<p>You may never see the phrase "universal instantiation"
+outside of a logic text.  This method of deduction is so natural that it is
+normally used without comment.</p>
+
+<a name="universalgeneralization"></a>
+
+<h3>Universal generalization</h3>
+
+<p>If you have proved $P(c)$ for an arbitrary object $c$ of
+some <a href="MMVarSub.htm#type">type</a>, and during the proof have made no
+restrictions on $c$, then you are entitled to conclude that $P(x)$ is true for all $x$ of that type. This process is formalized in mathematical logic as the rule of <a href="MMMathReasoning.htm#methodsofdeduction">deduction</a> called <b>universal generalization</b>.</p>
+
+<p>You may have used this
+method of proof (or seen it used) many times without having it explicitly
+stated and named.</p>
+
+<h5>Example</h5>
+
+<p><a href="MMDefs.htm"><b>Definition</b></a>: An integer is <b>even</b> if it is <a href="https://en.wikipedia.org/wiki/Divisor">divisible</a> by $2$.</p>
+
+<p><a href="MMGlossary.htm#theorem"><b>Theorem</b></a>: Prove that \[\forall n\left(\text{If }n\text{ is even, then }n^2\text{ is even}\right)\]</p>
+
+<p><b>Proof:</b> Suppose $n$ is an even integer.  By definition of "even" there is an integer $k$ for which $n=2k$.  Then \[n^2=4k^2=2\cdot2k^2\] so $n^2$ is even by definition.</p>
+
+<ul>
+
+<li>This proof uses the method of <a href="MMUsefulBehaviors.htm#zzee_link_3_1418747146">rewrite according to definitions.</a></li>
+
+<li>
+In this proof, the only restriction I made on $n$ was that $n=2k$ for some integer $k$, which I was entitled to do by definition of "even".  In other words, <i>there is no constraint on $n$ other than what is given.</i></li>
+
+<li><a href="MMDysfunctional.htm#proofbyexample">Proof by example</a> is a common mistake made in proofs like this. ("$6$ is even, and $36$ is even.")</li>
+
+</ul>
+
+<a name="counterexample"></a>
+
+<h3>Disproving
+a universal assertion</h3>
+
+<p>You may <i>disprove</i> a universal assertion by finding a <b>counterexample</b>, a value $c$ that makes the assertion false.</p>
+
+<h4>Example</h4>
+
+<p>"Every odd number is prime."  </p>
+
+<p><b>Disproof:</b> This statement is false.  The number $9$ is odd but not prime, so $9$ is a counterexample.</p>
+
+<h4>Remark</h4>
+
+<p>To prove $\forall xP(x)$ you have to show that $P(c)$ is true for every single $c$. To prove it is false you need only show that $P(c)$ is false for <i>one</i> value $c$. (*Sigh*) Life is unfair.</p>
+
+<br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p>
+ <br />
+
+</body>
+
+</html>

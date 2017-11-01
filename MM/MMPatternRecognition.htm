@@ -1,0 +1,459 @@
+<html>
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<link rel="stylesheet" type="text/css" href="mm2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>MMPatternrecognition</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+<title>MMPatternRecognition</title>
+</head>
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>     Revised 2015-12-26
+<a href="MMIntro.htm">Introduction to this website</a>    <a href="MMTOC.htm">website TOC</a>    <a href="MMIndex.htm">website index</a>   <a href="/Word%20Press/">blog</a>
+</pre>
+
+<h1>PATTERN RECOGNITION</h1>
+
+<h2>Abstract patterns</h2>
+<p class=blue>When you do math, you must recognize <font color="#911B1B">abstract patterns</font> that occur in</p>
+<ul class=blue>
+<li>Symbolic expressions</li>
+
+<li>Geometric figures</li>
+
+<li>Relations between different kinds of math structures.</li>
+
+<li>Your own mental representations of <a href="MMMathObj.htm">mathematical objects</a></li>
+</ul>
+
+<p class=blue>This happens in high school algebra and in calculus, not just in the higher levels of abstract math.</p>
+
+<p>I will begin with some examples of pattern recognition in math.</p>
+
+<h2><a name="atmost">"At most"</a></h2>
+
+<p>For real numbers $x$ and $y$, the phrase "$x$ is at most $y$" means by <a href="MMDefs.htm">definition</a>  $x\le y$. To understand this definition requires recognizing the <b>pattern</b> "$x$ is at most $y$" <i>no matter what expressions occur</i> in place of $x$ and $y$, as long as they evaluate to real numbers.</p>
+<h4 class=redit>Examples</h4>
+<ul>
+
+<li>"$\sin x$ is at most $1$" means that $\sin x\le 1$. This happens to be true for all real $x$.</li>
+
+<li>"$x^2+(y-1)^2$ is at most $5$" means that 
+$x^2+(y-1)^2\leq5$.  This is true for some pairs $(x,y)$ and false for others, so it is a <a href="MMIntent.htm#constraint">constraint</a>.  It defines the disk below:</p>
+<img src="Mathematica/JPEG/PattRec/Disk1.jpg" align=center hspace=30></li></ul>
+
+<a name=productrule></a>
+
+<h2>The product rule for derivatives </h2>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Product_rule">product rule</a> for differentiable functions $f$ and $g$ tells you that the derivative of $f(x)g(x)$ is \[f'(x)\,g(x)+f(x)\,g'(x)\]</p>
+
+<h4 class=redit>Example</h4>
+<p>You recognize that the expression ${{x}^{2}}\sin x$ fits the <b>pattern</b> $f(x)g(x)$ with $f(x)={{x}^{2}}$ and $g(x)=\sin x$. Therefore you know that the derivative of ${{x}^{2}}\,\sin x$ is \[2x\sin x+{{x}^{2}}\cos x\]</p>
+
+<p>This example is revisited <a href="#reverserecognition">below</a>.</p>
+
+<a name="quadraticfunction"></a>
+
+<h2>Definition of quadratic function</h2>
+
+
+<p><a href="MMDefs.htm"> Definition:</a> A <b>quadratic polynomial in $x$</b > is an expression of the form $a{{x}^{2}}+bx+c$.   
+  </p>
+
+<h4>Examples </h4>
+<ul>
+<li>$-5{{x}^{2}}+32x-5$ is a quadratic polynomial: You have to recognize that it fits the pattern in the definition by writing it as $(-5){{x}^{2}}+32x+(-5)$ </li>
+
+<li>
+   So is ${{x}^{2}}-1$: You have to recognize that it fits the definition by writing it as ${{x}^{2}}+0\cdot x+(-1)$. </li>
+
+<li>So is $3x(x-2)+4$: Use the distributive law to rewrite this as \[3x^2-6x+4=3x^2+(-6)x+4\]</li>
+
+</ul>
+<h3>Dependence on conventions</h3>
+<p>Some authors would just say, “A <b>quadratic polynomial </b>is an expression of the form $a{{x}^{2}}+bx+c$” leaving you to deduce from  <a href="MMVarMeanings.htm#conventions"> conventions </a>  on variables that it is a polynomial in $x$ instead of in $a$ (for example).</p>
+
+<p>Note also that I have deliberately not mentioned what sorts of numbers $a$, $b$, $c$ and $x$ are. In texts for undergraduates, the authors may assume that you know they are using <a href="MMRealNumbers.htm">real numbers</a>, but in fact the definition works for complex numbers as well.</p>
+
+<a name=quadraticformula</a>
+
+<h2>The quadratic formula  </h2>
+
+<p>The <b>quadratic formula</b> for the solutions of an equation of the form $a{{x}^{2}}+bx+c=0$ is usually given as\[r=\frac{-b\pm
+\sqrt{{{b}^{2}}-4ac}}{2a}\]</p>
+
+<h4 class=redit>Example</h4>
+<p>If you are asked for the roots of $3{{x}^{2}}-2x-1=0$, you recognize that the polynomial on the left <b>fits the pattern</b> $a{{x}^{2}}+bx+c$ with</p>
+
+<ul>
+ <li>$a\leftarrow3$ ("$a$ replaced by $3$")</li> 
+
+<li>$b\leftarrow-2$</li> 
+
+<li>and $c\leftarrow-1$.</li> 
+</ul>
+
+<p>Then
+
+<a href="MMVarSub.htm#substitution"> substituting</a> those values in the quadratic formula gives you the roots $-1/3$ and $1$.</p>
+
+
+
+<h3>Difficulties with the quadratic formula</h3>
+
+<h4>A little problem</h4>
+
+<p>The quadratic formula is easy to use but it can still cause pattern recognition problems. Suppose you are asked to find the solutions of $3{{x}^{2}}-7=0$. Of course you can do this by simple algebra -- but pretend that the first thing you thought of was using the quadratic formula.</p>
+
+<ul>
+<li>Then you got <b>upset</b> because you have to apply it to $a{{x}^{2}}+bx+c$ </li>
+
+<ul>
+<li>and $3{{x}^{2}}-7$ has only <i>two terms</i> </li>
+
+<li>but $a{{x}^{2}}+bx+c$ has <i>three</i> terms…  </li>
+
+<li><font color="#B11B1B">(Help!)</font> </li>
+</ul>
+<li class=blue>Do Not Be Anguished: </li>
+
+<li>Write
+$3{{x}^{2}}-7$ </b> as $3{{x}^{2}}+0\cdot x-7$, so $a=3$, $b=0$ and $c=-7$. </li>
+
+<li>Then put those values into the quadratic formula and you get $x=\pm \sqrt{\frac{7}{3}}$.     </li>
+
+</ul>
+
+
+
+<p>This is an example of the following <b>useful principle:</b></p>
+
+
+
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+Write zero cleverly.
+</p></td></tr></table></center>
+
+
+<p>I suspect that most people reading this would not have had the problem with $3{{x}^{2}}-7$ that I have just described. But before you get all insulted, remember:</p>
+
+
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+The thing about really easy examples is that </br>they give you the point without getting you lost </br>in some complicated stuff you don’t understand very well.
+</p></td></tr></table></center>
+
+
+<h4>A fiendisher problem </h4>
+
+<p>   Even college students may have trouble with the following problem (I know because I have tried it on them):</p> 
+<br />
+<center><p><i>What are the solutions of the equation $a+bx+c{{x}^{2}}=0$?</i></p></center> <br />
+
+<p>The answer</p>
+
+           <p>\[r=\frac{-b\pm
+\sqrt{{{b}^{2}}-4ac}}{2a}\] 
+</p>
+<p style="noind"> is <b>wrong.</b> The <i>correct</i> answer is </p>
+
+<p>                                   \[r=\frac{-b\pm
+\sqrt{{{b}^{2}}-4ac}}{2c}\]</p> 
+
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+When you remember a pattern with particular letters in it </br>and an example has some of the same letters in it, </br><font color="#804000">make sure they match the pattern!</font>
+</p></td></tr></table></center>
+
+<h2>The substitution rule for integration</h2>
+
+<p>The <a href="http://en.wikipedia.org/wiki/Chain_rule"> chain rule </a> says that the derivative of a function of the form $f(g(x))$ is $f'(g(x))g'(x)$. From this you get the <a name=substitutionrule><b>substitution rule</b></a> for finding indefinite integrals:</p>
+<p>                                    \[\int{f'(g(x))g'(x)\,dx}=f(g(x))+C\] </p>
+
+<h4 class=redit>Example </h4>
+
+<p>To find $\int{2x\,\cos
+({{x}^{2}})\,dx}$, you recognize that you can take $f(x)=\sin x$ and $g(x)={{x}^{2}}$ in the formula, getting \[\int{2x\,\cos ({{x}^{2}})\,dx}=\sin ({{x}^{2}})+C\]     Note that in the way I wrote the integral, <i>the functions occur in the opposite order from the pattern.</i> That kind of thing happens a lot. </p>
+
+<a name="laws"><a name="constraints">
+
+
+
+<h2>Some bothersome types of pattern recognition</h2>
+<a name="reverserecognition"></a>
+
+<h3>Reverse recognition</h3>
+
+<p>One particular type of pattern recognition that comes up all the time in math is <i>recognizing that a given <a href="MMSymLang.htm#symbolicexpression">expression</a> is an instance of a<a href="MMVarSub.htm">  substitution </a> into a known expression.</i></p>
+
+<a name="ratcheteffectexample"></a>
+
+<h4>Example</h4>
+
+<p>The <a href="#productrule">product rule</a> means that the integral of \[f'(x)g(x)+f(x)g'(x)\] is $f(x)g(x)+C$. This is useful -- you can immediately determine that\[\int 2x\sin x+x^2\cos x\,dx=x^2\sin x+C\] You know that the derivative of $x^2$ is $2x$ and the derivative of $\sin x$ is $\cos x$, so the left side fits the chain rule.</p>
+
+<p>This is the sort of pattern recognition that can occur after a delay, resulting in slapping your head and saying, "But that's <font color="#8000A0">obvious</font> -- why didn't I see that before!?"  See <a href="MMOtherAspectsUnderstanding.htm#ratcheteffect">ratchet effect</a> and don't feel bad. That happens to mathe&shy;maticians all the time.</p>
+
+<p>Reverse recognition may require transforming what you are looking at. Consider \[\int 2x(\sin x+0.5x\cos x)\,dx\]</p>
+
+<p class=purpleprose>Pattern recognition often occurs<br />after you quit thinking about the problem<br />and then come back to it.</p>
+
+<p>This particularly happens if you take time out for a short time and get some exercise, but it also occurs overnight -- even in the middle of the night. Try it!</p>
+
+<a name=sumsquaresexample></a>
+
+<h4>Example</h4>
+
+<p>Students are sometimes baffled when a proof uses the fact that ${{2}^{n}}+{{2}^{n}}={{2}^{n+1}}$ for positive integers $n$. This requires the recognition of the patterns $x+x=2x$  and $2\cdot
+\,{{2}^{n}}={{2}^{n+1}}$.</p>
+
+
+
+<p>Similarly ${{3}^{n}}+{{3}^{n}}+{{3}^{n}}={{3}^{n+1}}$.</p>
+
+<p class=smallind>This example induces the <a href="MMOtherAspectsUnderstanding.htm#ratcheteffect">ratchet effect</a> in many students.</p>
+<a name=sumofsquares></a>
+
+<h4>Example</h4>
+
+<p>The assertion </p>
+
+<p>\[{{x}^{2}}+{{y}^{2}}\ge 0\ \ \ \ \ \text{(1)}\]</p>
+
+<p class="noind">has as a special case </p>
+
+<p>\[(-x^2-y^2)^2+(y^2-x^2)^2\ge
+0\ \ \ \ \ \text{(2)}\] </p>
+
+<p class="noind">which involves the substitutions $x\leftarrow -{{x}^{2}}-{{y}^{2}}$ and $y\leftarrow
+{{y}^{2}}-{{x}^{2}}$.</p>
+
+
+<h5>Remarks</h5>
+<ul>
+
+<li>If you see (2) in a text and the author blithely says it is "never negative", that is because it is of the form \[{{x}^{2}}+{{y}^{2}}\ge 0\] with certain expressions substituted for $x$ and $y$.  (See <a href="MMGlossary.htm#never">never</a>, <a href="MMVarSub.htm#substitution"> substitution</a>, and <a href="/Word%20Press/?p=9246">The only axiom for algebra</a>.)</li>
+
+<li>
+The fact that there are minus signs in (2) and that $x$ and $y$ play different roles in (1) and in (2) are <a href="https://en.wikipedia.org/wiki/Red_herring"<font color="#B11B1B">red herrings</font></a>. See also <a href="MMOtherAspectsUnderstanding.htm#ratcheteffect">ratchet effect</a>.</li>
+
+<li>Most people with some experience in algebra would see quickly that (2) is correct by using <a href="MMUsefulBehaviors.htm#zoomchunk">chunking</a>. They would visualize (2) as 
+
+\[(\text{something})^2+(\text{anothersomething})^2\ge0\]
+This shows that in many cases
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+chunking is a psychological inverse to substitution
+</p></td></tr></table></center>
+</li>
+
+<li>Note that when you make these substitutions you have to insert appropriate parentheses (more <a href="MMVarSub.htm#substitution">here</a>). After you make the substitution, the expression of course can be simplified a whole bunch, to 
+
+ \[2({{x}^{4}}+{{y}^{4}})\ge0\]
+</li>
+
+<li>A common cause of error in doing this (a mistake I make sometimes) is to try to substitute and simplify at the same time. If the situation is complicated, it is best to
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+substitute as literally as possible and <font color="#911B1B">then</font> simplify
+</p></td></tr></table></center>
+</li>
+</ul>
+
+<h4>Example</h4>
+
+<p>The rule for <a href="https://en.wikipedia.org/wiki/Integration_by_parts">integration by parts</a> says that </p>
+
+<p>                           \[\int{f(x)\,g'(x)\,dx=f(x)\,g(x)-\int{f'(x)\,g(x)\,dx}}\] </p>
+
+<p>Suppose you need to find $\int{\log x\,dx}$.(In abstractmath.org, "log" means ${{\log }_{e}}$).  Then we can recognize this integral as having the pattern for the left side of the parts formula with $f(x)=1$ and $g(x)=\log \,x$. Therefore </p>
+
+<p>\[\int{\log x\,dx=x\log x-\int{\frac{1}{x}dx=x\log \,x-x+c}}\] </p>
+
+<p><font color="#B13B1B"><b>How on earth did I think to recognize $\log x$ as $1\cdot \log x$?? </b></font> 
+Well, to tell the truth because some nerdy guy (perhaps I should say some <i>other</i> nerdy guy) clued me in when I was taking freshman calculus. Since then I have used this device lots of times without someone telling me --  but not the first time.</p>
+
+<p>This is an example of another really useful principle: </p>
+
+
+
+<center><table border="0"><tr><td>
+<p class='purpleprose'>
+Write $1$ cleverly.
+</p></td></tr></table></center>
+
+
+<h3>Two different substitutions give the same expression</h3>
+
+<p>Some<a href="MMProofs.htm">  proofs</a> involve recognizing that a <a href="MMSymLang.htm#symbolicexpression">symbolic expression</a> or figure fits a pattern  in <i>two different ways</i>.  This is illustrated  by the next two examples. 
+I have seen students flummoxed by Example ID, and Example ISO is a proof that is supposed to have flummoxed medieval geometry students.</p>
+
+<h4>Example ID</h4>
+
+<p> <proc>Definition:</proc> In a set with an <a href="https://en.wikipedia.org/wiki/Associative_property">associative</a> binary operation and an <a href="https://en.wikipedia.org/wiki/Identity_element">identity element</a> $e$, an element $y$ is the <b>inverse</b> of an element $x$ if</p>
+
+<p>\[xy=e\ \ \ \ \text{and}\ \ \ \ yx=e \ \ \ \  (1)\] </p>
+
+<p style="noind">  In this situation, it is easy to see that $x$ has only one inverse:<a name=invinv></a> If $xy=e$ and $xz=e$ and $yx=e$ and $zx=e$, then \[y=ey=(zx)y=z(xy)=ze=z\] </p>
+
+<p class=headed><proc>Theorem:</proc>  ${{({{x}^{-1}})}^{-1}}=x$. </p>
+
+<p class=headed><proc>Proof:</proc> I am given that ${{x}^{-1}}$ is the inverse of $x$, By definition, this means that</p>
+
+<p>\[x{{x}^{-1}}=e\ \ \ \text{and}\ \ \ {{x}^{-1}}x=e \ \ \ \ (2)\] </p>
+
+<p style=noind>  To prove the theorem, I must show that $x$   is the inverse of ${{x}^{-1}}$.  Because $x^{-1}$ has only one inverse, all we have to do is prove that</p>
+
+<p>\[{{x}^{-1}}x=e\ \ \ \text{and}\ \ \ x{{x}^{-1}}=e\ \ \ \ (3)\]  </p>
+<p style=noind>  But (2) and (3) are equivalent! ("<a href="MMAndOrNot.htm">And</a>" is commutative.)</p>
+
+
+
+
+<h4><a name=ponsasinorum>Example ISO</a></h4>
+
+<p>This sort of double substitution occurs in geometry, too.</p>
+
+<a name=pasin></a>
+
+<p class=headed><proc>Theorem:</proc> If a triangle has two equal angles, then it has two equal sides.</p>
+
+<p class=headed><proc>Proof:</proc> In the figure, assume $\angle ABC=\angle ACB$. Then triangle $ABC$ is congruent to triangle $ACB$ since the sides $BC$ and $CB$ are equal (they are the same line segment!) and the adjoining angles are equal by hypothesis. </p><br />
+
+<p>
+<img src="Mathematica/JPEG/PattRec/Flat triangle.jpg" align=center hspace=30></p><br />
+
+<p class=noind>The point is that although triangles $ABC$ and $ACB$ are the same triangle, and sides $BC$ and $CB$ are the same line segment, the proof involves recognizing them as geometric figures in <i>two different ways</i>. </p>
+
+<p>The triangle $ACB$ <i>with labels</i> is actually the same triangle as $ABC$ <i>with labels</i> by flipping $ABC$ over the vertical line through $B$.</p>
+
+
+<p class=smallind>
+This proof (not Euclid's origi&shy;nal proof) is hundreds of years old and is called the <a
+href="http://en.wikipedia.org/wiki/Pons_Asinorum"> pons asinorum</a> (bridge of donkeys). It became famous as the first theorem in Euclid's books that many medi&shy;eval stu&shy;dents could not under&shy;stand. I con&shy;jecture that the name comes from the fact that the triangle as drawn here resembles an ancient <a href="http://en.wikipedia.org/wiki/Rialto_Bridge"> arched bridge</a>. These days, isos&shy;ce&shy;les tri&shy;angles are usually drawn taller than they are wide.
+</p>
+
+<h2>Technical problems in carrying out pattern matching</h2>
+
+<a name=parents>
+
+<h3>Parentheses</h3>
+<p>In matching a pattern you may have to <i>insert parentheses</i>. For example, if you substitute $x+1$ for $a$, $2y$ for
+$b$ and $4$ for $c$ in the expression \[{{a}^{2}}+{{b}^{2}}={{c}^{2}}\] you get \[{{(x+1)}^{2}}+4{{y}^{2}}=16\]
+If you did the substitution literally <i>without editing the expression so that it had the correct meaning,</i> you would get \[x+{{1}^{2}}+2{{y}^{2}}={{4}^{2}}\] which is <i>not</i> the result of performing the substitution in the expression ${{a}^{2}}+{{b}^{2}}={{c}^{2}}$.   
+</p>
+
+
+
+<h3>Order switching</h3>
+
+<p> You can easily get confused if the patterns involve a switch in the order of the variables.</p>
+ 
+<h4>Notation for integer division</h4>   
+<ul>
+
+
+<li>For integers $m$ and $n$, the phrase "$m$ <b>divides</b> $n$" means there is an integer $q$ for which $n=qm$.  </li> 
+</li>
+
+<li>In number theory (which in spite of its name means the theory of <b>positive integers</b>) the vertical bar is used to denote integer division. So $3\,|\,6$ because $6=2\times 3$ ($q$ is $2$ in this case).  But "$3\,|\,7$" is false because there is no integer $q$ for which $7=q\times 3$.</li>
+
+<li>An <i>equivalent definition of division</i> says that $m\,|\,n$ if and only if $n/m$ is an integer.  Note that $6/3=2$, an integer, but $7/3$ is not an integer.</li>
+
+<li>Now look at those expressions:</li> 
+
+<ul>
+
+<li>"$m\,|\,n$" means that there is an integer $q$ for which $n=qm$.In these two expressions, $m$ and $n$ <i>occur in opposite order</i>.</li>
+
+<li>"$m\,|\,n$" is true only if $n/m$ is an integer.  Again, they are in opposite order.  Another way of writing $n/m$ is $\frac{n}{m}$.  When math people pronounce "$\frac{n}{m}$" they usually say, "$n$ over $m$" using the same order.</li> 
+
+</ul>
+
+<li>I taught these notation in courses for computer engineering and math majors for years. <span class=purple>Some of the students stayed hopelessly confused through several lectures and lost points repeatedly on homework and exams by getting these symbols wrong.</span></li>
+
+</ul>
+
+<h2>Syntax</h2>  
+
+<p>The problems with integer division mentioned in the previous section is not helped by the fact that "$|$" and "$/$" are similar but have very different <a href="https://en.wikipedia.org/wiki/Syntax_(logic)">syntax</a>:</p> 
+<ul>
+<li>"$m\,|\,n$" is a <a href="MMSymLang.htm#symbolicassertion">symbolic assertion</a>: it is either true or false. </li> <li>"$n/m$" is a <a href="MMSymLang.htm#symbolicassertion">symbolic expression</a> whose value is a <i>number depending on $n$ and $m$</i>.</li>
+
+</ul> 
+
+<p class=purpleprose>Math notation gives you no clue<br />which symbols are operators (used to form expressions)<br />and which are verbs (used to form assertions).</p>
+
+<ul>
+
+<li>A majority of the students didn't have so much trouble with this kind of syntax.  I have noticed that many people have <i>no sense of syntax</i> and other people have good intuitive understanding of syntax.  I suspect the second type of people find learning foreign languages easy.</li>
+
+<li> Many of the articles in the <a href="#references">references</a> below concern syntax.  
+</li>
+
+
+</ul>
+
+
+<a name="references"></a>
+
+<h2>References</h2>
+
+
+<ul>
+<li>
+<a href="MMSymLang.htm#grammar">Abstractmath article</a> on the grammar of the symbolic language of math ("grammar" includes syntax and semantics.)
+</li>
+
+<li><a href="/Word%20Press/?p=1629">Syntax trees in mathematicians' brains</a>. Gyre&Gimble post.</li>
+
+<li><a href="/Word%20Press/?p=5139">Algebra is a difficult foreign language</a>. Gyre&Gimble post.</li>
+
+<li><a href="/Word%20Press/?p=5091">Mathematics and linguistic ability</a>. Gyre&Gimble post.</li>
+
+<li><a href="MMFormsProof.htm"> Patterns of Proof</a> in abstractmath.org. Textbooks in abstract math generally give proofs without telling you what the pattern of proof is.</li>
+
+<li><a href="MMOtherAspectsUnderstanding.htm#ratcheteffect">Ratchet effect</a> in abstractmath.org. Contains an example of pattern matching.</li>
+
+
+<li><a href="http://chronicle.com/blogs/linguafranca/2014/01/15/moths-to-the-flame-of-meaning/">Chronicle of Higher Education article</a> on teaching syntax.</li>
+
+<li><a href="https://en.wikipedia.org/wiki/Syntax_(programming_languages)">Wikipedia</a> on the syntax of programming languages.</li>
+
+<li><a href="https://en.wikipedia.org/wiki/Syntax_(programming_languages)">Wikipedia's main article</a> on syntax (nearly useless).</li>
+
+</ul>
+<br /><br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br /><br /><br />
+
+</body>
+
+</html>

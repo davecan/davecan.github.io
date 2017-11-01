@@ -1,0 +1,614 @@
+<html>
+
+<head><meta name=viewport content="width=device-width, initial-scale=1">
+<!DOCTYPE html PUBLIC "-//W3C//DTD <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<link rel="stylesheet" type="text/css"href="mm2.css">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name="created" content="Thu, 18 Apr 2013 20:25:56 GMT">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>AND, OR, NOT</title>
+<script type="text/javascript"src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML">
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+jax: ["input/TeX","output/HTML-CSS"],
+extensions: ["tex2jax.js","MathMenu.js","MathZoom.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+},
+tex2jax: {
+inlineMath: [ ['$','$'] ],
+processEscapes: true
+}
+});</script>
+</head>
+
+<body>
+<p>
+<banner1>abstractmath.org 2.0</banner1></li><br>
+<banner2>help with abstract math</banner2><br>
+</p>
+
+<br>
+<pre>
+Produced by <a href="http://www.cwru.edu/artsci/math/wells/home.html">Charles Wells</a>   Revised 2016-09-28   
+<a href="MMIntro.htm">Introduction to this website</a>
+<a href="MMTOC.htm">website TOC </a>   <a href="MMIndex.htm">website index </a>   <a href="/Word%20Press/">blog</a>   
+<a href="MMMathReasoning.htm">Back to top of Mathematical Reasoning chapter</a></p>
+</pre>
+
+
+<h1>And, Or, Not</h1>
+
+<a
+name="logical_connectives"></a>
+<p><a
+href="MMMathEnglish.htm#assertion">Assertions</a>
+can be combined into <a
+href="MMMathReasoning.htm#logicalconstruction">logical
+constructions</a> (compound assertions) using combining operators called <b>logical connectives</b>. This chapter is
+concerned with the connectives <b>and</b>, <b>or</b> and <b>not</b>.
+ </p>
+
+<a name=conjunction></a>
+<a name=anddef></a>
+
+<h2>Conjunction</h2>
+
+
+<p>If $P$ and $Q$ are <a
+href="MMMathEnglish.htm#assertion">assertions,</a>
+then "$P$ <b>and</b> $Q$" is also an assertion. <span class=purple> "$P$ and $Q$" is true
+precisely when <i>both</i> $P$ and $Q$ are true.</span></p>
+
+<p>The assertion "$P$ and $Q$"
+is called a <b>conjunction.</b></p>
+
+
+<p class=smallind>The word
+ "conjunction" in English grammar refers to <i>words</i> such as <b>and</b> and
+ "but".  "Conjunction" in abmath, as in most writings on logic, refers to a <i>sentence</i> of the form "$P$ and $Q$", not to
+ the word <b>and</b>.  See also <a href="MMFuncNotation.htm#nameandvalue">name and value</a>.</p>
+
+<h4 class=redit>Example </h4>
+
+<p>Let $n$ be an integer variable and let $P(n)$ be
+the assertion "$n\gt9$ and $n$ is even".
+Then $P(2)$ is false, $P(3)$ is false, $P(12)$ is true and $P(15)$ is false. </p>
+
+<h3>Truth table for conjunction</h3>
+
+
+<p>You
+may have noticed that when I defined <b>$P$ and $Q$</b> above I used the word "and" in the
+definition.  A more satisfactory  way to define connectives is to use <b>truth
+tables.</b> The truth table for <b>and</b> is displayed
+below.  From this table you can see immediately for example that if $P$
+is true and $Q$ is false, then "$P$ and $Q$ " is false.</p>
+<p>&nbsp;</p>
+
+<center>
+<table style="display: inline-block;" padding:10px>
+  <tr><!-- Row 1 -->
+     <td width="20px">$P$</td><!-- Col 1 -->
+     <td width="20px">$Q$</td><!-- Col 2 -->
+     <td width="90px"  align="center">$P$ and $Q$</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td>T</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td>T</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td>F</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td>F</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+</table></center>
+
+
+<h3>Conjunction of inequalities</h3>
+
+<p>In the <a
+href="MMLanguages.htm#symboliclanguage">symbolic
+language</a>, there is a <b>special way to express conjunction of</b> <a
+href="MMGlossary.htm#inequality">inequalities</a>.
+</p>
+
+
+
+<p class=purpleprose>An expression such
+as "$a\le x\le b$"<br /> <font color="#A11B1B">always</font> means "$a\le x$ <b>and</b> $x\le b$",<br /> <font color="#A11B1B">never</font> "$a\le x$ <b>or</b> $x\le b$".</p>
+
+
+
+<h4 class=redit>Examples</h4>
+
+<ul>
+
+<li>The assertion "$5\leq x\leq 7$" means $5\leq x$ <b>and</b> $x\leq 7$. Thus it is true for $5$, $6$, $7$, $5.3$ and $6.999$ but false for $3$, $7.001$ and $42$.</li>
+
+<li>The assertion "$5\le x\le 3$" means $5\le x$ <b>and</b> $x\le3$.  There are no numbers that satisfy this assertion! Students sometimes write
+"$5\le x\le 3$" to mean $5\le x$ <b>or</b> $x\le 3$, but that is wrong.</li>
+
+</ul>
+
+
+
+
+
+<h3>Conjunction in math English</h3>
+
+<p>In <a href="MMMathEnglish.htm">math English,</a> a conjunction is normally expressed
+with the word <b>and</b>, as you might expect.  There are some subtleties in
+the use of the word <b>and</b>, discussed here.  See
+also <a href="http://en.wikipedia.org/wiki/Logical_conjunction">Wikipedia</a>.</p>
+
+<h4>
+"And" between assertions</h4>
+
+<p>The word "<b>and</b>" between two<a
+href="MMMathEnglish.htm#assertion"> assertions</a>  $P$ and  $Q$
+produces the <a href="MMAndOrNot.htm#conjunction">conjunction</a> of  $P$
+and  $Q$.</p>
+
+<h4 class=redit>Example</h4>
+
+<a name="andexa"></a>
+<p>The assertion "$x$ is positive <b>and </b>
+$x$ is less than $10$" is true if both these statements are true: $x$ is positive", "$x$ is less than $10$". </p>
+
+<h4>"And" between verb phrases</h4>
+
+<p>The word "and" can also be used between two verb phrases to
+assert both of them about the same subject. </p>
+
+<h4 class=redit>Example</h4>
+
+<p>The assertion" $x$ is positive <b>and</b> less than
+10" means the same thing as"$x$ is positive <b>and</b>  $x$ is
+less than 10".  This mirrors ordinary English usage.</p>
+
+<h4>"And" between noun phrases</h4>
+
+<p>The word "and" may occur between two <a
+href="http://en.wikipedia.org/wiki/Noun_phrase">noun phrases</a> as well</p>
+
+<h4 class=redit>Example</h4>
+
+<ul>
+
+<li>"$3$ and $5$ are greater than $2$".</li>
+
+<li>"$2$ is less than $3$ and $5$". This might make someone think this is saying that $2$ is less than $3+5$. I don't think this usage occurs very often.</li>
+
+</ul>
+
+
+
+<h3>Other words for conjunction</h3>
+
+<p>Other words are also used to denote conjunction.  Most of them are familiar and do
+not cause a problem.  </p>
+
+<h5>Example</h5>
+<p>All three of these sentences mean "$10\gt9$ and $10$ is even."</p>
+<ul>
+<li> $10\gt9$; <b>also</b> $10$ is even.</li>
+
+<li> $10$
+is <b>both</b> greater than $9$ and even.</li>
+
+<li> $10$
+is greater than 9 <b>as well as</b> even.</li></ul>
+
+<h4>But</h4>
+
+<p>One way of writing conjunctions that may be surprising is to
+use the word <b>but</b>; for example, "$9$ is odd but $9$ is not a prime".  (See the Glossary entry for <a
+href="MMGlossary.htm#but">but</a> for another
+use in math English.) The word "but" between two assertions means logically
+exactly the same thing as <b>and</b>.  The difference is that "but" communicates
+that <i>what is coming after it may be surprising</i>.</p>
+
+<p>"Although"
+(and other words – see <a
+href="http://www.earlham.edu/~peters/courses/log/transtip.htm">Suber’s
+Translation Tips</a>) performs a similar function.</p>
+
+
+
+
+<a name="or"</a>
+<a name="disjunction"></a>
+<h2>Disjunction</h2>
+
+
+<p>If $P$ and $Q$ are <a
+href="MMMathEnglish.htm#assertion">assertions,</a> then
+"$P$ <b>or</b> $Q$ " is also an assertion, and it is
+true precisely when <b>at least one</b> of $P$ and $Q$ are true.  The assertion "$P$
+or $Q$" is called a <b>disjunction.</b></p>
+
+<a name=ordef></a>
+<h5>Example</h5>
+
+<p>Let $P(n)$ be the assertion "($n>9$ or $n$ is even)".  Then $P(2)$, $P(10)$ and $P(11)$
+are all true, but $P(7)$ is false.</p>
+
+<a name="ortruth"></a>
+
+<h3>Truth table for disjunction</h3>
+<p>&nbsp;</p>
+<center>
+<table style="display: inline-block;" padding:10px>
+  <tr><!-- Row 1 -->
+     <td width="20px">$P$</td><!-- Col 1 -->
+     <td width="20px">$Q$</td><!-- Col 2 -->
+     <td width="80px"  align="center">$P$ or $Q$</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td>T</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td>T</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 4 -->
+     <td>F</td><!-- Col 1 -->
+     <td>T</td><!-- Col 2 -->
+     <td  align="center">T</td><!-- Col 3 -->
+  </tr>
+  <tr><!-- Row 5 -->
+     <td>F</td><!-- Col 1 -->
+     <td>F</td><!-- Col 2 -->
+     <td  align="center">F</td><!-- Col 3 -->
+  </tr>
+</table>
+</center>
+<p>So "$P$ <b>or</b> $Q$" if true if at least one of $P$ and $Q$ are true, and it is false only if $P$ and $Q$ are <i>both</i> false.</p>
+
+<h3>Disjunction in math English</h3>
+
+<p>The usual way to express a disjunction in math English is to use the word
+<b>or</b>, often with "either".</p>
+
+<h5>Examples</h5>
+<ul>
+
+<li>The statement "$7$ is even or $7$ is odd" is  true, because $7$ is odd and a disjunction requires only that at least one of the assertions be true.</li>
+
+<li>The statement "every integer $n$ is either even or odd" is true.</li>
+
+<li>The statement "every integer $n$ is either even or a prime" is false.</li>
+</ul>
+
+
+
+
+<a name=inclusiveor></a>
+<h3>Inclusive or</h3>
+
+<p>The <a href="#ortruth">truth table for <b>or</b></a> says that
+if $P$ and $Q$ are <i>both</i> true, then <i>"$P$ </i>or $Q$" is
+true.  This is because the definition of <i>"$P$ </i>or $Q$" says that <i>"$P$
+</i>or $Q$" is true precisely when <b>at least one</b> of $P$
+and $Q$ are true.</p>
+<p class=smallind>This is an excellent example of the literal
+nature of mathematical language.</p>
+<h5>Example</h5>
+
+<p>The assertion </p>
+
+<p>                                             $x>0\text{
+or }x<2$</p>
+
+<p class=noind>is <i>true</i> for any real
+number $x$.  In particular,</p>
+<p>                                             $1>0\text{
+or }1<2$</p>
+
+<p class="noind">is true.</p>
+
+<p class="headed">
+You may be bothered by this assertion since "$1>0\text{ and }1<2$" is <i>also</i> true.
+ It is <i>not wrong</i> to assert "$P$ or $Q$"  even in a situation where
+ you could also assert the stronger statement  "$P$ and $Q$"  (see <a
+ href="MMDysfunctional.htm#unnecessarilyweakassertion">unnecessarily
+ weak assertion).</a></p>
+ 
+
+
+<p>In
+many assertions in conversational English involving <b>or</b>,  both cases
+cannot happen. Authors in non-mathematical English writing may emphasize  inclusive&shy;ness when it occurs by using "and/or" or by saying something like
+"or both".</p>
+
+
+<p class="headed">The meaning of <b>or</b> given by the truth table is called the <b>inclusive
+or</b>.</p> 
+
+<p class=purpleprose>In mathematical
+writing, <b>or</b> is almost always inclusive.</p> 
+
+<p>Mathematicians rarely use "and/or" because <i>in math writing <b>or</b> already means "and/or".</i></p>
+<p>If
+mathematicians want to insist that exactly one of $P$ and $Q$ is true they would say "Either $P$ or $Q$ but not both" or something similar.</p>
+
+<a name=negation></a>
+<h2>Negation</h2>
+
+<p><b>Negation </b>has the
+very simple <a href="#_Truth_tables">truth table </a>shown below.  The
+<a
+href="MMMathEnglish.htm#assertion">assertion</a> "not $P$" is true <b>exactly when P is false.  </b></p>
+<p>&nbsp;</p>
+<center>
+<table border="1">
+  <tr><!-- Row 1 -->
+     <td width="20px">$P$</td><!-- Col 1 -->
+     <td width="65px"  align="center">not $P$</td><!-- Col 2 -->
+  </tr>
+  <tr><!-- Row 2 -->
+     <td>T</td><!-- Col 1 -->
+     <td align="center">F</td><!-- Col 2 -->
+  </tr>
+  <tr><!-- Row 3 -->
+     <td>F</td><!-- Col 1 -->
+     <td align="center">T</td><!-- Col 2 -->
+  </tr>
+</table>
+</center>
+
+
+<h3>Negation in math English</h3>
+
+<p>These examples show the kinds of problems you can have in negating a mathematical statement. </p>
+
+<ul>
+
+
+<li>"Neither $P$
+nor $Q$" is <i>not the negation</i> of "$P$ or $Q$". 
+It is the negation of "$P$ <b>and </b>$Q$". See the <a href="#demorganlaws">Demorgan Laws.</a></li>
+
+<li>Negating
+an assertion is not necessarily
+the same thing as stating its opposite. If $P$ is the
+proposition  "$3\gt2$", then "not $P$" can be worded as "$3$
+is <i>not greater than</i> $2$". It is incorrect to give "$3\lt2$"
+as the negation of $P$. Of course, "not $P$" can also be <i>reworded</i> as "$3\le
+2$". </li>
+
+<li> The
+statement "$2$ divides every integer" is false.  Its negation,
+which is true, is "There is some integer that $2$
+does <i>not</i> divide".  You might want to write the negation as "$2$ does not divide every integer". The trouble with that statement is that it is ambiguous: It might be read as "$2$ does not divide <i>any</i> integer", which is <i>not</i> the negation of "$2$ divides every integer". 
+See <a
+href="https://en.wikipedia.org/wiki/Universal_quantification#Properties">negating
+quantifiers</a> in Wikipedia.</li>
+</ul>
+
+<h3>Negating inequalities</h3>
+
+<ul>
+<li>The
+negation of $x&lt;y$ is $x\ge y$ (or of course $y\le x$).  The negation is
+not "$x&gt;y$".</li>
+
+<li>The
+negation of $x\le y$ is $y&gt;x$.</li>
+
+<li>The
+negation of $x&gt;y$ is $x\le y$.</li>
+
+<li>The
+negation of $x\ge y$ is  $x&lt;y$.</b></li>
+</ul>
+
+
+
+
+<h2>Methods of proof for <font color="#000040">and,</font> <font color="#000040">or</font> and <font color="#000040">not.</font></h2>
+
+<p>As far as I know, few people have problems with proving
+statements involving these three connectives if they occur one at a time.  If they are mixed together, things get more complicated, as in the <a href="#proofexample">example</a> below and in the <a href="#demorganlaws">DeMorgan Laws.</a></p>
+
+<ul>
+<li> If
+you know $P$ is true then you know "$P$ or $Q$" is true.</li>
+
+<li> If
+you know $Q$ is true then you know "$P$ or $Q$" is true.</li>
+
+<li>If
+you know "$P$ or $Q$" then you know that one or both of $P$ and $Q$ 
+are true.</li>
+
+<li>If
+you know "$P$ and $Q$" is true then you know $P$ is true.</li>
+
+<li>If
+you know "$P$ and $Q$" is true then you know $Q$ is true.</li>
+
+<li>If
+you know $P$ is true and you know $Q$ is true then you know "$P$
+and $Q$" is true.</li>
+
+<li>If you know $P$
+is true then you know "not $P$" is false.</li>
+
+<li>If you know $P$
+is false then you know "not $P$" is true.</li>
+
+<li>If you know "not $P$"
+is true then you know $P$ is false.</li>
+
+<li>If you know "not $P$"
+is false then you know $P$ is true.</li>
+</ul>
+
+<a name="proofexample"></a>
+<h5>Example</h5>
+
+<p>If all you know about $n$ is given by the
+statement "$n$ is odd <b>or</b> $n$ is prime", the you know from the
+truth table only that <i>one of the following three possibilities
+is correct:</i></p>
+
+<ul>
+
+<li> $n$ is odd but not prime</li>
+
+<li> $n$ is prime but not odd</li>
+
+<li> $n$ is both prime and odd.</li>
+
+</ul>
+<p>Therefore it would <i>not be
+legitimate to deduce the statement</i> "$n$ is odd" <i>from the statement</i> "$n$ is odd or $n$ is prime". See also the discussion in <a
+href="https://en.wikipedia.org/wiki/Logical_disjunction">Wikipedia</a>.</p>
+
+
+
+<a name="demorganlaws"></a>
+<h2>The DeMorgan Laws</h1>
+
+<p class=blue>The <a
+href="http://en.wikipedia.org/wiki/DeMorgan">DeMorgan Laws</a> are:</p>
+
+<ul class=blue>
+<li>"not ($P$ <font color="#911B1B">and</font> $Q$)"
+has the same truth value as "not $P$ <font color="#911B1B">or</font> not $Q$".</li>
+
+<li>"not ($P$ <font color="#911B1B">or</font> $Q$)" 
+has the same truth value as "not $P$ <font color="#911B1B">and</font> not $Q$".</li>
+
+</ul>
+
+
+
+<p class=purpleprose><font color="#911B1B">And</font> and <font color="#911B1B">Or</font> are <font color="#911B1B">interchanged</font> when they are negated</p>
+
+<p>Consider what happens when you negate a conjunction.
+The statement "not ($P$ and $Q$)" means that "$P$ and $Q$"
+is <b>false.</b>   Look at the truth table for <b>and</b>: this means
+that <i>one of $P$
+and $Q$ is false</i>; it does
+not require <i>both</i> of them to be false.  </b></p>
+
+<h5>Example</h5>
+
+<p>The negation of</p> <center><p>"$x+y=10$ <b>and</b> $x\lt7$"</p></center> <p class=noind>is</p>  <center><p>"$x+y\ne
+10$ <b>or</b> $x\ge7$"</p></center>
+
+
+
+<h5>Example</h5>
+
+<p>The negation of</p> <center><p>"$n$ is even <b>or</b> $n$ is prime"</p></center> <p class=noind>is</p> <center><p>"$n$ is odd <b>and</b> $n$ is composite."</p></center>
+
+
+<p class=headed>If you have trouble with these examples, try drawing the corresponding <a href="https://en.wikipedia.org/wiki/Venn_diagram">Venn Diagrams.</a></p>
+
+<h3>Using the DeMorgan Laws in proofs</h3>
+
+<h4>Proving conjunctions false</h4>
+
+
+
+<p>To prove that "$P$ and $Q$" is false you have to prove
+that <i>either</i> $P$ is false <i>or</i> that $Q$ is false.  <i>You don’t have to prove that both
+are false.</i></p>
+
+
+
+<h5>Example</h5>
+
+<p>The
+<a href="MMSetSpecific.htm#unitinterval">unit interval</a> $\mathbb{I}=\left\{ x\,|\,0\le x\le 1 \right\}$, which means that $x\in
+\mathbb{I} $ if and only if both
+$0\le x$ and $x\le 1$.</p>
+
+<p>So to prove $x\notin \mathbb{I}$ you have to prove that either $x\lt 0$ or
+$x\gt1$.  You don’t have to prove both.  In fact, in this particular case you
+couldn’t prove both!</p>
+
+
+
+<h4>Proving disjunctions false</h4>
+
+<p>To prove that "$P$ or $Q$" is false you have to prove that
+<i>both</i> $P$ is false <i>and</i> $Q$ is false. You may be tempted to prove that
+only one of $P$ and $Q$ is false.  But then you have not done
+everything required.</p>
+
+<h5>Example</h5>
+
+<p>Consider the statement, "A positive integer is either even or it is prime".
+(See <a href="MMGlossary.htm#a">indefinite article</a>).  This statement is false. To show it is false, you must find a positive integer that is <i>both</i> odd and nonprime, for example $9$.</p>
+
+<a name="andornotsymbolic"></a>
+
+<h2>And, or and not in the symbolic language of math</h2>
+
+<ul>
+<li><b>And</b> may be denoted by:
+<q>$P\land Q$</q>  or <q>$P\,\&\, Q$</q> or <q>$P\,\&\&\, Q$</q> or <q>$PQ$</q></li>
+
+
+<li><b>Or</b> may be denoted by: <q>$P\lor Q$</q> or <q>$P||Q$</q> or <q>$P+Q$</q>.</li>
+
+<li><b>Not</b> may be denoted by:"$\neg
+P$" or "$\tilde{\
+}P$" or "$!P$" or "$\overline{P}$".</li>
+</ul>
+
+
+<p>This notation makes <b>and</b> and <b>or</b> look like algebraic
+operations.  In fact they are operations in the <a name=propositionalcalculus><b>Propositional
+Calculus</b></a> (<a
+href="http://mathworld.wolfram.com/PropositionalCalculus.html">MW</a>, <a href="https://en.wikipedia.org/wiki/Propositional_calculus">Wik</a>)
+and <a name=booleanalgebra>in <b>Boolean Algebra</b></a> (<a href="http://mathworld.wolfram.com/BooleanAlgebra.html">MW</a>,
+<a href="http://en.wikipedia.org/wiki/Boolean_algebra">Wik</a>). 
+(Boolean algebra is an <a
+href="MMOtherAspectsUnderstanding.htm#abstraction">abstraction</a>
+of the Propositional Calculus.)</p>
+
+
+<h4>True and false</h4>
+<p>In computer science and logic, "True" and "False" may be
+denoted by "$0$" and "$1$", by "$T$" and "$F$", or by "$\top$" and "$\bot$".  Unfortunately in some texts "true" is "$0$"
+and in others it is "$1$".  </p>
+<p class=smallind>The name for the symbol "$\bot$" is "uptack".  Isn't that cute?</p>
+
+
+<br /><br />
+ <pre><img
+border=0 width=88 height=31 src="CreativeCommons.gif"
+alt="Creative Commons License" v:shapes="_x0000_i1035"></span><![endif]></span></a></pre>
+<p>This work is licensed under a <a
+href="http://creativecommons.org/licenses/by-sa/2.5/">Creative Commons Attribution-ShareAlike 2.5 License</a>.</p><br /><br />
+
+
+
+</body>
+
+</html>
